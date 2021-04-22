@@ -114,13 +114,13 @@ Don't want that additional third party dependency? Then just simply copy over th
 
 ## Acknowledgments ##
 
-Thanks to Nirma for the idea. This project was highly influence and based off of his [SFSymbol](https://github.com/Nirma/SFSymbol) package. I found that few things I would do differently and before I knew it, I had an offshoot of what he had already done that went in a different direction.
+Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highly influence and based off of his [SFSymbol](https://github.com/Nirma/SFSymbol) package. I found that few things I would do differently and before I knew it, I had an offshoot of what he had already done that went in a different direction.
 
 ## Contributing to this project
 **Contributions are highly welcome**
 
 If there is something you wish to fix about the project, or wish to add any other kind of enhancements, propose to add to the project. Please feel free to send over a pull request 
-or open an issue for this project. Check out [SFSymbolsCreator](https://github.com/Rspoon3/SFSymbolsCreator) for easily updating this project files.
+or open an issue for this project. Check out [SFSymbolsCreator](https://github.com/Rspoon3/SFSymbolCreator) for easily updating this project files.
 
 ## License
 
