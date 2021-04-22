@@ -20,7 +20,7 @@ extension Button where Label == Image {
 @available(iOS 14.0, *)
 extension Button where Label == SwiftUI.Label<Text, Image>{
     public init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, textColor: Color? = nil, action: @escaping () -> Void) {
-        self.init(action: {}, label: {
+        self.init(action: action, label: {
             SwiftUI.Label(
                 title: {
                     Text(titleKey)
