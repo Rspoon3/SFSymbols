@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct SFSymbol: Identifiable{
+public struct SFSymbol: Identifiable, Hashable{
     public let title: String
     public let categories: [Category]
     public let iOSAvailability: Double

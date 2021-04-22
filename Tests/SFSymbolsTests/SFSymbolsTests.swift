@@ -10,4 +10,12 @@ final class SFSymbolsTests: XCTestCase {
             XCTAssert(image != nil, "\(symbol.title) does not exist!")
         }
     }
+    
+    
+    func testAllSymbolsAreUnique(){
+        let regularArray = SFSymbol.allSymbols
+        let uniqueSet    = Set(regularArray)
+        
+        XCTAssert(regularArray.count == uniqueSet.count)
+    }
 }
