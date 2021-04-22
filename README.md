@@ -31,15 +31,17 @@ There are even common, human understandable, names for symbols. Feel free extend
 
 ```swift
 public extension SFSymbol{
-    static let share    = SFSymbol.squareAndArrowUp
-    static let refresh = SFSymbol.arrowClockwise
-    static let copy    = SFSymbol.docOnDoc
-    static let writing = SFSymbol.squareAndPencil
+    static let share   = squareAndArrowUp
+    static let refresh = arrowClockwise
+    static let copy    = docOnDoc
+    static let writing = squareAndPencil
 }
 
 @available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
 public extension SFSymbol{
-    static let edit = SFSymbol.rectangleAndPencilAndEllipsis
+    static let edit    = rectangleAndPencilAndEllipsis
+    static let filter  = lineHorizontal2DecreaseCircle
+    static let sort    = arrowUpArrowDownCircle
 }
 ```
 
