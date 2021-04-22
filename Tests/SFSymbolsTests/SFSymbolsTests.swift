@@ -1,15 +1,13 @@
 import XCTest
+import SwiftUI
 @testable import SFSymbols
 
+@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
 final class SFSymbolsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SFSymbols().text, "Hello, World!")
+    func testAllSymbolsExist() {
+        for symbol in SFSymbol.allSymbols {
+            let image = UIImage(systemName: symbol.title)
+            XCTAssert(image != nil, "\(symbol.title) does not exist!")
+        }
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }

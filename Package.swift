@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "SFSymbols",
+    platforms: [
+        .iOS(.v13),
+        .macOS(.v11),
+        .watchOS(.v6)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
