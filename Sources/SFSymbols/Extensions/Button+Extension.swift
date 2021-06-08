@@ -17,7 +17,7 @@ extension Button where Label == Image {
 }
 
 
-@available(iOS 14.0, *)
+@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
 extension Button where Label == SwiftUI.Label<Text, Image>{
     public init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, textColor: Color? = nil, action: @escaping () -> Void) {
         self.init(action: action, label: {
@@ -31,5 +31,15 @@ extension Button where Label == SwiftUI.Label<Text, Image>{
                 }
             )
         })
+    }
+}
+
+
+@available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0,  *)
+extension Button where Label == Image {
+    public init(symbol: SFSymbol, role: ButtonRole, action: @escaping () -> Void) {
+        self.init(role: role, action: action) {
+            Image(systemName: symbol.title)
+        }
     }
 }
