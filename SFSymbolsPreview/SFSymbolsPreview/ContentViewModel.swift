@@ -1,0 +1,223 @@
+//
+//  ContentViewModel.swift
+//  SFSymbolsPreview
+//
+//  Created by Richard Witherspoon on 11/15/21.
+//
+
+import Foundation
+import SFSymbols
+
+
+class ContentViewModel: ObservableObject{
+    @Published var categories = [SFCategory]()
+    @Published var searchText = String()
+    
+    private var symbols = [SFSymbol]()
+    private let decoder = PropertyListDecoder()
+    private let bundle = Bundle.main
+    private let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+
+    
+    //MARK: Initializer
+    init(){
+        do{
+            try loadCategories()
+            try loadSymbols()
+            try loadSymbolCategories()
+            try loadSearchTerms()
+            
+            try createStaticVarFile(amount: 4)
+            try createAllSymbolsFile(amount: 4)
+        } catch{
+            print(error)
+        }
+        
+        print("Finished creating the swift files. They can be found in the `Files` app.")
+    }
+    
+    
+    //MARK: Public Functions
+    func searchResults()->[SFSymbol]{
+        if searchText.isEmpty{
+            return symbols
+        }
+        
+        return symbols.filter({
+            $0.title.localizedCaseInsensitiveContains(searchText) ||
+            $0.searchTerms?.contains(where: {$0.localizedCaseInsensitiveContains(searchText)}) ?? false
+        })
+    }
+    
+    
+    //MARK: Private Helpers
+    private func createStaticVarFile(amount: Int?) throws{
+        var staticVars: String!
+        
+        if let amount = amount {
+            staticVars = symbols.prefix(amount).map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
+        } else {
+            staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
+        }
+        
+        let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
+        staticVars.insert(contentsOf: "import Foundation\n\n\npublic extension SFSymbol {\n", at: i)
+        staticVars.append("\n}")
+        
+        let url = documentsDirectory.appendingPathComponent("SFSymbol+StaticVariables.swift")
+        
+        try staticVars.write(to: url, atomically: true, encoding: .utf8)
+    }
+    
+    private func createAllSymbolsFile(amount: Int?) throws{
+        var titles: String!
+        
+        
+        
+        var array = """
+            func allSymbols()-> [SFSymbol] {
+                return [\n
+        """
+        
+        if let amount = amount {
+            titles = symbols.prefix(amount).map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
+        } else {
+            titles = symbols.map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
+        }
+        
+        array.append(contentsOf: titles)
+        array.append(contentsOf: "\n      ]")
+        
+        let header = """
+        import Foundation
+        
+        @available(iOS 15.1, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
+        public extension SFSymbol {
+        """
+        
+        let i = titles.index(titles.startIndex, offsetBy: 0)
+        array.insert(contentsOf: header, at: i)
+        array.append("\n   }\n}")
+                
+        let url = documentsDirectory.appendingPathComponent("SFSymbol+AllSymbols.swift")
+        
+        try array.write(to: url, atomically: true, encoding: .utf8)
+    }
+    
+    private func getAllSFSymbols(){
+        var staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
+        let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
+        staticVars.insert(contentsOf: "public extension SFSymbol{\n", at: i)
+        staticVars.append("\n]")
+    }
+    
+    private func convertSymbolToStaticVar(_ symbol: SFSymbol) -> String{
+        let camelCased = convertTitleToCamelCased(string: symbol.title)
+
+        var categoriesOptionalString  = "nil"
+        var searchTermsOptionalString = "nil"
+
+        if var categoriesString = symbol.categories?.map(\.originalTitle).map({".\($0)"}).joined(separator: ", "){
+            let i = categoriesString.index(categoriesString.startIndex, offsetBy: 0)
+            categoriesString.insert("[", at: i)
+            categoriesString.append(contentsOf: "]")
+            
+            categoriesOptionalString = categoriesString
+        }
+        
+        
+        if var searchTermsString = symbol.searchTerms?.map({"\"\($0)\""}).joined(separator: ", "){
+            let i = searchTermsString.index(searchTermsString.startIndex, offsetBy: 0)
+            searchTermsString.insert("[", at: i)
+            searchTermsString.append(contentsOf: "]")
+            
+            searchTermsOptionalString = searchTermsString
+        }
+        
+        
+        let staticVar = """
+                @available(iOS \(symbol.releaseInfo.iOS), macOS \(symbol.releaseInfo.macOS), tvOS \(symbol.releaseInfo.tvOS), watchOS \(symbol.releaseInfo.watchOS),  *)
+                static let \(camelCased) = SFSymbol(title: "\(symbol.title)",
+                                                categories: \(categoriesOptionalString),
+                                                searchTerms: \(searchTermsOptionalString),
+                                                releaseInfo: ReleaseInfo(iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS)))
+            """
+        
+        return staticVar
+    }
+    
+    private func convertTitleToCamelCased(string: String)->String{
+        var camelCased = string
+            .split(separator: ".")  // split to components
+            .map { String($0) }   // convert subsequences to String
+            .enumerated()  // get indices
+            .map { $0.offset > 0 ? $0.element.capitalized : $0.element.lowercased() } // added lowercasing
+            .joined() // join to one string
+        
+        let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        
+        if numbers.contains(String(camelCased.first!)){
+            camelCased = "number\(camelCased)"
+        } else if camelCased == "return"{
+            camelCased = "returnSymbol"
+        } else if camelCased == "repeat"{
+            camelCased = "repeatSymbol"
+        } else if camelCased == "case"{
+            camelCased = "caseSymbol"
+        }
+        
+        return camelCased
+    }
+    
+    private func loadCategories() throws{
+        let url = bundle.url(forResource: "categories", withExtension: "plist")!
+        let data = try! Data(contentsOf: url)
+        
+        categories = try decoder.decode([SFCategory].self, from: data)
+    }
+    
+    private func loadSymbols() throws{
+        let url = bundle.url(forResource: "name_availability", withExtension: "plist")!
+        let data = try Data(contentsOf: url)
+        let info = try decoder.decode(NameAvailabilityResults.self, from: data)
+        
+        symbols = info.symbols
+    }
+        
+    private func loadSymbolCategories() throws{
+        let url = bundle.url(forResource: "symbol_categories", withExtension: "plist")!
+        let data = try Data(contentsOf: url)
+        let dict = try decoder.decode([String: [String]].self, from: data)
+        
+        for (key, categoriesStringArray) in dict {
+            let index = symbols.firstIndex(where: {$0.title == key})!
+            for string in categoriesStringArray{
+                let category = categories.first(where: {$0.title == string})!
+                                
+                if symbols[index].categories == nil{
+                    symbols[index].categories = [category]
+                } else {
+                    symbols[index].categories?.append(category)
+                }
+            }
+        }
+    }
+    
+    private func loadSearchTerms() throws{
+        let url = bundle.url(forResource: "symbol_search", withExtension: "plist")!
+        let data = try Data(contentsOf: url)
+        let dict = try decoder.decode([String: [String]].self, from: data)
+        
+        for (key, searchTermsArray) in dict {
+            let index = symbols.firstIndex(where: {$0.title == key})!
+            
+            for searchTerm in searchTermsArray{
+                if symbols[index].searchTerms == nil{
+                    symbols[index].searchTerms = [searchTerm]
+                } else {
+                    symbols[index].searchTerms?.append(searchTerm)
+                }
+            }
+        }
+    }
+}
