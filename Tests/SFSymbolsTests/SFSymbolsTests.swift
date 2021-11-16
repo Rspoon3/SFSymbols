@@ -2,7 +2,6 @@ import XCTest
 import SwiftUI
 @testable import SFSymbols
 
-@available(iOS 15.1, *)
 final class SFSymbolsTests: XCTestCase {
     func testAllSymbolsExist() {
         for symbol in SFSymbol.allSymbols {

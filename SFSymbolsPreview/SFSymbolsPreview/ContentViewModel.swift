@@ -26,14 +26,26 @@ class ContentViewModel: ObservableObject{
             try loadSymbols()
             try loadSymbolCategories()
             try loadSearchTerms()
+            try createStaticVarFile()
             
-            try createStaticVarFile(amount: 4)
-            try createAllSymbolsFile(amount: 4)
+            let symbols13   = symbols.filter({$0.releaseInfo.iOS == 13})
+            let symbols14   = symbols.filter({$0.releaseInfo.iOS == 14})
+            let symbols14P2 = symbols.filter({$0.releaseInfo.iOS == 14.2})
+            let symbols14P5 = symbols.filter({$0.releaseInfo.iOS == 14.5})
+            let symbols15   = symbols.filter({$0.releaseInfo.iOS == 15})
+            let symbols15P1 = symbols.filter({$0.releaseInfo.iOS == 15.1})
+            
+            try createAllSymbolsFile(symbols: symbols13, extensionName: "All13", variableName: "allSymbols13", iOSVersion: 13)
+            try createAllSymbolsFile(symbols: symbols14, extensionName: "All14", variableName: "allSymbols14", iOSVersion: 14)
+            try createAllSymbolsFile(symbols: symbols14P2, extensionName: "All14P2", variableName: "allSymbols14P2", iOSVersion: 14.2)
+            try createAllSymbolsFile(symbols: symbols14P5, extensionName: "All14P5", variableName: "allSymbols14P5", iOSVersion: 14.5)
+            try createAllSymbolsFile(symbols: symbols15, extensionName: "All15", variableName: "allSymbols15", iOSVersion: 15)
+            try createAllSymbolsFile(symbols: symbols15P1, extensionName: "All15P1", variableName: "allSymbols15P1", iOSVersion: 15.1)
+            
+            print("Finished creating the swift files. They can be found in the `Files` app.")
         } catch{
-            print(error)
+            print("ERROR: \(error)")
         }
-        
-        print("Finished creating the swift files. They can be found in the `Files` app.")
     }
     
     
@@ -51,15 +63,8 @@ class ContentViewModel: ObservableObject{
     
     
     //MARK: Private Helpers
-    private func createStaticVarFile(amount: Int?) throws{
-        var staticVars: String!
-        
-        if let amount = amount {
-            staticVars = symbols.prefix(amount).map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
-        } else {
-            staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
-        }
-        
+    private func createStaticVarFile() throws{
+        var staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
         let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
         staticVars.insert(contentsOf: "import Foundation\n\n\npublic extension SFSymbol {\n", at: i)
         staticVars.append("\n}")
@@ -69,29 +74,24 @@ class ContentViewModel: ObservableObject{
         try staticVars.write(to: url, atomically: true, encoding: .utf8)
     }
     
-    private func createAllSymbolsFile(amount: Int?) throws{
-        var titles: String!
-        
-        
+    private func createAllSymbolsFile(symbols: [SFSymbol], extensionName: String, variableName: String, iOSVersion: Double) throws{
+        let titles = symbols.map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
         
         var array = """
-            static func allSymbols()-> [SFSymbol] {
+        \n
+            static var \(variableName): [SFSymbol] {
                 return [\n
         """
-        
-        if let amount = amount {
-            titles = symbols.prefix(amount).map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
-        } else {
-            titles = symbols.map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
-        }
         
         array.append(contentsOf: titles)
         array.append(contentsOf: "\n      ]")
         
+        
+        let newestSymbol = symbols.first(where: {$0.releaseInfo.iOS == iOSVersion})!
         let header = """
         import Foundation
         
-        @available(iOS 15.1, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
+        @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), *)
         public extension SFSymbol {
         """
         
@@ -99,7 +99,7 @@ class ContentViewModel: ObservableObject{
         array.insert(contentsOf: header, at: i)
         array.append("\n   }\n}")
                 
-        let url = documentsDirectory.appendingPathComponent("SFSymbol+AllSymbols.swift")
+        let url = documentsDirectory.appendingPathComponent("SFSymbol+\(extensionName).swift")
         
         try array.write(to: url, atomically: true, encoding: .utf8)
     }
@@ -136,7 +136,7 @@ class ContentViewModel: ObservableObject{
         
         
         let staticVar = """
-                @available(iOS \(symbol.releaseInfo.iOS), macOS \(symbol.releaseInfo.macOS), tvOS \(symbol.releaseInfo.tvOS), watchOS \(symbol.releaseInfo.watchOS),  *)
+                @available(iOS \(symbol.releaseInfo.iOS), macOS \(symbol.releaseInfo.macOS), tvOS \(symbol.releaseInfo.tvOS), watchOS \(symbol.releaseInfo.watchOS), *)
                 static let \(camelCased) = SFSymbol(title: "\(symbol.title)",
                                                 categories: \(categoriesOptionalString),
                                                 searchTerms: \(searchTermsOptionalString),

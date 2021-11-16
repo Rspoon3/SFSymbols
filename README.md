@@ -9,10 +9,10 @@ All the SFSymbols at your fingertips.
 ## Usage 
 `SFSymbol` are `static variables` that contain the identifier strings of all of apple's `SFSymbols` as well as which category they belong to and their availability.
 
-You can iterate through all version compatible symbols by using the 'allSymbols' static method.
+You can iterate through all version compatible symbols by using the 'allSymbols' static variable.
 
 ```swift
-for symbol in SFSymbol.allSymbols() {
+for symbol in SFSymbol.allSymbols {
 	print(symbol.title)
 }
 ```
@@ -37,7 +37,7 @@ public extension SFSymbol{
     static let writing = squareAndPencil
 }
 
-@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
+@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0, *)
 public extension SFSymbol{
     static let edit    = rectangleAndPencilAndEllipsis
     static let filter  = lineHorizontal2DecreaseCircle
