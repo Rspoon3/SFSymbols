@@ -106,7 +106,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable{
     public static let math            = SFCategory(icon: "x.squareroot", title: "Math")
     
     
-    public static func allCategories() -> [SFCategory]{
+    public static var allCategories: [SFCategory]{
         return [
             .all,
             .whatsnew,
