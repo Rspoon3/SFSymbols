@@ -105,5 +105,34 @@ public struct SFCategory: Identifiable, Codable, Equatable{
     public static let arrows          = SFCategory(icon: "arrow.right", title: "Arrows")
     public static let indices         = SFCategory(icon: "a.circle", title: "Indices")
     public static let math            = SFCategory(icon: "x.squareroot", title: "Math")
+    
+    
+    public static func allCategories() -> [SFCategory]{
+        return [
+            .all,
+            .whatsnew,
+            .multicolor,
+            .communication,
+            .weather,
+            .objectsandtools,
+            .devices,
+            .gaming,
+            .connectivity,
+            .transportation,
+            .human,
+            .nature,
+            .editing,
+            .textformatting,
+            .media,
+            .keyboard,
+            .commerce,
+            .time,
+            .health,
+            .shapes,
+            .arrows,
+            .indices,
+            .math,
+        ]
+    }
 }
 
