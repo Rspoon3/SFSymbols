@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct SFCategory: Identifiable, Codable, Equatable{
+public struct SFCategory: Identifiable, Codable, Equatable, Hashable{
     public let icon: String
     public let title: String
     

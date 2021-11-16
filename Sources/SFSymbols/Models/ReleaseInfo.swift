@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct ReleaseInfo: Codable{
+public struct ReleaseInfo: Codable, Equatable, Hashable{
     public let iOS: Double
     public let macOS: Double
     public let tvOS: Double

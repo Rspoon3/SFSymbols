@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct SFSymbol: Codable, Identifiable{
+public struct SFSymbol: Codable, Identifiable, Equatable, Hashable{
     public let title: String
     public var categories: [SFCategory]?
     public var searchTerms: [String]?
@@ -26,3 +26,5 @@ public struct SFSymbol: Codable, Identifiable{
         self.searchTerms = searchTerms
     }
 }
+
+
