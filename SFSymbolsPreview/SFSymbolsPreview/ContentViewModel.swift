@@ -75,7 +75,7 @@ class ContentViewModel: ObservableObject{
         
         
         var array = """
-            func allSymbols()-> [SFSymbol] {
+            static func allSymbols()-> [SFSymbol] {
                 return [\n
         """
         

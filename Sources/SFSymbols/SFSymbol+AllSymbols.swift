@@ -2,7 +2,7 @@ import Foundation
 
 @available(iOS 15.1, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
 public extension SFSymbol {
-    func allSymbols()-> [SFSymbol]{
+    static func allSymbols()-> [SFSymbol]{
     
         return [
         .number0Circle,
