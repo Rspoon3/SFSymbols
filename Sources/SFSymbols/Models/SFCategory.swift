@@ -24,7 +24,12 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable{
     
     @available(iOS 15.1, *)
     public var symbols: [SFSymbol]{
-        return SFSymbol.allSymbols().filter({$0.categories?.contains(self) ?? false})
+        switch self{
+        case .all:
+            return SFSymbol.allSymbols()
+        default:
+            return SFSymbol.allSymbols().filter({$0.categories?.contains(self) ?? false})
+        }
     }
     
     public var originalTitle: String{
