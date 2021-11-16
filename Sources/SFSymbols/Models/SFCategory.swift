@@ -22,6 +22,11 @@ public struct SFCategory: Identifiable, Codable, Equatable{
         title
     }
     
+    @available(iOS 15.1, *)
+    public var symbols: [SFSymbol]{
+        return SFSymbol.allSymbols().filter({$0.categories?.contains(self) ?? false})
+    }
+    
     public var originalTitle: String{
         switch self{
         case .all:
@@ -77,28 +82,28 @@ public struct SFCategory: Identifiable, Codable, Equatable{
     
     
     //MARK: Static Data
-    static let all             = SFCategory(icon: "square.grid.2x2", title: "All")
-    static let whatsnew        = SFCategory(icon: "sparkles", title: "What's New")
-    static let multicolor      = SFCategory(icon: "eyedropper", title: "Multicolor")
-    static let communication   = SFCategory(icon: "message", title: "Communication")
-    static let weather         = SFCategory(icon: "cloud.sun", title: "Weather")
-    static let objectsandtools = SFCategory(icon: "folder", title: "Objects & Tools")
-    static let devices         = SFCategory(icon: "desktopcomputer", title: "Devices")
-    static let gaming          = SFCategory(icon: "gamecontroller", title: "Gaming")
-    static let connectivity    = SFCategory(icon: "antenna.radiowaves.left.and.right", title: "Connectivity")
-    static let transportation  = SFCategory(icon: "car.fill", title: "Transportation")
-    static let human           = SFCategory(icon: "person.crop.circle", title: "Human")
-    static let nature          = SFCategory(icon: "flame", title: "Nature")
-    static let editing         = SFCategory(icon: "slider.horizontal.3", title: "Editing")
-    static let textformatting  = SFCategory(icon: "textformat.size.smaller", title: "Text Formatting")
-    static let media           = SFCategory(icon: "playpause", title: "Media")
-    static let keyboard        = SFCategory(icon: "command", title: "Keyboard")
-    static let commerce        = SFCategory(icon: "cart", title: "Commerce")
-    static let time            = SFCategory(icon: "timer", title: "Time")
-    static let health          = SFCategory(icon: "staroflife", title: "Health")
-    static let shapes          = SFCategory(icon: "square.on.circle", title: "Shapes")
-    static let arrows          = SFCategory(icon: "arrow.right", title: "Arrows")
-    static let indices         = SFCategory(icon: "a.circle", title: "Indices")
-    static let math            = SFCategory(icon: "x.squareroot", title: "Math")
+    public static let all             = SFCategory(icon: "square.grid.2x2", title: "All")
+    public static let whatsnew        = SFCategory(icon: "sparkles", title: "What's New")
+    public static let multicolor      = SFCategory(icon: "eyedropper", title: "Multicolor")
+    public static let communication   = SFCategory(icon: "message", title: "Communication")
+    public static let weather         = SFCategory(icon: "cloud.sun", title: "Weather")
+    public static let objectsandtools = SFCategory(icon: "folder", title: "Objects & Tools")
+    public static let devices         = SFCategory(icon: "desktopcomputer", title: "Devices")
+    public static let gaming          = SFCategory(icon: "gamecontroller", title: "Gaming")
+    public static let connectivity    = SFCategory(icon: "antenna.radiowaves.left.and.right", title: "Connectivity")
+    public static let transportation  = SFCategory(icon: "car.fill", title: "Transportation")
+    public static let human           = SFCategory(icon: "person.crop.circle", title: "Human")
+    public static let nature          = SFCategory(icon: "flame", title: "Nature")
+    public static let editing         = SFCategory(icon: "slider.horizontal.3", title: "Editing")
+    public static let textformatting  = SFCategory(icon: "textformat.size.smaller", title: "Text Formatting")
+    public static let media           = SFCategory(icon: "playpause", title: "Media")
+    public static let keyboard        = SFCategory(icon: "command", title: "Keyboard")
+    public static let commerce        = SFCategory(icon: "cart", title: "Commerce")
+    public static let time            = SFCategory(icon: "timer", title: "Time")
+    public static let health          = SFCategory(icon: "staroflife", title: "Health")
+    public static let shapes          = SFCategory(icon: "square.on.circle", title: "Shapes")
+    public static let arrows          = SFCategory(icon: "arrow.right", title: "Arrows")
+    public static let indices         = SFCategory(icon: "a.circle", title: "Indices")
+    public static let math            = SFCategory(icon: "x.squareroot", title: "Math")
 }
 
