@@ -16,8 +16,8 @@
 		A6C9DAD82743279C00929796 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAD02743279B00929796 /* SymbolRow.swift */; };
 		A6C9DAD92743279C00929796 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAD12743279B00929796 /* symbol_search.plist */; };
 		A6C9DADA2743279C00929796 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAD22743279B00929796 /* categories.plist */; };
-		A6C9DADB2743279C00929796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAD32743279B00929796 /* ContentView.swift */; };
 		A6C9DAE02743286500929796 /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = A6C9DADF2743286500929796 /* SFSymbols */; };
+		A6C9DAE3274332F800929796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAE2274332F800929796 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		A6C9DAD02743279B00929796 /* SymbolRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
 		A6C9DAD12743279B00929796 /* symbol_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_search.plist; sourceTree = "<group>"; };
 		A6C9DAD22743279B00929796 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
-		A6C9DAD32743279B00929796 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../Testing/Shared/ContentView.swift; sourceTree = "<group>"; };
 		A6C9DADD2743285F00929796 /* SFSymbols */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SFSymbols; path = ..; sourceTree = "<group>"; };
 		A6C9DAE1274328E100929796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A6C9DAE2274332F800929796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 				A6C9DACD2743279B00929796 /* name_availability.plist */,
 				A6C9DACE2743279B00929796 /* symbol_categories.plist */,
 				A6C9DAD12743279B00929796 /* symbol_search.plist */,
-				A6C9DAD32743279B00929796 /* ContentView.swift */,
 				A6C9DACF2743279B00929796 /* ContentViewModel.swift */,
 				A6C9DAD02743279B00929796 /* SymbolRow.swift */,
+				A6C9DAE2274332F800929796 /* ContentView.swift */,
 				A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */,
 				A6C9DAC32743277D00929796 /* Assets.xcassets */,
 				A6C9DAC52743277D00929796 /* Preview Content */,
@@ -177,8 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C9DAD82743279C00929796 /* SymbolRow.swift in Sources */,
-				A6C9DADB2743279C00929796 /* ContentView.swift in Sources */,
 				A6C9DAC02743277C00929796 /* SFSymbolsPreviewApp.swift in Sources */,
+				A6C9DAE3274332F800929796 /* ContentView.swift in Sources */,
 				A6C9DAD72743279C00929796 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
