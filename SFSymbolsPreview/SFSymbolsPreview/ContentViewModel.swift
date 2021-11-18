@@ -11,9 +11,8 @@ import SFSymbols
 
 class ContentViewModel: ObservableObject{
     @Published var categories = [SFCategory]()
-    @Published var searchText = String()
     
-    private var symbols = [SFSymbol]()
+    var symbols = [SFSymbol]()
     private let decoder = PropertyListDecoder()
     private let bundle = Bundle.main
     private let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -47,20 +46,7 @@ class ContentViewModel: ObservableObject{
             print("ERROR: \(error)")
         }
     }
-    
-    
-    //MARK: Public Functions
-    func searchResults()->[SFSymbol]{
-        if searchText.isEmpty{
-            return symbols
-        }
         
-        return symbols.filter({
-            $0.title.localizedCaseInsensitiveContains(searchText) ||
-            $0.searchTerms?.contains(where: {$0.localizedCaseInsensitiveContains(searchText)}) ?? false
-        })
-    }
-    
     
     //MARK: Private Helpers
     private func createStaticVarFile() throws{

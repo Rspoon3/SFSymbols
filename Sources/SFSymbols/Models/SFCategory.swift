@@ -23,7 +23,11 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable{
     }
     
     public var symbols: [SFSymbol]{
-        return SFSymbol.allSymbols.filter({$0.categories?.contains(self) ?? false})
+        if self == .all{
+            return SFSymbol.allSymbols
+        } else {
+            return SFSymbol.allSymbols.filter({$0.categories?.contains(self) ?? false})
+        }
     }
     
     public var originalTitle: String{

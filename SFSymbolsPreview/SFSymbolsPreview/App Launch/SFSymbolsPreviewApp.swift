@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SFSymbolsPreviewApp: App {
+    @StateObject private var model = ContentViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(model)
         }
     }
 }

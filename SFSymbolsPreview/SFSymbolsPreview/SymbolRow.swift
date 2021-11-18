@@ -23,11 +23,17 @@ struct SymbolRow: View{
             .badge(symbol.releaseInfo.watchOS.formatted())
         if let categories = symbol.categories{
             Text("Categories")
+                .padding(.trailing)
+                .layoutPriority(1)
                 .badge(categories.map(\.title).formatted(.list(type: .and)))
+                .lineLimit(1)
         }
         if let searchTerms = symbol.searchTerms{
             Text("Search Terms")
+                .padding(.trailing)
+                .layoutPriority(1)
                 .badge(searchTerms.formatted(.list(type: .and)))
+                .lineLimit(1)
         }
     }
 }
