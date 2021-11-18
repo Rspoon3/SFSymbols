@@ -13,7 +13,7 @@ struct SymbolList: View{
     let category: SFCategory
 
     init(category: SFCategory) {
-        self.category = SFCategory.allCategories.first(where: {$0.originalTitle == category.title})!
+        self.category = SFCategory.allCategories.first(where: {$0.plistTitle == category.title})!
     }
     
     

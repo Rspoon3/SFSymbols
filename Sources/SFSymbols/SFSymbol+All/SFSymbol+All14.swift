@@ -1,6 +1,6 @@
 import Foundation
 
-@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0,  *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 public extension SFSymbol {
 
     static var allSymbols14: [SFSymbol] {
@@ -17,13 +17,11 @@ public extension SFSymbol {
          .aBookClosedFillJa,
          .aBookClosedFillKo,
          .aBookClosedFillTh,
-         .aBookClosedFillZh,
          .aBookClosedHe,
          .aBookClosedHi,
          .aBookClosedJa,
          .aBookClosedKo,
          .aBookClosedTh,
-         .aBookClosedZh,
          .aMagnify,
          .abc,
          .airplaneCircle,
@@ -1009,7 +1007,6 @@ public extension SFSymbol {
          .textCursorJa,
          .textCursorKo,
          .textCursorTh,
-         .textCursorZh,
          .textMagnifyingglass,
          .textMagnifyingglassRtl,
          .textQuoteRtl,
@@ -1020,7 +1017,6 @@ public extension SFSymbol {
          .textboxJa,
          .textboxKo,
          .textboxTh,
-         .textboxZh,
          .textformat123Ar,
          .thermometerSunFill,
          .ticket,

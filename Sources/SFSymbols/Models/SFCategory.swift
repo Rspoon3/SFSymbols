@@ -30,7 +30,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable{
         }
     }
     
-    public var originalTitle: String{
+    public var plistTitle: String{
         switch self{
         case .all:
             return "all"
@@ -79,7 +79,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable{
         case .math:
             return "math"
         default:
-            return "questionmark"
+            fatalError("The should always be an plistTitle")
         }
     }
     

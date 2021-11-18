@@ -90,20 +90,13 @@ class ContentViewModel: ObservableObject{
         try array.write(to: url, atomically: true, encoding: .utf8)
     }
     
-    private func getAllSFSymbols(){
-        var staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
-        let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
-        staticVars.insert(contentsOf: "public extension SFSymbol{\n", at: i)
-        staticVars.append("\n]")
-    }
-    
     private func convertSymbolToStaticVar(_ symbol: SFSymbol) -> String{
         let camelCased = convertTitleToCamelCased(string: symbol.title)
 
         var categoriesOptionalString  = "nil"
         var searchTermsOptionalString = "nil"
 
-        if var categoriesString = symbol.categories?.map(\.originalTitle).map({".\($0)"}).joined(separator: ", "){
+        if var categoriesString = symbol.categories?.map(\.title).map({".\($0)"}).joined(separator: ", "){
             let i = categoriesString.index(categoriesString.startIndex, offsetBy: 0)
             categoriesString.insert("[", at: i)
             categoriesString.append(contentsOf: "]")
@@ -166,8 +159,9 @@ class ContentViewModel: ObservableObject{
         let url = bundle.url(forResource: "name_availability", withExtension: "plist")!
         let data = try Data(contentsOf: url)
         let info = try decoder.decode(NameAvailabilityResults.self, from: data)
+        let localizedRemovedSymbols = info.symbols.filter{!$0.title.contains(".zh")}
         
-        symbols = info.symbols
+        symbols = localizedRemovedSymbols
     }
         
     private func loadSymbolCategories() throws{
@@ -176,7 +170,10 @@ class ContentViewModel: ObservableObject{
         let dict = try decoder.decode([String: [String]].self, from: data)
         
         for (key, categoriesStringArray) in dict {
-            let index = symbols.firstIndex(where: {$0.title == key})!
+            guard let index = symbols.firstIndex(where: {$0.title == key}) else {
+                continue
+            }
+            
             for string in categoriesStringArray{
                 let category = categories.first(where: {$0.title == string})!
                                 
@@ -195,7 +192,9 @@ class ContentViewModel: ObservableObject{
         let dict = try decoder.decode([String: [String]].self, from: data)
         
         for (key, searchTermsArray) in dict {
-            let index = symbols.firstIndex(where: {$0.title == key})!
+            guard let index = symbols.firstIndex(where: {$0.title == key}) else {
+                continue
+            }
             
             for searchTerm in searchTermsArray{
                 if symbols[index].searchTerms == nil{
