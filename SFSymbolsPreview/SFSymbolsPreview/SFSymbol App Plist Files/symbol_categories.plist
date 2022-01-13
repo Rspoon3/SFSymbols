@@ -1263,6 +1263,16 @@
 	<array>
 		<string>multicolor</string>
 	</array>
+	<key>airpod.gen3.left</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>airpod.gen3.right</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
 	<key>airpod.left</key>
 	<array>
 		<string>devices</string>
@@ -1298,6 +1308,21 @@
 	<key>airpods.chargingcase.wireless.fill</key>
 	<array>
 		<string>devices</string>
+	</array>
+	<key>airpods.gen3</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>airpods.gen3.chargingcase.wireless</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>airpods.gen3.chargingcase.wireless.fill</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
 	</array>
 	<key>airpodsmax</key>
 	<array>
@@ -3079,6 +3104,31 @@
 	<array>
 		<string>devices</string>
 	</array>
+	<key>beats.fit.pro</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>beats.fit.pro.chargingcase</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>beats.fit.pro.chargingcase.fill</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>beats.fit.pro.left</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>beats.fit.pro.right</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
 	<key>beats.headphones</key>
 	<array>
 		<string>devices</string>
@@ -3368,10 +3418,6 @@
 	<key>bolt.horizontal.icloud.fill</key>
 	<array>
 		<string>connectivity</string>
-	</array>
-	<key>bolt.ring.closed</key>
-	<array>
-		<string>whatsnew</string>
 	</array>
 	<key>bolt.shield</key>
 	<array>
@@ -6293,6 +6339,10 @@
 		<string>multicolor</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>gear.badge.checkmark</key>
+	<array>
+		<string>multicolor</string>
+	</array>
 	<key>gear.badge.questionmark</key>
 	<array>
 		<string>multicolor</string>
@@ -8227,11 +8277,13 @@
 	</array>
 	<key>lungs</key>
 	<array>
+		<string>health</string>
 		<string>human</string>
 		<string>multicolor</string>
 	</array>
 	<key>lungs.fill</key>
 	<array>
+		<string>health</string>
 		<string>human</string>
 		<string>multicolor</string>
 	</array>
@@ -9659,7 +9711,6 @@
 	<key>platter.filled.bottom.and.arrow.down.iphone</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>platter.filled.bottom.applewatch.case</key>
 	<array>
@@ -9668,12 +9719,10 @@
 	<key>platter.filled.bottom.iphone</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>platter.filled.top.and.arrow.up.iphone</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>platter.filled.top.applewatch.case</key>
 	<array>
@@ -9682,7 +9731,6 @@
 	<key>platter.filled.top.iphone</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>platter.top.applewatch.case</key>
 	<array>
@@ -10296,6 +10344,10 @@
 	<array>
 		<string>human</string>
 	</array>
+	<key>rectangle.leadinghalf.filled</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
 	<key>rectangle.on.rectangle</key>
 	<array>
 		<string>gaming</string>
@@ -10372,6 +10424,10 @@
 	<key>rectangle.stack.fill.badge.plus</key>
 	<array>
 		<string>multicolor</string>
+	</array>
+	<key>rectangle.trailinghalf.filled</key>
+	<array>
+		<string>whatsnew</string>
 	</array>
 	<key>repeat</key>
 	<array>
@@ -11004,19 +11060,15 @@
 	<array>
 		<string>shapes</string>
 	</array>
-	<key>square.3.layers.3d.down.backward</key>
+	<key>square.3.layers.3d.down.left.slash</key>
 	<array>
 		<string>whatsnew</string>
 	</array>
-	<key>square.3.layers.3d.down.forward</key>
+	<key>square.3.layers.3d.down.right.slash</key>
 	<array>
 		<string>whatsnew</string>
 	</array>
-	<key>square.3.layers.3d.down.left</key>
-	<array>
-		<string>whatsnew</string>
-	</array>
-	<key>square.3.layers.3d.down.right</key>
+	<key>square.3.stack.3d.slash</key>
 	<array>
 		<string>whatsnew</string>
 	</array>
@@ -11505,22 +11557,18 @@
 	<key>text.justify.leading</key>
 	<array>
 		<string>textformatting</string>
-		<string>whatsnew</string>
 	</array>
 	<key>text.justify.left</key>
 	<array>
 		<string>textformatting</string>
-		<string>whatsnew</string>
 	</array>
 	<key>text.justify.right</key>
 	<array>
 		<string>textformatting</string>
-		<string>whatsnew</string>
 	</array>
 	<key>text.justify.trailing</key>
 	<array>
 		<string>textformatting</string>
-		<string>whatsnew</string>
 	</array>
 	<key>text.magnifyingglass</key>
 	<array>

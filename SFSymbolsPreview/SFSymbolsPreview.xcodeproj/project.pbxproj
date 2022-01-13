@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61B15AE2790D31800AE0328 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15AD2790D31800AE0328 /* categories.plist */; };
+		A61B15B02790D32100AE0328 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15AF2790D32100AE0328 /* name_availability.plist */; };
+		A61B15B22790D32A00AE0328 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15B12790D32A00AE0328 /* symbol_categories.plist */; };
+		A61B15B42790D33300AE0328 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15B32790D33300AE0328 /* symbol_search.plist */; };
 		A62F0FBD2746E1DF002EEC70 /* InitialDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FBC2746E1DF002EEC70 /* InitialDetailsView.swift */; };
 		A62F0FBF2746E240002EEC70 /* SymbolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FBE2746E240002EEC70 /* SymbolList.swift */; };
 		A62F0FC12746E2CB002EEC70 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FC02746E2CB002EEC70 /* AppTabNavigation.swift */; };
@@ -15,17 +19,17 @@
 		A6C9DAC02743277C00929796 /* SFSymbolsPreviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */; };
 		A6C9DAC42743277D00929796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAC32743277D00929796 /* Assets.xcassets */; };
 		A6C9DAC72743277D00929796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAC62743277D00929796 /* Preview Assets.xcassets */; };
-		A6C9DAD52743279C00929796 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DACD2743279B00929796 /* name_availability.plist */; };
-		A6C9DAD62743279C00929796 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DACE2743279B00929796 /* symbol_categories.plist */; };
 		A6C9DAD72743279C00929796 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DACF2743279B00929796 /* ContentViewModel.swift */; };
 		A6C9DAD82743279C00929796 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAD02743279B00929796 /* SymbolRow.swift */; };
-		A6C9DAD92743279C00929796 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAD12743279B00929796 /* symbol_search.plist */; };
-		A6C9DADA2743279C00929796 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAD22743279B00929796 /* categories.plist */; };
 		A6C9DAE02743286500929796 /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = A6C9DADF2743286500929796 /* SFSymbols */; };
 		A6C9DAE3274332F800929796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAE2274332F800929796 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A61B15AD2790D31800AE0328 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		A61B15AF2790D32100AE0328 /* name_availability.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = name_availability.plist; sourceTree = "<group>"; };
+		A61B15B12790D32A00AE0328 /* symbol_categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_categories.plist; sourceTree = "<group>"; };
+		A61B15B32790D33300AE0328 /* symbol_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_search.plist; sourceTree = "<group>"; };
 		A62F0FBC2746E1DF002EEC70 /* InitialDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDetailsView.swift; sourceTree = "<group>"; };
 		A62F0FBE2746E240002EEC70 /* SymbolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolList.swift; sourceTree = "<group>"; };
 		A62F0FC02746E2CB002EEC70 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
@@ -35,12 +39,8 @@
 		A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsPreviewApp.swift; sourceTree = "<group>"; };
 		A6C9DAC32743277D00929796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C9DAC62743277D00929796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A6C9DACD2743279B00929796 /* name_availability.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = name_availability.plist; sourceTree = "<group>"; };
-		A6C9DACE2743279B00929796 /* symbol_categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_categories.plist; sourceTree = "<group>"; };
 		A6C9DACF2743279B00929796 /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		A6C9DAD02743279B00929796 /* SymbolRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
-		A6C9DAD12743279B00929796 /* symbol_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_search.plist; sourceTree = "<group>"; };
-		A6C9DAD22743279B00929796 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
 		A6C9DADD2743285F00929796 /* SFSymbols */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SFSymbols; path = ..; sourceTree = "<group>"; };
 		A6C9DAE1274328E100929796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A6C9DAE2274332F800929796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +58,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61B15AA2790D2A900AE0328 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A62F0FC52746E414002EEC70 /* CategoriesList.swift */,
+				A6C9DAD02743279B00929796 /* SymbolRow.swift */,
+				A62F0FBE2746E240002EEC70 /* SymbolList.swift */,
+				A62F0FBC2746E1DF002EEC70 /* InitialDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A61B15AB2790D2DD00AE0328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9DACF2743279B00929796 /* ContentViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A61B15AC2790D2E600AE0328 /* SFSymbol App Plist Files */ = {
+			isa = PBXGroup;
+			children = (
+				A61B15AD2790D31800AE0328 /* categories.plist */,
+				A61B15AF2790D32100AE0328 /* name_availability.plist */,
+				A61B15B32790D33300AE0328 /* symbol_search.plist */,
+				A61B15B12790D32A00AE0328 /* symbol_categories.plist */,
+			);
+			path = "SFSymbol App Plist Files";
+			sourceTree = "<group>";
+		};
 		A62F0FC22746E327002EEC70 /* App Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,16 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				A6C9DAE1274328E100929796 /* Info.plist */,
-				A6C9DAD22743279B00929796 /* categories.plist */,
-				A6C9DACD2743279B00929796 /* name_availability.plist */,
-				A6C9DACE2743279B00929796 /* symbol_categories.plist */,
-				A6C9DAD12743279B00929796 /* symbol_search.plist */,
+				A61B15AC2790D2E600AE0328 /* SFSymbol App Plist Files */,
 				A62F0FC22746E327002EEC70 /* App Launch */,
-				A6C9DACF2743279B00929796 /* ContentViewModel.swift */,
-				A62F0FC52746E414002EEC70 /* CategoriesList.swift */,
-				A6C9DAD02743279B00929796 /* SymbolRow.swift */,
-				A62F0FBE2746E240002EEC70 /* SymbolList.swift */,
-				A62F0FBC2746E1DF002EEC70 /* InitialDetailsView.swift */,
+				A61B15AB2790D2DD00AE0328 /* Models */,
+				A61B15AA2790D2A900AE0328 /* Views */,
 				A6C9DAC32743277D00929796 /* Assets.xcassets */,
 				A6C9DAC52743277D00929796 /* Preview Content */,
 			);
@@ -183,12 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C9DAD62743279C00929796 /* symbol_categories.plist in Resources */,
+				A61B15B22790D32A00AE0328 /* symbol_categories.plist in Resources */,
 				A6C9DAC72743277D00929796 /* Preview Assets.xcassets in Resources */,
-				A6C9DADA2743279C00929796 /* categories.plist in Resources */,
-				A6C9DAD52743279C00929796 /* name_availability.plist in Resources */,
+				A61B15AE2790D31800AE0328 /* categories.plist in Resources */,
 				A6C9DAC42743277D00929796 /* Assets.xcassets in Resources */,
-				A6C9DAD92743279C00929796 /* symbol_search.plist in Resources */,
+				A61B15B42790D33300AE0328 /* symbol_search.plist in Resources */,
+				A61B15B02790D32100AE0328 /* name_availability.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

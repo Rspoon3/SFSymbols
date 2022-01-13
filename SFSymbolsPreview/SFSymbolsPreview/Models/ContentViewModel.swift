@@ -33,14 +33,16 @@ class ContentViewModel: ObservableObject{
             let symbols14P5 = symbols.filter({$0.releaseInfo.iOS == 14.5})
             let symbols15   = symbols.filter({$0.releaseInfo.iOS == 15})
             let symbols15P1 = symbols.filter({$0.releaseInfo.iOS == 15.1})
-            
+            let symbols15P2 = symbols.filter({$0.releaseInfo.iOS == 15.2})
+
             try createAllSymbolsFile(symbols: symbols13, extensionName: "All13", variableName: "allSymbols13", iOSVersion: 13)
             try createAllSymbolsFile(symbols: symbols14, extensionName: "All14", variableName: "allSymbols14", iOSVersion: 14)
             try createAllSymbolsFile(symbols: symbols14P2, extensionName: "All14P2", variableName: "allSymbols14P2", iOSVersion: 14.2)
             try createAllSymbolsFile(symbols: symbols14P5, extensionName: "All14P5", variableName: "allSymbols14P5", iOSVersion: 14.5)
             try createAllSymbolsFile(symbols: symbols15, extensionName: "All15", variableName: "allSymbols15", iOSVersion: 15)
             try createAllSymbolsFile(symbols: symbols15P1, extensionName: "All15P1", variableName: "allSymbols15P1", iOSVersion: 15.1)
-            
+            try createAllSymbolsFile(symbols: symbols15P2, extensionName: "All15P2", variableName: "allSymbols15P2", iOSVersion: 15.2)
+
             print("Finished creating the swift files. They can be found in the `Files` app.")
         } catch{
             print("ERROR: \(error)")

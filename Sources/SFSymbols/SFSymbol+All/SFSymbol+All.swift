@@ -11,6 +11,10 @@ import Foundation
 public extension SFSymbol{
     static var allSymbols: [SFSymbol]{
         
+        if #available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3,  *){
+            return SFSymbol.allSymbols13 + SFSymbol.allSymbols14 + SFSymbol.allSymbols14P2 + SFSymbol.allSymbols14P5 + SFSymbol.allSymbols15 + SFSymbol.allSymbols15P1 + SFSymbol.allSymbols15P2
+        }
+        
         if #available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1,  *){
             return SFSymbol.allSymbols13 + SFSymbol.allSymbols14 + SFSymbol.allSymbols14P2 + SFSymbol.allSymbols14P5 + SFSymbol.allSymbols15 + SFSymbol.allSymbols15P1
         }
@@ -27,11 +31,9 @@ public extension SFSymbol{
             return SFSymbol.allSymbols13 + SFSymbol.allSymbols14 + SFSymbol.allSymbols14P2
         }
         
-        
         if #available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *){
             return SFSymbol.allSymbols13 + SFSymbol.allSymbols14
         }
-        
         
         return SFSymbol.allSymbols13
     }

@@ -1808,6 +1808,18 @@ public extension SFSymbol {
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
 
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let airpodGen3Left = SFSymbol(title: "airpod.gen3.left",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: ["audio", "sound", "speaker"],
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let airpodGen3Right = SFSymbol(title: "airpod.gen3.right",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: ["audio", "sound", "speaker"],
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
     @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
     static let airpodLeft = SFSymbol(title: "airpod.left",
                                     categories: [.devices],
@@ -1861,6 +1873,24 @@ public extension SFSymbol {
                                     categories: [.devices],
                                     searchTerms: ["audio"],
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let airpodsGen3 = SFSymbol(title: "airpods.gen3",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: ["audio", "sound", "speaker"],
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let airpodsGen3ChargingcaseWireless = SFSymbol(title: "airpods.gen3.chargingcase.wireless",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: ["audio"],
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let airpodsGen3ChargingcaseWirelessFill = SFSymbol(title: "airpods.gen3.chargingcase.wireless.fill",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: ["audio"],
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     @available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
     static let airpodsmax = SFSymbol(title: "airpodsmax",
@@ -4652,6 +4682,36 @@ public extension SFSymbol {
                                     searchTerms: ["audio", "sound", "speaker"],
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
 
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let beatsFitPro = SFSymbol(title: "beats.fit.pro",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let beatsFitProChargingcase = SFSymbol(title: "beats.fit.pro.chargingcase",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let beatsFitProChargingcaseFill = SFSymbol(title: "beats.fit.pro.chargingcase.fill",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let beatsFitProLeft = SFSymbol(title: "beats.fit.pro.left",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let beatsFitProRight = SFSymbol(title: "beats.fit.pro.right",
+                                    categories: [.devices, .whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
     @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
     static let beatsHeadphones = SFSymbol(title: "beats.headphones",
                                     categories: [.devices, .objectsandtools],
@@ -5068,7 +5128,7 @@ public extension SFSymbol {
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let boltRingClosed = SFSymbol(title: "bolt.ring.closed",
-                                    categories: [.whatsnew],
+                                    categories: nil,
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
@@ -10198,7 +10258,7 @@ public extension SFSymbol {
 
     @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
     static let gearBadgeCheckmark = SFSymbol(title: "gear.badge.checkmark",
-                                    categories: nil,
+                                    categories: [.multicolor],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
 
@@ -13258,13 +13318,13 @@ public extension SFSymbol {
 
     @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
     static let lungs = SFSymbol(title: "lungs",
-                                    categories: [.human, .multicolor],
+                                    categories: [.health, .human, .multicolor],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0))
 
     @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
     static let lungsFill = SFSymbol(title: "lungs.fill",
-                                    categories: [.human, .multicolor],
+                                    categories: [.health, .human, .multicolor],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0))
 
@@ -15664,7 +15724,7 @@ public extension SFSymbol {
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let platterFilledBottomAndArrowDownIphone = SFSymbol(title: "platter.filled.bottom.and.arrow.down.iphone",
-                                    categories: [.devices, .whatsnew],
+                                    categories: [.devices],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
@@ -15676,13 +15736,13 @@ public extension SFSymbol {
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let platterFilledBottomIphone = SFSymbol(title: "platter.filled.bottom.iphone",
-                                    categories: [.devices, .whatsnew],
+                                    categories: [.devices],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let platterFilledTopAndArrowUpIphone = SFSymbol(title: "platter.filled.top.and.arrow.up.iphone",
-                                    categories: [.devices, .whatsnew],
+                                    categories: [.devices],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
@@ -15694,7 +15754,7 @@ public extension SFSymbol {
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let platterFilledTopIphone = SFSymbol(title: "platter.filled.top.iphone",
-                                    categories: [.devices, .whatsnew],
+                                    categories: [.devices],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
@@ -17144,6 +17204,12 @@ public extension SFSymbol {
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
 
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let rectangleLeadinghalfFilled = SFSymbol(title: "rectangle.leadinghalf.filled",
+                                    categories: [.whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
     @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
     static let rectangleLeadinghalfInsetFilled = SFSymbol(title: "rectangle.leadinghalf.inset.filled",
                                     categories: nil,
@@ -17785,6 +17851,12 @@ public extension SFSymbol {
                                     categories: nil,
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let rectangleTrailinghalfFilled = SFSymbol(title: "rectangle.trailinghalf.filled",
+                                    categories: [.whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
     static let rectangleTrailinghalfInsetFilled = SFSymbol(title: "rectangle.trailinghalf.inset.filled",
@@ -18988,27 +19060,39 @@ public extension SFSymbol {
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let square3Layers3DDownBackward = SFSymbol(title: "square.3.layers.3d.down.backward",
-                                    categories: [.whatsnew],
+                                    categories: nil,
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let square3Layers3DDownForward = SFSymbol(title: "square.3.layers.3d.down.forward",
-                                    categories: [.whatsnew],
+                                    categories: nil,
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let square3Layers3DDownLeft = SFSymbol(title: "square.3.layers.3d.down.left",
-                                    categories: [.whatsnew],
+                                    categories: nil,
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
-    @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-    static let square3Layers3DDownRight = SFSymbol(title: "square.3.layers.3d.down.right",
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let square3Layers3DDownLeftSlash = SFSymbol(title: "square.3.layers.3d.down.left.slash",
                                     categories: [.whatsnew],
                                     searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
+
+    @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+    static let square3Layers3DDownRight = SFSymbol(title: "square.3.layers.3d.down.right",
+                                    categories: nil,
+                                    searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let square3Layers3DDownRightSlash = SFSymbol(title: "square.3.layers.3d.down.right.slash",
+                                    categories: [.whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
     static let square3Stack3D = SFSymbol(title: "square.3.stack.3d",
@@ -19039,6 +19123,12 @@ public extension SFSymbol {
                                     categories: nil,
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0))
+
+    @available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+    static let square3Stack3DSlash = SFSymbol(title: "square.3.stack.3d.slash",
+                                    categories: [.whatsnew],
+                                    searchTerms: nil,
+                                    releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
     static let square3Stack3DTopFill = SFSymbol(title: "square.3.stack.3d.top.fill",
@@ -20578,25 +20668,25 @@ public extension SFSymbol {
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let textJustifyLeading = SFSymbol(title: "text.justify.leading",
-                                    categories: [.textformatting, .whatsnew],
+                                    categories: [.textformatting],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let textJustifyLeft = SFSymbol(title: "text.justify.left",
-                                    categories: [.textformatting, .whatsnew],
+                                    categories: [.textformatting],
                                     searchTerms: ["justify.left"],
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let textJustifyRight = SFSymbol(title: "text.justify.right",
-                                    categories: [.textformatting, .whatsnew],
+                                    categories: [.textformatting],
                                     searchTerms: ["justify.right"],
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 
     @available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
     static let textJustifyTrailing = SFSymbol(title: "text.justify.trailing",
-                                    categories: [.textformatting, .whatsnew],
+                                    categories: [.textformatting],
                                     searchTerms: nil,
                                     releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1))
 

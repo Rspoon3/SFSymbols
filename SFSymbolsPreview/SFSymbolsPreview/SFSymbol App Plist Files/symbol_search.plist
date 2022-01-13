@@ -38,6 +38,18 @@
 	<array>
 		<string>warning</string>
 	</array>
+	<key>airpod.gen3.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>airpod.gen3.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>airpod.left</key>
 	<array>
 		<string>audio</string>
@@ -81,6 +93,20 @@
 		<string>audio</string>
 	</array>
 	<key>airpods.chargingcase.wireless.fill</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen3</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>airpods.gen3.chargingcase.wireless</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen3.chargingcase.wireless.fill</key>
 	<array>
 		<string>audio</string>
 	</array>
