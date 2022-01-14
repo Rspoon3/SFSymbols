@@ -7,7 +7,7 @@
 - Added preview application
 
 ### Fixes
-- Removed iOS 15.1 limitation for allSymbos
+- Removed iOS 15.1 limitation for allSymbols
 
 ### Notes
 - New way to update this package
