@@ -21,4 +21,8 @@ extension Label where Title == Text, Icon == Image {
             }
         )
     }
+    
+    public init(_ title: String, symbol: SFSymbol, textColor: Color? = nil){
+        self.init(.init(title), symbol: symbol, textColor: textColor)
+    }
 }

@@ -1,6 +1,6 @@
 # SFSymbols
 [![Build Status](https://travis-ci.org/Nirma/SFSymbol.svg?branch=master)](https://travis-ci.org/Nirma/SFSymbol)
-![Swift 5.3](https://img.shields.io/badge/Swift-5.3-orange.svg)
+![Swift 5.5](https://img.shields.io/badge/Swift-5.5-orange.svg)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-purple.svg)](https://github.com/apple/swift-package-manager)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
@@ -9,7 +9,7 @@ All the SFSymbols at your fingertips.
 ## Usage 
 `SFSymbol` are `static variables` that contain the identifier strings of all of apple's `SFSymbols` as well as which category they belong to and their availability.
 
-You can iterate through all version compatible symbols by using the 'allSymbols' computed variables.
+You can iterate through all version compatible symbols by using the 'allSymbols' static variable.
 
 ```swift
 for symbol in SFSymbol.allSymbols {
@@ -18,16 +18,16 @@ for symbol in SFSymbol.allSymbols {
 ```
 
 
-If you want symbols only in a certain `Category` you can do so like this.
+If you want symbols only in a certain `SFCategory` you can do so like this.
 
 ```swift
-for symbol in  SFSymbol.Category.weather.symbols {
+for symbol in  SFCategory.weather.symbols {
 	print(symbol.title)
 }
 ```
 
 
-There are even common, human understandable, names for symbols. Feel free extend SFSymbols in your own project for more common names.
+There are even common, human understandable names for symbols. Feel free extend SFSymbols in your own project for more common names.
 
 ```swift
 public extension SFSymbol{
@@ -37,7 +37,7 @@ public extension SFSymbol{
     static let writing = squareAndPencil
 }
 
-@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0,  *)
+@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0, *)
 public extension SFSymbol{
     static let edit    = rectangleAndPencilAndEllipsis
     static let filter  = lineHorizontal2DecreaseCircle
@@ -114,7 +114,7 @@ and click next & finish to automagically install SFSymbol through Xcode & SPM!
 ### Manual 
 Don't want that additional third party dependency? Then just simply copy over the files into your project's appropriate folder!
 
-## Acknowledgments ##
+## Acknowledgments
 
 Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highly influence and based off of his [SFSymbol](https://github.com/Nirma/SFSymbol) package. I found that few things I would do differently and before I knew it, I had an offshoot of what he had already done that went in a different direction.
 
