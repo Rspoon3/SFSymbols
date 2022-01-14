@@ -1,4 +1,19 @@
 # Change Log
+## Version 2.0.0 (1-14-2022)
+### Additions
+- Updated for SFSymbols App Version 3.2
+- Added button role extension
+- Added a label initializer from a regular string
+- Added preview application
+
+### Fixes
+- Removed iOS 15.1 limitation for allSymbos
+
+### Notes
+- New way to update this package
+- Updated README
+
+-----
 ## Version 1.0.3 (4-22-2021)
 ### Additions
 - Category now has human readable raw values
