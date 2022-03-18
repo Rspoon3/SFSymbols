@@ -5,7 +5,7 @@
 //  Created by Richard Witherspoon on 3/18/22.
 //
 
-import Foundation
+#if canImport(UIKit)
 import UIKit
 
 extension UIAction{
@@ -44,3 +44,4 @@ extension UIAction{
                   handler: handler)
     }
 }
+#endif

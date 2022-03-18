@@ -23,6 +23,19 @@
 		A69027CE27E5208F00C5BBD8 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15B32790D33300AE0328 /* symbol_search.plist */; };
 		A69027CF27E5208F00C5BBD8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DACF2743279B00929796 /* ContentViewModel.swift */; };
 		A69027D127E520F900C5BBD8 /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = A69027D027E520F900C5BBD8 /* SFSymbols */; };
+		A69027D327E526AA00C5BBD8 /* InitialDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FBC2746E1DF002EEC70 /* InitialDetailsView.swift */; };
+		A69027D427E526AA00C5BBD8 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15AF2790D32100AE0328 /* name_availability.plist */; };
+		A69027D527E526AA00C5BBD8 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FC32746E338002EEC70 /* AppSidebarNavigation.swift */; };
+		A69027D627E526AA00C5BBD8 /* SFSymbolsPreviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */; };
+		A69027D727E526AA00C5BBD8 /* SymbolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FBE2746E240002EEC70 /* SymbolList.swift */; };
+		A69027D827E526AA00C5BBD8 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAD02743279B00929796 /* SymbolRow.swift */; };
+		A69027D927E526AA00C5BBD8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DACF2743279B00929796 /* ContentViewModel.swift */; };
+		A69027DA27E526AA00C5BBD8 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15B32790D33300AE0328 /* symbol_search.plist */; };
+		A69027DC27E526AA00C5BBD8 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15B12790D32A00AE0328 /* symbol_categories.plist */; };
+		A69027DD27E526AA00C5BBD8 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FC52746E414002EEC70 /* CategoriesList.swift */; };
+		A69027DE27E526AA00C5BBD8 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61B15AD2790D31800AE0328 /* categories.plist */; };
+		A69027DF27E526AA00C5BBD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAE2274332F800929796 /* ContentView.swift */; };
+		A69027E127E526C400C5BBD8 /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = A69027E027E526C400C5BBD8 /* SFSymbols */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69027E127E526C400C5BBD8 /* SFSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +119,6 @@
 			children = (
 				A6C9DAE2274332F800929796 /* ContentView.swift */,
 				A62F0FC32746E338002EEC70 /* AppSidebarNavigation.swift */,
-				A62F0FC02746E2CB002EEC70 /* AppTabNavigation.swift */,
 				A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */,
 			);
 			name = "App Launch";
@@ -157,6 +170,7 @@
 		A6C9DABE2743277C00929796 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A62F0FC02746E2CB002EEC70 /* AppTabNavigation.swift */,
 				A69027D227E5260500C5BBD8 /* SFSymbolsPreview--iOS--Info.plist */,
 			);
 			path = iOS;
@@ -213,6 +227,9 @@
 			dependencies = (
 			);
 			name = "SFSymbolsPreview (macOS)";
+			packageProductDependencies = (
+				A69027E027E526C400C5BBD8 /* SFSymbols */,
+			);
 			productName = "SFSymbolsPreview (macOS)";
 			productReference = A69027A227E51FF100C5BBD8 /* SFSymbolsPreview.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69027DE27E526AA00C5BBD8 /* categories.plist in Resources */,
+				A69027DC27E526AA00C5BBD8 /* symbol_categories.plist in Resources */,
+				A69027DA27E526AA00C5BBD8 /* symbol_search.plist in Resources */,
+				A69027D427E526AA00C5BBD8 /* name_availability.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69027DD27E526AA00C5BBD8 /* CategoriesList.swift in Sources */,
+				A69027D827E526AA00C5BBD8 /* SymbolRow.swift in Sources */,
+				A69027D627E526AA00C5BBD8 /* SFSymbolsPreviewApp.swift in Sources */,
+				A69027D927E526AA00C5BBD8 /* ContentViewModel.swift in Sources */,
+				A69027DF27E526AA00C5BBD8 /* ContentView.swift in Sources */,
+				A69027D727E526AA00C5BBD8 /* SymbolList.swift in Sources */,
+				A69027D527E526AA00C5BBD8 /* AppSidebarNavigation.swift in Sources */,
+				A69027D327E526AA00C5BBD8 /* InitialDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +604,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		A69027D027E520F900C5BBD8 /* SFSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SFSymbols;
+		};
+		A69027E027E526C400C5BBD8 /* SFSymbols */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SFSymbols;
 		};

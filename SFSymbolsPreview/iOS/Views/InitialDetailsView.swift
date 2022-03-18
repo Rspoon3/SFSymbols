@@ -35,7 +35,7 @@ struct InitialDetailsView: View{
             }
             .textCase(nil)
         }
-        .searchable(text: $searchText)
+        .searchable(text: $searchText, placement: .sidebar)
         .navigationTitle("Symbols")
     }
 }
