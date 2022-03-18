@@ -21,7 +21,12 @@ public extension SFSymbol{
     static let sort    = arrowUpArrowDownCircle
 }
 
-@available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0,  *)
 public extension SFSymbol{
-    static let filter = line3HorizontalDecreaseCircle
+    static var filter: SFSymbol{
+        if #available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0,  *) {
+            return line3HorizontalDecreaseCircle
+        } else {
+            return lineHorizontal3DecreaseCircle
+        }
+    }
 }
