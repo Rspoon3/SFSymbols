@@ -15,8 +15,13 @@ class ContentViewModel: ObservableObject{
     var symbols = [SFSymbol]()
     private let decoder = PropertyListDecoder()
     private let bundle = Bundle.main
-    private let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-
+    
+#if os(iOS)
+    private let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+#elseif os(macOS)
+    private var directory = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)[0]
+#endif
+    
     
     //MARK: Initializer
     init(){
@@ -25,6 +30,7 @@ class ContentViewModel: ObservableObject{
             try loadSymbols()
             try loadSymbolCategories()
             try loadSearchTerms()
+            try createMacFolder()
             try createStaticVarFile()
             
             let symbols13   = symbols.filter({$0.releaseInfo.iOS == 13})
@@ -34,7 +40,7 @@ class ContentViewModel: ObservableObject{
             let symbols15   = symbols.filter({$0.releaseInfo.iOS == 15})
             let symbols15P1 = symbols.filter({$0.releaseInfo.iOS == 15.1})
             let symbols15P2 = symbols.filter({$0.releaseInfo.iOS == 15.2})
-
+            
             try createAllSymbolsFile(symbols: symbols13, extensionName: "All13", variableName: "allSymbols13", iOSVersion: 13)
             try createAllSymbolsFile(symbols: symbols14, extensionName: "All14", variableName: "allSymbols14", iOSVersion: 14)
             try createAllSymbolsFile(symbols: symbols14P2, extensionName: "All14P2", variableName: "allSymbols14P2", iOSVersion: 14.2)
@@ -42,23 +48,34 @@ class ContentViewModel: ObservableObject{
             try createAllSymbolsFile(symbols: symbols15, extensionName: "All15", variableName: "allSymbols15", iOSVersion: 15)
             try createAllSymbolsFile(symbols: symbols15P1, extensionName: "All15P1", variableName: "allSymbols15P1", iOSVersion: 15.1)
             try createAllSymbolsFile(symbols: symbols15P2, extensionName: "All15P2", variableName: "allSymbols15P2", iOSVersion: 15.2)
-
+            
+#if os(iOS)
             print("Finished creating the swift files. They can be found in the `Files` app.")
+#elseif os(macOS)
+            print("Finished creating the swift files. They can be found your downloads folder.")
+#endif
         } catch{
             print("ERROR: \(error)")
         }
     }
-        
+    
     
     //MARK: Private Helpers
+    private func createMacFolder() throws{
+#if os(macOS)
+        let appTitle = Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String
+        directory = directory.appendingPathComponent(appTitle)
+        try FileManager.default.createDirectory(atPath: directory.path, withIntermediateDirectories: true)
+#endif
+    }
+    
     private func createStaticVarFile() throws{
         var staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
         let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
         staticVars.insert(contentsOf: "import Foundation\n\n\npublic extension SFSymbol {\n", at: i)
         staticVars.append("\n}")
         
-        let url = documentsDirectory.appendingPathComponent("SFSymbol+StaticVariables.swift")
-        
+        let url = directory.appendingPathComponent("SFSymbol+StaticVariables.swift")
         try staticVars.write(to: url, atomically: true, encoding: .utf8)
     }
     
@@ -86,18 +103,18 @@ class ContentViewModel: ObservableObject{
         let i = titles.index(titles.startIndex, offsetBy: 0)
         array.insert(contentsOf: header, at: i)
         array.append("\n   }\n}")
-                
-        let url = documentsDirectory.appendingPathComponent("SFSymbol+\(extensionName).swift")
+        
+        let url = directory.appendingPathComponent("SFSymbol+\(extensionName).swift")
         
         try array.write(to: url, atomically: true, encoding: .utf8)
     }
     
     private func convertSymbolToStaticVar(_ symbol: SFSymbol) -> String{
         let camelCased = convertTitleToCamelCased(string: symbol.title)
-
+        
         var categoriesOptionalString  = "nil"
         var searchTermsOptionalString = "nil"
-
+        
         if var categoriesString = symbol.categories?.map(\.title).map({".\($0)"}).joined(separator: ", "){
             let i = categoriesString.index(categoriesString.startIndex, offsetBy: 0)
             categoriesString.insert("[", at: i)
@@ -165,7 +182,7 @@ class ContentViewModel: ObservableObject{
         
         symbols = localizedRemovedSymbols
     }
-        
+    
     private func loadSymbolCategories() throws{
         let url = bundle.url(forResource: "symbol_categories", withExtension: "plist")!
         let data = try Data(contentsOf: url)
@@ -178,7 +195,7 @@ class ContentViewModel: ObservableObject{
             
             for string in categoriesStringArray{
                 let category = categories.first(where: {$0.title == string})!
-                                
+                
                 if symbols[index].categories == nil{
                     symbols[index].categories = [category]
                 } else {
