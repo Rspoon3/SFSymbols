@@ -48,6 +48,8 @@ class ContentViewModel: ObservableObject{
 #elseif os(macOS)
             print("Finished creating the swift files. They can be found your downloads folder.")
 #endif
+            
+            print("Don't forget to update the package 'SFSymbol+All' files.")
         } catch{
             print("ERROR: \(error)")
         }
