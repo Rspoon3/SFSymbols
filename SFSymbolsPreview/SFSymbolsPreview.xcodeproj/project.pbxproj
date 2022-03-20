@@ -52,7 +52,7 @@
 		A69027A227E51FF100C5BBD8 /* SFSymbolsPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69027A427E51FF100C5BBD8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		A69027D227E5260500C5BBD8 /* SFSymbolsPreview--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFSymbolsPreview--iOS--Info.plist"; sourceTree = "<group>"; };
-		A69027E227E52CF100C5BBD8 /* SFSymbolsPreview--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SFSymbolsPreview--macOS--Info.plist"; sourceTree = "<group>"; };
+		A69027E227E52CF100C5BBD8 /* SFSymbolsPreview--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFSymbolsPreview--macOS--Info.plist"; sourceTree = "<group>"; };
 		A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsPreviewApp.swift; sourceTree = "<group>"; };
 		A6C9DAC32743277D00929796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C9DAC62743277D00929796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -142,6 +142,7 @@
 		A69027A327E51FF100C5BBD8 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				A69027E227E52CF100C5BBD8 /* SFSymbolsPreview--macOS--Info.plist */,
 				A69027A427E51FF100C5BBD8 /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -150,7 +151,6 @@
 		A6C9DAB32743277C00929796 = {
 			isa = PBXGroup;
 			children = (
-				A69027E227E52CF100C5BBD8 /* SFSymbolsPreview--macOS--Info.plist */,
 				A6C9DADD2743285F00929796 /* SFSymbols */,
 				A690279527E51FF000C5BBD8 /* Shared */,
 				A6C9DABE2743277C00929796 /* iOS */,
@@ -413,7 +413,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SFSymbolsPreview--macOS--Info.plist";
+				INFOPLIST_FILE = "macOS/SFSymbolsPreview--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,7 +442,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SFSymbolsPreview--macOS--Info.plist";
+				INFOPLIST_FILE = "macOS/SFSymbolsPreview--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
