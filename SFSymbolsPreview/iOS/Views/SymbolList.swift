@@ -11,17 +11,35 @@ import SFSymbols
 
 struct SymbolList: View{
     let category: SFCategory
-
+    @State private var searchText = String()
+    
     init(category: SFCategory) {
         self.category = SFCategory.allCategories.first(where: {$0.plistTitle == category.title})!
     }
     
+    func searchResults()->[SFSymbol]{
+        if searchText.isEmpty{
+            return category.symbols
+        }
+        
+        return category.symbols.filter({
+            $0.title.localizedCaseInsensitiveContains(searchText) ||
+            $0.searchTerms?.contains(where: {$0.localizedCaseInsensitiveContains(searchText)}) ?? false
+        })
+    }
+    
     
     var body: some View{
-        List(category.symbols){ symbol in
+        List(searchResults()){ symbol in
             Label(symbol.title, systemImage: symbol.title)
         }
         .navigationTitle(category.title)
+        .animation(.default, value: searchText)
+#if os(iOS)
+        .searchable(text: $searchText, placement: .navigationBarDrawer)
+#elseif os(macOS)
+        .searchable(text: $searchText)
+#endif
     }
 }
 

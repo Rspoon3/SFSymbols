@@ -37,6 +37,7 @@ struct InitialDetailsView: View{
         }
         .searchable(text: $searchText, placement: .sidebar)
         .navigationTitle("Symbols")
+        .animation(.default, value: searchText)
     }
 }
 

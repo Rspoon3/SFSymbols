@@ -31,7 +31,8 @@ struct CategoriesList: View {
             }
         }
         .navigationTitle("Categories")
-        .searchable(text: $searchText, placement: .sidebar)        
+        .searchable(text: $searchText, placement: .sidebar)
+        .animation(.default, value: searchText)
     }
 }
 
