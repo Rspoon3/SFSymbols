@@ -31,23 +31,17 @@ class ContentViewModel: ObservableObject{
             try loadSymbolCategories()
             try loadSearchTerms()
             try createMacFolder()
-            try createStaticVarFile()
             
-            let symbols13   = symbols.filter({$0.releaseInfo.iOS == 13})
-            let symbols14   = symbols.filter({$0.releaseInfo.iOS == 14})
-            let symbols14P2 = symbols.filter({$0.releaseInfo.iOS == 14.2})
-            let symbols14P5 = symbols.filter({$0.releaseInfo.iOS == 14.5})
-            let symbols15   = symbols.filter({$0.releaseInfo.iOS == 15})
-            let symbols15P1 = symbols.filter({$0.releaseInfo.iOS == 15.1})
-            let symbols15P2 = symbols.filter({$0.releaseInfo.iOS == 15.2})
+            let iOSVersions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
             
-            try createAllSymbolsFile(symbols: symbols13, extensionName: "All13", variableName: "allSymbols13", iOSVersion: 13)
-            try createAllSymbolsFile(symbols: symbols14, extensionName: "All14", variableName: "allSymbols14", iOSVersion: 14)
-            try createAllSymbolsFile(symbols: symbols14P2, extensionName: "All14P2", variableName: "allSymbols14P2", iOSVersion: 14.2)
-            try createAllSymbolsFile(symbols: symbols14P5, extensionName: "All14P5", variableName: "allSymbols14P5", iOSVersion: 14.5)
-            try createAllSymbolsFile(symbols: symbols15, extensionName: "All15", variableName: "allSymbols15", iOSVersion: 15)
-            try createAllSymbolsFile(symbols: symbols15P1, extensionName: "All15P1", variableName: "allSymbols15P1", iOSVersion: 15.1)
-            try createAllSymbolsFile(symbols: symbols15P2, extensionName: "All15P2", variableName: "allSymbols15P2", iOSVersion: 15.2)
+            for version in iOSVersions {
+                let symbols = symbols.filter{$0.releaseInfo.iOS == version}
+                var fileName = version.description.replacingOccurrences(of: ".0", with: "")
+                fileName = fileName.replacingOccurrences(of: ".", with: "P")
+                
+                try createStaticVarFile(for: symbols, fileName: fileName)
+                try createAllSymbolsFile(for: symbols, fileName: fileName)
+            }
             
 #if os(iOS)
             print("Finished creating the swift files. They can be found in the `Files` app.")
@@ -69,22 +63,31 @@ class ContentViewModel: ObservableObject{
 #endif
     }
     
-    private func createStaticVarFile() throws{
-        var staticVars = symbols.map({convertSymbolToStaticVar($0)}).joined(separator: "\n\n")
+    private func createStaticVarFile(for symbols: [SFSymbol], fileName: String) throws{
+        let newestSymbol = symbols.first!
+        let header = """
+        import Foundation
+        
+        @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), *)
+        public extension SFSymbol {
+        
+        """
+        
+        var staticVars = symbols.map{convertSymbolToStaticVar($0)}.joined(separator: "\n\n")
         let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
-        staticVars.insert(contentsOf: "import Foundation\n\n\npublic extension SFSymbol {\n", at: i)
+        staticVars.insert(contentsOf: header, at: i)
         staticVars.append("\n}")
         
-        let url = directory.appendingPathComponent("SFSymbol+StaticVariables.swift")
+        let url = directory.appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
         try staticVars.write(to: url, atomically: true, encoding: .utf8)
     }
     
-    private func createAllSymbolsFile(symbols: [SFSymbol], extensionName: String, variableName: String, iOSVersion: Double) throws{
+    private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String) throws{
         let titles = symbols.map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
         
         var array = """
         \n
-            static var \(variableName): [SFSymbol] {
+            static var allSymbols\(fileName): [SFSymbol] {
                 return [\n
         """
         
@@ -92,7 +95,7 @@ class ContentViewModel: ObservableObject{
         array.append(contentsOf: "\n      ]")
         
         
-        let newestSymbol = symbols.first(where: {$0.releaseInfo.iOS == iOSVersion})!
+        let newestSymbol = symbols.first!
         let header = """
         import Foundation
         
@@ -104,7 +107,7 @@ class ContentViewModel: ObservableObject{
         array.insert(contentsOf: header, at: i)
         array.append("\n   }\n}")
         
-        let url = directory.appendingPathComponent("SFSymbol+\(extensionName).swift")
+        let url = directory.appendingPathComponent("SFSymbol+All\(fileName).swift")
         
         try array.write(to: url, atomically: true, encoding: .utf8)
     }
@@ -134,11 +137,10 @@ class ContentViewModel: ObservableObject{
         
         
         let staticVar = """
-                @available(iOS \(symbol.releaseInfo.iOS), macOS \(symbol.releaseInfo.macOS), tvOS \(symbol.releaseInfo.tvOS), watchOS \(symbol.releaseInfo.watchOS), *)
                 static let \(camelCased) = SFSymbol(title: "\(symbol.title)",
-                                                categories: \(categoriesOptionalString),
-                                                searchTerms: \(searchTermsOptionalString),
-                                                releaseInfo: ReleaseInfo(iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS)))
+                                                    categories: \(categoriesOptionalString),
+                                                    searchTerms: \(searchTermsOptionalString),
+                                                    releaseInfo: ReleaseInfo(iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS)))
             """
         
         return staticVar
