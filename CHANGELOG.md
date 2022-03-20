@@ -1,4 +1,19 @@
 # Change Log
+## Version 2.1 (3-20-2022)
+### Additions
+- Added UIAction extension
+- Created a Mac app for the preview application
+- Added better search support for preview app
+- Small README updates
+
+### Fixes
+- Removed iOS 15 limitation for filter common name
+- Now separating static vars into multiple files so Xcode doesn't crash from one giant file.
+
+### Notes
+- Simplified package updating process
+
+-----
 ## Version 2.0.0 (1-14-2022)
 ### Additions
 - Updated for SFSymbols App Version 3.2

@@ -1,6 +1,6 @@
 # SFSymbols
 [![Build Status](https://travis-ci.org/Nirma/SFSymbol.svg?branch=master)](https://travis-ci.org/Nirma/SFSymbol)
-![Swift 5.5](https://img.shields.io/badge/Swift-5.5-orange.svg)
+![Swift 5.6](https://img.shields.io/badge/Swift-5.6-orange.svg)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-purple.svg)](https://github.com/apple/swift-package-manager)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
@@ -45,7 +45,7 @@ public extension SFSymbol{
 }
 ```
 
-There are extensions for `UIImage`, `Image`, `Button`, and `Label` that enable easy use of any `SFSymbol`.
+Additionally, there are extensions multiple extension including `UIImage`, `Image`, `Button`, `Label`, and `UIAction` that enable easy use of any `SFSymbol`.
 
 
 ### UIKit
@@ -85,21 +85,17 @@ VStack{
 ```
                     
 ## About 
-SFSymbols are a real treat from apple. Apple's official list of Symbols that are available to use free of charge when writing software on any of Apple's recent platforms. There is one downfall however, it is a pain in the neck to look up exact symbol names, take for example: 
-
-`"square.and.line.vertical.and.square.fill"`
-
-That is a long string to remember and digging through the catalog of SF Symbols to find in would be quite a waste of time.
+[SFSymbols](https://developer.apple.com/sf-symbols/) are a real treat from Apple. The one downfall however, it is a pain in the neck to look up exact symbol names. Take for example: `"square.and.line.vertical.and.square.fill"`. That is a long string to remember and digging through the catalog of SF Symbols over and over gets tiresome.
 
 Wouldn't it be easier if you could just use code completion?
 
 ![](https://media.giphy.com/media/jQ7lTLsv2poo2qLkUA/giphy.gif)
 
-Thats what this super micro library aims to do.
+Thats what this micro library aims to do. Additionally, this library includes relevant information on each symbol such as  release info, category, and relevant search terms.
 
 ## Installation 
 
-### Swift Package Manager (Preferred)
+### Swift Package Manager
 Since Xcode integrated swift package manager natively into the IDE you can add SFSymbol simply by:
 
 **`File`-> `Swift Packages` -> `Add Package Dependency...`**
@@ -119,10 +115,9 @@ Don't want that additional third party dependency? Then just simply copy over th
 Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highly influence and based off of his [SFSymbol](https://github.com/Nirma/SFSymbol) package. I found that few things I would do differently and before I knew it, I had an offshoot of what he had already done that went in a different direction.
 
 ## Contributing to this project
-**Contributions are highly welcome**
 
 If there is something you wish to fix about the project, or wish to add any other kind of enhancements, propose to add to the project. Please feel free to send over a pull request 
-or open an issue for this project. Check out [SFSymbolsCreator](https://github.com/Rspoon3/SFSymbolCreator) for easily updating this project files.
+or open an issue for this project.
 
 ## License
 

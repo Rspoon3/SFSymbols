@@ -22,7 +22,7 @@ struct ContentView: View {
         }
 #else
         AppSidebarNavigation()
-            .frame(minWidth: 900, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity)
+            .frame(minWidth: 600, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
 #endif
     }
 }
