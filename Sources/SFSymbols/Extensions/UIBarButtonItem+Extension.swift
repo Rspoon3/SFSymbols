@@ -18,6 +18,7 @@ public extension UIBarButtonItem {
 
     }
     
+    @available(iOS 14.0, *)
     public convenience init(title: String? = nil, symbol: SFSymbol, primaryAction: UIAction? = nil, menu: UIMenu? = nil){
         self.init(title: title, image: UIImage(symbol: symbol), primaryAction: primaryAction, menu: menu)
     }
