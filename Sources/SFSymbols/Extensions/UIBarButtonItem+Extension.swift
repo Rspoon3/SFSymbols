@@ -8,7 +8,7 @@
 #if canImport(UIKit)
 import UIKit
 
-extension UIBarButtonItem {
+public extension UIBarButtonItem {
     public convenience init(symbol: SFSymbol, landscapeImagePhone: UIImage?, style: UIBarButtonItem.Style, target: Any?, action: Selector?){
         self.init(image: UIImage(symbol: symbol), landscapeImagePhone: landscapeImagePhone, style: style, target: target, action: action)
     }
