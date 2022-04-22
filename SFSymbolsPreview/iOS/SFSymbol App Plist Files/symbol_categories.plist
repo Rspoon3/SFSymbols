@@ -1266,12 +1266,10 @@
 	<key>airpod.gen3.left</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>airpod.gen3.right</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>airpod.left</key>
 	<array>
@@ -1312,17 +1310,14 @@
 	<key>airpods.gen3</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>airpods.gen3.chargingcase.wireless</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>airpods.gen3.chargingcase.wireless.fill</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>airpodsmax</key>
 	<array>
@@ -3107,27 +3102,22 @@
 	<key>beats.fit.pro</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>beats.fit.pro.chargingcase</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>beats.fit.pro.chargingcase.fill</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>beats.fit.pro.left</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>beats.fit.pro.right</key>
 	<array>
 		<string>devices</string>
-		<string>whatsnew</string>
 	</array>
 	<key>beats.headphones</key>
 	<array>
@@ -3824,6 +3814,18 @@
 	<array>
 		<string>editing</string>
 		<string>objectsandtools</string>
+	</array>
+	<key>camera.macro</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>camera.macro.circle</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>camera.macro.circle.fill</key>
+	<array>
+		<string>whatsnew</string>
 	</array>
 	<key>camera.on.rectangle</key>
 	<array>
@@ -5323,6 +5325,10 @@
 	<key>dot.radiowaves.up.forward</key>
 	<array>
 		<string>connectivity</string>
+	</array>
+	<key>dots.and.line.vertical.and.cursorarrow.rectangle</key>
+	<array>
+		<string>whatsnew</string>
 	</array>
 	<key>dpad</key>
 	<array>
@@ -7588,6 +7594,11 @@
 	<array>
 		<string>connectivity</string>
 	</array>
+	<key>key.viewfinder</key>
+	<array>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
 	<key>keyboard</key>
 	<array>
 		<string>devices</string>
@@ -9214,6 +9225,16 @@
 	<array>
 		<string>human</string>
 	</array>
+	<key>person.badge.key</key>
+	<array>
+		<string>human</string>
+		<string>whatsnew</string>
+	</array>
+	<key>person.badge.key.fill</key>
+	<array>
+		<string>human</string>
+		<string>whatsnew</string>
+	</array>
 	<key>person.badge.minus</key>
 	<array>
 		<string>human</string>
@@ -10344,10 +10365,6 @@
 	<array>
 		<string>human</string>
 	</array>
-	<key>rectangle.leadinghalf.filled</key>
-	<array>
-		<string>whatsnew</string>
-	</array>
 	<key>rectangle.on.rectangle</key>
 	<array>
 		<string>gaming</string>
@@ -10424,10 +10441,6 @@
 	<key>rectangle.stack.fill.badge.plus</key>
 	<array>
 		<string>multicolor</string>
-	</array>
-	<key>rectangle.trailinghalf.filled</key>
-	<array>
-		<string>whatsnew</string>
 	</array>
 	<key>repeat</key>
 	<array>
@@ -11059,18 +11072,6 @@
 	<key>square</key>
 	<array>
 		<string>shapes</string>
-	</array>
-	<key>square.3.layers.3d.down.left.slash</key>
-	<array>
-		<string>whatsnew</string>
-	</array>
-	<key>square.3.layers.3d.down.right.slash</key>
-	<array>
-		<string>whatsnew</string>
-	</array>
-	<key>square.3.stack.3d.slash</key>
-	<array>
-		<string>whatsnew</string>
 	</array>
 	<key>square.and.arrow.up.trianglebadge.exclamationmark</key>
 	<array>

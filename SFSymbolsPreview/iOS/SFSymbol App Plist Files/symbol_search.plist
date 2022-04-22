@@ -1658,6 +1658,18 @@
 	<array>
 		<string>camera.fill</string>
 	</array>
+	<key>camera.macro</key>
+	<array>
+		<string>macro</string>
+	</array>
+	<key>camera.macro.circle</key>
+	<array>
+		<string>macro</string>
+	</array>
+	<key>camera.macro.circle.fill</key>
+	<array>
+		<string>macro</string>
+	</array>
 	<key>camera.viewfinder</key>
 	<array>
 		<string>screenshot</string>
@@ -3953,6 +3965,11 @@
 		<string>passwords.fill</string>
 		<string>security</string>
 	</array>
+	<key>key.viewfinder</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
 	<key>keyboard</key>
 	<array>
 		<string>keyboard</string>
@@ -5061,6 +5078,18 @@
 	<array>
 		<string>people</string>
 		<string>time</string>
+		<string>user</string>
+	</array>
+	<key>person.badge.key</key>
+	<array>
+		<string>password</string>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.badge.key.fill</key>
+	<array>
+		<string>password</string>
+		<string>people</string>
 		<string>user</string>
 	</array>
 	<key>person.badge.minus</key>

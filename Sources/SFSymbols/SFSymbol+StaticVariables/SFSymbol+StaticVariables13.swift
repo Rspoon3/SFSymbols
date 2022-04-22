@@ -1987,11 +1987,6 @@ public extension SFSymbol {
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
-    static let arrowUturnLeftCircleBadgeEllipsis = SFSymbol(title: "arrow.uturn.left.circle.badge.ellipsis",
-                                        categories: [.arrows],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
     static let arrowUturnLeftCircleFill = SFSymbol(title: "arrow.uturn.left.circle.fill",
                                         categories: [.arrows, .multicolor],
                                         searchTerms: nil,
@@ -2224,16 +2219,6 @@ public extension SFSymbol {
 
     static let arrowtriangleUpSquareFill = SFSymbol(title: "arrowtriangle.up.square.fill",
                                         categories: [.arrows],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let aspectratio = SFSymbol(title: "aspectratio",
-                                        categories: [.editing],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let aspectratioFill = SFSymbol(title: "aspectratio.fill",
-                                        categories: [.editing],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
@@ -2802,11 +2787,6 @@ public extension SFSymbol {
                                         searchTerms: ["captions.fill"],
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
-    static let car = SFSymbol(title: "car",
-                                        categories: [.transportation],
-                                        searchTerms: ["car"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
     static let carFill = SFSymbol(title: "car.fill",
                                         categories: [.multicolor, .transportation],
                                         searchTerms: ["car.fill"],
@@ -3109,16 +3089,6 @@ public extension SFSymbol {
 
     static let circleFill = SFSymbol(title: "circle.fill",
                                         categories: [.shapes],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let circleGrid2X2 = SFSymbol(title: "circle.grid.2x2",
-                                        categories: nil,
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let circleGrid2X2Fill = SFSymbol(title: "circle.grid.2x2.fill",
-                                        categories: nil,
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
@@ -4015,26 +3985,6 @@ public extension SFSymbol {
     static let flameFill = SFSymbol(title: "flame.fill",
                                         categories: [.nature],
                                         searchTerms: ["fire"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let flashlightOffFill = SFSymbol(title: "flashlight.off.fill",
-                                        categories: [.objectsandtools],
-                                        searchTerms: ["flashlight.fill"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let flashlightOnFill = SFSymbol(title: "flashlight.on.fill",
-                                        categories: [.objectsandtools],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let flipHorizontal = SFSymbol(title: "flip.horizontal",
-                                        categories: nil,
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let flipHorizontalFill = SFSymbol(title: "flip.horizontal.fill",
-                                        categories: nil,
-                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
     static let florinsignCircle = SFSymbol(title: "florinsign.circle",
@@ -5377,16 +5327,6 @@ public extension SFSymbol {
                                         searchTerms: ["remove.map.pin"],
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
-    static let mappinCircle = SFSymbol(title: "mappin.circle",
-                                        categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["map.pin.circle"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let mappinCircleFill = SFSymbol(title: "mappin.circle.fill",
-                                        categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["map.pin.circle.fill"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
     static let mappinSlash = SFSymbol(title: "mappin.slash",
                                         categories: [.objectsandtools],
                                         searchTerms: ["remove", "remove.map.pin"],
@@ -5755,16 +5695,6 @@ public extension SFSymbol {
     static let paperclip = SFSymbol(title: "paperclip",
                                         categories: [.multicolor, .objectsandtools],
                                         searchTerms: ["attach", "attachements", "attachments", "mail"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let paperclipCircle = SFSymbol(title: "paperclip.circle",
-                                        categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["attach", "attachements.circle", "attachments"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let paperclipCircleFill = SFSymbol(title: "paperclip.circle.fill",
-                                        categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["attach", "attachements.circle.fill", "attachments"],
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
     static let paperplane = SFSymbol(title: "paperplane",
@@ -6180,16 +6110,6 @@ public extension SFSymbol {
     static let pin = SFSymbol(title: "pin",
                                         categories: [.multicolor, .objectsandtools],
                                         searchTerms: ["pin"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let pinCircle = SFSymbol(title: "pin.circle",
-                                        categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["pin", "pin.circle"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let pinCircleFill = SFSymbol(title: "pin.circle.fill",
-                                        categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["pin", "pin.circle.fill"],
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
     static let pinFill = SFSymbol(title: "pin.fill",
@@ -6832,11 +6752,6 @@ public extension SFSymbol {
                                         searchTerms: ["cut"],
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
-    static let scissorsBadgeEllipsis = SFSymbol(title: "scissors.badge.ellipsis",
-                                        categories: [.editing, .objectsandtools],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
     static let scope = SFSymbol(title: "scope",
                                         categories: nil,
                                         searchTerms: ["crosshair", "locate", "target"],
@@ -7410,11 +7325,6 @@ public extension SFSymbol {
     static let strikethrough = SFSymbol(title: "strikethrough",
                                         categories: [.multicolor, .textformatting],
                                         searchTerms: ["strike.through"],
-                                        releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
-
-    static let studentdesk = SFSymbol(title: "studentdesk",
-                                        categories: [.objectsandtools],
-                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0))
 
     static let suitClub = SFSymbol(title: "suit.club",
