@@ -1,4 +1,13 @@
 # Change Log
+## Version 2.2 (4-22-2022)
+### Additions
+- Updated for SF Symbols 3.3
+- Added additional UIKit extensions
+- Added UIBarButtonItem extension
+
+### Fixes
+- Added missing StaticVariables13P1 file
+-----
 ## Version 2.1 (3-20-2022)
 ### Additions
 - Added UIAction extension
