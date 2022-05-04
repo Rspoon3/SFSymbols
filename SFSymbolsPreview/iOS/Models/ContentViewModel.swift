@@ -139,6 +139,7 @@ class ContentViewModel: ObservableObject{
         
         
         let staticVar = """
+                /// \(symbol.title)
                 static let \(camelCased) = SFSymbol(title: "\(symbol.title)",
                                                     categories: \(categoriesOptionalString),
                                                     searchTerms: \(searchTermsOptionalString),
