@@ -70,7 +70,7 @@ class ContentViewModel: ObservableObject{
     private func createStaticVarFile(for categories: [SFCategory]) throws {
         let staticVars = categories.map { category in
             """
-            public static let \(category.plistTitle.lowercased())  = SFCategory(icon: "\(category.icon)", title: "\(category.title)", plistTitle: "\(category.plistTitle)")
+            public static let \(category.plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)", plistTitle: "\(category.plistTitle)")
             """
         }.joined(separator: "\n")
         
