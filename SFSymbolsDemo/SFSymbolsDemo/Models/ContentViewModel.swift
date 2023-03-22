@@ -150,12 +150,17 @@ class ContentViewModel: ObservableObject{
             searchTermsOptionalString = searchTermsString
         }
         
+        let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS)"
         
         let staticVar = """
-                static let \(camelCased) = SFSymbol(title: "\(symbol.title)",
-                                                    categories: \(categoriesOptionalString),
-                                                    searchTerms: \(searchTermsOptionalString),
-                                                    releaseInfo: ReleaseInfo(iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS)))
+                /// \(symbol.title)
+                /// - Since: \(releaseString)
+                static let \(camelCased) = SFSymbol(
+                    title: "\(symbol.title)",
+                    categories: \(categoriesOptionalString),
+                    searchTerms: \(searchTermsOptionalString),
+                    releaseInfo: ReleaseInfo(\(releaseString))
+                )
             """
         
         return staticVar
