@@ -4,7 +4,7 @@
 //
 //  Created by Richard Witherspoon on 11/18/21.
 //
-
+#if os(iOS)
 import SwiftUI
 import SFSymbols
 
@@ -49,3 +49,4 @@ struct AppTabNavigation_Previews: PreviewProvider {
         AppTabNavigation()
     }
 }
+#endif
