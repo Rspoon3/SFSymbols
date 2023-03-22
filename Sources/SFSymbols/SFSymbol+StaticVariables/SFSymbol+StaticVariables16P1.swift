@@ -28,19 +28,23 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1))
 
     static let number1CircleAr = SFSymbol(title: "1.circle.ar",
-                                        categories: [.indices, .whatsnew],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1))
-
-    static let number1CircleFillAr = SFSymbol(title: "1.circle.fill.ar",
-                                        categories: [.indices, .multicolor, .whatsnew],
-                                        searchTerms: nil,
-                                        releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1))
-
-    static let number1Lane = SFSymbol(title: "1.lane",
-                                        categories: [.fitness, .whatsnew],
-                                        searchTerms: ["running", "sports"],
-                                        releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1))
+                                          categories: [.indices, .whatsnew],
+                                          searchTerms: nil,
+                                          releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1))
+    
+    static let number1CircleFillAr = SFSymbol(
+        title: "1.circle.fill.ar",
+        categories: [.indices, .multicolor, .whatsnew],
+        searchTerms: nil,
+        releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1)
+    )
+    
+    static let number1Lane = SFSymbol(
+        title: "1.lane",
+        categories: [.fitness, .whatsnew],
+        searchTerms: ["running", "sports"],
+        releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1)
+    )
 
     static let number1SquareAr = SFSymbol(title: "1.square.ar",
                                         categories: [.indices, .whatsnew],

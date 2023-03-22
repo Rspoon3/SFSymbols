@@ -24,7 +24,7 @@ public struct NameAvailabilityResults: Codable{
         let yearToRelease = try values.decode([String: ReleaseInfo].self, forKey: .yearToRelease)
         
         self.yearToRelease = yearToRelease
-        symbols = symbolsDict.map{
+        symbols = symbolsDict.map {
             SFSymbol(title: $0.key, releaseInfo: yearToRelease[$0.value]!)
         }.sorted(by: {$0.title < $1.title})
     }
