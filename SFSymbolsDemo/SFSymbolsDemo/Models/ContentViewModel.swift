@@ -12,7 +12,8 @@ import SFSymbols
 class ContentViewModel: ObservableObject{
     @Published var categories = [SFCategory]()
     
-    var symbols = [SFSymbol]()
+    private(set) var symbols = [SFSymbol]()
+    private var categoriesPlistDict: [String: String] = [:]
     private let decoder = PropertyListDecoder()
     private let bundle = Bundle.main
     
@@ -69,8 +70,10 @@ class ContentViewModel: ObservableObject{
     
     private func createStaticVarFile(for categories: [SFCategory]) throws {
         let staticVars = categories.map { category in
-            """
-            public static let \(category.plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)", plistTitle: "\(category.plistTitle)")
+            let plistTitle = categoriesPlistDict[category.title]!
+            
+            return """
+            public static let \(plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)", plistTitle: "\(plistTitle)")
             """
         }.joined(separator: "\n")
         
@@ -133,7 +136,7 @@ class ContentViewModel: ObservableObject{
         var categoriesOptionalString  = "nil"
         var searchTermsOptionalString = "nil"
         
-        if var categoriesString = symbol.categories?.map(\.plistTitle).map({".\($0)"}).joined(separator: ", "){
+        if var categoriesString = symbol.categories?.map({ categoriesPlistDict[$0.title] }).map({".\($0!)"}).joined(separator: ", "){
             let i = categoriesString.index(categoriesString.startIndex, offsetBy: 0)
             categoriesString.insert("[", at: i)
             categoriesString.append(contentsOf: "]")
@@ -194,6 +197,12 @@ class ContentViewModel: ObservableObject{
         let data = try! Data(contentsOf: url)
         
         categories = try decoder.decode([SFCategory].self, from: data)
+        
+        let plists = try decoder.decode([Plist].self, from: data)
+
+        for plist in plists {
+            categoriesPlistDict[plist.label] = plist.key
+        }
     }
     
     private func loadSymbols() throws {
@@ -216,9 +225,9 @@ class ContentViewModel: ObservableObject{
             }
             
             for string in categoriesStringArray {
-                let category = categories.first(where: {$0.plistTitle == string})!
+                let category = categories.first(where: {categoriesPlistDict[$0.title] == string})!
                 
-                if symbols[index].categories == nil{
+                if symbols[index].categories == nil {
                     symbols[index].categories = [category]
                 } else {
                     symbols[index].categories?.append(category)
@@ -246,4 +255,11 @@ class ContentViewModel: ObservableObject{
             }
         }
     }
+}
+
+
+
+fileprivate struct Plist: Decodable {
+    let key: String
+    let label: String
 }
