@@ -32,6 +32,8 @@ class ContentViewModel: ObservableObject{
             try loadSearchTerms()
             try createMacFolder()
             
+            try createStaticVarFile(for: categories)
+            
             let iOSVersions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
             
             for version in iOSVersions {
@@ -65,7 +67,18 @@ class ContentViewModel: ObservableObject{
 #endif
     }
     
-    private func createStaticVarFile(for symbols: [SFSymbol], fileName: String) throws{
+    private func createStaticVarFile(for categories: [SFCategory]) throws {
+        let staticVars = categories.map { category in
+            """
+            public static let \(category.plistTitle.lowercased())  = SFCategory(icon: "\(category.icon)", title: "\(category.title)", plistTitle: "\(category.plistTitle)")
+            """
+        }.joined(separator: "\n")
+        
+        let url = directory.appendingPathComponent("SFCategory.swift")
+        try staticVars.write(to: url, atomically: true, encoding: .utf8)
+    }
+    
+    private func createStaticVarFile(for symbols: [SFSymbol], fileName: String) throws {
         let newestSymbol = symbols.first!
         let header = """
         import Foundation
@@ -84,7 +97,7 @@ class ContentViewModel: ObservableObject{
         try staticVars.write(to: url, atomically: true, encoding: .utf8)
     }
     
-    private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String) throws{
+    private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String) throws {
         let titles = symbols.map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
         
         var array = """
@@ -114,13 +127,13 @@ class ContentViewModel: ObservableObject{
         try array.write(to: url, atomically: true, encoding: .utf8)
     }
     
-    private func convertSymbolToStaticVar(_ symbol: SFSymbol) -> String{
+    private func convertSymbolToStaticVar(_ symbol: SFSymbol) -> String {
         let camelCased = convertTitleToCamelCased(string: symbol.title)
         
         var categoriesOptionalString  = "nil"
         var searchTermsOptionalString = "nil"
         
-        if var categoriesString = symbol.categories?.map(\.title).map({".\($0)"}).joined(separator: ", "){
+        if var categoriesString = symbol.categories?.map(\.plistTitle).map({".\($0)"}).joined(separator: ", "){
             let i = categoriesString.index(categoriesString.startIndex, offsetBy: 0)
             categoriesString.insert("[", at: i)
             categoriesString.append(contentsOf: "]")
@@ -148,7 +161,7 @@ class ContentViewModel: ObservableObject{
         return staticVar
     }
     
-    private func convertTitleToCamelCased(string: String)->String{
+    private func convertTitleToCamelCased(string: String) -> String {
         var camelCased = string
             .split(separator: ".")  // split to components
             .map { String($0) }   // convert subsequences to String
@@ -171,14 +184,14 @@ class ContentViewModel: ObservableObject{
         return camelCased
     }
     
-    private func loadCategories() throws{
+    private func loadCategories() throws {
         let url = bundle.url(forResource: "categories", withExtension: "plist")!
         let data = try! Data(contentsOf: url)
         
         categories = try decoder.decode([SFCategory].self, from: data)
     }
     
-    private func loadSymbols() throws{
+    private func loadSymbols() throws {
         let url = bundle.url(forResource: "name_availability", withExtension: "plist")!
         let data = try Data(contentsOf: url)
         let info = try decoder.decode(NameAvailabilityResults.self, from: data)
@@ -187,7 +200,7 @@ class ContentViewModel: ObservableObject{
         symbols = localizedRemovedSymbols
     }
     
-    private func loadSymbolCategories() throws{
+    private func loadSymbolCategories() throws {
         let url = bundle.url(forResource: "symbol_categories", withExtension: "plist")!
         let data = try Data(contentsOf: url)
         let dict = try decoder.decode([String: [String]].self, from: data)
@@ -197,8 +210,8 @@ class ContentViewModel: ObservableObject{
                 continue
             }
             
-            for string in categoriesStringArray{
-                let category = categories.first(where: {$0.title == string})!
+            for string in categoriesStringArray {
+                let category = categories.first(where: {$0.plistTitle == string})!
                 
                 if symbols[index].categories == nil{
                     symbols[index].categories = [category]
@@ -209,7 +222,7 @@ class ContentViewModel: ObservableObject{
         }
     }
     
-    private func loadSearchTerms() throws{
+    private func loadSearchTerms() throws {
         let url = bundle.url(forResource: "symbol_search", withExtension: "plist")!
         let data = try Data(contentsOf: url)
         let dict = try decoder.decode([String: [String]].self, from: data)

@@ -27,7 +27,7 @@ struct CategoriesList: View {
     var body: some View {
         List(searchResults){ category in
             NavigationLink(destination: SymbolList(category: category)) {
-                Label(.init(category.title), systemImage: category.icon)
+                Label(category.title, systemImage: category.icon)
             }
         }
         .navigationTitle("Categories")

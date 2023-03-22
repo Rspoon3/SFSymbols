@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9428E1DA29CAABA500AC7180 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D629CAABA500AC7180 /* name_availability.plist */; };
+		9428E1DB29CAABA500AC7180 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D629CAABA500AC7180 /* name_availability.plist */; };
+		9428E1DC29CAABA500AC7180 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D729CAABA500AC7180 /* symbol_categories.plist */; };
+		9428E1DD29CAABA500AC7180 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D729CAABA500AC7180 /* symbol_categories.plist */; };
+		9428E1DE29CAABA500AC7180 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D829CAABA500AC7180 /* categories.plist */; };
+		9428E1DF29CAABA500AC7180 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D829CAABA500AC7180 /* categories.plist */; };
+		9428E1E029CAABA500AC7180 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D929CAABA500AC7180 /* symbol_search.plist */; };
+		9428E1E129CAABA500AC7180 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9428E1D929CAABA500AC7180 /* symbol_search.plist */; };
 		A69027C127E5208F00C5BBD8 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FC52746E414002EEC70 /* CategoriesList.swift */; };
 		A69027C227E5208F00C5BBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAC32743277D00929796 /* Assets.xcassets */; };
 		A69027C327E5208F00C5BBD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C9DAC62743277D00929796 /* Preview Assets.xcassets */; };
@@ -28,17 +36,13 @@
 		A69027DD27E526AA00C5BBD8 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F0FC52746E414002EEC70 /* CategoriesList.swift */; };
 		A69027DF27E526AA00C5BBD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9DAE2274332F800929796 /* ContentView.swift */; };
 		A69027E127E526C400C5BBD8 /* SFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = A69027E027E526C400C5BBD8 /* SFSymbols */; };
-		A6BE5D5E28130625009B96D6 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D5D28130625009B96D6 /* categories.plist */; };
-		A6BE5D5F28130625009B96D6 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D5D28130625009B96D6 /* categories.plist */; };
-		A6BE5D612813062F009B96D6 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D602813062F009B96D6 /* name_availability.plist */; };
-		A6BE5D622813062F009B96D6 /* name_availability.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D602813062F009B96D6 /* name_availability.plist */; };
-		A6BE5D642813063C009B96D6 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D632813063C009B96D6 /* symbol_search.plist */; };
-		A6BE5D652813063C009B96D6 /* symbol_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D632813063C009B96D6 /* symbol_search.plist */; };
-		A6BE5D6728130645009B96D6 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D6628130645009B96D6 /* symbol_categories.plist */; };
-		A6BE5D6828130645009B96D6 /* symbol_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE5D6628130645009B96D6 /* symbol_categories.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9428E1D629CAABA500AC7180 /* name_availability.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = name_availability.plist; sourceTree = "<group>"; };
+		9428E1D729CAABA500AC7180 /* symbol_categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_categories.plist; sourceTree = "<group>"; };
+		9428E1D829CAABA500AC7180 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		9428E1D929CAABA500AC7180 /* symbol_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_search.plist; sourceTree = "<group>"; };
 		A62F0FBC2746E1DF002EEC70 /* InitialDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDetailsView.swift; sourceTree = "<group>"; };
 		A62F0FBE2746E240002EEC70 /* SymbolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolList.swift; sourceTree = "<group>"; };
 		A62F0FC02746E2CB002EEC70 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
@@ -49,10 +53,6 @@
 		A69027A427E51FF100C5BBD8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		A69027D227E5260500C5BBD8 /* SFSymbolsPreview--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFSymbolsPreview--iOS--Info.plist"; sourceTree = "<group>"; };
 		A69027E227E52CF100C5BBD8 /* SFSymbolsPreview--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFSymbolsPreview--macOS--Info.plist"; sourceTree = "<group>"; };
-		A6BE5D5D28130625009B96D6 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
-		A6BE5D602813062F009B96D6 /* name_availability.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = name_availability.plist; sourceTree = "<group>"; };
-		A6BE5D632813063C009B96D6 /* symbol_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_search.plist; sourceTree = "<group>"; };
-		A6BE5D6628130645009B96D6 /* symbol_categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symbol_categories.plist; sourceTree = "<group>"; };
 		A6C9DABF2743277C00929796 /* SFSymbolsPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsPreviewApp.swift; sourceTree = "<group>"; };
 		A6C9DAC32743277D00929796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C9DAC62743277D00929796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 		A61B15AC2790D2E600AE0328 /* SFSymbol App Plist Files */ = {
 			isa = PBXGroup;
 			children = (
-				A6BE5D5D28130625009B96D6 /* categories.plist */,
-				A6BE5D602813062F009B96D6 /* name_availability.plist */,
-				A6BE5D632813063C009B96D6 /* symbol_search.plist */,
-				A6BE5D6628130645009B96D6 /* symbol_categories.plist */,
+				9428E1D829CAABA500AC7180 /* categories.plist */,
+				9428E1D629CAABA500AC7180 /* name_availability.plist */,
+				9428E1D729CAABA500AC7180 /* symbol_categories.plist */,
+				9428E1D929CAABA500AC7180 /* symbol_search.plist */,
 			);
 			name = "SFSymbol App Plist Files";
 			path = "../iOS/SFSymbol App Plist Files";
@@ -244,7 +244,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					A690279C27E51FF100C5BBD8 = {
 						CreatedOnToolsVersion = 13.3;
@@ -278,11 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BE5D6728130645009B96D6 /* symbol_categories.plist in Resources */,
 				A69027C327E5208F00C5BBD8 /* Preview Assets.xcassets in Resources */,
-				A6BE5D5E28130625009B96D6 /* categories.plist in Resources */,
-				A6BE5D612813062F009B96D6 /* name_availability.plist in Resources */,
-				A6BE5D642813063C009B96D6 /* symbol_search.plist in Resources */,
+				9428E1E029CAABA500AC7180 /* symbol_search.plist in Resources */,
+				9428E1DC29CAABA500AC7180 /* symbol_categories.plist in Resources */,
+				9428E1DE29CAABA500AC7180 /* categories.plist in Resources */,
+				9428E1DA29CAABA500AC7180 /* name_availability.plist in Resources */,
 				A69027C227E5208F00C5BBD8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,10 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BE5D6828130645009B96D6 /* symbol_categories.plist in Resources */,
-				A6BE5D652813063C009B96D6 /* symbol_search.plist in Resources */,
-				A6BE5D622813062F009B96D6 /* name_availability.plist in Resources */,
-				A6BE5D5F28130625009B96D6 /* categories.plist in Resources */,
+				9428E1E129CAABA500AC7180 /* symbol_search.plist in Resources */,
+				9428E1DD29CAABA500AC7180 /* symbol_categories.plist in Resources */,
+				9428E1DB29CAABA500AC7180 /* name_availability.plist in Resources */,
+				9428E1DF29CAABA500AC7180 /* categories.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = SBS8ZBXB9U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -440,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = SBS8ZBXB9U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

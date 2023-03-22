@@ -23,17 +23,17 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4))
 
     static let characterBubbleFill = SFSymbol(title: "character.bubble.fill",
-                                        categories: [.communication],
+                                        categories: [.communication, .multicolor],
                                         searchTerms: ["a"],
                                         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4))
 
     static let characterBubbleFillAr = SFSymbol(title: "character.bubble.fill.ar",
-                                        categories: [.communication],
+                                        categories: [.communication, .multicolor],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4))
 
     static let characterBubbleFillHe = SFSymbol(title: "character.bubble.fill.he",
-                                        categories: [.communication],
+                                        categories: [.communication, .multicolor],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4))
 
@@ -44,7 +44,7 @@ public extension SFSymbol {
 
     static let characterCursorIbeam = SFSymbol(title: "character.cursor.ibeam",
                                         categories: [.textformatting],
-                                        searchTerms: ["a", "insert.text"],
+                                        searchTerms: ["a"],
                                         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4))
 
     static let characterCursorIbeamAr = SFSymbol(title: "character.cursor.ibeam.ar",
@@ -79,7 +79,7 @@ public extension SFSymbol {
 
     static let characterTextbox = SFSymbol(title: "character.textbox",
                                         categories: [.textformatting],
-                                        searchTerms: ["a", "insert.textbox"],
+                                        searchTerms: ["a"],
                                         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4))
 
     static let characterTextboxAr = SFSymbol(title: "character.textbox.ar",

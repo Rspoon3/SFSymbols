@@ -29,27 +29,27 @@ public extension SFSymbol {
 
     static let beatsFitPro = SFSymbol(title: "beats.fit.pro",
                                         categories: [.devices],
-                                        searchTerms: nil,
+                                        searchTerms: ["audio", "sound", "speaker"],
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let beatsFitProChargingcase = SFSymbol(title: "beats.fit.pro.chargingcase",
                                         categories: [.devices],
-                                        searchTerms: nil,
+                                        searchTerms: ["audio", "sound", "speaker"],
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let beatsFitProChargingcaseFill = SFSymbol(title: "beats.fit.pro.chargingcase.fill",
                                         categories: [.devices],
-                                        searchTerms: nil,
+                                        searchTerms: ["audio", "sound", "speaker"],
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let beatsFitProLeft = SFSymbol(title: "beats.fit.pro.left",
                                         categories: [.devices],
-                                        searchTerms: nil,
+                                        searchTerms: ["audio", "sound", "speaker"],
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let beatsFitProRight = SFSymbol(title: "beats.fit.pro.right",
                                         categories: [.devices],
-                                        searchTerms: nil,
+                                        searchTerms: ["audio", "sound", "speaker"],
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let rectangleLeadinghalfFilled = SFSymbol(title: "rectangle.leadinghalf.filled",
@@ -63,12 +63,12 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let square3Layers3DDownLeftSlash = SFSymbol(title: "square.3.layers.3d.down.left.slash",
-                                        categories: nil,
+                                        categories: [.cameraandphotos],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 
     static let square3Layers3DDownRightSlash = SFSymbol(title: "square.3.layers.3d.down.right.slash",
-                                        categories: nil,
+                                        categories: [.cameraandphotos],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3))
 

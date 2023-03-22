@@ -9,16 +9,12 @@ import SwiftUI
 import SFSymbols
 
 
-struct SymbolList: View{
+struct SymbolList: View {
     let category: SFCategory
     @State private var searchText = String()
     
-    init(category: SFCategory) {
-        self.category = SFCategory.allCategories.first(where: {$0.plistTitle == category.title})!
-    }
-    
     func searchResults()->[SFSymbol]{
-        if searchText.isEmpty{
+        if searchText.isEmpty {
             return category.symbols
         }
         

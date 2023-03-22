@@ -3,17 +3,17 @@ import Foundation
 @available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 public extension SFSymbol {
     static let aqiHigh = SFSymbol(title: "aqi.high",
-                                        categories: [.multicolor, .weather],
-                                        searchTerms: ["weather"],
+                                        categories: [.multicolor, .variablecolor, .weather],
+                                        searchTerms: ["!", "warning", "weather"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let aqiLow = SFSymbol(title: "aqi.low",
-                                        categories: [.weather],
+                                        categories: [.multicolor, .variablecolor, .weather],
                                         searchTerms: ["weather"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let aqiMedium = SFSymbol(title: "aqi.medium",
-                                        categories: [.weather],
+                                        categories: [.multicolor, .variablecolor, .weather],
                                         searchTerms: ["weather"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
@@ -38,13 +38,13 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let cartCircle = SFSymbol(title: "cart.circle",
-                                        categories: [.commerce],
-                                        searchTerms: ["shopping.cart.circle"],
+                                        categories: [.commerce, .objectsandtools],
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let cartCircleFill = SFSymbol(title: "cart.circle.fill",
-                                        categories: [.commerce, .multicolor],
-                                        searchTerms: ["shopping.cart.circle.fill"],
+                                        categories: [.commerce, .multicolor, .objectsandtools],
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let character = SFSymbol(title: "character",
@@ -188,37 +188,37 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let ipadBadgePlay = SFSymbol(title: "ipad.badge.play",
-                                        categories: [.devices],
+                                        categories: [.devices, .multicolor],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let ipadHomebuttonBadgePlay = SFSymbol(title: "ipad.homebutton.badge.play",
-                                        categories: [.devices],
+                                        categories: nil,
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let ipadHomebuttonLandscapeBadgePlay = SFSymbol(title: "ipad.homebutton.landscape.badge.play",
-                                        categories: [.devices],
+                                        categories: nil,
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let ipadLandscapeBadgePlay = SFSymbol(title: "ipad.landscape.badge.play",
-                                        categories: [.devices],
+                                        categories: [.devices, .multicolor],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let iphoneBadgePlay = SFSymbol(title: "iphone.badge.play",
-                                        categories: [.devices],
+                                        categories: [.devices, .multicolor],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let iphoneHomebuttonBadgePlay = SFSymbol(title: "iphone.homebutton.badge.play",
-                                        categories: [.devices],
-                                        searchTerms: ["keynote.remote"],
+                                        categories: nil,
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let iphoneHomebuttonLandscape = SFSymbol(title: "iphone.homebutton.landscape",
-                                        categories: [.devices],
+                                        categories: nil,
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
@@ -233,13 +233,13 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let lockApplewatch = SFSymbol(title: "lock.applewatch",
-                                        categories: [.devices],
-                                        searchTerms: nil,
+                                        categories: [.devices, .privacyandsecurity],
+                                        searchTerms: ["padlock", "password", "security"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let photoTv = SFSymbol(title: "photo.tv",
                                         categories: [.devices],
-                                        searchTerms: nil,
+                                        searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let playTv = SFSymbol(title: "play.tv",
@@ -248,17 +248,17 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let playTvFill = SFSymbol(title: "play.tv.fill",
-                                        categories: [.devices],
+                                        categories: [.devices, .multicolor],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let rectangleBadgePersonCrop = SFSymbol(title: "rectangle.badge.person.crop",
-                                        categories: [.human],
+                                        categories: [.human, .multicolor],
                                         searchTerms: ["people"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let rectangleFillBadgePersonCrop = SFSymbol(title: "rectangle.fill.badge.person.crop",
-                                        categories: [.human],
+                                        categories: [.human, .multicolor],
                                         searchTerms: ["people"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
@@ -303,112 +303,112 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textBelowPhotoFillRtl = SFSymbol(title: "text.below.photo.fill.rtl",
-                                        categories: nil,
-                                        searchTerms: ["environment", "image", "mountain", "place", "sun"],
+                                        categories: [.cameraandphotos],
+                                        searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textBelowPhotoRtl = SFSymbol(title: "text.below.photo.rtl",
-                                        categories: nil,
-                                        searchTerms: ["environment", "image", "mountain", "place", "sun"],
+                                        categories: [.cameraandphotos],
+                                        searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeAr = SFSymbol(title: "textformat.size.ar",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeHe = SFSymbol(title: "textformat.size.he",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeHi = SFSymbol(title: "textformat.size.hi",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeJa = SFSymbol(title: "textformat.size.ja",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeKo = SFSymbol(title: "textformat.size.ko",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLarger = SFSymbol(title: "textformat.size.larger",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLargerAr = SFSymbol(title: "textformat.size.larger.ar",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLargerHe = SFSymbol(title: "textformat.size.larger.he",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLargerHi = SFSymbol(title: "textformat.size.larger.hi",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLargerJa = SFSymbol(title: "textformat.size.larger.ja",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLargerKo = SFSymbol(title: "textformat.size.larger.ko",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeLargerTh = SFSymbol(title: "textformat.size.larger.th",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmaller = SFSymbol(title: "textformat.size.smaller",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmallerAr = SFSymbol(title: "textformat.size.smaller.ar",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmallerHe = SFSymbol(title: "textformat.size.smaller.he",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmallerHi = SFSymbol(title: "textformat.size.smaller.hi",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmallerJa = SFSymbol(title: "textformat.size.smaller.ja",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmallerKo = SFSymbol(title: "textformat.size.smaller.ko",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeSmallerTh = SFSymbol(title: "textformat.size.smaller.th",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 
     static let textformatSizeTh = SFSymbol(title: "textformat.size.th",
-                                        categories: [.textformatting],
+                                        categories: [.accessibility, .textformatting],
                                         searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1))
 

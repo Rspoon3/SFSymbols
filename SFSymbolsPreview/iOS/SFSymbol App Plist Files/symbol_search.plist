@@ -2,37 +2,73 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>1.magnifyingglass</key>
+	<key>1.lane</key>
 	<array>
-		<string>zoom.to.actual.size</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>10.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>11.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>12.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>2.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>3.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>4.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>5.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>6.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>7.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>8.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>9.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
 	</array>
 	<key>a.magnify</key>
 	<array>
 		<string>a</string>
 	</array>
-	<key>airplane</key>
-	<array>
-		<string>airplane.mode</string>
-	</array>
-	<key>airplane.circle</key>
-	<array>
-		<string>airplane.mode.circle</string>
-	</array>
-	<key>airplane.circle.fill</key>
-	<array>
-		<string>airplane.mode.circle.fill</string>
-	</array>
-	<key>airplayaudio</key>
-	<array>
-		<string>airplay.audio</string>
-	</array>
 	<key>airplayaudio.badge.exclamationmark</key>
 	<array>
 		<string>warning</string>
-	</array>
-	<key>airplayvideo</key>
-	<array>
-		<string>airplay.video</string>
 	</array>
 	<key>airplayvideo.badge.exclamationmark</key>
 	<array>
@@ -171,7 +207,14 @@
 	<key>alarm.fill</key>
 	<array>
 		<string>alarm</string>
-		<string>alarm.fill</string>
+	</array>
+	<key>alarm.waves.left.and.right</key>
+	<array>
+		<string>alarm</string>
+	</array>
+	<key>alarm.waves.left.and.right.fill</key>
+	<array>
+		<string>alarm</string>
 	</array>
 	<key>align.horizontal.center</key>
 	<array>
@@ -235,36 +278,41 @@
 	</array>
 	<key>allergens</key>
 	<array>
+		<string>COVID</string>
+		<string>exposure</string>
 		<string>medical</string>
+		<string>virus</string>
+	</array>
+	<key>allergens.fill</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>virus</string>
 	</array>
 	<key>ant</key>
 	<array>
 		<string>bug</string>
 		<string>radar</string>
-		<string>report.issue</string>
 	</array>
 	<key>ant.circle</key>
 	<array>
 		<string>bug</string>
 		<string>radar</string>
-		<string>report.issue.circle</string>
 	</array>
 	<key>ant.circle.fill</key>
 	<array>
 		<string>bug</string>
 		<string>radar</string>
-		<string>report.issue.circle.fill</string>
 	</array>
 	<key>ant.fill</key>
 	<array>
 		<string>bug</string>
 		<string>radar</string>
-		<string>report.issue.fill</string>
 	</array>
 	<key>antenna.radiowaves.left.and.right</key>
 	<array>
 		<string>cellular</string>
-		<string>cellular.data</string>
 		<string>lte</string>
 	</array>
 	<key>antenna.radiowaves.left.and.right.circle</key>
@@ -283,26 +331,10 @@
 		<string>lte</string>
 		<string>remove</string>
 	</array>
-	<key>app.badge</key>
-	<array>
-		<string>notifications</string>
-	</array>
-	<key>app.badge.fill</key>
-	<array>
-		<string>notifications.fill</string>
-	</array>
 	<key>app.connected.to.app.below.fill</key>
 	<array>
 		<string>activities</string>
 		<string>path</string>
-	</array>
-	<key>app.gift</key>
-	<array>
-		<string>gift</string>
-	</array>
-	<key>app.gift.fill</key>
-	<array>
-		<string>gift.fill</string>
 	</array>
 	<key>applewatch.slash</key>
 	<array>
@@ -314,6 +346,8 @@
 	</array>
 	<key>aqi.high</key>
 	<array>
+		<string>!</string>
+		<string>warning</string>
 		<string>weather</string>
 	</array>
 	<key>aqi.low</key>
@@ -332,22 +366,15 @@
 	<key>archivebox.circle</key>
 	<array>
 		<string>archive</string>
-		<string>archive.circle</string>
 	</array>
 	<key>archivebox.circle.fill</key>
 	<array>
 		<string>archive</string>
-		<string>archive.circle.fill</string>
 	</array>
 	<key>archivebox.fill</key>
 	<array>
 		<string>archive</string>
-		<string>archive.fill</string>
 		<string>mail</string>
-	</array>
-	<key>arkit</key>
-	<array>
-		<string>ar</string>
 	</array>
 	<key>arrow.3.trianglepath</key>
 	<array>
@@ -385,17 +412,19 @@
 	<key>arrow.clockwise.circle</key>
 	<array>
 		<string>refresh</string>
-		<string>refresh.circle</string>
 	</array>
 	<key>arrow.clockwise.circle.fill</key>
 	<array>
 		<string>refresh</string>
-		<string>refresh.circle.fill</string>
 	</array>
 	<key>arrow.down</key>
 	<array>
 		<string>download</string>
 		<string>downloads</string>
+	</array>
+	<key>arrow.down.and.line.horizontal.and.arrow.up</key>
+	<array>
+		<string>middle</string>
 	</array>
 	<key>arrow.down.backward</key>
 	<array>
@@ -450,17 +479,14 @@
 	<key>arrow.down.left.video</key>
 	<array>
 		<string>facetime</string>
-		<string>incoming.facetime.video.call</string>
 	</array>
 	<key>arrow.down.left.video.fill</key>
 	<array>
 		<string>facetime</string>
-		<string>incoming.facetime.video.call.fill</string>
 	</array>
 	<key>arrow.down.right.and.arrow.up.left</key>
 	<array>
 		<string>exit</string>
-		<string>exit.full.screen</string>
 		<string>fullscreen</string>
 		<string>minimize</string>
 	</array>
@@ -477,14 +503,6 @@
 	<key>arrow.down.to.line</key>
 	<array>
 		<string>end</string>
-	</array>
-	<key>arrow.down.to.line.circle</key>
-	<array>
-		<string>end.circle</string>
-	</array>
-	<key>arrow.down.to.line.circle.fill</key>
-	<array>
-		<string>end.circle.fill</string>
 	</array>
 	<key>arrow.down.to.line.compact</key>
 	<array>
@@ -515,6 +533,10 @@
 		<string>indent</string>
 		<string>tab</string>
 	</array>
+	<key>arrow.left.and.line.vertical.and.arrow.right</key>
+	<array>
+		<string>middle</string>
+	</array>
 	<key>arrow.left.and.right.righttriangle.left.righttriangle.right</key>
 	<array>
 		<string>flip horizontal</string>
@@ -522,6 +544,10 @@
 	<key>arrow.left.and.right.righttriangle.left.righttriangle.right.fill</key>
 	<array>
 		<string>flip horizontal</string>
+	</array>
+	<key>arrow.left.and.right.text.vertical</key>
+	<array>
+		<string>line spacing</string>
 	</array>
 	<key>arrow.left.to.line</key>
 	<array>
@@ -533,6 +559,10 @@
 		<string>indent</string>
 		<string>tab</string>
 	</array>
+	<key>arrow.right.and.line.vertical.and.arrow.left</key>
+	<array>
+		<string>middle</string>
+	</array>
 	<key>arrow.right.doc.on.clipboard</key>
 	<array>
 		<string>clipboard</string>
@@ -542,14 +572,6 @@
 	<array>
 		<string>indent</string>
 		<string>tab</string>
-	</array>
-	<key>arrow.right.to.line.circle</key>
-	<array>
-		<string>tab.circle</string>
-	</array>
-	<key>arrow.right.to.line.circle.fill</key>
-	<array>
-		<string>tab.circle.fill</string>
 	</array>
 	<key>arrow.right.to.line.compact</key>
 	<array>
@@ -561,42 +583,20 @@
 		<string>sync</string>
 		<string>syncing</string>
 	</array>
-	<key>arrow.triangle.2.circlepath.camera</key>
-	<array>
-		<string>switch.camera</string>
-	</array>
-	<key>arrow.triangle.2.circlepath.camera.fill</key>
-	<array>
-		<string>switch.camera.fill</string>
-	</array>
 	<key>arrow.triangle.2.circlepath.circle</key>
 	<array>
 		<string>sync</string>
 		<string>syncing</string>
-		<string>syncing.circle</string>
 	</array>
 	<key>arrow.triangle.2.circlepath.circle.fill</key>
 	<array>
 		<string>sync</string>
 		<string>syncing</string>
-		<string>syncing.circle.fill</string>
 	</array>
 	<key>arrow.triangle.2.circlepath.doc.on.clipboard</key>
 	<array>
 		<string>clipboard</string>
 		<string>pasteboard</string>
-	</array>
-	<key>arrow.triangle.branch</key>
-	<array>
-		<string>divide</string>
-	</array>
-	<key>arrow.triangle.merge</key>
-	<array>
-		<string>merge</string>
-	</array>
-	<key>arrow.triangle.swap</key>
-	<array>
-		<string>swap</string>
 	</array>
 	<key>arrow.triangle.turn.up.right.circle</key>
 	<array>
@@ -609,12 +609,10 @@
 	<key>arrow.triangle.turn.up.right.diamond</key>
 	<array>
 		<string>directions</string>
-		<string>directions.diamond</string>
 	</array>
 	<key>arrow.triangle.turn.up.right.diamond.fill</key>
 	<array>
 		<string>directions</string>
-		<string>directions.diamond.fill</string>
 	</array>
 	<key>arrow.turn.up.forward.iphone</key>
 	<array>
@@ -642,6 +640,14 @@
 	<array>
 		<string>flip vertical</string>
 	</array>
+	<key>arrow.up.and.down.text.horizontal</key>
+	<array>
+		<string>line spacing</string>
+	</array>
+	<key>arrow.up.and.line.horizontal.and.arrow.down</key>
+	<array>
+		<string>middle</string>
+	</array>
 	<key>arrow.up.and.person.rectangle.portrait</key>
 	<array>
 		<string>people</string>
@@ -653,26 +659,6 @@
 	<key>arrow.up.and.person.rectangle.turn.right</key>
 	<array>
 		<string>people</string>
-	</array>
-	<key>arrow.up.arrow.down</key>
-	<array>
-		<string>sort</string>
-	</array>
-	<key>arrow.up.arrow.down.circle</key>
-	<array>
-		<string>sort.circle</string>
-	</array>
-	<key>arrow.up.arrow.down.circle.fill</key>
-	<array>
-		<string>sort.circle.fill</string>
-	</array>
-	<key>arrow.up.arrow.down.square</key>
-	<array>
-		<string>sort.square</string>
-	</array>
-	<key>arrow.up.arrow.down.square.fill</key>
-	<array>
-		<string>sort.square.fill</string>
 	</array>
 	<key>arrow.up.backward</key>
 	<array>
@@ -738,7 +724,6 @@
 	<key>arrow.up.left.and.arrow.down.right</key>
 	<array>
 		<string>enter</string>
-		<string>enter.full.screen</string>
 		<string>expand</string>
 		<string>fullscreen</string>
 		<string>maximize</string>
@@ -760,12 +745,10 @@
 	<key>arrow.up.right.video</key>
 	<array>
 		<string>facetime</string>
-		<string>outgoing.facetime.video.call</string>
 	</array>
 	<key>arrow.up.right.video.fill</key>
 	<array>
 		<string>facetime</string>
-		<string>outgoing.facetime.video.call.fill</string>
 	</array>
 	<key>arrow.up.square</key>
 	<array>
@@ -778,14 +761,6 @@
 	<key>arrow.up.to.line</key>
 	<array>
 		<string>home</string>
-	</array>
-	<key>arrow.up.to.line.circle</key>
-	<array>
-		<string>home.circle</string>
-	</array>
-	<key>arrow.up.to.line.circle.fill</key>
-	<array>
-		<string>home.circle.fill</string>
 	</array>
 	<key>arrow.up.to.line.compact</key>
 	<array>
@@ -803,14 +778,19 @@
 	</array>
 	<key>arrow.uturn.backward.circle.badge.ellipsis</key>
 	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
 		<string>left</string>
+		<string>more</string>
+		<string>overflow</string>
 		<string>undo</string>
+		<string>…</string>
 	</array>
 	<key>arrow.uturn.backward.circle.fill</key>
 	<array>
 		<string>left</string>
 		<string>undo</string>
-		<string>undo.fill</string>
 	</array>
 	<key>arrow.uturn.backward.square</key>
 	<array>
@@ -821,7 +801,6 @@
 	<array>
 		<string>left</string>
 		<string>undo</string>
-		<string>undo.fill</string>
 	</array>
 	<key>arrow.uturn.forward</key>
 	<array>
@@ -836,7 +815,6 @@
 	<key>arrow.uturn.forward.circle.fill</key>
 	<array>
 		<string>redo</string>
-		<string>redo.fill</string>
 		<string>right</string>
 	</array>
 	<key>arrow.uturn.forward.square</key>
@@ -847,17 +825,23 @@
 	<key>arrow.uturn.forward.square.fill</key>
 	<array>
 		<string>redo</string>
-		<string>redo.fill</string>
 		<string>right</string>
+	</array>
+	<key>arrow.uturn.left.circle.badge.ellipsis</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>arrowshape.bounce.right</key>
 	<array>
-		<string>bounce</string>
 		<string>mail</string>
 	</array>
 	<key>arrowshape.bounce.right.fill</key>
 	<array>
-		<string>bounce.fill</string>
 		<string>mail</string>
 	</array>
 	<key>arrowshape.turn.up.left</key>
@@ -869,23 +853,19 @@
 	<array>
 		<string>mail</string>
 		<string>reply all</string>
-		<string>reply.all</string>
 	</array>
 	<key>arrowshape.turn.up.left.2.circle</key>
 	<array>
 		<string>reply all</string>
-		<string>reply.all</string>
 	</array>
 	<key>arrowshape.turn.up.left.2.circle.fill</key>
 	<array>
 		<string>reply all</string>
-		<string>reply.all.fill</string>
 	</array>
 	<key>arrowshape.turn.up.left.2.fill</key>
 	<array>
 		<string>mail</string>
 		<string>reply all</string>
-		<string>reply.all.fill</string>
 	</array>
 	<key>arrowshape.turn.up.left.circle</key>
 	<array>
@@ -894,13 +874,11 @@
 	<key>arrowshape.turn.up.left.circle.fill</key>
 	<array>
 		<string>reply</string>
-		<string>reply.fill</string>
 	</array>
 	<key>arrowshape.turn.up.left.fill</key>
 	<array>
 		<string>mail</string>
 		<string>reply</string>
-		<string>reply.fill</string>
 	</array>
 	<key>arrowshape.turn.up.right</key>
 	<array>
@@ -914,23 +892,19 @@
 	<key>arrowshape.turn.up.right.circle.fill</key>
 	<array>
 		<string>forward</string>
-		<string>forward.fill</string>
 	</array>
 	<key>arrowshape.turn.up.right.fill</key>
 	<array>
 		<string>forward</string>
-		<string>forward.fill</string>
 		<string>mail</string>
 	</array>
 	<key>arrowshape.zigzag.right</key>
 	<array>
 		<string>mail</string>
-		<string>redirect</string>
 	</array>
 	<key>arrowshape.zigzag.right.fill</key>
 	<array>
 		<string>mail</string>
-		<string>redirect.fill</string>
 	</array>
 	<key>arrowtriangle.backward</key>
 	<array>
@@ -995,7 +969,6 @@
 	<key>at</key>
 	<array>
 		<string>@</string>
-		<string>connect</string>
 	</array>
 	<key>at.badge.minus</key>
 	<array>
@@ -1017,6 +990,15 @@
 	<array>
 		<string>@</string>
 	</array>
+	<key>atom</key>
+	<array>
+		<string>science</string>
+	</array>
+	<key>australsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>australsign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -1037,29 +1019,26 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>backward</key>
+	<key>autostartstop.trianglebadge.exclamationmark</key>
 	<array>
-		<string>go.backward</string>
+		<string>!</string>
+		<string>warning</string>
 	</array>
-	<key>backward.end</key>
+	<key>backpack</key>
 	<array>
-		<string>go.to.start</string>
+		<string>camping</string>
 	</array>
-	<key>backward.end.alt</key>
+	<key>backpack.circle</key>
 	<array>
-		<string>go.to.start</string>
+		<string>camping</string>
 	</array>
-	<key>backward.end.alt.fill</key>
+	<key>backpack.circle.fill</key>
 	<array>
-		<string>go.to.end.fill</string>
+		<string>camping</string>
 	</array>
-	<key>backward.end.fill</key>
+	<key>backpack.fill</key>
 	<array>
-		<string>go.to.end.fill</string>
-	</array>
-	<key>backward.fill</key>
-	<array>
-		<string>go.forward.fill</string>
+		<string>camping</string>
 	</array>
 	<key>badge.plus.radiowaves.forward</key>
 	<array>
@@ -1071,43 +1050,27 @@
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.station</string>
-	</array>
-	<key>bag</key>
-	<array>
-		<string>shopping.bag</string>
 	</array>
 	<key>bag.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.from.shopping.bag</string>
 	</array>
 	<key>bag.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.shopping.bag</string>
-	</array>
-	<key>bag.circle</key>
-	<array>
-		<string>shopping.bag.circle</string>
-	</array>
-	<key>bag.circle.fill</key>
-	<array>
-		<string>shopping.bag.circle.fill</string>
-	</array>
-	<key>bag.fill</key>
-	<array>
-		<string>shopping.bag.fill</string>
 	</array>
 	<key>bag.fill.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.from.shopping.bag</string>
 	</array>
 	<key>bag.fill.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.shopping.bag</string>
+	</array>
+	<key>bahtsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>bahtsign.circle</key>
 	<array>
@@ -1129,6 +1092,22 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>balloon</key>
+	<array>
+		<string>party</string>
+	</array>
+	<key>balloon.2</key>
+	<array>
+		<string>party</string>
+	</array>
+	<key>balloon.2.fill</key>
+	<array>
+		<string>party</string>
+	</array>
+	<key>balloon.fill</key>
+	<array>
+		<string>party</string>
+	</array>
 	<key>bandage</key>
 	<array>
 		<string>medical</string>
@@ -1140,9 +1119,74 @@
 	<key>barcode.viewfinder</key>
 	<array>
 		<string>scan bar code</string>
-		<string>scan.barcode</string>
+	</array>
+	<key>baseball</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>baseball.circle</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>baseball.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>baseball.diamond.bases</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>baseball.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>basketball</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>basketball.circle</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>basketball.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>basketball.fill</key>
+	<array>
+		<string>sports</string>
 	</array>
 	<key>beats.earphones</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.fit.pro</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.fit.pro.chargingcase</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.fit.pro.chargingcase.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.fit.pro.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.fit.pro.right</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
@@ -1224,7 +1268,6 @@
 	</array>
 	<key>bed.double</key>
 	<array>
-		<string>bedtime</string>
 		<string>medical</string>
 		<string>sleep</string>
 	</array>
@@ -1240,14 +1283,12 @@
 	</array>
 	<key>bed.double.fill</key>
 	<array>
-		<string>bedtime.fill</string>
 		<string>medical</string>
 		<string>sleep</string>
 	</array>
 	<key>bell</key>
 	<array>
 		<string>mail</string>
-		<string>notifications</string>
 		<string>notify</string>
 	</array>
 	<key>bell.badge</key>
@@ -1261,42 +1302,43 @@
 	<key>bell.circle</key>
 	<array>
 		<string>mail</string>
-		<string>notifications.circle</string>
 		<string>notify</string>
 	</array>
 	<key>bell.circle.fill</key>
 	<array>
 		<string>mail</string>
-		<string>notifications.circle.fill</string>
 		<string>notify</string>
 	</array>
 	<key>bell.fill</key>
 	<array>
 		<string>mail</string>
-		<string>notifications.fill</string>
 		<string>notify</string>
 	</array>
 	<key>bell.slash</key>
 	<array>
 		<string>mail</string>
-		<string>notifications.off</string>
 		<string>remove</string>
 	</array>
 	<key>bell.slash.circle</key>
 	<array>
-		<string>notifications.off.circle</string>
 		<string>remove</string>
 	</array>
 	<key>bell.slash.circle.fill</key>
 	<array>
-		<string>notifications.off.circle.fill</string>
 		<string>remove</string>
 	</array>
 	<key>bell.slash.fill</key>
 	<array>
 		<string>mail</string>
-		<string>notifications.off.fill</string>
 		<string>remove</string>
+	</array>
+	<key>bell.square</key>
+	<array>
+		<string>notify</string>
+	</array>
+	<key>bell.square.fill</key>
+	<array>
+		<string>notify</string>
 	</array>
 	<key>bicycle</key>
 	<array>
@@ -1309,6 +1351,23 @@
 	<key>bicycle.circle.fill</key>
 	<array>
 		<string>bike</string>
+	</array>
+	<key>birthday.cake</key>
+	<array>
+		<string>baking</string>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>birthday.cake.fill</key>
+	<array>
+		<string>baking</string>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>bitcoinsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>bitcoinsign.circle</key>
 	<array>
@@ -1333,52 +1392,37 @@
 	<key>bold</key>
 	<array>
 		<string>b</string>
-		<string>bold</string>
-	</array>
-	<key>bold.italic.underline</key>
-	<array>
-		<string>text.formatting.biu</string>
-	</array>
-	<key>bold.underline</key>
-	<array>
-		<string>text.formatting.bu</string>
 	</array>
 	<key>bolt</key>
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash</string>
 		<string>power</string>
 	</array>
 	<key>bolt.badge.a</key>
 	<array>
 		<string>camera</string>
-		<string>flash.auto</string>
 	</array>
 	<key>bolt.badge.a.fill</key>
 	<array>
 		<string>camera</string>
-		<string>flash.auto.fill</string>
 	</array>
 	<key>bolt.circle</key>
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.circle</string>
 		<string>power</string>
 	</array>
 	<key>bolt.circle.fill</key>
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.circle.fill</string>
 		<string>power</string>
 	</array>
 	<key>bolt.fill</key>
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.fill</string>
 		<string>power</string>
 	</array>
 	<key>bolt.heart</key>
@@ -1389,35 +1433,15 @@
 	<array>
 		<string>medical</string>
 	</array>
-	<key>bolt.horizontal</key>
+	<key>bolt.ring.closed</key>
 	<array>
-		<string>disconnect</string>
-	</array>
-	<key>bolt.horizontal.circle</key>
-	<array>
-		<string>disconnect.circle</string>
-	</array>
-	<key>bolt.horizontal.circle.fill</key>
-	<array>
-		<string>disconnect.circle.fill</string>
-	</array>
-	<key>bolt.horizontal.fill</key>
-	<array>
-		<string>disconnect.fill</string>
-	</array>
-	<key>bolt.horizontal.icloud</key>
-	<array>
-		<string>disconnected.from.icloud</string>
-	</array>
-	<key>bolt.horizontal.icloud.fill</key>
-	<array>
-		<string>disconnected.from.icloud.fill</string>
+		<string>energy</string>
+		<string>power</string>
 	</array>
 	<key>bolt.slash</key>
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.off</string>
 		<string>power</string>
 		<string>remove</string>
 	</array>
@@ -1425,7 +1449,6 @@
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.off.circle</string>
 		<string>power</string>
 		<string>remove</string>
 	</array>
@@ -1433,7 +1456,6 @@
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.off.circle.fill</string>
 		<string>power</string>
 		<string>remove</string>
 	</array>
@@ -1441,7 +1463,6 @@
 	<array>
 		<string>camera</string>
 		<string>energy</string>
-		<string>flash.off.fill</string>
 		<string>power</string>
 		<string>remove</string>
 	</array>
@@ -1457,29 +1478,31 @@
 		<string>energy</string>
 		<string>power</string>
 	</array>
+	<key>bolt.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>bolt.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>book</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmarks</string>
-		<string>books</string>
 	</array>
 	<key>book.circle</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmarks.circle</string>
-		<string>books.circle</string>
 	</array>
 	<key>book.circle.fill</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmarks.circle.fill</string>
-		<string>books.circle.fill</string>
 	</array>
 	<key>book.fill</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmarks.fill</string>
-		<string>books.fill</string>
 	</array>
 	<key>bookmark</key>
 	<array>
@@ -1488,17 +1511,14 @@
 	<key>bookmark.circle</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmark.circle</string>
 	</array>
 	<key>bookmark.circle.fill</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmark.circle.fill</string>
 	</array>
 	<key>bookmark.fill</key>
 	<array>
 		<string>bookmark</string>
-		<string>bookmark.fill</string>
 	</array>
 	<key>bookmark.slash</key>
 	<array>
@@ -1507,6 +1527,27 @@
 	<key>bookmark.slash.fill</key>
 	<array>
 		<string>remove</string>
+	</array>
+	<key>box.truck.badge.clock</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>box.truck.badge.clock.fill</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>box.truck.badge.clock.fill.rtl</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>box.truck.badge.clock.rtl</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>brazilianrealsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>brazilianrealsign.circle</key>
 	<array>
@@ -1528,18 +1569,6 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>bubble.left</key>
-	<array>
-		<string>comment.left</string>
-	</array>
-	<key>bubble.left.and.bubble.right</key>
-	<array>
-		<string>conversation</string>
-	</array>
-	<key>bubble.left.and.bubble.right.fill</key>
-	<array>
-		<string>conversation.fill</string>
-	</array>
 	<key>bubble.left.and.exclamationmark.bubble.right</key>
 	<array>
 		<string>!</string>
@@ -1550,33 +1579,15 @@
 		<string>!</string>
 		<string>warning</string>
 	</array>
-	<key>bubble.left.fill</key>
+	<key>bubbles.and.sparkles</key>
 	<array>
-		<string>comment.left.fill</string>
+		<string>COVID</string>
+		<string>deep cleaning</string>
 	</array>
-	<key>bubble.right</key>
+	<key>bubbles.and.sparkles.fill</key>
 	<array>
-		<string>comment.right</string>
-	</array>
-	<key>bubble.right.fill</key>
-	<array>
-		<string>comment.right.fill</string>
-	</array>
-	<key>building.2</key>
-	<array>
-		<string>business</string>
-	</array>
-	<key>building.2.crop.circle</key>
-	<array>
-		<string>business.circle</string>
-	</array>
-	<key>building.2.crop.circle.fill</key>
-	<array>
-		<string>business.circle.fill</string>
-	</array>
-	<key>building.2.fill</key>
-	<array>
-		<string>business.fill</string>
+		<string>COVID</string>
+		<string>deep cleaning</string>
 	</array>
 	<key>building.columns</key>
 	<array>
@@ -1594,18 +1605,6 @@
 	<array>
 		<string>library</string>
 	</array>
-	<key>burn</key>
-	<array>
-		<string>burn</string>
-	</array>
-	<key>bus</key>
-	<array>
-		<string>bus</string>
-	</array>
-	<key>bus.fill</key>
-	<array>
-		<string>bus.fill</string>
-	</array>
 	<key>calendar</key>
 	<array>
 		<string>calendar</string>
@@ -1622,41 +1621,39 @@
 	<key>calendar.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.from.calendar</string>
 	</array>
 	<key>calendar.badge.plus</key>
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.to.calendar</string>
 		<string>create</string>
 		<string>new</string>
 	</array>
 	<key>calendar.circle</key>
 	<array>
 		<string>calendar</string>
-		<string>calendar.circle</string>
 	</array>
 	<key>calendar.circle.fill</key>
 	<array>
 		<string>calendar</string>
-		<string>calendar.circle.fill</string>
 	</array>
-	<key>camera</key>
+	<key>camera.badge.ellipsis</key>
 	<array>
-		<string>camera</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
-	<key>camera.circle</key>
+	<key>camera.fill.badge.ellipsis</key>
 	<array>
-		<string>camera.circle</string>
-	</array>
-	<key>camera.circle.fill</key>
-	<array>
-		<string>camera.circle.fill</string>
-	</array>
-	<key>camera.fill</key>
-	<array>
-		<string>camera.fill</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>camera.macro</key>
 	<array>
@@ -1670,77 +1667,67 @@
 	<array>
 		<string>macro</string>
 	</array>
-	<key>camera.viewfinder</key>
+	<key>car.rear.and.tire.marks</key>
 	<array>
-		<string>screenshot</string>
+		<string>traction</string>
+		<string>traction control</string>
 	</array>
-	<key>capslock</key>
+	<key>car.side.and.exclamationmark</key>
 	<array>
-		<string>caps.lock</string>
+		<string>!</string>
+		<string>warning</string>
 	</array>
-	<key>capslock.fill</key>
+	<key>car.side.and.exclamationmark.fill</key>
 	<array>
-		<string>caps.lock.fill</string>
+		<string>!</string>
+		<string>warning</string>
 	</array>
-	<key>captions.bubble</key>
+	<key>carbon.dioxide.cloud</key>
 	<array>
-		<string>captions</string>
+		<string>co2</string>
 	</array>
-	<key>captions.bubble.fill</key>
+	<key>carbon.dioxide.cloud.fill</key>
 	<array>
-		<string>captions.fill</string>
+		<string>co2</string>
 	</array>
-	<key>car</key>
+	<key>carbon.monoxide.cloud</key>
 	<array>
-		<string>car</string>
+		<string>co</string>
 	</array>
-	<key>car.2</key>
+	<key>carbon.monoxide.cloud.fill</key>
 	<array>
-		<string></string>
+		<string>co</string>
 	</array>
-	<key>car.2.fill</key>
+	<key>carrot</key>
 	<array>
-		<string>cars.fill</string>
+		<string>drink</string>
+		<string>food</string>
 	</array>
-	<key>car.fill</key>
+	<key>carrot.fill</key>
 	<array>
-		<string>car.fill</string>
-	</array>
-	<key>cart</key>
-	<array>
-		<string>shopping.cart</string>
+		<string>drink</string>
+		<string>food</string>
 	</array>
 	<key>cart.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.from.shopping.cart</string>
 	</array>
 	<key>cart.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.shopping.cart</string>
-	</array>
-	<key>cart.circle</key>
-	<array>
-		<string>shopping.cart.circle</string>
-	</array>
-	<key>cart.circle.fill</key>
-	<array>
-		<string>shopping.cart.circle.fill</string>
-	</array>
-	<key>cart.fill</key>
-	<array>
-		<string>shopping.cart.fill</string>
 	</array>
 	<key>cart.fill.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.from.shopping.cart</string>
 	</array>
 	<key>cart.fill.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.shopping.cart</string>
+	</array>
+	<key>cedisign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>cedisign.circle</key>
 	<array>
@@ -1758,6 +1745,11 @@
 		<string>currency</string>
 	</array>
 	<key>cedisign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>centsign</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -1781,6 +1773,14 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>chandelier</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>chandelier.fill</key>
+	<array>
+		<string>light</string>
 	</array>
 	<key>character</key>
 	<array>
@@ -1861,68 +1861,30 @@
 	<key>character.cursor.ibeam</key>
 	<array>
 		<string>a</string>
-		<string>insert.text</string>
 	</array>
 	<key>character.textbox</key>
 	<array>
 		<string>a</string>
-		<string>insert.textbox</string>
-	</array>
-	<key>chart.bar</key>
-	<array>
-		<string>chart.column</string>
-	</array>
-	<key>chart.bar.fill</key>
-	<array>
-		<string>chart.column.fill</string>
-	</array>
-	<key>chart.line.uptrend.xyaxis</key>
-	<array>
-		<string>chart.line</string>
-	</array>
-	<key>chart.pie</key>
-	<array>
-		<string>chart.pie</string>
-	</array>
-	<key>chart.pie.fill</key>
-	<array>
-		<string>chart.pie.fill</string>
-	</array>
-	<key>checkmark</key>
-	<array>
-		<string>selected</string>
 	</array>
 	<key>checkmark.circle</key>
 	<array>
 		<string>select</string>
-		<string>selected.circle</string>
 	</array>
 	<key>checkmark.circle.fill</key>
 	<array>
 		<string>select</string>
-		<string>selected.circle.fill</string>
 	</array>
 	<key>checkmark.circle.trianglebadge.exclamationmark</key>
 	<array>
 		<string>warning</string>
 	</array>
-	<key>checkmark.seal</key>
-	<array>
-		<string>verified</string>
-	</array>
-	<key>checkmark.seal.fill</key>
-	<array>
-		<string>verified.fill</string>
-	</array>
 	<key>checkmark.square</key>
 	<array>
 		<string>checkbox</string>
-		<string>selected.square</string>
 	</array>
 	<key>checkmark.square.fill</key>
 	<array>
 		<string>checkbox</string>
-		<string>selected.square.fill</string>
 	</array>
 	<key>chevron.backward</key>
 	<array>
@@ -1948,26 +1910,6 @@
 	<array>
 		<string>left</string>
 	</array>
-	<key>chevron.down</key>
-	<array>
-		<string>go.down</string>
-	</array>
-	<key>chevron.down.circle</key>
-	<array>
-		<string>go.down.circle</string>
-	</array>
-	<key>chevron.down.circle.fill</key>
-	<array>
-		<string>go.down.circle.fill</string>
-	</array>
-	<key>chevron.down.square</key>
-	<array>
-		<string>go.down.square</string>
-	</array>
-	<key>chevron.down.square.fill</key>
-	<array>
-		<string>go.down.square.fill</string>
-	</array>
 	<key>chevron.forward</key>
 	<array>
 		<string>right</string>
@@ -1992,74 +1934,6 @@
 	<array>
 		<string>right</string>
 	</array>
-	<key>chevron.left</key>
-	<array>
-		<string>go.left</string>
-	</array>
-	<key>chevron.left.circle</key>
-	<array>
-		<string>go.left.circle</string>
-	</array>
-	<key>chevron.left.circle.fill</key>
-	<array>
-		<string>go.left.circle.fill</string>
-	</array>
-	<key>chevron.left.forwardslash.chevron.right</key>
-	<array>
-		<string>embed.code</string>
-	</array>
-	<key>chevron.left.square</key>
-	<array>
-		<string>go.left.square</string>
-	</array>
-	<key>chevron.left.square.fill</key>
-	<array>
-		<string>go.left.square.fill</string>
-	</array>
-	<key>chevron.right</key>
-	<array>
-		<string>go.right</string>
-	</array>
-	<key>chevron.right.circle</key>
-	<array>
-		<string>go.right.circle</string>
-	</array>
-	<key>chevron.right.circle.fill</key>
-	<array>
-		<string>go.right.circle.fill</string>
-	</array>
-	<key>chevron.right.square</key>
-	<array>
-		<string>go.right.square</string>
-	</array>
-	<key>chevron.right.square.fill</key>
-	<array>
-		<string>go.right.square.fill</string>
-	</array>
-	<key>chevron.up</key>
-	<array>
-		<string>go.up</string>
-	</array>
-	<key>chevron.up.circle</key>
-	<array>
-		<string>go.up.circle</string>
-	</array>
-	<key>chevron.up.circle.fill</key>
-	<array>
-		<string>go.up.circle.fill</string>
-	</array>
-	<key>chevron.up.square</key>
-	<array>
-		<string>go.up.square</string>
-	</array>
-	<key>chevron.up.square.fill</key>
-	<array>
-		<string>go.up.square.fill</string>
-	</array>
-	<key>circle.dashed</key>
-	<array>
-		<string>circular.selection</string>
-	</array>
 	<key>circle.inset.filled</key>
 	<array>
 		<string>completed</string>
@@ -2067,9 +1941,7 @@
 	</array>
 	<key>clock</key>
 	<array>
-		<string>clock</string>
 		<string>history</string>
-		<string>most.recent</string>
 		<string>recent</string>
 	</array>
 	<key>clock.arrow.2.circlepath</key>
@@ -2087,179 +1959,279 @@
 	</array>
 	<key>clock.badge.exclamationmark</key>
 	<array>
+		<string>!</string>
 		<string>warning</string>
 	</array>
 	<key>clock.badge.exclamationmark.fill</key>
 	<array>
+		<string>!</string>
 		<string>warning</string>
 	</array>
 	<key>clock.fill</key>
 	<array>
-		<string>clock.fill</string>
 		<string>history</string>
-		<string>history.fill</string>
-		<string>most.recent.fill</string>
 		<string>recent</string>
 	</array>
 	<key>cloud</key>
 	<array>
-		<string>mostly.cloudy</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.bolt</key>
 	<array>
-		<string>severe.thunderstorm</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.bolt.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.bolt.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.bolt.fill</key>
 	<array>
-		<string>severe.thunderstorm.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.bolt.rain</key>
 	<array>
-		<string>mix.rainfall</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.bolt.rain.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.bolt.rain.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.bolt.rain.fill</key>
 	<array>
-		<string>mix.rainfall.fill</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.drizzle</key>
 	<array>
-		<string>drizzle</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.drizzle.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.drizzle.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.drizzle.fill</key>
 	<array>
-		<string>drizzle.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.fill</key>
 	<array>
-		<string>mostly.cloudy.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.fog</key>
 	<array>
-		<string>fog</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.fog.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.fog.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.fog.fill</key>
 	<array>
-		<string>fog.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.hail</key>
 	<array>
-		<string>hail</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.hail.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.hail.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.hail.fill</key>
 	<array>
-		<string>hail.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.heavyrain</key>
 	<array>
-		<string>heavy.rain</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.heavyrain.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.heavyrain.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.heavyrain.fill</key>
 	<array>
-		<string>heavy.rain.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.moon</key>
 	<array>
-		<string>partly.cloudy.night</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.moon.bolt</key>
 	<array>
-		<string>scattered.thunderstorm.night</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.moon.bolt.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.moon.bolt.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.moon.bolt.fill</key>
 	<array>
-		<string>scattered.thunderstorm.night.fill</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.moon.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.moon.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.moon.fill</key>
 	<array>
-		<string>partly.cloudy.night.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.moon.rain</key>
 	<array>
-		<string>rainy.night</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.moon.rain.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.moon.rain.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.moon.rain.fill</key>
 	<array>
-		<string>rainy.night.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.rain</key>
 	<array>
-		<string>rain</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.rain.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.rain.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.rain.fill</key>
 	<array>
-		<string>rain.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.sleet</key>
 	<array>
-		<string>sleet</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.sleet.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.sleet.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.sleet.fill</key>
 	<array>
-		<string>sleet.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.snow</key>
 	<array>
-		<string>blizzard</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.snow.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.snow.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.snow.fill</key>
 	<array>
-		<string>blizzard.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.sun</key>
 	<array>
-		<string>partly.cloudy</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.sun.bolt</key>
 	<array>
-		<string>scattered.thunderstorm</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.sun.bolt.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.sun.bolt.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.sun.bolt.fill</key>
 	<array>
-		<string>scattered.thunderstorm.fill</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.sun.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.sun.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.sun.fill</key>
 	<array>
-		<string>partly.cloudy.fill</string>
 		<string>weather</string>
 	</array>
 	<key>cloud.sun.rain</key>
 	<array>
-		<string>scattered.showers</string>
+		<string>weather</string>
+	</array>
+	<key>cloud.sun.rain.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.sun.rain.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>cloud.sun.rain.fill</key>
 	<array>
-		<string>scattered.showers.fill</string>
 		<string>weather</string>
+	</array>
+	<key>coloncurrencysign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>coloncurrencysign.circle</key>
 	<array>
@@ -2281,53 +2253,53 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>command</key>
-	<array>
-		<string>command</string>
-	</array>
-	<key>control</key>
-	<array>
-		<string>control</string>
-	</array>
 	<key>cpu</key>
 	<array>
 		<string>chip</string>
 		<string>cpu</string>
 		<string>gpu</string>
 	</array>
-	<key>creditcard</key>
-	<array>
-		<string>card</string>
-	</array>
-	<key>creditcard.circle</key>
-	<array>
-		<string>card.circle</string>
-	</array>
-	<key>creditcard.circle.fill</key>
-	<array>
-		<string>card.circle.fill</string>
-	</array>
-	<key>creditcard.fill</key>
-	<array>
-		<string>card.fill</string>
-	</array>
 	<key>creditcard.trianglebadge.exclamationmark</key>
 	<array>
 		<string>warning</string>
 	</array>
-	<key>crop</key>
+	<key>cricket.ball</key>
 	<array>
-		<string>crop</string>
+		<string>sports</string>
 	</array>
-	<key>crop.rotate</key>
+	<key>cricket.ball.circle</key>
 	<array>
-		<string>crop.and.rotate</string>
+		<string>sports</string>
+	</array>
+	<key>cricket.ball.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>cricket.ball.fill</key>
+	<array>
+		<string>sports</string>
 	</array>
 	<key>cross</key>
 	<array>
 		<string>medical</string>
 	</array>
 	<key>cross.case</key>
+	<array>
+		<string>first aid</string>
+		<string>first aid kit</string>
+		<string>firstaid</string>
+		<string>kit</string>
+		<string>medical</string>
+	</array>
+	<key>cross.case.circle</key>
+	<array>
+		<string>first aid</string>
+		<string>first aid kit</string>
+		<string>firstaid</string>
+		<string>kit</string>
+		<string>medical</string>
+	</array>
+	<key>cross.case.circle.fill</key>
 	<array>
 		<string>first aid</string>
 		<string>first aid kit</string>
@@ -2363,6 +2335,11 @@
 	<array>
 		<string>medical</string>
 	</array>
+	<key>cruzeirosign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>cruzeirosign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -2385,15 +2362,20 @@
 	</array>
 	<key>cup.and.saucer</key>
 	<array>
-		<string>food and drink</string>
+		<string>coffee</string>
+		<string>drink</string>
+		<string>food</string>
+		<string>tea</string>
 	</array>
 	<key>cup.and.saucer.fill</key>
 	<array>
-		<string>food and drink</string>
+		<string>coffee</string>
+		<string>drink</string>
+		<string>food</string>
+		<string>tea</string>
 	</array>
 	<key>cursorarrow.rays</key>
 	<array>
-		<string>click.cursor</string>
 		<string>light</string>
 	</array>
 	<key>delete.backward</key>
@@ -2414,50 +2396,83 @@
 	</array>
 	<key>delete.left</key>
 	<array>
-		<string>backspace</string>
 		<string>delete</string>
 	</array>
 	<key>delete.left.fill</key>
 	<array>
-		<string>backspace.fill</string>
 		<string>delete</string>
 	</array>
 	<key>delete.right</key>
 	<array>
-		<string>backspace</string>
 		<string>delete</string>
 	</array>
 	<key>delete.right.fill</key>
 	<array>
-		<string>backspace.fill</string>
 		<string>delete</string>
-	</array>
-	<key>desktopcomputer</key>
-	<array>
-		<string>imac</string>
-		<string>mac</string>
-	</array>
-	<key>desktopcomputer.and.arrow.down</key>
-	<array>
-		<string>imac</string>
-		<string>mac</string>
-	</array>
-	<key>desktopcomputer.trianglebadge.exclamationmark</key>
-	<array>
-		<string>imac</string>
-		<string>mac</string>
-	</array>
-	<key>dial.min</key>
-	<array>
-		<string>adjust</string>
-	</array>
-	<key>dial.min.fill</key>
-	<array>
-		<string>adjust.fill</string>
 	</array>
 	<key>display.trianglebadge.exclamationmark</key>
 	<array>
 		<string>warning</string>
+	</array>
+	<key>distribute.horizontal.center</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.horizontal.center.fill</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.horizontal.left</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.horizontal.left.fill</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.horizontal.right</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.horizontal.right.fill</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.vertical.bottom</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.vertical.bottom.fill</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.vertical.center</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.vertical.center.fill</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.vertical.top</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
+	</array>
+	<key>distribute.vertical.top.fill</key>
+	<array>
+		<string>rectangle</string>
+		<string>shape</string>
 	</array>
 	<key>divide</key>
 	<array>
@@ -2488,6 +2503,15 @@
 	<array>
 		<string>document</string>
 	</array>
+	<key>doc.badge.ellipsis</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
 	<key>doc.badge.plus</key>
 	<array>
 		<string>+</string>
@@ -2498,17 +2522,23 @@
 	<key>doc.circle</key>
 	<array>
 		<string>document</string>
-		<string>document.circle</string>
 	</array>
 	<key>doc.circle.fill</key>
 	<array>
 		<string>document</string>
-		<string>document.circle.fill</string>
 	</array>
 	<key>doc.fill</key>
 	<array>
 		<string>document</string>
-		<string>document.fill</string>
+	</array>
+	<key>doc.fill.badge.ellipsis</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>doc.fill.badge.plus</key>
 	<array>
@@ -2526,30 +2556,14 @@
 	<key>doc.on.clipboard.fill</key>
 	<array>
 		<string>paste</string>
-		<string>paste.fill</string>
 	</array>
 	<key>doc.on.doc</key>
 	<array>
 		<string>copy</string>
-		<string>documents</string>
 	</array>
 	<key>doc.on.doc.fill</key>
 	<array>
 		<string>copy</string>
-		<string>copy.fill</string>
-		<string>documents.fill</string>
-	</array>
-	<key>doc.richtext</key>
-	<array>
-		<string>rich.text.document</string>
-	</array>
-	<key>doc.text</key>
-	<array>
-		<string>plain.text.document</string>
-	</array>
-	<key>doc.text.fill</key>
-	<array>
-		<string>plain.text.document.fill</string>
 	</array>
 	<key>doc.text.image</key>
 	<array>
@@ -2559,22 +2573,23 @@
 	<array>
 		<string>today</string>
 	</array>
-	<key>doc.text.magnifyingglass</key>
-	<array>
-		<string>search.document</string>
-	</array>
 	<key>doc.viewfinder</key>
 	<array>
 		<string>scan document</string>
-		<string>scan.document</string>
 	</array>
 	<key>doc.viewfinder.fill</key>
 	<array>
 		<string>scan document</string>
 	</array>
-	<key>dock.rectangle</key>
+	<key>dollarsign</key>
 	<array>
-		<string>dock</string>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>dollarsign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>dollarsign.circle</key>
 	<array>
@@ -2592,6 +2607,11 @@
 		<string>currency</string>
 	</array>
 	<key>dollarsign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>dongsign</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -2616,6 +2636,26 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>door.garage.closed.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>door.garage.double.bay.closed.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>door.garage.double.bay.open.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>door.garage.open.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>dot.arrowtriangles.up.right.down.left.circle</key>
 	<array>
 		<string>zoom</string>
@@ -2624,21 +2664,89 @@
 	<array>
 		<string>right</string>
 	</array>
-	<key>dot.radiowaves.left.and.right</key>
-	<array>
-		<string>radio</string>
-	</array>
 	<key>dot.squareshape.split.2x2</key>
 	<array>
 		<string>grid</string>
 	</array>
+	<key>drop</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.circle</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.circle.fill</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.degreesign</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.degreesign.fill</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.degreesign.slash</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.degreesign.slash.fill</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.degreesign.slash.fill.rtl</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.degreesign.slash.rtl</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>drop.fill</key>
+	<array>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
 	<key>drop.triangle</key>
 	<array>
-		<string>liquid.detect</string>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
 	</array>
 	<key>drop.triangle.fill</key>
 	<array>
-		<string>liquid.detect.fill</string>
+		<string>blood</string>
+		<string>oil</string>
+		<string>water</string>
+	</array>
+	<key>dumbbell</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>dumbbell.fill</key>
+	<array>
+		<string>sports</string>
 	</array>
 	<key>ear.trianglebadge.exclamationmark</key>
 	<array>
@@ -2650,85 +2758,157 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>eject</key>
-	<array>
-		<string>eject</string>
-	</array>
-	<key>eject.fill</key>
-	<array>
-		<string>eject.fill</string>
-	</array>
 	<key>ellipsis</key>
 	<array>
 		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
 		<string>more</string>
 		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.bubble</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.bubble.fill</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>ellipsis.circle</key>
 	<array>
 		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
 		<string>more</string>
-		<string>more.circle</string>
 		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>ellipsis.circle.fill</key>
 	<array>
 		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
 		<string>more</string>
-		<string>more.circle.fill</string>
 		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.curlybraces</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.message</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.message.fill</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>ellipsis.rectangle</key>
 	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
 		<string>password</string>
+		<string>…</string>
 	</array>
 	<key>ellipsis.rectangle.fill</key>
 	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
 		<string>password</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.vertical.bubble</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>ellipsis.vertical.bubble.fill</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>entry.lever.keypad.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>entry.lever.keypad.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
 	</array>
 	<key>envelope</key>
 	<array>
-		<string>compose.mail</string>
-		<string>get.mail</string>
 		<string>mail</string>
 	</array>
 	<key>envelope.badge</key>
 	<array>
 		<string>mail</string>
-		<string>mark.unread</string>
 	</array>
 	<key>envelope.badge.fill</key>
 	<array>
 		<string>mail</string>
-		<string>mark.unread.fill</string>
 	</array>
 	<key>envelope.circle</key>
 	<array>
-		<string>compose.mail.circle</string>
-		<string>get.mail.circle</string>
 		<string>mail</string>
 	</array>
 	<key>envelope.circle.fill</key>
 	<array>
-		<string>compose.mail.circle.fill</string>
-		<string>get.mail.circle.fill</string>
 		<string>mail</string>
 	</array>
 	<key>envelope.fill</key>
 	<array>
-		<string>compose.mail.fill</string>
-		<string>get.mail.fill</string>
 		<string>mail</string>
 	</array>
 	<key>envelope.open</key>
 	<array>
 		<string>mail</string>
-		<string>mark.read</string>
 	</array>
 	<key>envelope.open.fill</key>
 	<array>
 		<string>mail</string>
-		<string>mark.read.fill</string>
 	</array>
 	<key>equal</key>
 	<array>
@@ -2750,9 +2930,18 @@
 	<array>
 		<string>=</string>
 	</array>
-	<key>escape</key>
+	<key>eraser.line.dashed</key>
 	<array>
-		<string>espace</string>
+		<string>erase</string>
+	</array>
+	<key>eraser.line.dashed.fill</key>
+	<array>
+		<string>erase</string>
+	</array>
+	<key>eurosign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>eurosign.circle</key>
 	<array>
@@ -2806,6 +2995,11 @@
 		<string>syncing</string>
 		<string>warning</string>
 	</array>
+	<key>exclamationmark.brakesignal</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>exclamationmark.bubble</key>
 	<array>
 		<string>!</string>
@@ -2826,7 +3020,6 @@
 	<array>
 		<string>!</string>
 		<string>report</string>
-		<string>report.fill</string>
 		<string>warning</string>
 	</array>
 	<key>exclamationmark.circle</key>
@@ -2840,13 +3033,27 @@
 	<key>exclamationmark.icloud</key>
 	<array>
 		<string>!</string>
-		<string>icloud.upload.error</string>
 		<string>warning</string>
 	</array>
 	<key>exclamationmark.icloud.fill</key>
 	<array>
 		<string>!</string>
-		<string>icloud.upload.error.fill</string>
+		<string>warning</string>
+	</array>
+	<key>exclamationmark.lock</key>
+	<array>
+		<string>!</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+		<string>warning</string>
+	</array>
+	<key>exclamationmark.lock.fill</key>
+	<array>
+		<string>!</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 		<string>warning</string>
 	</array>
 	<key>exclamationmark.octagon</key>
@@ -2858,6 +3065,10 @@
 	<array>
 		<string>stop</string>
 		<string>warning</string>
+	</array>
+	<key>exclamationmark.questionmark</key>
+	<array>
+		<string>!?</string>
 	</array>
 	<key>exclamationmark.shield</key>
 	<array>
@@ -2877,6 +3088,13 @@
 	<array>
 		<string>warning</string>
 	</array>
+	<key>exclamationmark.transmission</key>
+	<array>
+		<string>!</string>
+		<string>fault</string>
+		<string>transmission</string>
+		<string>warning</string>
+	</array>
 	<key>exclamationmark.triangle</key>
 	<array>
 		<string>warning</string>
@@ -2884,7 +3102,11 @@
 	<key>exclamationmark.triangle.fill</key>
 	<array>
 		<string>warning</string>
-		<string>warning.fill</string>
+	</array>
+	<key>externaldrive.badge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
 	</array>
 	<key>externaldrive.badge.minus</key>
 	<array>
@@ -2897,6 +3119,11 @@
 		<string>create</string>
 		<string>new</string>
 	</array>
+	<key>externaldrive.fill.badge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>externaldrive.fill.badge.minus</key>
 	<array>
 		<string>remove</string>
@@ -2908,26 +3135,27 @@
 		<string>create</string>
 		<string>new</string>
 	</array>
+	<key>externaldrive.fill.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>externaldrive.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>eye</key>
 	<array>
 		<string>quick look</string>
 		<string>quicklook</string>
 		<string>show</string>
 	</array>
-	<key>eye.circle</key>
-	<array>
-		<string>show.circle</string>
-	</array>
-	<key>eye.circle.fill</key>
-	<array>
-		<string>show.circle.fill</string>
-	</array>
 	<key>eye.fill</key>
 	<array>
 		<string>quick look</string>
 		<string>quicklook</string>
 		<string>show</string>
-		<string>show.fill</string>
 	</array>
 	<key>eye.slash</key>
 	<array>
@@ -2939,20 +3167,17 @@
 	<key>eye.slash.circle</key>
 	<array>
 		<string>hidden</string>
-		<string>hide.circle</string>
 		<string>remove</string>
 	</array>
 	<key>eye.slash.circle.fill</key>
 	<array>
 		<string>hidden</string>
-		<string>hide.circle.fill</string>
 		<string>remove</string>
 	</array>
 	<key>eye.slash.fill</key>
 	<array>
 		<string>hidden</string>
 		<string>hide</string>
-		<string>hide.fill</string>
 		<string>remove</string>
 		<string>remove red eye</string>
 	</array>
@@ -2966,128 +3191,775 @@
 		<string>!</string>
 		<string>warning</string>
 	</array>
-	<key>eyedropper</key>
-	<array>
-		<string>pick.color.empty</string>
-	</array>
-	<key>eyedropper.full</key>
-	<array>
-		<string>pick.color.full.full</string>
-	</array>
-	<key>eyedropper.halffull</key>
-	<array>
-		<string>pick.color.halffull.halffull</string>
-	</array>
-	<key>eyeglasses</key>
-	<array>
-		<string>reading.list</string>
-	</array>
-	<key>f.cursive</key>
-	<array>
-		<string>function.fstop</string>
-	</array>
 	<key>faceid</key>
 	<array>
 		<string>authentication</string>
-		<string>face.id</string>
 		<string>security</string>
+	</array>
+	<key>facemask</key>
+	<array>
+		<string>medical</string>
+	</array>
+	<key>facemask.fill</key>
+	<array>
+		<string>medical</string>
+	</array>
+	<key>figure.2.and.child.holdinghands</key>
+	<array>
+		<string>adult</string>
+		<string>child</string>
+		<string>family</string>
+		<string>human</string>
+		<string>kid</string>
+		<string>parent</string>
+		<string>person</string>
+	</array>
+	<key>figure.2.arms.open</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.american.football</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.and.child.holdinghands</key>
+	<array>
+		<string>adult</string>
+		<string>child</string>
+		<string>family</string>
+		<string>human</string>
+		<string>kid</string>
+		<string>parent</string>
+		<string>person</string>
+	</array>
+	<key>figure.archery</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.arms.open</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.australian.football</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.badminton</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.barre</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.baseball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.basketball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.bowling</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.boxing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.climbing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.cooldown</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.core.training</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.cricket</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.cross.training</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.curling</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.dance</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.disc.sports</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.dress.line.vertical.figure</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.elliptical</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.equestrian.sports</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.fall</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.fall.circle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.fall.circle.fill</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.fencing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.fishing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.flexibility</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.golf</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.gymnastics</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.hand.cycling</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.handball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.highintensity.intervaltraining</key>
+	<array>
+		<string>hiit</string>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.hiking</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.hockey</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.hunting</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.indoor.cycle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.jumprope</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.kickboxing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.lacrosse</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.martial.arts</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.mind.and.body</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.mixed.cardio</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.open.water.swim</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>water</string>
+	</array>
+	<key>figure.outdoor.cycle</key>
+	<array>
+		<string>bicycle</string>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.pickleball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.pilates</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.play</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.pool.swim</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>water</string>
+	</array>
+	<key>figure.racquetball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
 	</array>
 	<key>figure.roll</key>
 	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
 		<string>wheelchair</string>
+	</array>
+	<key>figure.roll.runningpace</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>wheelchair</string>
+	</array>
+	<key>figure.rolling</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.rower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.rugby</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.run</key>
+	<array>
+		<string>human</string>
+		<string>indoor run</string>
+		<string>outdoor run</string>
+		<string>person</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>figure.run.circle</key>
+	<array>
+		<string>human</string>
+		<string>indoor run</string>
+		<string>outdoor run</string>
+		<string>person</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>figure.run.circle.fill</key>
+	<array>
+		<string>human</string>
+		<string>indoor run</string>
+		<string>outdoor run</string>
+		<string>person</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>figure.run.square.stack</key>
+	<array>
+		<string>human</string>
+		<string>indoor run</string>
+		<string>outdoor run</string>
+		<string>person</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>figure.run.square.stack.fill</key>
+	<array>
+		<string>human</string>
+		<string>indoor run</string>
+		<string>outdoor run</string>
+		<string>person</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>figure.sailing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.seated.seatbelt</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.seatbelt.and.airbag.off</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.seatbelt.and.airbag.on</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.lower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.upper</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.upper.and.lower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.windshield</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.airbag.off</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.airbag.off.2</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.airbag.on</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.airbag.on.2</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.skating</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.skiing.crosscountry</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.skiing.downhill</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.snowboarding</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.soccer</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.socialdance</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.softball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.squash</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.stair.stepper</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.stairs</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.stand</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.stand.line.dotted.figure.stand</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.step.training</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.strengthtraining.functional</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.strengthtraining.traditional</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.surfing</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.table.tennis</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.taichi</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.tennis</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.track.and.field</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>figure.volleyball</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
 	</array>
 	<key>figure.walk</key>
 	<array>
+		<string>human</string>
+		<string>indoor walk</string>
+		<string>outdoor walk</string>
 		<string>person</string>
-		<string>walk</string>
+		<string>sports</string>
 		<string>walking</string>
+	</array>
+	<key>figure.walk.arrival</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
 	</array>
 	<key>figure.walk.circle</key>
 	<array>
+		<string>human</string>
+		<string>indoor walk</string>
+		<string>outdoor walk</string>
 		<string>person</string>
-		<string>walk.circle</string>
+		<string>sports</string>
 		<string>walking</string>
 	</array>
 	<key>figure.walk.circle.fill</key>
 	<array>
+		<string>human</string>
+		<string>indoor walk</string>
+		<string>outdoor walk</string>
 		<string>person</string>
-		<string>walk.circle.fill</string>
+		<string>sports</string>
 		<string>walking</string>
+	</array>
+	<key>figure.walk.departure</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
 	</array>
 	<key>figure.walk.diamond</key>
 	<array>
+		<string>human</string>
 		<string>person</string>
 		<string>walking</string>
 	</array>
 	<key>figure.walk.diamond.fill</key>
 	<array>
+		<string>human</string>
 		<string>person</string>
 		<string>walking</string>
 	</array>
+	<key>figure.walk.motion</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>walking</string>
+	</array>
+	<key>figure.water.fitness</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>water</string>
+	</array>
+	<key>figure.waterpolo</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>water</string>
+	</array>
 	<key>figure.wave</key>
 	<array>
+		<string>human</string>
 		<string>person</string>
-		<string>taxi</string>
 	</array>
 	<key>figure.wave.circle</key>
 	<array>
+		<string>human</string>
 		<string>person</string>
-		<string>taxi.circle</string>
 	</array>
 	<key>figure.wave.circle.fill</key>
 	<array>
+		<string>human</string>
 		<string>person</string>
-		<string>taxi.circle.fill</string>
 	</array>
-	<key>film</key>
+	<key>figure.wrestling</key>
 	<array>
-		<string>movie</string>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
 	</array>
-	<key>film.fill</key>
+	<key>figure.yoga</key>
 	<array>
-		<string>movie.fill</string>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+	</array>
+	<key>firewall</key>
+	<array>
+		<string>arrow</string>
+	</array>
+	<key>firewall.fill</key>
+	<array>
+		<string>arrow</string>
 	</array>
 	<key>flag</key>
 	<array>
-		<string>flag</string>
 		<string>mail</string>
+	</array>
+	<key>flag.badge.ellipsis</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>flag.badge.ellipsis.fill</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>flag.checkered</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>flag.checkered.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>flag.checkered.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
 	</array>
 	<key>flag.circle</key>
 	<array>
-		<string>flag.circle</string>
 		<string>mail</string>
 	</array>
 	<key>flag.circle.fill</key>
 	<array>
-		<string>flag.circle.fill</string>
 		<string>mail</string>
 	</array>
 	<key>flag.fill</key>
 	<array>
-		<string>flag.fill</string>
 		<string>mail</string>
 	</array>
 	<key>flag.slash</key>
 	<array>
 		<string>mail</string>
 		<string>remove</string>
-		<string>remove.flag</string>
 	</array>
 	<key>flag.slash.circle</key>
 	<array>
 		<string>remove</string>
-		<string>remove.flag.circle</string>
 	</array>
 	<key>flag.slash.circle.fill</key>
 	<array>
 		<string>remove</string>
-		<string>remove.flag.circle.fill</string>
 	</array>
 	<key>flag.slash.fill</key>
 	<array>
 		<string>mail</string>
 		<string>remove</string>
-		<string>remove.flag.fill</string>
 	</array>
 	<key>flame</key>
 	<array>
@@ -3105,9 +3977,10 @@
 	<array>
 		<string>fire</string>
 	</array>
-	<key>flashlight.off.fill</key>
+	<key>florinsign</key>
 	<array>
-		<string>flashlight.fill</string>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>florinsign.circle</key>
 	<array>
@@ -3137,7 +4010,6 @@
 	<array>
 		<string>-</string>
 		<string>delete</string>
-		<string>new.folder</string>
 		<string>remove</string>
 		<string>subtract</string>
 		<string>−</string>
@@ -3148,7 +4020,6 @@
 		<string>add</string>
 		<string>create</string>
 		<string>new</string>
-		<string>new.folder</string>
 	</array>
 	<key>folder.badge.questionmark</key>
 	<array>
@@ -3157,23 +4028,19 @@
 	<key>folder.circle</key>
 	<array>
 		<string>move</string>
-		<string>move.circle</string>
 	</array>
 	<key>folder.circle.fill</key>
 	<array>
 		<string>move</string>
-		<string>move.circle.fill</string>
 	</array>
 	<key>folder.fill</key>
 	<array>
 		<string>move</string>
-		<string>move.fill</string>
 	</array>
 	<key>folder.fill.badge.minus</key>
 	<array>
 		<string>-</string>
 		<string>delete</string>
-		<string>new.folder</string>
 		<string>remove</string>
 		<string>subtract</string>
 		<string>−</string>
@@ -3184,35 +4051,56 @@
 		<string>add</string>
 		<string>create</string>
 		<string>new</string>
-		<string>new.folder</string>
 	</array>
 	<key>folder.fill.badge.questionmark</key>
 	<array>
 		<string>?</string>
 	</array>
-	<key>forward</key>
+	<key>football</key>
 	<array>
-		<string>go.forward</string>
+		<string>sports</string>
 	</array>
-	<key>forward.end</key>
+	<key>football.circle</key>
 	<array>
-		<string>go.to.end</string>
+		<string>sports</string>
 	</array>
-	<key>forward.end.alt</key>
+	<key>football.circle.fill</key>
 	<array>
-		<string>go.to.end</string>
+		<string>sports</string>
 	</array>
-	<key>forward.end.alt.fill</key>
+	<key>football.fill</key>
 	<array>
-		<string>shuffle.fill</string>
+		<string>sports</string>
 	</array>
-	<key>forward.end.fill</key>
+	<key>fork.knife</key>
 	<array>
-		<string>go.to.start.fill</string>
+		<string>drink</string>
+		<string>food</string>
 	</array>
-	<key>forward.fill</key>
+	<key>fork.knife.circle</key>
 	<array>
-		<string>go.to.start.fill</string>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>fork.knife.circle.fill</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>fossil.shell</key>
+	<array>
+		<string>ammonite</string>
+		<string>history</string>
+	</array>
+	<key>fossil.shell.fill</key>
+	<array>
+		<string>ammonite</string>
+		<string>history</string>
+	</array>
+	<key>francsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>francsign.circle</key>
 	<array>
@@ -3234,27 +4122,21 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>function</key>
+	<key>frying.pan</key>
 	<array>
-		<string>function</string>
+		<string>cooking</string>
 	</array>
-	<key>fx</key>
+	<key>frying.pan.fill</key>
 	<array>
-		<string>function.fx</string>
+		<string>cooking</string>
 	</array>
-	<key>gauge</key>
-	<array>
-		<string>dashboard</string>
-	</array>
-	<key>gauge.badge.minus</key>
+	<key>gauge.medium.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.from.dashboard</string>
 	</array>
-	<key>gauge.badge.plus</key>
+	<key>gauge.medium.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.dashboard</string>
 	</array>
 	<key>gear</key>
 	<array>
@@ -3282,74 +4164,70 @@
 	<key>gift</key>
 	<array>
 		<string>birthday</string>
-		<string>gift</string>
 	</array>
 	<key>gift.circle</key>
 	<array>
 		<string>birthday</string>
-		<string>gift.circle</string>
 	</array>
 	<key>gift.circle.fill</key>
 	<array>
 		<string>birthday</string>
-		<string>gift.circle.fill</string>
 	</array>
 	<key>gift.fill</key>
 	<array>
 		<string>birthday</string>
-		<string>gift.fill</string>
 	</array>
 	<key>globe</key>
 	<array>
-		<string>change.keyboard</string>
+		<string>earth</string>
 	</array>
-	<key>gobackward</key>
+	<key>globe.americas</key>
 	<array>
-		<string>go.forward.10.seconds</string>
+		<string>earth</string>
 	</array>
-	<key>gobackward.10</key>
+	<key>globe.americas.fill</key>
 	<array>
-		<string>go.forward.15.seconds</string>
+		<string>earth</string>
 	</array>
-	<key>gobackward.15</key>
+	<key>globe.asia.australia</key>
 	<array>
-		<string>go.forward.30.seconds</string>
+		<string>earth</string>
 	</array>
-	<key>gobackward.30</key>
+	<key>globe.asia.australia.fill</key>
 	<array>
-		<string>go.forward.45.seconds</string>
+		<string>earth</string>
 	</array>
-	<key>gobackward.45</key>
+	<key>globe.badge.chevron.backward</key>
 	<array>
-		<string>go.forward.60.seconds</string>
+		<string>earth</string>
+	</array>
+	<key>globe.central.south.asia</key>
+	<array>
+		<string>earth</string>
+	</array>
+	<key>globe.central.south.asia.fill</key>
+	<array>
+		<string>earth</string>
+	</array>
+	<key>globe.desk</key>
+	<array>
+		<string>geography</string>
+	</array>
+	<key>globe.desk.fill</key>
+	<array>
+		<string>geography</string>
+	</array>
+	<key>globe.europe.africa</key>
+	<array>
+		<string>earth</string>
+	</array>
+	<key>globe.europe.africa.fill</key>
+	<array>
+		<string>earth</string>
 	</array>
 	<key>gobackward.minus</key>
 	<array>
 		<string>-</string>
-	</array>
-	<key>goforward</key>
-	<array>
-		<string>go.backward</string>
-	</array>
-	<key>goforward.10</key>
-	<array>
-		<string>go.backward.10.seconds</string>
-	</array>
-	<key>goforward.15</key>
-	<array>
-		<string>go.backward.15.seconds</string>
-	</array>
-	<key>goforward.30</key>
-	<array>
-		<string>go.backward.30.seconds</string>
-	</array>
-	<key>goforward.45</key>
-	<array>
-		<string>go.backward.45.seconds</string>
-	</array>
-	<key>goforward.60</key>
-	<array>
-		<string>go.backward.60.seconds</string>
 	</array>
 	<key>goforward.plus</key>
 	<array>
@@ -3361,7 +4239,6 @@
 		<string>college</string>
 		<string>education</string>
 		<string>hat</string>
-		<string>itunes.u</string>
 		<string>school</string>
 		<string>student</string>
 	</array>
@@ -3386,7 +4263,6 @@
 		<string>college</string>
 		<string>education</string>
 		<string>hat</string>
-		<string>itunes.u.fill</string>
 		<string>school</string>
 		<string>student</string>
 	</array>
@@ -3410,17 +4286,10 @@
 	<array>
 		<string>&gt;</string>
 	</array>
-	<key>grid</key>
+	<key>guaranisign</key>
 	<array>
-		<string>grid</string>
-	</array>
-	<key>grid.circle</key>
-	<array>
-		<string>grid.circle</string>
-	</array>
-	<key>grid.circle.fill</key>
-	<array>
-		<string>grid.circle.fill</string>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>guaranisign.circle</key>
 	<array>
@@ -3441,22 +4310,6 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
-	</array>
-	<key>guitars</key>
-	<array>
-		<string>genres</string>
-	</array>
-	<key>guitars.fill</key>
-	<array>
-		<string>genres.fill</string>
-	</array>
-	<key>hammer</key>
-	<array>
-		<string>build</string>
-	</array>
-	<key>hammer.fill</key>
-	<array>
-		<string>build.fill</string>
 	</array>
 	<key>hand.draw</key>
 	<array>
@@ -3487,6 +4340,14 @@
 		<string>block</string>
 		<string>privacy</string>
 	</array>
+	<key>hand.raised.app</key>
+	<array>
+		<string>privacy</string>
+	</array>
+	<key>hand.raised.app.fill</key>
+	<array>
+		<string>privacy</string>
+	</array>
 	<key>hand.raised.circle</key>
 	<array>
 		<string>privacy</string>
@@ -3498,9 +4359,7 @@
 	<key>hand.raised.fill</key>
 	<array>
 		<string>block</string>
-		<string>block.fill</string>
 		<string>privacy</string>
-		<string>privacy.fill</string>
 	</array>
 	<key>hand.raised.slash</key>
 	<array>
@@ -3513,7 +4372,6 @@
 		<string>privacy</string>
 		<string>remove</string>
 		<string>unblock</string>
-		<string>unblock.fill</string>
 	</array>
 	<key>hand.raised.square</key>
 	<array>
@@ -3538,7 +4396,6 @@
 	<key>hand.thumbsdown.fill</key>
 	<array>
 		<string>dislike</string>
-		<string>dislike.fill</string>
 	</array>
 	<key>hand.thumbsup</key>
 	<array>
@@ -3547,38 +4404,32 @@
 	<key>hand.thumbsup.fill</key>
 	<array>
 		<string>like</string>
-		<string>like.fill</string>
 	</array>
 	<key>hare</key>
 	<array>
 		<string>fast</string>
-		<string>increase.speed</string>
 		<string>rabbit</string>
 	</array>
 	<key>hare.fill</key>
 	<array>
 		<string>fast</string>
-		<string>increase.speed.fill</string>
 		<string>rabbit</string>
 	</array>
 	<key>headphones</key>
 	<array>
 		<string>audio</string>
-		<string>audiobook</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
 	<key>headphones.circle</key>
 	<array>
 		<string>audio</string>
-		<string>audiobook.circle</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
 	<key>headphones.circle.fill</key>
 	<array>
 		<string>audio</string>
-		<string>audiobook.circle.fill</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
@@ -3590,19 +4441,16 @@
 	<key>heart.circle</key>
 	<array>
 		<string>love</string>
-		<string>love.circle</string>
 		<string>medical</string>
 	</array>
 	<key>heart.circle.fill</key>
 	<array>
 		<string>love</string>
-		<string>love.circle.fill</string>
 		<string>medical</string>
 	</array>
 	<key>heart.fill</key>
 	<array>
 		<string>love</string>
-		<string>love.fill</string>
 		<string>medical</string>
 	</array>
 	<key>heart.rectangle</key>
@@ -3616,22 +4464,18 @@
 	<key>heart.slash</key>
 	<array>
 		<string>remove</string>
-		<string>unlove</string>
 	</array>
 	<key>heart.slash.circle</key>
 	<array>
 		<string>remove</string>
-		<string>unlove.circle</string>
 	</array>
 	<key>heart.slash.circle.fill</key>
 	<array>
 		<string>remove</string>
-		<string>unlove.circle.fill</string>
 	</array>
 	<key>heart.slash.fill</key>
 	<array>
 		<string>remove</string>
-		<string>unlove.fill</string>
 	</array>
 	<key>heart.square</key>
 	<array>
@@ -3702,6 +4546,22 @@
 		<string>write</string>
 		<string>writing</string>
 	</array>
+	<key>hockey.puck</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>hockey.puck.circle</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>hockey.puck.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>hockey.puck.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
 	<key>homepod</key>
 	<array>
 		<string>audio</string>
@@ -3762,26 +4622,38 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>hourglass</key>
-	<array>
-		<string>duration</string>
-	</array>
 	<key>hourglass.badge.plus</key>
 	<array>
 		<string>add</string>
-	</array>
-	<key>hourglass.bottomhalf.filled</key>
-	<array>
-		<string>duration.start</string>
-	</array>
-	<key>hourglass.tophalf.filled</key>
-	<array>
-		<string>duration.end</string>
 	</array>
 	<key>house</key>
 	<array>
 		<string>home</string>
 		<string>house</string>
+	</array>
+	<key>house.and.flag</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>ranger station</string>
+	</array>
+	<key>house.and.flag.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>ranger station</string>
+	</array>
+	<key>house.and.flag.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>ranger station</string>
+	</array>
+	<key>house.and.flag.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>ranger station</string>
 	</array>
 	<key>house.circle</key>
 	<array>
@@ -3796,8 +4668,32 @@
 	<key>house.fill</key>
 	<array>
 		<string>home</string>
-		<string>home.fill</string>
 		<string>house</string>
+	</array>
+	<key>house.lodge</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>house.lodge.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>house.lodge.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>house.lodge.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>hryvniasign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>hryvniasign.circle</key>
 	<array>
@@ -3819,60 +4715,52 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>humidifier.and.droplets</key>
+	<array>
+		<string>humidity</string>
+		<string>mist</string>
+		<string>water</string>
+	</array>
+	<key>humidifier.and.droplets.fill</key>
+	<array>
+		<string>humidity</string>
+		<string>mist</string>
+		<string>water</string>
+	</array>
 	<key>humidity</key>
 	<array>
+		<string>drop</string>
 		<string>weather</string>
 	</array>
 	<key>humidity.fill</key>
 	<array>
+		<string>drop</string>
 		<string>weather</string>
 	</array>
 	<key>hurricane</key>
 	<array>
-		<string>hurricane</string>
 		<string>weather</string>
 	</array>
-	<key>icloud</key>
+	<key>hurricane.circle</key>
 	<array>
-		<string>icloud</string>
+		<string>weather</string>
 	</array>
-	<key>icloud.and.arrow.down</key>
+	<key>hurricane.circle.fill</key>
 	<array>
-		<string>icloud.download</string>
-	</array>
-	<key>icloud.and.arrow.down.fill</key>
-	<array>
-		<string>icloud.download.fill</string>
-	</array>
-	<key>icloud.and.arrow.up</key>
-	<array>
-		<string>icloud.upload</string>
-	</array>
-	<key>icloud.and.arrow.up.fill</key>
-	<array>
-		<string>icloud.upload.fill</string>
-	</array>
-	<key>icloud.circle</key>
-	<array>
-		<string>icloud.circle</string>
-	</array>
-	<key>icloud.circle.fill</key>
-	<array>
-		<string>icloud.circle.fill</string>
-	</array>
-	<key>icloud.fill</key>
-	<array>
-		<string>icloud.fill</string>
+		<string>weather</string>
 	</array>
 	<key>icloud.slash</key>
 	<array>
-		<string>not.uploaded.to.icloud</string>
 		<string>remove</string>
 	</array>
 	<key>icloud.slash.fill</key>
 	<array>
-		<string>not.uploaded.to.icloud.fill</string>
 		<string>remove</string>
+	</array>
+	<key>indianrupeesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>indianrupeesign.circle</key>
 	<array>
@@ -3901,31 +4789,62 @@
 	<key>info.circle</key>
 	<array>
 		<string>info</string>
-		<string>info.circle</string>
 	</array>
 	<key>info.circle.fill</key>
 	<array>
 		<string>info</string>
-		<string>info.circle.fill</string>
+	</array>
+	<key>info.square</key>
+	<array>
+		<string>info</string>
+	</array>
+	<key>info.square.fill</key>
+	<array>
+		<string>info</string>
 	</array>
 	<key>ipad.and.iphone</key>
 	<array>
 		<string>ipad</string>
 		<string>iphone</string>
 	</array>
-	<key>iphone.homebutton.badge.play</key>
+	<key>ipad.and.iphone.slash</key>
 	<array>
-		<string>keynote.remote</string>
+		<string>ipad</string>
+		<string>iphone</string>
 	</array>
-	<key>iphone.homebutton.slash</key>
-	<array>
-		<string>remove</string>
-	</array>
-	<key>iphone.homebutton.slash.circle</key>
+	<key>iphone.gen1.slash</key>
 	<array>
 		<string>remove</string>
 	</array>
-	<key>iphone.homebutton.slash.circle.fill</key>
+	<key>iphone.gen1.slash.circle</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen1.slash.circle.fill</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen2.slash</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen2.slash.circle</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen2.slash.circle.fill</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen3.slash</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen3.slash.circle</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>iphone.gen3.slash.circle.fill</key>
 	<array>
 		<string>remove</string>
 	</array>
@@ -3941,10 +4860,6 @@
 	<array>
 		<string>remove</string>
 	</array>
-	<key>italic</key>
-	<array>
-		<string>italic</string>
-	</array>
 	<key>ivfluid.bag</key>
 	<array>
 		<string>medical</string>
@@ -3956,13 +4871,31 @@
 	<key>key</key>
 	<array>
 		<string>password</string>
-		<string>passwords</string>
 		<string>security</string>
 	</array>
 	<key>key.fill</key>
 	<array>
 		<string>password</string>
-		<string>passwords.fill</string>
+		<string>security</string>
+	</array>
+	<key>key.horizontal</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>key.horizontal.fill</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>key.radiowaves.forward</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>key.radiowaves.forward.fill</key>
+	<array>
+		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>key.viewfinder</key>
@@ -3970,13 +4903,28 @@
 		<string>password</string>
 		<string>security</string>
 	</array>
-	<key>keyboard</key>
+	<key>keyboard.badge.ellipsis</key>
 	<array>
-		<string>keyboard</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
-	<key>keyboard.chevron.compact.down</key>
+	<key>keyboard.badge.ellipsis.fill</key>
 	<array>
-		<string>hide.keyboard</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
+	</array>
+	<key>kipsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>kipsign.circle</key>
 	<array>
@@ -3998,23 +4946,56 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>laptopcomputer</key>
+	<key>lamp.ceiling</key>
 	<array>
-		<string>macbook</string>
+		<string>light</string>
 	</array>
-	<key>laptopcomputer.and.arrow.down</key>
+	<key>lamp.ceiling.fill</key>
 	<array>
-		<string>macbook</string>
+		<string>light</string>
 	</array>
-	<key>laptopcomputer.and.iphone</key>
+	<key>lamp.ceiling.inverse</key>
 	<array>
-		<string>iphone</string>
-		<string>macbook</string>
+		<string>light</string>
+	</array>
+	<key>lamp.desk</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>lamp.desk.fill</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>lamp.floor</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>lamp.floor.fill</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>lamp.table</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>lamp.table.fill</key>
+	<array>
+		<string>light</string>
+	</array>
+	<key>lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
 	</array>
 	<key>laptopcomputer.trianglebadge.exclamationmark</key>
 	<array>
-		<string>macbook</string>
+		<string>!</string>
 		<string>warning</string>
+	</array>
+	<key>larisign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>larisign.circle</key>
 	<array>
@@ -4036,10 +5017,6 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>lasso</key>
-	<array>
-		<string>lasso.select</string>
-	</array>
 	<key>lessthan</key>
 	<array>
 		<string>&lt;</string>
@@ -4060,13 +5037,29 @@
 	<array>
 		<string>&lt;</string>
 	</array>
-	<key>light.max</key>
+	<key>light.beacon.max</key>
 	<array>
-		<string>keyboard.backlight.higher</string>
+		<string>emergency</string>
+		<string>security alarm</string>
+		<string>siren</string>
 	</array>
-	<key>light.min</key>
+	<key>light.beacon.max.fill</key>
 	<array>
-		<string>keyboard.backlight.lower</string>
+		<string>emergency</string>
+		<string>security alarm</string>
+		<string>siren</string>
+	</array>
+	<key>light.beacon.min</key>
+	<array>
+		<string>emergency</string>
+		<string>security alarm</string>
+		<string>siren</string>
+	</array>
+	<key>light.beacon.min.fill</key>
+	<array>
+		<string>emergency</string>
+		<string>security alarm</string>
+		<string>siren</string>
 	</array>
 	<key>lightbulb.slash</key>
 	<array>
@@ -4076,10 +5069,6 @@
 	<array>
 		<string>remove</string>
 	</array>
-	<key>line.3.horizontal</key>
-	<array>
-		<string>drag</string>
-	</array>
 	<key>line.3.horizontal.decrease.circle</key>
 	<array>
 		<string>filter</string>
@@ -4088,40 +5077,20 @@
 	<key>line.3.horizontal.decrease.circle.fill</key>
 	<array>
 		<string>filter</string>
-		<string>filter.fill</string>
 		<string>mail</string>
 	</array>
 	<key>line.horizontal.star.fill.line.horizontal</key>
 	<array>
 		<string>favorite</string>
 	</array>
-	<key>lineweight</key>
-	<array>
-		<string>edit.line</string>
-	</array>
-	<key>link</key>
-	<array>
-		<string>link</string>
-	</array>
 	<key>link.badge.plus</key>
 	<array>
 		<string>add</string>
 	</array>
-	<key>link.circle</key>
+	<key>lirasign</key>
 	<array>
-		<string>link.circle</string>
-	</array>
-	<key>link.circle.fill</key>
-	<array>
-		<string>link.circle.fill</string>
-	</array>
-	<key>link.icloud</key>
-	<array>
-		<string>icloud.attachement</string>
-	</array>
-	<key>link.icloud.fill</key>
-	<array>
-		<string>icloud.attachement.fill</string>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>lirasign.circle</key>
 	<array>
@@ -4143,171 +5112,310 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>list.bullet</key>
+	<key>list.bullet.clipboard</key>
 	<array>
-		<string>bulleted.list</string>
+		<string>notes</string>
 	</array>
-	<key>list.bullet.below.rectangle</key>
+	<key>list.bullet.clipboard.fill</key>
 	<array>
-		<string>split.view.vertically</string>
+		<string>notes</string>
 	</array>
-	<key>list.bullet.indent</key>
+	<key>list.clipboard</key>
 	<array>
-		<string>bulletest.list.indent</string>
+		<string>notes</string>
 	</array>
-	<key>list.dash</key>
+	<key>list.clipboard.fill</key>
 	<array>
-		<string>list</string>
-	</array>
-	<key>list.number</key>
-	<array>
-		<string>numbered.list.number</string>
-	</array>
-	<key>list.number.rtl</key>
-	<array>
-		<string>numbered.list.number.rtl</string>
-	</array>
-	<key>livephoto</key>
-	<array>
-		<string>live.photo</string>
-	</array>
-	<key>livephoto.play</key>
-	<array>
-		<string>play.live.photo</string>
+		<string>notes</string>
 	</array>
 	<key>livephoto.slash</key>
 	<array>
 		<string>disable</string>
 		<string>disabled</string>
-		<string>live.photo.off</string>
 		<string>off</string>
 		<string>remove</string>
 	</array>
-	<key>location</key>
+	<key>lizard</key>
 	<array>
-		<string>location.services</string>
+		<string>reptile</string>
 	</array>
-	<key>location.fill</key>
+	<key>lizard.fill</key>
 	<array>
-		<string>location.services.fill</string>
-	</array>
-	<key>location.north</key>
-	<array>
-		<string>orient.to.phone</string>
-	</array>
-	<key>location.north.circle</key>
-	<array>
-		<string>orient.to.phone.circle</string>
-	</array>
-	<key>location.north.circle.fill</key>
-	<array>
-		<string>orient.to.phone.circle.fill</string>
-	</array>
-	<key>location.north.fill</key>
-	<array>
-		<string>orient.to.phone.fill</string>
-	</array>
-	<key>location.north.line</key>
-	<array>
-		<string>orient.to.north</string>
-	</array>
-	<key>location.north.line.fill</key>
-	<array>
-		<string>orient.to.north.fill</string>
+		<string>reptile</string>
 	</array>
 	<key>location.slash</key>
 	<array>
-		<string>location.services.off</string>
+		<string>remove</string>
+	</array>
+	<key>location.slash.circle</key>
+	<array>
+		<string>remove</string>
+	</array>
+	<key>location.slash.circle.fill</key>
+	<array>
 		<string>remove</string>
 	</array>
 	<key>location.slash.fill</key>
 	<array>
-		<string>location.services.off.fill</string>
 		<string>remove</string>
 	</array>
 	<key>lock</key>
 	<array>
 		<string>lock</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.applewatch</key>
+	<array>
+		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>lock.circle</key>
 	<array>
 		<string>lock</string>
-		<string>lock.circle</string>
+		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>lock.circle.fill</key>
 	<array>
 		<string>lock</string>
-		<string>lock.circle.fill</string>
+		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
 	</array>
-	<key>lock.desktopcomputer</key>
+	<key>lock.display</key>
 	<array>
-		<string>imac</string>
-		<string>mac</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.doc</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.doc.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
 	<key>lock.fill</key>
 	<array>
 		<string>lock</string>
-		<string>lock.fill</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.icloud</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.icloud.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.ipad</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.iphone</key>
+	<array>
+		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>lock.laptopcomputer</key>
 	<array>
-		<string>macbook</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
 	<key>lock.open</key>
 	<array>
+		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
 		<string>unlock</string>
 	</array>
-	<key>lock.open.desktopcomputer</key>
+	<key>lock.open.applewatch</key>
 	<array>
-		<string>imac</string>
-		<string>mac</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.open.display</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
 	<key>lock.open.fill</key>
 	<array>
+		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
 		<string>unlock</string>
-		<string>unlock.fill</string>
+	</array>
+	<key>lock.open.ipad</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.open.iphone</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
 	<key>lock.open.laptopcomputer</key>
 	<array>
-		<string>macbook</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.open.rotation</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.open.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+		<string>unlock</string>
+		<string>warning</string>
+	</array>
+	<key>lock.open.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+		<string>unlock</string>
+		<string>warning</string>
+	</array>
+	<key>lock.rectangle</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.rectangle.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.rectangle.on.rectangle</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.rectangle.on.rectangle.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.rectangle.stack</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.rectangle.stack.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
 	<key>lock.rotation</key>
 	<array>
-		<string>lock.rotation</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
-	<key>lock.rotation.open</key>
+	<key>lock.shield</key>
 	<array>
-		<string>unlock.rotation</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.shield.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
 	</array>
 	<key>lock.slash</key>
 	<array>
-		<string>lock.off</string>
+		<string>padlock</string>
 		<string>password</string>
 		<string>remove</string>
 		<string>security</string>
 	</array>
 	<key>lock.slash.fill</key>
 	<array>
-		<string>lock.off.fill</string>
+		<string>padlock</string>
 		<string>password</string>
 		<string>remove</string>
 		<string>security</string>
 	</array>
-	<key>macwindow</key>
+	<key>lock.square</key>
 	<array>
-		<string>window</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.square.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.square.stack</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.square.stack.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+		<string>warning</string>
+	</array>
+	<key>lock.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+		<string>warning</string>
 	</array>
 	<key>macwindow.badge.plus</key>
 	<array>
@@ -4323,12 +5431,10 @@
 	<key>magnifyingglass.circle</key>
 	<array>
 		<string>search</string>
-		<string>search.circle</string>
 	</array>
 	<key>magnifyingglass.circle.fill</key>
 	<array>
 		<string>search</string>
-		<string>search.circle.fill</string>
 	</array>
 	<key>mail.and.text.magnifyingglass</key>
 	<array>
@@ -4337,12 +5443,15 @@
 	<key>mail.stack</key>
 	<array>
 		<string>related</string>
-		<string>related.messages</string>
 	</array>
 	<key>mail.stack.fill</key>
 	<array>
 		<string>related</string>
-		<string>related.messages.fill</string>
+	</array>
+	<key>manatsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>manatsign.circle</key>
 	<array>
@@ -4364,48 +5473,29 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>map</key>
-	<array>
-		<string>show.map</string>
-	</array>
-	<key>map.fill</key>
-	<array>
-		<string>show.map.fill</string>
-	</array>
-	<key>mappin</key>
-	<array>
-		<string>map.pin</string>
-	</array>
-	<key>mappin.and.ellipse</key>
-	<array>
-		<string>remove.map.pin</string>
-	</array>
-	<key>mappin.circle</key>
-	<array>
-		<string>map.pin.circle</string>
-	</array>
-	<key>mappin.circle.fill</key>
-	<array>
-		<string>map.pin.circle.fill</string>
-	</array>
 	<key>mappin.slash</key>
 	<array>
 		<string>remove</string>
-		<string>remove.map.pin</string>
 	</array>
-	<key>memories</key>
+	<key>medical.thermometer</key>
 	<array>
-		<string>memories</string>
+		<string>COVID</string>
+		<string>medical</string>
+		<string>temperature</string>
+	</array>
+	<key>medical.thermometer.fill</key>
+	<array>
+		<string>COVID</string>
+		<string>medical</string>
+		<string>temperature</string>
 	</array>
 	<key>memories.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.memory</string>
 	</array>
 	<key>memories.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.memory</string>
 	</array>
 	<key>memorychip</key>
 	<array>
@@ -4421,26 +5511,6 @@
 	<array>
 		<string>desktop</string>
 	</array>
-	<key>message</key>
-	<array>
-		<string>message</string>
-	</array>
-	<key>message.circle</key>
-	<array>
-		<string>message.circle</string>
-	</array>
-	<key>message.circle.fill</key>
-	<array>
-		<string>message.circle.fill</string>
-	</array>
-	<key>message.fill</key>
-	<array>
-		<string>message.fill</string>
-	</array>
-	<key>metronome</key>
-	<array>
-		<string>tempo</string>
-	</array>
 	<key>mic</key>
 	<array>
 		<string>dictate</string>
@@ -4451,35 +5521,39 @@
 	<array>
 		<string>microphone</string>
 	</array>
+	<key>mic.badge.xmark</key>
+	<array>
+		<string>microphone</string>
+	</array>
 	<key>mic.circle</key>
 	<array>
 		<string>dictate</string>
 		<string>dictation</string>
 		<string>microphone</string>
-		<string>microphone.circle</string>
 	</array>
 	<key>mic.circle.fill</key>
 	<array>
 		<string>dictate</string>
 		<string>dictation</string>
 		<string>microphone</string>
-		<string>microphone.circle.fill</string>
 	</array>
 	<key>mic.fill</key>
 	<array>
 		<string>dictate</string>
 		<string>dictation</string>
 		<string>microphone</string>
-		<string>microphone.fill</string>
 	</array>
 	<key>mic.fill.badge.plus</key>
+	<array>
+		<string>microphone</string>
+	</array>
+	<key>mic.fill.badge.xmark</key>
 	<array>
 		<string>microphone</string>
 	</array>
 	<key>mic.slash</key>
 	<array>
 		<string>microphone</string>
-		<string>microphone.off</string>
 		<string>remove</string>
 	</array>
 	<key>mic.slash.circle</key>
@@ -4495,7 +5569,6 @@
 	<key>mic.slash.fill</key>
 	<array>
 		<string>microphone</string>
-		<string>microphone.off.fill</string>
 		<string>remove</string>
 	</array>
 	<key>mic.square</key>
@@ -4509,6 +5582,39 @@
 		<string>dictate</string>
 		<string>dictation</string>
 		<string>microphone</string>
+	</array>
+	<key>microbe</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>virus</string>
+	</array>
+	<key>microbe.circle</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>virus</string>
+	</array>
+	<key>microbe.circle.fill</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>virus</string>
+	</array>
+	<key>microbe.fill</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>virus</string>
+	</array>
+	<key>millsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>millsign.circle</key>
 	<array>
@@ -4547,7 +5653,6 @@
 		<string>delete</string>
 		<string>minus</string>
 		<string>remove</string>
-		<string>remove.circle</string>
 		<string>subtract</string>
 		<string>−</string>
 	</array>
@@ -4558,7 +5663,6 @@
 		<string>delete</string>
 		<string>minus</string>
 		<string>remove</string>
-		<string>remove.circle.fill</string>
 		<string>subtract</string>
 		<string>−</string>
 	</array>
@@ -4589,7 +5693,6 @@
 	<array>
 		<string>-</string>
 		<string>zoom out</string>
-		<string>zoom.out</string>
 	</array>
 	<key>minus.rectangle</key>
 	<array>
@@ -4628,7 +5731,6 @@
 		<string>delete</string>
 		<string>minus</string>
 		<string>remove</string>
-		<string>remove.square</string>
 		<string>subtract</string>
 		<string>−</string>
 	</array>
@@ -4639,7 +5741,6 @@
 		<string>delete</string>
 		<string>minus</string>
 		<string>remove</string>
-		<string>remove.square.fill</string>
 		<string>subtract</string>
 		<string>−</string>
 	</array>
@@ -4647,47 +5748,79 @@
 	<array>
 		<string>dnd</string>
 		<string>do not disturb</string>
-		<string>do.not.disturb</string>
 		<string>weather</string>
 	</array>
 	<key>moon.circle</key>
 	<array>
 		<string>dnd</string>
 		<string>do not disturb</string>
-		<string>do.not.disturb.circle</string>
 		<string>weather</string>
 	</array>
 	<key>moon.circle.fill</key>
 	<array>
 		<string>dnd</string>
 		<string>do not disturb</string>
-		<string>do.not.disturb.circle.fill</string>
 		<string>weather</string>
 	</array>
 	<key>moon.fill</key>
 	<array>
 		<string>dnd</string>
 		<string>do not disturb</string>
-		<string>do.not.disturb.fill</string>
 		<string>weather</string>
 	</array>
 	<key>moon.stars</key>
 	<array>
-		<string>clear.night</string>
+		<string>weather</string>
+	</array>
+	<key>moon.stars.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>moon.stars.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>moon.stars.fill</key>
 	<array>
-		<string>clear.night.fill</string>
 		<string>weather</string>
 	</array>
-	<key>moon.zzz</key>
+	<key>mountain.2</key>
 	<array>
-		<string>snooze.zzz</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
 	</array>
-	<key>moon.zzz.fill</key>
+	<key>mountain.2.circle</key>
 	<array>
-		<string>snooze.zzz.fill</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>mountain.2.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>mountain.2.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>mug</key>
+	<array>
+		<string>coffee</string>
+		<string>drink</string>
+		<string>food</string>
+		<string>tea</string>
+	</array>
+	<key>mug.fill</key>
+	<array>
+		<string>coffee</string>
+		<string>drink</string>
+		<string>food</string>
+		<string>tea</string>
 	</array>
 	<key>multiply</key>
 	<array>
@@ -4721,7 +5854,6 @@
 	</array>
 	<key>music.mic</key>
 	<array>
-		<string>artist</string>
 		<string>microphone</string>
 	</array>
 	<key>music.mic.circle</key>
@@ -4731,10 +5863,6 @@
 	<key>music.mic.circle.fill</key>
 	<array>
 		<string>microphone</string>
-	</array>
-	<key>music.note</key>
-	<array>
-		<string>song</string>
 	</array>
 	<key>music.note.house</key>
 	<array>
@@ -4746,17 +5874,10 @@
 		<string>home</string>
 		<string>house</string>
 	</array>
-	<key>music.note.list</key>
+	<key>nairasign</key>
 	<array>
-		<string>playlist</string>
-	</array>
-	<key>music.note.tv</key>
-	<array>
-		<string>music.video</string>
-	</array>
-	<key>music.note.tv.fill</key>
-	<array>
-		<string>music.video.fill</string>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>nairasign.circle</key>
 	<array>
@@ -4777,14 +5898,6 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
-	</array>
-	<key>nosign</key>
-	<array>
-		<string>stop</string>
-	</array>
-	<key>note.text</key>
-	<array>
-		<string>notes</string>
 	</array>
 	<key>note.text.badge.plus</key>
 	<array>
@@ -4828,43 +5941,38 @@
 		<string>octothorpe</string>
 		<string>pound</string>
 	</array>
-	<key>option</key>
+	<key>numbersign</key>
 	<array>
-		<string>option</string>
+		<string>numero</string>
 	</array>
-	<key>paintbrush</key>
+	<key>oar.2.crossed</key>
 	<array>
-		<string>format</string>
-	</array>
-	<key>paintbrush.fill</key>
-	<array>
-		<string>format.fill</string>
-	</array>
-	<key>pano</key>
-	<array>
-		<string>panorama</string>
-	</array>
-	<key>pano.fill</key>
-	<array>
-		<string>panorama.fill</string>
+		<string>paddling</string>
+		<string>sports</string>
 	</array>
 	<key>paperclip</key>
 	<array>
 		<string>attach</string>
-		<string>attachements</string>
 		<string>attachments</string>
 		<string>mail</string>
+	</array>
+	<key>paperclip.badge.ellipsis</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>paperclip.circle</key>
 	<array>
 		<string>attach</string>
-		<string>attachements.circle</string>
 		<string>attachments</string>
 	</array>
 	<key>paperclip.circle.fill</key>
 	<array>
 		<string>attach</string>
-		<string>attachements.circle.fill</string>
 		<string>attachments</string>
 	</array>
 	<key>paperplane</key>
@@ -4874,41 +5982,22 @@
 	<key>paperplane.circle</key>
 	<array>
 		<string>send</string>
-		<string>send.circle</string>
 	</array>
 	<key>paperplane.circle.fill</key>
 	<array>
 		<string>send</string>
-		<string>send.circle.fill</string>
 	</array>
 	<key>paperplane.fill</key>
 	<array>
 		<string>send</string>
-		<string>send.fill</string>
 	</array>
-	<key>pause</key>
+	<key>party.popper</key>
 	<array>
-		<string>pause</string>
+		<string>party</string>
 	</array>
-	<key>pause.circle</key>
+	<key>party.popper.fill</key>
 	<array>
-		<string>pause.circle</string>
-	</array>
-	<key>pause.circle.fill</key>
-	<array>
-		<string>pause.circle.fill</string>
-	</array>
-	<key>pause.fill</key>
-	<array>
-		<string>pause.fill</string>
-	</array>
-	<key>pause.rectangle</key>
-	<array>
-		<string>pause.rectangle</string>
-	</array>
-	<key>pause.rectangle.fill</key>
-	<array>
-		<string>pause.rectangle.fill</string>
+		<string>party</string>
 	</array>
 	<key>pawprint</key>
 	<array>
@@ -4939,25 +6028,27 @@
 	</array>
 	<key>pencil.and.outline</key>
 	<array>
-		<string>annotate</string>
 		<string>write</string>
 		<string>writing</string>
 	</array>
 	<key>pencil.circle</key>
 	<array>
-		<string>edit.circle</string>
 		<string>write</string>
 		<string>writing</string>
 	</array>
 	<key>pencil.circle.fill</key>
 	<array>
-		<string>edit.circle.fill</string>
+		<string>write</string>
+		<string>writing</string>
+	</array>
+	<key>pencil.line</key>
+	<array>
+		<string>draw</string>
 		<string>write</string>
 		<string>writing</string>
 	</array>
 	<key>pencil.slash</key>
 	<array>
-		<string>not.editable</string>
 		<string>remove</string>
 		<string>write</string>
 		<string>writing</string>
@@ -4982,7 +6073,6 @@
 	<array>
 		<string>-</string>
 		<string>remove</string>
-		<string>remove.markup</string>
 		<string>write</string>
 		<string>writing</string>
 	</array>
@@ -4990,7 +6080,6 @@
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.markup</string>
 		<string>write</string>
 		<string>writing</string>
 	</array>
@@ -5007,6 +6096,14 @@
 	<array>
 		<string>people</string>
 		<string>shared</string>
+	</array>
+	<key>person.2.badge.gearshape</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.2.badge.gearshape.fill</key>
+	<array>
+		<string>people</string>
 	</array>
 	<key>person.2.circle</key>
 	<array>
@@ -5029,6 +6126,21 @@
 		<string>people</string>
 	</array>
 	<key>person.2.fill</key>
+	<array>
+		<string>people</string>
+		<string>shared</string>
+	</array>
+	<key>person.2.gobackward</key>
+	<array>
+		<string>people</string>
+		<string>shared</string>
+	</array>
+	<key>person.2.slash</key>
+	<array>
+		<string>people</string>
+		<string>shared</string>
+	</array>
+	<key>person.2.slash.fill</key>
 	<array>
 		<string>people</string>
 		<string>shared</string>
@@ -5068,6 +6180,11 @@
 		<string>people</string>
 		<string>user</string>
 	</array>
+	<key>person.and.background.dotted</key>
+	<array>
+		<string>cameraandphotos</string>
+		<string>people</string>
+	</array>
 	<key>person.badge.clock</key>
 	<array>
 		<string>people</string>
@@ -5082,14 +6199,18 @@
 	</array>
 	<key>person.badge.key</key>
 	<array>
+		<string>passkey</string>
 		<string>password</string>
 		<string>people</string>
+		<string>privacyandsecurity</string>
 		<string>user</string>
 	</array>
 	<key>person.badge.key.fill</key>
 	<array>
+		<string>passkey</string>
 		<string>password</string>
 		<string>people</string>
+		<string>privacyandsecurity</string>
 		<string>user</string>
 	</array>
 	<key>person.badge.minus</key>
@@ -5106,6 +6227,28 @@
 		<string>new</string>
 		<string>people</string>
 		<string>user</string>
+	</array>
+	<key>person.badge.shield.checkmark</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.badge.shield.checkmark.fill</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.bust</key>
+	<array>
+		<string>art</string>
+		<string>people</string>
+		<string>sculpture</string>
+	</array>
+	<key>person.bust.fill</key>
+	<array>
+		<string>art</string>
+		<string>people</string>
+		<string>sculpture</string>
 	</array>
 	<key>person.circle</key>
 	<array>
@@ -5125,7 +6268,6 @@
 	<array>
 		<string>account</string>
 		<string>contact</string>
-		<string>contacts</string>
 		<string>people</string>
 		<string>profile</string>
 		<string>user</string>
@@ -5259,12 +6401,14 @@
 		<string>user</string>
 		<string>x</string>
 	</array>
+	<key>person.crop.circle.dashed</key>
+	<array>
+		<string>people</string>
+	</array>
 	<key>person.crop.circle.fill</key>
 	<array>
 		<string>account</string>
-		<string>account.fill</string>
 		<string>contact</string>
-		<string>contacts.fill</string>
 		<string>people</string>
 		<string>profile</string>
 		<string>user</string>
@@ -5306,6 +6450,14 @@
 	<array>
 		<string>people</string>
 	</array>
+	<key>person.crop.rectangle.badge.plus</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.crop.rectangle.badge.plus.fill</key>
+	<array>
+		<string>people</string>
+	</array>
 	<key>person.crop.rectangle.fill</key>
 	<array>
 		<string>people</string>
@@ -5313,12 +6465,10 @@
 	<key>person.crop.square</key>
 	<array>
 		<string>people</string>
-		<string>selfie</string>
 	</array>
 	<key>person.crop.square.fill</key>
 	<array>
 		<string>people</string>
-		<string>selfie.fill</string>
 	</array>
 	<key>person.crop.square.filled.and.at.rectangle</key>
 	<array>
@@ -5417,6 +6567,24 @@
 	<array>
 		<string>people</string>
 	</array>
+	<key>person.line.dotted.person</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>people</string>
+		<string>physical distancing</string>
+		<string>social distancing</string>
+	</array>
+	<key>person.line.dotted.person.fill</key>
+	<array>
+		<string>COVID</string>
+		<string>exposure</string>
+		<string>medical</string>
+		<string>people</string>
+		<string>physical distancing</string>
+		<string>social distancing</string>
+	</array>
 	<key>person.text.rectangle</key>
 	<array>
 		<string>people</string>
@@ -5433,13 +6601,10 @@
 	<array>
 		<string>people</string>
 	</array>
-	<key>personalhotspot</key>
+	<key>pesetasign</key>
 	<array>
-		<string>personal.hotspot</string>
-	</array>
-	<key>perspective</key>
-	<array>
-		<string>edit.perspective</string>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>pesetasign.circle</key>
 	<array>
@@ -5457,6 +6622,11 @@
 		<string>currency</string>
 	</array>
 	<key>pesetasign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>pesosign</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -5481,78 +6651,31 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>phone</key>
-	<array>
-		<string>call</string>
-	</array>
-	<key>phone.arrow.down.left</key>
-	<array>
-		<string>incoming.call</string>
-	</array>
-	<key>phone.arrow.right</key>
-	<array>
-		<string>call.forwarding</string>
-	</array>
-	<key>phone.arrow.up.right</key>
-	<array>
-		<string>outgoing.call</string>
-	</array>
 	<key>phone.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.call</string>
-	</array>
-	<key>phone.circle</key>
-	<array>
-		<string>call.circle</string>
-	</array>
-	<key>phone.circle.fill</key>
-	<array>
-		<string>call.circle.fill</string>
-	</array>
-	<key>phone.down</key>
-	<array>
-		<string>hang.up</string>
-	</array>
-	<key>phone.down.circle</key>
-	<array>
-		<string>hang.up.circle</string>
-	</array>
-	<key>phone.down.circle.fill</key>
-	<array>
-		<string>hang.up.circle.fill</string>
-	</array>
-	<key>phone.down.fill</key>
-	<array>
-		<string>hang.up.fill</string>
-	</array>
-	<key>phone.fill</key>
-	<array>
-		<string>call.fill</string>
-	</array>
-	<key>phone.fill.arrow.down.left</key>
-	<array>
-		<string>incoming.call</string>
-	</array>
-	<key>phone.fill.arrow.right</key>
-	<array>
-		<string>call.forwarding</string>
-	</array>
-	<key>phone.fill.arrow.up.right</key>
-	<array>
-		<string>outgoing.call</string>
 	</array>
 	<key>phone.fill.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.to.call</string>
 	</array>
 	<key>photo</key>
 	<array>
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
-		<string>photo</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.artframe</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -5561,6 +6684,8 @@
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -5569,6 +6694,8 @@
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -5577,21 +6704,86 @@
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
-		<string>photo.fill</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
 	<key>photo.fill.on.rectangle.fill</key>
 	<array>
+		<string>environment</string>
 		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
 	</array>
 	<key>photo.on.rectangle</key>
 	<array>
+		<string>environment</string>
 		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
 	</array>
 	<key>photo.on.rectangle.angled</key>
 	<array>
+		<string>environment</string>
 		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.stack</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.stack.fill</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.tv</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>pill</key>
+	<array>
+		<string>medical</string>
+	</array>
+	<key>pill.circle</key>
+	<array>
+		<string>medical</string>
+	</array>
+	<key>pill.circle.fill</key>
+	<array>
+		<string>medical</string>
+	</array>
+	<key>pill.fill</key>
+	<array>
+		<string>medical</string>
 	</array>
 	<key>pills</key>
 	<array>
@@ -5616,60 +6808,29 @@
 	<key>pin.circle</key>
 	<array>
 		<string>pin</string>
-		<string>pin.circle</string>
 	</array>
 	<key>pin.circle.fill</key>
 	<array>
 		<string>pin</string>
-		<string>pin.circle.fill</string>
 	</array>
 	<key>pin.fill</key>
 	<array>
 		<string>pin</string>
-		<string>pin.fill</string>
 	</array>
 	<key>pin.slash</key>
 	<array>
 		<string>remove</string>
-		<string>remove.pin</string>
 	</array>
 	<key>pin.slash.fill</key>
 	<array>
 		<string>remove</string>
-		<string>remove.pin.fill</string>
-	</array>
-	<key>pip.enter</key>
-	<array>
-		<string>minimize.video</string>
-	</array>
-	<key>pip.exit</key>
-	<array>
-		<string>maximize.video</string>
-	</array>
-	<key>play</key>
-	<array>
-		<string>play</string>
-	</array>
-	<key>play.circle</key>
-	<array>
-		<string>play.circle</string>
-	</array>
-	<key>play.circle.fill</key>
-	<array>
-		<string>play.circle.fill</string>
-	</array>
-	<key>play.fill</key>
-	<array>
-		<string>play.fill</string>
 	</array>
 	<key>play.rectangle</key>
 	<array>
-		<string>play.rectangle</string>
 		<string>slideshow</string>
 	</array>
 	<key>play.rectangle.fill</key>
 	<array>
-		<string>play.rectangle.fill</string>
 		<string>slideshow</string>
 	</array>
 	<key>play.slash</key>
@@ -5679,10 +6840,6 @@
 	<key>play.slash.fill</key>
 	<array>
 		<string>remove</string>
-	</array>
-	<key>playpause.fill</key>
-	<array>
-		<string>go.backward.fill</string>
 	</array>
 	<key>plus</key>
 	<array>
@@ -5704,18 +6861,15 @@
 	<key>plus.bubble</key>
 	<array>
 		<string>add</string>
-		<string>comment</string>
 	</array>
 	<key>plus.bubble.fill</key>
 	<array>
 		<string>add</string>
-		<string>comment.fill</string>
 	</array>
 	<key>plus.circle</key>
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.circle</string>
 		<string>create</string>
 		<string>increase</string>
 		<string>new</string>
@@ -5725,7 +6879,6 @@
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.circle.fill</string>
 		<string>create</string>
 		<string>increase</string>
 		<string>new</string>
@@ -5754,7 +6907,6 @@
 	<array>
 		<string>+</string>
 		<string>zoom in</string>
-		<string>zoom.in</string>
 	</array>
 	<key>plus.message</key>
 	<array>
@@ -5812,7 +6964,6 @@
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.square</string>
 		<string>create</string>
 		<string>increase</string>
 		<string>new</string>
@@ -5822,7 +6973,6 @@
 	<array>
 		<string>+</string>
 		<string>add</string>
-		<string>add.square.fill</string>
 		<string>create</string>
 		<string>increase</string>
 		<string>new</string>
@@ -5831,12 +6981,10 @@
 	<key>plus.square.fill.on.square.fill</key>
 	<array>
 		<string>add</string>
-		<string>duplicate.fill</string>
 	</array>
 	<key>plus.square.on.square</key>
 	<array>
 		<string>add</string>
-		<string>duplicate</string>
 	</array>
 	<key>plus.viewfinder</key>
 	<array>
@@ -5850,13 +6998,11 @@
 	<key>plusminus.circle</key>
 	<array>
 		<string>add</string>
-		<string>exposure</string>
 		<string>remove</string>
 	</array>
 	<key>plusminus.circle.fill</key>
 	<array>
 		<string>add</string>
-		<string>exposure.fill</string>
 		<string>remove</string>
 	</array>
 	<key>point.filled.topleft.down.curvedto.point.bottomright.up</key>
@@ -5879,9 +7025,377 @@
 		<string>activities</string>
 		<string>path</string>
 	</array>
-	<key>power</key>
+	<key>popcorn</key>
 	<array>
-		<string>power</string>
+		<string>movie</string>
+	</array>
+	<key>popcorn.circle</key>
+	<array>
+		<string>movie</string>
+	</array>
+	<key>popcorn.circle.fill</key>
+	<array>
+		<string>movie</string>
+	</array>
+	<key>popcorn.fill</key>
+	<array>
+		<string>movie</string>
+	</array>
+	<key>poweroutlet.type.a</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.a.fill</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.a.square</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.a.square.fill</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.b</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.b.fill</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.b.square</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.b.square.fill</key>
+	<array>
+		<string>canada</string>
+		<string>japan</string>
+		<string>mexico</string>
+		<string>united states of america</string>
+		<string>usa</string>
+	</array>
+	<key>poweroutlet.type.c</key>
+	<array>
+		<string>asia</string>
+		<string>europe</string>
+		<string>south america</string>
+	</array>
+	<key>poweroutlet.type.c.fill</key>
+	<array>
+		<string>asia</string>
+		<string>europe</string>
+		<string>south america</string>
+	</array>
+	<key>poweroutlet.type.c.square</key>
+	<array>
+		<string>asia</string>
+		<string>europe</string>
+		<string>south america</string>
+	</array>
+	<key>poweroutlet.type.c.square.fill</key>
+	<array>
+		<string>asia</string>
+		<string>europe</string>
+		<string>south america</string>
+	</array>
+	<key>poweroutlet.type.d</key>
+	<array>
+		<string>india</string>
+	</array>
+	<key>poweroutlet.type.d.fill</key>
+	<array>
+		<string>india</string>
+	</array>
+	<key>poweroutlet.type.d.square</key>
+	<array>
+		<string>india</string>
+	</array>
+	<key>poweroutlet.type.d.square.fill</key>
+	<array>
+		<string>india</string>
+	</array>
+	<key>poweroutlet.type.e</key>
+	<array>
+		<string>belgium</string>
+		<string>czechia</string>
+		<string>france</string>
+		<string>poland</string>
+		<string>slovakia</string>
+	</array>
+	<key>poweroutlet.type.e.fill</key>
+	<array>
+		<string>belgium</string>
+		<string>czechia</string>
+		<string>france</string>
+		<string>poland</string>
+		<string>slovakia</string>
+	</array>
+	<key>poweroutlet.type.e.square</key>
+	<array>
+		<string>belgium</string>
+		<string>czechia</string>
+		<string>france</string>
+		<string>poland</string>
+		<string>slovakia</string>
+	</array>
+	<key>poweroutlet.type.e.square.fill</key>
+	<array>
+		<string>belgium</string>
+		<string>czechia</string>
+		<string>france</string>
+		<string>poland</string>
+		<string>slovakia</string>
+	</array>
+	<key>poweroutlet.type.f</key>
+	<array>
+		<string>europe</string>
+		<string>russia</string>
+	</array>
+	<key>poweroutlet.type.f.fill</key>
+	<array>
+		<string>europe</string>
+		<string>russia</string>
+	</array>
+	<key>poweroutlet.type.f.square</key>
+	<array>
+		<string>europe</string>
+		<string>russia</string>
+	</array>
+	<key>poweroutlet.type.f.square.fill</key>
+	<array>
+		<string>europe</string>
+		<string>russia</string>
+	</array>
+	<key>poweroutlet.type.g</key>
+	<array>
+		<string>ireland</string>
+		<string>malaysia</string>
+		<string>malta</string>
+		<string>singapore</string>
+		<string>uk</string>
+		<string>united kingdom</string>
+	</array>
+	<key>poweroutlet.type.g.fill</key>
+	<array>
+		<string>ireland</string>
+		<string>malaysia</string>
+		<string>malta</string>
+		<string>singapore</string>
+		<string>uk</string>
+		<string>united kingdom</string>
+	</array>
+	<key>poweroutlet.type.g.square</key>
+	<array>
+		<string>ireland</string>
+		<string>malaysia</string>
+		<string>malta</string>
+		<string>singapore</string>
+		<string>uk</string>
+		<string>united kingdom</string>
+	</array>
+	<key>poweroutlet.type.g.square.fill</key>
+	<array>
+		<string>ireland</string>
+		<string>malaysia</string>
+		<string>malta</string>
+		<string>singapore</string>
+		<string>uk</string>
+		<string>united kingdom</string>
+	</array>
+	<key>poweroutlet.type.h</key>
+	<array>
+		<string>gaza strip</string>
+		<string>israel</string>
+		<string>west bank</string>
+	</array>
+	<key>poweroutlet.type.h.fill</key>
+	<array>
+		<string>gaza strip</string>
+		<string>israel</string>
+		<string>west bank</string>
+	</array>
+	<key>poweroutlet.type.h.square</key>
+	<array>
+		<string>gaza strip</string>
+		<string>israel</string>
+		<string>west bank</string>
+	</array>
+	<key>poweroutlet.type.h.square.fill</key>
+	<array>
+		<string>gaza strip</string>
+		<string>israel</string>
+		<string>west bank</string>
+	</array>
+	<key>poweroutlet.type.i</key>
+	<array>
+		<string>argentina</string>
+		<string>australia</string>
+		<string>china</string>
+		<string>new zealand</string>
+	</array>
+	<key>poweroutlet.type.i.fill</key>
+	<array>
+		<string>argentina</string>
+		<string>australia</string>
+		<string>china</string>
+		<string>new zealand</string>
+	</array>
+	<key>poweroutlet.type.i.square</key>
+	<array>
+		<string>argentina</string>
+		<string>australia</string>
+		<string>china</string>
+		<string>new zealand</string>
+	</array>
+	<key>poweroutlet.type.i.square.fill</key>
+	<array>
+		<string>argentina</string>
+		<string>australia</string>
+		<string>china</string>
+		<string>new zealand</string>
+	</array>
+	<key>poweroutlet.type.j</key>
+	<array>
+		<string>liechtenstein</string>
+		<string>switzerland</string>
+	</array>
+	<key>poweroutlet.type.j.fill</key>
+	<array>
+		<string>liechtenstein</string>
+		<string>switzerland</string>
+	</array>
+	<key>poweroutlet.type.j.square</key>
+	<array>
+		<string>liechtenstein</string>
+		<string>switzerland</string>
+	</array>
+	<key>poweroutlet.type.j.square.fill</key>
+	<array>
+		<string>liechtenstein</string>
+		<string>switzerland</string>
+	</array>
+	<key>poweroutlet.type.k</key>
+	<array>
+		<string>denmark</string>
+		<string>greenland</string>
+	</array>
+	<key>poweroutlet.type.k.fill</key>
+	<array>
+		<string>denmark</string>
+		<string>greenland</string>
+	</array>
+	<key>poweroutlet.type.k.square</key>
+	<array>
+		<string>denmark</string>
+		<string>greenland</string>
+	</array>
+	<key>poweroutlet.type.k.square.fill</key>
+	<array>
+		<string>denmark</string>
+		<string>greenland</string>
+	</array>
+	<key>poweroutlet.type.l</key>
+	<array>
+		<string>chile</string>
+		<string>italy</string>
+	</array>
+	<key>poweroutlet.type.l.fill</key>
+	<array>
+		<string>chile</string>
+		<string>italy</string>
+	</array>
+	<key>poweroutlet.type.l.square</key>
+	<array>
+		<string>chile</string>
+		<string>italy</string>
+	</array>
+	<key>poweroutlet.type.l.square.fill</key>
+	<array>
+		<string>chile</string>
+		<string>italy</string>
+	</array>
+	<key>poweroutlet.type.m</key>
+	<array>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.m.fill</key>
+	<array>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.m.square</key>
+	<array>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.m.square.fill</key>
+	<array>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.n</key>
+	<array>
+		<string>brazil</string>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.n.fill</key>
+	<array>
+		<string>brazil</string>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.n.square</key>
+	<array>
+		<string>brazil</string>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.n.square.fill</key>
+	<array>
+		<string>brazil</string>
+		<string>south africa</string>
+	</array>
+	<key>poweroutlet.type.o</key>
+	<array>
+		<string>thailand</string>
+	</array>
+	<key>poweroutlet.type.o.fill</key>
+	<array>
+		<string>thailand</string>
+	</array>
+	<key>poweroutlet.type.o.square</key>
+	<array>
+		<string>thailand</string>
+	</array>
+	<key>poweroutlet.type.o.square.fill</key>
+	<array>
+		<string>thailand</string>
 	</array>
 	<key>printer</key>
 	<array>
@@ -5892,37 +7406,22 @@
 	<array>
 		<string>mail</string>
 		<string>print</string>
-		<string>print.fill</string>
 	</array>
 	<key>projective</key>
 	<array>
 		<string>enter</string>
-		<string>projective.enter</string>
-	</array>
-	<key>purchased</key>
-	<array>
-		<string>purchased</string>
-	</array>
-	<key>purchased.circle</key>
-	<array>
-		<string>purchased.circle</string>
-	</array>
-	<key>purchased.circle.fill</key>
-	<array>
-		<string>purchased.circle.fill</string>
-	</array>
-	<key>qrcode</key>
-	<array>
-		<string>qr.code</string>
 	</array>
 	<key>qrcode.viewfinder</key>
 	<array>
 		<string>scan qr code</string>
-		<string>scan.qr.code</string>
 	</array>
 	<key>questionmark</key>
 	<array>
 		<string>?</string>
+	</array>
+	<key>questionmark.ar</key>
+	<array>
+		<string>!?</string>
 	</array>
 	<key>questionmark.circle</key>
 	<array>
@@ -5940,14 +7439,6 @@
 	<array>
 		<string>help</string>
 	</array>
-	<key>questionmark.diamond</key>
-	<array>
-		<string>question</string>
-	</array>
-	<key>questionmark.diamond.fill</key>
-	<array>
-		<string>question.fill</string>
-	</array>
 	<key>questionmark.folder</key>
 	<array>
 		<string>?</string>
@@ -5956,32 +7447,40 @@
 	<array>
 		<string>?</string>
 	</array>
+	<key>questionmark.key.filled</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
 	<key>questionmark.video</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.unavailable</string>
 	</array>
 	<key>questionmark.video.ar</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.unavailable.ar</string>
 	</array>
 	<key>questionmark.video.fill</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.unavailable.fill</string>
 	</array>
 	<key>questionmark.video.fill.ar</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.unavailable.fill.ar</string>
 	</array>
 	<key>rays</key>
 	<array>
-		<string>click</string>
 		<string>light</string>
 	</array>
 	<key>recordingtape</key>
+	<array>
+		<string>voicemail</string>
+	</array>
+	<key>recordingtape.circle</key>
+	<array>
+		<string>voicemail</string>
+	</array>
+	<key>recordingtape.circle.fill</key>
 	<array>
 		<string>voicemail</string>
 	</array>
@@ -6000,30 +7499,43 @@
 	<key>rectangle.and.hand.point.up.left</key>
 	<array>
 		<string>touch</string>
+		<string>trackpad</string>
 	</array>
 	<key>rectangle.and.hand.point.up.left.fill</key>
 	<array>
 		<string>touch</string>
+		<string>trackpad</string>
 	</array>
 	<key>rectangle.and.hand.point.up.left.filled</key>
 	<array>
 		<string>touch</string>
+		<string>trackpad</string>
 	</array>
 	<key>rectangle.and.paperclip</key>
 	<array>
 		<string>include attachments</string>
-		<string>include.attachements</string>
 	</array>
 	<key>rectangle.and.pencil.and.ellipsis</key>
 	<array>
-		<string>autofill</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
 		<string>write</string>
 		<string>writing</string>
+		<string>…</string>
 	</array>
 	<key>rectangle.and.pencil.and.ellipsis.rtl</key>
 	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
 		<string>write</string>
 		<string>writing</string>
+		<string>…</string>
 	</array>
 	<key>rectangle.badge.minus</key>
 	<array>
@@ -6043,17 +7555,9 @@
 	<array>
 		<string>x</string>
 	</array>
-	<key>rectangle.compress.vertical</key>
-	<array>
-		<string>skip.slide</string>
-	</array>
 	<key>rectangle.dashed.and.paperclip</key>
 	<array>
 		<string>exclude attachments</string>
-	</array>
-	<key>rectangle.expand.vertical</key>
-	<array>
-		<string>show.slide</string>
 	</array>
 	<key>rectangle.fill.badge.minus</key>
 	<array>
@@ -6073,26 +7577,15 @@
 	<array>
 		<string>x</string>
 	</array>
-	<key>rectangle.fill.on.rectangle.fill</key>
-	<array>
-		<string>screen.sharing.fill</string>
-	</array>
 	<key>rectangle.filled.and.hand.point.up.left</key>
 	<array>
 		<string>touch</string>
-	</array>
-	<key>rectangle.grid.3x2</key>
-	<array>
-		<string>mission.control</string>
+		<string>trackpad</string>
 	</array>
 	<key>rectangle.inset.filled.and.person.filled</key>
 	<array>
 		<string>people</string>
 		<string>screen sharing</string>
-	</array>
-	<key>rectangle.on.rectangle</key>
-	<array>
-		<string>screen.sharing</string>
 	</array>
 	<key>rectangle.on.rectangle.slash</key>
 	<array>
@@ -6109,22 +7602,6 @@
 	<key>rectangle.slash.fill</key>
 	<array>
 		<string>remove</string>
-	</array>
-	<key>rectangle.split.3x1</key>
-	<array>
-		<string>column.view</string>
-	</array>
-	<key>rectangle.split.3x1.fill</key>
-	<array>
-		<string>column.view.fill</string>
-	</array>
-	<key>rectangle.split.3x3</key>
-	<array>
-		<string>grid.view</string>
-	</array>
-	<key>rectangle.split.3x3.fill</key>
-	<array>
-		<string>grid.view.fill</string>
 	</array>
 	<key>rectangle.stack</key>
 	<array>
@@ -6172,14 +7649,6 @@
 		<string>add</string>
 		<string>album</string>
 	</array>
-	<key>repeat</key>
-	<array>
-		<string>repeat.1</string>
-	</array>
-	<key>repeat.1</key>
-	<array>
-		<string>go.forward</string>
-	</array>
 	<key>restart</key>
 	<array>
 		<string>restart</string>
@@ -6191,22 +7660,23 @@
 	<key>rotate.left</key>
 	<array>
 		<string>rotate left</string>
-		<string>rotate.45deg.left</string>
 	</array>
 	<key>rotate.left.fill</key>
 	<array>
 		<string>rotate left</string>
-		<string>rotate.45deg.left.fill</string>
 	</array>
 	<key>rotate.right</key>
 	<array>
 		<string>rotate right</string>
-		<string>rotate.45deg.right</string>
 	</array>
 	<key>rotate.right.fill</key>
 	<array>
 		<string>rotate right</string>
-		<string>rotate.45deg.right.fill</string>
+	</array>
+	<key>rublesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>rublesign.circle</key>
 	<array>
@@ -6224,6 +7694,11 @@
 		<string>currency</string>
 	</array>
 	<key>rublesign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>rupeesign</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -6251,30 +7726,37 @@
 	<key>safari</key>
 	<array>
 		<string>compass</string>
-		<string>safari</string>
 	</array>
 	<key>safari.fill</key>
 	<array>
 		<string>compass</string>
-		<string>safari.fill</string>
+	</array>
+	<key>scalemass</key>
+	<array>
+		<string>weight</string>
+	</array>
+	<key>scalemass.fill</key>
+	<array>
+		<string>weight</string>
 	</array>
 	<key>scissors</key>
 	<array>
 		<string>cut</string>
+	</array>
+	<key>scissors.badge.ellipsis</key>
+	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>scope</key>
 	<array>
 		<string>crosshair</string>
 		<string>locate</string>
 		<string>target</string>
-	</array>
-	<key>scribble</key>
-	<array>
-		<string>draw</string>
-	</array>
-	<key>selection.pin.in.out</key>
-	<array>
-		<string>crop</string>
 	</array>
 	<key>sensor.tag.radiowaves.forward</key>
 	<array>
@@ -6285,6 +7767,17 @@
 	<array>
 		<string>findable</string>
 		<string>location</string>
+	</array>
+	<key>shared.with.you</key>
+	<array>
+		<string>people</string>
+		<string>person</string>
+	</array>
+	<key>shared.with.you.slash</key>
+	<array>
+		<string>people</string>
+		<string>person</string>
+		<string>remove</string>
 	</array>
 	<key>shareplay</key>
 	<array>
@@ -6298,6 +7791,11 @@
 		<string>person</string>
 		<string>rainbow</string>
 		<string>remove</string>
+	</array>
+	<key>shekelsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>shekelsign.circle</key>
 	<array>
@@ -6331,33 +7829,109 @@
 	<array>
 		<string>remove</string>
 	</array>
-	<key>shift</key>
+	<key>signpost.and.arrowtriangle.up</key>
 	<array>
-		<string>shift</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+		<string>trailhead</string>
 	</array>
-	<key>shift.fill</key>
+	<key>signpost.and.arrowtriangle.up.circle</key>
 	<array>
-		<string>shift.fill</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+		<string>trailhead</string>
 	</array>
-	<key>shuffle</key>
+	<key>signpost.and.arrowtriangle.up.circle.fill</key>
 	<array>
-		<string>repeat</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+		<string>trailhead</string>
 	</array>
-	<key>sidebar.left</key>
+	<key>signpost.and.arrowtriangle.up.fill</key>
 	<array>
-		<string>split.view.horitzontally.left</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+		<string>trailhead</string>
 	</array>
-	<key>sidebar.right</key>
+	<key>signpost.left</key>
 	<array>
-		<string>split.view.horitzontally.right</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
 	</array>
-	<key>signature</key>
+	<key>signpost.left.circle</key>
 	<array>
-		<string>signature</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
 	</array>
-	<key>skew</key>
+	<key>signpost.left.circle.fill</key>
 	<array>
-		<string>edit.perspective</string>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.left.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.and.left</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>fork</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.and.left.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>fork</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.and.left.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>fork</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.and.left.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>fork</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
+	</array>
+	<key>signpost.right.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+		<string>trail</string>
 	</array>
 	<key>slash.circle</key>
 	<array>
@@ -6373,7 +7947,37 @@
 	<array>
 		<string>sleep</string>
 	</array>
+	<key>slider.horizontal.2.gobackward</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
+	<key>slider.horizontal.2.square.badge.arrow.down</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
+	<key>slider.horizontal.2.square.on.square</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
 	<key>slider.horizontal.3</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
+	<key>slider.horizontal.below.rectangle</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
+	<key>slider.horizontal.below.square.and.square.filled</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
+	<key>slider.horizontal.below.square.filled.and.square</key>
 	<array>
 		<string>adjust</string>
 		<string>edit</string>
@@ -6383,31 +7987,24 @@
 		<string>adjust</string>
 		<string>edit</string>
 	</array>
-	<key>slowmo</key>
-	<array>
-		<string>slow.mo</string>
-	</array>
-	<key>smallcircle.filled.circle</key>
-	<array>
-		<string>vignette.circle</string>
-	</array>
-	<key>smallcircle.filled.circle.fill</key>
-	<array>
-		<string>vignette.circle.fill</string>
-	</array>
 	<key>smoke</key>
 	<array>
-		<string>smoke</string>
+		<string>weather</string>
+	</array>
+	<key>smoke.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>smoke.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>smoke.fill</key>
 	<array>
-		<string>smoke.fill</string>
 		<string>weather</string>
 	</array>
 	<key>snowflake</key>
 	<array>
-		<string>snow.flurry</string>
 		<string>weather</string>
 	</array>
 	<key>snowflake.circle</key>
@@ -6418,15 +8015,55 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>snowflake.slash</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>soccerball</key>
+	<array>
+		<string>football</string>
+		<string>sports</string>
+	</array>
+	<key>soccerball.circle</key>
+	<array>
+		<string>football</string>
+		<string>sports</string>
+	</array>
+	<key>soccerball.circle.fill</key>
+	<array>
+		<string>football</string>
+		<string>sports</string>
+	</array>
+	<key>soccerball.circle.fill.inverse</key>
+	<array>
+		<string>football</string>
+		<string>sports</string>
+	</array>
+	<key>soccerball.circle.inverse</key>
+	<array>
+		<string>football</string>
+		<string>sports</string>
+	</array>
+	<key>soccerball.inverse</key>
+	<array>
+		<string>football</string>
+		<string>sports</string>
+	</array>
+	<key>sofa</key>
+	<array>
+		<string>couch</string>
+	</array>
+	<key>sofa.fill</key>
+	<array>
+		<string>couch</string>
+	</array>
 	<key>sparkles</key>
 	<array>
-		<string>sparkle</string>
 		<string>weather</string>
 	</array>
 	<key>speaker</key>
 	<array>
 		<string>volume</string>
-		<string>volume.lowest</string>
 	</array>
 	<key>speaker.badge.exclamationmark</key>
 	<array>
@@ -6451,13 +8088,27 @@
 	<key>speaker.fill</key>
 	<array>
 		<string>volume</string>
-		<string>volume.lowest.fill</string>
+	</array>
+	<key>speaker.minus</key>
+	<array>
+		<string>volume</string>
+	</array>
+	<key>speaker.minus.fill</key>
+	<array>
+		<string>volume</string>
+	</array>
+	<key>speaker.plus</key>
+	<array>
+		<string>volume</string>
+	</array>
+	<key>speaker.plus.fill</key>
+	<array>
+		<string>volume</string>
 	</array>
 	<key>speaker.slash</key>
 	<array>
 		<string>mute</string>
 		<string>remove</string>
-		<string>sound.off</string>
 		<string>volume</string>
 	</array>
 	<key>speaker.slash.circle</key>
@@ -6484,37 +8135,39 @@
 	<array>
 		<string>mute</string>
 		<string>remove</string>
-		<string>sound.off.fill</string>
 		<string>volume</string>
 	</array>
 	<key>speaker.slash.fill.rtl</key>
 	<array>
 		<string>mute</string>
 		<string>remove</string>
-		<string>sound.off.fill.rtl</string>
 		<string>volume</string>
 	</array>
 	<key>speaker.slash.rtl</key>
 	<array>
 		<string>mute</string>
 		<string>remove</string>
-		<string>sound.off.rtl</string>
+		<string>volume</string>
+	</array>
+	<key>speaker.square</key>
+	<array>
+		<string>volume</string>
+	</array>
+	<key>speaker.square.fill</key>
+	<array>
 		<string>volume</string>
 	</array>
 	<key>speaker.wave.1</key>
 	<array>
 		<string>volume</string>
-		<string>volume.low</string>
 	</array>
 	<key>speaker.wave.1.fill</key>
 	<array>
 		<string>volume</string>
-		<string>volume.low.fill</string>
 	</array>
 	<key>speaker.wave.2</key>
 	<array>
 		<string>volume</string>
-		<string>volume.high</string>
 	</array>
 	<key>speaker.wave.2.circle</key>
 	<array>
@@ -6527,21 +8180,46 @@
 	<key>speaker.wave.2.fill</key>
 	<array>
 		<string>volume</string>
-		<string>volume.high.fill</string>
 	</array>
 	<key>speaker.wave.3</key>
 	<array>
 		<string>volume</string>
-		<string>volume.highest</string>
 	</array>
 	<key>speaker.wave.3.fill</key>
 	<array>
 		<string>volume</string>
-		<string>volume.highest.fill</string>
 	</array>
-	<key>speedometer</key>
+	<key>spigot</key>
 	<array>
-		<string>speed</string>
+		<string>faucet</string>
+	</array>
+	<key>spigot.fill</key>
+	<array>
+		<string>faucet</string>
+	</array>
+	<key>sportscourt</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>sportscourt.circle</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>sportscourt.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>sportscourt.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>sprinkler.and.droplets</key>
+	<array>
+		<string>water</string>
+	</array>
+	<key>sprinkler.and.droplets.fill</key>
+	<array>
+		<string>water</string>
 	</array>
 	<key>square.and.arrow.down</key>
 	<array>
@@ -6552,21 +8230,18 @@
 	<key>square.and.arrow.down.fill</key>
 	<array>
 		<string>download</string>
-		<string>download.fill</string>
 		<string>import</string>
 		<string>save</string>
 	</array>
 	<key>square.and.arrow.down.on.square</key>
 	<array>
 		<string>download</string>
-		<string>download.multiple</string>
 		<string>import</string>
 		<string>save</string>
 	</array>
 	<key>square.and.arrow.down.on.square.fill</key>
 	<array>
 		<string>download</string>
-		<string>download.multiple.fill</string>
 		<string>import</string>
 		<string>save</string>
 	</array>
@@ -6592,19 +8267,16 @@
 	<array>
 		<string>export</string>
 		<string>share</string>
-		<string>share.fill</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.on.square</key>
 	<array>
 		<string>export</string>
-		<string>share.multiple</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.on.square.fill</key>
 	<array>
 		<string>export</string>
-		<string>share.multiple.fill</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.trianglebadge.exclamationmark</key>
@@ -6629,21 +8301,19 @@
 		<string>write</string>
 		<string>writing</string>
 	</array>
-	<key>square.dashed</key>
+	<key>square.and.pencil.circle</key>
 	<array>
-		<string>rectangular.selection</string>
+		<string>compose</string>
+		<string>mail</string>
+		<string>write</string>
+		<string>writing</string>
 	</array>
-	<key>square.fill.on.circle.fill</key>
+	<key>square.and.pencil.circle.fill</key>
 	<array>
-		<string>shape.fill</string>
-	</array>
-	<key>square.grid.2x2</key>
-	<array>
-		<string>grid.2x2</string>
-	</array>
-	<key>square.grid.2x2.fill</key>
-	<array>
-		<string>grid.2x2.fill</string>
+		<string>compose</string>
+		<string>mail</string>
+		<string>write</string>
+		<string>writing</string>
 	</array>
 	<key>square.grid.3x1.folder.badge.plus</key>
 	<array>
@@ -6659,13 +8329,13 @@
 		<string>create</string>
 		<string>new</string>
 	</array>
-	<key>square.grid.3x2</key>
+	<key>square.on.square.badge.person.crop</key>
 	<array>
-		<string>launchpad</string>
+		<string>people</string>
 	</array>
-	<key>square.on.circle</key>
+	<key>square.on.square.badge.person.crop.fill</key>
 	<array>
-		<string>shape</string>
+		<string>people</string>
 	</array>
 	<key>square.on.square.squareshape.controlhandles</key>
 	<array>
@@ -6699,22 +8369,6 @@
 	<array>
 		<string>right</string>
 	</array>
-	<key>square.stack.3d.down.right</key>
-	<array>
-		<string>burst</string>
-	</array>
-	<key>square.stack.3d.down.right.fill</key>
-	<array>
-		<string>burst.fill</string>
-	</array>
-	<key>square.stack.3d.forward.dottedline</key>
-	<array>
-		<string>animate</string>
-	</array>
-	<key>square.stack.3d.up</key>
-	<array>
-		<string>hdr</string>
-	</array>
 	<key>square.stack.3d.up.badge.a</key>
 	<array>
 		<string>a</string>
@@ -6722,10 +8376,6 @@
 	<key>square.stack.3d.up.badge.a.fill</key>
 	<array>
 		<string>a</string>
-	</array>
-	<key>square.stack.3d.up.fill</key>
-	<array>
-		<string>hdr.fill</string>
 	</array>
 	<key>square.stack.3d.up.slash</key>
 	<array>
@@ -6758,24 +8408,20 @@
 	<key>star</key>
 	<array>
 		<string>favorite</string>
-		<string>favorites</string>
 		<string>mail</string>
 		<string>vip</string>
 	</array>
 	<key>star.circle</key>
 	<array>
 		<string>favorite</string>
-		<string>favorites.circle</string>
 	</array>
 	<key>star.circle.fill</key>
 	<array>
 		<string>favorite</string>
-		<string>favorites.circle.fill</string>
 	</array>
 	<key>star.fill</key>
 	<array>
 		<string>favorite</string>
-		<string>favorites.fill</string>
 		<string>mail</string>
 		<string>vip</string>
 	</array>
@@ -6783,13 +8429,11 @@
 	<array>
 		<string>favorite</string>
 		<string>remove</string>
-		<string>remove.favorite</string>
 	</array>
 	<key>star.slash.fill</key>
 	<array>
 		<string>favorite</string>
 		<string>remove</string>
-		<string>remove.favorite.fill</string>
 	</array>
 	<key>star.square</key>
 	<array>
@@ -6802,22 +8446,28 @@
 	<key>staroflife</key>
 	<array>
 		<string>medical</string>
-		<string>medical.id</string>
 	</array>
 	<key>staroflife.circle</key>
 	<array>
 		<string>medical</string>
-		<string>medical.id.circle</string>
 	</array>
 	<key>staroflife.circle.fill</key>
 	<array>
 		<string>medical</string>
-		<string>medical.id.circle.fill</string>
 	</array>
 	<key>staroflife.fill</key>
 	<array>
 		<string>medical</string>
-		<string>medical.id.fill</string>
+	</array>
+	<key>steeringwheel.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>sterlingsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>sterlingsign.circle</key>
 	<array>
@@ -6839,19 +8489,15 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>stopwatch</key>
-	<array>
-		<string>stopwatch</string>
-	</array>
-	<key>stopwatch.fill</key>
-	<array>
-		<string>stopwatch.fill</string>
-	</array>
-	<key>strikethrough</key>
-	<array>
-		<string>strike.through</string>
-	</array>
 	<key>sun.and.horizon</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.and.horizon.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.and.horizon.circle.fill</key>
 	<array>
 		<string>weather</string>
 	</array>
@@ -6863,11 +8509,27 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>sun.dust.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.dust.circle.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
 	<key>sun.dust.fill</key>
 	<array>
 		<string>weather</string>
 	</array>
 	<key>sun.haze</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.haze.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.haze.circle.fill</key>
 	<array>
 		<string>weather</string>
 	</array>
@@ -6877,7 +8539,6 @@
 	</array>
 	<key>sun.max</key>
 	<array>
-		<string>brightness.higher</string>
 		<string>weather</string>
 	</array>
 	<key>sun.max.circle</key>
@@ -6890,74 +8551,99 @@
 	</array>
 	<key>sun.max.fill</key>
 	<array>
-		<string>brightness.higher.fill</string>
+		<string>weather</string>
+	</array>
+	<key>sun.max.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+		<string>weather</string>
+	</array>
+	<key>sun.max.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
 		<string>weather</string>
 	</array>
 	<key>sun.min</key>
 	<array>
-		<string>brightness.lower</string>
 		<string>weather</string>
 	</array>
 	<key>sun.min.fill</key>
 	<array>
-		<string>brightness.lower.fill</string>
 		<string>weather</string>
 	</array>
 	<key>sunrise</key>
 	<array>
-		<string>sunrise</string>
+		<string>weather</string>
+	</array>
+	<key>sunrise.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sunrise.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>sunrise.fill</key>
 	<array>
-		<string>sunrise.fill</string>
 		<string>weather</string>
 	</array>
 	<key>sunset</key>
 	<array>
-		<string>sunset</string>
+		<string>weather</string>
+	</array>
+	<key>sunset.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sunset.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>sunset.fill</key>
 	<array>
-		<string>sunset.fill</string>
 		<string>weather</string>
 	</array>
-	<key>switch.2</key>
+	<key>suv.side.and.exclamationmark</key>
 	<array>
-		<string>control.center</string>
+		<string>!</string>
+		<string>warning</string>
 	</array>
-	<key>tablecells</key>
+	<key>suv.side.and.exclamationmark.fill</key>
 	<array>
-		<string>table</string>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>syringe</key>
+	<array>
+		<string>COVID</string>
+		<string>medical</string>
+		<string>virus</string>
+	</array>
+	<key>syringe.fill</key>
+	<array>
+		<string>COVID</string>
+		<string>medical</string>
+		<string>virus</string>
 	</array>
 	<key>tablecells.badge.ellipsis</key>
 	<array>
-		<string>edit.table</string>
-	</array>
-	<key>tablecells.fill</key>
-	<array>
-		<string>table.fill</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>tablecells.fill.badge.ellipsis</key>
 	<array>
-		<string>edit.table</string>
-	</array>
-	<key>tag</key>
-	<array>
-		<string>tag</string>
-	</array>
-	<key>tag.circle</key>
-	<array>
-		<string>tag.circle</string>
-	</array>
-	<key>tag.circle.fill</key>
-	<array>
-		<string>tag.circle.fill</string>
-	</array>
-	<key>tag.fill</key>
-	<array>
-		<string>tag.fill</string>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>tag.slash</key>
 	<array>
@@ -6967,17 +8653,60 @@
 	<array>
 		<string>remove</string>
 	</array>
+	<key>takeoutbag.and.cup.and.straw</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>takeoutbag.and.cup.and.straw.fill</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>teddybear</key>
+	<array>
+		<string>animals</string>
+		<string>pet friendly</string>
+	</array>
+	<key>teddybear.fill</key>
+	<array>
+		<string>animals</string>
+		<string>pet friendly</string>
+	</array>
 	<key>teletype</key>
 	<array>
-		<string>tty</string>
+		<string>phone</string>
+		<string>rtt</string>
+	</array>
+	<key>teletype.answer</key>
+	<array>
+		<string>phone</string>
+		<string>rtt</string>
+	</array>
+	<key>teletype.answer.circle</key>
+	<array>
+		<string>phone</string>
+		<string>rtt</string>
+	</array>
+	<key>teletype.answer.circle.fill</key>
+	<array>
+		<string>phone</string>
+		<string>rtt</string>
 	</array>
 	<key>teletype.circle</key>
 	<array>
-		<string>tty.circle</string>
+		<string>phone</string>
+		<string>rtt</string>
 	</array>
 	<key>teletype.circle.fill</key>
 	<array>
-		<string>tty.circle.fill</string>
+		<string>phone</string>
+		<string>rtt</string>
+	</array>
+	<key>tengesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>tengesign.circle</key>
 	<array>
@@ -6999,48 +8728,99 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>tennis.racket</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tennis.racket.circle</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tennis.racket.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tennisball</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tennisball.circle</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tennisball.circle.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tennisball.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>tent</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.2</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.2.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.2.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.2.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tent.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
 	<key>testtube.2</key>
 	<array>
 		<string>medical</string>
-	</array>
-	<key>text.aligncenter</key>
-	<array>
-		<string>align.center</string>
-	</array>
-	<key>text.alignleft</key>
-	<array>
-		<string>align.left</string>
-	</array>
-	<key>text.alignright</key>
-	<array>
-		<string>align.right</string>
 	</array>
 	<key>text.append</key>
 	<array>
 		<string>end</string>
 		<string>later</string>
-		<string>move.to.bottom.of.list</string>
 		<string>play later</string>
 	</array>
 	<key>text.badge.minus</key>
 	<array>
 		<string>remove</string>
-		<string>remove.list</string>
 	</array>
 	<key>text.badge.plus</key>
 	<array>
 		<string>add</string>
-		<string>add.list</string>
-	</array>
-	<key>text.badge.star</key>
-	<array>
-		<string>wishlist</string>
 	</array>
 	<key>text.below.photo</key>
 	<array>
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -7049,6 +8829,8 @@
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -7057,6 +8839,8 @@
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -7065,6 +8849,8 @@
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
 		<string>place</string>
 		<string>sun</string>
 	</array>
@@ -7076,95 +8862,92 @@
 	<array>
 		<string>dictionary</string>
 	</array>
-	<key>text.bubble</key>
-	<array>
-		<string>comment.lines</string>
-	</array>
-	<key>text.bubble.fill</key>
-	<array>
-		<string>comment.lines.fill</string>
-	</array>
 	<key>text.insert</key>
 	<array>
 		<string>beginning</string>
-		<string>move.to.top.of.list</string>
 		<string>next</string>
 		<string>play next</string>
 	</array>
-	<key>text.justify</key>
+	<key>text.word.spacing</key>
 	<array>
-		<string>justify</string>
-	</array>
-	<key>text.justify.left</key>
-	<array>
-		<string>justify.left</string>
-	</array>
-	<key>text.justify.right</key>
-	<array>
-		<string>justify.right</string>
-	</array>
-	<key>text.quote</key>
-	<array>
-		<string>lyrics</string>
+		<string>word spacing</string>
 	</array>
 	<key>textformat</key>
 	<array>
 		<string>aa</string>
-		<string>text.formatting</string>
-	</array>
-	<key>textformat.abc.dottedunderline</key>
-	<array>
-		<string>underline</string>
 	</array>
 	<key>textformat.alt</key>
 	<array>
 		<string>aa</string>
-		<string>text.formatting</string>
 	</array>
 	<key>textformat.size</key>
 	<array>
 		<string>aa</string>
-		<string>change.text.size</string>
 	</array>
 	<key>textformat.subscript</key>
 	<array>
 		<string>a</string>
-		<string>subscript</string>
 	</array>
 	<key>textformat.superscript</key>
 	<array>
 		<string>a</string>
-		<string>superscript</string>
 	</array>
-	<key>thermometer</key>
+	<key>theatermask.and.paintbrush</key>
+	<array>
+		<string>arts</string>
+	</array>
+	<key>theatermask.and.paintbrush.fill</key>
+	<array>
+		<string>arts</string>
+	</array>
+	<key>thermometer.high</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>thermometer.low</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>thermometer.medium</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>thermometer.medium.slash</key>
 	<array>
 		<string>weather</string>
 	</array>
 	<key>thermometer.snowflake</key>
 	<array>
-		<string>ice</string>
+		<string>weather</string>
+	</array>
+	<key>thermometer.snowflake.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>thermometer.snowflake.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>thermometer.sun</key>
 	<array>
-		<string>hot</string>
+		<string>weather</string>
+	</array>
+	<key>thermometer.sun.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>thermometer.sun.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>thermometer.sun.fill</key>
 	<array>
 		<string>weather</string>
 	</array>
-	<key>ticket</key>
+	<key>thermometer.transmission</key>
 	<array>
-		<string>trailers</string>
-	</array>
-	<key>ticket.fill</key>
-	<array>
-		<string>trailers.fill</string>
-	</array>
-	<key>timelapse</key>
-	<array>
-		<string>timelapse</string>
+		<string>temperature</string>
+		<string>transmission</string>
 	</array>
 	<key>timeline.selection</key>
 	<array>
@@ -7174,36 +8957,62 @@
 	<array>
 		<string>timer</string>
 	</array>
+	<key>timer.circle</key>
+	<array>
+		<string>timer</string>
+	</array>
+	<key>timer.circle.fill</key>
+	<array>
+		<string>timer</string>
+	</array>
+	<key>toilet</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>toilet.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>toilet.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>toilet.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
 	<key>tornado</key>
 	<array>
-		<string>tornado</string>
+		<string>weather</string>
+	</array>
+	<key>tornado.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>tornado.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>tortoise</key>
 	<array>
-		<string>decrease.speed</string>
 		<string>slow</string>
 		<string>turtle</string>
 	</array>
 	<key>tortoise.fill</key>
 	<array>
-		<string>decrease.speed.fill</string>
 		<string>slow</string>
 		<string>turtle</string>
 	</array>
 	<key>touchid</key>
 	<array>
 		<string>authentication</string>
+		<string>fingerprint</string>
+		<string>password</string>
 		<string>security</string>
-		<string>touch.id</string>
-	</array>
-	<key>tram</key>
-	<array>
-		<string>train</string>
-	</array>
-	<key>tram.fill</key>
-	<array>
-		<string>train.fill</string>
 	</array>
 	<key>trash</key>
 	<array>
@@ -7214,19 +9023,16 @@
 	<array>
 		<string>mail</string>
 		<string>trash</string>
-		<string>trash.circle</string>
 	</array>
 	<key>trash.circle.fill</key>
 	<array>
 		<string>mail</string>
 		<string>trash</string>
-		<string>trash.circle.fill</string>
 	</array>
 	<key>trash.fill</key>
 	<array>
 		<string>mail</string>
 		<string>trash</string>
-		<string>trash.fill</string>
 	</array>
 	<key>trash.slash</key>
 	<array>
@@ -7256,55 +9062,45 @@
 	<array>
 		<string>inbox</string>
 		<string>mail</string>
-		<string>mailbox</string>
 	</array>
 	<key>tray.2</key>
 	<array>
-		<string>all.mailboxes</string>
 		<string>mail</string>
 	</array>
 	<key>tray.2.fill</key>
 	<array>
-		<string>all.mailboxes.fill</string>
 		<string>mail</string>
 	</array>
 	<key>tray.and.arrow.down</key>
 	<array>
-		<string>inbox</string>
 		<string>mail</string>
 	</array>
 	<key>tray.and.arrow.down.fill</key>
 	<array>
-		<string>inbox.fill</string>
 		<string>mail</string>
 	</array>
 	<key>tray.and.arrow.up</key>
 	<array>
 		<string>mail</string>
-		<string>outbox</string>
 	</array>
 	<key>tray.and.arrow.up.fill</key>
 	<array>
 		<string>mail</string>
-		<string>outbox.fill</string>
 	</array>
 	<key>tray.circle</key>
 	<array>
 		<string>inbox</string>
 		<string>mail</string>
-		<string>mailbox.circle</string>
 	</array>
 	<key>tray.circle.fill</key>
 	<array>
 		<string>inbox</string>
 		<string>mail</string>
-		<string>mailbox.circle.fill</string>
 	</array>
 	<key>tray.fill</key>
 	<array>
 		<string>inbox</string>
 		<string>mail</string>
-		<string>mailbox.fill</string>
 	</array>
 	<key>tray.full</key>
 	<array>
@@ -7314,10 +9110,42 @@
 	<array>
 		<string>mail</string>
 	</array>
+	<key>tree</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tree.circle</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tree.circle.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
+	<key>tree.fill</key>
+	<array>
+		<string>campground</string>
+		<string>camping</string>
+	</array>
 	<key>tropicalstorm</key>
 	<array>
-		<string>tropical.storm</string>
 		<string>weather</string>
+	</array>
+	<key>tropicalstorm.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>tropicalstorm.circle.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>tugriksign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>tugriksign.circle</key>
 	<array>
@@ -7335,6 +9163,11 @@
 		<string>currency</string>
 	</array>
 	<key>tugriksign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>turkishlirasign</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -7359,31 +9192,9 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>tv</key>
-	<array>
-		<string>tv</string>
-	</array>
-	<key>tv.circle</key>
-	<array>
-		<string>tv.circle</string>
-	</array>
-	<key>tv.circle.fill</key>
-	<array>
-		<string>tv.circle.fill</string>
-	</array>
-	<key>tv.fill</key>
-	<array>
-		<string>tv.fill</string>
-	</array>
-	<key>underline</key>
-	<array>
-		<string>underline</string>
-	</array>
 	<key>video</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.video.call</string>
-		<string>video.camera</string>
 	</array>
 	<key>video.and.waveform</key>
 	<array>
@@ -7399,7 +9210,13 @@
 	</array>
 	<key>video.badge.ellipsis</key>
 	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
 		<string>facetime</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>video.badge.plus</key>
 	<array>
@@ -7409,20 +9226,14 @@
 	<key>video.circle</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.video.call.circle</string>
-		<string>video.camera.circle</string>
 	</array>
 	<key>video.circle.fill</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.video.call.circle.fill</string>
-		<string>video.camera.circle.fill</string>
 	</array>
 	<key>video.fill</key>
 	<array>
 		<string>facetime</string>
-		<string>facetime.video.call.fill</string>
-		<string>video.camera.fill</string>
 	</array>
 	<key>video.fill.badge.checkmark</key>
 	<array>
@@ -7430,7 +9241,13 @@
 	</array>
 	<key>video.fill.badge.ellipsis</key>
 	<array>
+		<string>action</string>
+		<string>dot.3</string>
+		<string>extra</string>
 		<string>facetime</string>
+		<string>more</string>
+		<string>overflow</string>
+		<string>…</string>
 	</array>
 	<key>video.fill.badge.plus</key>
 	<array>
@@ -7441,13 +9258,11 @@
 	<array>
 		<string>facetime</string>
 		<string>remove</string>
-		<string>video.camera.off</string>
 	</array>
 	<key>video.slash.fill</key>
 	<array>
 		<string>facetime</string>
 		<string>remove</string>
-		<string>video.camera.off.fill</string>
 	</array>
 	<key>video.square</key>
 	<array>
@@ -7457,33 +9272,78 @@
 	<array>
 		<string>facetime</string>
 	</array>
-	<key>view.2d</key>
+	<key>volleyball</key>
 	<array>
-		<string>show.in.2d</string>
+		<string>sports</string>
 	</array>
-	<key>view.3d</key>
+	<key>volleyball.circle</key>
 	<array>
-		<string>show.in.3d</string>
+		<string>sports</string>
 	</array>
-	<key>viewfinder</key>
+	<key>volleyball.circle.fill</key>
 	<array>
-		<string>scan</string>
+		<string>sports</string>
 	</array>
-	<key>viewfinder.circle</key>
+	<key>volleyball.fill</key>
 	<array>
-		<string>scan.circle</string>
+		<string>sports</string>
 	</array>
-	<key>viewfinder.circle.fill</key>
+	<key>water.waves</key>
 	<array>
-		<string>scan.circle.fill</string>
+		<string>dive</string>
+		<string>ocean</string>
+		<string>sea</string>
+		<string>sports</string>
+		<string>surface</string>
+		<string>swim</string>
+		<string>water</string>
+		<string>wave</string>
 	</array>
-	<key>wand.and.rays</key>
+	<key>water.waves.and.arrow.down</key>
 	<array>
-		<string>enhance</string>
+		<string>dive</string>
+		<string>ocean</string>
+		<string>sea</string>
+		<string>sports</string>
+		<string>surface</string>
+		<string>swim</string>
+		<string>water</string>
+		<string>wave</string>
 	</array>
-	<key>wand.and.rays.inverse</key>
+	<key>water.waves.and.arrow.down.trianglebadge.exclamationmark</key>
 	<array>
-		<string>enhance.inverse</string>
+		<string>!</string>
+		<string>dive</string>
+		<string>ocean</string>
+		<string>sea</string>
+		<string>sports</string>
+		<string>surface</string>
+		<string>swim</string>
+		<string>warning</string>
+		<string>water</string>
+		<string>wave</string>
+	</array>
+	<key>water.waves.and.arrow.up</key>
+	<array>
+		<string>dive</string>
+		<string>ocean</string>
+		<string>sea</string>
+		<string>sports</string>
+		<string>surface</string>
+		<string>swim</string>
+		<string>water</string>
+		<string>wave</string>
+	</array>
+	<key>water.waves.slash</key>
+	<array>
+		<string>dive</string>
+		<string>ocean</string>
+		<string>sea</string>
+		<string>sports</string>
+		<string>surface</string>
+		<string>swim</string>
+		<string>water</string>
+		<string>wave</string>
 	</array>
 	<key>wave.3.backward</key>
 	<array>
@@ -7555,29 +9415,62 @@
 	<array>
 		<string>medical</string>
 	</array>
-	<key>wifi</key>
-	<array>
-		<string>wifi</string>
-	</array>
 	<key>wifi.exclamationmark</key>
 	<array>
 		<string>warning</string>
-		<string>wifi.error</string>
 	</array>
 	<key>wifi.slash</key>
 	<array>
 		<string>remove</string>
-		<string>wifi.off</string>
 	</array>
 	<key>wind</key>
 	<array>
-		<string>breezy</string>
+		<string>weather</string>
+	</array>
+	<key>wind.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>wind.circle.fill</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>wind.snow</key>
 	<array>
-		<string>blowing.snow</string>
 		<string>weather</string>
+	</array>
+	<key>wind.snow.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>wind.snow.circle.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>windshield.front.and.wiper.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>windshield.rear.and.wiper.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>wineglass</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>wineglass.fill</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>wonsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>wonsign.circle</key>
 	<array>
@@ -7599,10 +9492,6 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>x.squareroot</key>
-	<array>
-		<string>function.x</string>
-	</array>
 	<key>xmark</key>
 	<array>
 		<string>clear</string>
@@ -7618,37 +9507,28 @@
 	<key>xmark.bin.circle</key>
 	<array>
 		<string>junk</string>
-		<string>junk.circle</string>
 	</array>
 	<key>xmark.bin.circle.fill</key>
 	<array>
 		<string>junk</string>
-		<string>junk.circle.fill</string>
 	</array>
 	<key>xmark.bin.fill</key>
 	<array>
 		<string>junk</string>
-		<string>junk.fill</string>
 		<string>mail</string>
 	</array>
 	<key>xmark.circle</key>
 	<array>
 		<string>clear</string>
-		<string>clear.circle</string>
 		<string>close</string>
-		<string>close.circle</string>
 		<string>stop</string>
-		<string>stop.circle</string>
 		<string>x</string>
 	</array>
 	<key>xmark.circle.fill</key>
 	<array>
 		<string>clear</string>
-		<string>clear.circle.fill</string>
 		<string>close</string>
-		<string>close.circle.fill</string>
 		<string>stop</string>
-		<string>stop.circle.fill</string>
 		<string>x</string>
 	</array>
 	<key>xmark.diamond</key>
@@ -7665,25 +9545,21 @@
 	</array>
 	<key>xmark.icloud</key>
 	<array>
-		<string>removed.from.icloud</string>
 		<string>x</string>
 	</array>
 	<key>xmark.icloud.fill</key>
 	<array>
-		<string>removed.from.icloud.fill</string>
 		<string>x</string>
 	</array>
 	<key>xmark.octagon</key>
 	<array>
 		<string>*</string>
-		<string>error</string>
 		<string>multiply</string>
 		<string>times</string>
 	</array>
 	<key>xmark.octagon.fill</key>
 	<array>
 		<string>*</string>
-		<string>error.fill</string>
 		<string>multiply</string>
 		<string>times</string>
 	</array>
@@ -7707,35 +9583,32 @@
 	<array>
 		<string>*</string>
 		<string>multiply</string>
-		<string>not.verified</string>
 		<string>times</string>
 	</array>
 	<key>xmark.seal.fill</key>
 	<array>
 		<string>*</string>
 		<string>multiply</string>
-		<string>not.verified.fill</string>
 		<string>times</string>
 	</array>
 	<key>xmark.square</key>
 	<array>
 		<string>clear</string>
-		<string>clear.square</string>
 		<string>close</string>
-		<string>close.square</string>
 		<string>stop</string>
-		<string>stop.square</string>
 		<string>x</string>
 	</array>
 	<key>xmark.square.fill</key>
 	<array>
 		<string>clear</string>
-		<string>clear.square.fill</string>
 		<string>close</string>
-		<string>close.square.fill</string>
 		<string>stop</string>
-		<string>stop.square.fill</string>
 		<string>x</string>
+	</array>
+	<key>yensign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>yensign.circle</key>
 	<array>

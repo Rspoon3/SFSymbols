@@ -3,8 +3,8 @@ import Foundation
 @available(iOS 13.1, macOS 10.15, tvOS 13.0, watchOS 6.1, *)
 public extension SFSymbol {
     static let arrowUturnLeftCircleBadgeEllipsis = SFSymbol(title: "arrow.uturn.left.circle.badge.ellipsis",
-                                        categories: [.arrows],
-                                        searchTerms: nil,
+                                        categories: [.arrows, .multicolor],
+                                        searchTerms: ["action", "dot.3", "extra", "more", "overflow", "…"],
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let aspectratio = SFSymbol(title: "aspectratio",
@@ -18,8 +18,8 @@ public extension SFSymbol {
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let car = SFSymbol(title: "car",
-                                        categories: [.transportation],
-                                        searchTerms: ["car"],
+                                        categories: [.automotive, .devices, .multicolor, .transportation],
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let circleGrid2X2 = SFSymbol(title: "circle.grid.2x2",
@@ -34,7 +34,7 @@ public extension SFSymbol {
 
     static let flashlightOffFill = SFSymbol(title: "flashlight.off.fill",
                                         categories: [.objectsandtools],
-                                        searchTerms: ["flashlight.fill"],
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let flashlightOnFill = SFSymbol(title: "flashlight.on.fill",
@@ -54,37 +54,37 @@ public extension SFSymbol {
 
     static let mappinCircle = SFSymbol(title: "mappin.circle",
                                         categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["map.pin.circle"],
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let mappinCircleFill = SFSymbol(title: "mappin.circle.fill",
                                         categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["map.pin.circle.fill"],
+                                        searchTerms: nil,
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let paperclipCircle = SFSymbol(title: "paperclip.circle",
                                         categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["attach", "attachements.circle", "attachments"],
+                                        searchTerms: ["attach", "attachments"],
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let paperclipCircleFill = SFSymbol(title: "paperclip.circle.fill",
                                         categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["attach", "attachements.circle.fill", "attachments"],
+                                        searchTerms: ["attach", "attachments"],
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let pinCircle = SFSymbol(title: "pin.circle",
                                         categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["pin", "pin.circle"],
+                                        searchTerms: ["pin"],
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let pinCircleFill = SFSymbol(title: "pin.circle.fill",
                                         categories: [.multicolor, .objectsandtools],
-                                        searchTerms: ["pin", "pin.circle.fill"],
+                                        searchTerms: ["pin"],
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let scissorsBadgeEllipsis = SFSymbol(title: "scissors.badge.ellipsis",
-                                        categories: [.editing, .objectsandtools],
-                                        searchTerms: nil,
+                                        categories: [.editing, .multicolor, .objectsandtools],
+                                        searchTerms: ["action", "dot.3", "extra", "more", "overflow", "…"],
                                         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1))
 
     static let studentdesk = SFSymbol(title: "studentdesk",

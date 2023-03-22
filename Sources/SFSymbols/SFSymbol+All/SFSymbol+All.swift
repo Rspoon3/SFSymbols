@@ -9,7 +9,33 @@ import Foundation
 
 
 public extension SFSymbol{
-    static var allSymbols: [SFSymbol]{
+    static var allSymbols: [SFSymbol] {
+        if #available(iOS 16.1, macOS 13, tvOS 16.1, watchOS 9.1,  *){
+            return SFSymbol.allSymbols13 +
+            SFSymbol.allSymbols13P1 +
+            SFSymbol.allSymbols14 +
+            SFSymbol.allSymbols14P2 +
+            SFSymbol.allSymbols14P5 +
+            SFSymbol.allSymbols15 +
+            SFSymbol.allSymbols15P1 +
+            SFSymbol.allSymbols15P2 +
+            SFSymbol.allSymbols15P4 +
+            SFSymbol.allSymbols16 +
+            SFSymbol.allSymbols16P1
+        }
+        
+        if #available(iOS 16, macOS 13, tvOS 16, watchOS 9,  *){
+            return SFSymbol.allSymbols13 +
+            SFSymbol.allSymbols13P1 +
+            SFSymbol.allSymbols14 +
+            SFSymbol.allSymbols14P2 +
+            SFSymbol.allSymbols14P5 +
+            SFSymbol.allSymbols15 +
+            SFSymbol.allSymbols15P1 +
+            SFSymbol.allSymbols15P2 +
+            SFSymbol.allSymbols15P4 +
+            SFSymbol.allSymbols16
+        }
         
         if #available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5,  *){
             return SFSymbol.allSymbols13 +

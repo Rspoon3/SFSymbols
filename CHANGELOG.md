@@ -1,4 +1,9 @@
 # Change Log
+## Version 2.3 (3-22-2023)
+### Additions
+- Updated for SF Symbols 4.0
+
+-----
 ## Version 2.2 (4-22-2022)
 ### Additions
 - Updated for SF Symbols 3.3
@@ -7,6 +12,7 @@
 
 ### Fixes
 - Added missing StaticVariables13P1 file
+
 -----
 ## Version 2.1 (3-20-2022)
 ### Additions
