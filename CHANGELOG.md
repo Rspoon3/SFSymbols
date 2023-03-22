@@ -2,6 +2,18 @@
 ## Version 2.3 (3-22-2023)
 ### Additions
 - Updated for SF Symbols 4.0
+- Additional documentation
+- Additional unit tests
+
+### Removals
+- ```plistTitle``` from ```SFCategory```
+
+### Fixes
+- Mac unit tests
+
+### Notes
+- Refactored & renamed demo app
+
 
 -----
 ## Version 2.2 (4-22-2022)
