@@ -5,6 +5,7 @@
 //  Created by Richard Witherspoon on 4/22/21.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 extension Image{
@@ -12,3 +13,4 @@ extension Image{
         self.init(systemName: symbol.title)
     }
 }
+#endif
