@@ -5,6 +5,7 @@
 //  Created by Richard Witherspoon on 4/22/21.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 
@@ -26,3 +27,4 @@ extension Label where Title == Text, Icon == Image {
         self.init(.init(title), symbol: symbol, textColor: textColor)
     }
 }
+#endif

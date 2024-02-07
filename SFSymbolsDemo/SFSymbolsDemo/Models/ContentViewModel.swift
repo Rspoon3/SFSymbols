@@ -17,7 +17,7 @@ class ContentViewModel: ObservableObject{
     private let decoder = PropertyListDecoder()
     private let bundle = Bundle.main
     
-#if os(iOS)
+#if os(iOS) || os(visionOS)
     private let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
 #elseif os(macOS)
     private var directory = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)[0]

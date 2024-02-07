@@ -5,6 +5,7 @@
 //  Created by Richard Witherspoon on 4/22/21.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 
@@ -54,3 +55,4 @@ extension Button where Label == SwiftUI.Label<Text, Image>{
         }
     }
 }
+#endif
