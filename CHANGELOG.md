@@ -3,6 +3,7 @@
 ### Additions
 - Added symbols for iOS 16.4, 17.0, 17.1, 17.2 and their equivalent version on other platforms.
 - Updated SFCategories
+- Explicit tvOS support
 
 ### Fixed
 - Fixed missing version 2.4 CHANGELOG entry

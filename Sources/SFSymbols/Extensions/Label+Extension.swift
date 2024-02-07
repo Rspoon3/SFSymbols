@@ -8,10 +8,13 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
-
-@available(iOS 14.0, *)
+@available(iOS 14.0, tvOS 14.0, *)
 extension Label where Title == Text, Icon == Image {
-    public init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, textColor: Color? = nil){
+    public init(
+        _ titleKey: LocalizedStringKey,
+        symbol: SFSymbol,
+        textColor: Color? = nil
+    ){
         self.init(
             title: {
                 Text(titleKey)
@@ -23,7 +26,11 @@ extension Label where Title == Text, Icon == Image {
         )
     }
     
-    public init(_ title: String, symbol: SFSymbol, textColor: Color? = nil){
+    public init(
+        _ title: String,
+        symbol: SFSymbol,
+        textColor: Color? = nil
+    ){
         self.init(.init(title), symbol: symbol, textColor: textColor)
     }
 }
