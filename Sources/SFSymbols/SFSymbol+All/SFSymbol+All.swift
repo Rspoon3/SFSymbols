@@ -8,7 +8,7 @@
 import Foundation
 
 
-public extension SFSymbol{
+public extension SFSymbol {
     static var allSymbols: [SFSymbol] {
         if #available(iOS 16.1, macOS 13, tvOS 16.1, watchOS 9.1,  *){
             return SFSymbol.allSymbols13 +
