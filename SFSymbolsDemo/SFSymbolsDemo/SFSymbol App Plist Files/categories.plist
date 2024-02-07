@@ -52,6 +52,14 @@
 	</dict>
 	<dict>
 		<key>icon</key>
+		<string>map</string>
+		<key>key</key>
+		<string>maps</string>
+		<key>label</key>
+		<string>Maps</string>
+	</dict>
+	<dict>
+		<key>icon</key>
 		<string>folder</string>
 		<key>key</key>
 		<string>objectsandtools</string>
@@ -108,7 +116,7 @@
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>figure.roll.runningpace</string>
+		<string>accessibility</string>
 		<key>key</key>
 		<string>accessibility</string>
 		<key>label</key>

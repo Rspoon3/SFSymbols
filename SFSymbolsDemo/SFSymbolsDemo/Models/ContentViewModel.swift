@@ -73,7 +73,7 @@ class ContentViewModel: ObservableObject{
             let plistTitle = categoriesPlistDict[category.title]!
             
             return """
-            public static let \(plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)", plistTitle: "\(plistTitle)")
+            public static let \(plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)")
             """
         }.joined(separator: "\n")
         
@@ -86,7 +86,7 @@ class ContentViewModel: ObservableObject{
         let header = """
         import Foundation
         
-        @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), *)
+        @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), visionOS \(newestSymbol.releaseInfo.visionOS), *)
         public extension SFSymbol {
         
         """
@@ -117,7 +117,7 @@ class ContentViewModel: ObservableObject{
         let header = """
         import Foundation
         
-        @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), *)
+        @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), visionOS \(newestSymbol.releaseInfo.visionOS), *)
         public extension SFSymbol {
         """
         
@@ -153,7 +153,7 @@ class ContentViewModel: ObservableObject{
             searchTermsOptionalString = searchTermsString
         }
         
-        let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS)"
+        let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS), visionOS: \(symbol.releaseInfo.visionOS)"
         
         let staticVar = """
                 /// \(symbol.title)
