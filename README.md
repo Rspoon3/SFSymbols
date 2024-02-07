@@ -1,6 +1,6 @@
 # SFSymbols
 [![Build Status](https://travis-ci.org/Nirma/SFSymbol.svg?branch=master)](https://travis-ci.org/Nirma/SFSymbol)
-![Swift 5.6](https://img.shields.io/badge/Swift-5.6-orange.svg)
+![Swift 5.9](https://img.shields.io/badge/Swift-5.9-orange.svg)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-purple.svg)](https://github.com/apple/swift-package-manager)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 

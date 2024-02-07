@@ -39,7 +39,7 @@ public extension UIBarButtonItem {
         )
     }
     
-    @available(iOS 14.0, *)
+    @available(iOS 14.0, tvOS 14.0, *)
     convenience init(
         title: String? = nil,
         symbol: SFSymbol,
