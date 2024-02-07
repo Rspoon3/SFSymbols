@@ -1,4 +1,20 @@
 # Change Log
+## Version 2.5 (2-7-2024)
+### Additions
+- Added symbols for iOS 16.4, 17.0, 17.1, 17.2 and their equivalent version on other platforms.
+- Updated SFCategories
+
+### Fixed
+- Fixed missing version 2.4 CHANGELOG entry
+- Fixed SFCategory including a plist title
+
+-----
+## Version 2.4 (2-7-2024)
+### Additions
+- Enabled compilation on Linux
+- visionOS support
+
+-----
 ## Version 2.3 (3-22-2023)
 ### Additions
 - Updated for SF Symbols 4.0
@@ -13,7 +29,6 @@
 
 ### Notes
 - Refactored & renamed demo app
-
 
 -----
 ## Version 2.2 (4-22-2022)

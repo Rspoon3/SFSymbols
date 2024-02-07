@@ -7,7 +7,39 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>1.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>1.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>1.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
+	<key>1.magnifyingglass.ar</key>
+	<array>
+		<string>search</string>
+	</array>
+	<key>1.magnifyingglass.hi</key>
+	<array>
+		<string>search</string>
+	</array>
 	<key>10.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>10.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>10.lane.hi</key>
 	<array>
 		<string>running</string>
 		<string>sports</string>
@@ -17,7 +49,27 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>11.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>11.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
 	<key>12.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>12.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>12.lane.hi</key>
 	<array>
 		<string>running</string>
 		<string>sports</string>
@@ -27,7 +79,27 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>2.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>2.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
 	<key>3.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>3.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>3.lane.hi</key>
 	<array>
 		<string>running</string>
 		<string>sports</string>
@@ -37,7 +109,27 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>4.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>4.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
 	<key>5.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>5.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>5.lane.hi</key>
 	<array>
 		<string>running</string>
 		<string>sports</string>
@@ -47,7 +139,27 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>6.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>6.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
 	<key>7.lane</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>7.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>7.lane.hi</key>
 	<array>
 		<string>running</string>
 		<string>sports</string>
@@ -57,14 +169,47 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>8.lane.ar</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>8.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
 	<key>9.lane</key>
 	<array>
 		<string>running</string>
 		<string>sports</string>
 	</array>
-	<key>a.magnify</key>
+	<key>9.lane.ar</key>
 	<array>
-		<string>a</string>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>9.lane.hi</key>
+	<array>
+		<string>running</string>
+		<string>sports</string>
+	</array>
+	<key>accessibility</key>
+	<array>
+		<string>figure.circle</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>accessibility.badge.arrow.up.right</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>accessibility.fill</key>
+	<array>
+		<string>figure.circle.fill</string>
+		<string>human</string>
+		<string>person</string>
 	</array>
 	<key>airplayaudio.badge.exclamationmark</key>
 	<array>
@@ -163,6 +308,14 @@
 		<string>audio</string>
 	</array>
 	<key>airpodspro.chargingcase.wireless.fill</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpodspro.chargingcase.wireless.radiowaves.left.and.right</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpodspro.chargingcase.wireless.radiowaves.left.and.right.fill</key>
 	<array>
 		<string>audio</string>
 	</array>
@@ -292,21 +445,25 @@
 	</array>
 	<key>ant</key>
 	<array>
+		<string>animals</string>
 		<string>bug</string>
 		<string>radar</string>
 	</array>
 	<key>ant.circle</key>
 	<array>
+		<string>animals</string>
 		<string>bug</string>
 		<string>radar</string>
 	</array>
 	<key>ant.circle.fill</key>
 	<array>
+		<string>animals</string>
 		<string>bug</string>
 		<string>radar</string>
 	</array>
 	<key>ant.fill</key>
 	<array>
+		<string>animals</string>
 		<string>bug</string>
 		<string>radar</string>
 	</array>
@@ -330,6 +487,14 @@
 		<string>cellular</string>
 		<string>lte</string>
 		<string>remove</string>
+	</array>
+	<key>app.badge</key>
+	<array>
+		<string>notification</string>
+	</array>
+	<key>app.badge.fill</key>
+	<array>
+		<string>notification</string>
 	</array>
 	<key>app.connected.to.app.below.fill</key>
 	<array>
@@ -357,6 +522,41 @@
 	<key>aqi.medium</key>
 	<array>
 		<string>weather</string>
+	</array>
+	<key>arcade.stick</key>
+	<array>
+		<string>neutral</string>
+		<string>tilt</string>
+	</array>
+	<key>arcade.stick.and.arrow.down</key>
+	<array>
+		<string>tilt</string>
+		<string>vertical</string>
+	</array>
+	<key>arcade.stick.and.arrow.left</key>
+	<array>
+		<string>horizontal</string>
+		<string>tilt</string>
+	</array>
+	<key>arcade.stick.and.arrow.left.and.arrow.right</key>
+	<array>
+		<string>horizontal</string>
+		<string>tilt</string>
+	</array>
+	<key>arcade.stick.and.arrow.right</key>
+	<array>
+		<string>horizontal</string>
+		<string>tilt</string>
+	</array>
+	<key>arcade.stick.and.arrow.up</key>
+	<array>
+		<string>tilt</string>
+		<string>vertical</string>
+	</array>
+	<key>arcade.stick.and.arrow.up.and.arrow.down</key>
+	<array>
+		<string>tilt</string>
+		<string>vertical</string>
 	</array>
 	<key>archivebox</key>
 	<array>
@@ -417,6 +617,14 @@
 	<array>
 		<string>refresh</string>
 	</array>
+	<key>arrow.clockwise.square</key>
+	<array>
+		<string>refresh</string>
+	</array>
+	<key>arrow.clockwise.square.fill</key>
+	<array>
+		<string>refresh</string>
+	</array>
 	<key>arrow.down</key>
 	<array>
 		<string>download</string>
@@ -447,6 +655,11 @@
 		<string>left</string>
 	</array>
 	<key>arrow.down.circle</key>
+	<array>
+		<string>download</string>
+		<string>downloads</string>
+	</array>
+	<key>arrow.down.circle.dotted</key>
 	<array>
 		<string>download</string>
 		<string>downloads</string>
@@ -734,6 +947,10 @@
 		<string>directions</string>
 		<string>move</string>
 	</array>
+	<key>arrow.up.left.and.down.right.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
 	<key>arrow.up.right.and.arrow.down.left.rectangle</key>
 	<array>
 		<string>conversations</string>
@@ -994,7 +1211,42 @@
 	<array>
 		<string>science</string>
 	</array>
+	<key>australiandollarsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>australiandollarsign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>australiandollarsign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>australiandollarsign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>australiandollarsign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>australiandollarsign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>australsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>australsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -1072,6 +1324,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>bahtsign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>bahtsign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -1120,6 +1377,11 @@
 	<array>
 		<string>scan bar code</string>
 	</array>
+	<key>barometer</key>
+	<array>
+		<string>high</string>
+		<string>medium</string>
+	</array>
 	<key>baseball</key>
 	<array>
 		<string>sports</string>
@@ -1162,31 +1424,31 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>beats.fit.pro</key>
+	<key>beats.fitpro</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>beats.fit.pro.chargingcase</key>
+	<key>beats.fitpro.chargingcase</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>beats.fit.pro.chargingcase.fill</key>
+	<key>beats.fitpro.chargingcase.fill</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>beats.fit.pro.left</key>
+	<key>beats.fitpro.left</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
-	<key>beats.fit.pro.right</key>
+	<key>beats.fitpro.right</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
@@ -1204,7 +1466,31 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
+	<key>beats.powerbeats.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.powerbeats.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>beats.powerbeats3</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.powerbeats3.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.powerbeats3.right</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
@@ -1261,6 +1547,36 @@
 		<string>speaker</string>
 	</array>
 	<key>beats.studiobuds.chargingcase.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.studiobudsplus</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.studiobudsplus.chargingcase</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.studiobudsplus.chargingcase.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.studiobudsplus.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.studiobudsplus.right</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
@@ -1352,6 +1668,22 @@
 	<array>
 		<string>bike</string>
 	</array>
+	<key>bird</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>bird.circle</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>bird.circle.fill</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>bird.fill</key>
+	<array>
+		<string>animals</string>
+	</array>
 	<key>birthday.cake</key>
 	<array>
 		<string>baking</string>
@@ -1365,6 +1697,11 @@
 		<string>food</string>
 	</array>
 	<key>bitcoinsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>bitcoinsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -1399,11 +1736,11 @@
 		<string>energy</string>
 		<string>power</string>
 	</array>
-	<key>bolt.badge.a</key>
+	<key>bolt.badge.automatic</key>
 	<array>
 		<string>camera</string>
 	</array>
-	<key>bolt.badge.a.fill</key>
+	<key>bolt.badge.automatic.fill</key>
 	<array>
 		<string>camera</string>
 	</array>
@@ -1504,6 +1841,14 @@
 	<array>
 		<string>bookmark</string>
 	</array>
+	<key>book.pages</key>
+	<array>
+		<string>sample</string>
+	</array>
+	<key>book.pages.fill</key>
+	<array>
+		<string>sample</string>
+	</array>
 	<key>bookmark</key>
 	<array>
 		<string>bookmark</string>
@@ -1528,23 +1873,12 @@
 	<array>
 		<string>remove</string>
 	</array>
-	<key>box.truck.badge.clock</key>
-	<array>
-		<string>time</string>
-	</array>
-	<key>box.truck.badge.clock.fill</key>
-	<array>
-		<string>time</string>
-	</array>
-	<key>box.truck.badge.clock.fill.rtl</key>
-	<array>
-		<string>time</string>
-	</array>
-	<key>box.truck.badge.clock.rtl</key>
-	<array>
-		<string>time</string>
-	</array>
 	<key>brazilianrealsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>brazilianrealsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -1579,6 +1913,14 @@
 		<string>!</string>
 		<string>warning</string>
 	</array>
+	<key>bubble.left.and.text.bubble.right</key>
+	<array>
+		<string>speech</string>
+	</array>
+	<key>bubble.left.and.text.bubble.right.fill</key>
+	<array>
+		<string>speech</string>
+	</array>
 	<key>bubbles.and.sparkles</key>
 	<array>
 		<string>COVID</string>
@@ -1608,18 +1950,33 @@
 	<key>calendar</key>
 	<array>
 		<string>calendar</string>
-		<string>mail</string>
+		<string>date</string>
+	</array>
+	<key>calendar.badge.checkmark</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.badge.checkmark.rtl</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>calendar.badge.clock</key>
 	<array>
+		<string>date</string>
 		<string>date and time</string>
+	</array>
+	<key>calendar.badge.clock.rtl</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>calendar.badge.exclamationmark</key>
 	<array>
+		<string>date</string>
 		<string>warning</string>
 	</array>
 	<key>calendar.badge.minus</key>
 	<array>
+		<string>date</string>
 		<string>remove</string>
 	</array>
 	<key>calendar.badge.plus</key>
@@ -1627,15 +1984,18 @@
 		<string>+</string>
 		<string>add</string>
 		<string>create</string>
+		<string>date</string>
 		<string>new</string>
 	</array>
 	<key>calendar.circle</key>
 	<array>
 		<string>calendar</string>
+		<string>date</string>
 	</array>
 	<key>calendar.circle.fill</key>
 	<array>
 		<string>calendar</string>
+		<string>date</string>
 	</array>
 	<key>camera.badge.ellipsis</key>
 	<array>
@@ -1646,7 +2006,7 @@
 		<string>overflow</string>
 		<string>…</string>
 	</array>
-	<key>camera.fill.badge.ellipsis</key>
+	<key>camera.badge.ellipsis.fill</key>
 	<array>
 		<string>action</string>
 		<string>dot.3</string>
@@ -1678,6 +2038,47 @@
 		<string>warning</string>
 	</array>
 	<key>car.side.and.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>car.side.lock</key>
+	<array>
+		<string>padlock</string>
+	</array>
+	<key>car.side.lock.fill</key>
+	<array>
+		<string>padlock</string>
+	</array>
+	<key>car.side.lock.open</key>
+	<array>
+		<string>padlock</string>
+	</array>
+	<key>car.side.lock.open.fill</key>
+	<array>
+		<string>padlock</string>
+	</array>
+	<key>car.side.rear.and.exclamationmark.and.car.side.front</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>car.window.left.badge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>car.window.left.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>car.window.right.badge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>car.window.right.exclamationmark</key>
 	<array>
 		<string>!</string>
 		<string>warning</string>
@@ -1724,7 +2125,28 @@
 	<array>
 		<string>add</string>
 	</array>
+	<key>cat</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>cat.circle</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>cat.circle.fill</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>cat.fill</key>
+	<array>
+		<string>animals</string>
+	</array>
 	<key>cedisign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>cedisign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -1750,6 +2172,11 @@
 		<string>currency</string>
 	</array>
 	<key>centsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>centsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -1862,6 +2289,10 @@
 	<array>
 		<string>a</string>
 	</array>
+	<key>character.magnify</key>
+	<array>
+		<string>a</string>
+	</array>
 	<key>character.textbox</key>
 	<array>
 		<string>a</string>
@@ -1934,10 +2365,79 @@
 	<array>
 		<string>right</string>
 	</array>
+	<key>chineseyuanrenminbisign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>chineseyuanrenminbisign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>chineseyuanrenminbisign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>chineseyuanrenminbisign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>chineseyuanrenminbisign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>chineseyuanrenminbisign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>circle.bottomrighthalf.checkered</key>
+	<array>
+		<string>edit</string>
+		<string>noise reduction</string>
+	</array>
+	<key>circle.dotted.and.circle</key>
+	<array>
+		<string>motion</string>
+	</array>
+	<key>circle.dotted.circle</key>
+	<array>
+		<string>edit</string>
+		<string>vignette</string>
+	</array>
+	<key>circle.dotted.circle.fill</key>
+	<array>
+		<string>edit</string>
+		<string>vignette</string>
+	</array>
 	<key>circle.inset.filled</key>
 	<array>
 		<string>completed</string>
 		<string>task</string>
+	</array>
+	<key>circle.lefthalf.filled.righthalf.striped.horizontal</key>
+	<array>
+		<string>edit</string>
+		<string>shadows</string>
+	</array>
+	<key>circle.lefthalf.filled.righthalf.striped.horizontal.inverse</key>
+	<array>
+		<string>edit</string>
+		<string>shadows</string>
+	</array>
+	<key>circle.lefthalf.striped.horizontal</key>
+	<array>
+		<string>edit</string>
+		<string>highlights</string>
+	</array>
+	<key>circle.lefthalf.striped.horizontal.inverse</key>
+	<array>
+		<string>edit</string>
+		<string>highlights</string>
 	</array>
 	<key>clock</key>
 	<array>
@@ -2148,6 +2648,14 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>cloud.rainbow.half</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>cloud.rainbow.half.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
 	<key>cloud.sleet</key>
 	<array>
 		<string>weather</string>
@@ -2233,6 +2741,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>coloncurrencysign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>coloncurrencysign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -2259,9 +2772,19 @@
 		<string>cpu</string>
 		<string>gpu</string>
 	</array>
+	<key>cpu.fill</key>
+	<array>
+		<string>chip</string>
+		<string>cpu</string>
+		<string>gpu</string>
+	</array>
 	<key>creditcard.trianglebadge.exclamationmark</key>
 	<array>
 		<string>warning</string>
+	</array>
+	<key>creditcard.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>commerce</string>
 	</array>
 	<key>cricket.ball</key>
 	<array>
@@ -2340,6 +2863,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>cruzeirosign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>cruzeirosign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -2377,6 +2905,36 @@
 	<key>cursorarrow.rays</key>
 	<array>
 		<string>light</string>
+	</array>
+	<key>danishkronesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>danishkronesign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>danishkronesign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>danishkronesign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>danishkronesign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>danishkronesign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>delete.backward</key>
 	<array>
@@ -2573,6 +3131,10 @@
 	<array>
 		<string>today</string>
 	</array>
+	<key>doc.text.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
 	<key>doc.viewfinder</key>
 	<array>
 		<string>scan document</string>
@@ -2580,6 +3142,22 @@
 	<key>doc.viewfinder.fill</key>
 	<array>
 		<string>scan document</string>
+	</array>
+	<key>dog</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>dog.circle</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>dog.circle.fill</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>dog.fill</key>
+	<array>
+		<string>animals</string>
 	</array>
 	<key>dollarsign</key>
 	<array>
@@ -2612,6 +3190,11 @@
 		<string>currency</string>
 	</array>
 	<key>dongsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>dongsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -2727,6 +3310,11 @@
 		<string>blood</string>
 		<string>oil</string>
 		<string>water</string>
+	</array>
+	<key>drop.halffull</key>
+	<array>
+		<string>edit</string>
+		<string>tint</string>
 	</array>
 	<key>drop.triangle</key>
 	<array>
@@ -2868,6 +3456,16 @@
 		<string>overflow</string>
 		<string>…</string>
 	</array>
+	<key>engine.combustion.badge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
+	<key>engine.combustion.badge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>entry.lever.keypad.trianglebadge.exclamationmark</key>
 	<array>
 		<string>!</string>
@@ -2879,6 +3477,14 @@
 		<string>warning</string>
 	</array>
 	<key>envelope</key>
+	<array>
+		<string>mail</string>
+	</array>
+	<key>envelope.arrow.triangle.branch</key>
+	<array>
+		<string>mail</string>
+	</array>
+	<key>envelope.arrow.triangle.branch.fill</key>
 	<array>
 		<string>mail</string>
 	</array>
@@ -2943,6 +3549,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>eurosign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>eurosign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -2962,6 +3573,44 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>eurozonesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>eurozonesign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>eurozonesign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>eurozonesign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>eurozonesign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>eurozonesign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>ev.plug.dc.nacs</key>
+	<array>
+		<string>tesla</string>
+	</array>
+	<key>ev.plug.dc.nacs.fill</key>
+	<array>
+		<string>tesla</string>
 	</array>
 	<key>exclamationmark</key>
 	<array>
@@ -3056,6 +3705,10 @@
 		<string>security</string>
 		<string>warning</string>
 	</array>
+	<key>exclamationmark.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
 	<key>exclamationmark.octagon</key>
 	<array>
 		<string>stop</string>
@@ -3088,6 +3741,14 @@
 	<array>
 		<string>warning</string>
 	</array>
+	<key>exclamationmark.tirepressure</key>
+	<array>
+		<string>!</string>
+		<string>pressure</string>
+		<string>tire</string>
+		<string>tpms</string>
+		<string>warning</string>
+	</array>
 	<key>exclamationmark.transmission</key>
 	<array>
 		<string>!</string>
@@ -3101,6 +3762,20 @@
 	</array>
 	<key>exclamationmark.triangle.fill</key>
 	<array>
+		<string>warning</string>
+	</array>
+	<key>exclamationmark.warninglight</key>
+	<array>
+		<string>!</string>
+		<string>error</string>
+		<string>light</string>
+		<string>warning</string>
+	</array>
+	<key>exclamationmark.warninglight.fill</key>
+	<array>
+		<string>!</string>
+		<string>error</string>
+		<string>light</string>
 		<string>warning</string>
 	</array>
 	<key>externaldrive.badge.exclamationmark</key>
@@ -3204,6 +3879,16 @@
 	<array>
 		<string>medical</string>
 	</array>
+	<key>figure</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.2</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>figure.2.and.child.holdinghands</key>
 	<array>
 		<string>adult</string>
@@ -3215,6 +3900,16 @@
 		<string>person</string>
 	</array>
 	<key>figure.2.arms.open</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.2.circle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.2.circle.fill</key>
 	<array>
 		<string>human</string>
 		<string>person</string>
@@ -3287,6 +3982,41 @@
 		<string>human</string>
 		<string>person</string>
 		<string>sports</string>
+	</array>
+	<key>figure.child</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.child.and.lock</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.child.and.lock.fill</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.child.and.lock.open</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.child.and.lock.open.fill</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.child.circle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.child.circle.fill</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
 	</array>
 	<key>figure.climbing</key>
 	<array>
@@ -3620,22 +4350,47 @@
 		<string>human</string>
 		<string>person</string>
 	</array>
-	<key>figure.seated.side.air.lower</key>
+	<key>figure.seated.side</key>
 	<array>
 		<string>human</string>
 		<string>person</string>
 	</array>
-	<key>figure.seated.side.air.upper</key>
+	<key>figure.seated.side.air.distribution.lower</key>
 	<array>
 		<string>human</string>
 		<string>person</string>
 	</array>
-	<key>figure.seated.side.air.upper.and.lower</key>
+	<key>figure.seated.side.air.distribution.middle</key>
 	<array>
 		<string>human</string>
 		<string>person</string>
 	</array>
-	<key>figure.seated.side.air.windshield</key>
+	<key>figure.seated.side.air.distribution.middle.and.lower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.distribution.middle.and.lower.angled</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.distribution.upper</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.distribution.upper.angled.and.lower.angled</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.distribution.upper.angled.and.middle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.air.distribution.upper.angled.and.middle.and.lower.angled</key>
 	<array>
 		<string>human</string>
 		<string>person</string>
@@ -3660,7 +4415,47 @@
 		<string>human</string>
 		<string>person</string>
 	</array>
+	<key>figure.seated.side.automatic</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>figure.seated.side.windshield.front.and.heat.waves</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.lower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.middle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.middle.and.lower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper.and.lower</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper.and.middle</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper.and.middle.and.lower</key>
 	<array>
 		<string>human</string>
 		<string>person</string>
@@ -3845,6 +4640,13 @@
 		<string>sports</string>
 		<string>walking</string>
 	</array>
+	<key>figure.walk.motion.trianglebadge.exclamationmark</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+		<string>sports</string>
+		<string>walking</string>
+	</array>
 	<key>figure.water.fitness</key>
 	<array>
 		<string>human</string>
@@ -3893,6 +4695,26 @@
 	<key>firewall.fill</key>
 	<array>
 		<string>arrow</string>
+	</array>
+	<key>fireworks</key>
+	<array>
+		<string>party</string>
+	</array>
+	<key>fish</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>fish.circle</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>fish.circle.fill</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>fish.fill</key>
+	<array>
+		<string>animals</string>
 	</array>
 	<key>flag</key>
 	<array>
@@ -3977,7 +4799,20 @@
 	<array>
 		<string>fire</string>
 	</array>
+	<key>flask</key>
+	<array>
+		<string>medical</string>
+	</array>
+	<key>flask.fill</key>
+	<array>
+		<string>medical</string>
+	</array>
 	<key>florinsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>florinsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -4102,6 +4937,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>francsign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>francsign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -4130,13 +4970,96 @@
 	<array>
 		<string>cooking</string>
 	</array>
-	<key>gauge.medium.badge.minus</key>
+	<key>gauge.open.with.lines.needle.33percent</key>
 	<array>
+		<string>control</string>
+		<string>cruise</string>
+	</array>
+	<key>gauge.open.with.lines.needle.33percent.and.arrowtriangle</key>
+	<array>
+		<string>control</string>
+		<string>cruise</string>
+	</array>
+	<key>gauge.open.with.lines.needle.33percent.and.arrowtriangle.from.0percent.to.50percent</key>
+	<array>
+		<string>control</string>
+		<string>cruise</string>
+	</array>
+	<key>gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+	<array>
+		<string>control</string>
+		<string>cruise</string>
+	</array>
+	<key>gauge.open.with.lines.needle.67percent.and.arrowtriangle.and.car</key>
+	<array>
+		<string>control</string>
+		<string>cruise</string>
+	</array>
+	<key>gauge.open.with.lines.needle.84percent.exclamation</key>
+	<array>
+		<string>!</string>
+		<string>control</string>
+		<string>cruise</string>
+		<string>warning</string>
+	</array>
+	<key>gauge.with.dots.needle.0percent</key>
+	<array>
+		<string>low</string>
+		<string>speedometer</string>
+	</array>
+	<key>gauge.with.dots.needle.100percent</key>
+	<array>
+		<string>high</string>
+		<string>speedometer</string>
+	</array>
+	<key>gauge.with.dots.needle.33percent</key>
+	<array>
+		<string>low</string>
+		<string>medium</string>
+		<string>speedometer</string>
+	</array>
+	<key>gauge.with.dots.needle.50percent</key>
+	<array>
+		<string>medium</string>
+		<string>speedometer</string>
+	</array>
+	<key>gauge.with.dots.needle.67percent</key>
+	<array>
+		<string>high</string>
+		<string>medium</string>
+		<string>speedometer</string>
+	</array>
+	<key>gauge.with.dots.needle.bottom.0percent</key>
+	<array>
+		<string>low</string>
+	</array>
+	<key>gauge.with.dots.needle.bottom.100percent</key>
+	<array>
+		<string>high</string>
+	</array>
+	<key>gauge.with.dots.needle.bottom.50percent</key>
+	<array>
+		<string>medium</string>
+	</array>
+	<key>gauge.with.dots.needle.bottom.50percent.badge.minus</key>
+	<array>
+		<string>medium</string>
 		<string>remove</string>
 	</array>
-	<key>gauge.medium.badge.plus</key>
+	<key>gauge.with.dots.needle.bottom.50percent.badge.plus</key>
 	<array>
 		<string>add</string>
+		<string>medium</string>
+	</array>
+	<key>gauge.with.needle</key>
+	<array>
+		<string>fitness</string>
+		<string>timer</string>
+	</array>
+	<key>gauge.with.needle.fill</key>
+	<array>
+		<string>fitness</string>
+		<string>timer</string>
 	</array>
 	<key>gear</key>
 	<array>
@@ -4291,6 +5214,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>guaranisign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>guaranisign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -4310,6 +5238,14 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>gym.bag</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>gym.bag.fill</key>
+	<array>
+		<string>sports</string>
 	</array>
 	<key>hand.draw</key>
 	<array>
@@ -4405,13 +5341,31 @@
 	<array>
 		<string>like</string>
 	</array>
+	<key>hanger</key>
+	<array>
+		<string>clothing</string>
+	</array>
 	<key>hare</key>
 	<array>
+		<string>animals</string>
+		<string>fast</string>
+		<string>rabbit</string>
+	</array>
+	<key>hare.circle</key>
+	<array>
+		<string>animals</string>
+		<string>fast</string>
+		<string>rabbit</string>
+	</array>
+	<key>hare.circle.fill</key>
+	<array>
+		<string>animals</string>
 		<string>fast</string>
 		<string>rabbit</string>
 	</array>
 	<key>hare.fill</key>
 	<array>
+		<string>animals</string>
 		<string>fast</string>
 		<string>rabbit</string>
 	</array>
@@ -4695,6 +5649,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>hryvniasign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>hryvniasign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -4758,6 +5717,11 @@
 		<string>remove</string>
 	</array>
 	<key>indianrupeesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>indianrupeesign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -4860,6 +5824,10 @@
 	<array>
 		<string>remove</string>
 	</array>
+	<key>ipodtouch.slash</key>
+	<array>
+		<string>remove</string>
+	</array>
 	<key>ivfluid.bag</key>
 	<array>
 		<string>medical</string>
@@ -4880,20 +5848,34 @@
 	</array>
 	<key>key.horizontal</key>
 	<array>
-		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>key.horizontal.fill</key>
 	<array>
-		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>key.radiowaves.forward</key>
 	<array>
-		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>key.radiowaves.forward.fill</key>
+	<array>
+		<string>security</string>
+	</array>
+	<key>key.radiowaves.forward.slash</key>
+	<array>
+		<string>security</string>
+	</array>
+	<key>key.radiowaves.forward.slash.fill</key>
+	<array>
+		<string>security</string>
+	</array>
+	<key>key.slash</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>key.slash.fill</key>
 	<array>
 		<string>password</string>
 		<string>security</string>
@@ -4926,6 +5908,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>kipsign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>kipsign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -4945,6 +5932,26 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>ladybug</key>
+	<array>
+		<string>animals</string>
+		<string>bug</string>
+	</array>
+	<key>ladybug.circle</key>
+	<array>
+		<string>animals</string>
+		<string>bug</string>
+	</array>
+	<key>ladybug.circle.fill</key>
+	<array>
+		<string>animals</string>
+		<string>bug</string>
+	</array>
+	<key>ladybug.fill</key>
+	<array>
+		<string>animals</string>
+		<string>bug</string>
 	</array>
 	<key>lamp.ceiling</key>
 	<array>
@@ -4997,6 +6004,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>larisign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>larisign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -5016,6 +6028,10 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>laser.burst</key>
+	<array>
+		<string>party</string>
 	</array>
 	<key>lessthan</key>
 	<array>
@@ -5069,6 +6085,11 @@
 	<array>
 		<string>remove</string>
 	</array>
+	<key>lightspectrum.horizontal</key>
+	<array>
+		<string>edit</string>
+		<string>vibrance</string>
+	</array>
 	<key>line.3.horizontal.decrease.circle</key>
 	<array>
 		<string>filter</string>
@@ -5088,6 +6109,11 @@
 		<string>add</string>
 	</array>
 	<key>lirasign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>lirasign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -5137,11 +6163,27 @@
 	</array>
 	<key>lizard</key>
 	<array>
+		<string>animals</string>
+		<string>reptile</string>
+	</array>
+	<key>lizard.circle</key>
+	<array>
+		<string>animals</string>
+		<string>reptile</string>
+	</array>
+	<key>lizard.circle.fill</key>
+	<array>
+		<string>animals</string>
 		<string>reptile</string>
 	</array>
 	<key>lizard.fill</key>
 	<array>
+		<string>animals</string>
 		<string>reptile</string>
+	</array>
+	<key>location.magnifyingglass</key>
+	<array>
+		<string>search</string>
 	</array>
 	<key>location.slash</key>
 	<array>
@@ -5172,9 +6214,27 @@
 		<string>password</string>
 		<string>security</string>
 	</array>
+	<key>lock.badge.clock</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.badge.clock.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
 	<key>lock.circle</key>
 	<array>
 		<string>lock</string>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.circle.dotted</key>
+	<array>
 		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
@@ -5439,6 +6499,12 @@
 	<key>mail.and.text.magnifyingglass</key>
 	<array>
 		<string>headers</string>
+		<string>search</string>
+	</array>
+	<key>mail.and.text.magnifyingglass.rtl</key>
+	<array>
+		<string>headers</string>
+		<string>search</string>
 	</array>
 	<key>mail.stack</key>
 	<array>
@@ -5449,6 +6515,11 @@
 		<string>related</string>
 	</array>
 	<key>manatsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>manatsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -5489,13 +6560,22 @@
 		<string>medical</string>
 		<string>temperature</string>
 	</array>
+	<key>memories</key>
+	<array>
+		<string>arrow</string>
+		<string>play</string>
+	</array>
 	<key>memories.badge.minus</key>
 	<array>
+		<string>arrow</string>
+		<string>play</string>
 		<string>remove</string>
 	</array>
 	<key>memories.badge.plus</key>
 	<array>
 		<string>add</string>
+		<string>arrow</string>
+		<string>play</string>
 	</array>
 	<key>memorychip</key>
 	<array>
@@ -5616,6 +6696,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>millsign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>millsign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -5692,6 +6777,7 @@
 	<key>minus.magnifyingglass</key>
 	<array>
 		<string>-</string>
+		<string>search</string>
 		<string>zoom out</string>
 	</array>
 	<key>minus.rectangle</key>
@@ -5879,6 +6965,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>nairasign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>nairasign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -5895,6 +6986,36 @@
 		<string>currency</string>
 	</array>
 	<key>nairasign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>norwegiankronesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>norwegiankronesign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>norwegiankronesign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>norwegiankronesign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>norwegiankronesign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>norwegiankronesign.square.fill</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -5991,6 +7112,13 @@
 	<array>
 		<string>send</string>
 	</array>
+	<key>parkingsign.radiowaves.right.and.safetycone</key>
+	<array>
+		<string>aid</string>
+		<string>cone</string>
+		<string>parking</string>
+		<string>traffic</string>
+	</array>
 	<key>party.popper</key>
 	<array>
 		<string>party</string>
@@ -6026,7 +7154,20 @@
 		<string>write</string>
 		<string>writing</string>
 	</array>
+	<key>pencil.and.list.clipboard</key>
+	<array>
+		<string>notes</string>
+	</array>
+	<key>pencil.and.list.clipboard.rtl</key>
+	<array>
+		<string>notes</string>
+	</array>
 	<key>pencil.and.outline</key>
+	<array>
+		<string>write</string>
+		<string>writing</string>
+	</array>
+	<key>pencil.and.scribble</key>
 	<array>
 		<string>write</string>
 		<string>writing</string>
@@ -6069,7 +7210,19 @@
 		<string>write</string>
 		<string>writing</string>
 	</array>
+	<key>pencil.tip.crop.circle.badge.arrow.forward.fill</key>
+	<array>
+		<string>write</string>
+		<string>writing</string>
+	</array>
 	<key>pencil.tip.crop.circle.badge.minus</key>
+	<array>
+		<string>-</string>
+		<string>remove</string>
+		<string>write</string>
+		<string>writing</string>
+	</array>
+	<key>pencil.tip.crop.circle.badge.minus.fill</key>
 	<array>
 		<string>-</string>
 		<string>remove</string>
@@ -6080,6 +7233,19 @@
 	<array>
 		<string>+</string>
 		<string>add</string>
+		<string>write</string>
+		<string>writing</string>
+	</array>
+	<key>pencil.tip.crop.circle.badge.plus.fill</key>
+	<array>
+		<string>+</string>
+		<string>add</string>
+		<string>write</string>
+		<string>writing</string>
+	</array>
+	<key>pencil.tip.crop.circle.fill</key>
+	<array>
+		<string>markup</string>
 		<string>write</string>
 		<string>writing</string>
 	</array>
@@ -6104,6 +7270,22 @@
 	<key>person.2.badge.gearshape.fill</key>
 	<array>
 		<string>people</string>
+	</array>
+	<key>person.2.badge.key</key>
+	<array>
+		<string>passkey</string>
+		<string>password</string>
+		<string>people</string>
+		<string>privacyandsecurity</string>
+		<string>user</string>
+	</array>
+	<key>person.2.badge.key.fill</key>
+	<array>
+		<string>passkey</string>
+		<string>password</string>
+		<string>people</string>
+		<string>privacyandsecurity</string>
+		<string>user</string>
 	</array>
 	<key>person.2.circle</key>
 	<array>
@@ -6185,6 +7367,11 @@
 		<string>cameraandphotos</string>
 		<string>people</string>
 	</array>
+	<key>person.and.background.striped.horizontal</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>person.badge.clock</key>
 	<array>
 		<string>people</string>
@@ -6238,7 +7425,29 @@
 		<string>people</string>
 		<string>user</string>
 	</array>
+	<key>person.bubble</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>person.bubble.fill</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>person.bust</key>
+	<array>
+		<string>art</string>
+		<string>people</string>
+		<string>sculpture</string>
+	</array>
+	<key>person.bust.circle</key>
+	<array>
+		<string>art</string>
+		<string>people</string>
+		<string>sculpture</string>
+	</array>
+	<key>person.bust.circle.fill</key>
 	<array>
 		<string>art</string>
 		<string>people</string>
@@ -6405,6 +7614,14 @@
 	<array>
 		<string>people</string>
 	</array>
+	<key>person.crop.circle.dashed.circle</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.crop.circle.dashed.circle.fill</key>
+	<array>
+		<string>people</string>
+	</array>
 	<key>person.crop.circle.fill</key>
 	<array>
 		<string>account</string>
@@ -6463,6 +7680,22 @@
 		<string>people</string>
 	</array>
 	<key>person.crop.square</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.crop.square.badge.camera</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.crop.square.badge.camera.fill</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.crop.square.badge.video</key>
+	<array>
+		<string>people</string>
+	</array>
+	<key>person.crop.square.badge.video.fill</key>
 	<array>
 		<string>people</string>
 	</array>
@@ -6585,12 +7818,26 @@
 		<string>physical distancing</string>
 		<string>social distancing</string>
 	</array>
+	<key>person.slash</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.slash.fill</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
 	<key>person.text.rectangle</key>
 	<array>
+		<string>card</string>
+		<string>id</string>
 		<string>people</string>
 	</array>
 	<key>person.text.rectangle.fill</key>
 	<array>
+		<string>card</string>
+		<string>id</string>
 		<string>people</string>
 	</array>
 	<key>person.wave.2</key>
@@ -6602,6 +7849,11 @@
 		<string>people</string>
 	</array>
 	<key>pesetasign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>pesetasign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -6627,6 +7879,11 @@
 		<string>currency</string>
 	</array>
 	<key>pesosign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>pesosign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -6671,6 +7928,88 @@
 	</array>
 	<key>photo.artframe</key>
 	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.artframe.circle</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.artframe.circle.fill</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.arrow.down</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.arrow.down.fill</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.checkmark</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.checkmark.fill</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.plus</key>
+	<array>
+		<string>add</string>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.plus.fill</key>
+	<array>
+		<string>add</string>
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
@@ -6825,6 +8164,16 @@
 	<array>
 		<string>remove</string>
 	</array>
+	<key>play.house</key>
+	<array>
+		<string>home</string>
+		<string>house</string>
+	</array>
+	<key>play.house.fill</key>
+	<array>
+		<string>home</string>
+		<string>house</string>
+	</array>
 	<key>play.rectangle</key>
 	<array>
 		<string>slideshow</string>
@@ -6906,6 +8255,7 @@
 	<key>plus.magnifyingglass</key>
 	<array>
 		<string>+</string>
+		<string>search</string>
 		<string>zoom in</string>
 	</array>
 	<key>plus.message</key>
@@ -7005,25 +8355,113 @@
 		<string>add</string>
 		<string>remove</string>
 	</array>
-	<key>point.filled.topleft.down.curvedto.point.bottomright.up</key>
+	<key>point.bottomleft.filled.forward.to.point.topright.scurvepath</key>
 	<array>
 		<string>activities</string>
 		<string>path</string>
+		<string>trail</string>
 	</array>
-	<key>point.topleft.down.curvedto.point.bottomright.up</key>
+	<key>point.bottomleft.forward.to.arrowtriangle.uturn.scurvepath</key>
 	<array>
 		<string>activities</string>
+		<string>out and back</string>
 		<string>path</string>
+		<string>switchback</string>
+		<string>trail</string>
 	</array>
-	<key>point.topleft.down.curvedto.point.bottomright.up.fill</key>
+	<key>point.bottomleft.forward.to.arrowtriangle.uturn.scurvepath.fill</key>
 	<array>
 		<string>activities</string>
+		<string>out and back</string>
 		<string>path</string>
+		<string>switchback</string>
+		<string>trail</string>
 	</array>
-	<key>point.topleft.down.curvedto.point.filled.bottomright.up</key>
+	<key>point.bottomleft.forward.to.point.topright.filled.scurvepath</key>
 	<array>
 		<string>activities</string>
 		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.bottomleft.forward.to.point.topright.scurvepath</key>
+	<array>
+		<string>activities</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.bottomleft.forward.to.point.topright.scurvepath.fill</key>
+	<array>
+		<string>activities</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.forward.to.point.capsulepath</key>
+	<array>
+		<string>activities</string>
+		<string>loop</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.forward.to.point.capsulepath.fill</key>
+	<array>
+		<string>activities</string>
+		<string>loop</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.topleft.down.to.point.bottomright.curvepath</key>
+	<array>
+		<string>activities</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.topleft.down.to.point.bottomright.curvepath.fill</key>
+	<array>
+		<string>activities</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.topleft.down.to.point.bottomright.filled.curvepath</key>
+	<array>
+		<string>activities</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>point.topleft.filled.down.to.point.bottomright.curvepath</key>
+	<array>
+		<string>activities</string>
+		<string>path</string>
+		<string>trail</string>
+	</array>
+	<key>polishzlotysign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>polishzlotysign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>polishzlotysign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>polishzlotysign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>polishzlotysign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>polishzlotysign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
 	</array>
 	<key>popcorn</key>
 	<array>
@@ -7449,7 +8887,6 @@
 	</array>
 	<key>questionmark.key.filled</key>
 	<array>
-		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>questionmark.video</key>
@@ -7468,6 +8905,10 @@
 	<array>
 		<string>facetime</string>
 	</array>
+	<key>rainbow</key>
+	<array>
+		<string>weather</string>
+	</array>
 	<key>rays</key>
 	<array>
 		<string>light</string>
@@ -7484,11 +8925,11 @@
 	<array>
 		<string>voicemail</string>
 	</array>
-	<key>rectangle.3.group.bubble.left</key>
+	<key>rectangle.3.group.bubble</key>
 	<array>
 		<string>speech</string>
 	</array>
-	<key>rectangle.3.group.bubble.left.fill</key>
+	<key>rectangle.3.group.bubble.fill</key>
 	<array>
 		<string>speech</string>
 	</array>
@@ -7536,6 +8977,14 @@
 		<string>write</string>
 		<string>writing</string>
 		<string>…</string>
+	</array>
+	<key>rectangle.and.text.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
+	<key>rectangle.and.text.magnifyingglass.rtl</key>
+	<array>
+		<string>search</string>
 	</array>
 	<key>rectangle.badge.minus</key>
 	<array>
@@ -7657,6 +9106,22 @@
 	<array>
 		<string>restart</string>
 	</array>
+	<key>righttriangle</key>
+	<array>
+		<string>edit</string>
+	</array>
+	<key>righttriangle.fill</key>
+	<array>
+		<string>edit</string>
+	</array>
+	<key>righttriangle.split.diagonal</key>
+	<array>
+		<string>edit</string>
+	</array>
+	<key>righttriangle.split.diagonal.fill</key>
+	<array>
+		<string>edit</string>
+	</array>
 	<key>rotate.left</key>
 	<array>
 		<string>rotate left</string>
@@ -7674,6 +9139,11 @@
 		<string>rotate right</string>
 	</array>
 	<key>rublesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>rublesign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -7699,6 +9169,11 @@
 		<string>currency</string>
 	</array>
 	<key>rupeesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>rupeesign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -7754,8 +9229,13 @@
 	</array>
 	<key>scope</key>
 	<array>
+		<string>circle</string>
 		<string>crosshair</string>
+		<string>inspect</string>
 		<string>locate</string>
+		<string>measure</string>
+		<string>point</string>
+		<string>select</string>
 		<string>target</string>
 	</array>
 	<key>sensor.tag.radiowaves.forward</key>
@@ -7769,6 +9249,16 @@
 		<string>location</string>
 	</array>
 	<key>shared.with.you</key>
+	<array>
+		<string>people</string>
+		<string>person</string>
+	</array>
+	<key>shared.with.you.circle</key>
+	<array>
+		<string>people</string>
+		<string>person</string>
+	</array>
+	<key>shared.with.you.circle.fill</key>
 	<array>
 		<string>people</string>
 		<string>person</string>
@@ -7793,6 +9283,11 @@
 		<string>remove</string>
 	</array>
 	<key>shekelsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>shekelsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -7933,6 +9428,22 @@
 		<string>camping</string>
 		<string>trail</string>
 	</array>
+	<key>skateboard</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>skateboard.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>skis</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>skis.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
 	<key>slash.circle</key>
 	<array>
 		<string>/</string>
@@ -7948,6 +9459,11 @@
 		<string>sleep</string>
 	</array>
 	<key>slider.horizontal.2.gobackward</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
+	<key>slider.horizontal.2.square</key>
 	<array>
 		<string>adjust</string>
 		<string>edit</string>
@@ -7982,10 +9498,23 @@
 		<string>adjust</string>
 		<string>edit</string>
 	</array>
+	<key>slider.horizontal.below.sun.max</key>
+	<array>
+		<string>adjust</string>
+		<string>edit</string>
+	</array>
 	<key>slider.vertical.3</key>
 	<array>
 		<string>adjust</string>
 		<string>edit</string>
+	</array>
+	<key>smallcircle.filled.circle</key>
+	<array>
+		<string>dot</string>
+	</array>
+	<key>smallcircle.filled.circle.fill</key>
+	<array>
+		<string>dot</string>
 	</array>
 	<key>smoke</key>
 	<array>
@@ -8002,6 +9531,14 @@
 	<key>smoke.fill</key>
 	<array>
 		<string>weather</string>
+	</array>
+	<key>snowboard</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>snowboard.fill</key>
+	<array>
+		<string>sports</string>
 	</array>
 	<key>snowflake</key>
 	<array>
@@ -8056,6 +9593,10 @@
 	<key>sofa.fill</key>
 	<array>
 		<string>couch</string>
+	</array>
+	<key>sparkle.magnifyingglass</key>
+	<array>
+		<string>search</string>
 	</array>
 	<key>sparkles</key>
 	<array>
@@ -8249,40 +9790,61 @@
 	<array>
 		<string>export</string>
 		<string>share</string>
+		<string>sharrow</string>
+		<string>upload</string>
+	</array>
+	<key>square.and.arrow.up.badge.clock</key>
+	<array>
+		<string>export</string>
+		<string>share</string>
+		<string>sharrow</string>
+		<string>upload</string>
+	</array>
+	<key>square.and.arrow.up.badge.clock.fill</key>
+	<array>
+		<string>export</string>
+		<string>share</string>
+		<string>sharrow</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.circle</key>
 	<array>
 		<string>export</string>
 		<string>share</string>
+		<string>sharrow</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.circle.fill</key>
 	<array>
 		<string>export</string>
 		<string>share</string>
+		<string>sharrow</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.fill</key>
 	<array>
 		<string>export</string>
 		<string>share</string>
+		<string>sharrow</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.on.square</key>
 	<array>
 		<string>export</string>
+		<string>sharrow</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.on.square.fill</key>
 	<array>
 		<string>export</string>
+		<string>sharrow</string>
 		<string>upload</string>
 	</array>
 	<key>square.and.arrow.up.trianglebadge.exclamationmark</key>
 	<array>
 		<string>export</string>
 		<string>share</string>
+		<string>sharrow</string>
 		<string>upload</string>
 		<string>warning</string>
 	</array>
@@ -8314,6 +9876,10 @@
 		<string>mail</string>
 		<string>write</string>
 		<string>writing</string>
+	</array>
+	<key>square.arrowtriangle.4.outward</key>
+	<array>
+		<string>zoom</string>
 	</array>
 	<key>square.grid.3x1.folder.badge.plus</key>
 	<array>
@@ -8369,11 +9935,11 @@
 	<array>
 		<string>right</string>
 	</array>
-	<key>square.stack.3d.up.badge.a</key>
+	<key>square.stack.3d.up.badge.automatic</key>
 	<array>
 		<string>a</string>
 	</array>
-	<key>square.stack.3d.up.badge.a.fill</key>
+	<key>square.stack.3d.up.badge.automatic.fill</key>
 	<array>
 		<string>a</string>
 	</array>
@@ -8388,6 +9954,14 @@
 	<key>square.stack.fill</key>
 	<array>
 		<string>album</string>
+	</array>
+	<key>squares.leading.rectangle</key>
+	<array>
+		<string>stage manager</string>
+	</array>
+	<key>squares.leading.rectangle.fill</key>
+	<array>
+		<string>stage manager</string>
 	</array>
 	<key>squareshape.controlhandles.on.squareshape.controlhandles</key>
 	<array>
@@ -8459,12 +10033,22 @@
 	<array>
 		<string>medical</string>
 	</array>
+	<key>steeringwheel.badge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>warning</string>
+	</array>
 	<key>steeringwheel.exclamationmark</key>
 	<array>
 		<string>!</string>
 		<string>warning</string>
 	</array>
 	<key>sterlingsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>sterlingsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -8488,22 +10072,6 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
-	</array>
-	<key>sun.and.horizon</key>
-	<array>
-		<string>weather</string>
-	</array>
-	<key>sun.and.horizon.circle</key>
-	<array>
-		<string>weather</string>
-	</array>
-	<key>sun.and.horizon.circle.fill</key>
-	<array>
-		<string>weather</string>
-	</array>
-	<key>sun.and.horizon.fill</key>
-	<array>
-		<string>weather</string>
 	</array>
 	<key>sun.dust</key>
 	<array>
@@ -8534,6 +10102,22 @@
 		<string>weather</string>
 	</array>
 	<key>sun.haze.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.horizon</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.horizon.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.horizon.circle.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.horizon.fill</key>
 	<array>
 		<string>weather</string>
 	</array>
@@ -8573,6 +10157,38 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>sun.rain</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.rain.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.rain.circle.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.rain.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.snow</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.snow.circle</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.snow.circle.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>sun.snow.fill</key>
+	<array>
+		<string>weather</string>
+	</array>
 	<key>sunrise</key>
 	<array>
 		<string>weather</string>
@@ -8605,6 +10221,14 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>surfboard</key>
+	<array>
+		<string>sports</string>
+	</array>
+	<key>surfboard.fill</key>
+	<array>
+		<string>sports</string>
+	</array>
 	<key>suv.side.and.exclamationmark</key>
 	<array>
 		<string>!</string>
@@ -8614,6 +10238,46 @@
 	<array>
 		<string>!</string>
 		<string>warning</string>
+	</array>
+	<key>swedishkronasign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>swedishkronasign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>swedishkronasign.circle</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>swedishkronasign.circle.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>swedishkronasign.square</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>swedishkronasign.square.fill</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>swirl.circle.righthalf.filled</key>
+	<array>
+		<string>brilliance</string>
+		<string>edit</string>
+	</array>
+	<key>swirl.circle.righthalf.filled.inverse</key>
+	<array>
+		<string>brilliance</string>
+		<string>edit</string>
 	</array>
 	<key>syringe</key>
 	<array>
@@ -8663,6 +10327,10 @@
 		<string>drink</string>
 		<string>food</string>
 	</array>
+	<key>target</key>
+	<array>
+		<string>dot</string>
+	</array>
 	<key>teddybear</key>
 	<array>
 		<string>animals</string>
@@ -8704,6 +10372,11 @@
 		<string>rtt</string>
 	</array>
 	<key>tengesign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>tengesign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -8868,6 +10541,14 @@
 		<string>next</string>
 		<string>play next</string>
 	</array>
+	<key>text.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
+	<key>text.magnifyingglass.rtl</key>
+	<array>
+		<string>search</string>
+	</array>
 	<key>text.word.spacing</key>
 	<array>
 		<string>word spacing</string>
@@ -8949,6 +10630,21 @@
 		<string>temperature</string>
 		<string>transmission</string>
 	</array>
+	<key>thermometer.variable.and.figure</key>
+	<array>
+		<string>feels like</string>
+		<string>weather</string>
+	</array>
+	<key>thermometer.variable.and.figure.circle</key>
+	<array>
+		<string>feels like</string>
+		<string>weather</string>
+	</array>
+	<key>thermometer.variable.and.figure.circle.fill</key>
+	<array>
+		<string>feels like</string>
+		<string>weather</string>
+	</array>
 	<key>timeline.selection</key>
 	<array>
 		<string>trim</string>
@@ -8999,11 +10695,25 @@
 	</array>
 	<key>tortoise</key>
 	<array>
+		<string>animals</string>
+		<string>slow</string>
+		<string>turtle</string>
+	</array>
+	<key>tortoise.circle</key>
+	<array>
+		<string>animals</string>
+		<string>slow</string>
+		<string>turtle</string>
+	</array>
+	<key>tortoise.circle.fill</key>
+	<array>
+		<string>animals</string>
 		<string>slow</string>
 		<string>turtle</string>
 	</array>
 	<key>tortoise.fill</key>
 	<array>
+		<string>animals</string>
 		<string>slow</string>
 		<string>turtle</string>
 	</array>
@@ -9142,7 +10852,28 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>truck.box.badge.clock</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>truck.box.badge.clock.fill</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>truck.box.badge.clock.fill.rtl</key>
+	<array>
+		<string>time</string>
+	</array>
+	<key>truck.box.badge.clock.rtl</key>
+	<array>
+		<string>time</string>
+	</array>
 	<key>tugriksign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>tugriksign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -9172,6 +10903,11 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>turkishlirasign.arrow.circlepath</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
 	<key>turkishlirasign.circle</key>
 	<array>
 		<string>currencies</string>
@@ -9196,14 +10932,6 @@
 	<array>
 		<string>facetime</string>
 	</array>
-	<key>video.and.waveform</key>
-	<array>
-		<string>facetime</string>
-	</array>
-	<key>video.and.waveform.fill</key>
-	<array>
-		<string>facetime</string>
-	</array>
 	<key>video.badge.checkmark</key>
 	<array>
 		<string>facetime</string>
@@ -9221,6 +10949,14 @@
 	<key>video.badge.plus</key>
 	<array>
 		<string>add</string>
+		<string>facetime</string>
+	</array>
+	<key>video.badge.waveform</key>
+	<array>
+		<string>facetime</string>
+	</array>
+	<key>video.badge.waveform.fill</key>
+	<array>
 		<string>facetime</string>
 	</array>
 	<key>video.circle</key>
@@ -9259,6 +10995,16 @@
 		<string>facetime</string>
 		<string>remove</string>
 	</array>
+	<key>video.slash.circle</key>
+	<array>
+		<string>facetime</string>
+		<string>remove</string>
+	</array>
+	<key>video.slash.circle.fill</key>
+	<array>
+		<string>facetime</string>
+		<string>remove</string>
+	</array>
 	<key>video.slash.fill</key>
 	<array>
 		<string>facetime</string>
@@ -9271,6 +11017,18 @@
 	<key>video.square.fill</key>
 	<array>
 		<string>facetime</string>
+	</array>
+	<key>viewfinder.trianglebadge.exclamationmark</key>
+	<array>
+		<string>warning</string>
+	</array>
+	<key>voiceover</key>
+	<array>
+		<string>figure</string>
+		<string>figure.circle</string>
+		<string>human</string>
+		<string>person</string>
+		<string>speaker</string>
 	</array>
 	<key>volleyball</key>
 	<array>
@@ -9345,6 +11103,16 @@
 		<string>water</string>
 		<string>wave</string>
 	</array>
+	<key>waterbottle</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
+	<key>waterbottle.fill</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
 	<key>wave.3.backward</key>
 	<array>
 		<string>left</string>
@@ -9374,14 +11142,24 @@
 		<string>audio</string>
 		<string>record</string>
 		<string>speech</string>
+		<string>voice memo</string>
 	</array>
-	<key>waveform.and.mic</key>
+	<key>waveform.and.person.filled</key>
 	<array>
-		<string>microphone</string>
+		<string>people</string>
+		<string>person</string>
 	</array>
 	<key>waveform.badge.exclamationmark</key>
 	<array>
 		<string>warning</string>
+	</array>
+	<key>waveform.badge.magnifyingglass</key>
+	<array>
+		<string>search</string>
+	</array>
+	<key>waveform.badge.mic</key>
+	<array>
+		<string>microphone</string>
 	</array>
 	<key>waveform.circle</key>
 	<array>
@@ -9416,6 +11194,14 @@
 		<string>medical</string>
 	</array>
 	<key>wifi.exclamationmark</key>
+	<array>
+		<string>warning</string>
+	</array>
+	<key>wifi.exclamationmark.circle</key>
+	<array>
+		<string>warning</string>
+	</array>
+	<key>wifi.exclamationmark.circle.fill</key>
 	<array>
 		<string>warning</string>
 	</array>
@@ -9468,6 +11254,11 @@
 		<string>food</string>
 	</array>
 	<key>wonsign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>wonsign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
@@ -9606,6 +11397,11 @@
 		<string>x</string>
 	</array>
 	<key>yensign</key>
+	<array>
+		<string>currencies</string>
+		<string>currency</string>
+	</array>
+	<key>yensign.arrow.circlepath</key>
 	<array>
 		<string>currencies</string>
 		<string>currency</string>

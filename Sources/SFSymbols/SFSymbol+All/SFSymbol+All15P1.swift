@@ -1,6 +1,6 @@
 import Foundation
 
-@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, visionOS 1.0, *)
 public extension SFSymbol {
 
     static var allSymbols15P1: [SFSymbol] {
