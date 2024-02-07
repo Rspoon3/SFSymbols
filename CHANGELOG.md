@@ -7,6 +7,7 @@
 ### Fixed
 - Fixed missing version 2.4 CHANGELOG entry
 - Fixed SFCategory including a plist title
+- Fixed Swift Build badge in the README
 
 -----
 ## Version 2.4 (2-7-2024)
