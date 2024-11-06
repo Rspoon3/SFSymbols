@@ -4,7 +4,7 @@ import Foundation
 public extension SFSymbol {
     /// 0.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number0Circle = SFSymbol(
+    static let _0Circle = SFSymbol(
         title: "0.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -13,7 +13,7 @@ public extension SFSymbol {
 
     /// 0.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number0CircleFill = SFSymbol(
+    static let _0CircleFill = SFSymbol(
         title: "0.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -22,7 +22,7 @@ public extension SFSymbol {
 
     /// 0.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number0Square = SFSymbol(
+    static let _0Square = SFSymbol(
         title: "0.square",
         categories: [.indices],
         searchTerms: nil,
@@ -31,7 +31,7 @@ public extension SFSymbol {
 
     /// 0.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number0SquareFill = SFSymbol(
+    static let _0SquareFill = SFSymbol(
         title: "0.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -40,7 +40,7 @@ public extension SFSymbol {
 
     /// 00.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number00Circle = SFSymbol(
+    static let _00Circle = SFSymbol(
         title: "00.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -49,7 +49,7 @@ public extension SFSymbol {
 
     /// 00.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number00CircleFill = SFSymbol(
+    static let _00CircleFill = SFSymbol(
         title: "00.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -58,7 +58,7 @@ public extension SFSymbol {
 
     /// 00.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number00Square = SFSymbol(
+    static let _00Square = SFSymbol(
         title: "00.square",
         categories: [.indices],
         searchTerms: nil,
@@ -67,7 +67,7 @@ public extension SFSymbol {
 
     /// 00.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number00SquareFill = SFSymbol(
+    static let _00SquareFill = SFSymbol(
         title: "00.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -76,7 +76,7 @@ public extension SFSymbol {
 
     /// 01.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number01Circle = SFSymbol(
+    static let _01Circle = SFSymbol(
         title: "01.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -85,7 +85,7 @@ public extension SFSymbol {
 
     /// 01.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number01CircleFill = SFSymbol(
+    static let _01CircleFill = SFSymbol(
         title: "01.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -94,7 +94,7 @@ public extension SFSymbol {
 
     /// 01.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number01Square = SFSymbol(
+    static let _01Square = SFSymbol(
         title: "01.square",
         categories: [.indices],
         searchTerms: nil,
@@ -103,7 +103,7 @@ public extension SFSymbol {
 
     /// 01.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number01SquareFill = SFSymbol(
+    static let _01SquareFill = SFSymbol(
         title: "01.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -112,7 +112,7 @@ public extension SFSymbol {
 
     /// 02.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number02Circle = SFSymbol(
+    static let _02Circle = SFSymbol(
         title: "02.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -121,7 +121,7 @@ public extension SFSymbol {
 
     /// 02.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number02CircleFill = SFSymbol(
+    static let _02CircleFill = SFSymbol(
         title: "02.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -130,7 +130,7 @@ public extension SFSymbol {
 
     /// 02.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number02Square = SFSymbol(
+    static let _02Square = SFSymbol(
         title: "02.square",
         categories: [.indices],
         searchTerms: nil,
@@ -139,7 +139,7 @@ public extension SFSymbol {
 
     /// 02.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number02SquareFill = SFSymbol(
+    static let _02SquareFill = SFSymbol(
         title: "02.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -148,7 +148,7 @@ public extension SFSymbol {
 
     /// 03.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number03Circle = SFSymbol(
+    static let _03Circle = SFSymbol(
         title: "03.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -157,7 +157,7 @@ public extension SFSymbol {
 
     /// 03.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number03CircleFill = SFSymbol(
+    static let _03CircleFill = SFSymbol(
         title: "03.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -166,7 +166,7 @@ public extension SFSymbol {
 
     /// 03.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number03Square = SFSymbol(
+    static let _03Square = SFSymbol(
         title: "03.square",
         categories: [.indices],
         searchTerms: nil,
@@ -175,7 +175,7 @@ public extension SFSymbol {
 
     /// 03.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number03SquareFill = SFSymbol(
+    static let _03SquareFill = SFSymbol(
         title: "03.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -184,7 +184,7 @@ public extension SFSymbol {
 
     /// 04.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number04Circle = SFSymbol(
+    static let _04Circle = SFSymbol(
         title: "04.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -193,7 +193,7 @@ public extension SFSymbol {
 
     /// 04.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number04CircleFill = SFSymbol(
+    static let _04CircleFill = SFSymbol(
         title: "04.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -202,7 +202,7 @@ public extension SFSymbol {
 
     /// 04.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number04Square = SFSymbol(
+    static let _04Square = SFSymbol(
         title: "04.square",
         categories: [.indices],
         searchTerms: nil,
@@ -211,7 +211,7 @@ public extension SFSymbol {
 
     /// 04.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number04SquareFill = SFSymbol(
+    static let _04SquareFill = SFSymbol(
         title: "04.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -220,7 +220,7 @@ public extension SFSymbol {
 
     /// 05.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number05Circle = SFSymbol(
+    static let _05Circle = SFSymbol(
         title: "05.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -229,7 +229,7 @@ public extension SFSymbol {
 
     /// 05.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number05CircleFill = SFSymbol(
+    static let _05CircleFill = SFSymbol(
         title: "05.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -238,7 +238,7 @@ public extension SFSymbol {
 
     /// 05.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number05Square = SFSymbol(
+    static let _05Square = SFSymbol(
         title: "05.square",
         categories: [.indices],
         searchTerms: nil,
@@ -247,7 +247,7 @@ public extension SFSymbol {
 
     /// 05.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number05SquareFill = SFSymbol(
+    static let _05SquareFill = SFSymbol(
         title: "05.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -256,7 +256,7 @@ public extension SFSymbol {
 
     /// 06.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number06Circle = SFSymbol(
+    static let _06Circle = SFSymbol(
         title: "06.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -265,7 +265,7 @@ public extension SFSymbol {
 
     /// 06.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number06CircleFill = SFSymbol(
+    static let _06CircleFill = SFSymbol(
         title: "06.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -274,7 +274,7 @@ public extension SFSymbol {
 
     /// 06.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number06Square = SFSymbol(
+    static let _06Square = SFSymbol(
         title: "06.square",
         categories: [.indices],
         searchTerms: nil,
@@ -283,7 +283,7 @@ public extension SFSymbol {
 
     /// 06.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number06SquareFill = SFSymbol(
+    static let _06SquareFill = SFSymbol(
         title: "06.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -292,7 +292,7 @@ public extension SFSymbol {
 
     /// 07.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number07Circle = SFSymbol(
+    static let _07Circle = SFSymbol(
         title: "07.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -301,7 +301,7 @@ public extension SFSymbol {
 
     /// 07.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number07CircleFill = SFSymbol(
+    static let _07CircleFill = SFSymbol(
         title: "07.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -310,7 +310,7 @@ public extension SFSymbol {
 
     /// 07.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number07Square = SFSymbol(
+    static let _07Square = SFSymbol(
         title: "07.square",
         categories: [.indices],
         searchTerms: nil,
@@ -319,7 +319,7 @@ public extension SFSymbol {
 
     /// 07.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number07SquareFill = SFSymbol(
+    static let _07SquareFill = SFSymbol(
         title: "07.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -328,7 +328,7 @@ public extension SFSymbol {
 
     /// 08.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number08Circle = SFSymbol(
+    static let _08Circle = SFSymbol(
         title: "08.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -337,7 +337,7 @@ public extension SFSymbol {
 
     /// 08.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number08CircleFill = SFSymbol(
+    static let _08CircleFill = SFSymbol(
         title: "08.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -346,7 +346,7 @@ public extension SFSymbol {
 
     /// 08.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number08Square = SFSymbol(
+    static let _08Square = SFSymbol(
         title: "08.square",
         categories: [.indices],
         searchTerms: nil,
@@ -355,7 +355,7 @@ public extension SFSymbol {
 
     /// 08.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number08SquareFill = SFSymbol(
+    static let _08SquareFill = SFSymbol(
         title: "08.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -364,7 +364,7 @@ public extension SFSymbol {
 
     /// 09.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number09Circle = SFSymbol(
+    static let _09Circle = SFSymbol(
         title: "09.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -373,7 +373,7 @@ public extension SFSymbol {
 
     /// 09.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number09CircleFill = SFSymbol(
+    static let _09CircleFill = SFSymbol(
         title: "09.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -382,7 +382,7 @@ public extension SFSymbol {
 
     /// 09.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number09Square = SFSymbol(
+    static let _09Square = SFSymbol(
         title: "09.square",
         categories: [.indices],
         searchTerms: nil,
@@ -391,7 +391,7 @@ public extension SFSymbol {
 
     /// 09.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number09SquareFill = SFSymbol(
+    static let _09SquareFill = SFSymbol(
         title: "09.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -400,7 +400,7 @@ public extension SFSymbol {
 
     /// 1.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number1Circle = SFSymbol(
+    static let _1Circle = SFSymbol(
         title: "1.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -409,7 +409,7 @@ public extension SFSymbol {
 
     /// 1.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number1CircleFill = SFSymbol(
+    static let _1CircleFill = SFSymbol(
         title: "1.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -418,7 +418,7 @@ public extension SFSymbol {
 
     /// 1.magnifyingglass
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number1Magnifyingglass = SFSymbol(
+    static let _1Magnifyingglass = SFSymbol(
         title: "1.magnifyingglass",
         categories: [.objectsandtools],
         searchTerms: ["search"],
@@ -427,7 +427,7 @@ public extension SFSymbol {
 
     /// 1.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number1Square = SFSymbol(
+    static let _1Square = SFSymbol(
         title: "1.square",
         categories: [.indices],
         searchTerms: nil,
@@ -436,7 +436,7 @@ public extension SFSymbol {
 
     /// 1.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number1SquareFill = SFSymbol(
+    static let _1SquareFill = SFSymbol(
         title: "1.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -445,7 +445,7 @@ public extension SFSymbol {
 
     /// 10.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number10Circle = SFSymbol(
+    static let _10Circle = SFSymbol(
         title: "10.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -454,7 +454,7 @@ public extension SFSymbol {
 
     /// 10.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number10CircleFill = SFSymbol(
+    static let _10CircleFill = SFSymbol(
         title: "10.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -463,7 +463,7 @@ public extension SFSymbol {
 
     /// 10.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number10Square = SFSymbol(
+    static let _10Square = SFSymbol(
         title: "10.square",
         categories: [.indices],
         searchTerms: nil,
@@ -472,7 +472,7 @@ public extension SFSymbol {
 
     /// 10.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number10SquareFill = SFSymbol(
+    static let _10SquareFill = SFSymbol(
         title: "10.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -481,7 +481,7 @@ public extension SFSymbol {
 
     /// 11.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number11Circle = SFSymbol(
+    static let _11Circle = SFSymbol(
         title: "11.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -490,7 +490,7 @@ public extension SFSymbol {
 
     /// 11.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number11CircleFill = SFSymbol(
+    static let _11CircleFill = SFSymbol(
         title: "11.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -499,7 +499,7 @@ public extension SFSymbol {
 
     /// 11.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number11Square = SFSymbol(
+    static let _11Square = SFSymbol(
         title: "11.square",
         categories: [.indices],
         searchTerms: nil,
@@ -508,7 +508,7 @@ public extension SFSymbol {
 
     /// 11.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number11SquareFill = SFSymbol(
+    static let _11SquareFill = SFSymbol(
         title: "11.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -517,7 +517,7 @@ public extension SFSymbol {
 
     /// 12.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number12Circle = SFSymbol(
+    static let _12Circle = SFSymbol(
         title: "12.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -526,7 +526,7 @@ public extension SFSymbol {
 
     /// 12.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number12CircleFill = SFSymbol(
+    static let _12CircleFill = SFSymbol(
         title: "12.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -535,7 +535,7 @@ public extension SFSymbol {
 
     /// 12.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number12Square = SFSymbol(
+    static let _12Square = SFSymbol(
         title: "12.square",
         categories: [.indices],
         searchTerms: nil,
@@ -544,7 +544,7 @@ public extension SFSymbol {
 
     /// 12.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number12SquareFill = SFSymbol(
+    static let _12SquareFill = SFSymbol(
         title: "12.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -553,7 +553,7 @@ public extension SFSymbol {
 
     /// 13.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number13Circle = SFSymbol(
+    static let _13Circle = SFSymbol(
         title: "13.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -562,7 +562,7 @@ public extension SFSymbol {
 
     /// 13.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number13CircleFill = SFSymbol(
+    static let _13CircleFill = SFSymbol(
         title: "13.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -571,7 +571,7 @@ public extension SFSymbol {
 
     /// 13.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number13Square = SFSymbol(
+    static let _13Square = SFSymbol(
         title: "13.square",
         categories: [.indices],
         searchTerms: nil,
@@ -580,7 +580,7 @@ public extension SFSymbol {
 
     /// 13.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number13SquareFill = SFSymbol(
+    static let _13SquareFill = SFSymbol(
         title: "13.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -589,7 +589,7 @@ public extension SFSymbol {
 
     /// 14.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number14Circle = SFSymbol(
+    static let _14Circle = SFSymbol(
         title: "14.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -598,7 +598,7 @@ public extension SFSymbol {
 
     /// 14.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number14CircleFill = SFSymbol(
+    static let _14CircleFill = SFSymbol(
         title: "14.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -607,7 +607,7 @@ public extension SFSymbol {
 
     /// 14.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number14Square = SFSymbol(
+    static let _14Square = SFSymbol(
         title: "14.square",
         categories: [.indices],
         searchTerms: nil,
@@ -616,7 +616,7 @@ public extension SFSymbol {
 
     /// 14.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number14SquareFill = SFSymbol(
+    static let _14SquareFill = SFSymbol(
         title: "14.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -625,7 +625,7 @@ public extension SFSymbol {
 
     /// 15.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number15Circle = SFSymbol(
+    static let _15Circle = SFSymbol(
         title: "15.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -634,7 +634,7 @@ public extension SFSymbol {
 
     /// 15.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number15CircleFill = SFSymbol(
+    static let _15CircleFill = SFSymbol(
         title: "15.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -643,7 +643,7 @@ public extension SFSymbol {
 
     /// 15.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number15Square = SFSymbol(
+    static let _15Square = SFSymbol(
         title: "15.square",
         categories: [.indices],
         searchTerms: nil,
@@ -652,7 +652,7 @@ public extension SFSymbol {
 
     /// 15.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number15SquareFill = SFSymbol(
+    static let _15SquareFill = SFSymbol(
         title: "15.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -661,7 +661,7 @@ public extension SFSymbol {
 
     /// 16.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number16Circle = SFSymbol(
+    static let _16Circle = SFSymbol(
         title: "16.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -670,7 +670,7 @@ public extension SFSymbol {
 
     /// 16.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number16CircleFill = SFSymbol(
+    static let _16CircleFill = SFSymbol(
         title: "16.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -679,7 +679,7 @@ public extension SFSymbol {
 
     /// 16.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number16Square = SFSymbol(
+    static let _16Square = SFSymbol(
         title: "16.square",
         categories: [.indices],
         searchTerms: nil,
@@ -688,7 +688,7 @@ public extension SFSymbol {
 
     /// 16.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number16SquareFill = SFSymbol(
+    static let _16SquareFill = SFSymbol(
         title: "16.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -697,7 +697,7 @@ public extension SFSymbol {
 
     /// 17.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number17Circle = SFSymbol(
+    static let _17Circle = SFSymbol(
         title: "17.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -706,7 +706,7 @@ public extension SFSymbol {
 
     /// 17.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number17CircleFill = SFSymbol(
+    static let _17CircleFill = SFSymbol(
         title: "17.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -715,7 +715,7 @@ public extension SFSymbol {
 
     /// 17.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number17Square = SFSymbol(
+    static let _17Square = SFSymbol(
         title: "17.square",
         categories: [.indices],
         searchTerms: nil,
@@ -724,7 +724,7 @@ public extension SFSymbol {
 
     /// 17.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number17SquareFill = SFSymbol(
+    static let _17SquareFill = SFSymbol(
         title: "17.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -733,7 +733,7 @@ public extension SFSymbol {
 
     /// 18.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number18Circle = SFSymbol(
+    static let _18Circle = SFSymbol(
         title: "18.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -742,7 +742,7 @@ public extension SFSymbol {
 
     /// 18.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number18CircleFill = SFSymbol(
+    static let _18CircleFill = SFSymbol(
         title: "18.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -751,7 +751,7 @@ public extension SFSymbol {
 
     /// 18.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number18Square = SFSymbol(
+    static let _18Square = SFSymbol(
         title: "18.square",
         categories: [.indices],
         searchTerms: nil,
@@ -760,7 +760,7 @@ public extension SFSymbol {
 
     /// 18.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number18SquareFill = SFSymbol(
+    static let _18SquareFill = SFSymbol(
         title: "18.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -769,7 +769,7 @@ public extension SFSymbol {
 
     /// 19.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number19Circle = SFSymbol(
+    static let _19Circle = SFSymbol(
         title: "19.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -778,7 +778,7 @@ public extension SFSymbol {
 
     /// 19.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number19CircleFill = SFSymbol(
+    static let _19CircleFill = SFSymbol(
         title: "19.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -787,7 +787,7 @@ public extension SFSymbol {
 
     /// 19.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number19Square = SFSymbol(
+    static let _19Square = SFSymbol(
         title: "19.square",
         categories: [.indices],
         searchTerms: nil,
@@ -796,7 +796,7 @@ public extension SFSymbol {
 
     /// 19.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number19SquareFill = SFSymbol(
+    static let _19SquareFill = SFSymbol(
         title: "19.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -805,7 +805,7 @@ public extension SFSymbol {
 
     /// 2.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number2Circle = SFSymbol(
+    static let _2Circle = SFSymbol(
         title: "2.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -814,7 +814,7 @@ public extension SFSymbol {
 
     /// 2.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number2CircleFill = SFSymbol(
+    static let _2CircleFill = SFSymbol(
         title: "2.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -823,7 +823,7 @@ public extension SFSymbol {
 
     /// 2.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number2Square = SFSymbol(
+    static let _2Square = SFSymbol(
         title: "2.square",
         categories: [.indices],
         searchTerms: nil,
@@ -832,7 +832,7 @@ public extension SFSymbol {
 
     /// 2.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number2SquareFill = SFSymbol(
+    static let _2SquareFill = SFSymbol(
         title: "2.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -841,7 +841,7 @@ public extension SFSymbol {
 
     /// 20.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number20Circle = SFSymbol(
+    static let _20Circle = SFSymbol(
         title: "20.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -850,7 +850,7 @@ public extension SFSymbol {
 
     /// 20.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number20CircleFill = SFSymbol(
+    static let _20CircleFill = SFSymbol(
         title: "20.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -859,7 +859,7 @@ public extension SFSymbol {
 
     /// 20.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number20Square = SFSymbol(
+    static let _20Square = SFSymbol(
         title: "20.square",
         categories: [.indices],
         searchTerms: nil,
@@ -868,7 +868,7 @@ public extension SFSymbol {
 
     /// 20.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number20SquareFill = SFSymbol(
+    static let _20SquareFill = SFSymbol(
         title: "20.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -877,7 +877,7 @@ public extension SFSymbol {
 
     /// 21.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number21Circle = SFSymbol(
+    static let _21Circle = SFSymbol(
         title: "21.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -886,7 +886,7 @@ public extension SFSymbol {
 
     /// 21.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number21CircleFill = SFSymbol(
+    static let _21CircleFill = SFSymbol(
         title: "21.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -895,7 +895,7 @@ public extension SFSymbol {
 
     /// 21.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number21Square = SFSymbol(
+    static let _21Square = SFSymbol(
         title: "21.square",
         categories: [.indices],
         searchTerms: nil,
@@ -904,7 +904,7 @@ public extension SFSymbol {
 
     /// 21.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number21SquareFill = SFSymbol(
+    static let _21SquareFill = SFSymbol(
         title: "21.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -913,7 +913,7 @@ public extension SFSymbol {
 
     /// 22.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number22Circle = SFSymbol(
+    static let _22Circle = SFSymbol(
         title: "22.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -922,7 +922,7 @@ public extension SFSymbol {
 
     /// 22.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number22CircleFill = SFSymbol(
+    static let _22CircleFill = SFSymbol(
         title: "22.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -931,7 +931,7 @@ public extension SFSymbol {
 
     /// 22.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number22Square = SFSymbol(
+    static let _22Square = SFSymbol(
         title: "22.square",
         categories: [.indices],
         searchTerms: nil,
@@ -940,7 +940,7 @@ public extension SFSymbol {
 
     /// 22.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number22SquareFill = SFSymbol(
+    static let _22SquareFill = SFSymbol(
         title: "22.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -949,7 +949,7 @@ public extension SFSymbol {
 
     /// 23.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number23Circle = SFSymbol(
+    static let _23Circle = SFSymbol(
         title: "23.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -958,7 +958,7 @@ public extension SFSymbol {
 
     /// 23.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number23CircleFill = SFSymbol(
+    static let _23CircleFill = SFSymbol(
         title: "23.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -967,7 +967,7 @@ public extension SFSymbol {
 
     /// 23.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number23Square = SFSymbol(
+    static let _23Square = SFSymbol(
         title: "23.square",
         categories: [.indices],
         searchTerms: nil,
@@ -976,7 +976,7 @@ public extension SFSymbol {
 
     /// 23.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number23SquareFill = SFSymbol(
+    static let _23SquareFill = SFSymbol(
         title: "23.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -985,7 +985,7 @@ public extension SFSymbol {
 
     /// 24.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number24Circle = SFSymbol(
+    static let _24Circle = SFSymbol(
         title: "24.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -994,7 +994,7 @@ public extension SFSymbol {
 
     /// 24.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number24CircleFill = SFSymbol(
+    static let _24CircleFill = SFSymbol(
         title: "24.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1003,7 +1003,7 @@ public extension SFSymbol {
 
     /// 24.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number24Square = SFSymbol(
+    static let _24Square = SFSymbol(
         title: "24.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1012,7 +1012,7 @@ public extension SFSymbol {
 
     /// 24.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number24SquareFill = SFSymbol(
+    static let _24SquareFill = SFSymbol(
         title: "24.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1021,7 +1021,7 @@ public extension SFSymbol {
 
     /// 25.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number25Circle = SFSymbol(
+    static let _25Circle = SFSymbol(
         title: "25.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1030,7 +1030,7 @@ public extension SFSymbol {
 
     /// 25.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number25CircleFill = SFSymbol(
+    static let _25CircleFill = SFSymbol(
         title: "25.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1039,7 +1039,7 @@ public extension SFSymbol {
 
     /// 25.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number25Square = SFSymbol(
+    static let _25Square = SFSymbol(
         title: "25.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1048,7 +1048,7 @@ public extension SFSymbol {
 
     /// 25.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number25SquareFill = SFSymbol(
+    static let _25SquareFill = SFSymbol(
         title: "25.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1057,7 +1057,7 @@ public extension SFSymbol {
 
     /// 26.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number26Circle = SFSymbol(
+    static let _26Circle = SFSymbol(
         title: "26.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1066,7 +1066,7 @@ public extension SFSymbol {
 
     /// 26.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number26CircleFill = SFSymbol(
+    static let _26CircleFill = SFSymbol(
         title: "26.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1075,7 +1075,7 @@ public extension SFSymbol {
 
     /// 26.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number26Square = SFSymbol(
+    static let _26Square = SFSymbol(
         title: "26.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1084,7 +1084,7 @@ public extension SFSymbol {
 
     /// 26.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number26SquareFill = SFSymbol(
+    static let _26SquareFill = SFSymbol(
         title: "26.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1093,7 +1093,7 @@ public extension SFSymbol {
 
     /// 27.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number27Circle = SFSymbol(
+    static let _27Circle = SFSymbol(
         title: "27.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1102,7 +1102,7 @@ public extension SFSymbol {
 
     /// 27.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number27CircleFill = SFSymbol(
+    static let _27CircleFill = SFSymbol(
         title: "27.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1111,7 +1111,7 @@ public extension SFSymbol {
 
     /// 27.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number27Square = SFSymbol(
+    static let _27Square = SFSymbol(
         title: "27.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1120,7 +1120,7 @@ public extension SFSymbol {
 
     /// 27.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number27SquareFill = SFSymbol(
+    static let _27SquareFill = SFSymbol(
         title: "27.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1129,7 +1129,7 @@ public extension SFSymbol {
 
     /// 28.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number28Circle = SFSymbol(
+    static let _28Circle = SFSymbol(
         title: "28.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1138,7 +1138,7 @@ public extension SFSymbol {
 
     /// 28.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number28CircleFill = SFSymbol(
+    static let _28CircleFill = SFSymbol(
         title: "28.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1147,7 +1147,7 @@ public extension SFSymbol {
 
     /// 28.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number28Square = SFSymbol(
+    static let _28Square = SFSymbol(
         title: "28.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1156,7 +1156,7 @@ public extension SFSymbol {
 
     /// 28.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number28SquareFill = SFSymbol(
+    static let _28SquareFill = SFSymbol(
         title: "28.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1165,7 +1165,7 @@ public extension SFSymbol {
 
     /// 29.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number29Circle = SFSymbol(
+    static let _29Circle = SFSymbol(
         title: "29.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1174,7 +1174,7 @@ public extension SFSymbol {
 
     /// 29.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number29CircleFill = SFSymbol(
+    static let _29CircleFill = SFSymbol(
         title: "29.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1183,7 +1183,7 @@ public extension SFSymbol {
 
     /// 29.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number29Square = SFSymbol(
+    static let _29Square = SFSymbol(
         title: "29.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1192,7 +1192,7 @@ public extension SFSymbol {
 
     /// 29.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number29SquareFill = SFSymbol(
+    static let _29SquareFill = SFSymbol(
         title: "29.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1201,7 +1201,7 @@ public extension SFSymbol {
 
     /// 3.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number3Circle = SFSymbol(
+    static let _3Circle = SFSymbol(
         title: "3.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1210,7 +1210,7 @@ public extension SFSymbol {
 
     /// 3.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number3CircleFill = SFSymbol(
+    static let _3CircleFill = SFSymbol(
         title: "3.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1219,7 +1219,7 @@ public extension SFSymbol {
 
     /// 3.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number3Square = SFSymbol(
+    static let _3Square = SFSymbol(
         title: "3.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1228,7 +1228,7 @@ public extension SFSymbol {
 
     /// 3.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number3SquareFill = SFSymbol(
+    static let _3SquareFill = SFSymbol(
         title: "3.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1237,7 +1237,7 @@ public extension SFSymbol {
 
     /// 30.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number30Circle = SFSymbol(
+    static let _30Circle = SFSymbol(
         title: "30.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1246,7 +1246,7 @@ public extension SFSymbol {
 
     /// 30.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number30CircleFill = SFSymbol(
+    static let _30CircleFill = SFSymbol(
         title: "30.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1255,7 +1255,7 @@ public extension SFSymbol {
 
     /// 30.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number30Square = SFSymbol(
+    static let _30Square = SFSymbol(
         title: "30.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1264,7 +1264,7 @@ public extension SFSymbol {
 
     /// 30.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number30SquareFill = SFSymbol(
+    static let _30SquareFill = SFSymbol(
         title: "30.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1273,7 +1273,7 @@ public extension SFSymbol {
 
     /// 31.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number31Circle = SFSymbol(
+    static let _31Circle = SFSymbol(
         title: "31.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1282,7 +1282,7 @@ public extension SFSymbol {
 
     /// 31.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number31CircleFill = SFSymbol(
+    static let _31CircleFill = SFSymbol(
         title: "31.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1291,7 +1291,7 @@ public extension SFSymbol {
 
     /// 31.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number31Square = SFSymbol(
+    static let _31Square = SFSymbol(
         title: "31.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1300,7 +1300,7 @@ public extension SFSymbol {
 
     /// 31.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number31SquareFill = SFSymbol(
+    static let _31SquareFill = SFSymbol(
         title: "31.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1309,7 +1309,7 @@ public extension SFSymbol {
 
     /// 32.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number32Circle = SFSymbol(
+    static let _32Circle = SFSymbol(
         title: "32.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1318,7 +1318,7 @@ public extension SFSymbol {
 
     /// 32.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number32CircleFill = SFSymbol(
+    static let _32CircleFill = SFSymbol(
         title: "32.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1327,7 +1327,7 @@ public extension SFSymbol {
 
     /// 32.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number32Square = SFSymbol(
+    static let _32Square = SFSymbol(
         title: "32.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1336,7 +1336,7 @@ public extension SFSymbol {
 
     /// 32.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number32SquareFill = SFSymbol(
+    static let _32SquareFill = SFSymbol(
         title: "32.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1345,7 +1345,7 @@ public extension SFSymbol {
 
     /// 33.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number33Circle = SFSymbol(
+    static let _33Circle = SFSymbol(
         title: "33.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1354,7 +1354,7 @@ public extension SFSymbol {
 
     /// 33.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number33CircleFill = SFSymbol(
+    static let _33CircleFill = SFSymbol(
         title: "33.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1363,7 +1363,7 @@ public extension SFSymbol {
 
     /// 33.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number33Square = SFSymbol(
+    static let _33Square = SFSymbol(
         title: "33.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1372,7 +1372,7 @@ public extension SFSymbol {
 
     /// 33.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number33SquareFill = SFSymbol(
+    static let _33SquareFill = SFSymbol(
         title: "33.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1381,7 +1381,7 @@ public extension SFSymbol {
 
     /// 34.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number34Circle = SFSymbol(
+    static let _34Circle = SFSymbol(
         title: "34.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1390,7 +1390,7 @@ public extension SFSymbol {
 
     /// 34.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number34CircleFill = SFSymbol(
+    static let _34CircleFill = SFSymbol(
         title: "34.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1399,7 +1399,7 @@ public extension SFSymbol {
 
     /// 34.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number34Square = SFSymbol(
+    static let _34Square = SFSymbol(
         title: "34.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1408,7 +1408,7 @@ public extension SFSymbol {
 
     /// 34.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number34SquareFill = SFSymbol(
+    static let _34SquareFill = SFSymbol(
         title: "34.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1417,7 +1417,7 @@ public extension SFSymbol {
 
     /// 35.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number35Circle = SFSymbol(
+    static let _35Circle = SFSymbol(
         title: "35.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1426,7 +1426,7 @@ public extension SFSymbol {
 
     /// 35.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number35CircleFill = SFSymbol(
+    static let _35CircleFill = SFSymbol(
         title: "35.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1435,7 +1435,7 @@ public extension SFSymbol {
 
     /// 35.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number35Square = SFSymbol(
+    static let _35Square = SFSymbol(
         title: "35.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1444,7 +1444,7 @@ public extension SFSymbol {
 
     /// 35.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number35SquareFill = SFSymbol(
+    static let _35SquareFill = SFSymbol(
         title: "35.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1453,7 +1453,7 @@ public extension SFSymbol {
 
     /// 36.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number36Circle = SFSymbol(
+    static let _36Circle = SFSymbol(
         title: "36.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1462,7 +1462,7 @@ public extension SFSymbol {
 
     /// 36.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number36CircleFill = SFSymbol(
+    static let _36CircleFill = SFSymbol(
         title: "36.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1471,7 +1471,7 @@ public extension SFSymbol {
 
     /// 36.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number36Square = SFSymbol(
+    static let _36Square = SFSymbol(
         title: "36.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1480,7 +1480,7 @@ public extension SFSymbol {
 
     /// 36.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number36SquareFill = SFSymbol(
+    static let _36SquareFill = SFSymbol(
         title: "36.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1489,7 +1489,7 @@ public extension SFSymbol {
 
     /// 37.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number37Circle = SFSymbol(
+    static let _37Circle = SFSymbol(
         title: "37.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1498,7 +1498,7 @@ public extension SFSymbol {
 
     /// 37.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number37CircleFill = SFSymbol(
+    static let _37CircleFill = SFSymbol(
         title: "37.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1507,7 +1507,7 @@ public extension SFSymbol {
 
     /// 37.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number37Square = SFSymbol(
+    static let _37Square = SFSymbol(
         title: "37.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1516,7 +1516,7 @@ public extension SFSymbol {
 
     /// 37.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number37SquareFill = SFSymbol(
+    static let _37SquareFill = SFSymbol(
         title: "37.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1525,7 +1525,7 @@ public extension SFSymbol {
 
     /// 38.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number38Circle = SFSymbol(
+    static let _38Circle = SFSymbol(
         title: "38.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1534,7 +1534,7 @@ public extension SFSymbol {
 
     /// 38.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number38CircleFill = SFSymbol(
+    static let _38CircleFill = SFSymbol(
         title: "38.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1543,7 +1543,7 @@ public extension SFSymbol {
 
     /// 38.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number38Square = SFSymbol(
+    static let _38Square = SFSymbol(
         title: "38.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1552,7 +1552,7 @@ public extension SFSymbol {
 
     /// 38.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number38SquareFill = SFSymbol(
+    static let _38SquareFill = SFSymbol(
         title: "38.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1561,7 +1561,7 @@ public extension SFSymbol {
 
     /// 39.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number39Circle = SFSymbol(
+    static let _39Circle = SFSymbol(
         title: "39.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1570,7 +1570,7 @@ public extension SFSymbol {
 
     /// 39.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number39CircleFill = SFSymbol(
+    static let _39CircleFill = SFSymbol(
         title: "39.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1579,7 +1579,7 @@ public extension SFSymbol {
 
     /// 39.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number39Square = SFSymbol(
+    static let _39Square = SFSymbol(
         title: "39.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1588,7 +1588,7 @@ public extension SFSymbol {
 
     /// 39.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number39SquareFill = SFSymbol(
+    static let _39SquareFill = SFSymbol(
         title: "39.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1597,7 +1597,7 @@ public extension SFSymbol {
 
     /// 4.alt.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4AltCircle = SFSymbol(
+    static let _4AltCircle = SFSymbol(
         title: "4.alt.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1606,7 +1606,7 @@ public extension SFSymbol {
 
     /// 4.alt.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4AltCircleFill = SFSymbol(
+    static let _4AltCircleFill = SFSymbol(
         title: "4.alt.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1615,7 +1615,7 @@ public extension SFSymbol {
 
     /// 4.alt.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4AltSquare = SFSymbol(
+    static let _4AltSquare = SFSymbol(
         title: "4.alt.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1624,7 +1624,7 @@ public extension SFSymbol {
 
     /// 4.alt.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4AltSquareFill = SFSymbol(
+    static let _4AltSquareFill = SFSymbol(
         title: "4.alt.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1633,7 +1633,7 @@ public extension SFSymbol {
 
     /// 4.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4Circle = SFSymbol(
+    static let _4Circle = SFSymbol(
         title: "4.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1642,7 +1642,7 @@ public extension SFSymbol {
 
     /// 4.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4CircleFill = SFSymbol(
+    static let _4CircleFill = SFSymbol(
         title: "4.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1651,7 +1651,7 @@ public extension SFSymbol {
 
     /// 4.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4Square = SFSymbol(
+    static let _4Square = SFSymbol(
         title: "4.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1660,7 +1660,7 @@ public extension SFSymbol {
 
     /// 4.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number4SquareFill = SFSymbol(
+    static let _4SquareFill = SFSymbol(
         title: "4.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1669,7 +1669,7 @@ public extension SFSymbol {
 
     /// 40.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number40Circle = SFSymbol(
+    static let _40Circle = SFSymbol(
         title: "40.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1678,7 +1678,7 @@ public extension SFSymbol {
 
     /// 40.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number40CircleFill = SFSymbol(
+    static let _40CircleFill = SFSymbol(
         title: "40.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1687,7 +1687,7 @@ public extension SFSymbol {
 
     /// 40.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number40Square = SFSymbol(
+    static let _40Square = SFSymbol(
         title: "40.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1696,7 +1696,7 @@ public extension SFSymbol {
 
     /// 40.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number40SquareFill = SFSymbol(
+    static let _40SquareFill = SFSymbol(
         title: "40.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1705,7 +1705,7 @@ public extension SFSymbol {
 
     /// 41.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number41Circle = SFSymbol(
+    static let _41Circle = SFSymbol(
         title: "41.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1714,7 +1714,7 @@ public extension SFSymbol {
 
     /// 41.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number41CircleFill = SFSymbol(
+    static let _41CircleFill = SFSymbol(
         title: "41.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1723,7 +1723,7 @@ public extension SFSymbol {
 
     /// 41.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number41Square = SFSymbol(
+    static let _41Square = SFSymbol(
         title: "41.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1732,7 +1732,7 @@ public extension SFSymbol {
 
     /// 41.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number41SquareFill = SFSymbol(
+    static let _41SquareFill = SFSymbol(
         title: "41.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1741,7 +1741,7 @@ public extension SFSymbol {
 
     /// 42.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number42Circle = SFSymbol(
+    static let _42Circle = SFSymbol(
         title: "42.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1750,7 +1750,7 @@ public extension SFSymbol {
 
     /// 42.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number42CircleFill = SFSymbol(
+    static let _42CircleFill = SFSymbol(
         title: "42.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1759,7 +1759,7 @@ public extension SFSymbol {
 
     /// 42.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number42Square = SFSymbol(
+    static let _42Square = SFSymbol(
         title: "42.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1768,7 +1768,7 @@ public extension SFSymbol {
 
     /// 42.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number42SquareFill = SFSymbol(
+    static let _42SquareFill = SFSymbol(
         title: "42.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1777,7 +1777,7 @@ public extension SFSymbol {
 
     /// 43.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number43Circle = SFSymbol(
+    static let _43Circle = SFSymbol(
         title: "43.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1786,7 +1786,7 @@ public extension SFSymbol {
 
     /// 43.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number43CircleFill = SFSymbol(
+    static let _43CircleFill = SFSymbol(
         title: "43.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1795,7 +1795,7 @@ public extension SFSymbol {
 
     /// 43.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number43Square = SFSymbol(
+    static let _43Square = SFSymbol(
         title: "43.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1804,7 +1804,7 @@ public extension SFSymbol {
 
     /// 43.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number43SquareFill = SFSymbol(
+    static let _43SquareFill = SFSymbol(
         title: "43.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1813,7 +1813,7 @@ public extension SFSymbol {
 
     /// 44.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number44Circle = SFSymbol(
+    static let _44Circle = SFSymbol(
         title: "44.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1822,7 +1822,7 @@ public extension SFSymbol {
 
     /// 44.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number44CircleFill = SFSymbol(
+    static let _44CircleFill = SFSymbol(
         title: "44.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1831,7 +1831,7 @@ public extension SFSymbol {
 
     /// 44.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number44Square = SFSymbol(
+    static let _44Square = SFSymbol(
         title: "44.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1840,7 +1840,7 @@ public extension SFSymbol {
 
     /// 44.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number44SquareFill = SFSymbol(
+    static let _44SquareFill = SFSymbol(
         title: "44.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1849,7 +1849,7 @@ public extension SFSymbol {
 
     /// 45.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number45Circle = SFSymbol(
+    static let _45Circle = SFSymbol(
         title: "45.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1858,7 +1858,7 @@ public extension SFSymbol {
 
     /// 45.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number45CircleFill = SFSymbol(
+    static let _45CircleFill = SFSymbol(
         title: "45.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1867,7 +1867,7 @@ public extension SFSymbol {
 
     /// 45.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number45Square = SFSymbol(
+    static let _45Square = SFSymbol(
         title: "45.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1876,7 +1876,7 @@ public extension SFSymbol {
 
     /// 45.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number45SquareFill = SFSymbol(
+    static let _45SquareFill = SFSymbol(
         title: "45.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1885,7 +1885,7 @@ public extension SFSymbol {
 
     /// 46.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number46Circle = SFSymbol(
+    static let _46Circle = SFSymbol(
         title: "46.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1894,7 +1894,7 @@ public extension SFSymbol {
 
     /// 46.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number46CircleFill = SFSymbol(
+    static let _46CircleFill = SFSymbol(
         title: "46.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1903,7 +1903,7 @@ public extension SFSymbol {
 
     /// 46.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number46Square = SFSymbol(
+    static let _46Square = SFSymbol(
         title: "46.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1912,7 +1912,7 @@ public extension SFSymbol {
 
     /// 46.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number46SquareFill = SFSymbol(
+    static let _46SquareFill = SFSymbol(
         title: "46.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1921,7 +1921,7 @@ public extension SFSymbol {
 
     /// 47.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number47Circle = SFSymbol(
+    static let _47Circle = SFSymbol(
         title: "47.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1930,7 +1930,7 @@ public extension SFSymbol {
 
     /// 47.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number47CircleFill = SFSymbol(
+    static let _47CircleFill = SFSymbol(
         title: "47.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1939,7 +1939,7 @@ public extension SFSymbol {
 
     /// 47.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number47Square = SFSymbol(
+    static let _47Square = SFSymbol(
         title: "47.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1948,7 +1948,7 @@ public extension SFSymbol {
 
     /// 47.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number47SquareFill = SFSymbol(
+    static let _47SquareFill = SFSymbol(
         title: "47.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1957,7 +1957,7 @@ public extension SFSymbol {
 
     /// 48.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number48Circle = SFSymbol(
+    static let _48Circle = SFSymbol(
         title: "48.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -1966,7 +1966,7 @@ public extension SFSymbol {
 
     /// 48.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number48CircleFill = SFSymbol(
+    static let _48CircleFill = SFSymbol(
         title: "48.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1975,7 +1975,7 @@ public extension SFSymbol {
 
     /// 48.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number48Square = SFSymbol(
+    static let _48Square = SFSymbol(
         title: "48.square",
         categories: [.indices],
         searchTerms: nil,
@@ -1984,7 +1984,7 @@ public extension SFSymbol {
 
     /// 48.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number48SquareFill = SFSymbol(
+    static let _48SquareFill = SFSymbol(
         title: "48.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -1993,7 +1993,7 @@ public extension SFSymbol {
 
     /// 49.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number49Circle = SFSymbol(
+    static let _49Circle = SFSymbol(
         title: "49.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2002,7 +2002,7 @@ public extension SFSymbol {
 
     /// 49.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number49CircleFill = SFSymbol(
+    static let _49CircleFill = SFSymbol(
         title: "49.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2011,7 +2011,7 @@ public extension SFSymbol {
 
     /// 49.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number49Square = SFSymbol(
+    static let _49Square = SFSymbol(
         title: "49.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2020,7 +2020,7 @@ public extension SFSymbol {
 
     /// 49.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number49SquareFill = SFSymbol(
+    static let _49SquareFill = SFSymbol(
         title: "49.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2029,7 +2029,7 @@ public extension SFSymbol {
 
     /// 5.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number5Circle = SFSymbol(
+    static let _5Circle = SFSymbol(
         title: "5.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2038,7 +2038,7 @@ public extension SFSymbol {
 
     /// 5.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number5CircleFill = SFSymbol(
+    static let _5CircleFill = SFSymbol(
         title: "5.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2047,7 +2047,7 @@ public extension SFSymbol {
 
     /// 5.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number5Square = SFSymbol(
+    static let _5Square = SFSymbol(
         title: "5.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2056,7 +2056,7 @@ public extension SFSymbol {
 
     /// 5.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number5SquareFill = SFSymbol(
+    static let _5SquareFill = SFSymbol(
         title: "5.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2065,7 +2065,7 @@ public extension SFSymbol {
 
     /// 50.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number50Circle = SFSymbol(
+    static let _50Circle = SFSymbol(
         title: "50.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2074,7 +2074,7 @@ public extension SFSymbol {
 
     /// 50.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number50CircleFill = SFSymbol(
+    static let _50CircleFill = SFSymbol(
         title: "50.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2083,7 +2083,7 @@ public extension SFSymbol {
 
     /// 50.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number50Square = SFSymbol(
+    static let _50Square = SFSymbol(
         title: "50.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2092,7 +2092,7 @@ public extension SFSymbol {
 
     /// 50.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number50SquareFill = SFSymbol(
+    static let _50SquareFill = SFSymbol(
         title: "50.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2101,7 +2101,7 @@ public extension SFSymbol {
 
     /// 6.alt.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6AltCircle = SFSymbol(
+    static let _6AltCircle = SFSymbol(
         title: "6.alt.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2110,7 +2110,7 @@ public extension SFSymbol {
 
     /// 6.alt.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6AltCircleFill = SFSymbol(
+    static let _6AltCircleFill = SFSymbol(
         title: "6.alt.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2119,7 +2119,7 @@ public extension SFSymbol {
 
     /// 6.alt.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6AltSquare = SFSymbol(
+    static let _6AltSquare = SFSymbol(
         title: "6.alt.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2128,7 +2128,7 @@ public extension SFSymbol {
 
     /// 6.alt.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6AltSquareFill = SFSymbol(
+    static let _6AltSquareFill = SFSymbol(
         title: "6.alt.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2137,7 +2137,7 @@ public extension SFSymbol {
 
     /// 6.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6Circle = SFSymbol(
+    static let _6Circle = SFSymbol(
         title: "6.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2146,7 +2146,7 @@ public extension SFSymbol {
 
     /// 6.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6CircleFill = SFSymbol(
+    static let _6CircleFill = SFSymbol(
         title: "6.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2155,7 +2155,7 @@ public extension SFSymbol {
 
     /// 6.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6Square = SFSymbol(
+    static let _6Square = SFSymbol(
         title: "6.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2164,7 +2164,7 @@ public extension SFSymbol {
 
     /// 6.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number6SquareFill = SFSymbol(
+    static let _6SquareFill = SFSymbol(
         title: "6.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2173,7 +2173,7 @@ public extension SFSymbol {
 
     /// 7.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number7Circle = SFSymbol(
+    static let _7Circle = SFSymbol(
         title: "7.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2182,7 +2182,7 @@ public extension SFSymbol {
 
     /// 7.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number7CircleFill = SFSymbol(
+    static let _7CircleFill = SFSymbol(
         title: "7.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2191,7 +2191,7 @@ public extension SFSymbol {
 
     /// 7.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number7Square = SFSymbol(
+    static let _7Square = SFSymbol(
         title: "7.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2200,7 +2200,7 @@ public extension SFSymbol {
 
     /// 7.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number7SquareFill = SFSymbol(
+    static let _7SquareFill = SFSymbol(
         title: "7.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2209,7 +2209,7 @@ public extension SFSymbol {
 
     /// 8.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number8Circle = SFSymbol(
+    static let _8Circle = SFSymbol(
         title: "8.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2218,7 +2218,7 @@ public extension SFSymbol {
 
     /// 8.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number8CircleFill = SFSymbol(
+    static let _8CircleFill = SFSymbol(
         title: "8.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2227,7 +2227,7 @@ public extension SFSymbol {
 
     /// 8.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number8Square = SFSymbol(
+    static let _8Square = SFSymbol(
         title: "8.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2236,7 +2236,7 @@ public extension SFSymbol {
 
     /// 8.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number8SquareFill = SFSymbol(
+    static let _8SquareFill = SFSymbol(
         title: "8.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2245,7 +2245,7 @@ public extension SFSymbol {
 
     /// 9.alt.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9AltCircle = SFSymbol(
+    static let _9AltCircle = SFSymbol(
         title: "9.alt.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2254,7 +2254,7 @@ public extension SFSymbol {
 
     /// 9.alt.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9AltCircleFill = SFSymbol(
+    static let _9AltCircleFill = SFSymbol(
         title: "9.alt.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2263,7 +2263,7 @@ public extension SFSymbol {
 
     /// 9.alt.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9AltSquare = SFSymbol(
+    static let _9AltSquare = SFSymbol(
         title: "9.alt.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2272,7 +2272,7 @@ public extension SFSymbol {
 
     /// 9.alt.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9AltSquareFill = SFSymbol(
+    static let _9AltSquareFill = SFSymbol(
         title: "9.alt.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2281,7 +2281,7 @@ public extension SFSymbol {
 
     /// 9.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9Circle = SFSymbol(
+    static let _9Circle = SFSymbol(
         title: "9.circle",
         categories: [.indices],
         searchTerms: nil,
@@ -2290,7 +2290,7 @@ public extension SFSymbol {
 
     /// 9.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9CircleFill = SFSymbol(
+    static let _9CircleFill = SFSymbol(
         title: "9.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
@@ -2299,7 +2299,7 @@ public extension SFSymbol {
 
     /// 9.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9Square = SFSymbol(
+    static let _9Square = SFSymbol(
         title: "9.square",
         categories: [.indices],
         searchTerms: nil,
@@ -2308,7 +2308,7 @@ public extension SFSymbol {
 
     /// 9.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let number9SquareFill = SFSymbol(
+    static let _9SquareFill = SFSymbol(
         title: "9.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,

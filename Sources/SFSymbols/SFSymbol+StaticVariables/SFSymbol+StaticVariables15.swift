@@ -4,7 +4,7 @@ import Foundation
 public extension SFSymbol {
     /// 1.magnifyingglass.hi
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number1MagnifyingglassHi = SFSymbol(
+    static let _1MagnifyingglassHi = SFSymbol(
         title: "1.magnifyingglass.hi",
         categories: [.objectsandtools],
         searchTerms: ["search"],
@@ -13,7 +13,7 @@ public extension SFSymbol {
 
     /// 123.rectangle
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number123Rectangle = SFSymbol(
+    static let _123Rectangle = SFSymbol(
         title: "123.rectangle",
         categories: nil,
         searchTerms: nil,
@@ -22,7 +22,7 @@ public extension SFSymbol {
 
     /// 123.rectangle.ar
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number123RectangleAr = SFSymbol(
+    static let _123RectangleAr = SFSymbol(
         title: "123.rectangle.ar",
         categories: nil,
         searchTerms: nil,
@@ -31,7 +31,7 @@ public extension SFSymbol {
 
     /// 123.rectangle.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number123RectangleFill = SFSymbol(
+    static let _123RectangleFill = SFSymbol(
         title: "123.rectangle.fill",
         categories: nil,
         searchTerms: nil,
@@ -40,7 +40,7 @@ public extension SFSymbol {
 
     /// 123.rectangle.fill.ar
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number123RectangleFillAr = SFSymbol(
+    static let _123RectangleFillAr = SFSymbol(
         title: "123.rectangle.fill.ar",
         categories: nil,
         searchTerms: nil,
@@ -49,7 +49,7 @@ public extension SFSymbol {
 
     /// 123.rectangle.fill.hi
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number123RectangleFillHi = SFSymbol(
+    static let _123RectangleFillHi = SFSymbol(
         title: "123.rectangle.fill.hi",
         categories: nil,
         searchTerms: nil,
@@ -58,7 +58,7 @@ public extension SFSymbol {
 
     /// 123.rectangle.hi
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let number123RectangleHi = SFSymbol(
+    static let _123RectangleHi = SFSymbol(
         title: "123.rectangle.hi",
         categories: nil,
         searchTerms: nil,

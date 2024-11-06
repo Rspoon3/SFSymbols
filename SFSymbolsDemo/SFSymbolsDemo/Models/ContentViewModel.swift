@@ -180,7 +180,7 @@ class ContentViewModel: ObservableObject{
         let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
         
         if numbers.contains(String(camelCased.first!)){
-            camelCased = "number\(camelCased)"
+            camelCased = "_\(camelCased)"
         } else if camelCased == "return"{
             camelCased = "returnSymbol"
         } else if camelCased == "repeat"{
