@@ -114,7 +114,7 @@ Don't want that additional third party dependency? Then just simply copy over th
 
 ## Acknowledgments
 
-Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highly influence and based off of his [SFSymbol](https://github.com/Nirma/SFSymbol) package. I found that few things I would do differently and before I knew it, I had an offshoot of what he had already done that went in a different direction. I also would like thank [Steven Sorial](https://github.com/StevenSorial) for creating the inspirational and highly popular [SFSafeSymbols](https://github.com/SFSafeSymbols/SFSafeSymbols?tab=readme-ov-file).
+Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highly influence and based off of his [SFSymbol](https://github.com/Nirma/SFSymbol) package. I found that few things I would do differently and before I knew it, I had an offshoot of what he had already done that went in a different direction. I also would like thank [Steven Sorial](https://github.com/StevenSorial) for creating the inspirational and highly popular [SFSafeSymbols](https://github.com/SFSafeSymbols/SFSafeSymbols).
 
 ## Contributing
 
