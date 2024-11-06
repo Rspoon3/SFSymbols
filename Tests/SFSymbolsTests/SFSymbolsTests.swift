@@ -3,14 +3,14 @@ import SwiftUI
 @testable import SFSymbols
 
 final class SFSymbolsTests: XCTestCase {
-    #if canImport(UIKit)
+#if canImport(UIKit)
     func testAllSymbolsExist() {
         for symbol in SFSymbol.allSymbols {
             let image = UIImage(systemName: symbol.title)
             XCTAssert(image != nil, "\(symbol.title) does not exist!")
         }
     }
-    #endif
+#endif
     
     func testAllSymbolsAreUnique(){
         let regularArray = SFSymbol.allSymbols
@@ -20,15 +20,15 @@ final class SFSymbolsTests: XCTestCase {
     }
     
     func testCorrectNumberOfSymbols(){
-        XCTAssertEqual(SFSymbol.allSymbols.count, 6534)
-        XCTAssertEqual(SFSymbol.allSymbols13.count, 1661)
+        XCTAssertEqual(SFSymbol.allSymbols.count, 8_150)
+        XCTAssertEqual(SFSymbol.allSymbols13.count, 1_661)
         
         if #available(iOS 13.1, visionOS 1.0, *) {
             XCTAssertEqual(SFSymbol.allSymbols13P1.count, 18)
         }
         
         if #available(iOS 14, visionOS 1.0, *) {
-            XCTAssertEqual(SFSymbol.allSymbols14.count, 1066)
+            XCTAssertEqual(SFSymbol.allSymbols14.count, 1_066)
         }
         
         if #available(iOS 14.2, visionOS 1.0, *) {
@@ -77,6 +77,18 @@ final class SFSymbolsTests: XCTestCase {
         
         if #available(iOS 17.2, macOS 14.2, visionOS 1.1, *) {
             XCTAssertEqual(SFSymbol.allSymbols17P2.count, 450)
+        }
+        
+        if #available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *){
+            XCTAssertEqual(SFSymbol.allSymbols17P4.count, 23)
+        }
+        
+        if #available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *){
+            XCTAssertEqual(SFSymbol.allSymbols17P6.count, 7)
+        }
+        
+        if #available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *){
+            XCTAssertEqual(SFSymbol.allSymbols18.count, 1_586)
         }
     }
 }

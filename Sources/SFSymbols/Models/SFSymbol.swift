@@ -8,7 +8,7 @@
 import Foundation
 
 /// A SFSymbol object
-public struct SFSymbol: Codable, Identifiable, Equatable, Hashable{
+public struct SFSymbol: Codable, Identifiable, Equatable, Hashable, Sendable {
     public let title: String
     public var categories: [SFCategory]?
     public var searchTerms: [String]?
