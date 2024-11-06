@@ -4,7 +4,7 @@ import Foundation
 public extension SFSymbol {
     /// 1.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number1LaneAr = SFSymbol(
+    static let _1LaneAr = SFSymbol(
         title: "1.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -13,7 +13,7 @@ public extension SFSymbol {
 
     /// 1.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number1LaneHi = SFSymbol(
+    static let _1LaneHi = SFSymbol(
         title: "1.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -22,7 +22,7 @@ public extension SFSymbol {
 
     /// 10.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number10LaneAr = SFSymbol(
+    static let _10LaneAr = SFSymbol(
         title: "10.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -31,7 +31,7 @@ public extension SFSymbol {
 
     /// 10.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number10LaneHi = SFSymbol(
+    static let _10LaneHi = SFSymbol(
         title: "10.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -40,7 +40,7 @@ public extension SFSymbol {
 
     /// 11.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number11LaneAr = SFSymbol(
+    static let _11LaneAr = SFSymbol(
         title: "11.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -49,7 +49,7 @@ public extension SFSymbol {
 
     /// 11.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number11LaneHi = SFSymbol(
+    static let _11LaneHi = SFSymbol(
         title: "11.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -58,7 +58,7 @@ public extension SFSymbol {
 
     /// 12.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number12LaneAr = SFSymbol(
+    static let _12LaneAr = SFSymbol(
         title: "12.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -67,7 +67,7 @@ public extension SFSymbol {
 
     /// 12.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number12LaneHi = SFSymbol(
+    static let _12LaneHi = SFSymbol(
         title: "12.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -76,7 +76,7 @@ public extension SFSymbol {
 
     /// 2.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number2LaneAr = SFSymbol(
+    static let _2LaneAr = SFSymbol(
         title: "2.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -85,7 +85,7 @@ public extension SFSymbol {
 
     /// 2.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number2LaneHi = SFSymbol(
+    static let _2LaneHi = SFSymbol(
         title: "2.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -94,7 +94,7 @@ public extension SFSymbol {
 
     /// 3.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number3LaneAr = SFSymbol(
+    static let _3LaneAr = SFSymbol(
         title: "3.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -103,7 +103,7 @@ public extension SFSymbol {
 
     /// 3.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number3LaneHi = SFSymbol(
+    static let _3LaneHi = SFSymbol(
         title: "3.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -112,7 +112,7 @@ public extension SFSymbol {
 
     /// 4.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number4LaneAr = SFSymbol(
+    static let _4LaneAr = SFSymbol(
         title: "4.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -121,7 +121,7 @@ public extension SFSymbol {
 
     /// 4.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number4LaneHi = SFSymbol(
+    static let _4LaneHi = SFSymbol(
         title: "4.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -130,7 +130,7 @@ public extension SFSymbol {
 
     /// 5.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number5LaneAr = SFSymbol(
+    static let _5LaneAr = SFSymbol(
         title: "5.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -139,7 +139,7 @@ public extension SFSymbol {
 
     /// 5.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number5LaneHi = SFSymbol(
+    static let _5LaneHi = SFSymbol(
         title: "5.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -148,7 +148,7 @@ public extension SFSymbol {
 
     /// 6.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number6LaneAr = SFSymbol(
+    static let _6LaneAr = SFSymbol(
         title: "6.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -157,7 +157,7 @@ public extension SFSymbol {
 
     /// 6.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number6LaneHi = SFSymbol(
+    static let _6LaneHi = SFSymbol(
         title: "6.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -166,7 +166,7 @@ public extension SFSymbol {
 
     /// 7.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number7LaneAr = SFSymbol(
+    static let _7LaneAr = SFSymbol(
         title: "7.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -175,7 +175,7 @@ public extension SFSymbol {
 
     /// 7.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number7LaneHi = SFSymbol(
+    static let _7LaneHi = SFSymbol(
         title: "7.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -184,7 +184,7 @@ public extension SFSymbol {
 
     /// 8.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number8LaneAr = SFSymbol(
+    static let _8LaneAr = SFSymbol(
         title: "8.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -193,7 +193,7 @@ public extension SFSymbol {
 
     /// 8.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number8LaneHi = SFSymbol(
+    static let _8LaneHi = SFSymbol(
         title: "8.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -202,7 +202,7 @@ public extension SFSymbol {
 
     /// 9.lane.ar
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number9LaneAr = SFSymbol(
+    static let _9LaneAr = SFSymbol(
         title: "9.lane.ar",
         categories: [.fitness],
         searchTerms: ["running", "sports"],
@@ -211,7 +211,7 @@ public extension SFSymbol {
 
     /// 9.lane.hi
     /// - Since: iOS: 16.4, macOS: 13.3, tvOS: 16.4, watchOS: 9.4, visionOS: 1.0
-    static let number9LaneHi = SFSymbol(
+    static let _9LaneHi = SFSymbol(
         title: "9.lane.hi",
         categories: [.fitness],
         searchTerms: ["running", "sports"],

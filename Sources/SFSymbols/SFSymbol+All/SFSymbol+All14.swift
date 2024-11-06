@@ -5,9 +5,9 @@ public extension SFSymbol {
 
     static var allSymbols14: [SFSymbol] {
         return [
-         .number1MagnifyingglassAr,
-         .number4kTv,
-         .number4kTvFill,
+         ._1MagnifyingglassAr,
+         ._4kTv,
+         ._4kTvFill,
          .aBookClosed,
          .aBookClosedAr,
          .aBookClosedFill,

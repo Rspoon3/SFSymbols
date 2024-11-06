@@ -4,7 +4,7 @@ import Foundation
 public extension SFSymbol {
     /// 10.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number10ArrowTriangleheadClockwise = SFSymbol(
+    static let _10ArrowTriangleheadClockwise = SFSymbol(
         title: "10.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -13,7 +13,7 @@ public extension SFSymbol {
 
     /// 10.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number10ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _10ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "10.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -22,7 +22,7 @@ public extension SFSymbol {
 
     /// 10.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number10ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _10ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "10.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -31,7 +31,7 @@ public extension SFSymbol {
 
     /// 10.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number10ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _10ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "10.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -40,7 +40,7 @@ public extension SFSymbol {
 
     /// 10.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number10ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _10ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "10.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -49,7 +49,7 @@ public extension SFSymbol {
 
     /// 10.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number10ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _10ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "10.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -58,7 +58,7 @@ public extension SFSymbol {
 
     /// 15.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number15ArrowTriangleheadClockwise = SFSymbol(
+    static let _15ArrowTriangleheadClockwise = SFSymbol(
         title: "15.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -67,7 +67,7 @@ public extension SFSymbol {
 
     /// 15.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number15ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _15ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "15.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -76,7 +76,7 @@ public extension SFSymbol {
 
     /// 15.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number15ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _15ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "15.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -85,7 +85,7 @@ public extension SFSymbol {
 
     /// 15.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number15ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _15ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "15.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -94,7 +94,7 @@ public extension SFSymbol {
 
     /// 15.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number15ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _15ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "15.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -103,7 +103,7 @@ public extension SFSymbol {
 
     /// 15.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number15ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _15ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "15.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -112,7 +112,7 @@ public extension SFSymbol {
 
     /// 30.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number30ArrowTriangleheadClockwise = SFSymbol(
+    static let _30ArrowTriangleheadClockwise = SFSymbol(
         title: "30.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -121,7 +121,7 @@ public extension SFSymbol {
 
     /// 30.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number30ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _30ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "30.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -130,7 +130,7 @@ public extension SFSymbol {
 
     /// 30.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number30ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _30ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "30.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -139,7 +139,7 @@ public extension SFSymbol {
 
     /// 30.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number30ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _30ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "30.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -148,7 +148,7 @@ public extension SFSymbol {
 
     /// 30.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number30ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _30ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "30.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -157,7 +157,7 @@ public extension SFSymbol {
 
     /// 30.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number30ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _30ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "30.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -166,7 +166,7 @@ public extension SFSymbol {
 
     /// 45.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number45ArrowTriangleheadClockwise = SFSymbol(
+    static let _45ArrowTriangleheadClockwise = SFSymbol(
         title: "45.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -175,7 +175,7 @@ public extension SFSymbol {
 
     /// 45.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number45ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _45ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "45.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -184,7 +184,7 @@ public extension SFSymbol {
 
     /// 45.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number45ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _45ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "45.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -193,7 +193,7 @@ public extension SFSymbol {
 
     /// 45.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number45ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _45ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "45.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -202,7 +202,7 @@ public extension SFSymbol {
 
     /// 45.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number45ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _45ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "45.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -211,7 +211,7 @@ public extension SFSymbol {
 
     /// 45.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number45ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _45ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "45.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -220,7 +220,7 @@ public extension SFSymbol {
 
     /// 5.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number5ArrowTriangleheadClockwise = SFSymbol(
+    static let _5ArrowTriangleheadClockwise = SFSymbol(
         title: "5.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -229,7 +229,7 @@ public extension SFSymbol {
 
     /// 5.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number5ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _5ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "5.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -238,7 +238,7 @@ public extension SFSymbol {
 
     /// 5.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number5ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _5ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "5.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -247,7 +247,7 @@ public extension SFSymbol {
 
     /// 5.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number5ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _5ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "5.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -256,7 +256,7 @@ public extension SFSymbol {
 
     /// 5.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number5ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _5ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "5.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -265,7 +265,7 @@ public extension SFSymbol {
 
     /// 5.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number5ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _5ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "5.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -274,7 +274,7 @@ public extension SFSymbol {
 
     /// 60.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number60ArrowTriangleheadClockwise = SFSymbol(
+    static let _60ArrowTriangleheadClockwise = SFSymbol(
         title: "60.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -283,7 +283,7 @@ public extension SFSymbol {
 
     /// 60.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number60ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _60ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "60.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -292,7 +292,7 @@ public extension SFSymbol {
 
     /// 60.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number60ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _60ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "60.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -301,7 +301,7 @@ public extension SFSymbol {
 
     /// 60.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number60ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _60ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "60.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -310,7 +310,7 @@ public extension SFSymbol {
 
     /// 60.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number60ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _60ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "60.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -319,7 +319,7 @@ public extension SFSymbol {
 
     /// 60.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number60ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _60ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "60.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -328,7 +328,7 @@ public extension SFSymbol {
 
     /// 75.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number75ArrowTriangleheadClockwise = SFSymbol(
+    static let _75ArrowTriangleheadClockwise = SFSymbol(
         title: "75.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -337,7 +337,7 @@ public extension SFSymbol {
 
     /// 75.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number75ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _75ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "75.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -346,7 +346,7 @@ public extension SFSymbol {
 
     /// 75.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number75ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _75ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "75.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -355,7 +355,7 @@ public extension SFSymbol {
 
     /// 75.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number75ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _75ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "75.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -364,7 +364,7 @@ public extension SFSymbol {
 
     /// 75.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number75ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _75ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "75.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -373,7 +373,7 @@ public extension SFSymbol {
 
     /// 75.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number75ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _75ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "75.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -382,7 +382,7 @@ public extension SFSymbol {
 
     /// 90.arrow.trianglehead.clockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number90ArrowTriangleheadClockwise = SFSymbol(
+    static let _90ArrowTriangleheadClockwise = SFSymbol(
         title: "90.arrow.trianglehead.clockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -391,7 +391,7 @@ public extension SFSymbol {
 
     /// 90.arrow.trianglehead.clockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number90ArrowTriangleheadClockwiseAr = SFSymbol(
+    static let _90ArrowTriangleheadClockwiseAr = SFSymbol(
         title: "90.arrow.trianglehead.clockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -400,7 +400,7 @@ public extension SFSymbol {
 
     /// 90.arrow.trianglehead.clockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number90ArrowTriangleheadClockwiseHi = SFSymbol(
+    static let _90ArrowTriangleheadClockwiseHi = SFSymbol(
         title: "90.arrow.trianglehead.clockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -409,7 +409,7 @@ public extension SFSymbol {
 
     /// 90.arrow.trianglehead.counterclockwise
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number90ArrowTriangleheadCounterclockwise = SFSymbol(
+    static let _90ArrowTriangleheadCounterclockwise = SFSymbol(
         title: "90.arrow.trianglehead.counterclockwise",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -418,7 +418,7 @@ public extension SFSymbol {
 
     /// 90.arrow.trianglehead.counterclockwise.ar
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number90ArrowTriangleheadCounterclockwiseAr = SFSymbol(
+    static let _90ArrowTriangleheadCounterclockwiseAr = SFSymbol(
         title: "90.arrow.trianglehead.counterclockwise.ar",
         categories: [.arrows, .media],
         searchTerms: nil,
@@ -427,7 +427,7 @@ public extension SFSymbol {
 
     /// 90.arrow.trianglehead.counterclockwise.hi
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let number90ArrowTriangleheadCounterclockwiseHi = SFSymbol(
+    static let _90ArrowTriangleheadCounterclockwiseHi = SFSymbol(
         title: "90.arrow.trianglehead.counterclockwise.hi",
         categories: [.arrows, .media],
         searchTerms: nil,

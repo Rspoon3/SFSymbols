@@ -4,7 +4,7 @@ import Foundation
 public extension SFSymbol {
     /// 2h
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number2h = SFSymbol(
+    static let _2h = SFSymbol(
         title: "2h",
         categories: [.automotive],
         searchTerms: nil,
@@ -13,7 +13,7 @@ public extension SFSymbol {
 
     /// 2h.circle
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number2hCircle = SFSymbol(
+    static let _2hCircle = SFSymbol(
         title: "2h.circle",
         categories: [.automotive],
         searchTerms: nil,
@@ -22,7 +22,7 @@ public extension SFSymbol {
 
     /// 2h.circle.fill
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number2hCircleFill = SFSymbol(
+    static let _2hCircleFill = SFSymbol(
         title: "2h.circle.fill",
         categories: [.automotive, .multicolor],
         searchTerms: nil,
@@ -31,7 +31,7 @@ public extension SFSymbol {
 
     /// 4a
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4a = SFSymbol(
+    static let _4a = SFSymbol(
         title: "4a",
         categories: [.automotive],
         searchTerms: nil,
@@ -40,7 +40,7 @@ public extension SFSymbol {
 
     /// 4a.circle
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4aCircle = SFSymbol(
+    static let _4aCircle = SFSymbol(
         title: "4a.circle",
         categories: [.automotive],
         searchTerms: nil,
@@ -49,7 +49,7 @@ public extension SFSymbol {
 
     /// 4a.circle.fill
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4aCircleFill = SFSymbol(
+    static let _4aCircleFill = SFSymbol(
         title: "4a.circle.fill",
         categories: [.automotive, .multicolor],
         searchTerms: nil,
@@ -58,7 +58,7 @@ public extension SFSymbol {
 
     /// 4h
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4h = SFSymbol(
+    static let _4h = SFSymbol(
         title: "4h",
         categories: [.automotive],
         searchTerms: nil,
@@ -67,7 +67,7 @@ public extension SFSymbol {
 
     /// 4h.circle
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4hCircle = SFSymbol(
+    static let _4hCircle = SFSymbol(
         title: "4h.circle",
         categories: [.automotive],
         searchTerms: nil,
@@ -76,7 +76,7 @@ public extension SFSymbol {
 
     /// 4h.circle.fill
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4hCircleFill = SFSymbol(
+    static let _4hCircleFill = SFSymbol(
         title: "4h.circle.fill",
         categories: [.automotive, .multicolor],
         searchTerms: nil,
@@ -85,7 +85,7 @@ public extension SFSymbol {
 
     /// 4l
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4l = SFSymbol(
+    static let _4l = SFSymbol(
         title: "4l",
         categories: [.automotive],
         searchTerms: nil,
@@ -94,7 +94,7 @@ public extension SFSymbol {
 
     /// 4l.circle
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4lCircle = SFSymbol(
+    static let _4lCircle = SFSymbol(
         title: "4l.circle",
         categories: [.automotive],
         searchTerms: nil,
@@ -103,7 +103,7 @@ public extension SFSymbol {
 
     /// 4l.circle.fill
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    static let number4lCircleFill = SFSymbol(
+    static let _4lCircleFill = SFSymbol(
         title: "4l.circle.fill",
         categories: [.automotive, .multicolor],
         searchTerms: nil,
