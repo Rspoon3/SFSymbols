@@ -1,12 +1,11 @@
 //
 //  SFCategory.swift
-//  
+//
 //
 //  Created by Richard Witherspoon on 11/15/21.
 //
 
 import Foundation
-
 
 public struct SFCategory: Identifiable, Codable, Equatable, Hashable {
     public let icon: String
@@ -67,6 +66,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable {
             .variablecolor,
             .communication,
             .weather,
+            .maps,
             .objectsandtools,
             .devices,
             .cameraandphotos,

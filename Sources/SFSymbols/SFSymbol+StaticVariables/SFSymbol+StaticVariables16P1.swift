@@ -1456,7 +1456,7 @@ public extension SFSymbol {
     static let figureRunSquareStack = SFSymbol(
         title: "figure.run.square.stack",
         categories: [.fitness, .human],
-        searchTerms: ["human", "indoor run", "outdoor run", "person", "running", "sports"],
+        searchTerms: ["human", "outdoor run", "person", "running", "sports"],
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1465,7 +1465,7 @@ public extension SFSymbol {
     static let figureRunSquareStackFill = SFSymbol(
         title: "figure.run.square.stack.fill",
         categories: [.fitness, .human],
-        searchTerms: ["human", "indoor run", "outdoor run", "person", "running", "sports"],
+        searchTerms: ["human", "outdoor run", "person", "running", "sports"],
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1536,8 +1536,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let figureSeatedSideAirbagOff = SFSymbol(
         title: "figure.seated.side.airbag.off",
-        categories: [.automotive, .human, .multicolor],
-        searchTerms: ["human", "person"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1545,8 +1545,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let figureSeatedSideAirbagOff2 = SFSymbol(
         title: "figure.seated.side.airbag.off.2",
-        categories: [.automotive, .human, .multicolor],
-        searchTerms: ["human", "person"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1554,8 +1554,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let figureSeatedSideAirbagOn = SFSymbol(
         title: "figure.seated.side.airbag.on",
-        categories: [.automotive, .human, .multicolor],
-        searchTerms: ["human", "person"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1563,8 +1563,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let figureSeatedSideAirbagOn2 = SFSymbol(
         title: "figure.seated.side.airbag.on.2",
-        categories: [.automotive, .human, .multicolor],
-        searchTerms: ["human", "person"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1572,8 +1572,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let figureSeatedSideWindshieldFrontAndHeatWaves = SFSymbol(
         title: "figure.seated.side.windshield.front.and.heat.waves",
-        categories: [.automotive, .human],
-        searchTerms: ["human", "person"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1599,8 +1599,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let flagCheckeredCircle = SFSymbol(
         title: "flag.checkered.circle",
-        categories: [.fitness, .gaming, .objectsandtools],
-        searchTerms: ["campground", "camping"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1608,8 +1608,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let flagCheckeredCircleFill = SFSymbol(
         title: "flag.checkered.circle.fill",
-        categories: [.fitness, .gaming, .multicolor, .objectsandtools],
-        searchTerms: ["campground", "camping"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -1833,8 +1833,8 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let ipadAndIphoneSlash = SFSymbol(
         title: "ipad.and.iphone.slash",
-        categories: [.devices],
-        searchTerms: ["ipad", "iphone"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -2536,7 +2536,7 @@ public extension SFSymbol {
     static let mug = SFSymbol(
         title: "mug",
         categories: [.objectsandtools],
-        searchTerms: ["coffee", "drink", "food", "tea"],
+        searchTerms: ["coffee", "drink", "tea"],
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -2545,7 +2545,7 @@ public extension SFSymbol {
     static let mugFill = SFSymbol(
         title: "mug.fill",
         categories: [.objectsandtools],
-        searchTerms: ["coffee", "drink", "food", "tea"],
+        searchTerms: ["coffee", "drink", "tea"],
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -2553,7 +2553,7 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let oilcan = SFSymbol(
         title: "oilcan",
-        categories: [.automotive, .multicolor],
+        categories: [.automotive, .multicolor, .objectsandtools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
@@ -2562,7 +2562,7 @@ public extension SFSymbol {
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     static let oilcanFill = SFSymbol(
         title: "oilcan.fill",
-        categories: [.automotive, .multicolor],
+        categories: [.automotive, .multicolor, .objectsandtools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
@@ -2896,7 +2896,7 @@ public extension SFSymbol {
     static let suitcaseRolling = SFSymbol(
         title: "suitcase.rolling",
         categories: [.objectsandtools],
-        searchTerms: nil,
+        searchTerms: ["luggage"],
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 
@@ -2905,7 +2905,7 @@ public extension SFSymbol {
     static let suitcaseRollingFill = SFSymbol(
         title: "suitcase.rolling.fill",
         categories: [.objectsandtools],
-        searchTerms: nil,
+        searchTerms: ["luggage"],
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)
     )
 

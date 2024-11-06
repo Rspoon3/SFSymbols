@@ -2373,7 +2373,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let airplayaudio = SFSymbol(
         title: "airplayaudio",
-        categories: [.variablecolor],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -2625,7 +2625,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowClockwiseIcloud = SFSymbol(
         title: "arrow.clockwise.icloud",
-        categories: [.connectivity],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -2634,7 +2634,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowClockwiseIcloudFill = SFSymbol(
         title: "arrow.clockwise.icloud.fill",
-        categories: [.connectivity],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -2644,7 +2644,7 @@ public extension SFSymbol {
     static let arrowCounterclockwise = SFSymbol(
         title: "arrow.counterclockwise",
         categories: [.arrows],
-        searchTerms: nil,
+        searchTerms: ["revert"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -2653,7 +2653,7 @@ public extension SFSymbol {
     static let arrowCounterclockwiseCircle = SFSymbol(
         title: "arrow.counterclockwise.circle",
         categories: [.arrows],
-        searchTerms: nil,
+        searchTerms: ["revert"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -2662,7 +2662,7 @@ public extension SFSymbol {
     static let arrowCounterclockwiseCircleFill = SFSymbol(
         title: "arrow.counterclockwise.circle.fill",
         categories: [.arrows, .multicolor],
-        searchTerms: nil,
+        searchTerms: ["revert"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -2670,7 +2670,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowCounterclockwiseIcloud = SFSymbol(
         title: "arrow.counterclockwise.icloud",
-        categories: [.connectivity],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -2679,7 +2679,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowCounterclockwiseIcloudFill = SFSymbol(
         title: "arrow.counterclockwise.icloud.fill",
-        categories: [.connectivity],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -2715,7 +2715,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowDownDoc = SFSymbol(
         title: "arrow.down.doc",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -2724,7 +2724,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowDownDocFill = SFSymbol(
         title: "arrow.down.doc.fill",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -3193,7 +3193,7 @@ public extension SFSymbol {
     static let arrowUp = SFSymbol(
         title: "arrow.up",
         categories: [.arrows],
-        searchTerms: ["send"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -3310,7 +3310,7 @@ public extension SFSymbol {
     static let arrowUpCircle = SFSymbol(
         title: "arrow.up.circle",
         categories: [.arrows],
-        searchTerms: ["send"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -3319,7 +3319,7 @@ public extension SFSymbol {
     static let arrowUpCircleFill = SFSymbol(
         title: "arrow.up.circle.fill",
         categories: [.arrows, .multicolor],
-        searchTerms: ["send"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -3327,7 +3327,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowUpDoc = SFSymbol(
         title: "arrow.up.doc",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -3336,7 +3336,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let arrowUpDocFill = SFSymbol(
         title: "arrow.up.doc.fill",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -3481,7 +3481,7 @@ public extension SFSymbol {
     static let arrowUpSquare = SFSymbol(
         title: "arrow.up.square",
         categories: [.arrows],
-        searchTerms: ["send"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -3490,7 +3490,7 @@ public extension SFSymbol {
     static let arrowUpSquareFill = SFSymbol(
         title: "arrow.up.square.fill",
         categories: [.arrows, .multicolor],
-        searchTerms: ["send"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -4803,7 +4803,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let cCircle = SFSymbol(
         title: "c.circle",
-        categories: [.indices],
+        categories: [.gaming, .indices],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -4812,7 +4812,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let cCircleFill = SFSymbol(
         title: "c.circle.fill",
-        categories: [.indices, .multicolor],
+        categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -6279,8 +6279,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let doc = SFSymbol(
         title: "doc",
-        categories: [.objectsandtools],
-        searchTerms: ["document"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6297,8 +6297,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docCircle = SFSymbol(
         title: "doc.circle",
-        categories: [.objectsandtools],
-        searchTerms: ["document"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6306,8 +6306,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docCircleFill = SFSymbol(
         title: "doc.circle.fill",
-        categories: [.multicolor, .objectsandtools],
-        searchTerms: ["document"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6315,8 +6315,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docFill = SFSymbol(
         title: "doc.fill",
-        categories: [.objectsandtools],
-        searchTerms: ["document"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6324,8 +6324,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docOnClipboard = SFSymbol(
         title: "doc.on.clipboard",
-        categories: [.objectsandtools],
-        searchTerms: ["clipboard", "paste", "pasteboard"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6333,8 +6333,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docOnClipboardFill = SFSymbol(
         title: "doc.on.clipboard.fill",
-        categories: [.objectsandtools],
-        searchTerms: ["paste"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6342,8 +6342,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docOnDoc = SFSymbol(
         title: "doc.on.doc",
-        categories: [.objectsandtools],
-        searchTerms: ["copy"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6351,8 +6351,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docOnDocFill = SFSymbol(
         title: "doc.on.doc.fill",
-        categories: [.objectsandtools],
-        searchTerms: ["copy"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6378,7 +6378,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docText = SFSymbol(
         title: "doc.text",
-        categories: [.multicolor, .objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -6387,7 +6387,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docTextFill = SFSymbol(
         title: "doc.text.fill",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -6396,8 +6396,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let docTextMagnifyingglass = SFSymbol(
         title: "doc.text.magnifyingglass",
-        categories: [.objectsandtools],
-        searchTerms: ["search"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6649,7 +6649,7 @@ public extension SFSymbol {
     static let envelope = SFSymbol(
         title: "envelope",
         categories: [.communication],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6658,7 +6658,7 @@ public extension SFSymbol {
     static let envelopeBadge = SFSymbol(
         title: "envelope.badge",
         categories: [.communication, .multicolor],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6667,7 +6667,7 @@ public extension SFSymbol {
     static let envelopeBadgeFill = SFSymbol(
         title: "envelope.badge.fill",
         categories: [.communication],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6676,7 +6676,7 @@ public extension SFSymbol {
     static let envelopeCircle = SFSymbol(
         title: "envelope.circle",
         categories: [.communication],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6685,7 +6685,7 @@ public extension SFSymbol {
     static let envelopeCircleFill = SFSymbol(
         title: "envelope.circle.fill",
         categories: [.communication, .multicolor],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6694,7 +6694,7 @@ public extension SFSymbol {
     static let envelopeFill = SFSymbol(
         title: "envelope.fill",
         categories: [.communication],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6703,7 +6703,7 @@ public extension SFSymbol {
     static let envelopeOpen = SFSymbol(
         title: "envelope.open",
         categories: [.communication],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -6712,7 +6712,7 @@ public extension SFSymbol {
     static let envelopeOpenFill = SFSymbol(
         title: "envelope.open.fill",
         categories: [.communication],
-        searchTerms: ["mail"],
+        searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -7540,7 +7540,7 @@ public extension SFSymbol {
     static let globe = SFSymbol(
         title: "globe",
         categories: [.keyboard],
-        searchTerms: ["earth"],
+        searchTerms: ["earth", "language"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -7548,7 +7548,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward = SFSymbol(
         title: "gobackward",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7557,7 +7557,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward10 = SFSymbol(
         title: "gobackward.10",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7566,7 +7566,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward10Ar = SFSymbol(
         title: "gobackward.10.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7575,7 +7575,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward10Hi = SFSymbol(
         title: "gobackward.10.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7584,7 +7584,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward15 = SFSymbol(
         title: "gobackward.15",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7593,7 +7593,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward15Ar = SFSymbol(
         title: "gobackward.15.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7602,7 +7602,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward15Hi = SFSymbol(
         title: "gobackward.15.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7611,7 +7611,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward30 = SFSymbol(
         title: "gobackward.30",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7620,7 +7620,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward30Ar = SFSymbol(
         title: "gobackward.30.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7629,7 +7629,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward30Hi = SFSymbol(
         title: "gobackward.30.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7638,7 +7638,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward45 = SFSymbol(
         title: "gobackward.45",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7647,7 +7647,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward45Ar = SFSymbol(
         title: "gobackward.45.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7656,7 +7656,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward45Hi = SFSymbol(
         title: "gobackward.45.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7665,7 +7665,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward60 = SFSymbol(
         title: "gobackward.60",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7674,7 +7674,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward60Ar = SFSymbol(
         title: "gobackward.60.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7683,7 +7683,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward60Hi = SFSymbol(
         title: "gobackward.60.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7692,7 +7692,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward75 = SFSymbol(
         title: "gobackward.75",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7701,7 +7701,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward75Ar = SFSymbol(
         title: "gobackward.75.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7710,7 +7710,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward75Hi = SFSymbol(
         title: "gobackward.75.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7719,7 +7719,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward90 = SFSymbol(
         title: "gobackward.90",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7728,7 +7728,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward90Ar = SFSymbol(
         title: "gobackward.90.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7737,7 +7737,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackward90Hi = SFSymbol(
         title: "gobackward.90.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7746,8 +7746,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let gobackwardMinus = SFSymbol(
         title: "gobackward.minus",
-        categories: [.media],
-        searchTerms: ["-"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -7755,7 +7755,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward = SFSymbol(
         title: "goforward",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7764,7 +7764,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward10 = SFSymbol(
         title: "goforward.10",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7773,7 +7773,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward10Ar = SFSymbol(
         title: "goforward.10.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7782,7 +7782,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward10Hi = SFSymbol(
         title: "goforward.10.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7791,7 +7791,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward15 = SFSymbol(
         title: "goforward.15",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7800,7 +7800,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward15Ar = SFSymbol(
         title: "goforward.15.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7809,7 +7809,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward15Hi = SFSymbol(
         title: "goforward.15.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7818,7 +7818,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward30 = SFSymbol(
         title: "goforward.30",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7827,7 +7827,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward30Ar = SFSymbol(
         title: "goforward.30.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7836,7 +7836,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward30Hi = SFSymbol(
         title: "goforward.30.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7845,7 +7845,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward45 = SFSymbol(
         title: "goforward.45",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7854,7 +7854,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward45Ar = SFSymbol(
         title: "goforward.45.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7863,7 +7863,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward45Hi = SFSymbol(
         title: "goforward.45.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7872,7 +7872,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward60 = SFSymbol(
         title: "goforward.60",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7881,7 +7881,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward60Ar = SFSymbol(
         title: "goforward.60.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7890,7 +7890,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward60Hi = SFSymbol(
         title: "goforward.60.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7899,7 +7899,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward75 = SFSymbol(
         title: "goforward.75",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7908,7 +7908,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward75Ar = SFSymbol(
         title: "goforward.75.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7917,7 +7917,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward75Hi = SFSymbol(
         title: "goforward.75.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7926,7 +7926,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward90 = SFSymbol(
         title: "goforward.90",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7935,7 +7935,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward90Ar = SFSymbol(
         title: "goforward.90.ar",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7944,7 +7944,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforward90Hi = SFSymbol(
         title: "goforward.90.hi",
-        categories: [.media],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -7953,8 +7953,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let goforwardPlus = SFSymbol(
         title: "goforward.plus",
-        categories: [.media],
-        searchTerms: ["+", "add"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -8205,7 +8205,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let handRaisedSlash = SFSymbol(
         title: "hand.raised.slash",
-        categories: [.human, .privacyandsecurity],
+        categories: [.human, .multicolor, .privacyandsecurity],
         searchTerms: ["privacy", "remove", "unblock"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -9672,8 +9672,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let mic = SFSymbol(
         title: "mic",
-        categories: [.communication, .multicolor],
-        searchTerms: ["dictate", "dictation", "microphone"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -9681,8 +9681,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let micCircle = SFSymbol(
         title: "mic.circle",
-        categories: [.communication, .multicolor],
-        searchTerms: ["dictate", "dictation", "microphone"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -9690,8 +9690,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let micCircleFill = SFSymbol(
         title: "mic.circle.fill",
-        categories: [.communication, .multicolor],
-        searchTerms: ["dictate", "dictation", "microphone"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -9699,8 +9699,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let micFill = SFSymbol(
         title: "mic.fill",
-        categories: [.communication, .multicolor],
-        searchTerms: ["dictate", "dictation", "microphone"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -9708,8 +9708,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let micSlash = SFSymbol(
         title: "mic.slash",
-        categories: [.communication, .multicolor],
-        searchTerms: ["microphone", "remove"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -9717,8 +9717,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let micSlashFill = SFSymbol(
         title: "mic.slash.fill",
-        categories: [.communication, .multicolor],
-        searchTerms: ["microphone", "remove"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -9978,8 +9978,8 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let musicMic = SFSymbol(
         title: "music.mic",
-        categories: [.objectsandtools],
-        searchTerms: ["microphone"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -11932,7 +11932,7 @@ public extension SFSymbol {
     static let repeatSymbol = SFSymbol(
         title: "repeat",
         categories: [.media],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -11941,7 +11941,7 @@ public extension SFSymbol {
     static let repeat1 = SFSymbol(
         title: "repeat.1",
         categories: [.media],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -12283,7 +12283,7 @@ public extension SFSymbol {
     static let shuffle = SFSymbol(
         title: "shuffle",
         categories: [.media],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
 
@@ -13173,7 +13173,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let stopwatchFill = SFSymbol(
         title: "stopwatch.fill",
-        categories: [.objectsandtools, .time],
+        categories: [.multicolor, .objectsandtools, .time],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -13731,7 +13731,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let textformat123 = SFSymbol(
         title: "textformat.123",
-        categories: [.textformatting],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -13740,7 +13740,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let textformatAbc = SFSymbol(
         title: "textformat.abc",
-        categories: [.textformatting],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -13749,7 +13749,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let textformatAbcDottedunderline = SFSymbol(
         title: "textformat.abc.dottedunderline",
-        categories: [.multicolor, .textformatting],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -14478,7 +14478,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let wandAndStars = SFSymbol(
         title: "wand.and.stars",
-        categories: [.editing, .objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -14487,7 +14487,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let wandAndStarsInverse = SFSymbol(
         title: "wand.and.stars.inverse",
-        categories: [.editing, .objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -14910,7 +14910,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let zCircle = SFSymbol(
         title: "z.circle",
-        categories: [.indices],
+        categories: [.gaming, .indices],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -14919,7 +14919,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let zCircleFill = SFSymbol(
         title: "z.circle.fill",
-        categories: [.indices, .multicolor],
+        categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
