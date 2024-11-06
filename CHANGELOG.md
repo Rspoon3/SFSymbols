@@ -1,4 +1,14 @@
 # Change Log
+## Version 2.6 (11-6-2024)
+### Additions
+- Added symbols for iOS 17.4, 17.6, 18.0 and their equivalent version on other platforms.
+- Numbers are now prefixed with an underscore to be more inline with other similar libraries such as [SFSafeSymbols](https://github.com/SFSafeSymbols/SFSafeSymbols)
+- Now excluding the demo project from the package
+- Added Swift 6 support
+- Better handling of symbols that have the same title as Swift keywords
+- Added instructions in the README for how to update the symbols
+
+-----
 ## Version 2.5 (2-7-2024)
 ### Additions
 - Added symbols for iOS 16.4, 17.0, 17.1, 17.2 and their equivalent version on other platforms.
