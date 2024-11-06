@@ -135,8 +135,3 @@ In order to update the symbols please follow the steps below
 ## License
 
 SFSymbols is released under the MIT license. [See LICENSE](https://github.com/Rspoon3/SFSymbols/blob/main/LICENSE) for details.
-
----
-Annotations: 0,5373 SHA-256 5baf5c90a0b153fb3a04f61c3ce543de  
-@: 2118,15 2206,15 2296,15 2367,15 2462,15  
-...
