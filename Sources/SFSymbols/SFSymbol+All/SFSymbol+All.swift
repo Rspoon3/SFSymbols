@@ -20,7 +20,6 @@ public extension SFSymbol {
             symbols.append(contentsOf: SFSymbol.allSymbols14)
         }
         
-        
         if #available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, visionOS 1.0, *){
             symbols.append(contentsOf: SFSymbol.allSymbols14P2)
         }
@@ -67,6 +66,18 @@ public extension SFSymbol {
         
         if #available(iOS 17.2, macOS 14.2, tvOS 17.2, watchOS 10.2, visionOS 1.1, *){
             symbols.append(contentsOf: SFSymbol.allSymbols17P2)
+        }
+        
+        if #available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *){
+            symbols.append(contentsOf: SFSymbol.allSymbols17P4)
+        }
+        
+        if #available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *){
+            symbols.append(contentsOf: SFSymbol.allSymbols17P6)
+        }
+        
+        if #available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *){
+            symbols.append(contentsOf: SFSymbol.allSymbols18)
         }
         
         return symbols

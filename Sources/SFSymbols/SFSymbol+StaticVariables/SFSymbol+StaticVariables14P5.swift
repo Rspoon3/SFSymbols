@@ -6,8 +6,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let airpodsmax = SFSymbol(
         title: "airpodsmax",
-        categories: [.devices, .objectsandtools],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -204,8 +204,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let hifispeakerAndHomepodmini = SFSymbol(
         title: "hifispeaker.and.homepodmini",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -213,8 +213,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let hifispeakerAndHomepodminiFill = SFSymbol(
         title: "hifispeaker.and.homepodmini.fill",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -222,8 +222,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let homepodAndHomepodmini = SFSymbol(
         title: "homepod.and.homepodmini",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -231,8 +231,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let homepodAndHomepodminiFill = SFSymbol(
         title: "homepod.and.homepodmini.fill",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -240,8 +240,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let homepodmini = SFSymbol(
         title: "homepodmini",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -249,8 +249,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let homepodmini2 = SFSymbol(
         title: "homepodmini.2",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -258,8 +258,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let homepodmini2Fill = SFSymbol(
         title: "homepodmini.2.fill",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 
@@ -267,8 +267,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let homepodminiFill = SFSymbol(
         title: "homepodmini.fill",
-        categories: [.devices],
-        searchTerms: ["audio", "sound", "speaker"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
 

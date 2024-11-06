@@ -276,8 +276,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let clockArrow2Circlepath = SFSymbol(
         title: "clock.arrow.2.circlepath",
-        categories: [.time],
-        searchTerms: ["sync", "time", "time machine", "timemachine"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 
@@ -303,7 +303,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let docTextBelowEcgRtl = SFSymbol(
         title: "doc.text.below.ecg.rtl",
-        categories: [.multicolor],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -411,7 +411,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let ipodtouchLandscape = SFSymbol(
         title: "ipodtouch.landscape",
-        categories: [.devices],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -484,7 +484,7 @@ public extension SFSymbol {
     static let repeat1Circle = SFSymbol(
         title: "repeat.1.circle",
         categories: [.media],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 
@@ -493,7 +493,7 @@ public extension SFSymbol {
     static let repeat1CircleFill = SFSymbol(
         title: "repeat.1.circle.fill",
         categories: [.media, .multicolor],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 
@@ -502,7 +502,7 @@ public extension SFSymbol {
     static let repeatCircle = SFSymbol(
         title: "repeat.circle",
         categories: [.media],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 
@@ -511,7 +511,7 @@ public extension SFSymbol {
     static let repeatCircleFill = SFSymbol(
         title: "repeat.circle.fill",
         categories: [.media, .multicolor],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 
@@ -529,7 +529,7 @@ public extension SFSymbol {
     static let shuffleCircle = SFSymbol(
         title: "shuffle.circle",
         categories: [.media],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 
@@ -538,7 +538,7 @@ public extension SFSymbol {
     static let shuffleCircleFill = SFSymbol(
         title: "shuffle.circle.fill",
         categories: [.media, .multicolor],
-        searchTerms: nil,
+        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
 

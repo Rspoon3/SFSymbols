@@ -5,13 +5,13 @@ public extension SFSymbol {
 
     static var allSymbols15: [SFSymbol] {
         return [
-         .number1MagnifyingglassHi,
-         .number123Rectangle,
-         .number123RectangleAr,
-         .number123RectangleFill,
-         .number123RectangleFillAr,
-         .number123RectangleFillHi,
-         .number123RectangleHi,
+         ._1MagnifyingglassHi,
+         ._123Rectangle,
+         ._123RectangleAr,
+         ._123RectangleFill,
+         ._123RectangleFillAr,
+         ._123RectangleFillHi,
+         ._123RectangleHi,
          .airplaneArrival,
          .airplaneDeparture,
          .airplayaudioBadgeExclamationmark,
