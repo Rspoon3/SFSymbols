@@ -266,7 +266,7 @@ public extension SFSymbol {
          .car2Fill,
          .carCircle,
          .carCircleFill,
-         .caseSymbol,
+         .case,
          .caseFill,
          .chartBarDocHorizontal,
          .chartBarDocHorizontalFill,
