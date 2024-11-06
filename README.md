@@ -68,9 +68,9 @@ Image(symbol: .playCircle)
 VStack {
     Label("Sunset", symbol: .sunset)
     Label("Sunset", symbol: .sunset)
-        .foregroundColor(.red)
+        .foregroundStyle(.red)
     Label("Sunset", symbol: .sunset, textColor: .orange)
-        .foregroundColor(.yellow)
+        .foregroundStyle(.yellow)
 }
 ```
 
@@ -78,11 +78,11 @@ VStack {
 ```swift
 VStack {
     Button(symbol: .sunset){}
-        .foregroundColor(.red)
+        .foregroundStyle(.red)
     Button("Sunset", symbol: .sunset){}
-        .foregroundColor(.yellow)
+        .foregroundStyle(.yellow)
     Button("Sunset", symbol: .sunset, textColor : .orange){}
-        .foregroundColor(.yellow)
+        .foregroundStyle(.yellow)
 }
 ```
                     
@@ -137,7 +137,6 @@ In order to update the symbols please follow the steps below
 SFSymbols is released under the MIT license. [See LICENSE](https://github.com/Rspoon3/SFSymbols/blob/main/LICENSE) for details.
 
 ---
-Annotations: 0,5392 SHA-256 55be66c90a5ac65d9302fcf8767952c9  
-&Writing Tools: 4245,116  
-@: 4412 4416,20 4786,50 4854,6  
+Annotations: 0,5373 SHA-256 5baf5c90a0b153fb3a04f61c3ce543de  
+@: 2118,15 2206,15 2296,15 2367,15 2462,15  
 ...
