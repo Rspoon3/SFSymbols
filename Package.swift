@@ -15,14 +15,17 @@ let package = Package(
     products: [
         .library(
             name: "SFSymbols",
-            targets: ["SFSymbols"]),
+            targets: ["SFSymbols"]
+        ),
     ],
     targets: [
         .target(
-            name: "SFSymbols"
+            name: "SFSymbols",
+            exclude: ["../../SFSymbolsDemo"]
         ),
         .testTarget(
             name: "SFSymbolsTests",
-            dependencies: ["SFSymbols"]),
+            dependencies: ["SFSymbols"]
+        ),
     ]
 )
