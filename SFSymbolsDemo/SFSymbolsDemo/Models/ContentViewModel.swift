@@ -8,7 +8,6 @@
 import Foundation
 import SFSymbols
 
-
 class ContentViewModel: ObservableObject{
     @Published var categories = [SFCategory]()
     
@@ -101,7 +100,14 @@ class ContentViewModel: ObservableObject{
     }
     
     private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String) throws {
-        let titles = symbols.map({convertTitleToCamelCased(string: $0.title)}).map({"         .\($0)"}).joined(separator: ",\n")
+        let titles = symbols.map {
+            convertTitleToCamelCased(
+                string: $0.title,
+                modifyKeywords: false
+            )
+        }
+            .map {"         .\($0)"}
+            .joined(separator: ",\n")
         
         var array = """
         \n
@@ -131,7 +137,10 @@ class ContentViewModel: ObservableObject{
     }
     
     private func convertSymbolToStaticVar(_ symbol: SFSymbol) -> String {
-        let camelCased = convertTitleToCamelCased(string: symbol.title)
+        let camelCased = convertTitleToCamelCased(
+            string: symbol.title,
+            modifyKeywords: true
+        )
         
         var categoriesOptionalString  = "nil"
         var searchTermsOptionalString = "nil"
@@ -169,7 +178,7 @@ class ContentViewModel: ObservableObject{
         return staticVar
     }
     
-    private func convertTitleToCamelCased(string: String) -> String {
+    private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> String {
         var camelCased = string
             .split(separator: ".")  // split to components
             .map { String($0) }   // convert subsequences to String
@@ -178,15 +187,12 @@ class ContentViewModel: ObservableObject{
             .joined() // join to one string
         
         let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        let keywords = ["return", "repeat", "case"]
         
         if numbers.contains(String(camelCased.first!)){
-            camelCased = "number\(camelCased)"
-        } else if camelCased == "return"{
-            camelCased = "returnSymbol"
-        } else if camelCased == "repeat"{
-            camelCased = "repeatSymbol"
-        } else if camelCased == "case"{
-            camelCased = "caseSymbol"
+            camelCased = "_\(camelCased)"
+        } else if modifyKeywords && keywords.contains(camelCased){
+            camelCased = "`\(camelCased)`"
         }
         
         return camelCased

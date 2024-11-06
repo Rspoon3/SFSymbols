@@ -11929,7 +11929,7 @@ public extension SFSymbol {
 
     /// repeat
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let repeatSymbol = SFSymbol(
+    static let `repeat` = SFSymbol(
         title: "repeat",
         categories: [.media],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
@@ -11947,7 +11947,7 @@ public extension SFSymbol {
 
     /// return
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    static let returnSymbol = SFSymbol(
+    static let `return` = SFSymbol(
         title: "return",
         categories: [.arrows],
         searchTerms: nil,
