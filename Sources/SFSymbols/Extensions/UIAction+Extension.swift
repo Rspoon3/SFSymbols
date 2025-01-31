@@ -5,7 +5,7 @@
 //  Created by Richard Witherspoon on 3/18/22.
 //
 
-#if canImport(UIKit)
+#if canImport(UIKit) && os(iOS) || os(tvOS) || os(visionOS)
 import UIKit
 
 extension UIAction {

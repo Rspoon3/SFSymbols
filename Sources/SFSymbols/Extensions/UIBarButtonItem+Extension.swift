@@ -5,7 +5,8 @@
 //  Created by Richard Witherspoon on 3/30/22.
 //
 
-#if canImport(UIKit)
+#if canImport(UIKit) && os(iOS) || os(tvOS) || os(visionOS)
+
 import UIKit
 
 public extension UIBarButtonItem {

@@ -22,8 +22,10 @@ public extension UIImage {
         self.init(systemName: symbol.title, withConfiguration: configuration)!
     }
     
+#if os(iOS) || os(tvOS) || os(visionOS)
     convenience init(symbol: SFSymbol, compatibleWith traitCollection: UITraitCollection?){
         self.init(systemName: symbol.title, compatibleWith: traitCollection)!
     }
+#endif
 }
 #endif
