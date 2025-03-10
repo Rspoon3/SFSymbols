@@ -8,7 +8,7 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
-@available(iOS 14.0, tvOS 14.0, *)
+@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension Label where Title == Text, Icon == Image {
     public init(
         _ titleKey: LocalizedStringKey,
