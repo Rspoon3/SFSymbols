@@ -177,7 +177,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let airplaneCircle = SFSymbol(
         title: "airplane.circle",
-        categories: [.multicolor, .transportation],
+        categories: [.multicolor, .transportation, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -348,7 +348,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let applewatchRadiowavesLeftAndRight = SFSymbol(
         title: "applewatch.radiowaves.left.and.right",
-        categories: [.devices, .variablecolor],
+        categories: [.devices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -429,7 +429,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let archiveboxCircle = SFSymbol(
         title: "archivebox.circle",
-        categories: [.objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["archive"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -456,7 +456,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowBackwardCircle = SFSymbol(
         title: "arrow.backward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -537,7 +537,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowDownBackwardCircle = SFSymbol(
         title: "arrow.down.backward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -591,7 +591,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowDownForwardAndArrowUpBackwardCircle = SFSymbol(
         title: "arrow.down.forward.and.arrow.up.backward.circle",
-        categories: [.arrows, .cameraandphotos],
+        categories: [.arrows, .cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -609,7 +609,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowDownForwardCircle = SFSymbol(
         title: "arrow.down.forward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -663,7 +663,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowDownRightAndArrowUpLeftCircle = SFSymbol(
         title: "arrow.down.right.and.arrow.up.left.circle",
-        categories: [.arrows, .cameraandphotos],
+        categories: [.arrows, .cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -690,7 +690,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowForwardCircle = SFSymbol(
         title: "arrow.forward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -753,7 +753,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowLeftArrowRightCircle = SFSymbol(
         title: "arrow.left.arrow.right.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1032,7 +1032,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUpBackwardAndArrowDownForwardCircle = SFSymbol(
         title: "arrow.up.backward.and.arrow.down.forward.circle",
-        categories: [.arrows, .cameraandphotos],
+        categories: [.arrows, .cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1050,7 +1050,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUpBackwardCircle = SFSymbol(
         title: "arrow.up.backward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1122,7 +1122,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUpForwardCircle = SFSymbol(
         title: "arrow.up.forward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1176,7 +1176,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUpLeftAndArrowDownRightCircle = SFSymbol(
         title: "arrow.up.left.and.arrow.down.right.circle",
-        categories: [.arrows, .cameraandphotos],
+        categories: [.arrows, .cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1221,7 +1221,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUpMessageFill = SFSymbol(
         title: "arrow.up.message.fill",
-        categories: [.communication],
+        categories: [.communication, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1239,7 +1239,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUpRightAndArrowDownLeftRectangleFill = SFSymbol(
         title: "arrow.up.right.and.arrow.down.left.rectangle.fill",
-        categories: [.arrows],
+        categories: [.arrows, .multicolor],
         searchTerms: ["conversations"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1257,7 +1257,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUturnBackwardCircle = SFSymbol(
         title: "arrow.uturn.backward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["left", "undo"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1266,7 +1266,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUturnBackwardCircleBadgeEllipsis = SFSymbol(
         title: "arrow.uturn.backward.circle.badge.ellipsis",
-        categories: [.arrows, .multicolor],
+        categories: [.arrows, .multicolor, .variable],
         searchTerms: ["action", "dot.3", "extra", "left", "more", "overflow", "undo", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1311,7 +1311,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowUturnForwardCircle = SFSymbol(
         title: "arrow.uturn.forward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["redo", "right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1401,7 +1401,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowshapeTurnUpBackward2Circle = SFSymbol(
         title: "arrowshape.turn.up.backward.2.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1428,7 +1428,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowshapeTurnUpBackwardCircle = SFSymbol(
         title: "arrowshape.turn.up.backward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1464,7 +1464,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowshapeTurnUpForwardCircle = SFSymbol(
         title: "arrowshape.turn.up.forward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1491,7 +1491,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowshapeTurnUpLeft2Circle = SFSymbol(
         title: "arrowshape.turn.up.left.2.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["reply all"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1554,7 +1554,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowtriangleBackwardCircle = SFSymbol(
         title: "arrowtriangle.backward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1608,7 +1608,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let arrowtriangleForwardCircle = SFSymbol(
         title: "arrowtriangle.forward.circle",
-        categories: [.arrows],
+        categories: [.arrows, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1689,7 +1689,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let atCircle = SFSymbol(
         title: "at.circle",
-        categories: [.multicolor],
+        categories: [.multicolor, .variable],
         searchTerms: ["@"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1734,7 +1734,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let badgePlusRadiowavesForward = SFSymbol(
         title: "badge.plus.radiowaves.forward",
-        categories: [.multicolor, .variablecolor],
+        categories: [.multicolor, .variable],
         searchTerms: ["+", "add", "right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1743,7 +1743,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let bagCircle = SFSymbol(
         title: "bag.circle",
-        categories: [.commerce, .objectsandtools],
+        categories: [.commerce, .objectsandtools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1824,7 +1824,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let bellSlashCircle = SFSymbol(
         title: "bell.slash.circle",
-        categories: [.multicolor, .objectsandtools],
+        categories: [.multicolor, .objectsandtools, .variable],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1851,7 +1851,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let bicycleCircle = SFSymbol(
         title: "bicycle.circle",
-        categories: [.maps, .transportation],
+        categories: [.maps, .transportation, .variable],
         searchTerms: ["bike"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1923,7 +1923,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let boltHeart = SFSymbol(
         title: "bolt.heart",
-        categories: [.health],
+        categories: [.health, .variable],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1941,7 +1941,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let boltSlashCircle = SFSymbol(
         title: "bolt.slash.circle",
-        categories: [.cameraandphotos, .multicolor, .nature],
+        categories: [.cameraandphotos, .multicolor, .nature, .variable],
         searchTerms: ["camera", "energy", "power", "remove"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -1986,7 +1986,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let bookmarkCircle = SFSymbol(
         title: "bookmark.circle",
-        categories: [.multicolor, .objectsandtools],
+        categories: [.multicolor, .objectsandtools, .variable],
         searchTerms: ["bookmark"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2211,7 +2211,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cameraMeteringCenterWeighted = SFSymbol(
         title: "camera.metering.center.weighted",
-        categories: [.cameraandphotos, .variablecolor],
+        categories: [.cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2229,7 +2229,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cameraMeteringMatrix = SFSymbol(
         title: "camera.metering.matrix",
-        categories: [.cameraandphotos, .variablecolor],
+        categories: [.cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2238,7 +2238,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cameraMeteringMultispot = SFSymbol(
         title: "camera.metering.multispot",
-        categories: [.cameraandphotos, .variablecolor],
+        categories: [.cameraandphotos, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2337,7 +2337,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let carCircle = SFSymbol(
         title: "car.circle",
-        categories: [.automotive, .devices, .maps, .multicolor, .transportation],
+        categories: [.automotive, .devices, .maps, .multicolor, .transportation, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2391,7 +2391,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let chartBarXaxis = SFSymbol(
         title: "chart.bar.xaxis",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2418,7 +2418,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let checkmarkIcloudFill = SFSymbol(
         title: "checkmark.icloud.fill",
-        categories: [.connectivity, .privacyandsecurity],
+        categories: [.connectivity, .multicolor, .privacyandsecurity],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2427,7 +2427,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let checkmarkRectanglePortrait = SFSymbol(
         title: "checkmark.rectangle.portrait",
-        categories: [.multicolor, .privacyandsecurity],
+        categories: [.privacyandsecurity],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2463,7 +2463,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let chevronBackwardCircle = SFSymbol(
         title: "chevron.backward.circle",
-        categories: [.arrows, .cameraandphotos],
+        categories: [.arrows, .cameraandphotos, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2517,7 +2517,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let chevronForwardCircle = SFSymbol(
         title: "chevron.forward.circle",
-        categories: [.arrows, .cameraandphotos],
+        categories: [.arrows, .cameraandphotos, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2562,7 +2562,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let circleCircle = SFSymbol(
         title: "circle.circle",
-        categories: [.gaming],
+        categories: [.gaming, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2778,7 +2778,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let commandCircle = SFSymbol(
         title: "command.circle",
-        categories: [.keyboard],
+        categories: [.keyboard, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2832,7 +2832,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let contextualmenuAndCursorarrow = SFSymbol(
         title: "contextualmenu.and.cursorarrow",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2850,7 +2850,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let creditcardCircle = SFSymbol(
         title: "creditcard.circle",
-        categories: [.commerce, .objectsandtools],
+        categories: [.commerce, .objectsandtools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2895,7 +2895,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let crossCircle = SFSymbol(
         title: "cross.circle",
-        categories: [.health, .multicolor],
+        categories: [.health, .multicolor, .variable],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -2994,7 +2994,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowAndSquareOnSquareDashed = SFSymbol(
         title: "cursorarrow.and.square.on.square.dashed",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3003,7 +3003,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowClick = SFSymbol(
         title: "cursorarrow.click",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3012,7 +3012,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowClick2 = SFSymbol(
         title: "cursorarrow.click.2",
-        categories: [.accessibility, .variablecolor],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3021,7 +3021,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowClickBadgeClock = SFSymbol(
         title: "cursorarrow.click.badge.clock",
-        categories: [.accessibility, .multicolor],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3030,7 +3030,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowMotionlines = SFSymbol(
         title: "cursorarrow.motionlines",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3039,7 +3039,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowMotionlinesClick = SFSymbol(
         title: "cursorarrow.motionlines.click",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3048,8 +3048,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let cursorarrowRays = SFSymbol(
         title: "cursorarrow.rays",
-        categories: [.accessibility],
-        searchTerms: ["light"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -3507,7 +3507,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let dotArrowtrianglesUpRightDownLeftCircle = SFSymbol(
         title: "dot.arrowtriangles.up.right.down.left.circle",
-        categories: [.accessibility],
+        categories: [.accessibility, .variable],
         searchTerms: ["zoom"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3516,7 +3516,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let dotCircleAndCursorarrow = SFSymbol(
         title: "dot.circle.and.cursorarrow",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3525,7 +3525,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let dotRadiowavesForward = SFSymbol(
         title: "dot.radiowaves.forward",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3669,7 +3669,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let ejectCircle = SFSymbol(
         title: "eject.circle",
-        categories: [.keyboard],
+        categories: [.keyboard, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3687,7 +3687,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let ellipsisBubble = SFSymbol(
         title: "ellipsis.bubble",
-        categories: [.accessibility, .communication, .variablecolor],
+        categories: [.accessibility, .communication, .variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3696,7 +3696,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let ellipsisBubbleFill = SFSymbol(
         title: "ellipsis.bubble.fill",
-        categories: [.accessibility, .communication, .multicolor, .variablecolor],
+        categories: [.accessibility, .communication, .multicolor, .variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3705,7 +3705,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let ellipsisRectangle = SFSymbol(
         title: "ellipsis.rectangle",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "password", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3714,7 +3714,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let ellipsisRectangleFill = SFSymbol(
         title: "ellipsis.rectangle.fill",
-        categories: [.multicolor, .variablecolor],
+        categories: [.multicolor, .variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "password", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3876,7 +3876,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let externaldriveBadgeWifi = SFSymbol(
         title: "externaldrive.badge.wifi",
-        categories: [.multicolor, .objectsandtools, .variablecolor],
+        categories: [.multicolor, .objectsandtools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3975,7 +3975,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let externaldriveFillBadgeWifi = SFSymbol(
         title: "externaldrive.fill.badge.wifi",
-        categories: [.multicolor, .objectsandtools, .variablecolor],
+        categories: [.multicolor, .objectsandtools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -3993,7 +3993,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let eyeCircle = SFSymbol(
         title: "eye.circle",
-        categories: [.accessibility, .health, .human, .privacyandsecurity],
+        categories: [.accessibility, .health, .human, .privacyandsecurity, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4057,7 +4057,7 @@ public extension SFSymbol {
     static let faceSmiling = SFSymbol(
         title: "face.smiling",
         categories: [.human],
-        searchTerms: ["smile"],
+        searchTerms: ["friendly", "smile"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -4119,7 +4119,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let figureWalkCircle = SFSymbol(
         title: "figure.walk.circle",
-        categories: [.fitness, .human, .maps, .transportation],
+        categories: [.fitness, .human, .maps, .transportation, .variable],
         searchTerms: ["human", "indoor walk", "outdoor walk", "person", "sports", "walking"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4164,7 +4164,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let figureWaveCircle = SFSymbol(
         title: "figure.wave.circle",
-        categories: [.human, .maps, .transportation],
+        categories: [.human, .maps, .transportation, .variable],
         searchTerms: ["human", "person"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4182,7 +4182,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let filemenuAndCursorarrow = SFSymbol(
         title: "filemenu.and.cursorarrow",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4191,7 +4191,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let filemenuAndCursorarrowRtl = SFSymbol(
         title: "filemenu.and.cursorarrow.rtl",
-        categories: [.accessibility],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4227,7 +4227,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let flagSlashCircle = SFSymbol(
         title: "flag.slash.circle",
-        categories: [.multicolor, .objectsandtools],
+        categories: [.multicolor, .objectsandtools, .variable],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4371,7 +4371,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let giftCircle = SFSymbol(
         title: "gift.circle",
-        categories: [.multicolor, .objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["birthday"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4623,7 +4623,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let headphonesCircle = SFSymbol(
         title: "headphones.circle",
-        categories: [.devices, .objectsandtools],
+        categories: [.devices, .objectsandtools, .variable],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4713,7 +4713,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let homekit = SFSymbol(
         title: "homekit",
-        categories: [.home, .multicolor, .variablecolor],
+        categories: [.home, .multicolor, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4767,7 +4767,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let houseCircle = SFSymbol(
         title: "house.circle",
-        categories: [.gaming, .home, .multicolor],
+        categories: [.gaming, .home, .multicolor, .variable],
         searchTerms: ["home", "house"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -4884,7 +4884,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let iphoneRadiowavesLeftAndRight = SFSymbol(
         title: "iphone.radiowaves.left.and.right",
-        categories: [.devices, .variablecolor],
+        categories: [.devices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -5010,7 +5010,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let keyIcloudFill = SFSymbol(
         title: "key.icloud.fill",
-        categories: [.connectivity, .privacyandsecurity],
+        categories: [.connectivity, .multicolor, .privacyandsecurity],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -5325,7 +5325,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let lineDiagonalArrow = SFSymbol(
         title: "line.diagonal.arrow",
-        categories: [.communication],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -5532,7 +5532,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let lockRectangleStackFill = SFSymbol(
         title: "lock.rectangle.stack.fill",
-        categories: [.objectsandtools, .privacyandsecurity],
+        categories: [.multicolor, .objectsandtools, .privacyandsecurity],
         searchTerms: ["padlock", "password", "security"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -5568,7 +5568,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let lockSquareStackFill = SFSymbol(
         title: "lock.square.stack.fill",
-        categories: [.objectsandtools, .privacyandsecurity],
+        categories: [.multicolor, .objectsandtools, .privacyandsecurity],
         searchTerms: ["padlock", "password", "security"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -5623,7 +5623,7 @@ public extension SFSymbol {
     static let macmini = SFSymbol(
         title: "macmini",
         categories: [.devices],
-        searchTerms: nil,
+        searchTerms: ["mac mini"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -5632,7 +5632,7 @@ public extension SFSymbol {
     static let macminiFill = SFSymbol(
         title: "macmini.fill",
         categories: [.devices],
-        searchTerms: nil,
+        searchTerms: ["mac mini"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -5739,7 +5739,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let mailFill = SFSymbol(
         title: "mail.fill",
-        categories: nil,
+        categories: [.multicolor],
         searchTerms: ["address", "letter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -5983,7 +5983,7 @@ public extension SFSymbol {
     static let musicQuarternote3 = SFSymbol(
         title: "music.quarternote.3",
         categories: nil,
-        searchTerms: nil,
+        searchTerms: ["media"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -6027,7 +6027,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let newspaperFill = SFSymbol(
         title: "newspaper.fill",
-        categories: [.objectsandtools],
+        categories: [.multicolor, .objectsandtools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6054,7 +6054,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let note = SFSymbol(
         title: "note",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6063,7 +6063,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let noteText = SFSymbol(
         title: "note.text",
-        categories: [.objectsandtools],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6072,8 +6072,8 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let noteTextBadgePlus = SFSymbol(
         title: "note.text.badge.plus",
-        categories: [.multicolor, .objectsandtools],
-        searchTerms: ["+", "add", "create", "new"],
+        categories: nil,
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -6207,7 +6207,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let paperplaneCircle = SFSymbol(
         title: "paperplane.circle",
-        categories: [.objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["send"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6261,7 +6261,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let person2Circle = SFSymbol(
         title: "person.2.circle",
-        categories: [.human],
+        categories: [.human, .variable],
         searchTerms: ["people", "shared"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6666,7 +6666,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let plusMessageFill = SFSymbol(
         title: "plus.message.fill",
-        categories: [.communication],
+        categories: [.communication, .multicolor],
         searchTerms: ["add"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6846,7 +6846,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let questionmarkCircleAr = SFSymbol(
         title: "questionmark.circle.ar",
-        categories: [.indices, .multicolor],
+        categories: [.indices, .multicolor, .variable],
         searchTerms: ["help"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -6972,7 +6972,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let quoteBubbleFillRtl = SFSymbol(
         title: "quote.bubble.fill.rtl",
-        categories: [.accessibility, .communication],
+        categories: [.accessibility, .communication, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -7134,7 +7134,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let recordCircle = SFSymbol(
         title: "record.circle",
-        categories: [.media],
+        categories: [.media, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -7170,7 +7170,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let rectangleAndPencilAndEllipsis = SFSymbol(
         title: "rectangle.and.pencil.and.ellipsis",
-        categories: [.editing, .objectsandtools, .variablecolor],
+        categories: [.editing, .objectsandtools, .variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "write", "writing", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -7179,7 +7179,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let rectangleAndPencilAndEllipsisRtl = SFSymbol(
         title: "rectangle.and.pencil.and.ellipsis.rtl",
-        categories: [.editing, .objectsandtools, .variablecolor],
+        categories: [.editing, .objectsandtools, .variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "write", "writing", "…"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -7620,7 +7620,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let restartCircle = SFSymbol(
         title: "restart.circle",
-        categories: nil,
+        categories: [.variable],
         searchTerms: ["restart"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -7800,7 +7800,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let shekelsignCircle = SFSymbol(
         title: "shekelsign.circle",
-        categories: [.commerce, .indices],
+        categories: [.commerce, .indices, .variable],
         searchTerms: ["currencies", "currency"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8052,7 +8052,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let sparklesRectangleStackFill = SFSymbol(
         title: "sparkles.rectangle.stack.fill",
-        categories: nil,
+        categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8070,7 +8070,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerSlashCircle = SFSymbol(
         title: "speaker.slash.circle",
-        categories: [.objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["remove", "volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8097,7 +8097,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerSlashCircleRtl = SFSymbol(
         title: "speaker.slash.circle.rtl",
-        categories: [.objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["remove", "volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8106,7 +8106,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave1 = SFSymbol(
         title: "speaker.wave.1",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8115,7 +8115,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave1Fill = SFSymbol(
         title: "speaker.wave.1.fill",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8124,7 +8124,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave2 = SFSymbol(
         title: "speaker.wave.2",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8133,7 +8133,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave2Circle = SFSymbol(
         title: "speaker.wave.2.circle",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8142,7 +8142,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave2CircleFill = SFSymbol(
         title: "speaker.wave.2.circle.fill",
-        categories: [.multicolor, .objectsandtools, .variablecolor],
+        categories: [.multicolor, .objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8151,7 +8151,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave2Fill = SFSymbol(
         title: "speaker.wave.2.fill",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8160,7 +8160,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave3 = SFSymbol(
         title: "speaker.wave.3",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8169,7 +8169,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let speakerWave3Fill = SFSymbol(
         title: "speaker.wave.3.fill",
-        categories: [.objectsandtools, .variablecolor],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8259,7 +8259,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let squareCircle = SFSymbol(
         title: "square.circle",
-        categories: [.gaming],
+        categories: [.gaming, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8304,7 +8304,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let squareFillTextGrid1X2 = SFSymbol(
         title: "square.fill.text.grid.1x2",
-        categories: nil,
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8547,7 +8547,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let squareStack3DDownForward = SFSymbol(
         title: "square.stack.3d.down.forward",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8556,7 +8556,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let squareStack3DDownForwardFill = SFSymbol(
         title: "square.stack.3d.down.forward.fill",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8565,7 +8565,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let squareStack3DForwardDottedline = SFSymbol(
         title: "square.stack.3d.forward.dottedline",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8574,7 +8574,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let squareStack3DForwardDottedlineFill = SFSymbol(
         title: "square.stack.3d.forward.dottedline.fill",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8656,7 +8656,7 @@ public extension SFSymbol {
     static let squareshapeSplit2X2Dotted = SFSymbol(
         title: "squareshape.split.2x2.dotted",
         categories: nil,
-        searchTerms: ["grid"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
 
@@ -8709,7 +8709,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let staroflifeCircle = SFSymbol(
         title: "staroflife.circle",
-        categories: [.health],
+        categories: [.health, .variable],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8853,7 +8853,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let target = SFSymbol(
         title: "target",
-        categories: [.variablecolor],
+        categories: [.variable],
         searchTerms: ["dot"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8862,7 +8862,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let teletypeCircle = SFSymbol(
         title: "teletype.circle",
-        categories: [.accessibility, .communication, .multicolor],
+        categories: [.accessibility, .communication, .multicolor, .variable],
         searchTerms: ["phone", "rtt"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8943,7 +8943,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let textBookClosedFill = SFSymbol(
         title: "text.book.closed.fill",
-        categories: [.objectsandtools],
+        categories: [.multicolor, .objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -8952,7 +8952,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let textBubbleFillRtl = SFSymbol(
         title: "text.bubble.fill.rtl",
-        categories: [.communication],
+        categories: [.communication, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9123,7 +9123,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let thermometerSunFill = SFSymbol(
         title: "thermometer.sun.fill",
-        categories: [.multicolor, .nature, .weather],
+        categories: [.multicolor, .nature, .variable, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9177,7 +9177,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let touchid = SFSymbol(
         title: "touchid",
-        categories: [.multicolor, .privacyandsecurity, .variablecolor],
+        categories: [.multicolor, .privacyandsecurity, .variable],
         searchTerms: ["authentication", "fingerprint", "password", "security"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9195,7 +9195,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let tramCircle = SFSymbol(
         title: "tram.circle",
-        categories: [.maps, .transportation],
+        categories: [.maps, .transportation, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9222,7 +9222,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let trayCircle = SFSymbol(
         title: "tray.circle",
-        categories: [.objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["inbox", "mail"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9240,7 +9240,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let triangleCircle = SFSymbol(
         title: "triangle.circle",
-        categories: [.gaming],
+        categories: [.gaming, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9330,7 +9330,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let walletPassFill = SFSymbol(
         title: "wallet.pass.fill",
-        categories: [.objectsandtools],
+        categories: [.multicolor, .objectsandtools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9339,7 +9339,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3Backward = SFSymbol(
         title: "wave.3.backward",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9348,7 +9348,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3BackwardCircle = SFSymbol(
         title: "wave.3.backward.circle",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9357,7 +9357,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3BackwardCircleFill = SFSymbol(
         title: "wave.3.backward.circle.fill",
-        categories: [.connectivity, .multicolor, .variablecolor],
+        categories: [.connectivity, .multicolor, .variable],
         searchTerms: ["left"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9366,7 +9366,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3Forward = SFSymbol(
         title: "wave.3.forward",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9375,7 +9375,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3ForwardCircle = SFSymbol(
         title: "wave.3.forward.circle",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9384,7 +9384,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3ForwardCircleFill = SFSymbol(
         title: "wave.3.forward.circle.fill",
-        categories: [.connectivity, .multicolor, .variablecolor],
+        categories: [.connectivity, .multicolor, .variable],
         searchTerms: ["right"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9393,7 +9393,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3Left = SFSymbol(
         title: "wave.3.left",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9402,7 +9402,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3LeftCircle = SFSymbol(
         title: "wave.3.left.circle",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9411,7 +9411,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3LeftCircleFill = SFSymbol(
         title: "wave.3.left.circle.fill",
-        categories: [.connectivity, .multicolor, .variablecolor],
+        categories: [.connectivity, .multicolor, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9420,7 +9420,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3Right = SFSymbol(
         title: "wave.3.right",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9429,7 +9429,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3RightCircle = SFSymbol(
         title: "wave.3.right.circle",
-        categories: [.connectivity, .variablecolor],
+        categories: [.connectivity, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9438,7 +9438,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let wave3RightCircleFill = SFSymbol(
         title: "wave.3.right.circle.fill",
-        categories: [.connectivity, .multicolor, .variablecolor],
+        categories: [.connectivity, .multicolor, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9492,7 +9492,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let xmarkBinCircle = SFSymbol(
         title: "xmark.bin.circle",
-        categories: [.objectsandtools],
+        categories: [.objectsandtools, .variable],
         searchTerms: ["junk"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )
@@ -9510,7 +9510,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let xmarkBinFill = SFSymbol(
         title: "xmark.bin.fill",
-        categories: [.objectsandtools],
+        categories: [.multicolor, .objectsandtools],
         searchTerms: ["junk", "mail"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )

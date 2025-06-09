@@ -20,19 +20,27 @@
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>paintpalette</string>
+		<string>scribble</string>
 		<key>key</key>
-		<string>multicolor</string>
+		<string>draw</string>
 		<key>label</key>
-		<string>Multicolor</string>
+		<string>Draw</string>
 	</dict>
 	<dict>
 		<key>icon</key>
 		<string>slider.horizontal.below.square.and.square.filled</string>
 		<key>key</key>
-		<string>variablecolor</string>
+		<string>variable</string>
 		<key>label</key>
-		<string>Variable Color</string>
+		<string>Variable</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>paintpalette</string>
+		<key>key</key>
+		<string>multicolor</string>
+		<key>label</key>
+		<string>Multicolor</string>
 	</dict>
 	<dict>
 		<key>icon</key>

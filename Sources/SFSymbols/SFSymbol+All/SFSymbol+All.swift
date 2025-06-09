@@ -79,6 +79,10 @@ public extension SFSymbol {
         if #available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *){
             symbols.append(contentsOf: SFSymbol.allSymbols18)
         }
+
+        if #available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0, *){
+            symbols.append(contentsOf: SFSymbol.allSymbols26)
+        }
         
         return symbols
     }

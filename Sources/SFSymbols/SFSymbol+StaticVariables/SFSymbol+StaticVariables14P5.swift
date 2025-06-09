@@ -42,7 +42,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterBubbleFill = SFSymbol(
         title: "character.bubble.fill",
-        categories: [.communication],
+        categories: [.communication, .multicolor],
         searchTerms: ["a"],
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -51,7 +51,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterBubbleFillAr = SFSymbol(
         title: "character.bubble.fill.ar",
-        categories: [.communication],
+        categories: [.communication, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -60,7 +60,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterBubbleFillHe = SFSymbol(
         title: "character.bubble.fill.he",
-        categories: [.communication],
+        categories: [.communication, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )

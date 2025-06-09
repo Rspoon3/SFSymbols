@@ -15,7 +15,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let cameraMacroCircle = SFSymbol(
         title: "camera.macro.circle",
-        categories: [.cameraandphotos, .nature],
+        categories: [.cameraandphotos, .nature, .variable],
         searchTerms: ["macro"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )

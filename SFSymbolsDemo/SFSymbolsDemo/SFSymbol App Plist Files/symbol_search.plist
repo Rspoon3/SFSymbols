@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>1.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>1.lane</key>
 	<array>
 		<string>running</string>
@@ -29,6 +33,10 @@
 	<array>
 		<string>search</string>
 	</array>
+	<key>10.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>10.lane</key>
 	<array>
 		<string>running</string>
@@ -43,6 +51,10 @@
 	<array>
 		<string>running</string>
 		<string>sports</string>
+	</array>
+	<key>11.calendar</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>11.lane</key>
 	<array>
@@ -59,6 +71,10 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>12.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>12.lane</key>
 	<array>
 		<string>running</string>
@@ -73,6 +89,38 @@
 	<array>
 		<string>running</string>
 		<string>sports</string>
+	</array>
+	<key>13.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>14.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>15.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>16.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>17.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>18.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>19.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>2.calendar</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>2.lane</key>
 	<array>
@@ -89,6 +137,50 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>20.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>21.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>22.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>23.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>24.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>25.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>26.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>27.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>28.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>29.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>3.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>3.lane</key>
 	<array>
 		<string>running</string>
@@ -103,6 +195,18 @@
 	<array>
 		<string>running</string>
 		<string>sports</string>
+	</array>
+	<key>30.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>31.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>4.calendar</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>4.lane</key>
 	<array>
@@ -119,6 +223,10 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>5.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>5.lane</key>
 	<array>
 		<string>running</string>
@@ -133,6 +241,10 @@
 	<array>
 		<string>running</string>
 		<string>sports</string>
+	</array>
+	<key>6.calendar</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>6.lane</key>
 	<array>
@@ -149,6 +261,10 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>7.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>7.lane</key>
 	<array>
 		<string>running</string>
@@ -164,6 +280,10 @@
 		<string>running</string>
 		<string>sports</string>
 	</array>
+	<key>8.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>8.lane</key>
 	<array>
 		<string>running</string>
@@ -178,6 +298,10 @@
 	<array>
 		<string>running</string>
 		<string>sports</string>
+	</array>
+	<key>9.calendar</key>
+	<array>
+		<string>date</string>
 	</array>
 	<key>9.lane</key>
 	<array>
@@ -276,6 +400,26 @@
 		<string>audio</string>
 	</array>
 	<key>airpods.gen3.chargingcase.wireless.fill</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen4</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen4.chargingcase.wireless</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen4.chargingcase.wireless.fill</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen4.left</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>airpods.gen4.right</key>
 	<array>
 		<string>audio</string>
 	</array>
@@ -661,6 +805,11 @@
 		<string>indent</string>
 		<string>tab</string>
 	</array>
+	<key>arrow.backward.to.line.compact</key>
+	<array>
+		<string>indent</string>
+		<string>tab</string>
+	</array>
 	<key>arrow.clockwise</key>
 	<array>
 		<string>refresh</string>
@@ -735,6 +884,26 @@
 		<string>left</string>
 	</array>
 	<key>arrow.down.circle</key>
+	<array>
+		<string>download</string>
+		<string>downloads</string>
+	</array>
+	<key>arrow.down.circle.badge.pause</key>
+	<array>
+		<string>download</string>
+		<string>downloads</string>
+	</array>
+	<key>arrow.down.circle.badge.pause.fill</key>
+	<array>
+		<string>download</string>
+		<string>downloads</string>
+	</array>
+	<key>arrow.down.circle.badge.xmark</key>
+	<array>
+		<string>download</string>
+		<string>downloads</string>
+	</array>
+	<key>arrow.down.circle.badge.xmark.fill</key>
 	<array>
 		<string>download</string>
 		<string>downloads</string>
@@ -830,6 +999,11 @@
 		<string>right</string>
 	</array>
 	<key>arrow.forward.to.line</key>
+	<array>
+		<string>indent</string>
+		<string>tab</string>
+	</array>
+	<key>arrow.forward.to.line.compact</key>
 	<array>
 		<string>indent</string>
 		<string>tab</string>
@@ -1623,6 +1797,32 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
+	<key>beats.powerbeats.pro.2</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.powerbeats.pro.2.chargingcase</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>beats.powerbeats.pro.2.chargingcase.fill</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>beats.powerbeats.pro.2.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.powerbeats.pro.2.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>beats.powerbeats.pro.chargingcase</key>
 	<array>
 		<string>audio</string>
@@ -1758,6 +1958,16 @@
 		<string>speaker</string>
 	</array>
 	<key>bed.double</key>
+	<array>
+		<string>medical</string>
+		<string>sleep</string>
+	</array>
+	<key>bed.double.badge.checkmark</key>
+	<array>
+		<string>medical</string>
+		<string>sleep</string>
+	</array>
+	<key>bed.double.badge.checkmark.fill</key>
 	<array>
 		<string>medical</string>
 		<string>sleep</string>
@@ -1952,6 +2162,16 @@
 	<key>bolt.heart.fill</key>
 	<array>
 		<string>medical</string>
+	</array>
+	<key>bolt.house</key>
+	<array>
+		<string>home</string>
+		<string>house</string>
+	</array>
+	<key>bolt.house.fill</key>
+	<array>
+		<string>home</string>
+		<string>house</string>
 	</array>
 	<key>bolt.ring.closed</key>
 	<array>
@@ -2160,6 +2380,11 @@
 		<string>date</string>
 		<string>date of birth</string>
 	</array>
+	<key>calendar.badge</key>
+	<array>
+		<string>calendar</string>
+		<string>date</string>
+	</array>
 	<key>calendar.badge.checkmark</key>
 	<array>
 		<string>date</string>
@@ -2182,6 +2407,10 @@
 		<string>date</string>
 		<string>warning</string>
 	</array>
+	<key>calendar.badge.lock</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>calendar.badge.minus</key>
 	<array>
 		<string>date</string>
@@ -2203,6 +2432,54 @@
 	<key>calendar.circle.fill</key>
 	<array>
 		<string>calendar</string>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.leading</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.leading.circle</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.leading.circle.fill</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.left</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.left.circle</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.left.circle.fill</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.right</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.right.circle</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.right.circle.fill</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.trailing</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.trailing.circle</key>
+	<array>
+		<string>date</string>
+	</array>
+	<key>calendar.day.timeline.trailing.circle.fill</key>
+	<array>
 		<string>date</string>
 	</array>
 	<key>camera.badge.ellipsis</key>
@@ -2469,11 +2746,23 @@
 	<array>
 		<string>dictionary</string>
 	</array>
+	<key>character.book.closed.bn</key>
+	<array>
+		<string>dictionary</string>
+	</array>
 	<key>character.book.closed.fill</key>
 	<array>
 		<string>dictionary</string>
 	</array>
 	<key>character.book.closed.fill.ar</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.bn</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.gu</key>
 	<array>
 		<string>dictionary</string>
 	</array>
@@ -2489,7 +2778,47 @@
 	<array>
 		<string>dictionary</string>
 	</array>
+	<key>character.book.closed.fill.kn</key>
+	<array>
+		<string>dictionary</string>
+	</array>
 	<key>character.book.closed.fill.ko</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.ml</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.mni</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.mr</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.or</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.pa</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.sat</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.si</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.ta</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.fill.te</key>
 	<array>
 		<string>dictionary</string>
 	</array>
@@ -2498,6 +2827,10 @@
 		<string>dictionary</string>
 	</array>
 	<key>character.book.closed.fill.zh</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.gu</key>
 	<array>
 		<string>dictionary</string>
 	</array>
@@ -2513,7 +2846,47 @@
 	<array>
 		<string>dictionary</string>
 	</array>
+	<key>character.book.closed.kn</key>
+	<array>
+		<string>dictionary</string>
+	</array>
 	<key>character.book.closed.ko</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.ml</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.mni</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.mr</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.or</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.pa</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.sat</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.si</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.ta</key>
+	<array>
+		<string>dictionary</string>
+	</array>
+	<key>character.book.closed.te</key>
 	<array>
 		<string>dictionary</string>
 	</array>
@@ -2703,6 +3076,10 @@
 	<array>
 		<string>edit</string>
 		<string>vignette</string>
+	</array>
+	<key>circle.grid.2x2.topleft.checkmark.filled</key>
+	<array>
+		<string>select</string>
 	</array>
 	<key>circle.lefthalf.filled.righthalf.striped.horizontal</key>
 	<array>
@@ -3061,6 +3438,10 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>contextualmenu.and.pointer.arrow</key>
+	<array>
+		<string>cursor</string>
+	</array>
 	<key>convertible.side.hill.descent.control</key>
 	<array>
 		<string>DSR</string>
@@ -3122,6 +3503,10 @@
 	<key>cricket.ball.fill</key>
 	<array>
 		<string>sports</string>
+	</array>
+	<key>crop.rotate</key>
+	<array>
+		<string>arrow</string>
 	</array>
 	<key>cross</key>
 	<array>
@@ -3245,10 +3630,6 @@
 		<string>drink</string>
 		<string>tea</string>
 	</array>
-	<key>cursorarrow.rays</key>
-	<array>
-		<string>light</string>
-	</array>
 	<key>danishkronesign</key>
 	<array>
 		<string>currencies</string>
@@ -3328,6 +3709,32 @@
 	<key>delete.right.fill</key>
 	<array>
 		<string>delete</string>
+	</array>
+	<key>desktopcomputer</key>
+	<array>
+		<string>imac</string>
+		<string>mac</string>
+	</array>
+	<key>desktopcomputer.and.arrow.down</key>
+	<array>
+		<string>imac</string>
+	</array>
+	<key>desktopcomputer.and.macbook</key>
+	<array>
+		<string>imac</string>
+		<string>mac</string>
+	</array>
+	<key>desktopcomputer.badge.checkmark</key>
+	<array>
+		<string>imac</string>
+	</array>
+	<key>desktopcomputer.badge.shield.checkmark</key>
+	<array>
+		<string>imac</string>
+	</array>
+	<key>desktopcomputer.trianglebadge.exclamationmark</key>
+	<array>
+		<string>imac</string>
 	</array>
 	<key>display.trianglebadge.exclamationmark</key>
 	<array>
@@ -3504,6 +3911,16 @@
 	<array>
 		<string>copy</string>
 	</array>
+	<key>document.on.trash</key>
+	<array>
+		<string>copy</string>
+		<string>delete</string>
+	</array>
+	<key>document.on.trash.fill</key>
+	<array>
+		<string>copy</string>
+		<string>delete</string>
+	</array>
 	<key>document.viewfinder</key>
 	<array>
 		<string>scan document</string>
@@ -3632,6 +4049,10 @@
 	<array>
 		<string>zoom</string>
 	</array>
+	<key>dot.circle.and.pointer.arrow</key>
+	<array>
+		<string>cursor</string>
+	</array>
 	<key>dot.radiowaves.forward</key>
 	<array>
 		<string>right</string>
@@ -3650,6 +4071,10 @@
 	<key>dot.squareshape.split.2x2</key>
 	<array>
 		<string>grid</string>
+	</array>
+	<key>dots.and.line.vertical.and.pointer.arrow.rectangle</key>
+	<array>
+		<string>cursor</string>
 	</array>
 	<key>drop</key>
 	<array>
@@ -3748,6 +4173,90 @@
 	<array>
 		<string>warning</string>
 	</array>
+	<key>earbud.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbud.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.bone.conduction</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.bone.conduction.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.bone.conduction.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.case</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.case.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.in.ear</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.in.ear.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.in.ear.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.stemless</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.stemless.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>earbuds.stemless.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>earpods</key>
 	<array>
 		<string>audio</string>
@@ -3781,6 +4290,10 @@
 		<string>overflow</string>
 		<string>…</string>
 	</array>
+	<key>ellipsis.calendar</key>
+	<array>
+		<string>date</string>
+	</array>
 	<key>ellipsis.circle</key>
 	<array>
 		<string>action</string>
@@ -3789,6 +4302,14 @@
 		<string>more</string>
 		<string>overflow</string>
 		<string>…</string>
+	</array>
+	<key>ellipsis.circle.badge</key>
+	<array>
+		<string>more</string>
+	</array>
+	<key>ellipsis.circle.badge.fill</key>
+	<array>
+		<string>more</string>
 	</array>
 	<key>ellipsis.circle.fill</key>
 	<array>
@@ -3902,6 +4423,18 @@
 		<string>letter</string>
 		<string>mail</string>
 	</array>
+	<key>envelope.and.hand.raised</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
+	<key>envelope.and.hand.raised.fill</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
 	<key>envelope.badge</key>
 	<array>
 		<string>address</string>
@@ -3914,6 +4447,18 @@
 		<string>letter</string>
 		<string>mail</string>
 	</array>
+	<key>envelope.badge.minus</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
+	<key>envelope.badge.minus.fill</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
 	<key>envelope.badge.person.crop</key>
 	<array>
 		<string>address</string>
@@ -3921,6 +4466,18 @@
 		<string>mail</string>
 	</array>
 	<key>envelope.badge.person.crop.fill</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
+	<key>envelope.badge.plus</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
+	<key>envelope.badge.plus.fill</key>
 	<array>
 		<string>address</string>
 		<string>letter</string>
@@ -3998,6 +4555,18 @@
 		<string>letter</string>
 		<string>mail</string>
 	</array>
+	<key>envelope.stack</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
+	<key>envelope.stack.fill</key>
+	<array>
+		<string>address</string>
+		<string>letter</string>
+		<string>mail</string>
+	</array>
 	<key>equal</key>
 	<array>
 		<string>=</string>
@@ -4025,6 +4594,10 @@
 	<key>eraser.line.dashed.fill</key>
 	<array>
 		<string>erase</string>
+	</array>
+	<key>escape</key>
+	<array>
+		<string>arrow</string>
 	</array>
 	<key>eurosign</key>
 	<array>
@@ -4380,10 +4953,12 @@
 	</array>
 	<key>face.smiling</key>
 	<array>
+		<string>friendly</string>
 		<string>smile</string>
 	</array>
 	<key>face.smiling.inverse</key>
 	<array>
+		<string>friendly</string>
 		<string>smile</string>
 	</array>
 	<key>faceid</key>
@@ -5749,43 +6324,75 @@
 		<string>human</string>
 		<string>person</string>
 	</array>
+	<key>figure.seated.side.left.air.distribution.indirect</key>
+	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>figure.seated.side.left.air.distribution.lower</key>
 	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.left.air.distribution.lower.angled.and.upper.angled</key>
+	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.middle.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.middle.and.lower.angled</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.upper</key>
 	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.left.air.distribution.upper.and.middle.and.lower</key>
+	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.left.air.distribution.upper.angled.and.dottedline.and.lower.angled</key>
+	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.upper.angled.and.lower.angled</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.upper.angled.and.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.air.distribution.upper.angled.and.middle.and.lower.angled</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
@@ -5831,36 +6438,43 @@
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.middle.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.upper</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.upper.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.upper.and.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.left.windshield.front.and.heat.waves.air.distribution.upper.and.middle.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
@@ -5869,43 +6483,75 @@
 		<string>human</string>
 		<string>person</string>
 	</array>
+	<key>figure.seated.side.right.air.distribution.indirect</key>
+	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>figure.seated.side.right.air.distribution.lower</key>
 	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.right.air.distribution.lower.angled.and.upper.angled</key>
+	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.middle.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.middle.and.lower.angled</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.upper</key>
 	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.right.air.distribution.upper.and.middle.and.lower</key>
+	<array>
+		<string>arrow</string>
+		<string>human</string>
+		<string>person</string>
+	</array>
+	<key>figure.seated.side.right.air.distribution.upper.angled.and.dottedline.and.lower.angled</key>
+	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.upper.angled.and.lower.angled</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.upper.angled.and.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.air.distribution.upper.angled.and.middle.and.lower.angled</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
@@ -5934,6 +6580,11 @@
 		<string>human</string>
 		<string>person</string>
 	</array>
+	<key>figure.seated.side.right.child.lap</key>
+	<array>
+		<string>human</string>
+		<string>person</string>
+	</array>
 	<key>figure.seated.side.right.fan</key>
 	<array>
 		<string>human</string>
@@ -5951,36 +6602,43 @@
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.middle.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.upper</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.upper.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.upper.and.middle</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
 	<key>figure.seated.side.right.windshield.front.and.heat.waves.air.distribution.upper.and.middle.and.lower</key>
 	<array>
+		<string>arrow</string>
 		<string>human</string>
 		<string>person</string>
 	</array>
@@ -6391,6 +7049,27 @@
 		<string>sports</string>
 		<string>walking</string>
 	</array>
+	<key>figure.walk.suitcase.rolling</key>
+	<array>
+		<string>gate</string>
+		<string>human</string>
+		<string>person</string>
+		<string>walking</string>
+	</array>
+	<key>figure.walk.suitcase.rolling.circle</key>
+	<array>
+		<string>gate</string>
+		<string>human</string>
+		<string>person</string>
+		<string>walking</string>
+	</array>
+	<key>figure.walk.suitcase.rolling.circle.fill</key>
+	<array>
+		<string>gate</string>
+		<string>human</string>
+		<string>person</string>
+		<string>walking</string>
+	</array>
 	<key>figure.walk.treadmill</key>
 	<array>
 		<string>human</string>
@@ -6516,6 +7195,14 @@
 		<string>human</string>
 		<string>person</string>
 		<string>sports</string>
+	</array>
+	<key>filemenu.and.pointer.arrow</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>filemenu.and.pointer.arrow.rtl</key>
+	<array>
+		<string>cursor</string>
 	</array>
 	<key>firewall</key>
 	<array>
@@ -7272,6 +7959,24 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
+	<key>headphones.dots</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>headphones.over.ear</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>headphones.slash</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>headset</key>
 	<array>
 		<string>concierge</string>
@@ -7646,6 +8351,30 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
+	<key>homepod.badge.checkmark</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.badge.checkmark.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.badge.checkmark.fill.rtl</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.badge.checkmark.rtl</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>homepod.badge.minus</key>
 	<array>
 		<string>audio</string>
@@ -7725,6 +8454,30 @@
 		<string>speaker</string>
 	</array>
 	<key>homepod.mini.arrow.forward.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.mini.badge.checkmark</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.mini.badge.checkmark.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.mini.badge.checkmark.fill.rtl</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>homepod.mini.badge.checkmark.rtl</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
@@ -8010,6 +8763,20 @@
 		<string>people</string>
 		<string>screen sharing</string>
 	</array>
+	<key>inset.filled.rectangle.and.person.filled.circle</key>
+	<array>
+		<string>people</string>
+		<string>screen sharing</string>
+	</array>
+	<key>inset.filled.rectangle.and.person.filled.circle.fill</key>
+	<array>
+		<string>people</string>
+		<string>screen sharing</string>
+	</array>
+	<key>inset.filled.rectangle.and.pointer.arrow</key>
+	<array>
+		<string>cursor</string>
+	</array>
 	<key>ipad.landscape.and.iphone</key>
 	<array>
 		<string>ipad</string>
@@ -8091,6 +8858,16 @@
 	</array>
 	<key>key.2.on.ring.fill</key>
 	<array>
+		<string>security</string>
+	</array>
+	<key>key.circle</key>
+	<array>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>key.circle.fill</key>
+	<array>
+		<string>password</string>
 		<string>security</string>
 	</array>
 	<key>key.fill</key>
@@ -8545,6 +9322,18 @@
 		<string>password</string>
 		<string>security</string>
 	</array>
+	<key>lock.badge.checkmark</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.badge.checkmark.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
 	<key>lock.badge.clock</key>
 	<array>
 		<string>padlock</string>
@@ -8552,6 +9341,18 @@
 		<string>security</string>
 	</array>
 	<key>lock.badge.clock.fill</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.badge.xmark</key>
+	<array>
+		<string>padlock</string>
+		<string>password</string>
+		<string>security</string>
+	</array>
+	<key>lock.badge.xmark.fill</key>
 	<array>
 		<string>padlock</string>
 		<string>password</string>
@@ -8577,6 +9378,10 @@
 		<string>password</string>
 		<string>security</string>
 	</array>
+	<key>lock.desktopcomputer</key>
+	<array>
+		<string>imac</string>
+	</array>
 	<key>lock.display</key>
 	<array>
 		<string>padlock</string>
@@ -8601,6 +9406,16 @@
 		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
+	</array>
+	<key>lock.heart</key>
+	<array>
+		<string>medical</string>
+		<string>privacy</string>
+	</array>
+	<key>lock.heart.fill</key>
+	<array>
+		<string>medical</string>
+		<string>privacy</string>
 	</array>
 	<key>lock.icloud</key>
 	<array>
@@ -8644,6 +9459,10 @@
 		<string>padlock</string>
 		<string>password</string>
 		<string>security</string>
+	</array>
+	<key>lock.open.desktopcomputer</key>
+	<array>
+		<string>imac</string>
 	</array>
 	<key>lock.open.display</key>
 	<array>
@@ -8813,6 +9632,62 @@
 		<string>security</string>
 		<string>warning</string>
 	</array>
+	<key>macmini</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.badge.checkmark</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.badge.checkmark.fill</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.fill</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.gen2</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.gen2.fill</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.gen3</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macmini.gen3.fill</key>
+	<array>
+		<string>mac mini</string>
+	</array>
+	<key>macstudio</key>
+	<array>
+		<string>mac studio</string>
+	</array>
+	<key>macstudio.badge.checkmark</key>
+	<array>
+		<string>mac studio</string>
+	</array>
+	<key>macstudio.badge.checkmark.fill</key>
+	<array>
+		<string>mac studio</string>
+	</array>
+	<key>macstudio.fill</key>
+	<array>
+		<string>mac studio</string>
+	</array>
+	<key>macwindow.and.pointer.arrow</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>macwindow.and.pointer.arrow.rtl</key>
+	<array>
+		<string>cursor</string>
+	</array>
 	<key>macwindow.badge.plus</key>
 	<array>
 		<string>+</string>
@@ -8978,6 +9853,11 @@
 	<key>memories.badge.plus</key>
 	<array>
 		<string>add</string>
+		<string>arrow</string>
+		<string>play</string>
+	</array>
+	<key>memories.slash</key>
+	<array>
 		<string>arrow</string>
 		<string>play</string>
 	</array>
@@ -9262,6 +10142,46 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>moonrise</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonrise.circle</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonrise.circle.fill</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonrise.fill</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonset</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonset.circle</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonset.circle.fill</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
+	<key>moonset.fill</key>
+	<array>
+		<string>arrow</string>
+		<string>weather</string>
+	</array>
 	<key>mountain.2</key>
 	<array>
 		<string>campground</string>
@@ -9340,6 +10260,10 @@
 	<array>
 		<string>microphone</string>
 	</array>
+	<key>music.note</key>
+	<array>
+		<string>media</string>
+	</array>
 	<key>music.note.house</key>
 	<array>
 		<string>home</string>
@@ -9349,6 +10273,26 @@
 	<array>
 		<string>home</string>
 		<string>house</string>
+	</array>
+	<key>music.note.list</key>
+	<array>
+		<string>media</string>
+	</array>
+	<key>music.note.slash</key>
+	<array>
+		<string>media</string>
+	</array>
+	<key>music.note.square.stack</key>
+	<array>
+		<string>media</string>
+	</array>
+	<key>music.note.square.stack.fill</key>
+	<array>
+		<string>media</string>
+	</array>
+	<key>music.quarternote.3</key>
+	<array>
+		<string>media</string>
 	</array>
 	<key>nairasign</key>
 	<array>
@@ -9430,12 +10374,33 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
-	<key>note.text.badge.plus</key>
+	<key>nosign</key>
 	<array>
-		<string>+</string>
-		<string>add</string>
-		<string>create</string>
-		<string>new</string>
+		<string>block</string>
+		<string>crossed out</string>
+		<string>restricted</string>
+		<string>slash</string>
+	</array>
+	<key>nosign.app</key>
+	<array>
+		<string>block</string>
+		<string>crossed out</string>
+		<string>restricted</string>
+		<string>slash</string>
+	</array>
+	<key>nosign.app.fill</key>
+	<array>
+		<string>block</string>
+		<string>crossed out</string>
+		<string>restricted</string>
+		<string>slash</string>
+	</array>
+	<key>nosign.badge.clock</key>
+	<array>
+		<string>block</string>
+		<string>crossed out</string>
+		<string>restricted</string>
+		<string>slash</string>
 	</array>
 	<key>notequal</key>
 	<array>
@@ -9712,6 +10677,16 @@
 		<string>people</string>
 		<string>shared</string>
 	</array>
+	<key>person.2.badge</key>
+	<array>
+		<string>people</string>
+		<string>shared</string>
+	</array>
+	<key>person.2.badge.fill</key>
+	<array>
+		<string>people</string>
+		<string>shared</string>
+	</array>
 	<key>person.2.badge.gearshape</key>
 	<array>
 		<string>people</string>
@@ -9929,6 +10904,16 @@
 		<string>people</string>
 		<string>sculpture</string>
 	</array>
+	<key>person.checkmark.and.xmark</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.checkmark.and.xmark.rtl</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
 	<key>person.circle</key>
 	<array>
 		<string>people</string>
@@ -9987,6 +10972,20 @@
 		<string>contact</string>
 		<string>people</string>
 		<string>time</string>
+		<string>user</string>
+	</array>
+	<key>person.crop.circle.badge.ellipsis</key>
+	<array>
+		<string>account</string>
+		<string>contact</string>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.crop.circle.badge.ellipsis.fill</key>
+	<array>
+		<string>account</string>
+		<string>contact</string>
+		<string>people</string>
 		<string>user</string>
 	</array>
 	<key>person.crop.circle.badge.exclamationmark</key>
@@ -10229,6 +11228,16 @@
 		<string>people</string>
 		<string>user</string>
 	</array>
+	<key>person.fill.checkmark.and.xmark</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.fill.checkmark.and.xmark.rtl</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
 	<key>person.fill.checkmark.rtl</key>
 	<array>
 		<string>people</string>
@@ -10310,6 +11319,26 @@
 		<string>user</string>
 	</array>
 	<key>person.slash.fill</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.spatialaudio.3d.fill</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.spatialaudio.fill</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.spatialaudio.stereo.3d.fill</key>
+	<array>
+		<string>people</string>
+		<string>user</string>
+	</array>
+	<key>person.spatialaudio.stereo.fill</key>
 	<array>
 		<string>people</string>
 		<string>user</string>
@@ -10449,6 +11478,22 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>pet.carrier</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>pet.carrier.circle</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>pet.carrier.circle.fill</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>pet.carrier.fill</key>
+	<array>
+		<string>luggage</string>
+	</array>
 	<key>phone.badge.plus</key>
 	<array>
 		<string>add</string>
@@ -10557,6 +11602,26 @@
 		<string>place</string>
 		<string>sun</string>
 	</array>
+	<key>photo.badge.magnifyingglass</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.magnifyingglass.fill</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
 	<key>photo.badge.plus</key>
 	<array>
 		<string>add</string>
@@ -10571,6 +11636,26 @@
 	<key>photo.badge.plus.fill</key>
 	<array>
 		<string>add</string>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.shield.exclamationmark</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.badge.shield.exclamationmark.fill</key>
+	<array>
 		<string>environment</string>
 		<string>image</string>
 		<string>mountain</string>
@@ -10669,6 +11754,26 @@
 		<string>place</string>
 		<string>sun</string>
 	</array>
+	<key>photo.trianglebadge.exclamationmark</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
+	<key>photo.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>environment</string>
+		<string>image</string>
+		<string>mountain</string>
+		<string>photograph</string>
+		<string>picture</string>
+		<string>place</string>
+		<string>sun</string>
+	</array>
 	<key>photo.tv</key>
 	<array>
 		<string>environment</string>
@@ -10734,6 +11839,10 @@
 	<key>pin.slash.fill</key>
 	<array>
 		<string>remove</string>
+	</array>
+	<key>play.desktopcomputer</key>
+	<array>
+		<string>imac</string>
 	</array>
 	<key>play.house</key>
 	<array>
@@ -10907,10 +12016,12 @@
 	<key>plus.square.fill.on.square.fill</key>
 	<array>
 		<string>add</string>
+		<string>duplicate</string>
 	</array>
 	<key>plus.square.on.square</key>
 	<array>
 		<string>add</string>
+		<string>duplicate</string>
 	</array>
 	<key>plus.viewfinder</key>
 	<array>
@@ -11056,6 +12167,59 @@
 		<string>path</string>
 		<string>switchback</string>
 		<string>trail</string>
+	</array>
+	<key>pointer.arrow</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.and.square.on.square.dashed</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.click</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.click.2</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.click.badge.clock</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.motionlines</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.motionlines.click</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.rays</key>
+	<array>
+		<string>cursor</string>
+		<string>light</string>
+	</array>
+	<key>pointer.arrow.slash</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.slash.square</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.slash.square.fill</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.square</key>
+	<array>
+		<string>cursor</string>
+	</array>
+	<key>pointer.arrow.square.fill</key>
+	<array>
+		<string>cursor</string>
 	</array>
 	<key>polishzlotysign</key>
 	<array>
@@ -11669,6 +12833,10 @@
 		<string>touch</string>
 		<string>trackpad</string>
 	</array>
+	<key>rectangle.landscape.rotate</key>
+	<array>
+		<string>arrow</string>
+	</array>
 	<key>rectangle.on.rectangle.dashed</key>
 	<array>
 		<string>digital rights management</string>
@@ -11681,6 +12849,10 @@
 	<key>rectangle.on.rectangle.slash.fill</key>
 	<array>
 		<string>remove</string>
+	</array>
+	<key>rectangle.portrait.rotate</key>
+	<array>
+		<string>arrow</string>
 	</array>
 	<key>rectangle.slash</key>
 	<array>
@@ -11734,6 +12906,14 @@
 	<key>rectangle.stack.fill.badge.plus</key>
 	<array>
 		<string>add</string>
+		<string>album</string>
+	</array>
+	<key>rectangle.stack.slash</key>
+	<array>
+		<string>album</string>
+	</array>
+	<key>rectangle.stack.slash.fill</key>
+	<array>
 		<string>album</string>
 	</array>
 	<key>repeat</key>
@@ -11984,6 +13164,10 @@
 		<string>select</string>
 		<string>target</string>
 	</array>
+	<key>selection.pin.in.out</key>
+	<array>
+		<string>trim</string>
+	</array>
 	<key>sensor.tag.radiowaves.forward</key>
 	<array>
 		<string>findable</string>
@@ -11993,6 +13177,14 @@
 	<array>
 		<string>findable</string>
 		<string>location</string>
+	</array>
+	<key>service.dog</key>
+	<array>
+		<string>animals</string>
+	</array>
+	<key>service.dog.fill</key>
+	<array>
+		<string>animals</string>
 	</array>
 	<key>sharedwithyou</key>
 	<array>
@@ -12241,6 +13433,10 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>siri</key>
+	<array>
+		<string>siri</string>
 	</array>
 	<key>skateboard</key>
 	<array>
@@ -12512,6 +13708,18 @@
 	<array>
 		<string>volume</string>
 	</array>
+	<key>speaker.trianglebadge.exclamationmark</key>
+	<array>
+		<string>!</string>
+		<string>volume</string>
+		<string>warning</string>
+	</array>
+	<key>speaker.trianglebadge.exclamationmark.fill</key>
+	<array>
+		<string>!</string>
+		<string>volume</string>
+		<string>warning</string>
+	</array>
 	<key>speaker.wave.1</key>
 	<array>
 		<string>volume</string>
@@ -12556,6 +13764,11 @@
 	<array>
 		<string>faucet</string>
 	</array>
+	<key>spoon.serving</key>
+	<array>
+		<string>drink</string>
+		<string>food</string>
+	</array>
 	<key>sportscourt</key>
 	<array>
 		<string>sports</string>
@@ -12586,6 +13799,18 @@
 		<string>import</string>
 		<string>save</string>
 	</array>
+	<key>square.and.arrow.down.badge.checkmark</key>
+	<array>
+		<string>download</string>
+		<string>import</string>
+		<string>save</string>
+	</array>
+	<key>square.and.arrow.down.badge.checkmark.fill</key>
+	<array>
+		<string>download</string>
+		<string>import</string>
+		<string>save</string>
+	</array>
 	<key>square.and.arrow.down.badge.clock</key>
 	<array>
 		<string>download</string>
@@ -12593,6 +13818,18 @@
 		<string>save</string>
 	</array>
 	<key>square.and.arrow.down.badge.clock.fill</key>
+	<array>
+		<string>download</string>
+		<string>import</string>
+		<string>save</string>
+	</array>
+	<key>square.and.arrow.down.badge.xmark</key>
+	<array>
+		<string>download</string>
+		<string>import</string>
+		<string>save</string>
+	</array>
+	<key>square.and.arrow.down.badge.xmark.fill</key>
 	<array>
 		<string>download</string>
 		<string>import</string>
@@ -12617,6 +13854,20 @@
 		<string>save</string>
 	</array>
 	<key>square.and.arrow.up</key>
+	<array>
+		<string>export</string>
+		<string>share</string>
+		<string>sharrow</string>
+		<string>upload</string>
+	</array>
+	<key>square.and.arrow.up.badge.checkmark</key>
+	<array>
+		<string>export</string>
+		<string>share</string>
+		<string>sharrow</string>
+		<string>upload</string>
+	</array>
+	<key>square.and.arrow.up.badge.checkmark.fill</key>
 	<array>
 		<string>export</string>
 		<string>share</string>
@@ -12809,7 +14060,7 @@
 	<array>
 		<string>grid</string>
 	</array>
-	<key>squareshape.split.2x2.dotted</key>
+	<key>squareshape.split.2x2.dotted.inside</key>
 	<array>
 		<string>grid</string>
 	</array>
@@ -12938,6 +14189,46 @@
 		<string>luggage</string>
 	</array>
 	<key>suitcase.rolling</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.film</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.film.circle</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.film.circle.fill</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.film.fill</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.suitcase</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.suitcase.circle</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.suitcase.circle.fill</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.and.suitcase.fill</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.circle</key>
+	<array>
+		<string>luggage</string>
+	</array>
+	<key>suitcase.rolling.circle.fill</key>
 	<array>
 		<string>luggage</string>
 	</array>
@@ -13071,26 +14362,32 @@
 	</array>
 	<key>sunrise</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>sunrise.circle</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>sunrise.circle.fill</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>sunrise.fill</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>sunset</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>sunset.circle</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>sunset.circle.fill</key>
@@ -13099,6 +14396,7 @@
 	</array>
 	<key>sunset.fill</key>
 	<array>
+		<string>arrow</string>
 		<string>weather</string>
 	</array>
 	<key>surfboard</key>
@@ -13403,6 +14701,7 @@
 	</array>
 	<key>text.append</key>
 	<array>
+		<string>arrow</string>
 		<string>end</string>
 		<string>later</string>
 		<string>play later</string>
@@ -13465,6 +14764,7 @@
 	</array>
 	<key>text.insert</key>
 	<array>
+		<string>arrow</string>
 		<string>beginning</string>
 		<string>next</string>
 		<string>play next</string>
@@ -13477,9 +14777,24 @@
 	<array>
 		<string>search</string>
 	</array>
+	<key>text.pad.header.badge.plus</key>
+	<array>
+		<string>+</string>
+		<string>add</string>
+		<string>create</string>
+		<string>new</string>
+	</array>
+	<key>text.page</key>
+	<array>
+		<string>reader</string>
+	</array>
 	<key>text.page.badge.magnifyingglass</key>
 	<array>
 		<string>search</string>
+	</array>
+	<key>text.page.fill</key>
+	<array>
+		<string>reader</string>
 	</array>
 	<key>text.rectangle.page</key>
 	<array>
@@ -13587,6 +14902,14 @@
 	<key>thermometer.variable.and.figure.circle.fill</key>
 	<array>
 		<string>feels like</string>
+		<string>weather</string>
+	</array>
+	<key>thermometer.variable.badge.clock</key>
+	<array>
+		<string>weather</string>
+	</array>
+	<key>thermometer.variable.badge.play</key>
+	<array>
 		<string>weather</string>
 	</array>
 	<key>timeline.selection</key>
@@ -13755,6 +15078,16 @@
 	</array>
 	<key>tray.and.arrow.up.fill</key>
 	<array>
+		<string>mail</string>
+	</array>
+	<key>tray.badge</key>
+	<array>
+		<string>inbox</string>
+		<string>mail</string>
+	</array>
+	<key>tray.badge.fill</key>
+	<array>
+		<string>inbox</string>
 		<string>mail</string>
 	</array>
 	<key>tray.circle</key>
@@ -14068,6 +15401,22 @@
 	<array>
 		<string>sports</string>
 	</array>
+	<key>wand.and.rays</key>
+	<array>
+		<string>magic</string>
+	</array>
+	<key>wand.and.rays.inverse</key>
+	<array>
+		<string>magic</string>
+	</array>
+	<key>wand.and.sparkles</key>
+	<array>
+		<string>magic</string>
+	</array>
+	<key>wand.and.sparkles.inverse</key>
+	<array>
+		<string>magic</string>
+	</array>
 	<key>water.waves</key>
 	<array>
 		<string>dive</string>
@@ -14160,6 +15509,7 @@
 	<key>waveform</key>
 	<array>
 		<string>audio</string>
+		<string>high</string>
 		<string>record</string>
 		<string>speech</string>
 		<string>voice memo</string>
@@ -14184,13 +15534,27 @@
 	<key>waveform.circle</key>
 	<array>
 		<string>audio</string>
+		<string>high</string>
 		<string>record</string>
 		<string>speech</string>
+		<string>voice memo</string>
 	</array>
 	<key>waveform.circle.fill</key>
 	<array>
 		<string>audio</string>
+		<string>high</string>
 		<string>record</string>
+		<string>speech</string>
+		<string>voice memo</string>
+	</array>
+	<key>waveform.low</key>
+	<array>
+		<string>audio</string>
+		<string>speech</string>
+	</array>
+	<key>waveform.mid</key>
+	<array>
+		<string>audio</string>
 		<string>speech</string>
 	</array>
 	<key>waveform.path.badge.minus</key>
@@ -14212,6 +15576,22 @@
 	<key>waveform.path.ecg.rectangle.fill</key>
 	<array>
 		<string>medical</string>
+	</array>
+	<key>waveform.path.ecg.text.clipboard</key>
+	<array>
+		<string>notes</string>
+	</array>
+	<key>waveform.path.ecg.text.clipboard.fill</key>
+	<array>
+		<string>notes</string>
+	</array>
+	<key>waveform.path.ecg.text.clipboard.fill.rtl</key>
+	<array>
+		<string>notes</string>
+	</array>
+	<key>waveform.path.ecg.text.clipboard.rtl</key>
+	<array>
+		<string>notes</string>
 	</array>
 	<key>widget.extralarge</key>
 	<array>
@@ -14377,6 +15757,14 @@
 		<string>clear</string>
 		<string>close</string>
 		<string>stop</string>
+		<string>x</string>
+	</array>
+	<key>xmark.circle.badge.airplane</key>
+	<array>
+		<string>x</string>
+	</array>
+	<key>xmark.circle.badge.airplane.fill</key>
+	<array>
 		<string>x</string>
 	</array>
 	<key>xmark.circle.fill</key>

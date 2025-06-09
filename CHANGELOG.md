@@ -1,4 +1,9 @@
 # Change Log
+## Version 2.7 (6-9-2025)
+### Additions
+- Added symbols for iOS 18.0, 18.1, 18.2, 18.4, 18.5 and their equivalent version on other platforms
+- Added symbols from [SFSymbols Version 7.0 (109)](https://developer.apple.com/sf-symbols/) for iOS 26.0 and their equivalent version on other platforms
+
 ## Version 2.6 (11-6-2024)
 ### Additions
 - Added symbols for iOS 17.4, 17.6, 18.0 and their equivalent version on other platforms.
