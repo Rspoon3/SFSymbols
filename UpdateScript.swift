@@ -111,11 +111,24 @@ fileprivate struct NameAvailabilityResults: Codable {
 
 // MARK: - Outputs
 
-private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
-    // Format the date
+private func createHeader(title: String) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "M/d/yy"
     let dateString = dateFormatter.string(from: .now)
+    
+    return """
+    //
+    //  \(title).swift
+    //
+    //  Generated Automatically on \(dateString)
+    //
+
+    import Foundation
+    """
+}
+
+private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
+
     
     
     let staticVars = categories.map { category in
@@ -129,13 +142,7 @@ private func createSFCategoryFile(for categories: [SFCategory], plistDict: [Stri
     }.joined(separator: ",\n")
 
     let fileContent = """
-    //
-    //  SFCategory.swift
-    //
-    //  Generated Automatically on \(dateString)
-    //
-
-    import Foundation
+    \(createHeader(title: "SFCategory"))
 
     public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
         public let icon: String
@@ -179,6 +186,7 @@ private func createSFCategoryFile(for categories: [SFCategory], plistDict: [Stri
 private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
     let newestSymbol = symbols.first!
     let header = """
+    \(createHeader(title: "SFSymbol+StaticVariables\(fileName)"))
     import Foundation
 
     @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), visionOS \(newestSymbol.releaseInfo.visionOS), *)
@@ -221,6 +229,7 @@ private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, pli
 
     let newestSymbol = symbols.first!
     let header = """
+    \(createHeader(title: "SFSymbol+All\(fileName).swift"))
     import Foundation
 
     @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), visionOS \(newestSymbol.releaseInfo.visionOS), *)
