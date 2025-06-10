@@ -146,7 +146,12 @@ private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plis
     staticVars.insert(contentsOf: header, at: i)
     staticVars.append("\n}")
 
-    let url = outputURL.appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
+    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+        .appendingPathComponent("Sources", isDirectory: true)
+        .appendingPathComponent("SFSymbols", isDirectory: true)
+        .appendingPathComponent("SFSymbol+StaticVariables", isDirectory: true)
+        .appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
+    
     try staticVars.write(to: url, atomically: true, encoding: .utf8)
 }
 
@@ -180,8 +185,13 @@ private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, pli
     let i = titles.index(titles.startIndex, offsetBy: 0)
     array.insert(contentsOf: header, at: i)
     array.append("\n   }\n}")
+    
+    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+        .appendingPathComponent("Sources", isDirectory: true)
+        .appendingPathComponent("SFSymbols", isDirectory: true)
+        .appendingPathComponent("SFSymbol+All", isDirectory: true)
+        .appendingPathComponent("SFSymbol+All\(fileName).swift")
 
-    let url = outputURL.appendingPathComponent("SFSymbol+All\(fileName).swift")
     try array.write(to: url, atomically: true, encoding: .utf8)
 }
 
