@@ -1,3 +1,10 @@
+//
+//  SFSymbol+All18.swift.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
@@ -1278,8 +1285,8 @@ public extension SFSymbol {
          .questionmarkTextPageFillRtl,
          .questionmarkTextPageRtl,
          .rectangleExpandDiagonal,
-         .rectangleGrid3X3,
-         .rectangleGrid3X3Fill,
+         .rectangleGrid3x3,
+         .rectangleGrid3x3Fill,
          .rectangleOnRectangleDashed,
          .rectanglePatternCheckered,
          .richtextPage,
@@ -1346,7 +1353,7 @@ public extension SFSymbol {
          .squareAndArrowDownBadgeClock,
          .squareAndArrowDownBadgeClockFill,
          .squareAndArrowUpTrianglebadgeExclamationmarkFill,
-         .squareGrid3X3SquareBadgeEllipsis,
+         .squareGrid3x3SquareBadgeEllipsis,
          .squareroot,
          .steeringwheelAndHands,
          .steeringwheelArrowTriangleheadCounterclockwiseAndClockwise,

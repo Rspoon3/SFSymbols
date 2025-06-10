@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables15P4.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5, visionOS 1.0, *)
@@ -6,7 +13,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let cameraMacro = SFSymbol(
         title: "camera.macro",
-        categories: [.cameraandphotos, .nature],
+        categories: [.cameraAndPhotos, .nature],
         searchTerms: ["macro"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
@@ -15,7 +22,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let cameraMacroCircle = SFSymbol(
         title: "camera.macro.circle",
-        categories: [.cameraandphotos, .nature],
+        categories: [.cameraAndPhotos, .nature, .variable],
         searchTerms: ["macro"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
@@ -24,7 +31,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let cameraMacroCircleFill = SFSymbol(
         title: "camera.macro.circle.fill",
-        categories: [.cameraandphotos, .multicolor, .nature],
+        categories: [.cameraAndPhotos, .multicolor, .nature],
         searchTerms: ["macro"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
@@ -42,7 +49,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let keyViewfinder = SFSymbol(
         title: "key.viewfinder",
-        categories: [.objectsandtools, .privacyandsecurity],
+        categories: [.objectsAndTools, .privacyAndSecurity],
         searchTerms: ["password", "security"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
@@ -51,7 +58,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let personBadgeKey = SFSymbol(
         title: "person.badge.key",
-        categories: [.human, .objectsandtools],
+        categories: [.human, .objectsAndTools],
         searchTerms: ["passkey", "password", "people", "privacyandsecurity", "user"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
@@ -60,7 +67,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     static let personBadgeKeyFill = SFSymbol(
         title: "person.badge.key.fill",
-        categories: [.human, .objectsandtools],
+        categories: [.human, .objectsAndTools],
         searchTerms: ["passkey", "password", "people", "privacyandsecurity", "user"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )

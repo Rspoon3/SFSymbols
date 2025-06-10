@@ -1,3 +1,10 @@
+//
+//  SFSymbol+All16.swift.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
@@ -811,7 +818,7 @@ public extension SFSymbol {
          .squareTopthirdInsetFilled,
          .squareTrailingthirdInsetFilled,
          .squaresLeadingRectangle,
-         .squareshapeDottedSplit2X2,
+         .squareshapeDottedSplit2x2,
          .stairs,
          .starSquareOnSquare,
          .starSquareOnSquareFill,
