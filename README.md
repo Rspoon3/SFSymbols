@@ -121,9 +121,6 @@ Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highl
 If you have any suggestions or ideas for improving the project, please feel free to propose them. You can either create a pull request or open an issue for this project.
 
 ## Updating The Symbols
-In order to update the symbols please follow the steps below. The `UpdateScript` will automatically handle updating existing files in place.
-
-## ✅ Updating the Symbols
 
 To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will automatically handle updating all relevant files in place.
 
