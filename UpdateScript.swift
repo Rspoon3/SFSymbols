@@ -23,13 +23,6 @@ fileprivate let inputURL: URL = {
     return url
 }()
 
-fileprivate let outputURL: URL = {
-    let path = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
-        .appendingPathComponent("Results", isDirectory: true)
-    try? FileManager.default.createDirectory(at: path, withIntermediateDirectories: true)
-    return path
-}()
-
 // MARK: - Models
 
 fileprivate struct SFCategory: Codable {
@@ -119,16 +112,68 @@ fileprivate struct NameAvailabilityResults: Codable {
 // MARK: - Outputs
 
 private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
+    // Format the date
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "M/d/yy"
+    let dateString = dateFormatter.string(from: .now)
+    
+    
     let staticVars = categories.map { category in
         let plistTitle = plistDict[category.title]!
-        
-        return """
-        public static let \(plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)")
-        """
+        return "    public static let \(plistTitle.lowercased()) = SFCategory(icon: \"\(category.icon)\", title: \"\(category.title)\")"
     }.joined(separator: "\n")
+
+    let allCases = categories.map {
+        let plistTitle = plistDict[$0.title]!
+        return "            .\(plistTitle.lowercased())"
+    }.joined(separator: ",\n")
+
+    let fileContent = """
+    //
+    //  SFCategory.swift
+    //
+    //  Generated Automatically on \(dateString)
+    //
+
+    import Foundation
+
+    public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
+        public let icon: String
+        public let title: String
+        public var id: String { title }
+
+        public var symbols: [SFSymbol] {
+            if self == .all {
+                return SFSymbol.allSymbols
+            } else {
+                return SFSymbol.allSymbols.filter { $0.categories?.contains(self) ?? false }
+            }
+        }
+
+        enum CodingKeys: String, CodingKey {
+            case icon
+            case title = "label"
+        }
+
+        // MARK: - Static Data
     
-    let url = outputURL.appendingPathComponent("SFCategory.swift")
-    try staticVars.write(to: url, atomically: true, encoding: .utf8)
+    \(staticVars)
+
+        public static var allCategories: [SFCategory] {
+            return [
+    \(allCases)
+            ]
+        }
+    }
+    """
+
+    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+        .appendingPathComponent("Sources", isDirectory: true)
+        .appendingPathComponent("SFSymbols", isDirectory: true)
+        .appendingPathComponent("Models", isDirectory: true)
+        .appendingPathComponent("SFCategory.swift")
+    
+    try fileContent.write(to: url, atomically: true, encoding: .utf8)
 }
 
 private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
