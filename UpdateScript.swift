@@ -112,17 +112,14 @@ fileprivate struct NameAvailabilityResults: Codable {
 // MARK: - Outputs
 
 private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
-
-    
-    
     let staticVars = categories.map { category in
-        let plistTitle = plistDict[category.title]!
-        return "    public static let \(plistTitle.lowercased()) = SFCategory(icon: \"\(category.icon)\", title: \"\(category.title)\")"
+        let camelCased = convertTitleToCamelCased(string: category.title, modifyKeywords: false)
+        return "    public static let \(camelCased) = SFCategory(icon: \"\(category.icon)\", title: \"\(category.title)\")"
     }.joined(separator: "\n")
 
     let allCases = categories.map {
-        let plistTitle = plistDict[$0.title]!
-        return "            .\(plistTitle.lowercased())"
+        let camelCased = convertTitleToCamelCased(string: $0.title, modifyKeywords: false)
+        return "            .\(camelCased)"
     }.joined(separator: ",\n")
 
     let fileContent = """
@@ -295,23 +292,34 @@ private func createHeader(title: String) -> String {
 }
 
 private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> String {
-    var camelCased = string
-        .split(separator: ".")
-        .map { String($0) }
-        .enumerated()
-        .map { $0.offset > 0 ? $0.element.capitalized : $0.element.lowercased() }
-        .joined()
+    // Replace special symbols with spaces or words
+    var cleaned = string
+        .replacingOccurrences(of: "&", with: "and")
+        .replacingOccurrences(of: "’", with: "")
+        .replacingOccurrences(of: "'", with: "")
+        .replacingOccurrences(of: ".", with: " ")
+        .replacingOccurrences(of: "-", with: " ")
+        .replacingOccurrences(of: "_", with: " ")
 
+    // Capitalize each word and remove spaces
+    cleaned = cleaned.capitalized.replacingOccurrences(of: " ", with: "")
+
+    // Lowercase the first letter
+    if let first = cleaned.first {
+        cleaned = first.lowercased() + cleaned.dropFirst()
+    }
+
+    // Prevent invalid Swift identifiers
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     let keywords = ["return", "repeat", "case"]
 
-    if numbers.contains(String(camelCased.first!)) {
-        camelCased = "_\(camelCased)"
-    } else if modifyKeywords && keywords.contains(camelCased) {
-        camelCased = "`\(camelCased)`"
+    if let first = cleaned.first, numbers.contains(String(first)) {
+        cleaned = "_\(cleaned)"
+    } else if modifyKeywords && keywords.contains(cleaned) {
+        cleaned = "`\(cleaned)`"
     }
 
-    return camelCased
+    return cleaned
 }
 
 private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: String]) -> String {

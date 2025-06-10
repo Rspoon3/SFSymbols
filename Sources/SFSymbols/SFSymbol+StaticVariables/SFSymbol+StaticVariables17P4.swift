@@ -177,7 +177,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1
     static let medalStar = SFSymbol(
         title: "medal.star",
-        categories: [.objectsandtools],
+        categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1)
     )
@@ -186,7 +186,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1
     static let medalStarFill = SFSymbol(
         title: "medal.star.fill",
-        categories: [.objectsandtools],
+        categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1)
     )
