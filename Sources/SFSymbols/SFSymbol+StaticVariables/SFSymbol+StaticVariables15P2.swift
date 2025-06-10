@@ -114,7 +114,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3, visionOS: 1.0
     static let square3Layers3DDownLeftSlash = SFSymbol(
         title: "square.3.layers.3d.down.left.slash",
-        categories: [.cameraandphotos],
+        categories: [.cameraAndPhotos],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3, visionOS: 1.0)
     )
@@ -123,7 +123,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3, visionOS: 1.0
     static let square3Layers3DDownRightSlash = SFSymbol(
         title: "square.3.layers.3d.down.right.slash",
-        categories: [.cameraandphotos],
+        categories: [.cameraAndPhotos],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.2, macOS: 12.1, tvOS: 15.2, watchOS: 8.3, visionOS: 1.0)
     )
