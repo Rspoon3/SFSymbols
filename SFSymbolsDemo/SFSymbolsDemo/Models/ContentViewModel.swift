@@ -32,7 +32,7 @@ class ContentViewModel: ObservableObject{
             try loadSearchTerms()
             try createMacFolder()
             
-            try createStaticVarFile(for: categories)
+            try createSFCategoryFile(for: categories)
             
             let iOSVersions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
             
@@ -67,7 +67,7 @@ class ContentViewModel: ObservableObject{
 #endif
     }
     
-    private func createStaticVarFile(for categories: [SFCategory]) throws {
+    private func createSFCategoryFile(for categories: [SFCategory]) throws {
         let staticVars = categories.map { category in
             let plistTitle = categoriesPlistDict[category.title]!
             
