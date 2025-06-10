@@ -1,3 +1,10 @@
+//
+//  SFSymbol+All26.swift.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0, *)
@@ -183,7 +190,7 @@ public extension SFSymbol {
          .checkmarkCircleBadgePlus,
          .checkmarkCircleBadgePlusFill,
          .checkmarkCircleTrianglebadgeExclamationmarkFill,
-         .circleGrid2X2TopleftCheckmarkFilled,
+         .circleGrid2x2TopleftCheckmarkFilled,
          .circleOnSquare,
          .circleOnSquareIntersectionDotted,
          .circleOnSquareMerge,

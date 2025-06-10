@@ -28,6 +28,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
 
     public static let all = SFCategory(icon: "square.grid.2x2", title: "All")
     public static let whatsNew = SFCategory(icon: "sparkles", title: "What’s New")
+    public static let draw = SFCategory(icon: "scribble", title: "Draw")
     public static let variable = SFCategory(icon: "slider.horizontal.below.square.and.square.filled", title: "Variable")
     public static let multicolor = SFCategory(icon: "paintpalette", title: "Multicolor")
     public static let communication = SFCategory(icon: "message", title: "Communication")
@@ -62,6 +63,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
         return [
             .all,
             .whatsNew,
+            .draw,
             .variable,
             .multicolor,
             .communication,
