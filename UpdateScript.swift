@@ -111,22 +111,6 @@ fileprivate struct NameAvailabilityResults: Codable {
 
 // MARK: - Outputs
 
-private func createHeader(title: String) -> String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "M/d/yy"
-    let dateString = dateFormatter.string(from: .now)
-    
-    return """
-    //
-    //  \(title).swift
-    //
-    //  Generated Automatically on \(dateString)
-    //
-
-    import Foundation
-    """
-}
-
 private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
 
     
@@ -249,7 +233,66 @@ private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, pli
     try array.write(to: url, atomically: true, encoding: .utf8)
 }
 
+private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol]) throws {
+    let versions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
+    
+    var file = """
+    \(createHeader(title: "SFSymbol+All"))
+
+    public extension SFSymbol {
+        static var allSymbols: [SFSymbol] {
+            var symbols = SFSymbol.allSymbols\(versionCode(versions[0]))
+
+    """
+
+    for version in versions.dropFirst() {
+        let matchingSymbol = symbols.first { $0.releaseInfo.iOS == version }!
+        let iOS = versionString(version)
+        let mac = matchingSymbol.releaseInfo.macOS
+        let tv = matchingSymbol.releaseInfo.tvOS
+        let watch = matchingSymbol.releaseInfo.watchOS
+        let vision = matchingSymbol.releaseInfo.visionOS
+
+        file += """
+
+                if #available(iOS \(iOS), macOS \(mac), tvOS \(tv), watchOS \(watch), visionOS \(vision), *) {
+                    symbols.append(contentsOf: SFSymbol.allSymbols\(versionCode(version)))
+                }\n
+        """
+    }
+
+    file += """
+
+            return symbols
+        }
+    }
+    """
+
+    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+        .appendingPathComponent("Sources", isDirectory: true)
+        .appendingPathComponent("SFSymbols", isDirectory: true)
+        .appendingPathComponent("SFSymbol+All", isDirectory: true)
+        .appendingPathComponent("SFSymbol+All.swift")
+    
+    try file.write(to: url, atomically: true, encoding: .utf8)
+}
+
 // MARK: - Private Helpers
+private func createHeader(title: String) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "M/d/yy"
+    let dateString = dateFormatter.string(from: .now)
+    
+    return """
+    //
+    //  \(title).swift
+    //
+    //  Generated Automatically on \(dateString)
+    //
+
+    import Foundation
+    """
+}
 
 private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> String {
     var camelCased = string
@@ -311,6 +354,16 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
     return staticVar
 }
 
+private func versionCode(_ version: Double) -> String {
+    let str = String(version).replacingOccurrences(of: ".0", with: "").replacingOccurrences(of: ".", with: "P")
+    return str
+}
+
+private func versionString(_ version: Double) -> String {
+    // Ensures at least one decimal (e.g., "13.0" instead of "13")
+    return version == floor(version) ? "\(Int(version)).0" : "\(version)"
+}
+
 // MARK: - Processing
 
 fileprivate func main() {
@@ -366,6 +419,9 @@ fileprivate func main() {
             try createStaticVarFile(for: filtered, fileName: fileName, plistDict: plistDict)
             try createAllSymbolsFile(for: filtered, fileName: fileName, plistDict: plistDict)
         }
+        
+        try createUnifiedAllSymbolsFile(from: symbols)
+        print("☑️ Created AllSFSymbols file successfully.")
 
         print("✅ Export complete. Please check the Results folder.")
     } catch {
