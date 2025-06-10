@@ -25,7 +25,7 @@ fileprivate let inputURL: URL = {
 
 fileprivate let outputURL: URL = {
     let path = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
-        .appendingPathComponent("results", isDirectory: true)
+        .appendingPathComponent("Results", isDirectory: true)
     try? FileManager.default.createDirectory(at: path, withIntermediateDirectories: true)
     return path
 }()
@@ -82,7 +82,12 @@ fileprivate struct SFSymbol: Codable {
     var searchTerms: [String]?
     let releaseInfo: ReleaseInfo
     
-    init(title: String, categories: [SFCategory]? = nil, searchTerms: [String]? = nil, releaseInfo: ReleaseInfo) {
+    init(
+        title: String,
+        categories: [SFCategory]? = nil,
+        searchTerms: [String]? = nil,
+        releaseInfo: ReleaseInfo
+    ) {
         self.title = title
         self.categories = categories
         self.searchTerms = searchTerms
@@ -111,57 +116,135 @@ fileprivate struct NameAvailabilityResults: Codable {
     }
 }
 
-// MARK: - Helpers
+// MARK: - Outputs
 
-fileprivate func camelCase(_ title: String, modifyKeywords: Bool = true) -> String {
-    var name = title.split(separator: ".").enumerated().map {
-        $0.offset == 0 ? $0.element.lowercased() : $0.element.capitalized
-    }.joined()
-
-    let keywords = ["return", "repeat", "case"]
-    if name.first?.isNumber == true {
-        name = "_\(name)"
-    } else if modifyKeywords && keywords.contains(name) {
-        name = "`\(name)`"
-    }
-
-    return name
+private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
+    let staticVars = categories.map { category in
+        let plistTitle = plistDict[category.title]!
+        
+        return """
+        public static let \(plistTitle.lowercased()) = SFCategory(icon: "\(category.icon)", title: "\(category.title)")
+        """
+    }.joined(separator: "\n")
+    
+    let url = outputURL.appendingPathComponent("SFCategory.swift")
+    try staticVars.write(to: url, atomically: true, encoding: .utf8)
 }
 
-fileprivate func exportStaticVars(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
-    guard let newest = symbols.first else { return }
-
+private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
+    let newestSymbol = symbols.first!
     let header = """
     import Foundation
 
-    @available(iOS \(newest.releaseInfo.iOS), macOS \(newest.releaseInfo.macOS), tvOS \(newest.releaseInfo.tvOS), watchOS \(newest.releaseInfo.watchOS), visionOS \(newest.releaseInfo.visionOS), *)
+    @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), visionOS \(newestSymbol.releaseInfo.visionOS), *)
     public extension SFSymbol {
 
     """
 
-    let vars = symbols.map { symbol -> String in
-        let name = camelCase(symbol.title)
-        let categories = symbol.categories?.compactMap { plistDict[$0.title] }.map { ".\($0)" }.joined(separator: ", ")
-        let terms = symbol.searchTerms?.map { "\"\($0)\"" }.joined(separator: ", ")
-        let categoryLine = categories != nil ? "[\(categories!)]" : "nil"
-        let termsLine = terms != nil ? "[\(terms!)]" : "nil"
-        let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS), visionOS: \(symbol.releaseInfo.visionOS)"
+    var staticVars = symbols.map { convertSymbolToStaticVar($0, plistDict: plistDict) }.joined(separator: "\n\n")
+    let i = staticVars.index(staticVars.startIndex, offsetBy: 0)
+    staticVars.insert(contentsOf: header, at: i)
+    staticVars.append("\n}")
 
-        return """
+    let url = outputURL.appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
+    try staticVars.write(to: url, atomically: true, encoding: .utf8)
+}
+
+private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
+    let titles = symbols.map {
+        convertTitleToCamelCased(
+            string: $0.title,
+            modifyKeywords: false
+        )
+    }
+        .map { "         .\($0)" }
+        .joined(separator: ",\n")
+
+    var array = """
+    \n
+        static var allSymbols\(fileName): [SFSymbol] {
+            return [\n
+    """
+
+    array.append(contentsOf: titles)
+    array.append(contentsOf: "\n      ]")
+
+    let newestSymbol = symbols.first!
+    let header = """
+    import Foundation
+
+    @available(iOS \(newestSymbol.releaseInfo.iOS), macOS \(newestSymbol.releaseInfo.macOS), tvOS \(newestSymbol.releaseInfo.tvOS), watchOS \(newestSymbol.releaseInfo.watchOS), visionOS \(newestSymbol.releaseInfo.visionOS), *)
+    public extension SFSymbol {
+    """
+
+    let i = titles.index(titles.startIndex, offsetBy: 0)
+    array.insert(contentsOf: header, at: i)
+    array.append("\n   }\n}")
+
+    let url = outputURL.appendingPathComponent("SFSymbol+All\(fileName).swift")
+    try array.write(to: url, atomically: true, encoding: .utf8)
+}
+
+// MARK: - Private Helpers
+
+private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> String {
+    var camelCased = string
+        .split(separator: ".")
+        .map { String($0) }
+        .enumerated()
+        .map { $0.offset > 0 ? $0.element.capitalized : $0.element.lowercased() }
+        .joined()
+
+    let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    let keywords = ["return", "repeat", "case"]
+
+    if numbers.contains(String(camelCased.first!)) {
+        camelCased = "_\(camelCased)"
+    } else if modifyKeywords && keywords.contains(camelCased) {
+        camelCased = "`\(camelCased)`"
+    }
+
+    return camelCased
+}
+
+private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: String]) -> String {
+    let camelCased = convertTitleToCamelCased(
+        string: symbol.title,
+        modifyKeywords: true
+    )
+
+    var categoriesOptionalString = "nil"
+    var searchTermsOptionalString = "nil"
+
+    if var categoriesString = symbol.categories?
+        .compactMap({ plistDict[$0.title] })
+        .map({ ".\($0)" })
+        .joined(separator: ", ") {
+        categoriesString.insert("[", at: categoriesString.startIndex)
+        categoriesString.append("]")
+        categoriesOptionalString = categoriesString
+    }
+
+    if var searchTermsString = symbol.searchTerms?.map({ "\"\($0)\"" }).joined(separator: ", ") {
+        searchTermsString.insert("[", at: searchTermsString.startIndex)
+        searchTermsString.append("]")
+        searchTermsOptionalString = searchTermsString
+    }
+
+    let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS), visionOS: \(symbol.releaseInfo.visionOS)"
+
+    let staticVar = """
             /// \(symbol.title)
             /// - Since: \(releaseString)
-            static let \(name) = SFSymbol(
+            static let \(camelCased) = SFSymbol(
                 title: "\(symbol.title)",
-                categories: \(categoryLine),
-                searchTerms: \(termsLine),
+                categories: \(categoriesOptionalString),
+                searchTerms: \(searchTermsOptionalString),
                 releaseInfo: ReleaseInfo(\(releaseString))
             )
         """
-    }.joined(separator: "\n\n")
 
-    let contents = header + vars + "\n}"
-    let url = outputURL.appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
-    try contents.write(to: url, atomically: true, encoding: .utf8)
+    return staticVar
 }
 
 // MARK: - Processing
@@ -175,11 +258,13 @@ fileprivate func main() {
         let categories = try decoder.decode([SFCategory].self, from: categoriesData)
         let plistArray = try decoder.decode([Plist].self, from: categoriesData)
         let plistDict = Dictionary(uniqueKeysWithValues: plistArray.map { ($0.label, $0.key) })
+        print("☑️ Loaded categories successfully.")
 
-        // Load symbols using the correct NameAvailabilityResults structure
+        // Load symbols
         let symbolsData = try Data(contentsOf: inputURL.appendingPathComponent("name_availability.plist"))
         let availabilityResults = try decoder.decode(NameAvailabilityResults.self, from: symbolsData)
         var symbols = availabilityResults.symbols.filter { !$0.title.contains(".zh") }
+        print("☑️ Loaded symbols successfully.")
 
         // Add categories
         let categoryMapData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_categories.plist"))
@@ -191,6 +276,7 @@ fileprivate func main() {
                 }
             }
         }
+        print("☑️ Added categories successfully.")
 
         // Add search terms
         let searchTermsData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_search.plist"))
@@ -200,17 +286,24 @@ fileprivate func main() {
                 symbols[index].searchTerms = terms
             }
         }
+        print("☑️ Added search terms successfully.")
+
+        try createSFCategoryFile(for: categories, plistDict: plistDict)
+        print("☑️ Created SFCategory file successfully.")
 
         // Export by iOS version
         let versions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
+        
         for version in versions {
             let filtered = symbols.filter { $0.releaseInfo.iOS == version }
             var fileName = version.description.replacingOccurrences(of: ".0", with: "")
             fileName = fileName.replacingOccurrences(of: ".", with: "P")
-            try exportStaticVars(for: filtered, fileName: fileName, plistDict: plistDict)
+
+            try createStaticVarFile(for: filtered, fileName: fileName, plistDict: plistDict)
+            try createAllSymbolsFile(for: filtered, fileName: fileName, plistDict: plistDict)
         }
 
-        print("✅ Export complete. Check the `results/` folder.")
+        print("✅ Export complete. Please check the Results folder.")
     } catch {
         print("❌ Error: \(error)")
     }
