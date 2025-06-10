@@ -20,7 +20,7 @@ public extension SFSymbol {
 
     /// 4k.tv
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
-    static let _4KTv = SFSymbol(
+    static let _4kTv = SFSymbol(
         title: "4k.tv",
         categories: [.devices],
         searchTerms: nil,
@@ -29,7 +29,7 @@ public extension SFSymbol {
 
     /// 4k.tv.fill
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
-    static let _4KTvFill = SFSymbol(
+    static let _4kTvFill = SFSymbol(
         title: "4k.tv.fill",
         categories: [.devices],
         searchTerms: nil,

@@ -275,6 +275,7 @@ private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol]) throws {
 }
 
 // MARK: - Private Helpers
+
 private func createHeader(title: String) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "M/d/yy"
@@ -292,8 +293,8 @@ private func createHeader(title: String) -> String {
 }
 
 private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> String {
-    // Replace special symbols with spaces or words
-    var cleaned = string
+    // Normalize special characters and separators
+    let cleaned = string
         .replacingOccurrences(of: "&", with: "and")
         .replacingOccurrences(of: "’", with: "")
         .replacingOccurrences(of: "'", with: "")
@@ -301,25 +302,45 @@ private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> S
         .replacingOccurrences(of: "-", with: " ")
         .replacingOccurrences(of: "_", with: " ")
 
-    // Capitalize each word and remove spaces
-    cleaned = cleaned.capitalized.replacingOccurrences(of: " ", with: "")
+    let words = cleaned
+        .components(separatedBy: .whitespacesAndNewlines)
+        .filter { !$0.isEmpty }
 
-    // Lowercase the first letter
-    if let first = cleaned.first {
-        cleaned = first.lowercased() + cleaned.dropFirst()
+    guard !words.isEmpty else { return "" }
+
+    // Always lowercase the first word
+    var result = words[0].lowercased()
+
+    for word in words.dropFirst() {
+        if word.count == 2, word.last!.isLetter, word.dropLast().allSatisfy(\.isNumber) {
+            // e.g. "2d" → "2D"
+            let numberPart = word.dropLast()
+            let letter = word.last!.uppercased()
+            result += numberPart + letter
+        } else if let firstLetterIndex = word.firstIndex(where: \.isLetter), firstLetterIndex != word.startIndex {
+            // e.g. "100percent" → "100Percent"
+            let numberPart = word[..<firstLetterIndex]
+            let letterPart = word[firstLetterIndex...]
+            result += numberPart + letterPart.prefix(1).uppercased() + letterPart.dropFirst()
+        } else {
+            // Normal word: capitalize first letter
+            result += word.prefix(1).uppercased() + word.dropFirst()
+        }
     }
 
-    // Prevent invalid Swift identifiers
+    // Prefix underscore if result starts with a number
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    let keywords = ["return", "repeat", "case"]
-
-    if let first = cleaned.first, numbers.contains(String(first)) {
-        cleaned = "_\(cleaned)"
-    } else if modifyKeywords && keywords.contains(cleaned) {
-        cleaned = "`\(cleaned)`"
+    if let first = result.first, numbers.contains(String(first)) {
+        result = "_\(result)"
     }
 
-    return cleaned
+    // Escape Swift keywords
+    let keywords = ["return", "repeat", "case"]
+    if modifyKeywords && keywords.contains(result) {
+        result = "`\(result)`"
+    }
+
+    return result
 }
 
 private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: String]) -> String {
@@ -383,13 +404,13 @@ fileprivate func main() {
         let categories = try decoder.decode([SFCategory].self, from: categoriesData)
         let plistArray = try decoder.decode([Plist].self, from: categoriesData)
         let plistDict = Dictionary(uniqueKeysWithValues: plistArray.map { ($0.label, $0.key) })
-        print("☑️ Loaded categories successfully.")
+        print("☑️  Loaded categories successfully.")
 
         // Load symbols
         let symbolsData = try Data(contentsOf: inputURL.appendingPathComponent("name_availability.plist"))
         let availabilityResults = try decoder.decode(NameAvailabilityResults.self, from: symbolsData)
         var symbols = availabilityResults.symbols.filter { !$0.title.contains(".zh") }
-        print("☑️ Loaded symbols successfully.")
+        print("☑️  Loaded symbols successfully.")
 
         // Add categories
         let categoryMapData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_categories.plist"))
@@ -401,7 +422,7 @@ fileprivate func main() {
                 }
             }
         }
-        print("☑️ Added categories successfully.")
+        print("☑️  Added categories successfully.")
 
         // Add search terms
         let searchTermsData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_search.plist"))
@@ -411,10 +432,10 @@ fileprivate func main() {
                 symbols[index].searchTerms = terms
             }
         }
-        print("☑️ Added search terms successfully.")
+        print("☑️  Added search terms successfully.")
 
         try createSFCategoryFile(for: categories, plistDict: plistDict)
-        print("☑️ Created SFCategory file successfully.")
+        print("☑️  Created SFCategory file successfully.")
 
         // Export by iOS version
         let versions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
@@ -429,7 +450,7 @@ fileprivate func main() {
         }
         
         try createUnifiedAllSymbolsFile(from: symbols)
-        print("☑️ Created AllSFSymbols file successfully.")
+        print("☑️  Created AllSFSymbols file successfully.")
 
         print("✅ Export complete. Please check the Results folder.")
     } catch {
