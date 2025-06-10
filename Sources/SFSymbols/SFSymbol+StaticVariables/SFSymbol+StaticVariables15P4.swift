@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables15P4.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5, visionOS 1.0, *)
@@ -52,7 +59,7 @@ public extension SFSymbol {
     static let personBadgeKey = SFSymbol(
         title: "person.badge.key",
         categories: [.human, .objectsAndTools],
-        searchTerms: ["passkey", "password", "people", "privacyAndSecurity", "user"],
+        searchTerms: ["passkey", "password", "people", "privacyandsecurity", "user"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
 
@@ -61,7 +68,7 @@ public extension SFSymbol {
     static let personBadgeKeyFill = SFSymbol(
         title: "person.badge.key.fill",
         categories: [.human, .objectsAndTools],
-        searchTerms: ["passkey", "password", "people", "privacyAndSecurity", "user"],
+        searchTerms: ["passkey", "password", "people", "privacyandsecurity", "user"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0)
     )
 }

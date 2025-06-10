@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables16.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
@@ -5479,7 +5486,7 @@ public extension SFSymbol {
     static let personAndBackgroundDotted = SFSymbol(
         title: "person.and.background.dotted",
         categories: [.human],
-        searchTerms: ["cameraAndPhotos", "people"],
+        searchTerms: ["cameraandphotos", "people"],
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0)
     )
 
@@ -7258,7 +7265,7 @@ public extension SFSymbol {
 
     /// squareshape.dotted.split.2x2
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
-    static let squareshapeDottedSplit2X2 = SFSymbol(
+    static let squareshapeDottedSplit2x2 = SFSymbol(
         title: "squareshape.dotted.split.2x2",
         categories: nil,
         searchTerms: nil,
