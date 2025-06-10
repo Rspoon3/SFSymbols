@@ -1,8 +1,7 @@
 //
 //  SFCategory.swift
 //
-//
-//  Created by Richard Witherspoon on 11/15/21.
+//  Generated Automatically on 6/10/25
 //
 
 import Foundation
@@ -11,25 +10,27 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
     public let icon: String
     public let title: String
     public var id: String { title }
-    
-    public var symbols: [SFSymbol]{
+
+    public var symbols: [SFSymbol] {
         if self == .all {
             return SFSymbol.allSymbols
         } else {
             return SFSymbol.allSymbols.filter { $0.categories?.contains(self) ?? false }
         }
     }
-    
+
     enum CodingKeys: String, CodingKey {
         case icon
         case title = "label"
     }
-    
-    //MARK: Static Data
+
+    // MARK: - Static Data
+
     public static let all = SFCategory(icon: "square.grid.2x2", title: "All")
     public static let whatsnew = SFCategory(icon: "sparkles", title: "What’s New")
+    public static let draw = SFCategory(icon: "scribble", title: "Draw")
+    public static let variable = SFCategory(icon: "slider.horizontal.below.square.and.square.filled", title: "Variable")
     public static let multicolor = SFCategory(icon: "paintpalette", title: "Multicolor")
-    public static let variablecolor = SFCategory(icon: "slider.horizontal.below.square.and.square.filled", title: "Variable Color")
     public static let communication = SFCategory(icon: "message", title: "Communication")
     public static let weather = SFCategory(icon: "cloud.sun", title: "Weather")
     public static let maps = SFCategory(icon: "map", title: "Maps")
@@ -57,13 +58,14 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
     public static let arrows = SFCategory(icon: "arrow.forward", title: "Arrows")
     public static let indices = SFCategory(icon: "a.circle", title: "Indices")
     public static let math = SFCategory(icon: "x.squareroot", title: "Math")
-    
+
     public static var allCategories: [SFCategory] {
         return [
             .all,
             .whatsnew,
+            .draw,
+            .variable,
             .multicolor,
-            .variablecolor,
             .communication,
             .weather,
             .maps,

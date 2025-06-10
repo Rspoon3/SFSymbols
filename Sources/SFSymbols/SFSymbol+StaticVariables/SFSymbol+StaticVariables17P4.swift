@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables17P4.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *)
@@ -33,7 +40,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1
     static let appleTerminalCircle = SFSymbol(
         title: "apple.terminal.circle",
-        categories: nil,
+        categories: [.variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1)
     )
