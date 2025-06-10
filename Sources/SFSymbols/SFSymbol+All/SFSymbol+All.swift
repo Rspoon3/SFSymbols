@@ -78,6 +78,22 @@ public extension SFSymbol {
             symbols.append(contentsOf: SFSymbol.allSymbols18)
         }
 
+        if #available(iOS 18.1, macOS 15.1, tvOS 18.1, watchOS 11.1, visionOS 2.1, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols18P1)
+        }
+
+        if #available(iOS 18.2, macOS 15.2, tvOS 18.2, watchOS 11.2, visionOS 2.2, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols18P2)
+        }
+
+        if #available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols18P4)
+        }
+
+        if #available(iOS 18.5, macOS 15.5, tvOS 18.5, watchOS 11.5, visionOS 2.5, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols18P5)
+        }
+
         return symbols
     }
 }
