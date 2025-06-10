@@ -13,7 +13,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
     static let arrowUturnLeftCircleBadgeEllipsis = SFSymbol(
         title: "arrow.uturn.left.circle.badge.ellipsis",
-        categories: [.arrows, .multicolor],
+        categories: [.arrows, .multicolor, .variable],
         searchTerms: ["action", "dot.3", "extra", "more", "overflow", "…"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0)
     )
@@ -103,7 +103,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
     static let mappinCircle = SFSymbol(
         title: "mappin.circle",
-        categories: [.maps, .multicolor, .objectsAndTools],
+        categories: [.maps, .multicolor, .objectsAndTools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0)
     )
@@ -121,7 +121,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
     static let paperclipCircle = SFSymbol(
         title: "paperclip.circle",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.objectsAndTools, .variable],
         searchTerms: ["attach", "attachments"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0)
     )
@@ -139,7 +139,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
     static let pinCircle = SFSymbol(
         title: "pin.circle",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .variable],
         searchTerms: ["pin"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0)
     )

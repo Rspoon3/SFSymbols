@@ -13,7 +13,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let aqiHigh = SFSymbol(
         title: "aqi.high",
-        categories: [.multicolor, .variableColor, .weather],
+        categories: [.multicolor, .variable, .weather],
         searchTerms: ["!", "warning", "weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -22,7 +22,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let aqiLow = SFSymbol(
         title: "aqi.low",
-        categories: [.variableColor, .weather],
+        categories: [.variable, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -31,7 +31,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let aqiMedium = SFSymbol(
         title: "aqi.medium",
-        categories: [.variableColor, .weather],
+        categories: [.variable, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -40,7 +40,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let brazilianrealsignCircle = SFSymbol(
         title: "brazilianrealsign.circle",
-        categories: [.commerce, .indices],
+        categories: [.commerce, .indices, .variable],
         searchTerms: ["currencies", "currency"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -76,7 +76,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let cartCircle = SFSymbol(
         title: "cart.circle",
-        categories: [.commerce, .objectsAndTools],
+        categories: [.commerce, .objectsAndTools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -328,7 +328,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let infinityCircle = SFSymbol(
         title: "infinity.circle",
-        categories: [.media],
+        categories: [.media, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -490,7 +490,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let repeat1Circle = SFSymbol(
         title: "repeat.1.circle",
-        categories: [.media],
+        categories: [.media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -508,7 +508,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let repeatCircle = SFSymbol(
         title: "repeat.circle",
-        categories: [.media],
+        categories: [.media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -535,7 +535,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let shuffleCircle = SFSymbol(
         title: "shuffle.circle",
-        categories: [.media],
+        categories: [.media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )

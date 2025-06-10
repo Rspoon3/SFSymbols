@@ -22,7 +22,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _0CircleHi = SFSymbol(
         title: "0.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -49,7 +49,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _00CircleAr = SFSymbol(
         title: "00.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -76,7 +76,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _00CircleHi = SFSymbol(
         title: "00.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -121,7 +121,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _01CircleAr = SFSymbol(
         title: "01.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -148,7 +148,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _01CircleHi = SFSymbol(
         title: "01.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -193,7 +193,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _02CircleAr = SFSymbol(
         title: "02.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -220,7 +220,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _02CircleHi = SFSymbol(
         title: "02.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -265,7 +265,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _03CircleAr = SFSymbol(
         title: "03.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -292,7 +292,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _03CircleHi = SFSymbol(
         title: "03.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -337,7 +337,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _04CircleAr = SFSymbol(
         title: "04.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -364,7 +364,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _04CircleHi = SFSymbol(
         title: "04.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -409,7 +409,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _05CircleAr = SFSymbol(
         title: "05.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -436,7 +436,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _05CircleHi = SFSymbol(
         title: "05.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -481,7 +481,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _06CircleAr = SFSymbol(
         title: "06.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -508,7 +508,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _06CircleHi = SFSymbol(
         title: "06.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -553,7 +553,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _07CircleAr = SFSymbol(
         title: "07.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -580,7 +580,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _07CircleHi = SFSymbol(
         title: "07.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -625,7 +625,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _08CircleAr = SFSymbol(
         title: "08.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -652,7 +652,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _08CircleHi = SFSymbol(
         title: "08.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -697,7 +697,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _09CircleAr = SFSymbol(
         title: "09.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -724,7 +724,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _09CircleHi = SFSymbol(
         title: "09.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -778,7 +778,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _1CircleHi = SFSymbol(
         title: "1.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -805,7 +805,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _10CircleAr = SFSymbol(
         title: "10.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -832,7 +832,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _10CircleHi = SFSymbol(
         title: "10.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -877,7 +877,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _11CircleAr = SFSymbol(
         title: "11.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -904,7 +904,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _11CircleHi = SFSymbol(
         title: "11.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -949,7 +949,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _12CircleAr = SFSymbol(
         title: "12.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -976,7 +976,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _12CircleHi = SFSymbol(
         title: "12.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1021,7 +1021,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _13CircleAr = SFSymbol(
         title: "13.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1048,7 +1048,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _13CircleHi = SFSymbol(
         title: "13.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1093,7 +1093,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _14CircleAr = SFSymbol(
         title: "14.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1120,7 +1120,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _14CircleHi = SFSymbol(
         title: "14.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1165,7 +1165,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _15CircleAr = SFSymbol(
         title: "15.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1192,7 +1192,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _15CircleHi = SFSymbol(
         title: "15.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1237,7 +1237,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _16CircleAr = SFSymbol(
         title: "16.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1264,7 +1264,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _16CircleHi = SFSymbol(
         title: "16.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1309,7 +1309,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _17CircleAr = SFSymbol(
         title: "17.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1336,7 +1336,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _17CircleHi = SFSymbol(
         title: "17.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1381,7 +1381,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _18CircleAr = SFSymbol(
         title: "18.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1408,7 +1408,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _18CircleHi = SFSymbol(
         title: "18.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1453,7 +1453,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _19CircleAr = SFSymbol(
         title: "19.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1480,7 +1480,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _19CircleHi = SFSymbol(
         title: "19.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1534,7 +1534,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _2CircleHi = SFSymbol(
         title: "2.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1561,7 +1561,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _20CircleAr = SFSymbol(
         title: "20.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1588,7 +1588,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _20CircleHi = SFSymbol(
         title: "20.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1633,7 +1633,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _21CircleAr = SFSymbol(
         title: "21.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1660,7 +1660,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _21CircleHi = SFSymbol(
         title: "21.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1705,7 +1705,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _22CircleAr = SFSymbol(
         title: "22.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1732,7 +1732,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _22CircleHi = SFSymbol(
         title: "22.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1777,7 +1777,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _23CircleAr = SFSymbol(
         title: "23.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1804,7 +1804,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _23CircleHi = SFSymbol(
         title: "23.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1849,7 +1849,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _24CircleAr = SFSymbol(
         title: "24.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1876,7 +1876,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _24CircleHi = SFSymbol(
         title: "24.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1921,7 +1921,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _25CircleAr = SFSymbol(
         title: "25.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1948,7 +1948,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _25CircleHi = SFSymbol(
         title: "25.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -1993,7 +1993,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _26CircleAr = SFSymbol(
         title: "26.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2020,7 +2020,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _26CircleHi = SFSymbol(
         title: "26.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2065,7 +2065,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _27CircleAr = SFSymbol(
         title: "27.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2092,7 +2092,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _27CircleHi = SFSymbol(
         title: "27.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2137,7 +2137,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _28CircleAr = SFSymbol(
         title: "28.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2164,7 +2164,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _28CircleHi = SFSymbol(
         title: "28.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2209,7 +2209,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _29CircleAr = SFSymbol(
         title: "29.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2236,7 +2236,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _29CircleHi = SFSymbol(
         title: "29.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2290,7 +2290,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _3CircleHi = SFSymbol(
         title: "3.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2317,7 +2317,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _30CircleAr = SFSymbol(
         title: "30.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2344,7 +2344,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _30CircleHi = SFSymbol(
         title: "30.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2389,7 +2389,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _31CircleAr = SFSymbol(
         title: "31.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2416,7 +2416,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _31CircleHi = SFSymbol(
         title: "31.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2461,7 +2461,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _32CircleAr = SFSymbol(
         title: "32.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2488,7 +2488,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _32CircleHi = SFSymbol(
         title: "32.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2533,7 +2533,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _33CircleAr = SFSymbol(
         title: "33.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2560,7 +2560,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _33CircleHi = SFSymbol(
         title: "33.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2605,7 +2605,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _34CircleAr = SFSymbol(
         title: "34.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2632,7 +2632,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _34CircleHi = SFSymbol(
         title: "34.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2677,7 +2677,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _35CircleAr = SFSymbol(
         title: "35.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2704,7 +2704,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _35CircleHi = SFSymbol(
         title: "35.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2749,7 +2749,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _36CircleAr = SFSymbol(
         title: "36.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2776,7 +2776,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _36CircleHi = SFSymbol(
         title: "36.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2821,7 +2821,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _37CircleAr = SFSymbol(
         title: "37.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2848,7 +2848,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _37CircleHi = SFSymbol(
         title: "37.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2893,7 +2893,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _38CircleAr = SFSymbol(
         title: "38.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2920,7 +2920,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _38CircleHi = SFSymbol(
         title: "38.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2965,7 +2965,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _39CircleAr = SFSymbol(
         title: "39.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -2992,7 +2992,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _39CircleHi = SFSymbol(
         title: "39.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3046,7 +3046,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _4CircleHi = SFSymbol(
         title: "4.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3073,7 +3073,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _40CircleAr = SFSymbol(
         title: "40.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3100,7 +3100,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _40CircleHi = SFSymbol(
         title: "40.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3145,7 +3145,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _41CircleAr = SFSymbol(
         title: "41.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3172,7 +3172,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _41CircleHi = SFSymbol(
         title: "41.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3217,7 +3217,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _42CircleAr = SFSymbol(
         title: "42.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3244,7 +3244,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _42CircleHi = SFSymbol(
         title: "42.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3289,7 +3289,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _43CircleAr = SFSymbol(
         title: "43.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3316,7 +3316,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _43CircleHi = SFSymbol(
         title: "43.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3361,7 +3361,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _44CircleAr = SFSymbol(
         title: "44.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3388,7 +3388,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _44CircleHi = SFSymbol(
         title: "44.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3433,7 +3433,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _45CircleAr = SFSymbol(
         title: "45.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3460,7 +3460,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _45CircleHi = SFSymbol(
         title: "45.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3505,7 +3505,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _46CircleAr = SFSymbol(
         title: "46.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3532,7 +3532,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _46CircleHi = SFSymbol(
         title: "46.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3577,7 +3577,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _47CircleAr = SFSymbol(
         title: "47.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3604,7 +3604,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _47CircleHi = SFSymbol(
         title: "47.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3649,7 +3649,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _48CircleAr = SFSymbol(
         title: "48.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3676,7 +3676,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _48CircleHi = SFSymbol(
         title: "48.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3721,7 +3721,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _49CircleAr = SFSymbol(
         title: "49.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3748,7 +3748,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _49CircleHi = SFSymbol(
         title: "49.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3802,7 +3802,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _5CircleHi = SFSymbol(
         title: "5.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3829,7 +3829,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _50CircleAr = SFSymbol(
         title: "50.circle.ar",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3856,7 +3856,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _50CircleHi = SFSymbol(
         title: "50.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3910,7 +3910,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _6CircleHi = SFSymbol(
         title: "6.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3946,7 +3946,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _7CircleHi = SFSymbol(
         title: "7.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -3982,7 +3982,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _8CircleHi = SFSymbol(
         title: "8.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
@@ -4018,7 +4018,7 @@ public extension SFSymbol {
     /// - Since: iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1
     static let _9CircleHi = SFSymbol(
         title: "9.circle.hi",
-        categories: [.indices],
+        categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)
     )
