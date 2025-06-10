@@ -85,7 +85,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeam = SFSymbol(
         title: "character.cursor.ibeam",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: ["a"],
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -94,7 +94,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeamAr = SFSymbol(
         title: "character.cursor.ibeam.ar",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -103,7 +103,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeamHe = SFSymbol(
         title: "character.cursor.ibeam.he",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -112,7 +112,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeamHi = SFSymbol(
         title: "character.cursor.ibeam.hi",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -121,7 +121,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeamJa = SFSymbol(
         title: "character.cursor.ibeam.ja",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -130,7 +130,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeamKo = SFSymbol(
         title: "character.cursor.ibeam.ko",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -139,7 +139,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterCursorIbeamTh = SFSymbol(
         title: "character.cursor.ibeam.th",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -148,7 +148,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextbox = SFSymbol(
         title: "character.textbox",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: ["a"],
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -157,7 +157,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextboxAr = SFSymbol(
         title: "character.textbox.ar",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -166,7 +166,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextboxHe = SFSymbol(
         title: "character.textbox.he",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -175,7 +175,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextboxHi = SFSymbol(
         title: "character.textbox.hi",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -184,7 +184,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextboxJa = SFSymbol(
         title: "character.textbox.ja",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -193,7 +193,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextboxKo = SFSymbol(
         title: "character.textbox.ko",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )
@@ -202,7 +202,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0
     static let characterTextboxTh = SFSymbol(
         title: "character.textbox.th",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.5, macOS: 11.3, tvOS: 14.5, watchOS: 7.4, visionOS: 1.0)
     )

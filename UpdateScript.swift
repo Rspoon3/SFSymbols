@@ -355,8 +355,7 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
     var searchTermsOptionalString = "nil"
 
     if var categoriesString = symbol.categories?
-        .compactMap({ plistDict[$0.title] })
-        .map({ ".\($0)" })
+        .map({ ".\(convertTitleToCamelCased(string: $0.title, modifyKeywords: false))" })
         .joined(separator: ", ") {
         categoriesString.insert("[", at: categoriesString.startIndex)
         categoriesString.append("]")
