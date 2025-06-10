@@ -11468,7 +11468,7 @@ public extension SFSymbol {
 
     /// rectangle.grid.3x3
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let rectangleGrid3X3 = SFSymbol(
+    static let rectangleGrid3x3 = SFSymbol(
         title: "rectangle.grid.3x3",
         categories: [.whatsnew],
         searchTerms: nil,
@@ -11477,7 +11477,7 @@ public extension SFSymbol {
 
     /// rectangle.grid.3x3.fill
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let rectangleGrid3X3Fill = SFSymbol(
+    static let rectangleGrid3x3Fill = SFSymbol(
         title: "rectangle.grid.3x3.fill",
         categories: [.whatsnew],
         searchTerms: nil,
@@ -12080,7 +12080,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.square.badge.ellipsis
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    static let squareGrid3X3SquareBadgeEllipsis = SFSymbol(
+    static let squareGrid3x3SquareBadgeEllipsis = SFSymbol(
         title: "square.grid.3x3.square.badge.ellipsis",
         categories: [.multicolor, .whatsnew],
         searchTerms: nil,

@@ -1640,7 +1640,7 @@ public extension SFSymbol {
 
     /// circle.grid.2x1
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let circleGrid2X1 = SFSymbol(
+    static let circleGrid2x1 = SFSymbol(
         title: "circle.grid.2x1",
         categories: nil,
         searchTerms: nil,
@@ -1649,7 +1649,7 @@ public extension SFSymbol {
 
     /// circle.grid.2x1.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let circleGrid2X1Fill = SFSymbol(
+    static let circleGrid2x1Fill = SFSymbol(
         title: "circle.grid.2x1.fill",
         categories: nil,
         searchTerms: nil,
@@ -1658,7 +1658,7 @@ public extension SFSymbol {
 
     /// circle.grid.2x1.left.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let circleGrid2X1LeftFilled = SFSymbol(
+    static let circleGrid2x1LeftFilled = SFSymbol(
         title: "circle.grid.2x1.left.filled",
         categories: nil,
         searchTerms: nil,
@@ -1667,7 +1667,7 @@ public extension SFSymbol {
 
     /// circle.grid.2x1.right.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let circleGrid2X1RightFilled = SFSymbol(
+    static let circleGrid2x1RightFilled = SFSymbol(
         title: "circle.grid.2x1.right.filled",
         categories: nil,
         searchTerms: nil,
@@ -1676,7 +1676,7 @@ public extension SFSymbol {
 
     /// circle.grid.3x3.circle
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let circleGrid3X3Circle = SFSymbol(
+    static let circleGrid3x3Circle = SFSymbol(
         title: "circle.grid.3x3.circle",
         categories: nil,
         searchTerms: nil,
@@ -1685,7 +1685,7 @@ public extension SFSymbol {
 
     /// circle.grid.3x3.circle.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let circleGrid3X3CircleFill = SFSymbol(
+    static let circleGrid3x3CircleFill = SFSymbol(
         title: "circle.grid.3x3.circle.fill",
         categories: [.multicolor],
         searchTerms: nil,
@@ -5987,7 +5987,7 @@ public extension SFSymbol {
 
     /// rectangle.portrait.split.2x1
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let rectanglePortraitSplit2X1 = SFSymbol(
+    static let rectanglePortraitSplit2x1 = SFSymbol(
         title: "rectangle.portrait.split.2x1",
         categories: nil,
         searchTerms: nil,
@@ -5996,7 +5996,7 @@ public extension SFSymbol {
 
     /// rectangle.portrait.split.2x1.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let rectanglePortraitSplit2X1Fill = SFSymbol(
+    static let rectanglePortraitSplit2x1Fill = SFSymbol(
         title: "rectangle.portrait.split.2x1.fill",
         categories: nil,
         searchTerms: nil,
@@ -6005,7 +6005,7 @@ public extension SFSymbol {
 
     /// rectangle.portrait.split.2x1.slash
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let rectanglePortraitSplit2X1Slash = SFSymbol(
+    static let rectanglePortraitSplit2x1Slash = SFSymbol(
         title: "rectangle.portrait.split.2x1.slash",
         categories: nil,
         searchTerms: nil,
@@ -6014,7 +6014,7 @@ public extension SFSymbol {
 
     /// rectangle.portrait.split.2x1.slash.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let rectanglePortraitSplit2X1SlashFill = SFSymbol(
+    static let rectanglePortraitSplit2x1SlashFill = SFSymbol(
         title: "rectangle.portrait.split.2x1.slash.fill",
         categories: nil,
         searchTerms: nil,
@@ -6140,7 +6140,7 @@ public extension SFSymbol {
 
     /// rectangle.split.2x1.slash
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let rectangleSplit2X1Slash = SFSymbol(
+    static let rectangleSplit2x1Slash = SFSymbol(
         title: "rectangle.split.2x1.slash",
         categories: nil,
         searchTerms: nil,
@@ -6149,7 +6149,7 @@ public extension SFSymbol {
 
     /// rectangle.split.2x1.slash.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let rectangleSplit2X1SlashFill = SFSymbol(
+    static let rectangleSplit2x1SlashFill = SFSymbol(
         title: "rectangle.split.2x1.slash.fill",
         categories: nil,
         searchTerms: nil,
@@ -6752,7 +6752,7 @@ public extension SFSymbol {
 
     /// square.grid.3x1.below.line.grid.1x2.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X1BelowLineGrid1X2Fill = SFSymbol(
+    static let squareGrid3x1BelowLineGrid1x2Fill = SFSymbol(
         title: "square.grid.3x1.below.line.grid.1x2.fill",
         categories: nil,
         searchTerms: nil,
@@ -6761,7 +6761,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.bottomleft.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3BottomleftFilled = SFSymbol(
+    static let squareGrid3x3BottomleftFilled = SFSymbol(
         title: "square.grid.3x3.bottomleft.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6770,7 +6770,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.bottommiddle.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3BottommiddleFilled = SFSymbol(
+    static let squareGrid3x3BottommiddleFilled = SFSymbol(
         title: "square.grid.3x3.bottommiddle.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6779,7 +6779,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.bottomright.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3BottomrightFilled = SFSymbol(
+    static let squareGrid3x3BottomrightFilled = SFSymbol(
         title: "square.grid.3x3.bottomright.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6788,7 +6788,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.middle.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3MiddleFilled = SFSymbol(
+    static let squareGrid3x3MiddleFilled = SFSymbol(
         title: "square.grid.3x3.middle.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6797,7 +6797,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.middleleft.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3MiddleleftFilled = SFSymbol(
+    static let squareGrid3x3MiddleleftFilled = SFSymbol(
         title: "square.grid.3x3.middleleft.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6806,7 +6806,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.middleright.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3MiddlerightFilled = SFSymbol(
+    static let squareGrid3x3MiddlerightFilled = SFSymbol(
         title: "square.grid.3x3.middleright.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6815,7 +6815,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.square
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3Square = SFSymbol(
+    static let squareGrid3x3Square = SFSymbol(
         title: "square.grid.3x3.square",
         categories: nil,
         searchTerms: nil,
@@ -6824,7 +6824,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.topleft.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3TopleftFilled = SFSymbol(
+    static let squareGrid3x3TopleftFilled = SFSymbol(
         title: "square.grid.3x3.topleft.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6833,7 +6833,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.topmiddle.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3TopmiddleFilled = SFSymbol(
+    static let squareGrid3x3TopmiddleFilled = SFSymbol(
         title: "square.grid.3x3.topmiddle.filled",
         categories: [.accessibility],
         searchTerms: nil,
@@ -6842,7 +6842,7 @@ public extension SFSymbol {
 
     /// square.grid.3x3.topright.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    static let squareGrid3X3ToprightFilled = SFSymbol(
+    static let squareGrid3x3ToprightFilled = SFSymbol(
         title: "square.grid.3x3.topright.filled",
         categories: [.accessibility],
         searchTerms: nil,

@@ -301,45 +301,47 @@ private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> S
         .replacingOccurrences(of: ".", with: " ")
         .replacingOccurrences(of: "-", with: " ")
         .replacingOccurrences(of: "_", with: " ")
-
+    
     let words = cleaned
         .components(separatedBy: .whitespacesAndNewlines)
         .filter { !$0.isEmpty }
-
+    
     guard !words.isEmpty else { return "" }
-
+    
     // Always lowercase the first word
     var result = words[0].lowercased()
-
+    
     for word in words.dropFirst() {
         if word.count == 2, word.last!.isLetter, word.dropLast().allSatisfy(\.isNumber) {
-            // e.g. "2d" → "2D"
+            // 2d → 2D
             let numberPart = word.dropLast()
             let letter = word.last!.uppercased()
             result += numberPart + letter
         } else if let firstLetterIndex = word.firstIndex(where: \.isLetter), firstLetterIndex != word.startIndex {
-            // e.g. "100percent" → "100Percent"
+            // 100percent → 100Percent
             let numberPart = word[..<firstLetterIndex]
             let letterPart = word[firstLetterIndex...]
             result += numberPart + letterPart.prefix(1).uppercased() + letterPart.dropFirst()
         } else {
-            // Normal word: capitalize first letter
             result += word.prefix(1).uppercased() + word.dropFirst()
         }
     }
-
-    // Prefix underscore if result starts with a number
+    
+    // Prefix with _ if starts with number
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     if let first = result.first, numbers.contains(String(first)) {
         result = "_\(result)"
     }
-
+    
+    // Lowercase 'X' if it appears between two numbers (e.g., 3X1 → 3x1)
+    result = result.replacingOccurrences(of: #"(?<=\d)X(?=\d)"#, with: "x", options: .regularExpression)
+    
     // Escape Swift keywords
     let keywords = ["return", "repeat", "case"]
     if modifyKeywords && keywords.contains(result) {
         result = "`\(result)`"
     }
-
+    
     return result
 }
 

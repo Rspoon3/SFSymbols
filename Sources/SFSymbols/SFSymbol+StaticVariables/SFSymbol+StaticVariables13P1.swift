@@ -47,7 +47,7 @@ public extension SFSymbol {
 
     /// circle.grid.2x2
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
-    static let circleGrid2X2 = SFSymbol(
+    static let circleGrid2x2 = SFSymbol(
         title: "circle.grid.2x2",
         categories: nil,
         searchTerms: nil,
@@ -56,7 +56,7 @@ public extension SFSymbol {
 
     /// circle.grid.2x2.fill
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
-    static let circleGrid2X2Fill = SFSymbol(
+    static let circleGrid2x2Fill = SFSymbol(
         title: "circle.grid.2x2.fill",
         categories: nil,
         searchTerms: nil,

@@ -7265,7 +7265,7 @@ public extension SFSymbol {
 
     /// squareshape.dotted.split.2x2
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
-    static let squareshapeDottedSplit2X2 = SFSymbol(
+    static let squareshapeDottedSplit2x2 = SFSymbol(
         title: "squareshape.dotted.split.2x2",
         categories: nil,
         searchTerms: nil,

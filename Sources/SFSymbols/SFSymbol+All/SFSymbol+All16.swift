@@ -818,7 +818,7 @@ public extension SFSymbol {
          .squareTopthirdInsetFilled,
          .squareTrailingthirdInsetFilled,
          .squaresLeadingRectangle,
-         .squareshapeDottedSplit2X2,
+         .squareshapeDottedSplit2x2,
          .stairs,
          .starSquareOnSquare,
          .starSquareOnSquareFill,
