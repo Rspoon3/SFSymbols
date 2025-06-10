@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables14P2.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, visionOS 1.0, *)
@@ -6,7 +13,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let aqiHigh = SFSymbol(
         title: "aqi.high",
-        categories: [.multicolor, .variableColor, .weather],
+        categories: [.multicolor, .variablecolor, .weather],
         searchTerms: ["!", "warning", "weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -15,7 +22,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let aqiLow = SFSymbol(
         title: "aqi.low",
-        categories: [.variableColor, .weather],
+        categories: [.variablecolor, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -24,7 +31,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let aqiMedium = SFSymbol(
         title: "aqi.medium",
-        categories: [.variableColor, .weather],
+        categories: [.variablecolor, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -69,7 +76,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let cartCircle = SFSymbol(
         title: "cart.circle",
-        categories: [.commerce, .objectsAndTools],
+        categories: [.commerce, .objectsandtools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -78,7 +85,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let cartCircleFill = SFSymbol(
         title: "cart.circle.fill",
-        categories: [.commerce, .multicolor, .objectsAndTools],
+        categories: [.commerce, .multicolor, .objectsandtools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -87,7 +94,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let character = SFSymbol(
         title: "character",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: ["a"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -96,7 +103,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterAr = SFSymbol(
         title: "character.ar",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -105,7 +112,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosed = SFSymbol(
         title: "character.book.closed",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -114,7 +121,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedAr = SFSymbol(
         title: "character.book.closed.ar",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -123,7 +130,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFill = SFSymbol(
         title: "character.book.closed.fill",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -132,7 +139,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFillAr = SFSymbol(
         title: "character.book.closed.fill.ar",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -141,7 +148,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFillHe = SFSymbol(
         title: "character.book.closed.fill.he",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -150,7 +157,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFillHi = SFSymbol(
         title: "character.book.closed.fill.hi",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -159,7 +166,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFillJa = SFSymbol(
         title: "character.book.closed.fill.ja",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -168,7 +175,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFillKo = SFSymbol(
         title: "character.book.closed.fill.ko",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -177,7 +184,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedFillTh = SFSymbol(
         title: "character.book.closed.fill.th",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -186,7 +193,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedHe = SFSymbol(
         title: "character.book.closed.he",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -195,7 +202,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedHi = SFSymbol(
         title: "character.book.closed.hi",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -204,7 +211,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedJa = SFSymbol(
         title: "character.book.closed.ja",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -213,7 +220,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedKo = SFSymbol(
         title: "character.book.closed.ko",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -222,7 +229,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterBookClosedTh = SFSymbol(
         title: "character.book.closed.th",
-        categories: [.objectsAndTools],
+        categories: [.objectsandtools],
         searchTerms: ["dictionary"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -231,7 +238,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterHe = SFSymbol(
         title: "character.he",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -240,7 +247,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterHi = SFSymbol(
         title: "character.hi",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -249,7 +256,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterJa = SFSymbol(
         title: "character.ja",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -258,7 +265,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterKo = SFSymbol(
         title: "character.ko",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -267,7 +274,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let characterTh = SFSymbol(
         title: "character.th",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -420,7 +427,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let lockApplewatch = SFSymbol(
         title: "lock.applewatch",
-        categories: [.devices, .privacyAndSecurity],
+        categories: [.devices, .privacyandsecurity],
         searchTerms: ["padlock", "password", "security"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -546,7 +553,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textBelowPhotoFillRtl = SFSymbol(
         title: "text.below.photo.fill.rtl",
-        categories: [.cameraAndPhotos],
+        categories: [.cameraandphotos],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -555,7 +562,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textBelowPhotoRtl = SFSymbol(
         title: "text.below.photo.rtl",
-        categories: [.cameraAndPhotos],
+        categories: [.cameraandphotos],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -564,7 +571,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeAr = SFSymbol(
         title: "textformat.size.ar",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -573,7 +580,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeHe = SFSymbol(
         title: "textformat.size.he",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -582,7 +589,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeHi = SFSymbol(
         title: "textformat.size.hi",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -591,7 +598,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeJa = SFSymbol(
         title: "textformat.size.ja",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -600,7 +607,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeKo = SFSymbol(
         title: "textformat.size.ko",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -609,7 +616,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLarger = SFSymbol(
         title: "textformat.size.larger",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -618,7 +625,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLargerAr = SFSymbol(
         title: "textformat.size.larger.ar",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -627,7 +634,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLargerHe = SFSymbol(
         title: "textformat.size.larger.he",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -636,7 +643,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLargerHi = SFSymbol(
         title: "textformat.size.larger.hi",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -645,7 +652,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLargerJa = SFSymbol(
         title: "textformat.size.larger.ja",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -654,7 +661,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLargerKo = SFSymbol(
         title: "textformat.size.larger.ko",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -663,7 +670,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeLargerTh = SFSymbol(
         title: "textformat.size.larger.th",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -672,7 +679,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmaller = SFSymbol(
         title: "textformat.size.smaller",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -681,7 +688,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmallerAr = SFSymbol(
         title: "textformat.size.smaller.ar",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -690,7 +697,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmallerHe = SFSymbol(
         title: "textformat.size.smaller.he",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -699,7 +706,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmallerHi = SFSymbol(
         title: "textformat.size.smaller.hi",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -708,7 +715,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmallerJa = SFSymbol(
         title: "textformat.size.smaller.ja",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -717,7 +724,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmallerKo = SFSymbol(
         title: "textformat.size.smaller.ko",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -726,7 +733,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeSmallerTh = SFSymbol(
         title: "textformat.size.smaller.th",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -735,7 +742,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSizeTh = SFSymbol(
         title: "textformat.size.th",
-        categories: [.accessibility, .textFormatting],
+        categories: [.accessibility, .textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -744,7 +751,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSubscriptAr = SFSymbol(
         title: "textformat.subscript.ar",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -753,7 +760,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSubscriptHe = SFSymbol(
         title: "textformat.subscript.he",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -762,7 +769,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSubscriptHi = SFSymbol(
         title: "textformat.subscript.hi",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -771,7 +778,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSubscriptJa = SFSymbol(
         title: "textformat.subscript.ja",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -780,7 +787,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSubscriptKo = SFSymbol(
         title: "textformat.subscript.ko",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -789,7 +796,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSubscriptTh = SFSymbol(
         title: "textformat.subscript.th",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -798,7 +805,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSuperscriptAr = SFSymbol(
         title: "textformat.superscript.ar",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -807,7 +814,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSuperscriptHe = SFSymbol(
         title: "textformat.superscript.he",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -816,7 +823,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSuperscriptHi = SFSymbol(
         title: "textformat.superscript.hi",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -825,7 +832,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSuperscriptJa = SFSymbol(
         title: "textformat.superscript.ja",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -834,7 +841,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSuperscriptKo = SFSymbol(
         title: "textformat.superscript.ko",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
@@ -843,7 +850,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     static let textformatSuperscriptTh = SFSymbol(
         title: "textformat.superscript.th",
-        categories: [.textFormatting],
+        categories: [.textformatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0)
     )
