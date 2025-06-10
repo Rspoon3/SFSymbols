@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables17P6.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *)

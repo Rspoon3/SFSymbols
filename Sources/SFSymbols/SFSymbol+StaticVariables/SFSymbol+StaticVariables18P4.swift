@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables18P4.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
@@ -222,7 +229,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyBn = SFSymbol(
         title: "character.magnify.bn",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -231,7 +238,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyGu = SFSymbol(
         title: "character.magnify.gu",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -240,7 +247,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyKn = SFSymbol(
         title: "character.magnify.kn",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -249,7 +256,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyMl = SFSymbol(
         title: "character.magnify.ml",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -258,7 +265,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyMni = SFSymbol(
         title: "character.magnify.mni",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -267,7 +274,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyMr = SFSymbol(
         title: "character.magnify.mr",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -276,7 +283,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyOr = SFSymbol(
         title: "character.magnify.or",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -285,7 +292,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyPa = SFSymbol(
         title: "character.magnify.pa",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -294,7 +301,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifySat = SFSymbol(
         title: "character.magnify.sat",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -303,7 +310,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifySi = SFSymbol(
         title: "character.magnify.si",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -312,7 +319,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyTa = SFSymbol(
         title: "character.magnify.ta",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -321,7 +328,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterMagnifyTe = SFSymbol(
         title: "character.magnify.te",
-        categories: [.accessibility, .textformatting],
+        categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -330,7 +337,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparkles = SFSymbol(
         title: "character.textbox.badge.sparkles",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -339,7 +346,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesAr = SFSymbol(
         title: "character.textbox.badge.sparkles.ar",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -348,7 +355,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesBn = SFSymbol(
         title: "character.textbox.badge.sparkles.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -357,7 +364,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesGu = SFSymbol(
         title: "character.textbox.badge.sparkles.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -366,7 +373,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesHe = SFSymbol(
         title: "character.textbox.badge.sparkles.he",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -375,7 +382,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesHi = SFSymbol(
         title: "character.textbox.badge.sparkles.hi",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -384,7 +391,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesJa = SFSymbol(
         title: "character.textbox.badge.sparkles.ja",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -393,7 +400,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesKn = SFSymbol(
         title: "character.textbox.badge.sparkles.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -402,7 +409,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesKo = SFSymbol(
         title: "character.textbox.badge.sparkles.ko",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -411,7 +418,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesMl = SFSymbol(
         title: "character.textbox.badge.sparkles.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -420,7 +427,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesMni = SFSymbol(
         title: "character.textbox.badge.sparkles.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -429,7 +436,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesMr = SFSymbol(
         title: "character.textbox.badge.sparkles.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -438,7 +445,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesOr = SFSymbol(
         title: "character.textbox.badge.sparkles.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -447,7 +454,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesPa = SFSymbol(
         title: "character.textbox.badge.sparkles.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -456,7 +463,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesSat = SFSymbol(
         title: "character.textbox.badge.sparkles.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -465,7 +472,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesSi = SFSymbol(
         title: "character.textbox.badge.sparkles.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -474,7 +481,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesTa = SFSymbol(
         title: "character.textbox.badge.sparkles.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -483,7 +490,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesTe = SFSymbol(
         title: "character.textbox.badge.sparkles.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -492,7 +499,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBadgeSparklesTh = SFSymbol(
         title: "character.textbox.badge.sparkles.th",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -501,7 +508,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxBn = SFSymbol(
         title: "character.textbox.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -510,7 +517,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxGu = SFSymbol(
         title: "character.textbox.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -519,7 +526,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxKn = SFSymbol(
         title: "character.textbox.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -528,7 +535,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxMl = SFSymbol(
         title: "character.textbox.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -537,7 +544,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxMni = SFSymbol(
         title: "character.textbox.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -546,7 +553,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxMr = SFSymbol(
         title: "character.textbox.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -555,7 +562,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxOr = SFSymbol(
         title: "character.textbox.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -564,7 +571,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxPa = SFSymbol(
         title: "character.textbox.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -573,7 +580,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxSat = SFSymbol(
         title: "character.textbox.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -582,7 +589,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxSi = SFSymbol(
         title: "character.textbox.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -591,7 +598,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxTa = SFSymbol(
         title: "character.textbox.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -600,7 +607,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let characterTextboxTe = SFSymbol(
         title: "character.textbox.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -744,7 +751,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let flagPatternCheckeredLc = SFSymbol(
         title: "flag.pattern.checkered.lc",
-        categories: [.automotive, .objectsandtools],
+        categories: [.automotive, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -987,7 +994,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let minusPlusBatteryblockStackArrowtriangleLeft = SFSymbol(
         title: "minus.plus.batteryblock.stack.arrowtriangle.left",
-        categories: [.automotive, .objectsandtools],
+        categories: [.automotive, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -996,7 +1003,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let minusPlusBatteryblockStackArrowtriangleLeftFill = SFSymbol(
         title: "minus.plus.batteryblock.stack.arrowtriangle.left.fill",
-        categories: [.automotive, .multicolor, .objectsandtools],
+        categories: [.automotive, .multicolor, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1005,7 +1012,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let minusPlusBatteryblockStackArrowtriangleRight = SFSymbol(
         title: "minus.plus.batteryblock.stack.arrowtriangle.right",
-        categories: [.automotive, .objectsandtools],
+        categories: [.automotive, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1014,7 +1021,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let minusPlusBatteryblockStackArrowtriangleRightAndArrowtriangleLeft = SFSymbol(
         title: "minus.plus.batteryblock.stack.arrowtriangle.right.and.arrowtriangle.left",
-        categories: [.automotive, .objectsandtools],
+        categories: [.automotive, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1023,7 +1030,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let minusPlusBatteryblockStackArrowtriangleRightAndArrowtriangleLeftFill = SFSymbol(
         title: "minus.plus.batteryblock.stack.arrowtriangle.right.and.arrowtriangle.left.fill",
-        categories: [.automotive, .multicolor, .objectsandtools],
+        categories: [.automotive, .multicolor, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1032,7 +1039,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let minusPlusBatteryblockStackArrowtriangleRightFill = SFSymbol(
         title: "minus.plus.batteryblock.stack.arrowtriangle.right.fill",
-        categories: [.automotive, .multicolor, .objectsandtools],
+        categories: [.automotive, .multicolor, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1041,7 +1048,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let nosignBadgeClock = SFSymbol(
         title: "nosign.badge.clock",
-        categories: [.multicolor, .privacyandsecurity],
+        categories: [.multicolor, .privacyAndSecurity],
         searchTerms: ["block", "crossed out", "restricted", "slash"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1086,7 +1093,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let photoBadgeShieldExclamationmark = SFSymbol(
         title: "photo.badge.shield.exclamationmark",
-        categories: [.cameraandphotos, .multicolor],
+        categories: [.cameraAndPhotos, .multicolor],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1095,7 +1102,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let photoBadgeShieldExclamationmarkFill = SFSymbol(
         title: "photo.badge.shield.exclamationmark.fill",
-        categories: [.cameraandphotos, .multicolor],
+        categories: [.cameraAndPhotos, .multicolor],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1104,7 +1111,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let photoTrianglebadgeExclamationmark = SFSymbol(
         title: "photo.trianglebadge.exclamationmark",
-        categories: [.cameraandphotos, .multicolor],
+        categories: [.cameraAndPhotos, .multicolor],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1113,7 +1120,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let photoTrianglebadgeExclamationmarkFill = SFSymbol(
         title: "photo.trianglebadge.exclamationmark.fill",
-        categories: [.cameraandphotos, .multicolor],
+        categories: [.cameraAndPhotos, .multicolor],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1203,7 +1210,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let roboticVacuumAndArrowtriangleUp = SFSymbol(
         title: "robotic.vacuum.and.arrowtriangle.up",
-        categories: [.home, .objectsandtools],
+        categories: [.home, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1212,7 +1219,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let roboticVacuumAndArrowtriangleUpFill = SFSymbol(
         title: "robotic.vacuum.and.arrowtriangle.up.fill",
-        categories: [.home, .objectsandtools],
+        categories: [.home, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1221,7 +1228,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let roboticVacuumAndEllipsis = SFSymbol(
         title: "robotic.vacuum.and.ellipsis",
-        categories: [.home, .objectsandtools, .variable],
+        categories: [.home, .objectsAndTools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1230,7 +1237,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let roboticVacuumAndEllipsisFill = SFSymbol(
         title: "robotic.vacuum.and.ellipsis.fill",
-        categories: [.home, .objectsandtools, .variable],
+        categories: [.home, .objectsAndTools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1239,7 +1246,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let spoonServing = SFSymbol(
         title: "spoon.serving",
-        categories: [.objectsandtools],
+        categories: [.objectsAndTools],
         searchTerms: ["drink", "food"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1264,7 +1271,7 @@ public extension SFSymbol {
 
     /// squareshape.split.2x2.dotted.inside
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
-    static let squareshapeSplit2X2DottedInside = SFSymbol(
+    static let squareshapeSplit2x2DottedInside = SFSymbol(
         title: "squareshape.split.2x2.dotted.inside",
         categories: nil,
         searchTerms: ["grid"],
@@ -1273,7 +1280,7 @@ public extension SFSymbol {
 
     /// squareshape.split.2x2.dotted.inside.and.outside
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
-    static let squareshapeSplit2X2DottedInsideAndOutside = SFSymbol(
+    static let squareshapeSplit2x2DottedInsideAndOutside = SFSymbol(
         title: "squareshape.split.2x2.dotted.inside.and.outside",
         categories: nil,
         searchTerms: nil,
@@ -1282,7 +1289,7 @@ public extension SFSymbol {
 
     /// squareshape.split.2x2.dotted.outside
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
-    static let squareshapeSplit2X2DottedOutside = SFSymbol(
+    static let squareshapeSplit2x2DottedOutside = SFSymbol(
         title: "squareshape.split.2x2.dotted.outside",
         categories: nil,
         searchTerms: nil,
@@ -1347,7 +1354,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltBn = SFSymbol(
         title: "textformat.alt.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1356,7 +1363,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltGu = SFSymbol(
         title: "textformat.alt.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1365,7 +1372,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltKn = SFSymbol(
         title: "textformat.alt.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1374,7 +1381,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltMl = SFSymbol(
         title: "textformat.alt.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1383,7 +1390,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltMni = SFSymbol(
         title: "textformat.alt.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1392,7 +1399,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltMr = SFSymbol(
         title: "textformat.alt.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1401,7 +1408,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltOr = SFSymbol(
         title: "textformat.alt.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1410,7 +1417,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltPa = SFSymbol(
         title: "textformat.alt.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1419,7 +1426,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltSat = SFSymbol(
         title: "textformat.alt.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1428,7 +1435,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltSi = SFSymbol(
         title: "textformat.alt.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1437,7 +1444,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltTa = SFSymbol(
         title: "textformat.alt.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1446,7 +1453,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatAltTe = SFSymbol(
         title: "textformat.alt.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1455,7 +1462,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatBn = SFSymbol(
         title: "textformat.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1464,7 +1471,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightBn = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1473,7 +1480,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightGu = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1482,7 +1489,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightKn = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1491,7 +1498,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightMl = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1500,7 +1507,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightMni = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1509,7 +1516,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightMr = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1518,7 +1525,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightOr = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1527,7 +1534,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightPa = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1536,7 +1543,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightSat = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1545,7 +1552,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightSi = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1554,7 +1561,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightTa = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1563,7 +1570,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersArrowLeftAndRightTe = SFSymbol(
         title: "textformat.characters.arrow.left.and.right.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1572,7 +1579,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersBn = SFSymbol(
         title: "textformat.characters.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1581,7 +1588,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineBn = SFSymbol(
         title: "textformat.characters.dottedunderline.bn",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1590,7 +1597,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineGu = SFSymbol(
         title: "textformat.characters.dottedunderline.gu",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1599,7 +1606,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineKn = SFSymbol(
         title: "textformat.characters.dottedunderline.kn",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1608,7 +1615,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineMl = SFSymbol(
         title: "textformat.characters.dottedunderline.ml",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1617,7 +1624,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineMni = SFSymbol(
         title: "textformat.characters.dottedunderline.mni",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1626,7 +1633,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineMr = SFSymbol(
         title: "textformat.characters.dottedunderline.mr",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1635,7 +1642,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineOr = SFSymbol(
         title: "textformat.characters.dottedunderline.or",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1644,7 +1651,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlinePa = SFSymbol(
         title: "textformat.characters.dottedunderline.pa",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1653,7 +1660,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineSat = SFSymbol(
         title: "textformat.characters.dottedunderline.sat",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1662,7 +1669,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineSi = SFSymbol(
         title: "textformat.characters.dottedunderline.si",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1671,7 +1678,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineTa = SFSymbol(
         title: "textformat.characters.dottedunderline.ta",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1680,7 +1687,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersDottedunderlineTe = SFSymbol(
         title: "textformat.characters.dottedunderline.te",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1689,7 +1696,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersGu = SFSymbol(
         title: "textformat.characters.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1698,7 +1705,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersKn = SFSymbol(
         title: "textformat.characters.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1707,7 +1714,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersMl = SFSymbol(
         title: "textformat.characters.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1716,7 +1723,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersMni = SFSymbol(
         title: "textformat.characters.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1725,7 +1732,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersMr = SFSymbol(
         title: "textformat.characters.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1734,7 +1741,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersOr = SFSymbol(
         title: "textformat.characters.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1743,7 +1750,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersPa = SFSymbol(
         title: "textformat.characters.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1752,7 +1759,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersSat = SFSymbol(
         title: "textformat.characters.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1761,7 +1768,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersSi = SFSymbol(
         title: "textformat.characters.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1770,7 +1777,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersTa = SFSymbol(
         title: "textformat.characters.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1779,7 +1786,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatCharactersTe = SFSymbol(
         title: "textformat.characters.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1788,7 +1795,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatGu = SFSymbol(
         title: "textformat.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1797,7 +1804,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatKn = SFSymbol(
         title: "textformat.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1806,7 +1813,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatMl = SFSymbol(
         title: "textformat.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1815,7 +1822,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatMni = SFSymbol(
         title: "textformat.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1824,7 +1831,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatMr = SFSymbol(
         title: "textformat.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1833,7 +1840,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatOr = SFSymbol(
         title: "textformat.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1842,7 +1849,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatPa = SFSymbol(
         title: "textformat.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1851,7 +1858,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSat = SFSymbol(
         title: "textformat.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1860,7 +1867,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSi = SFSymbol(
         title: "textformat.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1869,7 +1876,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptBn = SFSymbol(
         title: "textformat.subscript.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1878,7 +1885,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptGu = SFSymbol(
         title: "textformat.subscript.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1887,7 +1894,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptKn = SFSymbol(
         title: "textformat.subscript.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1896,7 +1903,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptMl = SFSymbol(
         title: "textformat.subscript.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1905,7 +1912,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptMni = SFSymbol(
         title: "textformat.subscript.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1914,7 +1921,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptMr = SFSymbol(
         title: "textformat.subscript.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1923,7 +1930,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptOr = SFSymbol(
         title: "textformat.subscript.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1932,7 +1939,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptPa = SFSymbol(
         title: "textformat.subscript.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1941,7 +1948,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptSat = SFSymbol(
         title: "textformat.subscript.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1950,7 +1957,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptSi = SFSymbol(
         title: "textformat.subscript.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1959,7 +1966,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptTa = SFSymbol(
         title: "textformat.subscript.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1968,7 +1975,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSubscriptTe = SFSymbol(
         title: "textformat.subscript.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1977,7 +1984,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptBn = SFSymbol(
         title: "textformat.superscript.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1986,7 +1993,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptGu = SFSymbol(
         title: "textformat.superscript.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -1995,7 +2002,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptKn = SFSymbol(
         title: "textformat.superscript.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2004,7 +2011,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptMl = SFSymbol(
         title: "textformat.superscript.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2013,7 +2020,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptMni = SFSymbol(
         title: "textformat.superscript.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2022,7 +2029,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptMr = SFSymbol(
         title: "textformat.superscript.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2031,7 +2038,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptOr = SFSymbol(
         title: "textformat.superscript.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2040,7 +2047,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptPa = SFSymbol(
         title: "textformat.superscript.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2049,7 +2056,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptSat = SFSymbol(
         title: "textformat.superscript.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2058,7 +2065,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptSi = SFSymbol(
         title: "textformat.superscript.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2067,7 +2074,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptTa = SFSymbol(
         title: "textformat.superscript.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2076,7 +2083,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatSuperscriptTe = SFSymbol(
         title: "textformat.superscript.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2085,7 +2092,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatTa = SFSymbol(
         title: "textformat.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )
@@ -2094,7 +2101,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let textformatTe = SFSymbol(
         title: "textformat.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )

@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables18P1.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 18.1, macOS 15.1, tvOS 18.1, watchOS 11.1, visionOS 2.1, *)
@@ -69,7 +76,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleBn = SFSymbol(
         title: "character.circle.bn",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -78,7 +85,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillBn = SFSymbol(
         title: "character.circle.fill.bn",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -87,7 +94,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillGu = SFSymbol(
         title: "character.circle.fill.gu",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -96,7 +103,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillKn = SFSymbol(
         title: "character.circle.fill.kn",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -105,7 +112,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillMl = SFSymbol(
         title: "character.circle.fill.ml",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -114,7 +121,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillMni = SFSymbol(
         title: "character.circle.fill.mni",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -123,7 +130,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillMr = SFSymbol(
         title: "character.circle.fill.mr",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -132,7 +139,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillOr = SFSymbol(
         title: "character.circle.fill.or",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -141,7 +148,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillPa = SFSymbol(
         title: "character.circle.fill.pa",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -150,7 +157,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillSat = SFSymbol(
         title: "character.circle.fill.sat",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -159,7 +166,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillSi = SFSymbol(
         title: "character.circle.fill.si",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -168,7 +175,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillTa = SFSymbol(
         title: "character.circle.fill.ta",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -177,7 +184,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleFillTe = SFSymbol(
         title: "character.circle.fill.te",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -186,7 +193,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleGu = SFSymbol(
         title: "character.circle.gu",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -195,7 +202,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleKn = SFSymbol(
         title: "character.circle.kn",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -204,7 +211,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleMl = SFSymbol(
         title: "character.circle.ml",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -213,7 +220,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleMni = SFSymbol(
         title: "character.circle.mni",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -222,7 +229,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleMr = SFSymbol(
         title: "character.circle.mr",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -231,7 +238,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleOr = SFSymbol(
         title: "character.circle.or",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -240,7 +247,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCirclePa = SFSymbol(
         title: "character.circle.pa",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -249,7 +256,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleSat = SFSymbol(
         title: "character.circle.sat",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -258,7 +265,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleSi = SFSymbol(
         title: "character.circle.si",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -267,7 +274,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleTa = SFSymbol(
         title: "character.circle.ta",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -276,7 +283,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterCircleTe = SFSymbol(
         title: "character.circle.te",
-        categories: [.textformatting, .variable],
+        categories: [.textFormatting, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -285,7 +292,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareBn = SFSymbol(
         title: "character.square.bn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -294,7 +301,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillBn = SFSymbol(
         title: "character.square.fill.bn",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -303,7 +310,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillGu = SFSymbol(
         title: "character.square.fill.gu",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -312,7 +319,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillKn = SFSymbol(
         title: "character.square.fill.kn",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -321,7 +328,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillMl = SFSymbol(
         title: "character.square.fill.ml",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -330,7 +337,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillMni = SFSymbol(
         title: "character.square.fill.mni",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -339,7 +346,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillMr = SFSymbol(
         title: "character.square.fill.mr",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -348,7 +355,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillOr = SFSymbol(
         title: "character.square.fill.or",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -357,7 +364,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillPa = SFSymbol(
         title: "character.square.fill.pa",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -366,7 +373,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillSat = SFSymbol(
         title: "character.square.fill.sat",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -375,7 +382,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillSi = SFSymbol(
         title: "character.square.fill.si",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -384,7 +391,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillTa = SFSymbol(
         title: "character.square.fill.ta",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -393,7 +400,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareFillTe = SFSymbol(
         title: "character.square.fill.te",
-        categories: [.multicolor, .textformatting],
+        categories: [.multicolor, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -402,7 +409,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareGu = SFSymbol(
         title: "character.square.gu",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -411,7 +418,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareKn = SFSymbol(
         title: "character.square.kn",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -420,7 +427,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareMl = SFSymbol(
         title: "character.square.ml",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -429,7 +436,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareMni = SFSymbol(
         title: "character.square.mni",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -438,7 +445,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareMr = SFSymbol(
         title: "character.square.mr",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -447,7 +454,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareOr = SFSymbol(
         title: "character.square.or",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -456,7 +463,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquarePa = SFSymbol(
         title: "character.square.pa",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -465,7 +472,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareSat = SFSymbol(
         title: "character.square.sat",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -474,7 +481,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareSi = SFSymbol(
         title: "character.square.si",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -483,7 +490,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareTa = SFSymbol(
         title: "character.square.ta",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -492,7 +499,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let characterSquareTe = SFSymbol(
         title: "character.square.te",
-        categories: [.textformatting],
+        categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -618,7 +625,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let photoBadgeMagnifyingglass = SFSymbol(
         title: "photo.badge.magnifyingglass",
-        categories: [.cameraandphotos],
+        categories: [.cameraAndPhotos],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -627,7 +634,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let photoBadgeMagnifyingglassFill = SFSymbol(
         title: "photo.badge.magnifyingglass.fill",
-        categories: [.cameraandphotos],
+        categories: [.cameraAndPhotos],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -652,7 +659,7 @@ public extension SFSymbol {
 
     /// rectangle.grid.3x1
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
-    static let rectangleGrid3X1 = SFSymbol(
+    static let rectangleGrid3x1 = SFSymbol(
         title: "rectangle.grid.3x1",
         categories: nil,
         searchTerms: nil,
@@ -661,7 +668,7 @@ public extension SFSymbol {
 
     /// rectangle.grid.3x1.fill
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
-    static let rectangleGrid3X1Fill = SFSymbol(
+    static let rectangleGrid3x1Fill = SFSymbol(
         title: "rectangle.grid.3x1.fill",
         categories: nil,
         searchTerms: nil,
@@ -726,7 +733,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let waveformPathEcgMagnifyingglass = SFSymbol(
         title: "waveform.path.ecg.magnifyingglass",
-        categories: [.objectsandtools],
+        categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -744,7 +751,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let waveformPathEcgTextClipboard = SFSymbol(
         title: "waveform.path.ecg.text.clipboard",
-        categories: [.health, .objectsandtools],
+        categories: [.health, .objectsAndTools],
         searchTerms: ["notes"],
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -753,7 +760,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let waveformPathEcgTextClipboardFill = SFSymbol(
         title: "waveform.path.ecg.text.clipboard.fill",
-        categories: [.health, .objectsandtools],
+        categories: [.health, .objectsAndTools],
         searchTerms: ["notes"],
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -762,7 +769,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let waveformPathEcgTextClipboardFillRtl = SFSymbol(
         title: "waveform.path.ecg.text.clipboard.fill.rtl",
-        categories: [.health, .objectsandtools],
+        categories: [.health, .objectsAndTools],
         searchTerms: ["notes"],
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -771,7 +778,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let waveformPathEcgTextClipboardRtl = SFSymbol(
         title: "waveform.path.ecg.text.clipboard.rtl",
-        categories: [.health, .objectsandtools],
+        categories: [.health, .objectsAndTools],
         searchTerms: ["notes"],
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )

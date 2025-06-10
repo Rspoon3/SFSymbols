@@ -1,3 +1,10 @@
+//
+//  SFSymbol+StaticVariables18P2.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 18.2, macOS 15.2, tvOS 18.2, watchOS 11.2, visionOS 2.2, *)
@@ -114,7 +121,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2
     static let headphonesDots = SFSymbol(
         title: "headphones.dots",
-        categories: [.devices, .objectsandtools, .variable],
+        categories: [.devices, .objectsAndTools, .variable],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2)
     )
@@ -177,7 +184,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2
     static let receipt = SFSymbol(
         title: "receipt",
-        categories: [.objectsandtools],
+        categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2)
     )
@@ -186,7 +193,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2
     static let receiptFill = SFSymbol(
         title: "receipt.fill",
-        categories: [.objectsandtools],
+        categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2)
     )
@@ -195,7 +202,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2
     static let wandAndOutline = SFSymbol(
         title: "wand.and.outline",
-        categories: [.editing, .objectsandtools],
+        categories: [.editing, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2)
     )
@@ -204,7 +211,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2
     static let wandAndOutlineInverse = SFSymbol(
         title: "wand.and.outline.inverse",
-        categories: [.editing, .objectsandtools],
+        categories: [.editing, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2)
     )

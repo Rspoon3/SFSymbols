@@ -1,3 +1,10 @@
+//
+//  SFSymbol+All18P4.swift.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
@@ -145,9 +152,9 @@ public extension SFSymbol {
          .spoonServing,
          .squareAndArrowUpBadgeCheckmark,
          .squareAndArrowUpBadgeCheckmarkFill,
-         .squareshapeSplit2X2DottedInside,
-         .squareshapeSplit2X2DottedInsideAndOutside,
-         .squareshapeSplit2X2DottedOutside,
+         .squareshapeSplit2x2DottedInside,
+         .squareshapeSplit2x2DottedInsideAndOutside,
+         .squareshapeSplit2x2DottedOutside,
          .starHexagon,
          .starHexagonFill,
          .suvSideArrowLeftAndRight,

@@ -1,3 +1,10 @@
+//
+//  SFSymbol+All18P1.swift.swift
+//
+//  Generated Automatically on 6/10/25
+//
+
+import Foundation
 import Foundation
 
 @available(iOS 18.1, macOS 15.1, tvOS 18.1, watchOS 11.1, visionOS 2.1, *)
@@ -77,8 +84,8 @@ public extension SFSymbol {
          .photoBadgeMagnifyingglassFill,
          .questionmarkMessage,
          .questionmarkMessageFill,
-         .rectangleGrid3X1,
-         .rectangleGrid3X1Fill,
+         .rectangleGrid3x1,
+         .rectangleGrid3x1Fill,
          .squareAndArrowDownBadgeCheckmark,
          .squareAndArrowDownBadgeCheckmarkFill,
          .squareAndArrowDownBadgeXmark,
