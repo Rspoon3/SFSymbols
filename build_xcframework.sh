@@ -2,8 +2,8 @@
 
 set -e
 
-SCHEME_NAME="SFSymbolsFramework"
-PROJECT_DIR="SFSymbolsFramework"
+SCHEME_NAME="SFSymbolKit"
+PROJECT_DIR="SFSymbolKit"
 PROJECT_NAME="${PROJECT_DIR}/${SCHEME_NAME}.xcodeproj"
 OUTPUT_NAME=${1:-$SCHEME_NAME}
 CONFIGURATION="Release"
