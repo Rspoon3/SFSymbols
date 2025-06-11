@@ -1,5 +1,5 @@
 //
-//  UIAction+Extension.swift
+//  UIAction+Init.swift
 //
 //
 //  Created by Richard Witherspoon on 3/18/22.
@@ -8,9 +8,9 @@
 #if canImport(UIKit) && os(iOS) || os(tvOS) || os(visionOS)
 import UIKit
 
-extension UIAction {
+public extension UIAction {
     @available(tvOS 17.0, *)
-    public convenience init(
+    convenience init(
         title: String = "",
         symbol: SFSymbol,
         identifier: UIAction.Identifier? = nil,
@@ -31,7 +31,7 @@ extension UIAction {
     }
     
     @available(iOS 15.0, tvOS 15.0, *)
-    public convenience init(
+    convenience init(
         title: String = "",
         subtitle: String? = nil,
         symbol: SFSymbol,
