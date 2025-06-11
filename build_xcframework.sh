@@ -26,7 +26,8 @@ xcodebuild archive \
   -archivePath "$ARCHIVE_DIR/ios_devices" \
   -sdk iphoneos \
   SKIP_INSTALL=NO \
-  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+  SWIFT_OPTIMIZATION_LEVEL="-Onone"
 
 echo "🖥  Archiving for iOS Simulator..."
 xcodebuild archive \
@@ -37,16 +38,26 @@ xcodebuild archive \
   -archivePath "$ARCHIVE_DIR/ios_sim" \
   -sdk iphonesimulator \
   SKIP_INSTALL=NO \
-  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+  SWIFT_OPTIMIZATION_LEVEL="-Onone"
 
-IOS_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_devices.xcarchive" -name "${SCHEME_NAME}.framework" -type d | head -1)
-SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_sim.xcarchive" -name "${SCHEME_NAME}.framework" -type d | head -1)
+# Look for any .framework in the archives (more flexible)
+IOS_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_devices.xcarchive" -name "*.framework" -type d | head -1)
+SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_sim.xcarchive" -name "*.framework" -type d | head -1)
 
 if [[ -z "$IOS_FRAMEWORK" || -z "$SIM_FRAMEWORK" ]]; then
     echo "❌ Failed to find framework archives"
+    echo "Available frameworks in iOS archive:"
+    find "$ARCHIVE_DIR/ios_devices.xcarchive" -name "*.framework" -type d
+    echo "Available frameworks in Simulator archive:"
+    find "$ARCHIVE_DIR/ios_sim.xcarchive" -name "*.framework" -type d
     rm -rf "$TMP_DIR"
     exit 1
 fi
+
+echo "📋 Found frameworks:"
+echo "iOS: $IOS_FRAMEWORK"
+echo "Simulator: $SIM_FRAMEWORK"
 
 echo "🧱 Creating XCFramework..."
 xcodebuild -create-xcframework \
@@ -66,3 +77,5 @@ echo "🧹 Cleaning up..."
 rm -rf "$TMP_DIR"
 
 echo "🎉 Done!"
+echo
+echo "💡 Import the module using: import SFSymbols"

@@ -6,11 +6,11 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>SFSymbolKit.framework/SFSymbolKit</string>
+			<string>SFSymbols.framework/SFSymbols</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64</string>
 			<key>LibraryPath</key>
-			<string>SFSymbolKit.framework</string>
+			<string>SFSymbols.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
@@ -20,11 +20,11 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>SFSymbolKit.framework/SFSymbolKit</string>
+			<string>SFSymbols.framework/SFSymbols</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
-			<string>SFSymbolKit.framework</string>
+			<string>SFSymbols.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
