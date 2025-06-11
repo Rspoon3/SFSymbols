@@ -23,8 +23,6 @@ public extension SFSymbol {
     static let cancel = xmark
     static let close = xmark
     static let delete = trash
-    static let undo = arrowUturnForward
-    static let redo = arrowUturnForward
     static let writing = squareAndPencil
     static let compose = squareAndPencil
     static let duplicate = plusSquareOnSquare
@@ -82,6 +80,10 @@ public extension SFSymbol {
 
 @available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0, *)
 public extension SFSymbol {
+    // MARK: - Editing
+
+    static let undo = arrowUturnForward
+    static let redo = arrowUturnForward
     
     // MARK: - Misc
     
@@ -91,7 +93,7 @@ public extension SFSymbol {
 
 // MARK: - Layer Ordering
 
-@available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0, *)
+@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
 public extension SFSymbol {
     
     static let bringToFront = square3Layers3DTopFilled
