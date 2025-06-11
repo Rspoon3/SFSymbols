@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		94AE82AB2DFA344500FBC5FC /* SFSymbols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFSymbols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D42A252DFA425500B7A3B0 /* SFSymbolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFSymbolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		94AE82AD2DFA344500FBC5FC /* SFSymbolKit */ = {
+		94D42A272DFA425500B7A3B0 /* SFSymbolKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SFSymbolKit;
 			sourceTree = "<group>";
@@ -19,7 +19,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94AE82A82DFA344500FBC5FC /* Frameworks */ = {
+		94D42A222DFA425500B7A3B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		94AE82A12DFA344500FBC5FC = {
+		94D42A1B2DFA425500B7A3B0 = {
 			isa = PBXGroup;
 			children = (
-				94AE82AD2DFA344500FBC5FC /* SFSymbolKit */,
-				94AE82AC2DFA344500FBC5FC /* Products */,
+				94D42A272DFA425500B7A3B0 /* SFSymbolKit */,
+				94D42A262DFA425500B7A3B0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		94AE82AC2DFA344500FBC5FC /* Products */ = {
+		94D42A262DFA425500B7A3B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94AE82AB2DFA344500FBC5FC /* SFSymbols.framework */,
+				94D42A252DFA425500B7A3B0 /* SFSymbolKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,7 +48,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		94AE82A62DFA344500FBC5FC /* Headers */ = {
+		94D42A202DFA425500B7A3B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,65 +58,65 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		94AE82AA2DFA344500FBC5FC /* SFSymbols */ = {
+		94D42A242DFA425500B7A3B0 /* SFSymbolKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94AE82B22DFA344500FBC5FC /* Build configuration list for PBXNativeTarget "SFSymbols" */;
+			buildConfigurationList = 94D42A2C2DFA425500B7A3B0 /* Build configuration list for PBXNativeTarget "SFSymbolKit" */;
 			buildPhases = (
-				94AE82A62DFA344500FBC5FC /* Headers */,
-				94AE82A72DFA344500FBC5FC /* Sources */,
-				94AE82A82DFA344500FBC5FC /* Frameworks */,
-				94AE82A92DFA344500FBC5FC /* Resources */,
+				94D42A202DFA425500B7A3B0 /* Headers */,
+				94D42A212DFA425500B7A3B0 /* Sources */,
+				94D42A222DFA425500B7A3B0 /* Frameworks */,
+				94D42A232DFA425500B7A3B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				94AE82AD2DFA344500FBC5FC /* SFSymbolKit */,
+				94D42A272DFA425500B7A3B0 /* SFSymbolKit */,
 			);
-			name = SFSymbols;
+			name = SFSymbolKit;
 			packageProductDependencies = (
 			);
 			productName = SFSymbolKit;
-			productReference = 94AE82AB2DFA344500FBC5FC /* SFSymbols.framework */;
+			productReference = 94D42A252DFA425500B7A3B0 /* SFSymbolKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		94AE82A22DFA344500FBC5FC /* Project object */ = {
+		94D42A1C2DFA425500B7A3B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					94AE82AA2DFA344500FBC5FC = {
+					94D42A242DFA425500B7A3B0 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 94AE82A52DFA344500FBC5FC /* Build configuration list for PBXProject "SFSymbolKit" */;
+			buildConfigurationList = 94D42A1F2DFA425500B7A3B0 /* Build configuration list for PBXProject "SFSymbolKit" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 94AE82A12DFA344500FBC5FC;
+			mainGroup = 94D42A1B2DFA425500B7A3B0;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 94AE82AC2DFA344500FBC5FC /* Products */;
+			productRefGroup = 94D42A262DFA425500B7A3B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94AE82AA2DFA344500FBC5FC /* SFSymbols */,
+				94D42A242DFA425500B7A3B0 /* SFSymbolKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		94AE82A92DFA344500FBC5FC /* Resources */ = {
+		94D42A232DFA425500B7A3B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,7 +126,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94AE82A72DFA344500FBC5FC /* Sources */ = {
+		94D42A212DFA425500B7A3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,7 +136,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		94AE82B02DFA344500FBC5FC /* Debug */ = {
+		94D42A2A2DFA425500B7A3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -194,7 +194,6 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_MODULE_NAME = SFSymbols;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -202,7 +201,7 @@
 			};
 			name = Debug;
 		};
-		94AE82B12DFA344500FBC5FC /* Release */ = {
+		94D42A2B2DFA425500B7A3B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,14 +252,13 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_MODULE_NAME = SFSymbols;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		94AE82B32DFA344500FBC5FC /* Debug */ = {
+		94D42A2D2DFA425500B7A3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
@@ -289,7 +287,6 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rspoon3.SFSymbolKit;
-				PRODUCT_MODULE_NAME = SFSymbols;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
@@ -303,7 +300,7 @@
 			};
 			name = Debug;
 		};
-		94AE82B42DFA344500FBC5FC /* Release */ = {
+		94D42A2E2DFA425500B7A3B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
@@ -332,7 +329,6 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rspoon3.SFSymbolKit;
-				PRODUCT_MODULE_NAME = SFSymbols;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
@@ -349,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94AE82A52DFA344500FBC5FC /* Build configuration list for PBXProject "SFSymbolKit" */ = {
+		94D42A1F2DFA425500B7A3B0 /* Build configuration list for PBXProject "SFSymbolKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94AE82B02DFA344500FBC5FC /* Debug */,
-				94AE82B12DFA344500FBC5FC /* Release */,
+				94D42A2A2DFA425500B7A3B0 /* Debug */,
+				94D42A2B2DFA425500B7A3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94AE82B22DFA344500FBC5FC /* Build configuration list for PBXNativeTarget "SFSymbols" */ = {
+		94D42A2C2DFA425500B7A3B0 /* Build configuration list for PBXNativeTarget "SFSymbolKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94AE82B32DFA344500FBC5FC /* Debug */,
-				94AE82B42DFA344500FBC5FC /* Release */,
+				94D42A2D2DFA425500B7A3B0 /* Debug */,
+				94D42A2E2DFA425500B7A3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 94AE82A22DFA344500FBC5FC /* Project object */;
+	rootObject = 94D42A1C2DFA425500B7A3B0 /* Project object */;
 }
