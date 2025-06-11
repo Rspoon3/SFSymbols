@@ -15,21 +15,12 @@ let package = Package(
         .library(
             name: "SFSymbols",
             targets: ["SFSymbols"]
-        ),
-        .library(
-            name: "SFSymbolsDynamic",
-            type: .dynamic,
-            targets: ["SFSymbols"]
         )
     ],
     targets: [
-        .target(
+        .binaryTarget(
             name: "SFSymbols",
-            exclude: ["../../UpdateScript.swift"]
-        ),
-        .testTarget(
-            name: "SFSymbolsTests",
-            dependencies: ["SFSymbols"]
-        ),
+            path: "./SFSymbolKit.xcframework"
+        )
     ]
 )
