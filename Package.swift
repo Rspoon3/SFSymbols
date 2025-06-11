@@ -26,5 +26,6 @@ let package = Package(
             name: "SFSymbolsTests",
             dependencies: ["SFSymbols"]
         ),
-    ]
+    ],
+    swiftLanguageModes: [.v6]
 )
