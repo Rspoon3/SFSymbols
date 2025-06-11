@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -16,6 +16,11 @@ let package = Package(
             name: "SFSymbols",
             targets: ["SFSymbols"]
         ),
+        .library(
+            name: "SFSymbolsDynamic",
+            type: .dynamic,
+            targets: ["SFSymbols"]
+        )
     ],
     targets: [
         .target(
@@ -26,6 +31,5 @@ let package = Package(
             name: "SFSymbolsTests",
             dependencies: ["SFSymbols"]
         ),
-    ],
-    swiftLanguageModes: [.v6]
+    ]
 )
