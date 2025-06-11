@@ -15,12 +15,23 @@ let package = Package(
         .library(
             name: "SFSymbols",
             targets: ["SFSymbols"]
+        ),
+        .library(
+            name: "SFSymbolsBinary",
+            targets: ["SFSymbolsBinary"]
         )
     ],
     targets: [
+        .target(
+            name: "SFSymbols"
+        ),
         .binaryTarget(
-            name: "SFSymbols",
+            name: "SFSymbolsBinary",
             path: "./SFSymbolKit.xcframework"
+        ),
+        .testTarget(
+            name: "SFSymbolsTests",
+            dependencies: ["SFSymbols"]
         )
     ]
 )
