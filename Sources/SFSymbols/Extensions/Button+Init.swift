@@ -109,7 +109,7 @@ public extension Button where Label == SwiftUI.Label<Text, Image>{
     ///     - role: An optional semantic role describing the button. A value of nil means that the button doesn’t have an assigned role.
     ///     - action: The action to perform when the user triggers the button.
     @_disfavoredOverload
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
+    @available(iOS 15.0, macOS 14.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
     init<S>(
         _ title: S,
         symbol: SFSymbol,
@@ -131,7 +131,7 @@ public extension Button where Label == SwiftUI.Label<Text, Image>{
     ///     - symbol: The `SFSymbol` describing this image.
     ///     - role: An optional semantic role describing the button. A value of nil means that the button doesn’t have an assigned role.
     ///     - action: The action to perform when the user triggers the button.
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
+    @available(iOS 15.0, macOS 14.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
     init(
         _ titleKey: LocalizedStringKey,
         symbol: SFSymbol,
