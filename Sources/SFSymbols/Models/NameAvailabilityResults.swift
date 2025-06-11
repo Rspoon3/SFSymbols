@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct NameAvailabilityResults: Codable{
+public struct NameAvailabilityResults: Codable, Sendable {
     public let symbols: [SFSymbol]
     let yearToRelease: [String: ReleaseInfo]
     
