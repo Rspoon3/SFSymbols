@@ -1,5 +1,5 @@
 //
-//  UIImage+Extension.swift
+//  UIImage+Init.swift
 //  
 //
 //  Created by Richard Witherspoon on 4/22/21.
