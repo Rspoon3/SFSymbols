@@ -156,12 +156,17 @@ To build the XCFramework for distribution, use the provided build script:
     - Create a universal XCFramework
     - Clean up temporary files
 
-3. **About the Xcode project**:
+3. **Prerequisites**:
+    - **Required**: All platform simulators must be downloaded in Xcode before running the build script
+    - Install simulators via: Xcode → Platforms → Download required simulators (iOS, watchOS, tvOS, visionOS)
+    - The build will fail if any required simulators are missing
+
+4. **About the Xcode project**:
     - The repository includes a dummy `SFSymbolKit.xcodeproj` which is required to generate the XCFramework
     - This project should be occasionally updated as new versions of Xcode are released
     - The project settings and configurations may need updates to support newer iOS versions and build tools
 
-4. **Manual steps required**:
+5. **Manual steps required**:
     - The script must be run manually when creating releases
     - The generated `SFSymbolKit.xcframework` needs to be manually added as a release asset
     - Currently there is no automation for release publishing
