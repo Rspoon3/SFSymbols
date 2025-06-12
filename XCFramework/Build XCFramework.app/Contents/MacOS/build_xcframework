@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Get the directory containing the .app bundle (which is the XCFramework directory)
+XCFRAMEWORK_DIR="$(dirname "$(dirname "$(dirname "$(dirname "$0")")")")"
+
+# Open Terminal and run the build script
+osascript -e "
+tell application \"Terminal\"
+    activate
+    do script \"cd '$XCFRAMEWORK_DIR' && chmod +x ./build_xcframework.sh && ./build_xcframework.sh\"
+end tell
+"

@@ -130,17 +130,17 @@ If you have any suggestions or ideas for improving the project, please feel free
 
 To build the XCFramework for distribution, use the provided build script:
 
-1. **Navigate to the `SFSymbols` directory** in your terminal:
+1. **Navigate to the `XCFramework` directory** in your terminal:
 
     ```bash
-    cd path/to/SFSymbols
+    cd path/to/SFSymbols/XCFramework
     ```
 
 2. **Run the build script**:
 
     **Option A: Using the GUI app (easiest)**
     
-    Double-click the `Build XCFramework.app` in the project directory. This will:
+    Double-click the `Build XCFramework.app` in the `XCFramework` directory. This will:
     - Open Terminal automatically
     - Navigate to the correct directory
     - Run the build script
@@ -160,10 +160,9 @@ To build the XCFramework for distribution, use the provided build script:
 
     This script will:
     - Clean any existing XCFramework
-    - Copy source files from `Sources/` to the Xcode project
-    - Build for all supported platforms: iOS, macOS, watchOS, tvOS, and visionOS
-    - Build simulators for all applicable platforms
-    - Create a universal XCFramework
+    - Copy source files from `Sources/` (in parent directory) to the Xcode project
+    - Build for all supported platforms, including simulators: iOS, macOS, watchOS, tvOS, and visionOS
+    - Create a universal XCFramework in the `XCFramework` directory
     - Clean up temporary files
 
 3. **Prerequisites**:

@@ -19,15 +19,16 @@ fi
 
 # Copy files from Sources to SFSymbolKit/SFSymbolKit directory
 echo "📁 Copying source files from Sources to SFSymbolKit/SFSymbolKit..."
-if [ -d "$SCRIPT_DIR/Sources" ]; then
+SOURCES_DIR="$(dirname "$SCRIPT_DIR")/Sources"
+if [ -d "$SOURCES_DIR" ]; then
     # Nuke everything in SFSymbolKit/SFSymbolKit directory
     rm -rf "$SCRIPT_DIR/$PROJECT_DIR/SFSymbolKit/"*
     
     # Copy all contents from Sources to SFSymbolKit/SFSymbolKit
-    cp -R "$SCRIPT_DIR/Sources/"* "$SCRIPT_DIR/$PROJECT_DIR/SFSymbolKit/"
+    cp -R "$SOURCES_DIR/"* "$SCRIPT_DIR/$PROJECT_DIR/SFSymbolKit/"
     echo "✅ Source files copied successfully"
 else
-    echo "❌ Sources directory not found at: $SCRIPT_DIR/Sources"
+    echo "❌ Sources directory not found at: $SOURCES_DIR"
     exit 1
 fi
 
