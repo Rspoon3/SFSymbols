@@ -142,6 +142,12 @@ To build the XCFramework for distribution, use the provided build script:
     ./build_xcframework.sh
     ```
 
+    For verbose output during the build process:
+
+    ```bash
+    VERBOSE=true ./build_xcframework.sh
+    ```
+
     This script will:
     - Clean any existing XCFramework
     - Copy source files from `Sources/` to the Xcode project

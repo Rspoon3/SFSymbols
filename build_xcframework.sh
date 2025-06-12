@@ -6,6 +6,7 @@ PROJECT_DIR="SFSymbolKit"
 PROJECT_NAME="${PROJECT_DIR}/SFSymbolKit.xcodeproj"
 OUTPUT_NAME=${1:-"SFSymbolKit"}
 CONFIGURATION="Release"
+VERBOSE=${VERBOSE:-false}
 
 # Get absolute path of the script's directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -72,6 +73,12 @@ XCFRAMEWORK_OUTPUT="$BUILD_DIR/${OUTPUT_NAME}.xcframework"
 
 mkdir -p "$ARCHIVE_DIR"
 
+# Set quiet flag based on verbose option
+QUIET_FLAG=""
+if [ "$VERBOSE" != "true" ]; then
+    QUIET_FLAG="-quiet"
+fi
+
 # Build for all platforms
 echo "📲 Archiving for iOS..."
 xcodebuild archive \
@@ -81,6 +88,7 @@ xcodebuild archive \
   -destination "generic/platform=iOS" \
   -archivePath "$ARCHIVE_DIR/ios_devices" \
   -sdk iphoneos \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -92,6 +100,7 @@ xcodebuild archive \
   -destination "generic/platform=iOS Simulator" \
   -archivePath "$ARCHIVE_DIR/ios_sim" \
   -sdk iphonesimulator \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -103,6 +112,7 @@ xcodebuild archive \
   -destination "generic/platform=macOS" \
   -archivePath "$ARCHIVE_DIR/macos" \
   -sdk macosx \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -114,6 +124,7 @@ xcodebuild archive \
   -destination "generic/platform=watchOS" \
   -archivePath "$ARCHIVE_DIR/watchos_devices" \
   -sdk watchos \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -125,6 +136,7 @@ xcodebuild archive \
   -destination "generic/platform=watchOS Simulator" \
   -archivePath "$ARCHIVE_DIR/watchos_sim" \
   -sdk watchsimulator \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -136,6 +148,7 @@ xcodebuild archive \
   -destination "generic/platform=tvOS" \
   -archivePath "$ARCHIVE_DIR/tvos_devices" \
   -sdk appletvos \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -147,6 +160,7 @@ xcodebuild archive \
   -destination "generic/platform=tvOS Simulator" \
   -archivePath "$ARCHIVE_DIR/tvos_sim" \
   -sdk appletvsimulator \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -158,6 +172,7 @@ xcodebuild archive \
   -destination "generic/platform=visionOS" \
   -archivePath "$ARCHIVE_DIR/visionos_devices" \
   -sdk xros \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -169,6 +184,7 @@ xcodebuild archive \
   -destination "generic/platform=visionOS Simulator" \
   -archivePath "$ARCHIVE_DIR/visionos_sim" \
   -sdk xrsimulator \
+  $QUIET_FLAG \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -213,7 +229,8 @@ fi
 echo "🧱 Creating XCFramework..."
 xcodebuild -create-xcframework \
   "${XCFRAMEWORK_ARGS[@]}" \
-  -output "$XCFRAMEWORK_OUTPUT"
+  -output "$XCFRAMEWORK_OUTPUT" \
+  $QUIET_FLAG
 
 echo
 echo "✅ XCFramework created at:"
