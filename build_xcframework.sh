@@ -137,6 +137,10 @@ echo "📦 XCFramework copied to: $FINAL_OUTPUT"
 echo "🧹 Cleaning up..."
 rm -rf "$TMP_DIR"
 
+# Clean up source files from SFSymbolKit/SFSymbolKit
+echo "🧹 Cleaning up source files from SFSymbolKit/SFSymbolKit..."
+rm -rf "$SCRIPT_DIR/$PROJECT_DIR/SFSymbolKit/"*
+
 echo "🎉 Done!"
 echo
 echo "💡 Import the module using: import $SCHEME_NAME"
