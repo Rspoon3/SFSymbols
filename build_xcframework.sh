@@ -10,6 +10,20 @@ CONFIGURATION="Release"
 # Get absolute path of the script's directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Copy files from Sources to SFSymbolKit/SFSymbolKit directory
+echo "📁 Copying source files from Sources to SFSymbolKit/SFSymbolKit..."
+if [ -d "$SCRIPT_DIR/Sources" ]; then
+    # Nuke everything in SFSymbolKit/SFSymbolKit directory
+    rm -rf "$SCRIPT_DIR/$PROJECT_DIR/SFSymbolKit/"*
+    
+    # Copy all contents from Sources to SFSymbolKit/SFSymbolKit
+    cp -R "$SCRIPT_DIR/Sources/"* "$SCRIPT_DIR/$PROJECT_DIR/SFSymbolKit/"
+    echo "✅ Source files copied successfully"
+else
+    echo "❌ Sources directory not found at: $SCRIPT_DIR/Sources"
+    exit 1
+fi
+
 # Check if project exists
 if [ ! -d "$SCRIPT_DIR/$PROJECT_NAME" ]; then
     echo "❌ Project not found at: $SCRIPT_DIR/$PROJECT_NAME"
