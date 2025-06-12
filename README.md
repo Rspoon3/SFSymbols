@@ -145,8 +145,9 @@ To build the XCFramework for distribution, use the provided build script:
     This script will:
     - Clean any existing XCFramework
     - Copy source files from `Sources/` to the Xcode project
-    - Build for iOS device and simulator
-    - Create the XCFramework
+    - Build for all supported platforms: iOS, macOS, watchOS, tvOS, and visionOS
+    - Build simulators for all applicable platforms
+    - Create a universal XCFramework
     - Clean up temporary files
 
 3. **About the Xcode project**:

@@ -72,6 +72,7 @@ XCFRAMEWORK_OUTPUT="$BUILD_DIR/${OUTPUT_NAME}.xcframework"
 
 mkdir -p "$ARCHIVE_DIR"
 
+# Build for all platforms
 echo "📲 Archiving for iOS..."
 xcodebuild archive \
   -project "$SCRIPT_DIR/$PROJECT_NAME" \
@@ -94,36 +95,124 @@ xcodebuild archive \
   SKIP_INSTALL=NO \
   BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
-# Look for any .framework in the archives (more flexible)
-IOS_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_devices.xcarchive" -name "*.framework" -type d | head -1)
-SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_sim.xcarchive" -name "*.framework" -type d | head -1)
+echo "💻 Archiving for macOS..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=macOS" \
+  -archivePath "$ARCHIVE_DIR/macos" \
+  -sdk macosx \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
-if [[ -z "$IOS_FRAMEWORK" || -z "$SIM_FRAMEWORK" ]]; then
-    echo "❌ Failed to find framework archives"
-    echo "Available frameworks in iOS archive:"
-    find "$ARCHIVE_DIR/ios_devices.xcarchive" -name "*.framework" -type d || echo "None found"
-    echo "Available frameworks in Simulator archive:"
-    find "$ARCHIVE_DIR/ios_sim.xcarchive" -name "*.framework" -type d || echo "None found"
-    
-    echo ""
-    echo "🔍 Archive contents:"
-    echo "iOS archive:"
-    ls -la "$ARCHIVE_DIR/ios_devices.xcarchive/Products/" 2>/dev/null || echo "No Products directory"
-    echo "Simulator archive:"
-    ls -la "$ARCHIVE_DIR/ios_sim.xcarchive/Products/" 2>/dev/null || echo "No Products directory"
-    
+echo "⌚ Archiving for watchOS..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=watchOS" \
+  -archivePath "$ARCHIVE_DIR/watchos_devices" \
+  -sdk watchos \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+echo "⌚ Archiving for watchOS Simulator..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=watchOS Simulator" \
+  -archivePath "$ARCHIVE_DIR/watchos_sim" \
+  -sdk watchsimulator \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+echo "📺 Archiving for tvOS..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=tvOS" \
+  -archivePath "$ARCHIVE_DIR/tvos_devices" \
+  -sdk appletvos \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+echo "📺 Archiving for tvOS Simulator..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=tvOS Simulator" \
+  -archivePath "$ARCHIVE_DIR/tvos_sim" \
+  -sdk appletvsimulator \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+echo "🥽 Archiving for visionOS..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=visionOS" \
+  -archivePath "$ARCHIVE_DIR/visionos_devices" \
+  -sdk xros \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+echo "🥽 Archiving for visionOS Simulator..."
+xcodebuild archive \
+  -project "$SCRIPT_DIR/$PROJECT_NAME" \
+  -scheme "$SCHEME_NAME" \
+  -configuration "$CONFIGURATION" \
+  -destination "generic/platform=visionOS Simulator" \
+  -archivePath "$ARCHIVE_DIR/visionos_sim" \
+  -sdk xrsimulator \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+# Look for frameworks in all archives
+IOS_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_devices.xcarchive" -name "*.framework" -type d | head -1)
+IOS_SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/ios_sim.xcarchive" -name "*.framework" -type d | head -1)
+MACOS_FRAMEWORK=$(find "$ARCHIVE_DIR/macos.xcarchive" -name "*.framework" -type d | head -1)
+WATCHOS_FRAMEWORK=$(find "$ARCHIVE_DIR/watchos_devices.xcarchive" -name "*.framework" -type d | head -1)
+WATCHOS_SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/watchos_sim.xcarchive" -name "*.framework" -type d | head -1)
+TVOS_FRAMEWORK=$(find "$ARCHIVE_DIR/tvos_devices.xcarchive" -name "*.framework" -type d | head -1)
+TVOS_SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/tvos_sim.xcarchive" -name "*.framework" -type d | head -1)
+VISIONOS_FRAMEWORK=$(find "$ARCHIVE_DIR/visionos_devices.xcarchive" -name "*.framework" -type d | head -1)
+VISIONOS_SIM_FRAMEWORK=$(find "$ARCHIVE_DIR/visionos_sim.xcarchive" -name "*.framework" -type d | head -1)
+
+# Check if we found all frameworks
+FRAMEWORKS=("$IOS_FRAMEWORK" "$IOS_SIM_FRAMEWORK" "$MACOS_FRAMEWORK" "$WATCHOS_FRAMEWORK" "$WATCHOS_SIM_FRAMEWORK" "$TVOS_FRAMEWORK" "$TVOS_SIM_FRAMEWORK" "$VISIONOS_FRAMEWORK" "$VISIONOS_SIM_FRAMEWORK")
+FRAMEWORK_NAMES=("iOS" "iOS Simulator" "macOS" "watchOS" "watchOS Simulator" "tvOS" "tvOS Simulator" "visionOS" "visionOS Simulator")
+
+echo "📋 Found frameworks:"
+for i in "${!FRAMEWORKS[@]}"; do
+    if [[ -n "${FRAMEWORKS[$i]}" ]]; then
+        echo "${FRAMEWORK_NAMES[$i]}: ${FRAMEWORKS[$i]}"
+    else
+        echo "❌ Missing framework for ${FRAMEWORK_NAMES[$i]}"
+    fi
+done
+
+# Build XCFramework arguments
+XCFRAMEWORK_ARGS=()
+for framework in "${FRAMEWORKS[@]}"; do
+    if [[ -n "$framework" ]]; then
+        XCFRAMEWORK_ARGS+=("-framework" "$framework")
+    fi
+done
+
+if [[ ${#XCFRAMEWORK_ARGS[@]} -eq 0 ]]; then
+    echo "❌ No frameworks found to create XCFramework"
     rm -rf "$TMP_DIR"
     exit 1
 fi
 
-echo "📋 Found frameworks:"
-echo "iOS: $IOS_FRAMEWORK"
-echo "Simulator: $SIM_FRAMEWORK"
-
 echo "🧱 Creating XCFramework..."
 xcodebuild -create-xcframework \
-  -framework "$IOS_FRAMEWORK" \
-  -framework "$SIM_FRAMEWORK" \
+  "${XCFRAMEWORK_ARGS[@]}" \
   -output "$XCFRAMEWORK_OUTPUT"
 
 echo
