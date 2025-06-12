@@ -11,6 +11,12 @@ All the SFSymbols at your fingertips.
 ## Usage 
 `SFSymbol` are `static variables` that contain the identifier strings of all of apple's `SFSymbols` as well as which category they belong to and their availability.
 
+**Important:** When using the XCFramework, you must import `SFSymbolKit` instead of `SFSymbols` due to a name collision with Apple's private `SFSymbol` framework. This collision causes runtime crashes at app startup. Even changing the product module name couldn't resolve this issue, so the framework is distributed as `SFSymbolKit`.
+
+```swift
+import SFSymbolKit
+```
+
 You can iterate through all version compatible symbols by using the 'allSymbols' static variable.
 
 ```swift
@@ -119,6 +125,39 @@ Thanks to [Nirma](https://github.com/Nirma) for the idea. This project was highl
 ## Contributing
 
 If you have any suggestions or ideas for improving the project, please feel free to propose them. You can either create a pull request or open an issue for this project.
+
+## Building XCFramework
+
+To build the XCFramework for distribution, use the provided build script:
+
+1. **Navigate to the `SFSymbols` directory** in your terminal:
+
+    ```bash
+    cd path/to/SFSymbols
+    ```
+
+2. **Run the build script**:
+
+    ```bash
+    ./build_xcframework.sh
+    ```
+
+    This script will:
+    - Clean any existing XCFramework
+    - Copy source files from `Sources/` to the Xcode project
+    - Build for iOS device and simulator
+    - Create the XCFramework
+    - Clean up temporary files
+
+3. **About the Xcode project**:
+    - The repository includes a dummy `SFSymbolKit.xcodeproj` which is required to generate the XCFramework
+    - This project should be occasionally updated as new versions of Xcode are released
+    - The project settings and configurations may need updates to support newer iOS versions and build tools
+
+4. **Manual steps required**:
+    - The script must be run manually when creating releases
+    - The generated `SFSymbolKit.xcframework` needs to be manually added as a release asset
+    - Currently there is no automation for release publishing
 
 ## Updating The Symbols
 
