@@ -138,6 +138,16 @@ To build the XCFramework for distribution, use the provided build script:
 
 2. **Run the build script**:
 
+    **Option A: Using the GUI app (easiest)**
+    
+    Double-click the `Build XCFramework.app` in the project directory. This will:
+    - Open Terminal automatically
+    - Navigate to the correct directory
+    - Run the build script
+    - Show progress in Terminal
+
+    **Option B: Using Terminal**
+
     ```bash
     ./build_xcframework.sh
     ```
