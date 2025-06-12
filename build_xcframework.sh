@@ -227,10 +227,15 @@ if [[ ${#XCFRAMEWORK_ARGS[@]} -eq 0 ]]; then
 fi
 
 echo "🧱 Creating XCFramework..."
-xcodebuild -create-xcframework \
-  "${XCFRAMEWORK_ARGS[@]}" \
-  -output "$XCFRAMEWORK_OUTPUT" \
-  $QUIET_FLAG
+if [ "$VERBOSE" = "true" ]; then
+    xcodebuild -create-xcframework \
+      "${XCFRAMEWORK_ARGS[@]}" \
+      -output "$XCFRAMEWORK_OUTPUT"
+else
+    xcodebuild -create-xcframework \
+      "${XCFRAMEWORK_ARGS[@]}" \
+      -output "$XCFRAMEWORK_OUTPUT" > /dev/null 2>&1
+fi
 
 echo
 echo "✅ XCFramework created at:"
