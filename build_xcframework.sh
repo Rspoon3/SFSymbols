@@ -10,6 +10,12 @@ CONFIGURATION="Release"
 # Get absolute path of the script's directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Delete existing SFSymbolKit.xcframework if it exists
+if [ -d "$SCRIPT_DIR/SFSymbolKit.xcframework" ]; then
+    echo "🗑️ Removing existing SFSymbolKit.xcframework..."
+    rm -rf "$SCRIPT_DIR/SFSymbolKit.xcframework"
+fi
+
 # Copy files from Sources to SFSymbolKit/SFSymbolKit directory
 echo "📁 Copying source files from Sources to SFSymbolKit/SFSymbolKit..."
 if [ -d "$SCRIPT_DIR/Sources" ]; then
