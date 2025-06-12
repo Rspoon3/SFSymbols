@@ -17,6 +17,333 @@ extension SFSymbolKit.SFSymbol {
     get
   }
 }
+extension SwiftUI.Button where Label == SwiftUICore.Image {
+  public init(symbol: SFSymbolKit.SFSymbol, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
+  @available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0, *)
+  public init(symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
+}
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
+extension SwiftUI.Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole?, action: @escaping () -> Swift.Void)
+  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole?, action: @escaping () -> Swift.Void) where S : Swift.StringProtocol
+}
+@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0, *)
+extension SwiftUI.Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
+  @available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0, *)
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole? = nil, textColor: SwiftUICore.Color? = nil, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
+  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol, action: @escaping () -> Swift.Void) where S : Swift.StringProtocol
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, action: @escaping () -> Swift.Void)
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole? = nil, intent: some AppIntent)
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  @_disfavoredOverload public init(_ title: some StringProtocol, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole? = nil, intent: some AppIntent)
+}
+@available(iOS 16.4, macOS 13.3, tvOS 16.4, watchOS 9.4, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static let _1LaneAr: SFSymbolKit.SFSymbol
+  public static let _1LaneHi: SFSymbolKit.SFSymbol
+  public static let _10LaneAr: SFSymbolKit.SFSymbol
+  public static let _10LaneHi: SFSymbolKit.SFSymbol
+  public static let _11LaneAr: SFSymbolKit.SFSymbol
+  public static let _11LaneHi: SFSymbolKit.SFSymbol
+  public static let _12LaneAr: SFSymbolKit.SFSymbol
+  public static let _12LaneHi: SFSymbolKit.SFSymbol
+  public static let _2LaneAr: SFSymbolKit.SFSymbol
+  public static let _2LaneHi: SFSymbolKit.SFSymbol
+  public static let _3LaneAr: SFSymbolKit.SFSymbol
+  public static let _3LaneHi: SFSymbolKit.SFSymbol
+  public static let _4LaneAr: SFSymbolKit.SFSymbol
+  public static let _4LaneHi: SFSymbolKit.SFSymbol
+  public static let _5LaneAr: SFSymbolKit.SFSymbol
+  public static let _5LaneHi: SFSymbolKit.SFSymbol
+  public static let _6LaneAr: SFSymbolKit.SFSymbol
+  public static let _6LaneHi: SFSymbolKit.SFSymbol
+  public static let _7LaneAr: SFSymbolKit.SFSymbol
+  public static let _7LaneHi: SFSymbolKit.SFSymbol
+  public static let _8LaneAr: SFSymbolKit.SFSymbol
+  public static let _8LaneHi: SFSymbolKit.SFSymbol
+  public static let _9LaneAr: SFSymbolKit.SFSymbol
+  public static let _9LaneHi: SFSymbolKit.SFSymbol
+  public static let axle2: SFSymbolKit.SFSymbol
+  public static let axle2FrontAndRearEngaged: SFSymbolKit.SFSymbol
+  public static let axle2FrontEngaged: SFSymbolKit.SFSymbol
+  public static let axle2RearEngaged: SFSymbolKit.SFSymbol
+  public static let beatsPowerbeatsLeft: SFSymbolKit.SFSymbol
+  public static let beatsPowerbeatsRight: SFSymbolKit.SFSymbol
+  public static let beatsPowerbeats3Left: SFSymbolKit.SFSymbol
+  public static let beatsPowerbeats3Right: SFSymbolKit.SFSymbol
+}
+@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols16: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
+@available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
+extension SFSymbolKit.SFSymbol {
+  public static let arrowBackwardToLineCompact: SFSymbolKit.SFSymbol
+  public static let arrowForwardToLineCompact: SFSymbolKit.SFSymbol
+  public static let carSideArrowLeftAndRight: SFSymbolKit.SFSymbol
+  public static let carSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
+  public static let carSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
+  public static let carSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
+  public static let carSideRearAndCollisionAndCarSideFrontAndArrowForward: SFSymbolKit.SFSymbol
+  public static let carSideRearAndCollisionAndCarSideFrontAndSteeringwheel: SFSymbolKit.SFSymbol
+  public static let carTopLaneDashedDepartureLeftSlash: SFSymbolKit.SFSymbol
+  public static let carTopLaneDashedDepartureLeftSlashFill: SFSymbolKit.SFSymbol
+  public static let carTopLaneDashedDepartureRightSlash: SFSymbolKit.SFSymbol
+  public static let carTopLaneDashedDepartureRightSlashFill: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamBn: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamGu: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamKn: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamMl: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamMni: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamMr: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamOr: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamPa: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamSat: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamSi: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamTa: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamTe: SFSymbolKit.SFSymbol
+  public static let characterMagnifyBn: SFSymbolKit.SFSymbol
+  public static let characterMagnifyGu: SFSymbolKit.SFSymbol
+  public static let characterMagnifyKn: SFSymbolKit.SFSymbol
+  public static let characterMagnifyMl: SFSymbolKit.SFSymbol
+  public static let characterMagnifyMni: SFSymbolKit.SFSymbol
+  public static let characterMagnifyMr: SFSymbolKit.SFSymbol
+  public static let characterMagnifyOr: SFSymbolKit.SFSymbol
+  public static let characterMagnifyPa: SFSymbolKit.SFSymbol
+  public static let characterMagnifySat: SFSymbolKit.SFSymbol
+  public static let characterMagnifySi: SFSymbolKit.SFSymbol
+  public static let characterMagnifyTa: SFSymbolKit.SFSymbol
+  public static let characterMagnifyTe: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparkles: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesAr: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesBn: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesGu: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesHe: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesHi: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesJa: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesKn: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesKo: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesMl: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesMni: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesMr: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesOr: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesPa: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesSat: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesSi: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesTa: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesTe: SFSymbolKit.SFSymbol
+  public static let characterTextboxBadgeSparklesTh: SFSymbolKit.SFSymbol
+  public static let characterTextboxBn: SFSymbolKit.SFSymbol
+  public static let characterTextboxGu: SFSymbolKit.SFSymbol
+  public static let characterTextboxKn: SFSymbolKit.SFSymbol
+  public static let characterTextboxMl: SFSymbolKit.SFSymbol
+  public static let characterTextboxMni: SFSymbolKit.SFSymbol
+  public static let characterTextboxMr: SFSymbolKit.SFSymbol
+  public static let characterTextboxOr: SFSymbolKit.SFSymbol
+  public static let characterTextboxPa: SFSymbolKit.SFSymbol
+  public static let characterTextboxSat: SFSymbolKit.SFSymbol
+  public static let characterTextboxSi: SFSymbolKit.SFSymbol
+  public static let characterTextboxTa: SFSymbolKit.SFSymbol
+  public static let characterTextboxTe: SFSymbolKit.SFSymbol
+  public static let convertibleSideArrowLeftAndRight: SFSymbolKit.SFSymbol
+  public static let convertibleSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
+  public static let convertibleSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
+  public static let convertibleSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
+  public static let cursorarrowResizeNorthEastSouthEast: SFSymbolKit.SFSymbol
+  public static let electronicTollCollection: SFSymbolKit.SFSymbol
+  public static let electronicTollCollectionRectangle: SFSymbolKit.SFSymbol
+  public static let electronicTollCollectionRectangleFill: SFSymbolKit.SFSymbol
+  public static let electronicTollCollectionRectangleSlash: SFSymbolKit.SFSymbol
+  public static let electronicTollCollectionRectangleSlashFill: SFSymbolKit.SFSymbol
+  public static let electronicTollCollectionRectangleTrianglebadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let electronicTollCollectionRectangleTrianglebadgeExclamationmarkFill: SFSymbolKit.SFSymbol
+  public static let engineEmissionAndDrop2WaterWaveBelow: SFSymbolKit.SFSymbol
+  public static let envelopeAndArrow3Down: SFSymbolKit.SFSymbol
+  public static let envelopeAndArrow3DownFill: SFSymbolKit.SFSymbol
+  public static let flagPatternCheckeredLc: SFSymbolKit.SFSymbol
+  public static let fuelFilterWater: SFSymbolKit.SFSymbol
+  public static let functionAr: SFSymbolKit.SFSymbol
+  public static let hydrogen: SFSymbolKit.SFSymbol
+  public static let hydrogenCircle: SFSymbolKit.SFSymbol
+  public static let hydrogenCircleFill: SFSymbolKit.SFSymbol
+  public static let hydrogenSquare: SFSymbolKit.SFSymbol
+  public static let hydrogenSquareFill: SFSymbolKit.SFSymbol
+  public static let infoCircleTextPage: SFSymbolKit.SFSymbol
+  public static let infoCircleTextPageFill: SFSymbolKit.SFSymbol
+  public static let infoCircleTextPageFillRtl: SFSymbolKit.SFSymbol
+  public static let infoCircleTextPageRtl: SFSymbolKit.SFSymbol
+  public static let keyCarSide: SFSymbolKit.SFSymbol
+  public static let keyCarSideFill: SFSymbolKit.SFSymbol
+  public static let keyConvertibleSide: SFSymbolKit.SFSymbol
+  public static let keyConvertibleSideFill: SFSymbolKit.SFSymbol
+  public static let keySuvSide: SFSymbolKit.SFSymbol
+  public static let keySuvSideFill: SFSymbolKit.SFSymbol
+  public static let keyTruckPickupSide: SFSymbolKit.SFSymbol
+  public static let keyTruckPickupSideFill: SFSymbolKit.SFSymbol
+  public static let longTextPageAndPencil: SFSymbolKit.SFSymbol
+  public static let longTextPageAndPencilFill: SFSymbolKit.SFSymbol
+  public static let macminiGen2: SFSymbolKit.SFSymbol
+  public static let macminiGen2Fill: SFSymbolKit.SFSymbol
+  public static let macminiGen3: SFSymbolKit.SFSymbol
+  public static let macminiGen3Fill: SFSymbolKit.SFSymbol
+  public static let memoriesSlash: SFSymbolKit.SFSymbol
+  public static let minusPlusBatteryblockStackArrowtriangleLeft: SFSymbolKit.SFSymbol
+  public static let minusPlusBatteryblockStackArrowtriangleLeftFill: SFSymbolKit.SFSymbol
+  public static let minusPlusBatteryblockStackArrowtriangleRight: SFSymbolKit.SFSymbol
+  public static let minusPlusBatteryblockStackArrowtriangleRightAndArrowtriangleLeft: SFSymbolKit.SFSymbol
+  public static let minusPlusBatteryblockStackArrowtriangleRightAndArrowtriangleLeftFill: SFSymbolKit.SFSymbol
+  public static let minusPlusBatteryblockStackArrowtriangleRightFill: SFSymbolKit.SFSymbol
+  public static let nosignBadgeClock: SFSymbolKit.SFSymbol
+  public static let personCheckmarkAndXmark: SFSymbolKit.SFSymbol
+  public static let personCheckmarkAndXmarkRtl: SFSymbolKit.SFSymbol
+  public static let personFillCheckmarkAndXmark: SFSymbolKit.SFSymbol
+  public static let personFillCheckmarkAndXmarkRtl: SFSymbolKit.SFSymbol
+  public static let photoBadgeShieldExclamationmark: SFSymbolKit.SFSymbol
+  public static let photoBadgeShieldExclamationmarkFill: SFSymbolKit.SFSymbol
+  public static let photoTrianglebadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let photoTrianglebadgeExclamationmarkFill: SFSymbolKit.SFSymbol
+  public static let pi: SFSymbolKit.SFSymbol
+  public static let piCircle: SFSymbolKit.SFSymbol
+  public static let piCircleFill: SFSymbolKit.SFSymbol
+  public static let piSquare: SFSymbolKit.SFSymbol
+  public static let piSquareFill: SFSymbolKit.SFSymbol
+  public static let plusMinusCapsule: SFSymbolKit.SFSymbol
+  public static let plusMinusCapsuleFill: SFSymbolKit.SFSymbol
+  public static let repeatBadgeXmarkCircleFill: SFSymbolKit.SFSymbol
+  public static let roadLaneArrowtriangle2Outward: SFSymbolKit.SFSymbol
+  public static let roboticVacuumAndArrowtriangleUp: SFSymbolKit.SFSymbol
+  public static let roboticVacuumAndArrowtriangleUpFill: SFSymbolKit.SFSymbol
+  public static let roboticVacuumAndEllipsis: SFSymbolKit.SFSymbol
+  public static let roboticVacuumAndEllipsisFill: SFSymbolKit.SFSymbol
+  public static let spoonServing: SFSymbolKit.SFSymbol
+  public static let squareAndArrowUpBadgeCheckmark: SFSymbolKit.SFSymbol
+  public static let squareAndArrowUpBadgeCheckmarkFill: SFSymbolKit.SFSymbol
+  public static let squareshapeSplit2x2DottedInside: SFSymbolKit.SFSymbol
+  public static let squareshapeSplit2x2DottedInsideAndOutside: SFSymbolKit.SFSymbol
+  public static let squareshapeSplit2x2DottedOutside: SFSymbolKit.SFSymbol
+  public static let starHexagon: SFSymbolKit.SFSymbol
+  public static let starHexagonFill: SFSymbolKit.SFSymbol
+  public static let suvSideArrowLeftAndRight: SFSymbolKit.SFSymbol
+  public static let suvSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
+  public static let suvSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
+  public static let suvSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
+  public static let textformatAltBn: SFSymbolKit.SFSymbol
+  public static let textformatAltGu: SFSymbolKit.SFSymbol
+  public static let textformatAltKn: SFSymbolKit.SFSymbol
+  public static let textformatAltMl: SFSymbolKit.SFSymbol
+  public static let textformatAltMni: SFSymbolKit.SFSymbol
+  public static let textformatAltMr: SFSymbolKit.SFSymbol
+  public static let textformatAltOr: SFSymbolKit.SFSymbol
+  public static let textformatAltPa: SFSymbolKit.SFSymbol
+  public static let textformatAltSat: SFSymbolKit.SFSymbol
+  public static let textformatAltSi: SFSymbolKit.SFSymbol
+  public static let textformatAltTa: SFSymbolKit.SFSymbol
+  public static let textformatAltTe: SFSymbolKit.SFSymbol
+  public static let textformatBn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightBn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightGu: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightKn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightMl: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightMni: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightMr: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightOr: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightPa: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightSat: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightSi: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightTa: SFSymbolKit.SFSymbol
+  public static let textformatCharactersArrowLeftAndRightTe: SFSymbolKit.SFSymbol
+  public static let textformatCharactersBn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineBn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineGu: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineKn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineMl: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineMni: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineMr: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineOr: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlinePa: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineSat: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineSi: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineTa: SFSymbolKit.SFSymbol
+  public static let textformatCharactersDottedunderlineTe: SFSymbolKit.SFSymbol
+  public static let textformatCharactersGu: SFSymbolKit.SFSymbol
+  public static let textformatCharactersKn: SFSymbolKit.SFSymbol
+  public static let textformatCharactersMl: SFSymbolKit.SFSymbol
+  public static let textformatCharactersMni: SFSymbolKit.SFSymbol
+  public static let textformatCharactersMr: SFSymbolKit.SFSymbol
+  public static let textformatCharactersOr: SFSymbolKit.SFSymbol
+  public static let textformatCharactersPa: SFSymbolKit.SFSymbol
+  public static let textformatCharactersSat: SFSymbolKit.SFSymbol
+  public static let textformatCharactersSi: SFSymbolKit.SFSymbol
+  public static let textformatCharactersTa: SFSymbolKit.SFSymbol
+  public static let textformatCharactersTe: SFSymbolKit.SFSymbol
+  public static let textformatGu: SFSymbolKit.SFSymbol
+  public static let textformatKn: SFSymbolKit.SFSymbol
+  public static let textformatMl: SFSymbolKit.SFSymbol
+  public static let textformatMni: SFSymbolKit.SFSymbol
+  public static let textformatMr: SFSymbolKit.SFSymbol
+  public static let textformatOr: SFSymbolKit.SFSymbol
+  public static let textformatPa: SFSymbolKit.SFSymbol
+  public static let textformatSat: SFSymbolKit.SFSymbol
+  public static let textformatSi: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptBn: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptGu: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptKn: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptMl: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptMni: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptMr: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptOr: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptPa: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptSat: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptSi: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptTa: SFSymbolKit.SFSymbol
+  public static let textformatSubscriptTe: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptBn: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptGu: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptKn: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptMl: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptMni: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptMr: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptOr: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptPa: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptSat: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptSi: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptTa: SFSymbolKit.SFSymbol
+  public static let textformatSuperscriptTe: SFSymbolKit.SFSymbol
+  public static let textformatTa: SFSymbolKit.SFSymbol
+  public static let textformatTe: SFSymbolKit.SFSymbol
+  public static let truckPickupSideArrowLeftAndRight: SFSymbolKit.SFSymbol
+  public static let truckPickupSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
+  public static let truckPickupSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
+  public static let truckPickupSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
+}
+@available(iOS 18.1, macOS 15.1, tvOS 18.1, watchOS 11.1, visionOS 2.1, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols18P1: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
+public struct SFSymbol : Swift.Codable, Swift.Identifiable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public let title: Swift.String
+  public var categories: [SFSymbolKit.SFCategory]?
+  public var searchTerms: [Swift.String]?
+  public let releaseInfo: SFSymbolKit.ReleaseInfo
+  public var id: Swift.String {
+    get
+  }
+  public init(title: Swift.String, categories: [SFSymbolKit.SFCategory]? = nil, searchTerms: [Swift.String]? = nil, releaseInfo: SFSymbolKit.ReleaseInfo)
+  public static func == (a: SFSymbolKit.SFSymbol, b: SFSymbolKit.SFSymbol) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
 @available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
   public static let cameraMacro: SFSymbolKit.SFSymbol
@@ -26,6 +353,12 @@ extension SFSymbolKit.SFSymbol {
   public static let keyViewfinder: SFSymbolKit.SFSymbol
   public static let personBadgeKey: SFSymbolKit.SFSymbol
   public static let personBadgeKeyFill: SFSymbolKit.SFSymbol
+}
+@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols15P1: [SFSymbolKit.SFSymbol] {
+    get
+  }
 }
 @available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
 extension SFSymbolKit.SFSymbol {
@@ -1616,17 +1949,9 @@ extension SFSymbolKit.SFSymbol {
   public static let yensignRingDashed: SFSymbolKit.SFSymbol
   public static let zipperPage: SFSymbolKit.SFSymbol
 }
-@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols16: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 18.1, macOS 15.1, tvOS 18.1, watchOS 11.1, visionOS 2.1, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols18P1: [SFSymbolKit.SFSymbol] {
-    get
-  }
+@available(iOS 13.0, visionOS 1.0, *)
+extension UIKit.UIApplicationShortcutIcon {
+  convenience public init(symbol: SFSymbolKit.SFSymbol)
 }
 @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
@@ -2466,6 +2791,12 @@ extension SFSymbolKit.SFSymbol {
   public static let xmarkApp: SFSymbolKit.SFSymbol
   public static let xmarkAppFill: SFSymbolKit.SFSymbol
 }
+@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols14P2: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
 @available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *)
 extension SFSymbolKit.SFSymbol {
   public static let beatsPill: SFSymbolKit.SFSymbol
@@ -2476,34 +2807,19 @@ extension SFSymbolKit.SFSymbol {
   public static let beatsSolobudsLeft: SFSymbolKit.SFSymbol
   public static let beatsSolobudsRight: SFSymbolKit.SFSymbol
 }
-extension SwiftUICore.Image {
-  public init(symbol: SFSymbolKit.SFSymbol)
-  @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
-  public init(symbol: SFSymbolKit.SFSymbol, variableValue: Swift.Double?)
-}
-public struct SFSymbol : Swift.Codable, Swift.Identifiable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
-  public let title: Swift.String
-  public var categories: [SFSymbolKit.SFCategory]?
-  public var searchTerms: [Swift.String]?
-  public let releaseInfo: SFSymbolKit.ReleaseInfo
-  public var id: Swift.String {
-    get
-  }
-  public init(title: Swift.String, categories: [SFSymbolKit.SFCategory]? = nil, searchTerms: [Swift.String]? = nil, releaseInfo: SFSymbolKit.ReleaseInfo)
-  public static func == (a: SFSymbolKit.SFSymbol, b: SFSymbolKit.SFSymbol) -> Swift.Bool
-  public typealias ID = Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, visionOS 1.0, *)
+@available(iOS 17.2, macOS 14.2, tvOS 17.2, watchOS 10.2, visionOS 1.1, *)
 extension SFSymbolKit.SFSymbol {
-  public static var allSymbols15P1: [SFSymbolKit.SFSymbol] {
+  public static var allSymbols17P2: [SFSymbolKit.SFSymbol] {
     get
   }
+}
+@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
+extension SwiftUI.Label where Title == SwiftUICore.Text, Icon == SwiftUICore.Image {
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol)
+  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol) where S : Swift.StringProtocol
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil)
+  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil) where S : Swift.StringProtocol
+  public init(_ title: Swift.String, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil)
 }
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
@@ -3574,6 +3890,11 @@ extension SFSymbolKit.SFSymbol {
   public static let zrRectangleRoundedtop: SFSymbolKit.SFSymbol
   public static let zrRectangleRoundedtopFill: SFSymbolKit.SFSymbol
 }
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
 @available(iOS 17.1, macOS 14.1, tvOS 17.1, watchOS 10.1, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
   public static let chevronCompactBackward: SFSymbolKit.SFSymbol
@@ -3583,15 +3904,15 @@ extension SFSymbolKit.SFSymbol {
   public static let personCropSquareBadgeVideo: SFSymbolKit.SFSymbol
   public static let personCropSquareBadgeVideoFill: SFSymbolKit.SFSymbol
 }
-@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, visionOS 1.0, *)
+@available(iOS 16.4, macOS 13.3, tvOS 16.4, watchOS 9.4, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
-  public static var allSymbols14P2: [SFSymbolKit.SFSymbol] {
+  public static var allSymbols16P4: [SFSymbolKit.SFSymbol] {
     get
   }
 }
-@available(iOS 17.2, macOS 14.2, tvOS 17.2, watchOS 10.2, visionOS 1.1, *)
+@available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
 extension SFSymbolKit.SFSymbol {
-  public static var allSymbols17P2: [SFSymbolKit.SFSymbol] {
+  public static var allSymbols18P4: [SFSymbolKit.SFSymbol] {
     get
   }
 }
@@ -3992,6 +4313,12 @@ extension SFSymbolKit.SFSymbol {
   public static let wrongwaysign: SFSymbolKit.SFSymbol
   public static let wrongwaysignFill: SFSymbolKit.SFSymbol
 }
+@available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols15P4: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
 @available(iOS 18.2, macOS 15.2, tvOS 18.2, watchOS 11.2, visionOS 2.2, *)
 extension SFSymbolKit.SFSymbol {
   public static let airpodsGen4: SFSymbolKit.SFSymbol
@@ -4018,124 +4345,17 @@ extension SFSymbolKit.SFSymbol {
   public static let wandAndOutline: SFSymbolKit.SFSymbol
   public static let wandAndOutlineInverse: SFSymbolKit.SFSymbol
 }
-@available(iOS 13.0, visionOS 1.0, *)
-extension UIKit.UIApplicationShortcutIcon {
-  convenience public init(symbol: SFSymbolKit.SFSymbol)
-}
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 16.4, macOS 13.3, tvOS 16.4, watchOS 9.4, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols16P4: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols18P4: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static let airpodGen3Left: SFSymbolKit.SFSymbol
-  public static let airpodGen3Right: SFSymbolKit.SFSymbol
-  public static let airpodsGen3: SFSymbolKit.SFSymbol
-  public static let airpodsGen3ChargingcaseWireless: SFSymbolKit.SFSymbol
-  public static let airpodsGen3ChargingcaseWirelessFill: SFSymbolKit.SFSymbol
-  public static let beatsFitPro: SFSymbolKit.SFSymbol
-  public static let beatsFitProChargingcase: SFSymbolKit.SFSymbol
-  public static let beatsFitProChargingcaseFill: SFSymbolKit.SFSymbol
-  public static let beatsFitProLeft: SFSymbolKit.SFSymbol
-  public static let beatsFitProRight: SFSymbolKit.SFSymbol
-  public static let rectangleLeadinghalfFilled: SFSymbolKit.SFSymbol
-  public static let rectangleTrailinghalfFilled: SFSymbolKit.SFSymbol
-  public static let square3Layers3DDownLeftSlash: SFSymbolKit.SFSymbol
-  public static let square3Layers3DDownRightSlash: SFSymbolKit.SFSymbol
-  public static let square3Stack3DSlash: SFSymbolKit.SFSymbol
-}
-@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
-extension SwiftUI.Label where Title == SwiftUICore.Text, Icon == SwiftUICore.Image {
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol)
-  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol) where S : Swift.StringProtocol
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil)
-  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil) where S : Swift.StringProtocol
-  public init(_ title: Swift.String, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil)
-}
-@available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols15P4: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
 @available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
 extension SFSymbolKit.SFSymbol {
   public static var allSymbols18: [SFSymbolKit.SFSymbol] {
     get
   }
 }
-@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static let airpodsmax: SFSymbolKit.SFSymbol
-  public static let applewatchSideRight: SFSymbolKit.SFSymbol
-  public static let characterBubble: SFSymbolKit.SFSymbol
-  public static let characterBubbleAr: SFSymbolKit.SFSymbol
-  public static let characterBubbleFill: SFSymbolKit.SFSymbol
-  public static let characterBubbleFillAr: SFSymbolKit.SFSymbol
-  public static let characterBubbleFillHe: SFSymbolKit.SFSymbol
-  public static let characterBubbleHe: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeam: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamAr: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamHe: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamHi: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamJa: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamKo: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamTh: SFSymbolKit.SFSymbol
-  public static let characterTextbox: SFSymbolKit.SFSymbol
-  public static let characterTextboxAr: SFSymbolKit.SFSymbol
-  public static let characterTextboxHe: SFSymbolKit.SFSymbol
-  public static let characterTextboxHi: SFSymbolKit.SFSymbol
-  public static let characterTextboxJa: SFSymbolKit.SFSymbol
-  public static let characterTextboxKo: SFSymbolKit.SFSymbol
-  public static let characterTextboxTh: SFSymbolKit.SFSymbol
-  public static let hifispeakerAndHomepodmini: SFSymbolKit.SFSymbol
-  public static let hifispeakerAndHomepodminiFill: SFSymbolKit.SFSymbol
-  public static let homepodAndHomepodmini: SFSymbolKit.SFSymbol
-  public static let homepodAndHomepodminiFill: SFSymbolKit.SFSymbol
-  public static let homepodmini: SFSymbolKit.SFSymbol
-  public static let homepodmini2: SFSymbolKit.SFSymbol
-  public static let homepodmini2Fill: SFSymbolKit.SFSymbol
-  public static let homepodminiFill: SFSymbolKit.SFSymbol
-  public static let rectangleTopthirdInsetFill: SFSymbolKit.SFSymbol
-}
-@available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *)
-extension SFSymbolKit.SFSymbol {
-  public static let appleMeditate: SFSymbolKit.SFSymbol
-  public static let appleMeditateSquareStack: SFSymbolKit.SFSymbol
-  public static let appleMeditateSquareStackFill: SFSymbolKit.SFSymbol
-  public static let appleTerminalCircle: SFSymbolKit.SFSymbol
-  public static let appleTerminalCircleFill: SFSymbolKit.SFSymbol
-  public static let arrowDownAppDashed: SFSymbolKit.SFSymbol
-  public static let arrowDownAppDashedTrianglebadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let audioJackMono: SFSymbolKit.SFSymbol
-  public static let audioJackStereo: SFSymbolKit.SFSymbol
-  public static let ipadBadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let ipadGen1BadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let ipadGen1LandscapeBadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let ipadGen2BadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let ipadGen2LandscapeBadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let ipadLandscapeBadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let iphoneBadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let iphoneGen1BadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let iphoneGen2BadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let iphoneGen3BadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let medalStar: SFSymbolKit.SFSymbol
-  public static let medalStarFill: SFSymbolKit.SFSymbol
-  public static let plusCircleDashed: SFSymbolKit.SFSymbol
-  public static let translate: SFSymbolKit.SFSymbol
+extension UIKit.UIImage {
+  convenience public init(symbol: SFSymbolKit.SFSymbol)
+  convenience public init(symbol: SFSymbolKit.SFSymbol, withConfiguration configuration: UIKit.UIImage.Configuration?)
+  convenience public init(symbol: SFSymbolKit.SFSymbol, weight: UIKit.UIImage.SymbolWeight)
+  convenience public init(symbol: SFSymbolKit.SFSymbol, compatibleWith traitCollection: UIKit.UITraitCollection?)
 }
 public struct SFCategory : Swift.Identifiable, Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
   public let icon: Swift.String
@@ -4189,11 +4409,112 @@ public struct SFCategory : Swift.Identifiable, Swift.Codable, Swift.Equatable, S
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static let airpodGen3Left: SFSymbolKit.SFSymbol
+  public static let airpodGen3Right: SFSymbolKit.SFSymbol
+  public static let airpodsGen3: SFSymbolKit.SFSymbol
+  public static let airpodsGen3ChargingcaseWireless: SFSymbolKit.SFSymbol
+  public static let airpodsGen3ChargingcaseWirelessFill: SFSymbolKit.SFSymbol
+  public static let beatsFitPro: SFSymbolKit.SFSymbol
+  public static let beatsFitProChargingcase: SFSymbolKit.SFSymbol
+  public static let beatsFitProChargingcaseFill: SFSymbolKit.SFSymbol
+  public static let beatsFitProLeft: SFSymbolKit.SFSymbol
+  public static let beatsFitProRight: SFSymbolKit.SFSymbol
+  public static let rectangleLeadinghalfFilled: SFSymbolKit.SFSymbol
+  public static let rectangleTrailinghalfFilled: SFSymbolKit.SFSymbol
+  public static let square3Layers3DDownLeftSlash: SFSymbolKit.SFSymbol
+  public static let square3Layers3DDownRightSlash: SFSymbolKit.SFSymbol
+  public static let square3Stack3DSlash: SFSymbolKit.SFSymbol
+}
 @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
   public static var allSymbols15: [SFSymbolKit.SFSymbol] {
     get
   }
+}
+extension UIKit.UIAction {
+  @available(tvOS 17.0, *)
+  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String = "", symbol: SFSymbolKit.SFSymbol, identifier: UIKit.UIAction.Identifier? = nil, discoverabilityTitle: Swift.String? = nil, attributes: UIKit.UIMenuElement.Attributes = [], state: UIKit.UIMenuElement.State = .off, handler: @escaping UIKit.UIActionHandler)
+  @available(iOS 15.0, tvOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String = "", subtitle: Swift.String? = nil, symbol: SFSymbolKit.SFSymbol, identifier: UIKit.UIAction.Identifier? = nil, discoverabilityTitle: Swift.String? = nil, attributes: UIKit.UIMenuElement.Attributes = [], state: UIKit.UIMenuElement.State = .off, handler: @escaping UIKit.UIActionHandler)
+}
+@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static let airpodsmax: SFSymbolKit.SFSymbol
+  public static let applewatchSideRight: SFSymbolKit.SFSymbol
+  public static let characterBubble: SFSymbolKit.SFSymbol
+  public static let characterBubbleAr: SFSymbolKit.SFSymbol
+  public static let characterBubbleFill: SFSymbolKit.SFSymbol
+  public static let characterBubbleFillAr: SFSymbolKit.SFSymbol
+  public static let characterBubbleFillHe: SFSymbolKit.SFSymbol
+  public static let characterBubbleHe: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeam: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamAr: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamHe: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamHi: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamJa: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamKo: SFSymbolKit.SFSymbol
+  public static let characterCursorIbeamTh: SFSymbolKit.SFSymbol
+  public static let characterTextbox: SFSymbolKit.SFSymbol
+  public static let characterTextboxAr: SFSymbolKit.SFSymbol
+  public static let characterTextboxHe: SFSymbolKit.SFSymbol
+  public static let characterTextboxHi: SFSymbolKit.SFSymbol
+  public static let characterTextboxJa: SFSymbolKit.SFSymbol
+  public static let characterTextboxKo: SFSymbolKit.SFSymbol
+  public static let characterTextboxTh: SFSymbolKit.SFSymbol
+  public static let hifispeakerAndHomepodmini: SFSymbolKit.SFSymbol
+  public static let hifispeakerAndHomepodminiFill: SFSymbolKit.SFSymbol
+  public static let homepodAndHomepodmini: SFSymbolKit.SFSymbol
+  public static let homepodAndHomepodminiFill: SFSymbolKit.SFSymbol
+  public static let homepodmini: SFSymbolKit.SFSymbol
+  public static let homepodmini2: SFSymbolKit.SFSymbol
+  public static let homepodmini2Fill: SFSymbolKit.SFSymbol
+  public static let homepodminiFill: SFSymbolKit.SFSymbol
+  public static let rectangleTopthirdInsetFill: SFSymbolKit.SFSymbol
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols14: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
+@available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *)
+extension SFSymbolKit.SFSymbol {
+  public static let appleMeditate: SFSymbolKit.SFSymbol
+  public static let appleMeditateSquareStack: SFSymbolKit.SFSymbol
+  public static let appleMeditateSquareStackFill: SFSymbolKit.SFSymbol
+  public static let appleTerminalCircle: SFSymbolKit.SFSymbol
+  public static let appleTerminalCircleFill: SFSymbolKit.SFSymbol
+  public static let arrowDownAppDashed: SFSymbolKit.SFSymbol
+  public static let arrowDownAppDashedTrianglebadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let audioJackMono: SFSymbolKit.SFSymbol
+  public static let audioJackStereo: SFSymbolKit.SFSymbol
+  public static let ipadBadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let ipadGen1BadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let ipadGen1LandscapeBadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let ipadGen2BadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let ipadGen2LandscapeBadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let ipadLandscapeBadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let iphoneBadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let iphoneGen1BadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let iphoneGen2BadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let iphoneGen3BadgeExclamationmark: SFSymbolKit.SFSymbol
+  public static let medalStar: SFSymbolKit.SFSymbol
+  public static let medalStarFill: SFSymbolKit.SFSymbol
+  public static let plusCircleDashed: SFSymbolKit.SFSymbol
+  public static let translate: SFSymbolKit.SFSymbol
+}
+@available(iOS 17.1, macOS 14.1, tvOS 17.1, watchOS 10.1, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols17P1: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
+extension SwiftUICore.Image {
+  public init(symbol: SFSymbolKit.SFSymbol)
+  @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *)
+  public init(symbol: SFSymbolKit.SFSymbol, variableValue: Swift.Double?)
 }
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
@@ -5859,6 +6180,12 @@ extension SFSymbolKit.SFSymbol {
   public static let zSquareFill: SFSymbolKit.SFSymbol
   public static let zzz: SFSymbolKit.SFSymbol
 }
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols13: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
   public static let _2h: SFSymbolKit.SFSymbol
@@ -6861,6 +7188,12 @@ extension SFSymbolKit.SFSymbol {
   public static let zrButtonRoundedtopHorizontal: SFSymbolKit.SFSymbol
   public static let zrButtonRoundedtopHorizontalFill: SFSymbolKit.SFSymbol
 }
+@available(iOS 16.1, macOS 13.0, tvOS 16.1, watchOS 9.1, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols16P1: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
 @available(iOS 18.5, macOS 15.5, tvOS 18.5, watchOS 11.5, visionOS 2.5, *)
 extension SFSymbolKit.SFSymbol {
   public static let appleIntelligenceBadgeXmark: SFSymbolKit.SFSymbol
@@ -6870,21 +7203,9 @@ extension SFSymbolKit.SFSymbol {
   public static let beatsPowerbeatsPro2Left: SFSymbolKit.SFSymbol
   public static let beatsPowerbeatsPro2Right: SFSymbolKit.SFSymbol
 }
-extension UIKit.UIImage {
-  convenience public init(symbol: SFSymbolKit.SFSymbol)
-  convenience public init(symbol: SFSymbolKit.SFSymbol, withConfiguration configuration: UIKit.UIImage.Configuration?)
-  convenience public init(symbol: SFSymbolKit.SFSymbol, weight: UIKit.UIImage.SymbolWeight)
-  convenience public init(symbol: SFSymbolKit.SFSymbol, compatibleWith traitCollection: UIKit.UITraitCollection?)
-}
-@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, visionOS 1.0, *)
+@available(iOS 18.2, macOS 15.2, tvOS 18.2, watchOS 11.2, visionOS 2.2, *)
 extension SFSymbolKit.SFSymbol {
-  public static var allSymbols14: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 17.1, macOS 14.1, tvOS 17.1, watchOS 10.1, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols17P1: [SFSymbolKit.SFSymbol] {
+  public static var allSymbols18P2: [SFSymbolKit.SFSymbol] {
     get
   }
 }
@@ -7823,6 +8144,12 @@ extension SFSymbolKit.SFSymbol {
   public static let xboxLogo: SFSymbolKit.SFSymbol
   public static let yensign: SFSymbolKit.SFSymbol
 }
+@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols15P2: [SFSymbolKit.SFSymbol] {
+    get
+  }
+}
 @available(iOS 18.1, macOS 15.1, tvOS 18.1, watchOS 11.1, visionOS 2.1, *)
 extension SFSymbolKit.SFSymbol {
   public static let boltHouse: SFSymbolKit.SFSymbol
@@ -7917,27 +8244,30 @@ extension SFSymbolKit.SFSymbol {
   public static let waveformPathEcgTextPageRtl: SFSymbolKit.SFSymbol
   public static let waveformPathEcgTextRtl: SFSymbolKit.SFSymbol
 }
-extension UIKit.UIAction {
-  @available(tvOS 17.0, *)
-  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String = "", symbol: SFSymbolKit.SFSymbol, identifier: UIKit.UIAction.Identifier? = nil, discoverabilityTitle: Swift.String? = nil, attributes: UIKit.UIMenuElement.Attributes = [], state: UIKit.UIMenuElement.State = .off, handler: @escaping UIKit.UIActionHandler)
-  @available(iOS 15.0, tvOS 15.0, *)
-  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String = "", subtitle: Swift.String? = nil, symbol: SFSymbolKit.SFSymbol, identifier: UIKit.UIAction.Identifier? = nil, discoverabilityTitle: Swift.String? = nil, attributes: UIKit.UIMenuElement.Attributes = [], state: UIKit.UIMenuElement.State = .off, handler: @escaping UIKit.UIActionHandler)
-}
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
+@available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *)
 extension SFSymbolKit.SFSymbol {
-  public static var allSymbols13: [SFSymbolKit.SFSymbol] {
+  public static var allSymbols17P6: [SFSymbolKit.SFSymbol] {
     get
   }
 }
-@available(iOS 16.1, macOS 13.0, tvOS 16.1, watchOS 9.1, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols16P1: [SFSymbolKit.SFSymbol] {
-    get
-  }
+extension UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor @preconcurrency convenience public init(symbol: SFSymbolKit.SFSymbol, landscapeImagePhone: UIKit.UIImage?, style: UIKit.UIBarButtonItem.Style, target: Any?, action: ObjectiveC.Selector?)
+  @_Concurrency.MainActor @preconcurrency convenience public init(symbol: SFSymbolKit.SFSymbol, style: UIKit.UIBarButtonItem.Style, target: Any?, action: ObjectiveC.Selector?)
+  @available(iOS 14.0, tvOS 14.0, *)
+  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String? = nil, symbol: SFSymbolKit.SFSymbol, primaryAction: UIKit.UIAction? = nil, menu: UIKit.UIMenu? = nil)
 }
-@available(iOS 18.2, macOS 15.2, tvOS 18.2, watchOS 11.2, visionOS 2.2, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols18P2: [SFSymbolKit.SFSymbol] {
+public struct ReleaseInfo : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public let iOS: Swift.Double
+  public let macOS: Swift.Double
+  public let tvOS: Swift.Double
+  public let watchOS: Swift.Double
+  public let visionOS: Swift.Double
+  public init(iOS: Swift.Double, macOS: Swift.Double, tvOS: Swift.Double, watchOS: Swift.Double, visionOS: Swift.Double)
+  public init(from decoder: any Swift.Decoder) throws
+  public static func == (a: SFSymbolKit.ReleaseInfo, b: SFSymbolKit.ReleaseInfo) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -7956,6 +8286,12 @@ extension SFSymbolKit.SFSymbol {
   public static let textJustifyLeft: SFSymbolKit.SFSymbol
   public static let textJustifyRight: SFSymbolKit.SFSymbol
   public static let textJustifyTrailing: SFSymbolKit.SFSymbol
+}
+@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols14P5: [SFSymbolKit.SFSymbol] {
+    get
+  }
 }
 extension SFSymbolKit.SFSymbol {
   public static let cut: SFSymbolKit.SFSymbol
@@ -8018,37 +8354,9 @@ extension SFSymbolKit.SFSymbol {
     get
   }
 }
-extension SwiftUI.Button where Label == SwiftUICore.Image {
-  public init(symbol: SFSymbolKit.SFSymbol, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
-  @available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0, *)
-  public init(symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
-}
-@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, visionOS 1.0, *)
-extension SwiftUI.Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole?, action: @escaping () -> Swift.Void)
-  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole?, action: @escaping () -> Swift.Void) where S : Swift.StringProtocol
-}
-@available(iOS 14, macOS 14.0, tvOS 14.0, watchOS 7.0, *)
-extension SwiftUI.Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, textColor: SwiftUICore.Color? = nil, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
-  @available(iOS 15, macOS 15.0, tvOS 15.0, watchOS 8.0, *)
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole? = nil, textColor: SwiftUICore.Color? = nil, action: @escaping @_Concurrency.MainActor () -> Swift.Void)
-  @_disfavoredOverload public init<S>(_ title: S, symbol: SFSymbolKit.SFSymbol, action: @escaping () -> Swift.Void) where S : Swift.StringProtocol
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, action: @escaping () -> Swift.Void)
-  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
-  public init(_ titleKey: SwiftUICore.LocalizedStringKey, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole? = nil, intent: some AppIntent)
-  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
-  @_disfavoredOverload public init(_ title: some StringProtocol, symbol: SFSymbolKit.SFSymbol, role: SwiftUI.ButtonRole? = nil, intent: some AppIntent)
-}
-@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, visionOS 1.0, *)
+@available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *)
 extension SFSymbolKit.SFSymbol {
-  public static var allSymbols15P2: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 17.6, macOS 14.6, tvOS 17.6, watchOS 10.6, visionOS 1.3, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols17P6: [SFSymbolKit.SFSymbol] {
+  public static var allSymbols17P4: [SFSymbolKit.SFSymbol] {
     get
   }
 }
@@ -8150,6 +8458,12 @@ extension SFSymbolKit.SFSymbol {
   public static let textformatSuperscriptTh: SFSymbolKit.SFSymbol
   public static let torus: SFSymbolKit.SFSymbol
   public static let tvAndMediabox: SFSymbolKit.SFSymbol
+}
+@available(iOS 13.1, macOS 10.15, tvOS 13.0, watchOS 6.1, visionOS 1.0, *)
+extension SFSymbolKit.SFSymbol {
+  public static var allSymbols13P1: [SFSymbolKit.SFSymbol] {
+    get
+  }
 }
 @available(iOS 17.2, macOS 14.2, tvOS 17.2, watchOS 10.2, visionOS 1.1, *)
 extension SFSymbolKit.SFSymbol {
@@ -8603,320 +8917,6 @@ extension SFSymbolKit.SFSymbol {
   public static let _9SquareHi: SFSymbolKit.SFSymbol
   public static let squareAndArrowUpBadgeClock: SFSymbolKit.SFSymbol
   public static let squareAndArrowUpBadgeClockFill: SFSymbolKit.SFSymbol
-}
-public struct ReleaseInfo : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Sendable {
-  public let iOS: Swift.Double
-  public let macOS: Swift.Double
-  public let tvOS: Swift.Double
-  public let watchOS: Swift.Double
-  public let visionOS: Swift.Double
-  public init(iOS: Swift.Double, macOS: Swift.Double, tvOS: Swift.Double, watchOS: Swift.Double, visionOS: Swift.Double)
-  public init(from decoder: any Swift.Decoder) throws
-  public static func == (a: SFSymbolKit.ReleaseInfo, b: SFSymbolKit.ReleaseInfo) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols14P5: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols17P4: [SFSymbolKit.SFSymbol] {
-    get
-  }
-}
-@available(iOS 16.4, macOS 13.3, tvOS 16.4, watchOS 9.4, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static let _1LaneAr: SFSymbolKit.SFSymbol
-  public static let _1LaneHi: SFSymbolKit.SFSymbol
-  public static let _10LaneAr: SFSymbolKit.SFSymbol
-  public static let _10LaneHi: SFSymbolKit.SFSymbol
-  public static let _11LaneAr: SFSymbolKit.SFSymbol
-  public static let _11LaneHi: SFSymbolKit.SFSymbol
-  public static let _12LaneAr: SFSymbolKit.SFSymbol
-  public static let _12LaneHi: SFSymbolKit.SFSymbol
-  public static let _2LaneAr: SFSymbolKit.SFSymbol
-  public static let _2LaneHi: SFSymbolKit.SFSymbol
-  public static let _3LaneAr: SFSymbolKit.SFSymbol
-  public static let _3LaneHi: SFSymbolKit.SFSymbol
-  public static let _4LaneAr: SFSymbolKit.SFSymbol
-  public static let _4LaneHi: SFSymbolKit.SFSymbol
-  public static let _5LaneAr: SFSymbolKit.SFSymbol
-  public static let _5LaneHi: SFSymbolKit.SFSymbol
-  public static let _6LaneAr: SFSymbolKit.SFSymbol
-  public static let _6LaneHi: SFSymbolKit.SFSymbol
-  public static let _7LaneAr: SFSymbolKit.SFSymbol
-  public static let _7LaneHi: SFSymbolKit.SFSymbol
-  public static let _8LaneAr: SFSymbolKit.SFSymbol
-  public static let _8LaneHi: SFSymbolKit.SFSymbol
-  public static let _9LaneAr: SFSymbolKit.SFSymbol
-  public static let _9LaneHi: SFSymbolKit.SFSymbol
-  public static let axle2: SFSymbolKit.SFSymbol
-  public static let axle2FrontAndRearEngaged: SFSymbolKit.SFSymbol
-  public static let axle2FrontEngaged: SFSymbolKit.SFSymbol
-  public static let axle2RearEngaged: SFSymbolKit.SFSymbol
-  public static let beatsPowerbeatsLeft: SFSymbolKit.SFSymbol
-  public static let beatsPowerbeatsRight: SFSymbolKit.SFSymbol
-  public static let beatsPowerbeats3Left: SFSymbolKit.SFSymbol
-  public static let beatsPowerbeats3Right: SFSymbolKit.SFSymbol
-}
-@available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
-extension SFSymbolKit.SFSymbol {
-  public static let arrowBackwardToLineCompact: SFSymbolKit.SFSymbol
-  public static let arrowForwardToLineCompact: SFSymbolKit.SFSymbol
-  public static let carSideArrowLeftAndRight: SFSymbolKit.SFSymbol
-  public static let carSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
-  public static let carSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
-  public static let carSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
-  public static let carSideRearAndCollisionAndCarSideFrontAndArrowForward: SFSymbolKit.SFSymbol
-  public static let carSideRearAndCollisionAndCarSideFrontAndSteeringwheel: SFSymbolKit.SFSymbol
-  public static let carTopLaneDashedDepartureLeftSlash: SFSymbolKit.SFSymbol
-  public static let carTopLaneDashedDepartureLeftSlashFill: SFSymbolKit.SFSymbol
-  public static let carTopLaneDashedDepartureRightSlash: SFSymbolKit.SFSymbol
-  public static let carTopLaneDashedDepartureRightSlashFill: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamBn: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamGu: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamKn: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamMl: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamMni: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamMr: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamOr: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamPa: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamSat: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamSi: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamTa: SFSymbolKit.SFSymbol
-  public static let characterCursorIbeamTe: SFSymbolKit.SFSymbol
-  public static let characterMagnifyBn: SFSymbolKit.SFSymbol
-  public static let characterMagnifyGu: SFSymbolKit.SFSymbol
-  public static let characterMagnifyKn: SFSymbolKit.SFSymbol
-  public static let characterMagnifyMl: SFSymbolKit.SFSymbol
-  public static let characterMagnifyMni: SFSymbolKit.SFSymbol
-  public static let characterMagnifyMr: SFSymbolKit.SFSymbol
-  public static let characterMagnifyOr: SFSymbolKit.SFSymbol
-  public static let characterMagnifyPa: SFSymbolKit.SFSymbol
-  public static let characterMagnifySat: SFSymbolKit.SFSymbol
-  public static let characterMagnifySi: SFSymbolKit.SFSymbol
-  public static let characterMagnifyTa: SFSymbolKit.SFSymbol
-  public static let characterMagnifyTe: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparkles: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesAr: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesBn: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesGu: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesHe: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesHi: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesJa: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesKn: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesKo: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesMl: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesMni: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesMr: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesOr: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesPa: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesSat: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesSi: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesTa: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesTe: SFSymbolKit.SFSymbol
-  public static let characterTextboxBadgeSparklesTh: SFSymbolKit.SFSymbol
-  public static let characterTextboxBn: SFSymbolKit.SFSymbol
-  public static let characterTextboxGu: SFSymbolKit.SFSymbol
-  public static let characterTextboxKn: SFSymbolKit.SFSymbol
-  public static let characterTextboxMl: SFSymbolKit.SFSymbol
-  public static let characterTextboxMni: SFSymbolKit.SFSymbol
-  public static let characterTextboxMr: SFSymbolKit.SFSymbol
-  public static let characterTextboxOr: SFSymbolKit.SFSymbol
-  public static let characterTextboxPa: SFSymbolKit.SFSymbol
-  public static let characterTextboxSat: SFSymbolKit.SFSymbol
-  public static let characterTextboxSi: SFSymbolKit.SFSymbol
-  public static let characterTextboxTa: SFSymbolKit.SFSymbol
-  public static let characterTextboxTe: SFSymbolKit.SFSymbol
-  public static let convertibleSideArrowLeftAndRight: SFSymbolKit.SFSymbol
-  public static let convertibleSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
-  public static let convertibleSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
-  public static let convertibleSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
-  public static let cursorarrowResizeNorthEastSouthEast: SFSymbolKit.SFSymbol
-  public static let electronicTollCollection: SFSymbolKit.SFSymbol
-  public static let electronicTollCollectionRectangle: SFSymbolKit.SFSymbol
-  public static let electronicTollCollectionRectangleFill: SFSymbolKit.SFSymbol
-  public static let electronicTollCollectionRectangleSlash: SFSymbolKit.SFSymbol
-  public static let electronicTollCollectionRectangleSlashFill: SFSymbolKit.SFSymbol
-  public static let electronicTollCollectionRectangleTrianglebadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let electronicTollCollectionRectangleTrianglebadgeExclamationmarkFill: SFSymbolKit.SFSymbol
-  public static let engineEmissionAndDrop2WaterWaveBelow: SFSymbolKit.SFSymbol
-  public static let envelopeAndArrow3Down: SFSymbolKit.SFSymbol
-  public static let envelopeAndArrow3DownFill: SFSymbolKit.SFSymbol
-  public static let flagPatternCheckeredLc: SFSymbolKit.SFSymbol
-  public static let fuelFilterWater: SFSymbolKit.SFSymbol
-  public static let functionAr: SFSymbolKit.SFSymbol
-  public static let hydrogen: SFSymbolKit.SFSymbol
-  public static let hydrogenCircle: SFSymbolKit.SFSymbol
-  public static let hydrogenCircleFill: SFSymbolKit.SFSymbol
-  public static let hydrogenSquare: SFSymbolKit.SFSymbol
-  public static let hydrogenSquareFill: SFSymbolKit.SFSymbol
-  public static let infoCircleTextPage: SFSymbolKit.SFSymbol
-  public static let infoCircleTextPageFill: SFSymbolKit.SFSymbol
-  public static let infoCircleTextPageFillRtl: SFSymbolKit.SFSymbol
-  public static let infoCircleTextPageRtl: SFSymbolKit.SFSymbol
-  public static let keyCarSide: SFSymbolKit.SFSymbol
-  public static let keyCarSideFill: SFSymbolKit.SFSymbol
-  public static let keyConvertibleSide: SFSymbolKit.SFSymbol
-  public static let keyConvertibleSideFill: SFSymbolKit.SFSymbol
-  public static let keySuvSide: SFSymbolKit.SFSymbol
-  public static let keySuvSideFill: SFSymbolKit.SFSymbol
-  public static let keyTruckPickupSide: SFSymbolKit.SFSymbol
-  public static let keyTruckPickupSideFill: SFSymbolKit.SFSymbol
-  public static let longTextPageAndPencil: SFSymbolKit.SFSymbol
-  public static let longTextPageAndPencilFill: SFSymbolKit.SFSymbol
-  public static let macminiGen2: SFSymbolKit.SFSymbol
-  public static let macminiGen2Fill: SFSymbolKit.SFSymbol
-  public static let macminiGen3: SFSymbolKit.SFSymbol
-  public static let macminiGen3Fill: SFSymbolKit.SFSymbol
-  public static let memoriesSlash: SFSymbolKit.SFSymbol
-  public static let minusPlusBatteryblockStackArrowtriangleLeft: SFSymbolKit.SFSymbol
-  public static let minusPlusBatteryblockStackArrowtriangleLeftFill: SFSymbolKit.SFSymbol
-  public static let minusPlusBatteryblockStackArrowtriangleRight: SFSymbolKit.SFSymbol
-  public static let minusPlusBatteryblockStackArrowtriangleRightAndArrowtriangleLeft: SFSymbolKit.SFSymbol
-  public static let minusPlusBatteryblockStackArrowtriangleRightAndArrowtriangleLeftFill: SFSymbolKit.SFSymbol
-  public static let minusPlusBatteryblockStackArrowtriangleRightFill: SFSymbolKit.SFSymbol
-  public static let nosignBadgeClock: SFSymbolKit.SFSymbol
-  public static let personCheckmarkAndXmark: SFSymbolKit.SFSymbol
-  public static let personCheckmarkAndXmarkRtl: SFSymbolKit.SFSymbol
-  public static let personFillCheckmarkAndXmark: SFSymbolKit.SFSymbol
-  public static let personFillCheckmarkAndXmarkRtl: SFSymbolKit.SFSymbol
-  public static let photoBadgeShieldExclamationmark: SFSymbolKit.SFSymbol
-  public static let photoBadgeShieldExclamationmarkFill: SFSymbolKit.SFSymbol
-  public static let photoTrianglebadgeExclamationmark: SFSymbolKit.SFSymbol
-  public static let photoTrianglebadgeExclamationmarkFill: SFSymbolKit.SFSymbol
-  public static let pi: SFSymbolKit.SFSymbol
-  public static let piCircle: SFSymbolKit.SFSymbol
-  public static let piCircleFill: SFSymbolKit.SFSymbol
-  public static let piSquare: SFSymbolKit.SFSymbol
-  public static let piSquareFill: SFSymbolKit.SFSymbol
-  public static let plusMinusCapsule: SFSymbolKit.SFSymbol
-  public static let plusMinusCapsuleFill: SFSymbolKit.SFSymbol
-  public static let repeatBadgeXmarkCircleFill: SFSymbolKit.SFSymbol
-  public static let roadLaneArrowtriangle2Outward: SFSymbolKit.SFSymbol
-  public static let roboticVacuumAndArrowtriangleUp: SFSymbolKit.SFSymbol
-  public static let roboticVacuumAndArrowtriangleUpFill: SFSymbolKit.SFSymbol
-  public static let roboticVacuumAndEllipsis: SFSymbolKit.SFSymbol
-  public static let roboticVacuumAndEllipsisFill: SFSymbolKit.SFSymbol
-  public static let spoonServing: SFSymbolKit.SFSymbol
-  public static let squareAndArrowUpBadgeCheckmark: SFSymbolKit.SFSymbol
-  public static let squareAndArrowUpBadgeCheckmarkFill: SFSymbolKit.SFSymbol
-  public static let squareshapeSplit2x2DottedInside: SFSymbolKit.SFSymbol
-  public static let squareshapeSplit2x2DottedInsideAndOutside: SFSymbolKit.SFSymbol
-  public static let squareshapeSplit2x2DottedOutside: SFSymbolKit.SFSymbol
-  public static let starHexagon: SFSymbolKit.SFSymbol
-  public static let starHexagonFill: SFSymbolKit.SFSymbol
-  public static let suvSideArrowLeftAndRight: SFSymbolKit.SFSymbol
-  public static let suvSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
-  public static let suvSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
-  public static let suvSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
-  public static let textformatAltBn: SFSymbolKit.SFSymbol
-  public static let textformatAltGu: SFSymbolKit.SFSymbol
-  public static let textformatAltKn: SFSymbolKit.SFSymbol
-  public static let textformatAltMl: SFSymbolKit.SFSymbol
-  public static let textformatAltMni: SFSymbolKit.SFSymbol
-  public static let textformatAltMr: SFSymbolKit.SFSymbol
-  public static let textformatAltOr: SFSymbolKit.SFSymbol
-  public static let textformatAltPa: SFSymbolKit.SFSymbol
-  public static let textformatAltSat: SFSymbolKit.SFSymbol
-  public static let textformatAltSi: SFSymbolKit.SFSymbol
-  public static let textformatAltTa: SFSymbolKit.SFSymbol
-  public static let textformatAltTe: SFSymbolKit.SFSymbol
-  public static let textformatBn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightBn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightGu: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightKn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightMl: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightMni: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightMr: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightOr: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightPa: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightSat: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightSi: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightTa: SFSymbolKit.SFSymbol
-  public static let textformatCharactersArrowLeftAndRightTe: SFSymbolKit.SFSymbol
-  public static let textformatCharactersBn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineBn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineGu: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineKn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineMl: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineMni: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineMr: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineOr: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlinePa: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineSat: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineSi: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineTa: SFSymbolKit.SFSymbol
-  public static let textformatCharactersDottedunderlineTe: SFSymbolKit.SFSymbol
-  public static let textformatCharactersGu: SFSymbolKit.SFSymbol
-  public static let textformatCharactersKn: SFSymbolKit.SFSymbol
-  public static let textformatCharactersMl: SFSymbolKit.SFSymbol
-  public static let textformatCharactersMni: SFSymbolKit.SFSymbol
-  public static let textformatCharactersMr: SFSymbolKit.SFSymbol
-  public static let textformatCharactersOr: SFSymbolKit.SFSymbol
-  public static let textformatCharactersPa: SFSymbolKit.SFSymbol
-  public static let textformatCharactersSat: SFSymbolKit.SFSymbol
-  public static let textformatCharactersSi: SFSymbolKit.SFSymbol
-  public static let textformatCharactersTa: SFSymbolKit.SFSymbol
-  public static let textformatCharactersTe: SFSymbolKit.SFSymbol
-  public static let textformatGu: SFSymbolKit.SFSymbol
-  public static let textformatKn: SFSymbolKit.SFSymbol
-  public static let textformatMl: SFSymbolKit.SFSymbol
-  public static let textformatMni: SFSymbolKit.SFSymbol
-  public static let textformatMr: SFSymbolKit.SFSymbol
-  public static let textformatOr: SFSymbolKit.SFSymbol
-  public static let textformatPa: SFSymbolKit.SFSymbol
-  public static let textformatSat: SFSymbolKit.SFSymbol
-  public static let textformatSi: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptBn: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptGu: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptKn: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptMl: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptMni: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptMr: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptOr: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptPa: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptSat: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptSi: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptTa: SFSymbolKit.SFSymbol
-  public static let textformatSubscriptTe: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptBn: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptGu: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptKn: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptMl: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptMni: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptMr: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptOr: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptPa: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptSat: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptSi: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptTa: SFSymbolKit.SFSymbol
-  public static let textformatSuperscriptTe: SFSymbolKit.SFSymbol
-  public static let textformatTa: SFSymbolKit.SFSymbol
-  public static let textformatTe: SFSymbolKit.SFSymbol
-  public static let truckPickupSideArrowLeftAndRight: SFSymbolKit.SFSymbol
-  public static let truckPickupSideArrowLeftAndRightFill: SFSymbolKit.SFSymbol
-  public static let truckPickupSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle: SFSymbolKit.SFSymbol
-  public static let truckPickupSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill: SFSymbolKit.SFSymbol
-}
-extension UIKit.UIBarButtonItem {
-  @_Concurrency.MainActor @preconcurrency convenience public init(symbol: SFSymbolKit.SFSymbol, landscapeImagePhone: UIKit.UIImage?, style: UIKit.UIBarButtonItem.Style, target: Any?, action: ObjectiveC.Selector?)
-  @_Concurrency.MainActor @preconcurrency convenience public init(symbol: SFSymbolKit.SFSymbol, style: UIKit.UIBarButtonItem.Style, target: Any?, action: ObjectiveC.Selector?)
-  @available(iOS 14.0, tvOS 14.0, *)
-  @_Concurrency.MainActor @preconcurrency convenience public init(title: Swift.String? = nil, symbol: SFSymbolKit.SFSymbol, primaryAction: UIKit.UIAction? = nil, menu: UIKit.UIMenu? = nil)
-}
-@available(iOS 13.1, macOS 10.15, tvOS 13.0, watchOS 6.1, visionOS 1.0, *)
-extension SFSymbolKit.SFSymbol {
-  public static var allSymbols13P1: [SFSymbolKit.SFSymbol] {
-    get
-  }
 }
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, visionOS 1.0, *)
 extension SFSymbolKit.SFSymbol {
