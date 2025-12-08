@@ -5,6 +5,7 @@ import Foundation
 // MARK: - Entry Config
 
 fileprivate let metadataSubpath = "Contents/Resources/Metadata"
+fileprivate let coreGlyphsBundlePath = "/System/Library/CoreServices/CoreGlyphs.bundle/Contents/Resources"
 
 fileprivate let inputURL: URL = {
     guard let appPath = CommandLine.arguments.dropFirst().first else {
@@ -16,12 +17,46 @@ fileprivate let inputURL: URL = {
         .appendingPathComponent(metadataSubpath, isDirectory: true)
 
     guard FileManager.default.fileExists(atPath: url.path) else {
-        print("❌ Could not find Metadata folder at expected path: \(url.path)")
+        print("Error: Could not find Metadata folder at expected path: \(url.path)")
         exit(1)
     }
 
     return url
 }()
+
+// MARK: - Localization
+
+enum Localization: String, CaseIterable, Codable {
+    case ar, he, hi, ja, km, ko, my, rtl, th, zh
+
+    var title: String {
+        switch self {
+        case .ar: return "Arabic"
+        case .he: return "Hebrew"
+        case .hi: return "Hindi"
+        case .ja: return "Japanese"
+        case .km: return "Central Khmer"
+        case .ko: return "Korean"
+        case .my: return "Burmese"
+        case .rtl: return "Right-to-Left"
+        case .th: return "Thai"
+        case .zh: return "Chinese"
+        }
+    }
+}
+
+/// Detects localization suffix from a symbol name
+/// Returns (baseName, localization) tuple
+func detectLocalization(from symbolName: String) -> (baseName: String, localization: Localization?) {
+    for loc in Localization.allCases {
+        let suffix = ".\(loc.rawValue)"
+        if symbolName.hasSuffix(suffix) {
+            let baseName = String(symbolName.dropLast(suffix.count))
+            return (baseName, loc)
+        }
+    }
+    return (symbolName, nil)
+}
 
 // MARK: - Models
 
@@ -33,17 +68,39 @@ struct PlatformAvailability: Codable {
     let visionOS: String
 }
 
+struct LocalizationInfo: Codable {
+    let code: String
+    let name: String
+    let availability: PlatformAvailability?
+}
+
 struct SFSymbol: Codable {
     let name: String
     let year: String?
     let availability: PlatformAvailability?
     let layersets: [String]
+    let localizations: [LocalizationInfo]
+    let restriction: String?
 }
 
 struct SymbolsOutput: Codable {
     let generatedAt: String
     let totalCount: Int
     let symbols: [SFSymbol]
+}
+
+// MARK: - Intermediate types for merging
+
+struct ScannedSymbol {
+    var name: String
+    var year: String?
+    var layersets: [String]
+}
+
+struct MergedSymbol {
+    var baseName: String
+    var baseSymbol: ScannedSymbol?
+    var localizedVariants: [(localization: Localization, symbol: ScannedSymbol)]
 }
 
 // MARK: - Load PLists
@@ -53,23 +110,36 @@ let layersetAvailabilityURL = inputURL.appendingPathComponent("layerset_availabi
 
 guard let nameData = try? Data(contentsOf: nameAvailabilityURL),
       let layersetData = try? Data(contentsOf: layersetAvailabilityURL) else {
-    print("❌ Error: Could not read plist files")
+    print("Error: Could not read plist files")
     exit(1)
 }
 
 guard let namePlist = try? PropertyListSerialization.propertyList(from: nameData, format: nil) as? [String: Any],
       let layersetPlist = try? PropertyListSerialization.propertyList(from: layersetData, format: nil) as? [String: Any] else {
-    print("❌ Error: Could not parse plist files")
+    print("Error: Could not parse plist files")
     exit(1)
 }
 
 guard let nameSymbols = namePlist["symbols"] as? [String: String],
       let layersetSymbols = layersetPlist["symbols"] as? [String: [String: String]] else {
-    print("❌ Error: Could not extract symbols from plist files")
+    print("Error: Could not extract symbols from plist files")
     exit(1)
 }
 
-print("☑️  Loaded plist files successfully.")
+print("Loaded plist files successfully.")
+
+// MARK: - Load Restrictions
+
+let restrictionsURL = URL(fileURLWithPath: coreGlyphsBundlePath).appendingPathComponent("symbol_restrictions.strings")
+var symbolRestrictions: [String: String] = [:]
+
+if let restrictionsData = try? Data(contentsOf: restrictionsURL),
+   let restrictions = try? PropertyListDecoder().decode([String: String].self, from: restrictionsData) {
+    symbolRestrictions = restrictions
+    print("Loaded \(symbolRestrictions.count) symbol restrictions from CoreGlyphs.bundle")
+} else {
+    print("Warning: Could not load symbol_restrictions.strings from CoreGlyphs.bundle")
+}
 
 // MARK: - Determine Best year_to_release
 
@@ -91,12 +161,12 @@ let missing2025Entry: [String: String] = [
 
 if nameYearToRelease["2025"] == nil {
     nameYearToRelease["2025"] = missing2025Entry
-    print("⚠️  Injected missing 2025 release year into name_availability (Apple bug workaround)")
+    print("Injected missing 2025 release year into name_availability (Apple bug workaround)")
 }
 
 if layersetYearToRelease["2025"] == nil {
     layersetYearToRelease["2025"] = missing2025Entry
-    print("⚠️  Injected missing 2025 release year into layerset_availability (Apple bug workaround)")
+    print("Injected missing 2025 release year into layerset_availability (Apple bug workaround)")
 }
 // ============================================================================
 
@@ -116,10 +186,10 @@ let layersetMaxYear = maxYear(in: layersetYearToRelease)
 let yearToRelease: [String: [String: String]]
 if nameMaxYear >= layersetMaxYear {
     yearToRelease = nameYearToRelease
-    print("☑️  Using year_to_release from name_availability.plist (max: \(nameMaxYear))")
+    print("Using year_to_release from name_availability.plist (max: \(nameMaxYear))")
 } else {
     yearToRelease = layersetYearToRelease
-    print("☑️  Using year_to_release from layerset_availability.plist (max: \(layersetMaxYear))")
+    print("Using year_to_release from layerset_availability.plist (max: \(layersetMaxYear))")
 }
 
 // Build version map from plist
@@ -141,14 +211,12 @@ for (year, platforms) in yearToRelease {
     )
 }
 
-// MARK: - Merge Data
+// MARK: - Scan All Symbols
 
 let allSymbolNames = Set(nameSymbols.keys).union(Set(layersetSymbols.keys))
+var scannedSymbols: [String: ScannedSymbol] = [:]
 
-var symbols: [SFSymbol] = []
-var unmappedYears: Set<String> = []
-
-for symbolName in allSymbolNames.sorted() {
+for symbolName in allSymbolNames {
     var year = nameSymbols[symbolName]
     let layersetInfo = layersetSymbols[symbolName]
 
@@ -162,7 +230,6 @@ for symbolName in allSymbolNames.sorted() {
     }
 
     // If year is missing from name_availability, infer from layerset_availability
-    // Use the earliest year from the layerset data
     if year == nil, let info = layersetInfo {
         year = info.values.min { a, b in
             let aParts = a.split(separator: ".").compactMap { Double($0) }
@@ -173,9 +240,52 @@ for symbolName in allSymbolNames.sorted() {
         }
     }
 
-    // Look up platform availability
+    scannedSymbols[symbolName] = ScannedSymbol(name: symbolName, year: year, layersets: layersets)
+}
+
+print("Scanned \(scannedSymbols.count) total symbol entries (including localized variants)")
+
+// MARK: - Merge Localized Variants
+
+var mergedSymbols: [String: MergedSymbol] = [:]
+
+for (symbolName, scanned) in scannedSymbols {
+    let (baseName, localization) = detectLocalization(from: symbolName)
+
+    if mergedSymbols[baseName] == nil {
+        mergedSymbols[baseName] = MergedSymbol(baseName: baseName, baseSymbol: nil, localizedVariants: [])
+    }
+
+    if let loc = localization {
+        mergedSymbols[baseName]!.localizedVariants.append((loc, scanned))
+    } else {
+        mergedSymbols[baseName]!.baseSymbol = scanned
+    }
+}
+
+// MARK: - Build Final Symbols
+
+var symbols: [SFSymbol] = []
+var unmappedYears: Set<String> = []
+var symbolsWithLocalizations = 0
+var symbolsWithRestrictions = 0
+
+for baseName in mergedSymbols.keys.sorted() {
+    let merged = mergedSymbols[baseName]!
+
+    // Use base symbol if available, otherwise use first localized variant
+    let primarySymbol: ScannedSymbol
+    if let base = merged.baseSymbol {
+        primarySymbol = base
+    } else if let firstVariant = merged.localizedVariants.first {
+        primarySymbol = firstVariant.symbol
+    } else {
+        continue // Skip if no symbols at all
+    }
+
+    // Look up platform availability for primary symbol
     let availability: PlatformAvailability?
-    if let year = year {
+    if let year = primarySymbol.year {
         if let mapped = versionMap[year] {
             availability = mapped
         } else {
@@ -186,18 +296,47 @@ for symbolName in allSymbolNames.sorted() {
         availability = nil
     }
 
+    // Build localizations array
+    var localizations: [LocalizationInfo] = []
+    for (loc, variant) in merged.localizedVariants.sorted(by: { $0.localization.rawValue < $1.localization.rawValue }) {
+        let locAvailability: PlatformAvailability?
+        if let year = variant.year, let mapped = versionMap[year] {
+            locAvailability = mapped
+        } else {
+            locAvailability = nil
+        }
+
+        localizations.append(LocalizationInfo(
+            code: loc.rawValue,
+            name: loc.title,
+            availability: locAvailability
+        ))
+    }
+
+    if !localizations.isEmpty {
+        symbolsWithLocalizations += 1
+    }
+
+    // Look up restriction
+    let restriction = symbolRestrictions[baseName]
+    if restriction != nil {
+        symbolsWithRestrictions += 1
+    }
+
     let symbol = SFSymbol(
-        name: symbolName,
-        year: year,
+        name: baseName,
+        year: primarySymbol.year,
         availability: availability,
-        layersets: layersets
+        layersets: primarySymbol.layersets,
+        localizations: localizations,
+        restriction: restriction
     )
 
     symbols.append(symbol)
 }
 
 if !unmappedYears.isEmpty {
-    print("⚠️  Warning: Unmapped years found: \(unmappedYears.sorted())")
+    print("Warning: Unmapped years found: \(unmappedYears.sorted())")
 }
 
 // MARK: - Generate Output
@@ -213,7 +352,7 @@ let encoder = JSONEncoder()
 encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
 
 guard let jsonData = try? encoder.encode(output) else {
-    print("❌ Error: Could not encode JSON")
+    print("Error: Could not encode JSON")
     exit(1)
 }
 
@@ -222,9 +361,9 @@ let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 
 do {
     try jsonData.write(to: outputURL)
-    print("☑️  Generated symbols.json successfully.")
+    print("Generated symbols.json successfully.")
 } catch {
-    print("❌ Error writing file: \(error)")
+    print("Error writing file: \(error)")
     exit(1)
 }
 
@@ -237,10 +376,13 @@ let missingYear = symbols.filter { $0.year == nil }.count
 
 print()
 print("Summary:")
-print("  Total symbols:      \(symbols.count)")
-print("  With year:          \(withYear)")
-print("  With hierarchical:  \(withHierarchical)")
-print("  With multicolor:    \(withMulticolor)")
-print("  Missing year:       \(missingYear)")
+print("  Total symbols (merged):    \(symbols.count)")
+print("  Raw entries scanned:       \(scannedSymbols.count)")
+print("  With localizations:        \(symbolsWithLocalizations)")
+print("  With restrictions:         \(symbolsWithRestrictions)")
+print("  With year:                 \(withYear)")
+print("  With hierarchical:         \(withHierarchical)")
+print("  With multicolor:           \(withMulticolor)")
+print("  Missing year:              \(missingYear)")
 print()
-print("✅ Output: \(outputURL.path)")
+print("Output: \(outputURL.path)")
