@@ -147,6 +147,8 @@ If you have any suggestions or ideas for improving the project, please feel free
 
 To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will automatically handle updating all relevant files in place.
 
+> **Important:** Run the update script on the latest macOS version. The deprecation data comes from the system's CoreGlyphs bundle, which is updated with each OS release. Using an older macOS may result in missing or outdated deprecation warnings.
+
 1. **Navigate to the `SFSymbols` directory** in your terminal:
 
     ```bash
