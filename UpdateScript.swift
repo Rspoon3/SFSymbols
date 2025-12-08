@@ -478,40 +478,40 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
 
     // Build documentation comments
     var docComments = "/// \(symbol.title)\n"
-    docComments += "        /// - Since: \(releaseString)"
+    docComments += "    /// - Since: \(releaseString)"
 
     // Add layersets comment
     if let layersets = symbol.layersets, !layersets.isEmpty {
-        docComments += "\n        /// - Layersets: \(layersets.joined(separator: ", "))"
+        docComments += "\n    /// - Layersets: \(layersets.joined(separator: ", "))"
     }
 
     // Add localizations comment
     if let localizations = symbol.localizations, !localizations.isEmpty {
         let locNames = localizations.map { $0.name }.joined(separator: ", ")
-        docComments += "\n        /// - Localizations: \(locNames)"
+        docComments += "\n    /// - Localizations: \(locNames)"
     }
 
     // Add restriction warning
     if let restriction = symbol.restriction {
-        docComments += "\n        /// - Warning: \(restriction)"
+        docComments += "\n    /// - Warning: \(restriction)"
     }
 
     // Add deprecation attribute if deprecated
     var deprecationAttribute = ""
     if let newName = symbol.deprecatedNewName {
         let newNameCamelCased = convertTitleToCamelCased(string: newName, modifyKeywords: false)
-        deprecationAttribute = "\n        @available(*, deprecated, renamed: \"\(newNameCamelCased)\", message: \"Use '\(newNameCamelCased)' instead. This symbol has been renamed.\")"
+        deprecationAttribute = "\n    @available(*, deprecated, renamed: \"\(newNameCamelCased)\", message: \"Use '\(newNameCamelCased)' instead. This symbol has been renamed.\")"
     }
 
     let staticVar = """
         \(docComments)\(deprecationAttribute)
-            static let \(camelCased) = SFSymbol(
-                title: "\(symbol.title)",
-                categories: \(categoriesOptionalString),
-                searchTerms: \(searchTermsOptionalString),
-                releaseInfo: ReleaseInfo(\(releaseString))
-            )
-        """
+        static let \(camelCased) = SFSymbol(
+            title: "\(symbol.title)",
+            categories: \(categoriesOptionalString),
+            searchTerms: \(searchTermsOptionalString),
+            releaseInfo: ReleaseInfo(\(releaseString))
+        )
+    """
 
     return staticVar
 }
