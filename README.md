@@ -173,50 +173,6 @@ To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will
 
 > **Note:** The Draw category symbols are saved to `draw.txt` during the update and cleaned up automatically afterward. If you need to update the Draw category in subsequent runs, delete any existing `draw.txt` file first.
 
-## Patch Folder
-
-The `Patch` folder contains scripts to handle cases where Apple's SF Symbols app metadata is incomplete.
-
-### Why the Patch Exists
-
-Starting with SF Symbols 7 (iOS 26), Apple's `name_availability.plist` file does not include the newest symbols in its `symbols` dictionary, even though these symbols exist in `layerset_availability.plist`. This means the standard update script cannot detect or generate code for the latest symbols.
-
-The patch scripts work around this by extracting symbol names from `layerset_availability.plist` and injecting them into `name_availability.plist` before running the main update script.
-
-### Usage
-
-1. **Copy the required plist files** from the SF Symbols app to the `Patch` folder:
-    - `name_availability.plist`
-    - `layerset_availability.plist`
-    - `categories.plist`
-    - `symbol_categories.plist`
-    - `symbol_search.plist`
-
-    These files are located at:
-    ```
-    /Applications/SF Symbols.app/Contents/Resources/Metadata/
-    ```
-
-2. **Navigate to the Patch folder**:
-
-    ```bash
-    cd path/to/SFSymbols/Patch
-    ```
-
-3. **Run the patch script** to add missing symbols to `name_availability.plist`:
-
-    ```bash
-    swift PatchNameAvailability.swift
-    ```
-
-4. **Run the update script** to generate the Swift files:
-
-    ```bash
-    swift UpdateScript.swift
-    ```
-
-5. **Update the `CHANGELOG.md`** with any relevant notes about the new symbols.
-
 ## License
 
 SFSymbols is released under the MIT license. [See LICENSE](https://github.com/Rspoon3/SFSymbols/blob/main/LICENSE) for details.
