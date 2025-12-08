@@ -46,7 +46,7 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 14, visionOS 1.0, *)
     func correctNumberOfSymbols14() {
-        #expect(SFSymbol.allSymbols14.count == 988)
+        #expect(SFSymbol.allSymbols14.count == 987)
     }
 
     @Test
@@ -64,7 +64,7 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 15.0, macOS 12.0, visionOS 1.0, *)
     func correctNumberOfSymbols15() {
-        #expect(SFSymbol.allSymbols15.count == 808)
+        #expect(SFSymbol.allSymbols15.count == 793)
     }
 
     @Test
@@ -82,19 +82,19 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 15.4, macOS 12.3, visionOS 1.0, *)
     func correctNumberOfSymbols15P4() {
-        #expect(SFSymbol.allSymbols15P4.count == 8)
+        #expect(SFSymbol.allSymbols15P4.count == 7)
     }
 
     @Test
     @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
     func correctNumberOfSymbols16() {
-        #expect(SFSymbol.allSymbols16.count == 891)
+        #expect(SFSymbol.allSymbols16.count == 890)
     }
 
     @Test
     @available(iOS 16.1, macOS 13.0, visionOS 1.0, *)
     func correctNumberOfSymbols16P1() {
-        #expect(SFSymbol.allSymbols16P1.count == 334)
+        #expect(SFSymbol.allSymbols16P1.count == 333)
     }
 
     @Test
@@ -106,7 +106,7 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 17.0, macOS 14.0, visionOS 1.0, *)
     func correctNumberOfSymbols17() {
-        #expect(SFSymbol.allSymbols17.count == 969)
+        #expect(SFSymbol.allSymbols17.count == 963)
     }
 
     @Test
@@ -154,7 +154,7 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 18.4, macOS 15.4, tvOS 18.4, watchOS 11.4, visionOS 2.4, *)
     func correctNumberOfSymbols18P4() {
-        #expect(SFSymbol.allSymbols18P4.count == 117)
+        #expect(SFSymbol.allSymbols18P4.count == 116)
     }
 
     @Test
@@ -166,7 +166,13 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0, *)
     func correctNumberOfSymbols26() {
-        #expect(SFSymbol.allSymbols26.count == 375)
+        #expect(SFSymbol.allSymbols26.count == 470)
+    }
+
+    @Test
+    @available(iOS 26.1, macOS 26.1, tvOS 26.1, watchOS 26.1, visionOS 26.1, *)
+    func correctNumberOfSymbols26P1() {
+        #expect(SFSymbol.allSymbols26P1.count == 27)
     }
 
     // MARK: - Layersets
