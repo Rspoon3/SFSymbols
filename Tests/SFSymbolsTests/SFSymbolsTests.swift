@@ -10,23 +10,15 @@ struct SFSymbolsTests {
 
     // MARK: - Symbol Existence
 
-//    #if canImport(UIKit)
-//    @Test
-//    func allSymbolsExist() {
-//        let currentVersion = ProcessInfo.processInfo.operatingSystemVersion
-//        let currentiOS = Double(currentVersion.majorVersion) + Double(currentVersion.minorVersion) / 10.0
-//
-//        for symbol in SFSymbol.allSymbols {
-//            // Skip symbols that require a newer iOS version
-//            guard symbol.releaseInfo.iOS <= currentiOS else { continue }
-//            // Skip deprecated symbols as they may have been removed
-//            guard !symbol.isDeprecated else { continue }
-//
-//            let image = UIImage(systemName: symbol.title)
-//            #expect(image != nil, "\(symbol.title) does not exist!")
-//        }
-//    }
-//    #endif
+    #if canImport(UIKit)
+    @Test
+    func allSymbolsExist() {
+        for symbol in SFSymbol.allSymbols {
+            let image = UIImage(systemName: symbol.title)
+            #expect(image != nil, "\(symbol.title) does not exist!")
+        }
+    }
+    #endif
 
     // MARK: - Uniqueness
 
@@ -96,7 +88,7 @@ struct SFSymbolsTests {
     @Test
     @available(iOS 16.0, macOS 13.0, visionOS 1.0, *)
     func correctNumberOfSymbols16() {
-        #expect(SFSymbol.allSymbols16.count == 893)
+        #expect(SFSymbol.allSymbols16.count == 891)
     }
 
     @Test

@@ -8476,32 +8476,6 @@ public extension SFSymbol {
         layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
-    /// square.3.layers.3d.down.backward.slash
-    /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    /// - Localizations: Right-to-Left
-    static let square3Layers3DDownBackwardSlash = SFSymbol(
-        title: "square.3.layers.3d.down.backward.slash",
-        categories: nil,
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))]
-    )
-
-    /// square.3.layers.3d.down.forward.slash
-    /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    /// - Localizations: Right-to-Left
-    static let square3Layers3DDownForwardSlash = SFSymbol(
-        title: "square.3.layers.3d.down.forward.slash",
-        categories: nil,
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))]
-    )
-
     /// square.3.layers.3d.middle.filled
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor

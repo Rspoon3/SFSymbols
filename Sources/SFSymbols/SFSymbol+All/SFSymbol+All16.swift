@@ -765,8 +765,6 @@ public extension SFSymbol {
          .square2Layers3DTopFilled,
          .square3Layers3D,
          .square3Layers3DBottomFilled,
-         .square3Layers3DDownBackwardSlash,
-         .square3Layers3DDownForwardSlash,
          .square3Layers3DMiddleFilled,
          .square3Layers3DSlash,
          .square3Layers3DTopFilled,

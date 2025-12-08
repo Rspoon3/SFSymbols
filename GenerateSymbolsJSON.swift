@@ -430,8 +430,21 @@ for (year, platforms) in yearToRelease {
 
 let allSymbolNames = Set(nameSymbols.keys).union(Set(layersetSymbols.keys))
 var scannedSymbols: [String: ScannedSymbol] = [:]
+var skippedPhantomRtl = 0
 
 for symbolName in allSymbolNames {
+    // For ".slash.rtl" variants, check if the base symbol (e.g., "foo.slash") actually exists.
+    // If it doesn't exist, this is a phantom symbol and should be skipped.
+    // Example: "speaker.slash.rtl" → base "speaker.slash" exists → keep it
+    // Example: "square.3.layers.3d.down.forward.slash.rtl" → base doesn't exist → skip it
+    if symbolName.hasSuffix(".slash.rtl") {
+        let potentialBase = String(symbolName.dropLast(".rtl".count)) // e.g., "foo.slash"
+        if !allSymbolNames.contains(potentialBase) {
+            skippedPhantomRtl += 1
+            continue
+        }
+    }
+
     var year = nameSymbols[symbolName]
     let layersetInfo = layersetSymbols[symbolName]
 
@@ -459,6 +472,9 @@ for symbolName in allSymbolNames {
 }
 
 print("Scanned \(scannedSymbols.count) total symbol entries (including localized variants)")
+if skippedPhantomRtl > 0 {
+    print("Skipped \(skippedPhantomRtl) phantom .slash.rtl variants (base symbol doesn't exist)")
+}
 
 // MARK: - Merge Localized Variants
 
