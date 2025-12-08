@@ -1,9 +1,56 @@
 # Change Log
+
+## Version 3.0 (12-8-2025)
+### Additions
+- Added 392 new symbols for iOS 26.0 (SF Symbols 7) and equivalent versions on other platforms
+- Added `layersets` property to SFSymbol indicating supported rendering modes (monochrome, hierarchical, multicolor)
+- Added `localizations` property with available language-specific variants and their availability info
+- Added `categories` property showing which SF Symbol categories a symbol belongs to
+- Added `restriction` property with Apple's usage restriction notes
+- Added `deprecatedNewName` property for renamed symbols with proper `@available` deprecation annotations
+- Added Draw category support (manually captured since Apple excludes it from metadata)
+- Added `GenerateSymbolsJSON.swift` for comprehensive symbol metadata extraction
+- Added `Layerset` and `Localization` model types
+
+### Changed
+- Deprecation data now sourced from system CoreGlyphs bundle instead of SF Symbols app for accurate runtime-matching warnings
+- Updated README with Data Sources documentation explaining where symbol data comes from
+- Updated README with instructions for the Draw category clipboard capture process
+- Smart handling of RTL variants - phantom `.slash.rtl` symbols are now properly skipped
+
+### Fixed
+- Fixed phantom symbols like `square.3.layers.3d.down.forward.slash` that don't actually exist (only their `.rtl` variant exists)
+
+-----
+## Version 2.8.1 (6-15-2025)
+### Fixed
+- Mac compilation fixes
+
+-----
+## Version 2.8 (6-15-2025)
+### Additions
+- Added release automation via GitHub Actions (release on tag)
+- Added additional SwiftUI and UIKit convenience extensions
+- Updated StandardNames with more common symbol aliases
+
+### Changed
+- Explicit Swift 6 language mode
+
+### Removed
+- Removed unused NameAvailabilityResults file
+
+-----
 ## Version 2.7 (6-9-2025)
 ### Additions
 - Added symbols for iOS 18.0, 18.1, 18.2, 18.4, 18.5 and their equivalent version on other platforms
 - Added symbols from [SFSymbols Version 7.0 (109)](https://developer.apple.com/sf-symbols/) for iOS 26.0 and their equivalent version on other platforms
 
+-----
+## Version 2.6.1 (11-6-2024)
+### Fixed
+- watchOS compilation fixes
+
+-----
 ## Version 2.6 (11-6-2024)
 ### Additions
 - Added symbols for iOS 17.4, 17.6, 18.0 and their equivalent version on other platforms.
