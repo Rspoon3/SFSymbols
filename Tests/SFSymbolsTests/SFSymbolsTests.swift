@@ -270,7 +270,7 @@ struct SFSymbolsTests {
     @Test
     func categoriesHaveSymbols() {
         // "What's New" and "Draw" are special categories computed dynamically in SF Symbols app
-        let specialCategories: Set<String> = ["What's New", "Draw"]
+        let specialCategories: Set<String> = ["Draw"]
 
         for category in SFCategory.allCategories {
             guard !specialCategories.contains(category.title) else { continue }
