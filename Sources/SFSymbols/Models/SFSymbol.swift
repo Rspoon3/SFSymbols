@@ -35,7 +35,8 @@ public struct SFSymbol: Codable, Identifiable, Equatable, Hashable, Sendable {
         deprecatedNewName != nil
     }
 
-    // MARK: Public Init
+    // MARK: - Public Init
+    
     public init(
         title: String,
         categories: [SFCategory]? = nil,

@@ -532,6 +532,18 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
         deprecationAttribute = "\n    @available(*, deprecated, renamed: \"\(newNameCamelCased)\", message: \"Use '\(newNameCamelCased)' instead. This symbol has been renamed.\")"
     }
 
+    // Build optional parameters only when non-nil
+    var optionalParams = ""
+    if localizationsOptionalString != "nil" {
+        optionalParams += ",\n        localizations: \(localizationsOptionalString)"
+    }
+    if restrictionOptionalString != "nil" {
+        optionalParams += ",\n        restriction: \(restrictionOptionalString)"
+    }
+    if deprecatedNewNameOptionalString != "nil" {
+        optionalParams += ",\n        deprecatedNewName: \(deprecatedNewNameOptionalString)"
+    }
+
     let staticVar = """
         \(docComments)\(deprecationAttribute)
         static let \(camelCased) = SFSymbol(
@@ -539,10 +551,7 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
             categories: \(categoriesOptionalString),
             searchTerms: \(searchTermsOptionalString),
             releaseInfo: ReleaseInfo(\(releaseString)),
-            layersets: \(layersetsArrayString),
-            localizations: \(localizationsOptionalString),
-            restriction: \(restrictionOptionalString),
-            deprecatedNewName: \(deprecatedNewNameOptionalString)
+            layersets: \(layersetsArrayString)\(optionalParams)
         )
     """
 
