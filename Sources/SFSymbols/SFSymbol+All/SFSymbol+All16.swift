@@ -622,7 +622,6 @@ public extension SFSymbol {
          .playpauseCircle,
          .playpauseCircleFill,
          .playstationLogo,
-         .pointerArrowSquareFill,
          .popcorn,
          .popcornCircle,
          .popcornCircleFill,

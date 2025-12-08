@@ -6209,7 +6209,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let keyboardMacwindow = SFSymbol(
         title: "keyboard.macwindow",
-        categories: nil,
+        categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
         layersets: [.monochrome]
@@ -7062,7 +7062,7 @@ public extension SFSymbol {
     /// - Localizations: Right-to-Left
     static let macwindowOnRectangle = SFSymbol(
         title: "macwindow.on.rectangle",
-        categories: nil,
+        categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
@@ -10817,7 +10817,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let textAndCommandMacwindow = SFSymbol(
         title: "text.and.command.macwindow",
-        categories: nil,
+        categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
         layersets: [.monochrome]
@@ -10882,17 +10882,6 @@ public extension SFSymbol {
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
         localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0))]
-    )
-
-    /// text.pad.header.badge.plus
-    /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let textPadHeaderBadgePlus = SFSymbol(
-        title: "text.pad.header.badge.plus",
-        categories: [.multicolor, .objectsAndTools],
-        searchTerms: ["+", "add", "create", "new"],
-        releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
     /// text.redaction

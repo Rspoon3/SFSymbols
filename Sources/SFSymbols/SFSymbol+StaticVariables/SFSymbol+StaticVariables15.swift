@@ -504,19 +504,6 @@ public extension SFSymbol {
         layersets: [.monochrome]
     )
 
-    /// apple.homekit
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomeKit.
-    static let appleHomekit = SFSymbol(
-        title: "apple.homekit",
-        categories: [.home, .multicolor, .variable],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor],
-        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomeKit."
-    )
-
     /// applepencil
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
@@ -2298,17 +2285,6 @@ public extension SFSymbol {
         layersets: [.monochrome]
     )
 
-    /// contextualmenu.and.pointer.arrow
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let contextualmenuAndPointerArrow = SFSymbol(
-        title: "contextualmenu.and.pointer.arrow",
-        categories: [.accessibility, .draw],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
     /// cpu.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
@@ -2331,17 +2307,6 @@ public extension SFSymbol {
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome],
         deprecatedNewName: "creditcard.and.numbers"
-    )
-
-    /// creditcard.and.numbers
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let creditcardAndNumbers = SFSymbol(
-        title: "creditcard.and.numbers",
-        categories: [.commerce],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
     )
 
     /// creditcard.trianglebadge.exclamationmark
@@ -2796,17 +2761,6 @@ public extension SFSymbol {
         layersets: [.monochrome, .hierarchical]
     )
 
-    /// dot.circle.and.pointer.arrow
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let dotCircleAndPointerArrow = SFSymbol(
-        title: "dot.circle.and.pointer.arrow",
-        categories: [.accessibility],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
     /// dot.circle.viewfinder
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
@@ -3185,19 +3139,6 @@ public extension SFSymbol {
         searchTerms: ["human", "person", "sports", "wheelchair"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome]
-    )
-
-    /// filemenu.and.pointer.arrow
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    /// - Localizations: Right-to-Left
-    static let filemenuAndPointerArrow = SFSymbol(
-        title: "filemenu.and.pointer.arrow",
-        categories: [.accessibility],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0))]
     )
 
     /// film.circle
@@ -3937,36 +3878,6 @@ public extension SFSymbol {
         layersets: [.monochrome, .hierarchical],
         localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))],
         restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod and Apple TV."
-    )
-
-    /// homepod.mini.and.appletv
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    /// - Localizations: Right-to-Left
-    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini and Apple TV.
-    static let homepodMiniAndAppletv = SFSymbol(
-        title: "homepod.mini.and.appletv",
-        categories: [.devices],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))],
-        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini and Apple TV."
-    )
-
-    /// homepod.mini.and.appletv.fill
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    /// - Localizations: Right-to-Left
-    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini and Apple TV.
-    static let homepodMiniAndAppletvFill = SFSymbol(
-        title: "homepod.mini.and.appletv.fill",
-        categories: [.devices],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))],
-        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini and Apple TV."
     )
 
     /// homepodmini.and.appletv
@@ -6356,83 +6267,6 @@ public extension SFSymbol {
         deprecatedNewName: "point.topleft.down.to.point.bottomright.filled.curvepath"
     )
 
-    /// pointer.arrow.and.square.on.square.dashed
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowAndSquareOnSquareDashed = SFSymbol(
-        title: "pointer.arrow.and.square.on.square.dashed",
-        categories: [.accessibility],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
-    /// pointer.arrow.click
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowClick = SFSymbol(
-        title: "pointer.arrow.click",
-        categories: [.accessibility],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
-    /// pointer.arrow.click.2
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let pointerArrowClick2 = SFSymbol(
-        title: "pointer.arrow.click.2",
-        categories: [.accessibility, .variable],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
-    )
-
-    /// pointer.arrow.click.badge.clock
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let pointerArrowClickBadgeClock = SFSymbol(
-        title: "pointer.arrow.click.badge.clock",
-        categories: [.accessibility, .multicolor],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
-    )
-
-    /// pointer.arrow.motionlines.click
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowMotionlinesClick = SFSymbol(
-        title: "pointer.arrow.motionlines.click",
-        categories: [.accessibility],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
-    /// pointer.arrow.rays
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowRays = SFSymbol(
-        title: "pointer.arrow.rays",
-        categories: [.accessibility, .draw],
-        searchTerms: ["cursor", "light"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
-    /// pointer.arrow.square
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowSquare = SFSymbol(
-        title: "pointer.arrow.square",
-        categories: [.draw],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
     /// power.circle
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
@@ -8817,17 +8651,6 @@ public extension SFSymbol {
         layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
-    /// text.pad.header
-    /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let textPadHeader = SFSymbol(
-        title: "text.pad.header",
-        categories: [.objectsAndTools, .draw],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
     /// text.viewfinder
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
@@ -8976,7 +8799,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let trashSlashCircle = SFSymbol(
         title: "trash.slash.circle",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .variable],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]

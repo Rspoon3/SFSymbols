@@ -945,7 +945,6 @@ public extension SFSymbol {
          .textBookClosed,
          .textBookClosedFill,
          .textMagnifyingglass,
-         .textPadHeaderBadgePlus,
          .textRedaction,
          .thermometerSunFill,
          .ticket,

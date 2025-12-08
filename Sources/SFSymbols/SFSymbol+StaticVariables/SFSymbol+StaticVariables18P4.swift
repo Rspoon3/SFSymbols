@@ -909,17 +909,6 @@ public extension SFSymbol {
         layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
-    /// repeat.badge.xmark
-    /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let repeatBadgeXmark = SFSymbol(
-        title: "repeat.badge.xmark",
-        categories: [.arrows, .media, .multicolor],
-        searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
-        releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
-        layersets: [.monochrome, .hierarchical, .multicolor]
-    )
-
     /// repeat.badge.xmark.circle.fill
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     /// - Layersets: monochrome

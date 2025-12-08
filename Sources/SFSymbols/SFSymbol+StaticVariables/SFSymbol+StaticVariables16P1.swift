@@ -3188,17 +3188,6 @@ public extension SFSymbol {
         deprecatedNewName: "steeringwheel.badge.lock"
     )
 
-    /// steeringwheel.badge.lock
-    /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let steeringwheelBadgeLock = SFSymbol(
-        title: "steeringwheel.badge.lock",
-        categories: [.automotive],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
     /// steeringwheel.exclamationmark
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor

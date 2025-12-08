@@ -98,6 +98,10 @@ public extension SFSymbol {
             symbols.append(contentsOf: SFSymbol.allSymbols26)
         }
 
+        if #available(iOS 26.1, macOS 26.1, tvOS 26.1, watchOS 26.1, visionOS 26.1, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols26P1)
+        }
+
         return symbols
     }
 }
