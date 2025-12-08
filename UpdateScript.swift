@@ -459,6 +459,10 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
 
     var categoriesOptionalString = "nil"
     var searchTermsOptionalString = "nil"
+    var layersetsArrayString = "[.monochrome]"
+    var localizationsOptionalString = "nil"
+    var restrictionOptionalString = "nil"
+    var deprecatedNewNameOptionalString = "nil"
 
     if var categoriesString = symbol.categories?
         .map({ ".\(convertTitleToCamelCased(string: $0.title, modifyKeywords: false))" })
@@ -472,6 +476,31 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
         searchTermsString.insert("[", at: searchTermsString.startIndex)
         searchTermsString.append("]")
         searchTermsOptionalString = searchTermsString
+    }
+
+    // Layersets are always present (at minimum monochrome)
+    let layersets = symbol.layersets ?? ["monochrome"]
+    layersetsArrayString = "[" + layersets.map { ".\($0)" }.joined(separator: ", ") + "]"
+
+    if let localizations = symbol.localizations, !localizations.isEmpty {
+        let locStrings = localizations.map { loc -> String in
+            if let avail = loc.availability {
+                let releaseInfo = "ReleaseInfo(iOS: \(avail.asReleaseInfo.iOS), macOS: \(avail.asReleaseInfo.macOS), tvOS: \(avail.asReleaseInfo.tvOS), watchOS: \(avail.asReleaseInfo.watchOS), visionOS: \(avail.asReleaseInfo.visionOS))"
+                return "LocalizationInfo(code: .\(loc.code), availability: \(releaseInfo))"
+            } else {
+                return "LocalizationInfo(code: .\(loc.code))"
+            }
+        }
+        localizationsOptionalString = "[\(locStrings.joined(separator: ", "))]"
+    }
+
+    if let restriction = symbol.restriction {
+        let escaped = restriction.replacingOccurrences(of: "\"", with: "\\\"")
+        restrictionOptionalString = "\"\(escaped)\""
+    }
+
+    if let deprecatedNewName = symbol.deprecatedNewName {
+        deprecatedNewNameOptionalString = "\"\(deprecatedNewName)\""
     }
 
     let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS), visionOS: \(symbol.releaseInfo.visionOS)"
@@ -509,7 +538,11 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
             title: "\(symbol.title)",
             categories: \(categoriesOptionalString),
             searchTerms: \(searchTermsOptionalString),
-            releaseInfo: ReleaseInfo(\(releaseString))
+            releaseInfo: ReleaseInfo(\(releaseString)),
+            layersets: \(layersetsArrayString),
+            localizations: \(localizationsOptionalString),
+            restriction: \(restrictionOptionalString),
+            deprecatedNewName: \(deprecatedNewNameOptionalString)
         )
     """
 
