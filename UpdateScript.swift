@@ -1,17 +1,24 @@
 #!/usr/bin/env swift
 
 import Foundation
+import AppKit
 
 // MARK: - Entry Config
 
 fileprivate let metadataSubpath = "Contents/Resources/Metadata"
+fileprivate let scriptDirectory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+fileprivate let symbolsJSONPath = scriptDirectory.appendingPathComponent("symbols.json")
+fileprivate let drawFilePath = scriptDirectory.appendingPathComponent("draw.txt")
 
-fileprivate let inputURL: URL = {
-    guard let appPath = CommandLine.arguments.dropFirst().first else {
-        print("Usage: UpdateScript.swift \"/Applications/SF Symbols beta.app\"")
+fileprivate let appPath: String = {
+    guard let path = CommandLine.arguments.dropFirst().first else {
+        print("Usage: UpdateScript.swift \"/Applications/SF Symbols.app\"")
         exit(1)
     }
+    return path
+}()
 
+fileprivate let inputURL: URL = {
     let url = URL(fileURLWithPath: appPath)
         .appendingPathComponent(metadataSubpath, isDirectory: true)
 
@@ -23,12 +30,128 @@ fileprivate let inputURL: URL = {
     return url
 }()
 
+// MARK: - Draw Category Input
+
+fileprivate func ensureDrawCategoryExists() {
+    if FileManager.default.fileExists(atPath: drawFilePath.path) {
+        print("📋 Found existing draw.txt")
+        return
+    }
+
+    print("")
+    print("╔════════════════════════════════════════════════════════════════════╗")
+    print("║                    DRAW CATEGORY INPUT REQUIRED                    ║")
+    print("╠════════════════════════════════════════════════════════════════════╣")
+    print("║ The 'Draw' category cannot be extracted automatically.             ║")
+    print("║                                                                    ║")
+    print("║ To populate it:                                                    ║")
+    print("║   1. Open SF Symbols app                                           ║")
+    print("║   2. Select 'Draw' from the sidebar                                ║")
+    print("║   3. Select all symbols (Cmd+A)                                    ║")
+    print("║   4. Copy symbol names (Cmd+Shift+C)                               ║")
+    print("║   5. Press Enter to read from clipboard, or type 'skip' to skip    ║")
+    print("╚════════════════════════════════════════════════════════════════════╝")
+    print("")
+    print("Press Enter when ready (or type 'skip'): ", terminator: "")
+    fflush(stdout)
+
+    let input = readLine() ?? ""
+    if input.trimmingCharacters(in: .whitespaces).lowercased() == "skip" {
+        print("⏭️  Skipping draw category input.")
+        return
+    }
+
+    // Read from clipboard
+    print("Reading from clipboard...")
+    guard let clipboardContents = NSPasteboard.general.string(forType: .string),
+          !clipboardContents.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+        print("⚠️  Clipboard is empty.")
+        return
+    }
+
+    let lines = clipboardContents
+        .components(separatedBy: .newlines)
+        .map { $0.trimmingCharacters(in: .whitespaces) }
+        .filter { !$0.isEmpty }
+
+    if lines.isEmpty {
+        print("⚠️  No symbol names found in clipboard.")
+        return
+    }
+
+    print("Found \(lines.count) symbols in clipboard.")
+
+    let content = lines.joined(separator: "\n")
+    do {
+        try content.write(to: drawFilePath, atomically: true, encoding: .utf8)
+        print("☑️  Saved \(lines.count) draw category symbols to draw.txt")
+    } catch {
+        print("⚠️  Could not save draw.txt: \(error)")
+    }
+}
+
+// MARK: - Generate symbols.json
+
+fileprivate func generateSymbolsJSON() {
+    let generatorScript = scriptDirectory.appendingPathComponent("GenerateSymbolsJSON.swift")
+
+    guard FileManager.default.fileExists(atPath: generatorScript.path) else {
+        print("❌ Could not find GenerateSymbolsJSON.swift at: \(generatorScript.path)")
+        exit(1)
+    }
+
+    print("📦 Running GenerateSymbolsJSON.swift...")
+
+    let process = Process()
+    process.executableURL = URL(fileURLWithPath: "/usr/bin/swift")
+    process.arguments = [generatorScript.path, appPath]
+    process.currentDirectoryURL = scriptDirectory
+
+    // Pass through stdin/stdout/stderr so user can interact with prompts
+    process.standardInput = FileHandle.standardInput
+    process.standardOutput = FileHandle.standardOutput
+    process.standardError = FileHandle.standardError
+
+    do {
+        try process.run()
+        process.waitUntilExit()
+
+        if process.terminationStatus != 0 {
+            print("❌ GenerateSymbolsJSON.swift failed with exit code \(process.terminationStatus)")
+            exit(1)
+        }
+
+        print("☑️  symbols.json generated successfully.")
+    } catch {
+        print("❌ Failed to run GenerateSymbolsJSON.swift: \(error)")
+        exit(1)
+    }
+}
+
+// MARK: - Cleanup
+
+fileprivate func cleanupGeneratedFiles() {
+    do {
+        try FileManager.default.removeItem(at: symbolsJSONPath)
+        print("☑️  Cleaned up symbols.json")
+    } catch {
+        print("⚠️  Could not delete symbols.json: \(error)")
+    }
+
+    do {
+        try FileManager.default.removeItem(at: drawFilePath)
+        print("☑️  Cleaned up draw.txt")
+    } catch {
+        print("⚠️  Could not delete draw.txt: \(error)")
+    }
+}
+
 // MARK: - Models
 
 fileprivate struct SFCategory: Codable {
     let icon: String
     let title: String
-    
+
     enum CodingKeys: String, CodingKey {
         case icon
         case title = "label"
@@ -46,11 +169,11 @@ fileprivate struct ReleaseInfo: Codable {
     let tvOS: Double
     let watchOS: Double
     let visionOS: Double
-    
+
     enum CodingKeys: String, CodingKey {
         case iOS, macOS, tvOS, watchOS, visionOS
     }
-    
+
     init(iOS: Double, macOS: Double, tvOS: Double, watchOS: Double, visionOS: Double) {
         self.iOS = iOS
         self.macOS = macOS
@@ -58,7 +181,7 @@ fileprivate struct ReleaseInfo: Codable {
         self.watchOS = watchOS
         self.visionOS = visionOS
     }
-    
+
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         iOS = try Double(values.decode(String.self, forKey: .iOS))!
@@ -69,43 +192,100 @@ fileprivate struct ReleaseInfo: Codable {
     }
 }
 
+// MARK: - Models from symbols.json
+
+fileprivate struct PlatformAvailability: Codable {
+    let iOS: String
+    let macOS: String
+    let tvOS: String
+    let watchOS: String
+    let visionOS: String
+
+    var asReleaseInfo: ReleaseInfo {
+        ReleaseInfo(
+            iOS: Double(iOS) ?? 13.0,
+            macOS: Double(macOS) ?? 10.15,
+            tvOS: Double(tvOS) ?? 13.0,
+            watchOS: Double(watchOS) ?? 6.0,
+            visionOS: Double(visionOS) ?? 1.0
+        )
+    }
+}
+
+fileprivate struct LocalizationInfo: Codable {
+    let code: String
+    let name: String
+    let availability: PlatformAvailability?
+}
+
+fileprivate struct JSONCategoryInfo: Codable {
+    let icon: String
+    let title: String
+}
+
+fileprivate struct JSONSymbol: Codable {
+    let name: String
+    let year: String?
+    let availability: PlatformAvailability?
+    let layersets: [String]
+    let localizations: [LocalizationInfo]
+    let categories: [JSONCategoryInfo]
+    let restriction: String?
+    let deprecatedNewName: String?
+}
+
+fileprivate struct SymbolsJSON: Codable {
+    let generatedAt: String
+    let totalCount: Int
+    let symbols: [JSONSymbol]
+}
+
 fileprivate struct SFSymbol: Codable {
     let title: String
     var categories: [SFCategory]?
     var searchTerms: [String]?
     let releaseInfo: ReleaseInfo
-    
+    // New fields from symbols.json
+    var layersets: [String]?
+    var localizations: [LocalizationInfo]?
+    var restriction: String?
+    var deprecatedNewName: String?
+
     init(
         title: String,
         categories: [SFCategory]? = nil,
         searchTerms: [String]? = nil,
-        releaseInfo: ReleaseInfo
+        releaseInfo: ReleaseInfo,
+        layersets: [String]? = nil,
+        localizations: [LocalizationInfo]? = nil,
+        restriction: String? = nil,
+        deprecatedNewName: String? = nil
     ) {
         self.title = title
         self.categories = categories
         self.searchTerms = searchTerms
         self.releaseInfo = releaseInfo
+        self.layersets = layersets
+        self.localizations = localizations
+        self.restriction = restriction
+        self.deprecatedNewName = deprecatedNewName
     }
-}
 
-fileprivate struct NameAvailabilityResults: Codable {
-    let symbols: [SFSymbol]
-    let yearToRelease: [String: ReleaseInfo]
-    
-    enum CodingKeys: String, CodingKey {
-        case symbols
-        case yearToRelease = "year_to_release"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        let symbolsDict = try values.decode([String: String].self, forKey: .symbols)
-        let yearToRelease = try values.decode([String: ReleaseInfo].self, forKey: .yearToRelease)
-        
-        self.yearToRelease = yearToRelease
-        symbols = symbolsDict.map {
-            SFSymbol(title: $0.key, releaseInfo: yearToRelease[$0.value]!)
-        }.sorted(by: {$0.title < $1.title})
+    /// Creates an SFSymbol from a JSONSymbol
+    init(from jsonSymbol: JSONSymbol) {
+        self.title = jsonSymbol.name
+        self.releaseInfo = jsonSymbol.availability?.asReleaseInfo ?? ReleaseInfo(
+            iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
+        )
+        self.layersets = jsonSymbol.layersets
+        self.localizations = jsonSymbol.localizations.isEmpty ? nil : jsonSymbol.localizations
+        self.restriction = jsonSymbol.restriction
+        self.deprecatedNewName = jsonSymbol.deprecatedNewName
+        // Convert JSONCategoryInfo to SFCategory
+        self.categories = jsonSymbol.categories.isEmpty ? nil : jsonSymbol.categories.map {
+            SFCategory(icon: $0.icon, title: $0.title)
+        }
+        self.searchTerms = nil
     }
 }
 
@@ -353,6 +533,10 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
 
     var categoriesOptionalString = "nil"
     var searchTermsOptionalString = "nil"
+    var layersetsArrayString = "[.monochrome]"
+    var localizationsOptionalString = "nil"
+    var restrictionOptionalString = "nil"
+    var deprecatedNewNameOptionalString = "nil"
 
     if var categoriesString = symbol.categories?
         .map({ ".\(convertTitleToCamelCased(string: $0.title, modifyKeywords: false))" })
@@ -368,18 +552,82 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
         searchTermsOptionalString = searchTermsString
     }
 
+    // Layersets are always present (at minimum monochrome)
+    let layersets = symbol.layersets ?? ["monochrome"]
+    layersetsArrayString = "[" + layersets.map { ".\($0)" }.joined(separator: ", ") + "]"
+
+    if let localizations = symbol.localizations, !localizations.isEmpty {
+        let locStrings = localizations.map { loc -> String in
+            if let avail = loc.availability {
+                let releaseInfo = "ReleaseInfo(iOS: \(avail.asReleaseInfo.iOS), macOS: \(avail.asReleaseInfo.macOS), tvOS: \(avail.asReleaseInfo.tvOS), watchOS: \(avail.asReleaseInfo.watchOS), visionOS: \(avail.asReleaseInfo.visionOS))"
+                return "LocalizationInfo(code: .\(loc.code), availability: \(releaseInfo))"
+            } else {
+                return "LocalizationInfo(code: .\(loc.code))"
+            }
+        }
+        localizationsOptionalString = "[\(locStrings.joined(separator: ", "))]"
+    }
+
+    if let restriction = symbol.restriction {
+        let escaped = restriction.replacingOccurrences(of: "\"", with: "\\\"")
+        restrictionOptionalString = "\"\(escaped)\""
+    }
+
+    if let deprecatedNewName = symbol.deprecatedNewName {
+        deprecatedNewNameOptionalString = "\"\(deprecatedNewName)\""
+    }
+
     let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS), visionOS: \(symbol.releaseInfo.visionOS)"
 
+    // Build documentation comments
+    var docComments = "/// \(symbol.title)\n"
+    docComments += "    /// - Since: \(releaseString)"
+
+    // Add layersets comment
+    if let layersets = symbol.layersets, !layersets.isEmpty {
+        docComments += "\n    /// - Layersets: \(layersets.joined(separator: ", "))"
+    }
+
+    // Add localizations comment
+    if let localizations = symbol.localizations, !localizations.isEmpty {
+        let locNames = localizations.map { $0.name }.joined(separator: ", ")
+        docComments += "\n    /// - Localizations: \(locNames)"
+    }
+
+    // Add restriction warning
+    if let restriction = symbol.restriction {
+        docComments += "\n    /// - Warning: \(restriction)"
+    }
+
+    // Add deprecation attribute if deprecated
+    var deprecationAttribute = ""
+    if let newName = symbol.deprecatedNewName {
+        let newNameCamelCased = convertTitleToCamelCased(string: newName, modifyKeywords: false)
+        deprecationAttribute = "\n    @available(*, deprecated, renamed: \"\(newNameCamelCased)\", message: \"Use '\(newNameCamelCased)' instead. This symbol has been renamed.\")"
+    }
+
+    // Build optional parameters only when non-nil
+    var optionalParams = ""
+    if localizationsOptionalString != "nil" {
+        optionalParams += ",\n        localizations: \(localizationsOptionalString)"
+    }
+    if restrictionOptionalString != "nil" {
+        optionalParams += ",\n        restriction: \(restrictionOptionalString)"
+    }
+    if deprecatedNewNameOptionalString != "nil" {
+        optionalParams += ",\n        deprecatedNewName: \(deprecatedNewNameOptionalString)"
+    }
+
     let staticVar = """
-            /// \(symbol.title)
-            /// - Since: \(releaseString)
-            static let \(camelCased) = SFSymbol(
-                title: "\(symbol.title)",
-                categories: \(categoriesOptionalString),
-                searchTerms: \(searchTermsOptionalString),
-                releaseInfo: ReleaseInfo(\(releaseString))
-            )
-        """
+        \(docComments)\(deprecationAttribute)
+        static let \(camelCased) = SFSymbol(
+            title: "\(symbol.title)",
+            categories: \(categoriesOptionalString),
+            searchTerms: \(searchTermsOptionalString),
+            releaseInfo: ReleaseInfo(\(releaseString)),
+            layersets: \(layersetsArrayString)\(optionalParams)
+        )
+    """
 
     return staticVar
 }
@@ -397,37 +645,32 @@ private func versionString(_ version: Double) -> String {
 // MARK: - Processing
 
 fileprivate func main() {
-    let decoder = PropertyListDecoder()
+    // Step 1: Ensure draw.txt exists (prompt user if needed)
+    ensureDrawCategoryExists()
+
+    // Step 2: Generate symbols.json with enriched data
+    generateSymbolsJSON()
+
+    let plistDecoder = PropertyListDecoder()
+    let jsonDecoder = JSONDecoder()
 
     do {
-        // Load categories
+        // Load categories from plist (still needed for category metadata)
         let categoriesData = try Data(contentsOf: inputURL.appendingPathComponent("categories.plist"))
-        let categories = try decoder.decode([SFCategory].self, from: categoriesData)
-        let plistArray = try decoder.decode([Plist].self, from: categoriesData)
+        let categories = try plistDecoder.decode([SFCategory].self, from: categoriesData)
+        let plistArray = try plistDecoder.decode([Plist].self, from: categoriesData)
         let plistDict = Dictionary(uniqueKeysWithValues: plistArray.map { ($0.label, $0.key) })
         print("☑️  Loaded categories successfully.")
 
-        // Load symbols
-        let symbolsData = try Data(contentsOf: inputURL.appendingPathComponent("name_availability.plist"))
-        let availabilityResults = try decoder.decode(NameAvailabilityResults.self, from: symbolsData)
-        var symbols = availabilityResults.symbols.filter { !$0.title.contains(".zh") }
-        print("☑️  Loaded symbols successfully.")
+        // Load symbols from generated symbols.json (includes categories)
+        let symbolsJSONData = try Data(contentsOf: symbolsJSONPath)
+        let symbolsJSON = try jsonDecoder.decode(SymbolsJSON.self, from: symbolsJSONData)
+        var symbols = symbolsJSON.symbols.map { SFSymbol(from: $0) }
+        print("☑️  Loaded \(symbols.count) symbols from symbols.json (with categories)")
 
-        // Add categories
-        let categoryMapData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_categories.plist"))
-        let categoryMap = try decoder.decode([String: [String]].self, from: categoryMapData)
-        for (symbolName, categoryKeys) in categoryMap {
-            if let index = symbols.firstIndex(where: { $0.title == symbolName }) {
-                symbols[index].categories = categoryKeys.compactMap { key in
-                    categories.first(where: { plistDict[$0.title] == key })
-                }
-            }
-        }
-        print("☑️  Added categories successfully.")
-
-        // Add search terms
+        // Add search terms from symbol_search.plist
         let searchTermsData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_search.plist"))
-        let searchMap = try decoder.decode([String: [String]].self, from: searchTermsData)
+        let searchMap = try plistDecoder.decode([String: [String]].self, from: searchTermsData)
         for (symbolName, terms) in searchMap {
             if let index = symbols.firstIndex(where: { $0.title == symbolName }) {
                 symbols[index].searchTerms = terms
@@ -440,7 +683,7 @@ fileprivate func main() {
 
         // Export by iOS version
         let versions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
-        
+
         for version in versions {
             let filtered = symbols.filter { $0.releaseInfo.iOS == version }
             var fileName = version.description.replacingOccurrences(of: ".0", with: "")
@@ -449,14 +692,30 @@ fileprivate func main() {
             try createStaticVarFile(for: filtered, fileName: fileName, plistDict: plistDict)
             try createAllSymbolsFile(for: filtered, fileName: fileName, plistDict: plistDict)
         }
-        
+
         try createUnifiedAllSymbolsFile(from: symbols)
         print("☑️  Created AllSFSymbols file successfully.")
 
-        print("✅ Export complete. Please check the Results folder.")
+        // Count statistics
+        let deprecatedCount = symbols.filter { $0.deprecatedNewName != nil }.count
+        let restrictedCount = symbols.filter { $0.restriction != nil }.count
+        let localizedCount = symbols.filter { $0.localizations != nil }.count
+
+        print()
+        print("📊 Statistics:")
+        print("   Total symbols: \(symbols.count)")
+        print("   Deprecated: \(deprecatedCount)")
+        print("   Restricted: \(restrictedCount)")
+        print("   With localizations: \(localizedCount)")
+
+        print()
+        print("✅ Export complete. Please check the Sources folder.")
     } catch {
         print("❌ Error: \(error)")
     }
+
+    // Cleanup: Delete generated files (symbols.json, draw.txt)
+    cleanupGeneratedFiles()
 }
 
 main()

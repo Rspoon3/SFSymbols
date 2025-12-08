@@ -1,7 +1,7 @@
 //
 //  SFSymbol+All18P1.swift.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -19,54 +19,14 @@ public extension SFSymbol {
          .carTopRadiowaves2FrontLeftFrontFrontRightFill,
          .carTopRadiowaves2RearLeftRearRearRight,
          .carTopRadiowaves2RearLeftRearRearRightFill,
-         .characterCircleBn,
-         .characterCircleFillBn,
-         .characterCircleFillGu,
-         .characterCircleFillKn,
-         .characterCircleFillMl,
          .characterCircleFillMni,
-         .characterCircleFillMr,
-         .characterCircleFillOr,
-         .characterCircleFillPa,
          .characterCircleFillSat,
-         .characterCircleFillSi,
-         .characterCircleFillTa,
-         .characterCircleFillTe,
-         .characterCircleGu,
-         .characterCircleKn,
-         .characterCircleMl,
          .characterCircleMni,
-         .characterCircleMr,
-         .characterCircleOr,
-         .characterCirclePa,
          .characterCircleSat,
-         .characterCircleSi,
-         .characterCircleTa,
-         .characterCircleTe,
-         .characterSquareBn,
-         .characterSquareFillBn,
-         .characterSquareFillGu,
-         .characterSquareFillKn,
-         .characterSquareFillMl,
          .characterSquareFillMni,
-         .characterSquareFillMr,
-         .characterSquareFillOr,
-         .characterSquareFillPa,
          .characterSquareFillSat,
-         .characterSquareFillSi,
-         .characterSquareFillTa,
-         .characterSquareFillTe,
-         .characterSquareGu,
-         .characterSquareKn,
-         .characterSquareMl,
          .characterSquareMni,
-         .characterSquareMr,
-         .characterSquareOr,
-         .characterSquarePa,
          .characterSquareSat,
-         .characterSquareSi,
-         .characterSquareTa,
-         .characterSquareTe,
          .dotCarTopRadiowaves2RearLeftRearRearRight,
          .dotCarTopRadiowaves2RearLeftRearRearRightFill,
          .envelopeStack,
@@ -96,13 +56,8 @@ public extension SFSymbol {
          .waveformPathEcgText,
          .waveformPathEcgTextClipboard,
          .waveformPathEcgTextClipboardFill,
-         .waveformPathEcgTextClipboardFillRtl,
-         .waveformPathEcgTextClipboardRtl,
          .waveformPathEcgTextPage,
-         .waveformPathEcgTextPageFill,
-         .waveformPathEcgTextPageFillRtl,
-         .waveformPathEcgTextPageRtl,
-         .waveformPathEcgTextRtl
+         .waveformPathEcgTextPageFill
       ]
    }
 }

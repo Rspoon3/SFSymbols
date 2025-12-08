@@ -35,11 +35,24 @@ public struct ReleaseInfo: Codable, Equatable, Hashable, Sendable {
     
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        iOS = try Double(values.decode(String.self, forKey: .iOS))!
-        macOS = try Double(values.decode(String.self, forKey: .macOS))!
-        tvOS = try Double(values.decode(String.self, forKey: .tvOS))!
-        watchOS = try Double(values.decode(String.self, forKey: .watchOS))!
-        visionOS = try Double(values.decode(String.self, forKey: .visionOS))!
+
+        // Support decoding from both Double (JSON) and String (plist)
+        func decodeVersion(forKey key: CodingKeys) throws -> Double {
+            if let double = try? values.decode(Double.self, forKey: key) {
+                return double
+            }
+            let string = try values.decode(String.self, forKey: key)
+            guard let double = Double(string) else {
+                throw DecodingError.dataCorruptedError(forKey: key, in: values, debugDescription: "Cannot convert '\(string)' to Double")
+            }
+            return double
+        }
+
+        iOS = try decodeVersion(forKey: .iOS)
+        macOS = try decodeVersion(forKey: .macOS)
+        tvOS = try decodeVersion(forKey: .tvOS)
+        watchOS = try decodeVersion(forKey: .watchOS)
+        visionOS = try decodeVersion(forKey: .visionOS)
     }
 }
 

@@ -86,7 +86,7 @@ VStack {
 }
 ```
                     
-## About 
+## About
 [SFSymbols](https://developer.apple.com/sf-symbols/) are a real treat from Apple. The one downfall however, it is a pain in the neck to look up exact symbol names. Take for example: `"square.and.line.vertical.and.square.fill"`. That is a long string to remember and digging through the catalog of SF Symbols over and over gets tiresome.
 
 Wouldn't it be easier if you could just use code completion?
@@ -94,6 +94,29 @@ Wouldn't it be easier if you could just use code completion?
 ![](https://media.giphy.com/media/jQ7lTLsv2poo2qLkUA/giphy.gif)
 
 Thats what this micro library aims to do. Additionally, this library includes relevant information on each symbol such as  release info, category, and relevant search terms.
+
+## Data Sources
+
+The library generates symbol data from two sources:
+
+### SF Symbols App Metadata
+Symbol definitions, availability info, categories, search terms, and layersets come from the SF Symbols app's metadata folder:
+```
+/Applications/SF Symbols.app/Contents/Resources/Metadata/
+```
+
+### System CoreGlyphs Bundle (Deprecation Data)
+Symbol deprecation and rename information comes from the system's CoreGlyphs bundle:
+```
+/System/Library/CoreServices/CoreGlyphs.bundle/Contents/Resources/name_aliases.strings
+```
+
+**Why CoreGlyphs?** The system's CoreGlyphs bundle is always current with your OS version and contains the same alias mappings that `UIImage(systemName:)` uses at runtime. This ensures deprecation warnings in generated code match actual OS behavior.
+
+For example, if Apple renames `cursorarrow.rays` to `pointer.arrow.rays` in a new OS, CoreGlyphs will have this mapping immediately, while the SF Symbols app might not be updated yet. Using CoreGlyphs means:
+- Deprecation warnings match runtime behavior
+- Symbol renames are detected as soon as the OS knows about them
+- Generated `@available(..., deprecated:, renamed:)` annotations stay accurate
 
 ## Installation
 
@@ -124,19 +147,33 @@ If you have any suggestions or ideas for improving the project, please feel free
 
 To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will automatically handle updating all relevant files in place.
 
+> **Important:** Run the update script on the latest macOS version. The deprecation data comes from the system's CoreGlyphs bundle, which is updated with each OS release. Using an older macOS may result in missing or outdated deprecation warnings.
+
 1. **Navigate to the `SFSymbols` directory** in your terminal:
 
     ```bash
     cd path/to/SFSymbols
     ```
 
-2. **Run the update script** with the path to your SF Symbols application:
+2. **Prepare the Draw category** (first time only):
+
+   The "Draw" category is not included in Apple's `symbol_categories.plist`, so it must be captured manually:
+   - Open the SF Symbols app
+   - Select "Draw" from the sidebar
+   - Select all symbols (Cmd+A)
+   - Copy symbol names (Cmd+Shift+C)
+
+   When you run the update script, it will prompt you to press Enter to read from your clipboard.
+
+3. **Run the update script** with the path to your SF Symbols application:
 
     ```bash
     swift UpdateScript.swift /Applications/SF\ Symbols\ beta.app
     ```
 
-3. **Update the `CHANGELOG.md`** with any relevant notes about the new symbols or changes.
+4. **Update the `CHANGELOG.md`** with any relevant notes about the new symbols or changes.
+
+> **Note:** The Draw category symbols are saved to `draw.txt` during the update and cleaned up automatically afterward. If you need to update the Draw category in subsequent runs, delete any existing `draw.txt` file first.
 
 ## License
 

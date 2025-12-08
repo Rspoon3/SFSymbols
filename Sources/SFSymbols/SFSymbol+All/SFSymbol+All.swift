@@ -1,7 +1,7 @@
 //
 //  SFSymbol+All.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -92,6 +92,10 @@ public extension SFSymbol {
 
         if #available(iOS 18.5, macOS 15.5, tvOS 18.5, watchOS 11.5, visionOS 2.5, *) {
             symbols.append(contentsOf: SFSymbol.allSymbols18P5)
+        }
+
+        if #available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols26)
         }
 
         return symbols

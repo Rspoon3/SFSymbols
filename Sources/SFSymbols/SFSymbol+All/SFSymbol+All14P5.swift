@@ -1,7 +1,7 @@
 //
 //  SFSymbol+All14P5.swift.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -15,25 +15,9 @@ public extension SFSymbol {
          .airpodsmax,
          .applewatchSideRight,
          .characterBubble,
-         .characterBubbleAr,
          .characterBubbleFill,
-         .characterBubbleFillAr,
-         .characterBubbleFillHe,
-         .characterBubbleHe,
          .characterCursorIbeam,
-         .characterCursorIbeamAr,
-         .characterCursorIbeamHe,
-         .characterCursorIbeamHi,
-         .characterCursorIbeamJa,
-         .characterCursorIbeamKo,
-         .characterCursorIbeamTh,
          .characterTextbox,
-         .characterTextboxAr,
-         .characterTextboxHe,
-         .characterTextboxHi,
-         .characterTextboxJa,
-         .characterTextboxKo,
-         .characterTextboxTh,
          .hifispeakerAndHomepodmini,
          .hifispeakerAndHomepodminiFill,
          .homepodAndHomepodmini,

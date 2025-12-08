@@ -1,7 +1,7 @@
 //
 //  SFSymbol+All18P2.swift.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -20,8 +20,6 @@ public extension SFSymbol {
          .appleWritingTools,
          .exclamationmarkTriangleTextPage,
          .exclamationmarkTriangleTextPageFill,
-         .exclamationmarkTriangleTextPageFillRtl,
-         .exclamationmarkTriangleTextPageRtl,
          .figureSeatedSideLeftAirDistributionUpperAndMiddleAndLower,
          .figureSeatedSideRightAirDistributionUpperAndMiddleAndLower,
          .headphonesDots,
@@ -29,8 +27,6 @@ public extension SFSymbol {
          .infoTriangleFill,
          .insetFilledRectangleAndPersonFilledCircle,
          .insetFilledRectangleAndPersonFilledCircleFill,
-         .questionmarkMessageAr,
-         .questionmarkMessageFillAr,
          .receipt,
          .receiptFill,
          .wandAndOutline,
