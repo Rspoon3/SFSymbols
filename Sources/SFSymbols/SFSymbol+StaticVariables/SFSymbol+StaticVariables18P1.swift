@@ -36,7 +36,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let cableConnectorVideo = SFSymbol(
         title: "cable.connector.video",
-        categories: [.devices],
+        categories: [.devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1),
         layersets: [.monochrome, .hierarchical]
@@ -249,7 +249,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let handThumbsdownSlash = SFSymbol(
         title: "hand.thumbsdown.slash",
-        categories: [.human],
+        categories: [.human, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1),
         layersets: [.monochrome, .hierarchical]
@@ -260,7 +260,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let handThumbsdownSlashFill = SFSymbol(
         title: "hand.thumbsdown.slash.fill",
-        categories: [.human],
+        categories: [.human, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1),
         layersets: [.monochrome, .hierarchical]
@@ -271,7 +271,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let handThumbsupSlash = SFSymbol(
         title: "hand.thumbsup.slash",
-        categories: [.human],
+        categories: [.human, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1),
         layersets: [.monochrome, .hierarchical]
@@ -282,7 +282,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let handThumbsupSlashFill = SFSymbol(
         title: "hand.thumbsup.slash.fill",
-        categories: [.human],
+        categories: [.human, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1),
         layersets: [.monochrome, .hierarchical]
@@ -478,7 +478,7 @@ public extension SFSymbol {
     /// - Localizations: Right-to-Left
     static let waveformPathEcgText = SFSymbol(
         title: "waveform.path.ecg.text",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1),
         layersets: [.monochrome],

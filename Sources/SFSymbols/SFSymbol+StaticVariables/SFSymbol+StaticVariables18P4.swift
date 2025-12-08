@@ -14,7 +14,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let arrowBackwardToLineCompact = SFSymbol(
         title: "arrow.backward.to.line.compact",
-        categories: [.arrows, .keyboard],
+        categories: [.arrows, .keyboard, .draw],
         searchTerms: ["indent", "tab"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome]
@@ -25,7 +25,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let arrowForwardToLineCompact = SFSymbol(
         title: "arrow.forward.to.line.compact",
-        categories: [.arrows, .keyboard],
+        categories: [.arrows, .keyboard, .draw],
         searchTerms: ["indent", "tab"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome]
@@ -36,7 +36,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let carSideArrowLeftAndRight = SFSymbol(
         title: "car.side.arrow.left.and.right",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -47,7 +47,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let carSideArrowLeftAndRightFill = SFSymbol(
         title: "car.side.arrow.left.and.right.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -58,7 +58,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let carSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle = SFSymbol(
         title: "car.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -69,7 +69,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let carSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill = SFSymbol(
         title: "car.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -80,7 +80,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let carSideRearAndCollisionAndCarSideFrontAndArrowForward = SFSymbol(
         title: "car.side.rear.and.collision.and.car.side.front.and.arrow.forward",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -247,7 +247,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let convertibleSideArrowLeftAndRight = SFSymbol(
         title: "convertible.side.arrow.left.and.right",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -258,7 +258,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let convertibleSideArrowLeftAndRightFill = SFSymbol(
         title: "convertible.side.arrow.left.and.right.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -269,7 +269,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let convertibleSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle = SFSymbol(
         title: "convertible.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -280,7 +280,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let convertibleSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill = SFSymbol(
         title: "convertible.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -379,7 +379,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let engineEmissionAndDrop2WaterWaveBelow = SFSymbol(
         title: "engine.emission.and.drop.2.water.wave.below",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -390,7 +390,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let envelopeAndArrow3Down = SFSymbol(
         title: "envelope.and.arrow.3.down",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -401,7 +401,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let envelopeAndArrow3DownFill = SFSymbol(
         title: "envelope.and.arrow.3.down.fill",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -445,7 +445,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let hydrogenCircle = SFSymbol(
         title: "hydrogen.circle",
-        categories: [.automotive, .variable],
+        categories: [.automotive, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -467,7 +467,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let hydrogenSquare = SFSymbol(
         title: "hydrogen.square",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -766,7 +766,7 @@ public extension SFSymbol {
     /// - Localizations: Right-to-Left
     static let personCheckmarkAndXmark = SFSymbol(
         title: "person.checkmark.and.xmark",
-        categories: [.human],
+        categories: [.human, .draw],
         searchTerms: ["people", "user"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical],
@@ -779,7 +779,7 @@ public extension SFSymbol {
     /// - Localizations: Right-to-Left
     static let personFillCheckmarkAndXmark = SFSymbol(
         title: "person.fill.checkmark.and.xmark",
-        categories: [.human],
+        categories: [.human, .draw],
         searchTerms: ["people", "user"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical],
@@ -846,7 +846,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let piCircle = SFSymbol(
         title: "pi.circle",
-        categories: [.math, .variable],
+        categories: [.math, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -868,7 +868,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let piSquare = SFSymbol(
         title: "pi.square",
-        categories: [.math],
+        categories: [.math, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -890,7 +890,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let plusMinusCapsule = SFSymbol(
         title: "plus.minus.capsule",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -901,7 +901,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let plusMinusCapsuleFill = SFSymbol(
         title: "plus.minus.capsule.fill",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1077,7 +1077,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let suvSideArrowLeftAndRight = SFSymbol(
         title: "suv.side.arrow.left.and.right",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1088,7 +1088,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let suvSideArrowLeftAndRightFill = SFSymbol(
         title: "suv.side.arrow.left.and.right.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1099,7 +1099,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let suvSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle = SFSymbol(
         title: "suv.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1110,7 +1110,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let suvSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill = SFSymbol(
         title: "suv.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1275,7 +1275,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let truckPickupSideArrowLeftAndRight = SFSymbol(
         title: "truck.pickup.side.arrow.left.and.right",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1286,7 +1286,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let truckPickupSideArrowLeftAndRightFill = SFSymbol(
         title: "truck.pickup.side.arrow.left.and.right.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1297,7 +1297,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let truckPickupSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangle = SFSymbol(
         title: "truck.pickup.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]
@@ -1308,7 +1308,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let truckPickupSideHillDownAndGaugeOpenWithLinesNeedle25PercentAndArrowtriangleFill = SFSymbol(
         title: "truck.pickup.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill",
-        categories: [.automotive],
+        categories: [.automotive, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
         layersets: [.monochrome, .hierarchical]

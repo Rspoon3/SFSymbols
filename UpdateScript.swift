@@ -1,12 +1,14 @@
 #!/usr/bin/env swift
 
 import Foundation
+import AppKit
 
 // MARK: - Entry Config
 
 fileprivate let metadataSubpath = "Contents/Resources/Metadata"
 fileprivate let scriptDirectory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 fileprivate let symbolsJSONPath = scriptDirectory.appendingPathComponent("symbols.json")
+fileprivate let drawFilePath = scriptDirectory.appendingPathComponent("draw.txt")
 
 fileprivate let appPath: String = {
     guard let path = CommandLine.arguments.dropFirst().first else {
@@ -28,6 +30,66 @@ fileprivate let inputURL: URL = {
     return url
 }()
 
+// MARK: - Draw Category Input
+
+fileprivate func ensureDrawCategoryExists() {
+    if FileManager.default.fileExists(atPath: drawFilePath.path) {
+        print("📋 Found existing draw.txt")
+        return
+    }
+
+    print("")
+    print("╔════════════════════════════════════════════════════════════════════╗")
+    print("║                    DRAW CATEGORY INPUT REQUIRED                    ║")
+    print("╠════════════════════════════════════════════════════════════════════╣")
+    print("║ The 'Draw' category cannot be extracted automatically.             ║")
+    print("║                                                                    ║")
+    print("║ To populate it:                                                    ║")
+    print("║   1. Open SF Symbols app                                           ║")
+    print("║   2. Select 'Draw' from the sidebar                                ║")
+    print("║   3. Select all symbols (Cmd+A)                                    ║")
+    print("║   4. Copy symbol names (Cmd+Shift+C)                               ║")
+    print("║   5. Press Enter to read from clipboard, or type 'skip' to skip    ║")
+    print("╚════════════════════════════════════════════════════════════════════╝")
+    print("")
+    print("Press Enter when ready (or type 'skip'): ", terminator: "")
+    fflush(stdout)
+
+    let input = readLine() ?? ""
+    if input.trimmingCharacters(in: .whitespaces).lowercased() == "skip" {
+        print("⏭️  Skipping draw category input.")
+        return
+    }
+
+    // Read from clipboard
+    print("Reading from clipboard...")
+    guard let clipboardContents = NSPasteboard.general.string(forType: .string),
+          !clipboardContents.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+        print("⚠️  Clipboard is empty.")
+        return
+    }
+
+    let lines = clipboardContents
+        .components(separatedBy: .newlines)
+        .map { $0.trimmingCharacters(in: .whitespaces) }
+        .filter { !$0.isEmpty }
+
+    if lines.isEmpty {
+        print("⚠️  No symbol names found in clipboard.")
+        return
+    }
+
+    print("Found \(lines.count) symbols in clipboard.")
+
+    let content = lines.joined(separator: "\n")
+    do {
+        try content.write(to: drawFilePath, atomically: true, encoding: .utf8)
+        print("☑️  Saved \(lines.count) draw category symbols to draw.txt")
+    } catch {
+        print("⚠️  Could not save draw.txt: \(error)")
+    }
+}
+
 // MARK: - Generate symbols.json
 
 fileprivate func generateSymbolsJSON() {
@@ -45,18 +107,14 @@ fileprivate func generateSymbolsJSON() {
     process.arguments = [generatorScript.path, appPath]
     process.currentDirectoryURL = scriptDirectory
 
-    let pipe = Pipe()
-    process.standardOutput = pipe
-    process.standardError = pipe
+    // Pass through stdin/stdout/stderr so user can interact with prompts
+    process.standardInput = FileHandle.standardInput
+    process.standardOutput = FileHandle.standardOutput
+    process.standardError = FileHandle.standardError
 
     do {
         try process.run()
         process.waitUntilExit()
-
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        if let output = String(data: data, encoding: .utf8), !output.isEmpty {
-            print(output)
-        }
 
         if process.terminationStatus != 0 {
             print("❌ GenerateSymbolsJSON.swift failed with exit code \(process.terminationStatus)")
@@ -72,12 +130,19 @@ fileprivate func generateSymbolsJSON() {
 
 // MARK: - Cleanup
 
-fileprivate func cleanupSymbolsJSON() {
+fileprivate func cleanupGeneratedFiles() {
     do {
         try FileManager.default.removeItem(at: symbolsJSONPath)
         print("☑️  Cleaned up symbols.json")
     } catch {
         print("⚠️  Could not delete symbols.json: \(error)")
+    }
+
+    do {
+        try FileManager.default.removeItem(at: drawFilePath)
+        print("☑️  Cleaned up draw.txt")
+    } catch {
+        print("⚠️  Could not delete draw.txt: \(error)")
     }
 }
 
@@ -153,12 +218,18 @@ fileprivate struct LocalizationInfo: Codable {
     let availability: PlatformAvailability?
 }
 
+fileprivate struct JSONCategoryInfo: Codable {
+    let icon: String
+    let title: String
+}
+
 fileprivate struct JSONSymbol: Codable {
     let name: String
     let year: String?
     let availability: PlatformAvailability?
     let layersets: [String]
     let localizations: [LocalizationInfo]
+    let categories: [JSONCategoryInfo]
     let restriction: String?
     let deprecatedNewName: String?
 }
@@ -210,7 +281,10 @@ fileprivate struct SFSymbol: Codable {
         self.localizations = jsonSymbol.localizations.isEmpty ? nil : jsonSymbol.localizations
         self.restriction = jsonSymbol.restriction
         self.deprecatedNewName = jsonSymbol.deprecatedNewName
-        self.categories = nil
+        // Convert JSONCategoryInfo to SFCategory
+        self.categories = jsonSymbol.categories.isEmpty ? nil : jsonSymbol.categories.map {
+            SFCategory(icon: $0.icon, title: $0.title)
+        }
         self.searchTerms = nil
     }
 }
@@ -571,7 +645,10 @@ private func versionString(_ version: Double) -> String {
 // MARK: - Processing
 
 fileprivate func main() {
-    // Step 1: Generate symbols.json with enriched data
+    // Step 1: Ensure draw.txt exists (prompt user if needed)
+    ensureDrawCategoryExists()
+
+    // Step 2: Generate symbols.json with enriched data
     generateSymbolsJSON()
 
     let plistDecoder = PropertyListDecoder()
@@ -585,23 +662,11 @@ fileprivate func main() {
         let plistDict = Dictionary(uniqueKeysWithValues: plistArray.map { ($0.label, $0.key) })
         print("☑️  Loaded categories successfully.")
 
-        // Load symbols from generated symbols.json
+        // Load symbols from generated symbols.json (includes categories)
         let symbolsJSONData = try Data(contentsOf: symbolsJSONPath)
         let symbolsJSON = try jsonDecoder.decode(SymbolsJSON.self, from: symbolsJSONData)
         var symbols = symbolsJSON.symbols.map { SFSymbol(from: $0) }
-        print("☑️  Loaded \(symbols.count) symbols from symbols.json")
-
-        // Add categories from symbol_categories.plist
-        let categoryMapData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_categories.plist"))
-        let categoryMap = try plistDecoder.decode([String: [String]].self, from: categoryMapData)
-        for (symbolName, categoryKeys) in categoryMap {
-            if let index = symbols.firstIndex(where: { $0.title == symbolName }) {
-                symbols[index].categories = categoryKeys.compactMap { key in
-                    categories.first(where: { plistDict[$0.title] == key })
-                }
-            }
-        }
-        print("☑️  Added categories successfully.")
+        print("☑️  Loaded \(symbols.count) symbols from symbols.json (with categories)")
 
         // Add search terms from symbol_search.plist
         let searchTermsData = try Data(contentsOf: inputURL.appendingPathComponent("symbol_search.plist"))
@@ -649,8 +714,8 @@ fileprivate func main() {
         print("❌ Error: \(error)")
     }
 
-    // Cleanup: Delete the generated symbols.json
-    cleanupSymbolsJSON()
+    // Cleanup: Delete generated files (symbols.json, draw.txt)
+    cleanupGeneratedFiles()
 }
 
 main()

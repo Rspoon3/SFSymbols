@@ -25,7 +25,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let platterFilledBottomAndArrowDownIphone = SFSymbol(
         title: "platter.filled.bottom.and.arrow.down.iphone",
-        categories: [.devices],
+        categories: [.devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -47,7 +47,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let platterFilledTopAndArrowUpIphone = SFSymbol(
         title: "platter.filled.top.and.arrow.up.iphone",
-        categories: [.devices],
+        categories: [.devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -113,7 +113,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let textJustifyLeading = SFSymbol(
         title: "text.justify.leading",
-        categories: [.textFormatting],
+        categories: [.textFormatting, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1, visionOS: 1.0),
         layersets: [.monochrome]
@@ -124,7 +124,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let textJustifyLeft = SFSymbol(
         title: "text.justify.left",
-        categories: [.textFormatting],
+        categories: [.textFormatting, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1, visionOS: 1.0),
         layersets: [.monochrome]
@@ -135,7 +135,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let textJustifyRight = SFSymbol(
         title: "text.justify.right",
-        categories: [.textFormatting],
+        categories: [.textFormatting, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1, visionOS: 1.0),
         layersets: [.monochrome]
@@ -146,7 +146,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let textJustifyTrailing = SFSymbol(
         title: "text.justify.trailing",
-        categories: [.textFormatting],
+        categories: [.textFormatting, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.1, macOS: 12.0, tvOS: 15.1, watchOS: 8.1, visionOS: 1.0),
         layersets: [.monochrome]

@@ -1,6 +1,7 @@
 #!/usr/bin/env swift
 
 import Foundation
+import AppKit
 
 // MARK: - Entry Config
 
@@ -23,6 +24,109 @@ fileprivate let inputURL: URL = {
 
     return url
 }()
+
+fileprivate let scriptDirectory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+fileprivate let drawFilePath = scriptDirectory.appendingPathComponent("draw.txt")
+
+// MARK: - Draw Category Input
+//
+// The "Draw" category symbols cannot be automatically extracted from the SF Symbols app
+// metadata because Apple does not include this category in the symbol_categories.plist file.
+//
+// To populate the Draw category:
+// 1. Open the SF Symbols app
+// 2. Select the "Draw" category from the sidebar
+// 3. Select all symbols (Cmd+A)
+// 4. Copy the symbol names (Cmd+Shift+C)
+// 5. Run this script - it will automatically read from your clipboard
+//
+// The script will save these to draw.txt for future runs.
+
+/// Reads clipboard contents using NSPasteboard
+func getClipboardContents() -> String? {
+    return NSPasteboard.general.string(forType: .string)
+}
+
+/// Loads draw category symbols from draw.txt or clipboard
+func loadDrawCategorySymbols() -> Set<String> {
+    // Check if draw.txt already exists
+    if FileManager.default.fileExists(atPath: drawFilePath.path) {
+        if let contents = try? String(contentsOf: drawFilePath, encoding: .utf8) {
+            let symbols = contents
+                .components(separatedBy: .newlines)
+                .map { $0.trimmingCharacters(in: .whitespaces) }
+                .filter { !$0.isEmpty }
+            print("Loaded \(symbols.count) draw category symbols from draw.txt")
+            return Set(symbols)
+        }
+    }
+
+    // Check if running interactively (stdin is a TTY)
+    let isInteractive = isatty(FileHandle.standardInput.fileDescriptor) != 0
+
+    if isInteractive {
+        // Prompt user to copy symbols, then read from clipboard
+        print("")
+        print("╔════════════════════════════════════════════════════════════════════╗")
+        print("║                    DRAW CATEGORY INPUT REQUIRED                    ║")
+        print("╠════════════════════════════════════════════════════════════════════╣")
+        print("║ The 'Draw' category cannot be extracted automatically.             ║")
+        print("║                                                                    ║")
+        print("║ To populate it:                                                    ║")
+        print("║   1. Open SF Symbols app                                           ║")
+        print("║   2. Select 'Draw' from the sidebar                                ║")
+        print("║   3. Select all symbols (Cmd+A)                                    ║")
+        print("║   4. Copy symbol names (Cmd+Shift+C)                               ║")
+        print("║   5. Press Enter to read from clipboard, or type 'skip' to skip    ║")
+        print("╚════════════════════════════════════════════════════════════════════╝")
+        print("")
+        print("Press Enter when ready (or type 'skip'): ", terminator: "")
+        fflush(stdout)
+
+        let input = readLine() ?? ""
+        if input.trimmingCharacters(in: .whitespaces).lowercased() == "skip" {
+            print("Skipping draw category input.")
+            return []
+        }
+    } else {
+        // Non-interactive mode: just try to read from clipboard
+        print("Non-interactive mode: reading Draw category from clipboard...")
+    }
+
+    // Read from clipboard
+    guard let clipboardContents = getClipboardContents() else {
+        print("Warning: Could not read clipboard.")
+        return []
+    }
+
+    if clipboardContents.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+        print("Warning: Clipboard is empty. Skipping Draw category.")
+        return []
+    }
+
+    let lines = clipboardContents
+        .components(separatedBy: .newlines)
+        .map { $0.trimmingCharacters(in: .whitespaces) }
+        .filter { !$0.isEmpty }
+
+    if lines.isEmpty {
+        print("Warning: No symbol names found in clipboard.")
+        return []
+    }
+
+    print("Found \(lines.count) symbols in clipboard.")
+
+    // Save to draw.txt for future runs
+    let content = lines.joined(separator: "\n")
+    do {
+        try content.write(to: drawFilePath, atomically: true, encoding: .utf8)
+        print("Saved \(lines.count) draw category symbols to draw.txt")
+    } catch {
+        print("Warning: Could not save draw.txt: \(error)")
+    }
+
+    return Set(lines)
+}
 
 // MARK: - Localization
 
@@ -89,12 +193,18 @@ struct LocalizationInfo: Codable {
     let availability: PlatformAvailability?
 }
 
+struct SFCategoryInfo: Codable {
+    let icon: String
+    let title: String
+}
+
 struct SFSymbol: Codable {
     let name: String
     let year: String?
     let availability: PlatformAvailability?
     let layersets: [String]
     let localizations: [LocalizationInfo]
+    let categories: [SFCategoryInfo]
     let restriction: String?
     let deprecatedNewName: String?
 }
@@ -180,6 +290,71 @@ if let legacyAliasesData = try? Data(contentsOf: legacyAliasesURL),
 }
 
 print("Total deprecated symbol aliases: \(symbolAliases.count)")
+
+// MARK: - Load Categories
+
+/// Category info from categories.plist
+struct CategoryPlistEntry: Codable {
+    let key: String
+    let label: String
+    let icon: String
+
+    enum CodingKeys: String, CodingKey {
+        case key
+        case label
+        case icon
+    }
+}
+
+let categoriesURL = inputURL.appendingPathComponent("categories.plist")
+let symbolCategoriesURL = inputURL.appendingPathComponent("symbol_categories.plist")
+
+var allCategories: [CategoryPlistEntry] = []
+var categoryKeyToInfo: [String: SFCategoryInfo] = [:]
+var symbolToCategories: [String: [String]] = [:] // symbol name -> category keys
+
+if let categoriesData = try? Data(contentsOf: categoriesURL),
+   let categories = try? PropertyListDecoder().decode([CategoryPlistEntry].self, from: categoriesData) {
+    allCategories = categories
+    for cat in categories {
+        categoryKeyToInfo[cat.key] = SFCategoryInfo(icon: cat.icon, title: cat.label)
+    }
+    print("Loaded \(allCategories.count) categories from categories.plist")
+} else {
+    print("Warning: Could not load categories.plist")
+}
+
+if let symbolCategoriesData = try? Data(contentsOf: symbolCategoriesURL),
+   let symbolCats = try? PropertyListDecoder().decode([String: [String]].self, from: symbolCategoriesData) {
+    symbolToCategories = symbolCats
+    print("Loaded category mappings for \(symbolToCategories.count) symbols from symbol_categories.plist")
+} else {
+    print("Warning: Could not load symbol_categories.plist")
+}
+
+// MARK: - Load Draw Category
+
+let drawCategorySymbols = loadDrawCategorySymbols()
+
+// Add "draw" category to the category list if it doesn't exist
+let drawCategoryKey = "draw"
+let drawCategoryInfo = SFCategoryInfo(icon: "pencil.and.outline", title: "Draw")
+if categoryKeyToInfo[drawCategoryKey] == nil {
+    categoryKeyToInfo[drawCategoryKey] = drawCategoryInfo
+    print("Added 'Draw' category definition")
+}
+
+// Add draw category to symbol mappings
+for symbolName in drawCategorySymbols {
+    if symbolToCategories[symbolName] == nil {
+        symbolToCategories[symbolName] = [drawCategoryKey]
+    } else if !symbolToCategories[symbolName]!.contains(drawCategoryKey) {
+        symbolToCategories[symbolName]!.append(drawCategoryKey)
+    }
+}
+if !drawCategorySymbols.isEmpty {
+    print("Added \(drawCategorySymbols.count) symbols to Draw category")
+}
 
 // MARK: - Determine Best year_to_release
 
@@ -375,12 +550,23 @@ for baseName in mergedSymbols.keys.sorted() {
         deprecatedNewName = nil
     }
 
+    // Look up categories for this symbol
+    var categories: [SFCategoryInfo] = []
+    if let categoryKeys = symbolToCategories[baseName] {
+        for key in categoryKeys {
+            if let info = categoryKeyToInfo[key] {
+                categories.append(info)
+            }
+        }
+    }
+
     let symbol = SFSymbol(
         name: baseName,
         year: primarySymbol.year,
         availability: availability,
         layersets: primarySymbol.layersets,
         localizations: localizations,
+        categories: categories,
         restriction: restriction,
         deprecatedNewName: deprecatedNewName
     )
@@ -425,6 +611,8 @@ do {
 let withYear = symbols.filter { $0.year != nil }.count
 let withHierarchical = symbols.filter { $0.layersets.contains("hierarchical") }.count
 let withMulticolor = symbols.filter { $0.layersets.contains("multicolor") }.count
+let withCategories = symbols.filter { !$0.categories.isEmpty }.count
+let withDrawCategory = symbols.filter { $0.categories.contains { $0.title == "Draw" } }.count
 let missingYear = symbols.filter { $0.year == nil }.count
 let nonDeprecated = symbols.count - symbolsDeprecated
 
@@ -436,6 +624,8 @@ print("  Deprecated symbols:        \(symbolsDeprecated)")
 print("  Raw entries scanned:       \(scannedSymbols.count)")
 print("  With localizations:        \(symbolsWithLocalizations)")
 print("  With restrictions:         \(symbolsWithRestrictions)")
+print("  With categories:           \(withCategories)")
+print("  In Draw category:          \(withDrawCategory)")
 print("  With year:                 \(withYear)")
 print("  With hierarchical:         \(withHierarchical)")
 print("  With multicolor:           \(withMulticolor)")

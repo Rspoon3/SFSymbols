@@ -25,7 +25,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let cameraMacroCircle = SFSymbol(
         title: "camera.macro.circle",
-        categories: [.cameraAndPhotos, .nature, .variable],
+        categories: [.cameraAndPhotos, .nature, .variable, .draw],
         searchTerms: ["macro"],
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]

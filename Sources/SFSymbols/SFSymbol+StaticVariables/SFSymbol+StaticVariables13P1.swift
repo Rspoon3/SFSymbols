@@ -128,7 +128,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let mappinCircle = SFSymbol(
         title: "mappin.circle",
-        categories: [.maps, .multicolor, .objectsAndTools, .variable],
+        categories: [.maps, .multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -150,7 +150,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let paperclipCircle = SFSymbol(
         title: "paperclip.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: ["attach", "attachments"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -161,7 +161,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let paperclipCircleFill = SFSymbol(
         title: "paperclip.circle.fill",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: ["attach", "attachments"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -172,7 +172,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let pinCircle = SFSymbol(
         title: "pin.circle",
-        categories: [.multicolor, .objectsAndTools, .variable],
+        categories: [.multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["pin"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
