@@ -1,7 +1,7 @@
 //
 //  SFSymbol+StaticVariables18P1.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -607,7 +607,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let memoriesBadgeCheckmark = SFSymbol(
         title: "memories.badge.checkmark",
-        categories: [.multicolor],
+        categories: [.arrows, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )
@@ -616,7 +616,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1
     static let memoriesBadgeXmark = SFSymbol(
         title: "memories.badge.xmark",
-        categories: [.multicolor],
+        categories: [.arrows, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.1, macOS: 15.1, tvOS: 18.1, watchOS: 11.1, visionOS: 2.1)
     )

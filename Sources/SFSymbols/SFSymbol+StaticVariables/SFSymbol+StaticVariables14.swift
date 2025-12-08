@@ -1,7 +1,7 @@
 //
 //  SFSymbol+StaticVariables14.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -4720,7 +4720,7 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     static let homekit = SFSymbol(
         title: "homekit",
-        categories: [.home, .multicolor, .variable],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0)
     )

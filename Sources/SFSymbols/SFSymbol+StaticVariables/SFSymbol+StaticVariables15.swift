@@ -1,7 +1,7 @@
 //
 //  SFSymbol+StaticVariables15.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -427,8 +427,8 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let appConnectedToAppBelowFill = SFSymbol(
         title: "app.connected.to.app.below.fill",
-        categories: nil,
-        searchTerms: ["activities", "path"],
+        categories: [.maps],
+        searchTerms: ["activities", "path", "trail"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )
 
@@ -6241,7 +6241,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let repeat1Ar = SFSymbol(
         title: "repeat.1.ar",
-        categories: [.media],
+        categories: [.arrows, .media],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )
@@ -6250,7 +6250,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let repeat1CircleAr = SFSymbol(
         title: "repeat.1.circle.ar",
-        categories: [.media, .variable],
+        categories: [.arrows, .media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )
@@ -6259,7 +6259,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let repeat1CircleFillAr = SFSymbol(
         title: "repeat.1.circle.fill.ar",
-        categories: [.media, .multicolor],
+        categories: [.arrows, .media, .multicolor],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )
@@ -6268,7 +6268,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let repeat1CircleFillHi = SFSymbol(
         title: "repeat.1.circle.fill.hi",
-        categories: [.media, .multicolor],
+        categories: [.arrows, .media, .multicolor],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )
@@ -6277,7 +6277,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let repeat1CircleHi = SFSymbol(
         title: "repeat.1.circle.hi",
-        categories: [.media, .variable],
+        categories: [.arrows, .media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )
@@ -6286,7 +6286,7 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     static let repeat1Hi = SFSymbol(
         title: "repeat.1.hi",
-        categories: [.media],
+        categories: [.arrows, .media],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0)
     )

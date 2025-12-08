@@ -1,7 +1,7 @@
 //
 //  SFSymbol+StaticVariables18.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -8752,7 +8752,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
     static let insetFilledRectangleBadgeRecord = SFSymbol(
         title: "inset.filled.rectangle.badge.record",
-        categories: nil,
+        categories: [.human],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)
     )

@@ -7,6 +7,9 @@ import Foundation
 // Uses plist files from the current directory (Patch folder)
 fileprivate let inputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 
+// Output directory is the parent of Patch folder (project root)
+fileprivate let outputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath).deletingLastPathComponent()
+
 // MARK: - Models
 
 fileprivate struct SFCategory: Codable {
@@ -139,12 +142,12 @@ private func createSFCategoryFile(for categories: [SFCategory], plistDict: [Stri
     }
     """
 
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = outputURL
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("Models", isDirectory: true)
         .appendingPathComponent("SFCategory.swift")
-    
+
     try fileContent.write(to: url, atomically: true, encoding: .utf8)
 }
 
@@ -164,12 +167,12 @@ private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plis
     staticVars.insert(contentsOf: header, at: i)
     staticVars.append("\n}")
 
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = outputURL
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("SFSymbol+StaticVariables", isDirectory: true)
         .appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
-    
+
     try staticVars.write(to: url, atomically: true, encoding: .utf8)
 }
 
@@ -205,7 +208,7 @@ private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, pli
     array.insert(contentsOf: header, at: i)
     array.append("\n   }\n}")
     
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = outputURL
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("SFSymbol+All", isDirectory: true)
@@ -249,12 +252,12 @@ private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol]) throws {
     }
     """
 
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = outputURL
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("SFSymbol+All", isDirectory: true)
         .appendingPathComponent("SFSymbol+All.swift")
-    
+
     try file.write(to: url, atomically: true, encoding: .utf8)
 }
 

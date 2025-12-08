@@ -1,7 +1,7 @@
 //
 //  SFSymbol+StaticVariables18P4.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -985,7 +985,7 @@ public extension SFSymbol {
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     static let memoriesSlash = SFSymbol(
         title: "memories.slash",
-        categories: nil,
+        categories: [.arrows],
         searchTerms: ["arrow", "play"],
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4)
     )

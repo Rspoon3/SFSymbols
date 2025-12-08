@@ -1,7 +1,7 @@
 //
 //  SFSymbol+StaticVariables13.swift
 //
-//  Generated Automatically on 6/10/25
+//  Generated Automatically on 12/8/25
 //
 
 import Foundation
@@ -5638,7 +5638,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let clearFill = SFSymbol(
         title: "clear.fill",
-        categories: [.keyboard],
+        categories: [.keyboard, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -9607,7 +9607,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let memories = SFSymbol(
         title: "memories",
-        categories: nil,
+        categories: [.arrows],
         searchTerms: ["arrow", "play"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -9616,7 +9616,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let memoriesBadgeMinus = SFSymbol(
         title: "memories.badge.minus",
-        categories: [.multicolor],
+        categories: [.arrows, .multicolor],
         searchTerms: ["arrow", "play", "remove"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -9625,7 +9625,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let memoriesBadgePlus = SFSymbol(
         title: "memories.badge.plus",
-        categories: [.multicolor],
+        categories: [.arrows, .multicolor],
         searchTerms: ["add", "arrow", "play"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -11938,7 +11938,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let `repeat` = SFSymbol(
         title: "repeat",
-        categories: [.media],
+        categories: [.arrows, .media],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -11947,7 +11947,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let repeat1 = SFSymbol(
         title: "repeat.1",
-        categories: [.media],
+        categories: [.arrows, .media],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
@@ -12289,7 +12289,7 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     static let shuffle = SFSymbol(
         title: "shuffle",
-        categories: [.media],
+        categories: [.arrows, .media],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0)
     )
