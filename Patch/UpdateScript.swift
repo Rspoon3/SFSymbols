@@ -4,24 +4,8 @@ import Foundation
 
 // MARK: - Entry Config
 
-fileprivate let metadataSubpath = "Contents/Resources/Metadata"
-
-fileprivate let inputURL: URL = {
-    guard let appPath = CommandLine.arguments.dropFirst().first else {
-        print("Usage: UpdateScript.swift \"/Applications/SF Symbols beta.app\"")
-        exit(1)
-    }
-
-    let url = URL(fileURLWithPath: appPath)
-        .appendingPathComponent(metadataSubpath, isDirectory: true)
-
-    guard FileManager.default.fileExists(atPath: url.path) else {
-        print("❌ Could not find Metadata folder at expected path: \(url.path)")
-        exit(1)
-    }
-
-    return url
-}()
+// Uses plist files from the current directory (Patch folder)
+fileprivate let inputURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 
 // MARK: - Models
 
