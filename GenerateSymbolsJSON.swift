@@ -27,18 +27,33 @@ fileprivate let inputURL: URL = {
 // MARK: - Localization
 
 enum Localization: String, CaseIterable, Codable {
+    // Original localizations
     case ar, he, hi, ja, km, ko, my, rtl, th, zh
+    // New localizations added in SF Symbols 6
+    case bn, el, gu, kn, ml, mr, or, pa, ru, si, ta, te
 
     var title: String {
         switch self {
         case .ar: return "Arabic"
+        case .bn: return "Bengali"
+        case .el: return "Greek"
+        case .gu: return "Gujarati"
         case .he: return "Hebrew"
         case .hi: return "Hindi"
         case .ja: return "Japanese"
         case .km: return "Central Khmer"
+        case .kn: return "Kannada"
         case .ko: return "Korean"
+        case .ml: return "Malayalam"
+        case .mr: return "Marathi"
         case .my: return "Burmese"
+        case .or: return "Odia"
+        case .pa: return "Punjabi"
         case .rtl: return "Right-to-Left"
+        case .ru: return "Russian"
+        case .si: return "Sinhala"
+        case .ta: return "Tamil"
+        case .te: return "Telugu"
         case .th: return "Thai"
         case .zh: return "Chinese"
         }
@@ -81,6 +96,7 @@ struct SFSymbol: Codable {
     let layersets: [String]
     let localizations: [LocalizationInfo]
     let restriction: String?
+    let deprecatedNewName: String?
 }
 
 struct SymbolsOutput: Codable {
@@ -140,6 +156,30 @@ if let restrictionsData = try? Data(contentsOf: restrictionsURL),
 } else {
     print("Warning: Could not load symbol_restrictions.strings from CoreGlyphs.bundle")
 }
+
+// MARK: - Load Aliases (Deprecated Symbol Names)
+
+let nameAliasesURL = inputURL.appendingPathComponent("name_aliases.strings")
+let legacyAliasesURL = inputURL.appendingPathComponent("legacy_aliases.strings")
+var symbolAliases: [String: String] = [:] // old name -> new name
+
+if let nameAliasesData = try? Data(contentsOf: nameAliasesURL),
+   let nameAliases = try? PropertyListDecoder().decode([String: String].self, from: nameAliasesData) {
+    symbolAliases.merge(nameAliases) { _, new in new }
+    print("Loaded \(nameAliases.count) name aliases")
+} else {
+    print("Warning: Could not load name_aliases.strings")
+}
+
+if let legacyAliasesData = try? Data(contentsOf: legacyAliasesURL),
+   let legacyAliases = try? PropertyListDecoder().decode([String: String].self, from: legacyAliasesData) {
+    symbolAliases.merge(legacyAliases) { _, new in new }
+    print("Loaded \(legacyAliases.count) legacy aliases")
+} else {
+    print("Warning: Could not load legacy_aliases.strings")
+}
+
+print("Total deprecated symbol aliases: \(symbolAliases.count)")
 
 // MARK: - Determine Best year_to_release
 
@@ -269,6 +309,7 @@ var symbols: [SFSymbol] = []
 var unmappedYears: Set<String> = []
 var symbolsWithLocalizations = 0
 var symbolsWithRestrictions = 0
+var symbolsDeprecated = 0
 
 for baseName in mergedSymbols.keys.sorted() {
     let merged = mergedSymbols[baseName]!
@@ -323,13 +364,25 @@ for baseName in mergedSymbols.keys.sorted() {
         symbolsWithRestrictions += 1
     }
 
+    // Check if this symbol is deprecated (has an alias pointing to a new name)
+    let deprecatedNewName: String?
+    if let newName = symbolAliases[baseName] {
+        // Get the base name of the new symbol (without localization suffix)
+        let (newBaseName, _) = detectLocalization(from: newName)
+        deprecatedNewName = newBaseName
+        symbolsDeprecated += 1
+    } else {
+        deprecatedNewName = nil
+    }
+
     let symbol = SFSymbol(
         name: baseName,
         year: primarySymbol.year,
         availability: availability,
         layersets: primarySymbol.layersets,
         localizations: localizations,
-        restriction: restriction
+        restriction: restriction,
+        deprecatedNewName: deprecatedNewName
     )
 
     symbols.append(symbol)
@@ -373,10 +426,13 @@ let withYear = symbols.filter { $0.year != nil }.count
 let withHierarchical = symbols.filter { $0.layersets.contains("hierarchical") }.count
 let withMulticolor = symbols.filter { $0.layersets.contains("multicolor") }.count
 let missingYear = symbols.filter { $0.year == nil }.count
+let nonDeprecated = symbols.count - symbolsDeprecated
 
 print()
 print("Summary:")
 print("  Total symbols (merged):    \(symbols.count)")
+print("  Non-deprecated symbols:    \(nonDeprecated)")
+print("  Deprecated symbols:        \(symbolsDeprecated)")
 print("  Raw entries scanned:       \(scannedSymbols.count)")
 print("  With localizations:        \(symbolsWithLocalizations)")
 print("  With restrictions:         \(symbolsWithRestrictions)")
