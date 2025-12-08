@@ -2095,12 +2095,14 @@ public extension SFSymbol {
     /// cursorarrow.square.fill
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowSquareFill", message: "Use 'pointerArrowSquareFill' instead. This symbol has been renamed.")
     static let cursorarrowSquareFill = SFSymbol(
         title: "cursorarrow.square.fill",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.square.fill"
     )
 
     /// curtains.closed
@@ -6623,27 +6625,23 @@ public extension SFSymbol {
     /// phone.arrow.down.left.fill
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
-    @available(*, deprecated, renamed: "phoneFillArrowDownLeft", message: "Use 'phoneFillArrowDownLeft' instead. This symbol has been renamed.")
     static let phoneArrowDownLeftFill = SFSymbol(
         title: "phone.arrow.down.left.fill",
         categories: [.communication, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        deprecatedNewName: "phone.fill.arrow.down.left"
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// phone.arrow.right.fill
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
-    @available(*, deprecated, renamed: "phoneFillArrowRight", message: "Use 'phoneFillArrowRight' instead. This symbol has been renamed.")
     static let phoneArrowRightFill = SFSymbol(
         title: "phone.arrow.right.fill",
         categories: [.communication, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        deprecatedNewName: "phone.fill.arrow.right"
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// phone.arrow.up.right.circle
@@ -6671,14 +6669,12 @@ public extension SFSymbol {
     /// phone.arrow.up.right.fill
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
-    @available(*, deprecated, renamed: "phoneFillArrowUpRight", message: "Use 'phoneFillArrowUpRight' instead. This symbol has been renamed.")
     static let phoneArrowUpRightFill = SFSymbol(
         title: "phone.arrow.up.right.fill",
         categories: [.communication, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        deprecatedNewName: "phone.fill.arrow.up.right"
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// phone.badge.checkmark

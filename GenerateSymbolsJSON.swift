@@ -268,25 +268,42 @@ if let restrictionsData = try? Data(contentsOf: restrictionsURL),
 }
 
 // MARK: - Load Aliases (Deprecated Symbol Names)
+//
+// We load aliases from the SYSTEM's CoreGlyphs.bundle rather than the SF Symbols app.
+// This ensures we have the most up-to-date deprecation information that matches
+// what the OS uses at runtime to resolve symbol names.
+//
+// The SF Symbols app's aliases may lag behind the system's CoreGlyphs, which gets
+// updated with each OS release. Using CoreGlyphs ensures:
+// 1. Deprecation warnings match actual OS behavior
+// 2. Symbol renames are detected as soon as the OS knows about them
+// 3. Generated code stays in sync with runtime symbol resolution
 
-let nameAliasesURL = inputURL.appendingPathComponent("name_aliases.strings")
-let legacyAliasesURL = inputURL.appendingPathComponent("legacy_aliases.strings")
+let coreGlyphsAliasesURL = URL(fileURLWithPath: coreGlyphsBundlePath).appendingPathComponent("name_aliases.strings")
 var symbolAliases: [String: String] = [:] // old name -> new name
 
-if let nameAliasesData = try? Data(contentsOf: nameAliasesURL),
-   let nameAliases = try? PropertyListDecoder().decode([String: String].self, from: nameAliasesData) {
-    symbolAliases.merge(nameAliases) { _, new in new }
-    print("Loaded \(nameAliases.count) name aliases")
+if let aliasesData = try? Data(contentsOf: coreGlyphsAliasesURL),
+   let aliases = try? PropertyListDecoder().decode([String: String].self, from: aliasesData) {
+    symbolAliases = aliases
+    print("Loaded \(aliases.count) symbol aliases from CoreGlyphs.bundle")
 } else {
-    print("Warning: Could not load name_aliases.strings")
-}
+    print("Warning: Could not load name_aliases.strings from CoreGlyphs.bundle")
 
-if let legacyAliasesData = try? Data(contentsOf: legacyAliasesURL),
-   let legacyAliases = try? PropertyListDecoder().decode([String: String].self, from: legacyAliasesData) {
-    symbolAliases.merge(legacyAliases) { _, new in new }
-    print("Loaded \(legacyAliases.count) legacy aliases")
-} else {
-    print("Warning: Could not load legacy_aliases.strings")
+    // Fallback to SF Symbols app if CoreGlyphs is unavailable
+    let nameAliasesURL = inputURL.appendingPathComponent("name_aliases.strings")
+    let legacyAliasesURL = inputURL.appendingPathComponent("legacy_aliases.strings")
+
+    if let nameAliasesData = try? Data(contentsOf: nameAliasesURL),
+       let nameAliases = try? PropertyListDecoder().decode([String: String].self, from: nameAliasesData) {
+        symbolAliases.merge(nameAliases) { _, new in new }
+        print("Fallback: Loaded \(nameAliases.count) name aliases from SF Symbols app")
+    }
+
+    if let legacyAliasesData = try? Data(contentsOf: legacyAliasesURL),
+       let legacyAliases = try? PropertyListDecoder().decode([String: String].self, from: legacyAliasesData) {
+        symbolAliases.merge(legacyAliases) { _, new in new }
+        print("Fallback: Loaded \(legacyAliases.count) legacy aliases from SF Symbols app")
+    }
 }
 
 print("Total deprecated symbol aliases: \(symbolAliases.count)")

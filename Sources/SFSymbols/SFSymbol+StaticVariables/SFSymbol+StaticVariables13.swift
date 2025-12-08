@@ -8064,14 +8064,14 @@ public extension SFSymbol {
     /// cursor.rays
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
-    @available(*, deprecated, renamed: "cursorarrowRays", message: "Use 'cursorarrowRays' instead. This symbol has been renamed.")
+    @available(*, deprecated, renamed: "pointerArrowRays", message: "Use 'pointerArrowRays' instead. This symbol has been renamed.")
     static let cursorRays = SFSymbol(
         title: "cursor.rays",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome],
-        deprecatedNewName: "cursorarrow.rays"
+        deprecatedNewName: "pointer.arrow.rays"
     )
 
     /// d.circle
@@ -18615,12 +18615,14 @@ public extension SFSymbol {
     /// x.squareroot
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    @available(*, deprecated, renamed: "radicandSquareroot", message: "Use 'radicandSquareroot' instead. This symbol has been renamed.")
     static let xSquareroot = SFSymbol(
         title: "x.squareroot",
         categories: [.math, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        deprecatedNewName: "radicand.squareroot"
     )
 
     /// xmark

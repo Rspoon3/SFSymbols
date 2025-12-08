@@ -2323,12 +2323,14 @@ public extension SFSymbol {
     /// creditcard.and.123
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "creditcardAndNumbers", message: "Use 'creditcardAndNumbers' instead. This symbol has been renamed.")
     static let creditcardAnd123 = SFSymbol(
         title: "creditcard.and.123",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "creditcard.and.numbers"
     )
 
     /// creditcard.and.numbers
@@ -3971,26 +3973,30 @@ public extension SFSymbol {
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
     /// - Localizations: Right-to-Left
+    @available(*, deprecated, renamed: "homepodMiniAndAppletv", message: "Use 'homepodMiniAndAppletv' instead. This symbol has been renamed.")
     static let homepodminiAndAppletv = SFSymbol(
         title: "homepodmini.and.appletv",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))],
+        deprecatedNewName: "homepod.mini.and.appletv"
     )
 
     /// homepodmini.and.appletv.fill
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
     /// - Localizations: Right-to-Left
+    @available(*, deprecated, renamed: "homepodMiniAndAppletvFill", message: "Use 'homepodMiniAndAppletvFill' instead. This symbol has been renamed.")
     static let homepodminiAndAppletvFill = SFSymbol(
         title: "homepodmini.and.appletv.fill",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0))],
+        deprecatedNewName: "homepod.mini.and.appletv.fill"
     )
 
     /// hourglass.bottomhalf.filled

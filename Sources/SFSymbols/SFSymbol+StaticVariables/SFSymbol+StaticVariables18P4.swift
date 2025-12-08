@@ -289,12 +289,14 @@ public extension SFSymbol {
     /// cursorarrow.resize.north.east.south.east
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrow", message: "Use 'pointerArrow' instead. This symbol has been renamed.")
     static let cursorarrowResizeNorthEastSouthEast = SFSymbol(
         title: "cursorarrow.resize.north.east.south.east",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow"
     )
 
     /// electronic.toll.collection
@@ -921,12 +923,14 @@ public extension SFSymbol {
     /// repeat.badge.xmark.circle.fill
     /// - Since: iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "repeatBadgeXmark", message: "Use 'repeatBadgeXmark' instead. This symbol has been renamed.")
     static let repeatBadgeXmarkCircleFill = SFSymbol(
         title: "repeat.badge.xmark.circle.fill",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.4, macOS: 15.4, tvOS: 18.4, watchOS: 11.4, visionOS: 2.4),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "repeat.badge.xmark"
     )
 
     /// road.lane.arrowtriangle.2.outward

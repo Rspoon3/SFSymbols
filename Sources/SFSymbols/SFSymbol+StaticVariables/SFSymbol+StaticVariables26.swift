@@ -415,12 +415,14 @@ public extension SFSymbol {
     /// ac.slash
     /// - Since: iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0
     /// - Layersets: monochrome, hierarchical
+    @available(*, deprecated, renamed: "airConditionerSlash", message: "Use 'airConditionerSlash' instead. This symbol has been renamed.")
     static let acSlash = SFSymbol(
         title: "ac.slash",
         categories: [.automotive, .whatsNew, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        deprecatedNewName: "air.conditioner.slash"
     )
 
     /// airplane.cloud

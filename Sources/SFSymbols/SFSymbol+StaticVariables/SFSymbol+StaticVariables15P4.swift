@@ -45,12 +45,14 @@ public extension SFSymbol {
     /// dots.and.line.vertical.and.cursorarrow.rectangle
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "dotsAndLineVerticalAndPointerArrowRectangle", message: "Use 'dotsAndLineVerticalAndPointerArrowRectangle' instead. This symbol has been renamed.")
     static let dotsAndLineVerticalAndCursorarrowRectangle = SFSymbol(
         title: "dots.and.line.vertical.and.cursorarrow.rectangle",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "dots.and.line.vertical.and.pointer.arrow.rectangle"
     )
 
     /// dots.and.line.vertical.and.pointer.arrow.rectangle

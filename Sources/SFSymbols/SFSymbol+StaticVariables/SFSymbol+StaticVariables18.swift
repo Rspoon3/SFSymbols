@@ -8569,12 +8569,14 @@ public extension SFSymbol {
     /// head.profile.arrow.forward.and.vision.pro
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
     /// - Layersets: monochrome, hierarchical
+    @available(*, deprecated, renamed: "headProfileVisionProRemove", message: "Use 'headProfileVisionProRemove' instead. This symbol has been renamed.")
     static let headProfileArrowForwardAndVisionPro = SFSymbol(
         title: "head.profile.arrow.forward.and.vision.pro",
         categories: [.devices],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        deprecatedNewName: "head.profile.vision.pro.remove"
     )
 
     /// headphones.slash
@@ -10026,12 +10028,14 @@ public extension SFSymbol {
     /// inset.filled.rectangle.and.cursorarrow
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "insetFilledRectangleAndPointerArrow", message: "Use 'insetFilledRectangleAndPointerArrow' instead. This symbol has been renamed.")
     static let insetFilledRectangleAndCursorarrow = SFSymbol(
         title: "inset.filled.rectangle.and.cursorarrow",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "inset.filled.rectangle.and.pointer.arrow"
     )
 
     /// inset.filled.rectangle.and.person.filled

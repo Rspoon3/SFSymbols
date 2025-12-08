@@ -3449,12 +3449,14 @@ public extension SFSymbol {
     /// contextualmenu.and.cursorarrow
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "contextualmenuAndPointerArrow", message: "Use 'contextualmenuAndPointerArrow' instead. This symbol has been renamed.")
     static let contextualmenuAndCursorarrow = SFSymbol(
         title: "contextualmenu.and.cursorarrow",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "contextualmenu.and.pointer.arrow"
     )
 
     /// cpu
@@ -3636,102 +3638,118 @@ public extension SFSymbol {
     /// cursorarrow
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
-    @available(*, deprecated, renamed: "cursorarrowResizeNorthEastSouthEast", message: "Use 'cursorarrowResizeNorthEastSouthEast' instead. This symbol has been renamed.")
+    @available(*, deprecated, renamed: "pointerArrow", message: "Use 'pointerArrow' instead. This symbol has been renamed.")
     static let cursorarrow = SFSymbol(
         title: "cursorarrow",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
         layersets: [.monochrome],
-        deprecatedNewName: "cursorarrow.resize.north.east.south.east"
+        deprecatedNewName: "pointer.arrow"
     )
 
     /// cursorarrow.and.square.on.square.dashed
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowAndSquareOnSquareDashed", message: "Use 'pointerArrowAndSquareOnSquareDashed' instead. This symbol has been renamed.")
     static let cursorarrowAndSquareOnSquareDashed = SFSymbol(
         title: "cursorarrow.and.square.on.square.dashed",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.and.square.on.square.dashed"
     )
 
     /// cursorarrow.click
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowClick", message: "Use 'pointerArrowClick' instead. This symbol has been renamed.")
     static let cursorarrowClick = SFSymbol(
         title: "cursorarrow.click",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.click"
     )
 
     /// cursorarrow.click.2
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowClick2", message: "Use 'pointerArrowClick2' instead. This symbol has been renamed.")
     static let cursorarrowClick2 = SFSymbol(
         title: "cursorarrow.click.2",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.click.2"
     )
 
     /// cursorarrow.click.badge.clock
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowClickBadgeClock", message: "Use 'pointerArrowClickBadgeClock' instead. This symbol has been renamed.")
     static let cursorarrowClickBadgeClock = SFSymbol(
         title: "cursorarrow.click.badge.clock",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.click.badge.clock"
     )
 
     /// cursorarrow.motionlines
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowMotionlines", message: "Use 'pointerArrowMotionlines' instead. This symbol has been renamed.")
     static let cursorarrowMotionlines = SFSymbol(
         title: "cursorarrow.motionlines",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.motionlines"
     )
 
     /// cursorarrow.motionlines.click
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowMotionlinesClick", message: "Use 'pointerArrowMotionlinesClick' instead. This symbol has been renamed.")
     static let cursorarrowMotionlinesClick = SFSymbol(
         title: "cursorarrow.motionlines.click",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.motionlines.click"
     )
 
     /// cursorarrow.rays
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowRays", message: "Use 'pointerArrowRays' instead. This symbol has been renamed.")
     static let cursorarrowRays = SFSymbol(
         title: "cursorarrow.rays",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.rays"
     )
 
     /// cursorarrow.square
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "pointerArrowSquare", message: "Use 'pointerArrowSquare' instead. This symbol has been renamed.")
     static let cursorarrowSquare = SFSymbol(
         title: "cursorarrow.square",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pointer.arrow.square"
     )
 
     /// cylinder
@@ -4263,12 +4281,14 @@ public extension SFSymbol {
     /// dot.circle.and.cursorarrow
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "dotCircleAndPointerArrow", message: "Use 'dotCircleAndPointerArrow' instead. This symbol has been renamed.")
     static let dotCircleAndCursorarrow = SFSymbol(
         title: "dot.circle.and.cursorarrow",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "dot.circle.and.pointer.arrow"
     )
 
     /// dot.radiowaves.forward
@@ -5104,13 +5124,15 @@ public extension SFSymbol {
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
     /// - Localizations: Right-to-Left
+    @available(*, deprecated, renamed: "filemenuAndPointerArrow", message: "Use 'filemenuAndPointerArrow' instead. This symbol has been renamed.")
     static let filemenuAndCursorarrow = SFSymbol(
         title: "filemenu.and.cursorarrow",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
         layersets: [.monochrome],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0))],
+        deprecatedNewName: "filemenu.and.pointer.arrow"
     )
 
     /// filemenu.and.selection
@@ -5741,12 +5763,14 @@ public extension SFSymbol {
     /// homekit
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "appleHomekit", message: "Use 'appleHomekit' instead. This symbol has been renamed.")
     static let homekit = SFSymbol(
         title: "homekit",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "apple.homekit"
     )
 
     /// homepod
@@ -6561,12 +6585,14 @@ public extension SFSymbol {
     /// line.diagonal.arrow
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "lineDiagonalTriangleheadUpRight", message: "Use 'lineDiagonalTriangleheadUpRight' instead. This symbol has been renamed.")
     static let lineDiagonalArrow = SFSymbol(
         title: "line.diagonal.arrow",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "line.diagonal.trianglehead.up.right"
     )
 
     /// line.horizontal.2.decrease.circle
@@ -7455,34 +7481,40 @@ public extension SFSymbol {
     /// note
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "padHeader", message: "Use 'padHeader' instead. This symbol has been renamed.")
     static let note = SFSymbol(
         title: "note",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "pad.header"
     )
 
     /// note.text
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "textPadHeader", message: "Use 'textPadHeader' instead. This symbol has been renamed.")
     static let noteText = SFSymbol(
         title: "note.text",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "text.pad.header"
     )
 
     /// note.text.badge.plus
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "textPadHeaderBadgePlus", message: "Use 'textPadHeaderBadgePlus' instead. This symbol has been renamed.")
     static let noteTextBadgePlus = SFSymbol(
         title: "note.text.badge.plus",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "text.pad.header.badge.plus"
     )
 
     /// octagon

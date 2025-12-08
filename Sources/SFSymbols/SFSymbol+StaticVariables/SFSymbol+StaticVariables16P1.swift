@@ -3178,12 +3178,14 @@ public extension SFSymbol {
     /// steeringwheel.and.lock
     /// - Since: iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0
     /// - Layersets: monochrome
+    @available(*, deprecated, renamed: "steeringwheelBadgeLock", message: "Use 'steeringwheelBadgeLock' instead. This symbol has been renamed.")
     static let steeringwheelAndLock = SFSymbol(
         title: "steeringwheel.and.lock",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        deprecatedNewName: "steeringwheel.badge.lock"
     )
 
     /// steeringwheel.badge.lock
