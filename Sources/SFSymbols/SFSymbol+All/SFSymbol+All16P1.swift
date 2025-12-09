@@ -287,7 +287,6 @@ public extension SFSymbol {
          .steeringwheelAndHeatWaves,
          .steeringwheelAndKey,
          .steeringwheelAndLock,
-         .steeringwheelBadgeLock,
          .steeringwheelExclamationmark,
          .steeringwheelRoadLane,
          .steeringwheelRoadLaneDashed,

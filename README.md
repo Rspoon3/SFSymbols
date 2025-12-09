@@ -99,24 +99,30 @@ Thats what this micro library aims to do. Additionally, this library includes re
 
 The library generates symbol data from two sources:
 
-### SF Symbols App Metadata
-Symbol definitions, availability info, categories, search terms, and layersets come from the SF Symbols app's metadata folder:
+### System CoreGlyphs Bundle (Primary)
+The system's CoreGlyphs bundle is the **primary** data source, providing:
+- Symbol names and availability
+- Deprecation aliases (renamed symbols)
+- Category mappings
+- Usage restrictions
+
+```
+/System/Library/CoreServices/CoreGlyphs.bundle/Contents/Resources/
+```
+
+**Why CoreGlyphs?** This bundle is always current with your OS version and contains the same data that `UIImage(systemName:)` uses at runtime. Using CoreGlyphs ensures:
+- Symbol names match what the OS actually supports
+- Deprecation warnings point to symbols that exist
+- Generated code stays in sync with runtime behavior
+
+### SF Symbols App Metadata (Supplementary)
+The SF Symbols app provides supplementary data not available in CoreGlyphs:
+- Layerset availability (hierarchical, multicolor rendering support)
+- Category definitions (human-readable labels)
+
 ```
 /Applications/SF Symbols.app/Contents/Resources/Metadata/
 ```
-
-### System CoreGlyphs Bundle (Deprecation Data)
-Symbol deprecation and rename information comes from the system's CoreGlyphs bundle:
-```
-/System/Library/CoreServices/CoreGlyphs.bundle/Contents/Resources/name_aliases.strings
-```
-
-**Why CoreGlyphs?** The system's CoreGlyphs bundle is always current with your OS version and contains the same alias mappings that `UIImage(systemName:)` uses at runtime. This ensures deprecation warnings in generated code match actual OS behavior.
-
-For example, if Apple renames `cursorarrow.rays` to `pointer.arrow.rays` in a new OS, CoreGlyphs will have this mapping immediately, while the SF Symbols app might not be updated yet. Using CoreGlyphs means:
-- Deprecation warnings match runtime behavior
-- Symbol renames are detected as soon as the OS knows about them
-- Generated `@available(..., deprecated:, renamed:)` annotations stay accurate
 
 ## Installation
 

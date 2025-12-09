@@ -8572,7 +8572,7 @@ public extension SFSymbol {
     @available(*, deprecated, renamed: "headProfileVisionProRemove", message: "Use 'headProfileVisionProRemove' instead. This symbol has been renamed.")
     static let headProfileArrowForwardAndVisionPro = SFSymbol(
         title: "head.profile.arrow.forward.and.vision.pro",
-        categories: [.devices],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
         layersets: [.monochrome, .hierarchical],
@@ -12399,14 +12399,14 @@ public extension SFSymbol {
     /// numbers
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
     /// - Layersets: monochrome
-    /// - Localizations: Arabic, Hindi
+    /// - Localizations: Arabic, Bengali, Gujarati, Hindi, Central Khmer, Kannada, Malayalam, Marathi, Burmese, Odia, Punjabi, Telugu
     static let numbers = SFSymbol(
         title: "numbers",
         categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
         layersets: [.monochrome],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .bn, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .gu, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .km, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .kn, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .ml, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .mr, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .my, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .or, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .pa, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .te, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0))]
     )
 
     /// numbers.rectangle
@@ -14571,14 +14571,14 @@ public extension SFSymbol {
     /// textformat.numbers
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
     /// - Layersets: monochrome
-    /// - Localizations: Arabic, Bengali, Gujarati, Hindi, Central Khmer, Kannada, Malayalam, Burmese, Odia, Punjabi, Telugu
+    /// - Localizations: Arabic, Bengali, Gujarati, Hindi, Central Khmer, Kannada, Malayalam, Marathi, Burmese, Odia, Punjabi, Telugu
     static let textformatNumbers = SFSymbol(
         title: "textformat.numbers",
         categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
         layersets: [.monochrome],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .bn, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .gu, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .km, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .kn, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .ml, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .my, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .or, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .pa, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .te, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .bn, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .gu, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .km, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .kn, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .ml, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .mr, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0)), LocalizationInfo(code: .my, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .or, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .pa, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0)), LocalizationInfo(code: .te, availability: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0))]
     )
 
     /// textformat.numbers.mni

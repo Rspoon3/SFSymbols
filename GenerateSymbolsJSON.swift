@@ -230,29 +230,42 @@ struct MergedSymbol {
 }
 
 // MARK: - Load PLists
+//
+// Primary data source: CoreGlyphs bundle (system runtime data)
+// - Symbol names and availability
+// - Aliases (deprecations)
+// - Categories
+// - Restrictions
+//
+// Secondary data source: SF Symbols app (supplementary data)
+// - Layersets (hierarchical/multicolor support) - not available in CoreGlyphs
 
-let nameAvailabilityURL = inputURL.appendingPathComponent("name_availability.plist")
+let coreGlyphsURL = URL(fileURLWithPath: coreGlyphsBundlePath)
+
+// Load symbol names from CoreGlyphs (primary source)
+let coreGlyphsNameAvailabilityURL = coreGlyphsURL.appendingPathComponent("name_availability.plist")
+guard let nameData = try? Data(contentsOf: coreGlyphsNameAvailabilityURL),
+      let namePlist = try? PropertyListSerialization.propertyList(from: nameData, format: nil) as? [String: Any],
+      let nameSymbols = namePlist["symbols"] as? [String: String] else {
+    print("Error: Could not read name_availability.plist from CoreGlyphs")
+    exit(1)
+}
+print("Loaded \(nameSymbols.count) symbols from CoreGlyphs name_availability.plist")
+
+// Load layersets from SF Symbols app (only source for this data)
 let layersetAvailabilityURL = inputURL.appendingPathComponent("layerset_availability.plist")
+var layersetSymbols: [String: [String: String]] = [:]
+var layersetPlist: [String: Any] = [:]
 
-guard let nameData = try? Data(contentsOf: nameAvailabilityURL),
-      let layersetData = try? Data(contentsOf: layersetAvailabilityURL) else {
-    print("Error: Could not read plist files")
-    exit(1)
+if let layersetData = try? Data(contentsOf: layersetAvailabilityURL),
+   let plist = try? PropertyListSerialization.propertyList(from: layersetData, format: nil) as? [String: Any],
+   let symbols = plist["symbols"] as? [String: [String: String]] {
+    layersetSymbols = symbols
+    layersetPlist = plist
+    print("Loaded \(layersetSymbols.count) layerset entries from SF Symbols app")
+} else {
+    print("Warning: Could not load layerset_availability.plist from SF Symbols app - layerset data will be incomplete")
 }
-
-guard let namePlist = try? PropertyListSerialization.propertyList(from: nameData, format: nil) as? [String: Any],
-      let layersetPlist = try? PropertyListSerialization.propertyList(from: layersetData, format: nil) as? [String: Any] else {
-    print("Error: Could not parse plist files")
-    exit(1)
-}
-
-guard let nameSymbols = namePlist["symbols"] as? [String: String],
-      let layersetSymbols = layersetPlist["symbols"] as? [String: [String: String]] else {
-    print("Error: Could not extract symbols from plist files")
-    exit(1)
-}
-
-print("Loaded plist files successfully.")
 
 // MARK: - Load Restrictions
 
@@ -269,44 +282,20 @@ if let restrictionsData = try? Data(contentsOf: restrictionsURL),
 
 // MARK: - Load Aliases (Deprecated Symbol Names)
 //
-// We load aliases from the SYSTEM's CoreGlyphs.bundle rather than the SF Symbols app.
-// This ensures we have the most up-to-date deprecation information that matches
-// what the OS uses at runtime to resolve symbol names.
-//
-// The SF Symbols app's aliases may lag behind the system's CoreGlyphs, which gets
-// updated with each OS release. Using CoreGlyphs ensures:
-// 1. Deprecation warnings match actual OS behavior
-// 2. Symbol renames are detected as soon as the OS knows about them
-// 3. Generated code stays in sync with runtime symbol resolution
+// Aliases are loaded from CoreGlyphs, which is the runtime source of truth.
+// Since we now use CoreGlyphs for symbol names, aliases will always point
+// to symbols that exist in our output.
 
-let coreGlyphsAliasesURL = URL(fileURLWithPath: coreGlyphsBundlePath).appendingPathComponent("name_aliases.strings")
+let coreGlyphsAliasesURL = coreGlyphsURL.appendingPathComponent("name_aliases.strings")
 var symbolAliases: [String: String] = [:] // old name -> new name
 
 if let aliasesData = try? Data(contentsOf: coreGlyphsAliasesURL),
    let aliases = try? PropertyListDecoder().decode([String: String].self, from: aliasesData) {
     symbolAliases = aliases
-    print("Loaded \(aliases.count) symbol aliases from CoreGlyphs.bundle")
+    print("Loaded \(aliases.count) symbol aliases from CoreGlyphs")
 } else {
-    print("Warning: Could not load name_aliases.strings from CoreGlyphs.bundle")
-
-    // Fallback to SF Symbols app if CoreGlyphs is unavailable
-    let nameAliasesURL = inputURL.appendingPathComponent("name_aliases.strings")
-    let legacyAliasesURL = inputURL.appendingPathComponent("legacy_aliases.strings")
-
-    if let nameAliasesData = try? Data(contentsOf: nameAliasesURL),
-       let nameAliases = try? PropertyListDecoder().decode([String: String].self, from: nameAliasesData) {
-        symbolAliases.merge(nameAliases) { _, new in new }
-        print("Fallback: Loaded \(nameAliases.count) name aliases from SF Symbols app")
-    }
-
-    if let legacyAliasesData = try? Data(contentsOf: legacyAliasesURL),
-       let legacyAliases = try? PropertyListDecoder().decode([String: String].self, from: legacyAliasesData) {
-        symbolAliases.merge(legacyAliases) { _, new in new }
-        print("Fallback: Loaded \(legacyAliases.count) legacy aliases from SF Symbols app")
-    }
+    print("Warning: Could not load name_aliases.strings from CoreGlyphs")
 }
-
-print("Total deprecated symbol aliases: \(symbolAliases.count)")
 
 // MARK: - Load Categories
 
@@ -323,8 +312,10 @@ struct CategoryPlistEntry: Codable {
     }
 }
 
+// Category definitions come from SF Symbols app (has labels)
+// Category mappings come from CoreGlyphs (authoritative for which symbols are in which category)
 let categoriesURL = inputURL.appendingPathComponent("categories.plist")
-let symbolCategoriesURL = inputURL.appendingPathComponent("symbol_categories.plist")
+let symbolCategoriesURL = coreGlyphsURL.appendingPathComponent("symbol_categories.plist")
 
 var allCategories: [CategoryPlistEntry] = []
 var categoryKeyToInfo: [String: SFCategoryInfo] = [:]
@@ -336,17 +327,17 @@ if let categoriesData = try? Data(contentsOf: categoriesURL),
     for cat in categories {
         categoryKeyToInfo[cat.key] = SFCategoryInfo(icon: cat.icon, title: cat.label)
     }
-    print("Loaded \(allCategories.count) categories from categories.plist")
+    print("Loaded \(allCategories.count) category definitions from SF Symbols app")
 } else {
-    print("Warning: Could not load categories.plist")
+    print("Warning: Could not load categories.plist from SF Symbols app")
 }
 
 if let symbolCategoriesData = try? Data(contentsOf: symbolCategoriesURL),
    let symbolCats = try? PropertyListDecoder().decode([String: [String]].self, from: symbolCategoriesData) {
     symbolToCategories = symbolCats
-    print("Loaded category mappings for \(symbolToCategories.count) symbols from symbol_categories.plist")
+    print("Loaded category mappings for \(symbolToCategories.count) symbols from CoreGlyphs")
 } else {
-    print("Warning: Could not load symbol_categories.plist")
+    print("Warning: Could not load symbol_categories.plist from CoreGlyphs")
 }
 
 // MARK: - Load Draw Category
@@ -374,6 +365,9 @@ if !drawCategorySymbols.isEmpty {
 }
 
 // MARK: - Determine Best year_to_release
+//
+// Use year_to_release from CoreGlyphs (primary), with SF Symbols app layerset
+// data as a fallback if it has more recent entries.
 
 var nameYearToRelease = namePlist["year_to_release"] as? [String: [String: String]] ?? [:]
 var layersetYearToRelease = layersetPlist["year_to_release"] as? [String: [String: String]] ?? [:]
@@ -393,12 +387,12 @@ let missing2025Entry: [String: String] = [
 
 if nameYearToRelease["2025"] == nil {
     nameYearToRelease["2025"] = missing2025Entry
-    print("Injected missing 2025 release year into name_availability (Apple bug workaround)")
+    print("Injected missing 2025 release year into CoreGlyphs (Apple bug workaround)")
 }
 
 if layersetYearToRelease["2025"] == nil {
     layersetYearToRelease["2025"] = missing2025Entry
-    print("Injected missing 2025 release year into layerset_availability (Apple bug workaround)")
+    print("Injected missing 2025 release year into SF Symbols app layersets (Apple bug workaround)")
 }
 // ============================================================================
 
@@ -418,10 +412,10 @@ let layersetMaxYear = maxYear(in: layersetYearToRelease)
 let yearToRelease: [String: [String: String]]
 if nameMaxYear >= layersetMaxYear {
     yearToRelease = nameYearToRelease
-    print("Using year_to_release from name_availability.plist (max: \(nameMaxYear))")
+    print("Using year_to_release from CoreGlyphs (max: \(nameMaxYear))")
 } else {
     yearToRelease = layersetYearToRelease
-    print("Using year_to_release from layerset_availability.plist (max: \(layersetMaxYear))")
+    print("Using year_to_release from SF Symbols app layersets (max: \(layersetMaxYear))")
 }
 
 // Build version map from plist
@@ -444,8 +438,11 @@ for (year, platforms) in yearToRelease {
 }
 
 // MARK: - Scan All Symbols
+//
+// Use CoreGlyphs as the authoritative source for symbol names.
+// Layerset data comes from SF Symbols app where available.
 
-let allSymbolNames = Set(nameSymbols.keys).union(Set(layersetSymbols.keys))
+let allSymbolNames = Set(nameSymbols.keys)
 var scannedSymbols: [String: ScannedSymbol] = [:]
 var skippedPhantomRtl = 0
 
@@ -462,7 +459,7 @@ for symbolName in allSymbolNames {
         }
     }
 
-    var year = nameSymbols[symbolName]
+    let year = nameSymbols[symbolName]
     let layersetInfo = layersetSymbols[symbolName]
 
     // Build layersets array (all symbols support monochrome)
@@ -472,17 +469,6 @@ for symbolName in allSymbolNames {
     }
     if layersetInfo?["multicolor"] != nil {
         layersets.append("multicolor")
-    }
-
-    // If year is missing from name_availability, infer from layerset_availability
-    if year == nil, let info = layersetInfo {
-        year = info.values.min { a, b in
-            let aParts = a.split(separator: ".").compactMap { Double($0) }
-            let bParts = b.split(separator: ".").compactMap { Double($0) }
-            let aValue = (aParts.first ?? 0) * 100 + (aParts.count > 1 ? aParts[1] : 0)
-            let bValue = (bParts.first ?? 0) * 100 + (bParts.count > 1 ? bParts[1] : 0)
-            return aValue < bValue
-        }
     }
 
     scannedSymbols[symbolName] = ScannedSymbol(name: symbolName, year: year, layersets: layersets)

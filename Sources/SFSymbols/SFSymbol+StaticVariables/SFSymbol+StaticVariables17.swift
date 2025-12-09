@@ -6081,17 +6081,6 @@ public extension SFSymbol {
         deprecatedNewName: "hourglass.badge.lock"
     )
 
-    /// hourglass.badge.lock
-    /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let hourglassBadgeLock = SFSymbol(
-        title: "hourglass.badge.lock",
-        categories: [.multicolor, .objectsAndTools, .time],
-        searchTerms: nil,
-        releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
-    )
-
     /// hryvniasign.arrow.circlepath
     /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
     /// - Layersets: monochrome
@@ -6116,17 +6105,6 @@ public extension SFSymbol {
         releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
         layersets: [.monochrome],
         deprecatedNewName: "indianrupeesign.arrow.trianglehead.counterclockwise.rotate.90"
-    )
-
-    /// inset.filled.rectangle.and.pointer.arrow
-    /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let insetFilledRectangleAndPointerArrow = SFSymbol(
-        title: "inset.filled.rectangle.and.pointer.arrow",
-        categories: [.human],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
     )
 
     /// ipad.case
@@ -7072,19 +7050,6 @@ public extension SFSymbol {
         layersets: [.monochrome],
         localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0))],
         deprecatedNewName: "macwindow.and.pointer.arrow"
-    )
-
-    /// macwindow.and.pointer.arrow
-    /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    /// - Localizations: Right-to-Left
-    static let macwindowAndPointerArrow = SFSymbol(
-        title: "macwindow.and.pointer.arrow",
-        categories: nil,
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0))]
     )
 
     /// manatsign.arrow.circlepath
@@ -8203,39 +8168,6 @@ public extension SFSymbol {
         title: "point.topleft.filled.down.to.point.bottomright.curvepath",
         categories: [.maps, .draw],
         searchTerms: ["activities", "path", "trail"],
-        releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
-    )
-
-    /// pointer.arrow.slash
-    /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowSlash = SFSymbol(
-        title: "pointer.arrow.slash",
-        categories: [.draw],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
-    /// pointer.arrow.slash.square
-    /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let pointerArrowSlashSquare = SFSymbol(
-        title: "pointer.arrow.slash.square",
-        categories: [.draw],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
-    /// pointer.arrow.slash.square.fill
-    /// - Since: iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let pointerArrowSlashSquareFill = SFSymbol(
-        title: "pointer.arrow.slash.square.fill",
-        categories: [.multicolor],
-        searchTerms: ["cursor"],
         releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
     )

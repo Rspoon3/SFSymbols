@@ -92,7 +92,6 @@ public extension SFSymbol {
          .piSquareFill,
          .plusMinusCapsule,
          .plusMinusCapsuleFill,
-         .repeatBadgeXmark,
          .repeatBadgeXmarkCircleFill,
          .roadLaneArrowtriangle2Outward,
          .roboticVacuumAndArrowtriangleUp,

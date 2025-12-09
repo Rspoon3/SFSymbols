@@ -16,7 +16,6 @@ public extension SFSymbol {
          .cameraMacroCircle,
          .cameraMacroCircleFill,
          .dotsAndLineVerticalAndCursorarrowRectangle,
-         .dotsAndLineVerticalAndPointerArrowRectangle,
          .keyViewfinder,
          .personBadgeKey,
          .personBadgeKeyFill

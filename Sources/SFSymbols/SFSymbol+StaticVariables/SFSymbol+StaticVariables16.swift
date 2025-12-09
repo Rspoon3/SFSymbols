@@ -6877,17 +6877,6 @@ public extension SFSymbol {
         restriction: "This symbol may not be modified and may only be used to refer to Sony’s PlayStation."
     )
 
-    /// pointer.arrow.square.fill
-    /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
-    static let pointerArrowSquareFill = SFSymbol(
-        title: "pointer.arrow.square.fill",
-        categories: [.multicolor],
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
-    )
-
     /// popcorn
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome

@@ -55,17 +55,6 @@ public extension SFSymbol {
         deprecatedNewName: "dots.and.line.vertical.and.pointer.arrow.rectangle"
     )
 
-    /// dots.and.line.vertical.and.pointer.arrow.rectangle
-    /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
-    static let dotsAndLineVerticalAndPointerArrowRectangle = SFSymbol(
-        title: "dots.and.line.vertical.and.pointer.arrow.rectangle",
-        categories: nil,
-        searchTerms: ["cursor"],
-        releaseInfo: ReleaseInfo(iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
-    )
-
     /// key.viewfinder
     /// - Since: iOS: 15.4, macOS: 12.3, tvOS: 15.4, watchOS: 8.5, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
