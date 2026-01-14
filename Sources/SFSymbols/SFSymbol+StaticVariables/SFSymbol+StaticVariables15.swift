@@ -8798,7 +8798,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let trashSlashCircle = SFSymbol(
         title: "trash.slash.circle",
-        categories: [.multicolor, .objectsAndTools, .variable],
+        categories: [.multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]

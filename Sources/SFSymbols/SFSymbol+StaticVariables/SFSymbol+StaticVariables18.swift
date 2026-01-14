@@ -8567,14 +8567,14 @@ public extension SFSymbol {
 
     /// head.profile.arrow.forward.and.vision.pro
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
-    /// - Layersets: monochrome, hierarchical
+    /// - Layersets: monochrome
     @available(*, deprecated, renamed: "headProfileVisionProRemove", message: "Use 'headProfileVisionProRemove' instead. This symbol has been renamed.")
     static let headProfileArrowForwardAndVisionPro = SFSymbol(
         title: "head.profile.arrow.forward.and.vision.pro",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
-        layersets: [.monochrome, .hierarchical],
+        layersets: [.monochrome],
         deprecatedNewName: "head.profile.vision.pro.remove"
     )
 
@@ -13909,7 +13909,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let sliderHorizontal2RectangleAndArrowTrianglehead2ClockwiseRotate90 = SFSymbol(
         title: "slider.horizontal.2.rectangle.and.arrow.trianglehead.2.clockwise.rotate.90",
-        categories: [.draw],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
         layersets: [.monochrome, .hierarchical]

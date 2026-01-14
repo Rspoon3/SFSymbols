@@ -56,7 +56,7 @@ public struct SFCategory: Identifiable, Codable, Equatable, Hashable, Sendable {
     public static let shapes = SFCategory(icon: "square.on.circle", title: "Shapes")
     public static let arrows = SFCategory(icon: "arrow.forward", title: "Arrows")
     public static let indices = SFCategory(icon: "a.circle", title: "Indices")
-    public static let math = SFCategory(icon: "x.squareroot", title: "Math")
+    public static let math = SFCategory(icon: "radicand.squareroot", title: "Math")
 
     public static var allCategories: [SFCategory] {
         return [

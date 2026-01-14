@@ -6205,13 +6205,13 @@ public extension SFSymbol {
 
     /// keyboard.macwindow
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical, multicolor
     static let keyboardMacwindow = SFSymbol(
         title: "keyboard.macwindow",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
     /// keyboard.onehanded.left
@@ -10813,13 +10813,13 @@ public extension SFSymbol {
 
     /// text.and.command.macwindow
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical, multicolor
     static let textAndCommandMacwindow = SFSymbol(
         title: "text.and.command.macwindow",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
     /// text.below.photo
