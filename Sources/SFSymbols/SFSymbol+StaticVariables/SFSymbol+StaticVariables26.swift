@@ -426,14 +426,14 @@ public extension SFSymbol {
 
     /// ac.slash
     /// - Since: iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0
-    /// - Layersets: monochrome, hierarchical
+    /// - Layersets: monochrome
     @available(*, deprecated, renamed: "airConditionerSlash", message: "Use 'airConditionerSlash' instead. This symbol has been renamed.")
     static let acSlash = SFSymbol(
         title: "ac.slash",
-        categories: [.draw],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0),
-        layersets: [.monochrome, .hierarchical],
+        layersets: [.monochrome],
         deprecatedNewName: "air.conditioner.slash"
     )
 
@@ -3714,26 +3714,26 @@ public extension SFSymbol {
 
     /// macwindow.and.pointer.arrow
     /// - Since: iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0
-    /// - Layersets: monochrome, hierarchical
+    /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
     static let macwindowAndPointerArrow = SFSymbol(
         title: "macwindow.and.pointer.arrow",
         categories: [.multicolor],
         searchTerms: ["cursor"],
         releaseInfo: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0),
-        layersets: [.monochrome, .hierarchical],
+        layersets: [.monochrome, .hierarchical, .multicolor],
         localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0))]
     )
 
     /// macwindow.stack
     /// - Since: iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, multicolor
     static let macwindowStack = SFSymbol(
         title: "macwindow.stack",
         categories: [.multicolor, .whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .multicolor]
     )
 
     /// minus.arrow.trianglehead.clockwise

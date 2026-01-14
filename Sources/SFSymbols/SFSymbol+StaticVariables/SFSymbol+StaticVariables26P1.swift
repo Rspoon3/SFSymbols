@@ -21,24 +21,24 @@ public extension SFSymbol {
 
     /// air.conditioner.slash
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     static let airConditionerSlash = SFSymbol(
         title: "air.conditioner.slash",
-        categories: [.automotive, .whatsNew],
+        categories: [.automotive, .whatsNew, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// arrowtriangle.backward.inset.filled.trailingthird.rectangle
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical, multicolor
     static let arrowtriangleBackwardInsetFilledTrailingthirdRectangle = SFSymbol(
         title: "arrowtriangle.backward.inset.filled.trailingthird.rectangle",
-        categories: [.multicolor, .whatsNew],
+        categories: [.multicolor, .whatsNew, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
     /// arrowtriangle.down.2
@@ -65,13 +65,13 @@ public extension SFSymbol {
 
     /// arrowtriangle.forward.inset.filled.trailingthird.rectangle
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical, multicolor
     static let arrowtriangleForwardInsetFilledTrailingthirdRectangle = SFSymbol(
         title: "arrowtriangle.forward.inset.filled.trailingthird.rectangle",
-        categories: [.multicolor, .whatsNew],
+        categories: [.multicolor, .whatsNew, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
     /// arrowtriangle.up.2
@@ -164,13 +164,13 @@ public extension SFSymbol {
 
     /// camera.viewfinder.badge.automatic
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical, multicolor
     static let cameraViewfinderBadgeAutomatic = SFSymbol(
         title: "camera.viewfinder.badge.automatic",
         categories: [.cameraAndPhotos, .multicolor, .objectsAndTools, .whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 
     /// digitalcrown
@@ -227,95 +227,95 @@ public extension SFSymbol {
 
     /// head.profile.vision.pro.remove
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple Vision Pro.
     static let headProfileVisionProRemove = SFSymbol(
         title: "head.profile.vision.pro.remove",
         categories: [.devices],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome],
+        layersets: [.monochrome, .hierarchical],
         restriction: "This symbol may not be modified and may only be used to refer to Apple Vision Pro."
     )
 
     /// inset.filled.rectangle.and.person.filled.slash
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     /// - Localizations: Right-to-Left
     static let insetFilledRectangleAndPersonFilledSlash = SFSymbol(
         title: "inset.filled.rectangle.and.person.filled.slash",
         categories: [.human, .whatsNew],
-        searchTerms: nil,
+        searchTerms: ["people", "screen sharing"],
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome],
+        layersets: [.monochrome, .hierarchical],
         localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1))]
     )
 
     /// radicand.squareroot
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic
     static let radicandSquareroot = SFSymbol(
         title: "radicand.squareroot",
-        categories: [.math],
+        categories: [.math, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome],
+        layersets: [.monochrome, .hierarchical],
         localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1))]
     )
 
     /// rectangle.badge.sparkles
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     static let rectangleBadgeSparkles = SFSymbol(
         title: "rectangle.badge.sparkles",
         categories: [.whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// rectangle.badge.sparkles.fill
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     static let rectangleBadgeSparklesFill = SFSymbol(
         title: "rectangle.badge.sparkles.fill",
         categories: [.whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// slider.horizontal.below.sun.min
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     static let sliderHorizontalBelowSunMin = SFSymbol(
         title: "slider.horizontal.below.sun.min",
         categories: [.editing, .whatsNew],
-        searchTerms: nil,
+        searchTerms: ["adjust", "edit"],
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// star.rectangle
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical
     static let starRectangle = SFSymbol(
         title: "star.rectangle",
-        categories: [.whatsNew],
-        searchTerms: nil,
+        categories: [.whatsNew, .draw],
+        searchTerms: ["favorite"],
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// star.rectangle.fill
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome
+    /// - Layersets: monochrome, hierarchical, multicolor
     static let starRectangleFill = SFSymbol(
         title: "star.rectangle.fill",
         categories: [.multicolor, .whatsNew],
-        searchTerms: nil,
+        searchTerms: ["favorite"],
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome]
+        layersets: [.monochrome, .hierarchical, .multicolor]
     )
 }

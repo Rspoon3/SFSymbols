@@ -9153,7 +9153,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let sliderHorizontal2Square = SFSymbol(
         title: "slider.horizontal.2.square",
-        categories: [.editing, .draw],
+        categories: [.editing],
         searchTerms: ["adjust", "edit"],
         releaseInfo: ReleaseInfo(iOS: 17.0, macOS: 14.0, tvOS: 17.0, watchOS: 10.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]

@@ -18613,14 +18613,14 @@ public extension SFSymbol {
 
     /// x.squareroot
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical
+    /// - Layersets: monochrome
     @available(*, deprecated, renamed: "radicandSquareroot", message: "Use 'radicandSquareroot' instead. This symbol has been renamed.")
     static let xSquareroot = SFSymbol(
         title: "x.squareroot",
-        categories: [.draw],
+        categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical],
+        layersets: [.monochrome],
         deprecatedNewName: "radicand.squareroot"
     )
 
