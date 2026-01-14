@@ -1,7 +1,6 @@
 //
 //  SFSymbol+StaticVariables16P4.swift
 //
-//  Generated Automatically on 12/8/25
 //
 
 import Foundation

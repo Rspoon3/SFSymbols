@@ -457,15 +457,10 @@ private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol]) throws {
 // MARK: - Private Helpers
 
 private func createHeader(title: String) -> String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "M/d/yy"
-    let dateString = dateFormatter.string(from: .now)
-    
-    return """
+    """
     //
     //  \(title).swift
     //
-    //  Generated Automatically on \(dateString)
     //
 
     import Foundation
