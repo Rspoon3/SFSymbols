@@ -1,7 +1,6 @@
 //
 //  SFSymbol+All17P6.swift.swift
 //
-//  Generated Automatically on 12/8/25
 //
 
 import Foundation
