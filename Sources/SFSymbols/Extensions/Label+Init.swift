@@ -1,67 +1,49 @@
 //
 //  Label+Init.swift
-//  
 //
-//  Created by Richard Witherspoon on 4/22/21.
+//  Generated from SwiftUI.swiftinterface
 //
 
 #if canImport(SwiftUI)
 import SwiftUI
 
-@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 public extension Label where Title == Text, Icon == Image {
-    /// Creates a label with a system symbol image and a title generated from a
+    /// Creates a label with a system icon image and a title generated from a
     /// localized string.
     ///
-    /// - Parameter symbol: The `SFSymbol` describing this image.
-    init(_ titleKey: LocalizedStringKey, symbol: SFSymbol) {
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - titleKey: A title generated from a localized string.
+    ///   - symbol: The `SFSymbol` describing the image.
+    nonisolated init(_ titleKey: LocalizedStringKey, systemImage symbol: SFSymbol)
+    {
         self.init(titleKey, systemImage: symbol.title)
     }
-    
-    /// Creates a label with a system symbol image and a title generated from a
+
+    @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+    /// Creates a label with a system icon image and a title generated from a
+    /// localized string.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - titleResource: A title generated from a localized string.
+    ///   - symbol: The `SFSymbol` describing the image.
+    nonisolated init(_ titleResource: LocalizedStringResource, systemImage symbol: SFSymbol)
+    {
+        self.init(titleResource, systemImage: symbol.title)
+    }
+
+    /// Creates a label with a system icon image and a title generated from a
     /// string.
     ///
-    /// - Parameter symbol: The `SFSymbol` describing this image.
-    @_disfavoredOverload
-    init<S>(_ title: S, symbol: SFSymbol) where S : StringProtocol {
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - title: A string used as the label's title.
+    ///   - symbol: The `SFSymbol` describing the image.
+    nonisolated init<S>(_ title: S, systemImage symbol: SFSymbol) where S : StringProtocol
+    {
         self.init(title, systemImage: symbol.title)
-    }
-    
-    init(
-        _ titleKey: LocalizedStringKey,
-        symbol: SFSymbol,
-        textColor: Color? = nil
-    ){
-        self.init(
-            title: {
-                Text(titleKey)
-                    .foregroundColor(textColor)
-            },
-            icon: {
-                Image(symbol: symbol)
-            }
-        )
-    }
-    
-    /// Creates a label with a system symbol image and a title generated from a
-    /// string.
-    ///
-    /// - Parameter symbol: The `SFSymbol` describing this image.
-    @_disfavoredOverload
-    init<S>(
-        _ title: S,
-        symbol: SFSymbol,
-        textColor: Color? = nil
-    ) where S : StringProtocol {
-        self.init(title, systemImage: symbol.title)
-    }
-    
-    init(
-        _ title: String,
-        symbol: SFSymbol,
-        textColor: Color? = nil
-    ){
-        self.init(.init(title), symbol: symbol, textColor: textColor)
     }
 }
 #endif
