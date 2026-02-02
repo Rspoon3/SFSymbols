@@ -47,7 +47,7 @@ public extension ContentUnavailableView where Label == SwiftUI.Label<Text, Image
     ///   - symbol: The `SFSymbol` describing the image.
     ///      Use the SF Symbols app to look up the names of system symbol images.
     ///    - description: The view that describes the interface.
-    nonisolated init<S>(_ title: S, systemImage symbol: SFSymbol, description: Text? = nil) where S : StringProtocol {
+    @_disfavoredOverload nonisolated init<S>(_ title: S, systemImage symbol: SFSymbol, description: Text? = nil) where S : StringProtocol {
         self.init(title, systemImage: symbol.title, description: description)
     }
 }

@@ -171,7 +171,7 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///     - selection: A binding to a property that determines the
     ///       currently-selected option.
     ///     - content: A view that contains the set of options.
-    nonisolated init<S>(_ title: S, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content) where S : StringProtocol {
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content) where S : StringProtocol {
         self.init(title, systemImage: symbol.title, selection: selection, content: content)
     }
 
@@ -327,7 +327,7 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///      currently-selected option.
     ///    - content: A view that contains the set of options.
     ///    - currentValueLabel: A view that represents the current value of the picker.
-    nonisolated init<S>(_ title: S, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where S : StringProtocol {
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where S : StringProtocol {
         self.init(title, systemImage: symbol.title, selection: selection, content: content)
     }
 

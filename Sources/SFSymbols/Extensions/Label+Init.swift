@@ -39,7 +39,7 @@ public extension Label where Title == Text, Icon == Image {
     /// - Parameters:
     ///    - title: A string used as the label's title.
     ///   - symbol: The `SFSymbol` describing the image.
-    nonisolated init<S>(_ title: S, systemImage symbol: SFSymbol) where S : StringProtocol {
+    @_disfavoredOverload nonisolated init<S>(_ title: S, systemImage symbol: SFSymbol) where S : StringProtocol {
         self.init(title, systemImage: symbol.title)
     }
 }

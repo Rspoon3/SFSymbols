@@ -398,6 +398,14 @@ func transformDocs(_ docs: [String], typeName: String) -> [String] {
 func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
     var sig = "    "
 
+    // Check if this is a StringProtocol generic variant that needs @_disfavoredOverload
+    let hasStringProtocolConstraint = parsed.signature.contains("where S : StringProtocol") ||
+                                      parsed.signature.contains("where S: StringProtocol")
+
+    if hasStringProtocolConstraint {
+        sig += "@_disfavoredOverload "
+    }
+
     // Add attributes
     let attrs = parsed.attributes.filter { $0 != "public" }
     if !attrs.isEmpty {

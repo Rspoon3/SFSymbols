@@ -44,7 +44,7 @@ public extension Menu where Label == SwiftUI.Label<Text, Image> {
     ///   - title: A string that describes the contents of the menu.
     ///   - symbol: The `SFSymbol` describing the image.
     ///   - content: A group of menu items.
-    nonisolated init<S>(_ title: S, symbol: SFSymbol, @ViewBuilder content: () -> Content) where S : StringProtocol {
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, @ViewBuilder content: () -> Content) where S : StringProtocol {
         self.init(title, systemImage: symbol.title, content: content)
     }
 
