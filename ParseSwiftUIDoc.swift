@@ -399,8 +399,8 @@ func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
     var sig = "    "
 
     // Check if this is a StringProtocol generic variant that needs @_disfavoredOverload
-    let hasStringProtocolConstraint = parsed.signature.contains("where S : StringProtocol") ||
-                                      parsed.signature.contains("where S: StringProtocol")
+    let hasStringProtocolConstraint = parsed.signature.contains("S : StringProtocol") ||
+                                      parsed.signature.contains("S: StringProtocol")
 
     if hasStringProtocolConstraint {
         sig += "@_disfavoredOverload "

@@ -228,7 +228,7 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///       picker, the values at the key path of all items in the `sources`
     ///       collection are updated with the selected option.
     ///     - content: A view that contains the set of options.
-    nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
+    @_disfavoredOverload nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
         self.init(title, systemImage: symbol.title, sources: sources, selection: selection, content: content)
     }
 }
@@ -346,7 +346,7 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///      collection are updated with the selected option.
     ///    - content: A view that contains the set of options.
     ///    - currentValueLabel: A view that represents the current value of the picker.
-    nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
+    @_disfavoredOverload nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
         self.init(title, systemImage: symbol.title, sources: sources, selection: selection, content: content)
     }
 }
