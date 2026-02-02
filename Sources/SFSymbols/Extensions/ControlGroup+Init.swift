@@ -44,7 +44,7 @@ public extension ControlGroup {
     ///   - title: A string that describes the contents of the group.
     ///   - symbol: The `SFSymbol` describing the image.
     ///   - label: A view that describes the purpose of the group.
-    nonisolated init<C, S>(_ title: S, symbol: SFSymbol, @ViewBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View, S : StringProtocol {
+    @_disfavoredOverload nonisolated init<C, S>(_ title: S, symbol: SFSymbol, @ViewBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View, S : StringProtocol {
         self.init(title, systemImage: symbol.title, content: content)
     }
 }
