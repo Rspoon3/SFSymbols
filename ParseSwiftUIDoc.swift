@@ -540,8 +540,7 @@ func generateInitWrapper(_ parsed: ParsedInitializer, extensionAvailability: [St
     output += docs.joined(separator: "\n") + "\n"
 
     // Signature
-    output += generateWrapperSignature(parsed) + "\n"
-    output += "    {\n"
+    output += generateWrapperSignature(parsed) + " {\n"
     output += generateForwardingCall(parsed) + "\n"
     output += "    }\n"
 

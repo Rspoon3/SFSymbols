@@ -181,6 +181,62 @@ To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will
 
 > **Note:** The Draw category symbols are saved to `draw.txt` during the update and cleaned up automatically afterward. If you need to update the Draw category in subsequent runs, delete any existing `draw.txt` file first.
 
+## Generating SwiftUI Wrapper Extensions
+
+The project includes an automated script to generate SwiftUI initializer wrappers that accept `SFSymbol` instead of `String` for system image parameters.
+
+### How It Works
+
+The `ParseSwiftUIDoc.swift` script:
+1. Parses SwiftUI documentation exported from Xcode
+2. Extracts initializers with `systemImage` parameters
+3. Generates extension files with wrapped initializers that accept `SFSymbol`
+4. Preserves documentation, availability attributes, and generic constraints
+
+### Running the Generator
+
+1. **Export SwiftUI documentation** from Xcode:
+   - Open the SwiftUI framework in Xcode
+   - Export the interface to an RTF file
+   - Save as `SwiftUIDocumenationFromXcode.rtf` in the project root
+
+2. **Run the generation script**:
+   ```bash
+   swift ParseSwiftUIDoc.swift SwiftUIDocumenationFromXcode.rtf
+   ```
+
+3. **Verify the output**:
+   ```bash
+   swift build
+   ```
+
+The script generates extension files in `Sources/SFSymbols/Extensions/` for SwiftUI types including:
+- Button, ContentUnavailableView, ControlGroup, Label
+- Menu, MenuBarExtra, Picker, Tab, Toggle
+
+### Example Generated Code
+
+Input (from SwiftUI documentation):
+```swift
+@available(iOS 14.0, *)
+extension Button where Label == Label<Text, Image> {
+    public init(_ titleKey: LocalizedStringKey, systemImage: String, action: @escaping () -> Void)
+}
+```
+
+Output (generated wrapper):
+```swift
+@available(iOS 14.0, *)
+public extension Button where Label == SwiftUI.Label<Text, Image> {
+    /// Creates a button that generates its label from a localized string key and symbol.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, action: @escaping () -> Void) {
+        self.init(titleKey, systemImage: symbol.title, action: action)
+    }
+}
+```
+
 ## License
 
 SFSymbols is released under the MIT license. [See LICENSE](https://github.com/Rspoon3/SFSymbols/blob/main/LICENSE) for details.
