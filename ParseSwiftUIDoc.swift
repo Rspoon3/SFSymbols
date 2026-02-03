@@ -433,11 +433,8 @@ func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
             if !param.attributes.isEmpty {
                 result += param.attributes.joined(separator: " ") + " "
             }
-            if let external = param.externalName, external != param.internalName {
-                result += "\(external) symbol: SFSymbol"
-            } else {
-                result += "symbol: SFSymbol"
-            }
+            // Always use "symbol" as the parameter label, replacing "systemImage"
+            result += "symbol: SFSymbol"
             return result
         } else {
             return reconstructParameter(param)

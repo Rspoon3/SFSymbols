@@ -16,7 +16,7 @@ public extension Label where Title == Text, Icon == Image {
     /// - Parameters:
     ///    - titleKey: A title generated from a localized string.
     ///   - symbol: The `SFSymbol` describing the image.
-    nonisolated init(_ titleKey: LocalizedStringKey, systemImage symbol: SFSymbol) {
+    nonisolated init(_ titleKey: LocalizedStringKey, symbol: SFSymbol) {
         self.init(titleKey, systemImage: symbol.title)
     }
 
@@ -28,7 +28,7 @@ public extension Label where Title == Text, Icon == Image {
     /// - Parameters:
     ///    - titleResource: A title generated from a localized string.
     ///   - symbol: The `SFSymbol` describing the image.
-    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, systemImage symbol: SFSymbol) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol) {
         self.init(titleResource, systemImage: symbol.title)
     }
 
@@ -39,7 +39,7 @@ public extension Label where Title == Text, Icon == Image {
     /// - Parameters:
     ///    - title: A string used as the label's title.
     ///   - symbol: The `SFSymbol` describing the image.
-    @_disfavoredOverload nonisolated init<S>(_ title: S, systemImage symbol: SFSymbol) where S : StringProtocol {
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol) where S : StringProtocol {
         self.init(title, systemImage: symbol.title)
     }
 }
