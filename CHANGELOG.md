@@ -1,5 +1,43 @@
 # Change Log
 
+## Version 3.2 (TBD)
+### Additions
+- Added automated wrapper generation scripts (ParseSwiftUIDoc.swift and ParseUIKitDoc.swift)
+- Generated 56 new SwiftUI initializers across 8 types (Button, ContentUnavailableView, ControlGroup, Label, Menu, Picker, Tab, Toggle)
+- Generated 11 new UIKit initializers across 5 types (UIAction, UICommand, UIKeyCommand, UIMenu, UIWindowScene.ActivationAction)
+- Added Button+AppIntents.swift for AppIntent workflow support
+- All generated wrappers replace `systemImage:`/`image:` parameters with type-safe `symbol: SFSymbol`
+- Proper `@_disfavoredOverload` implementation for overload resolution (LocalizedStringKey preferred over LocalizedStringResource and StringProtocol)
+- Comprehensive documentation preserved from official SwiftUI/UIKit sources
+
+### Changed
+- Regenerated all SwiftUI extension files from official Apple documentation
+- Parameter labels normalized (`systemImage:` → `symbol:`)
+- Documentation format updated to match Apple's style with equivalence notes
+
+### Removed - ⚠️ Breaking Changes
+- **Removed custom Button initializers:**
+  - `Button(symbol:action:)` where `Label == Image` - Use `Button("", symbol:action:)` or `Image` directly instead
+  - `Button(_:symbol:textColor:action:)` variants - Use `.foregroundStyle()` modifier instead
+- **Removed custom Label initializers:**
+  - `Label(_:symbol:textColor:)` variants - Use `.foregroundStyle()` modifier instead
+
+**Migration Guide:**
+```swift
+// Old (removed)
+Button("Delete", symbol: .trash, textColor: .red) { }
+Label("Home", symbol: .house, textColor: .blue)
+
+// New (use modifiers)
+Button("Delete", symbol: .trash) { }
+    .foregroundStyle(.red)
+Label("Home", symbol: .house)
+    .foregroundStyle(.blue)
+```
+
+**Reason for removal:** Custom initializers with optional parameters (e.g., `textColor: Color? = nil`) caused compiler ambiguity, favoring them over standard initializers even when the custom parameters weren't used. Modern SwiftUI modifiers provide better, more flexible styling options.
+
+-----
 ## Version 3.0 (12-8-2025)
 ### Additions
 - Added 392 new symbols for iOS 26.0 (SF Symbols 7) and equivalent versions on other platforms
