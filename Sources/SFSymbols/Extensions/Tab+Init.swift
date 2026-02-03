@@ -1,196 +1,276 @@
 //
 //  Tab+Init.swift
 //
-//
-//  Created by Richard Witherspoon on 4/22/21.
+//  Generated from SwiftUI.swiftinterface
 //
 
 #if canImport(SwiftUI)
 import SwiftUI
 
-// MARK: - Tab with Value
-
-@available(iOS 18.0, macOS 26.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
-public extension Tab where Label == DefaultTabLabel, Value: Hashable, Content: View {
-    /// Creates a tab with a localized title, symbol, and value.
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+public extension Tab where Value : Hashable, Content : View, Label : View {
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a string label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:value:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - titleKey: The localized string key for the tab title.
+    ///     - title: The label for the tab's tab item.
     ///   - symbol: The `SFSymbol` describing the image.
-    ///   - value: The value for tab selection.
-    ///   - content: The content of the tab.
-    nonisolated init(
-        _ titleKey: LocalizedStringKey,
-        symbol: SFSymbol,
-        value: Value,
-        @ViewBuilder content: () -> Content
-    ) {
+    ///     - value: The `selection` value which selects this tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, value: Value, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel, S : StringProtocol {
+        self.init(title, systemImage: symbol.title, value: value, content: content)
+    }
+
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a string label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - title: The label for the tab's tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, value: Value, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel, S : StringProtocol {
+        self.init(title, systemImage: symbol.title, value: value, role: role, content: content)
+    }
+
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a string label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - title: The label for the tab's tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init<S, T>(_ title: S, symbol: SFSymbol, value: T, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, S : StringProtocol, T : Hashable {
+        self.init(title, systemImage: symbol.title, value: value, content: content)
+    }
+
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a string label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - title: The label for the tab's tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init<S, T>(_ title: S, symbol: SFSymbol, value: T, role: TabRole?, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, S : StringProtocol, T : Hashable {
+        self.init(title, systemImage: symbol.title, value: value, role: role, content: content)
+    }
+
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - titleKey: The localized string key label for the tab's tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - content: The view content of the tab.
+    nonisolated init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, value: Value, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleKey, systemImage: symbol.title, value: value, content: content)
     }
 
-    /// Creates a tab with a title, symbol, and value.
+    @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:value:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - title: The tab title.
+    ///     - titleResource: The localized string resource label for the tab's
+    ///       tab item.
     ///   - symbol: The `SFSymbol` describing the image.
-    ///   - value: The value for tab selection.
-    ///   - content: The content of the tab.
-    @_disfavoredOverload
-    nonisolated init<S>(
-        _ title: S,
-        symbol: SFSymbol,
-        value: Value,
-        @ViewBuilder content: () -> Content
-    ) where S: StringProtocol {
-        self.init(title, systemImage: symbol.title, value: value, content: content)
+    ///     - value: The `selection` value which selects this tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: Value, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+        self.init(titleResource, systemImage: symbol.title, value: value, content: content)
     }
 
-    /// Creates a tab with a localized string resource title, symbol, and value.
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:value:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - title: The localized string resource for the tab title.
+    ///     - titleKey: The localized string key label for the tab's tab item.
     ///   - symbol: The `SFSymbol` describing the image.
-    ///   - value: The value for tab selection.
-    ///   - content: The content of the tab.
-    @available(iOS 26.0, *)
-    @_disfavoredOverload
-    nonisolated init(
-        _ title: LocalizedStringResource,
-        symbol: SFSymbol,
-        value: Value,
-        @ViewBuilder content: () -> Content
-    ) {
-        self.init(title, systemImage: symbol.title, value: value, content: content)
-    }
-}
-
-// MARK: - Tab with Value and Role
-
-@available(iOS 18.0, macOS 26.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
-public extension Tab where Label == DefaultTabLabel, Value: Hashable, Content: View {
-    /// Creates a tab with a localized title, symbol, value, and role.
-    ///
-    /// This initializer is equivalent to `Tab(_:systemImage:value:role:content:)`.
-    ///
-    /// - Parameters:
-    ///   - titleKey: The localized string key for the tab title.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///   - value: The value for tab selection.
-    ///   - role: The role of the tab.
-    ///   - content: The content of the tab.
-    nonisolated init(
-        _ titleKey: LocalizedStringKey,
-        symbol: SFSymbol,
-        value: Value,
-        role: TabRole,
-        @ViewBuilder content: () -> Content
-    ) {
+    ///     - value: The `selection` value which selects this tab.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    nonisolated init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, value: Value, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleKey, systemImage: symbol.title, value: value, role: role, content: content)
     }
 
-    /// Creates a tab with a title, symbol, value, and role.
+    @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:value:role:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - title: The tab title.
+    ///     - titleResource: The localized string resource label for the tab's
+    ///       tab item.
     ///   - symbol: The `SFSymbol` describing the image.
-    ///   - value: The value for tab selection.
-    ///   - role: The role of the tab.
-    ///   - content: The content of the tab.
-    @_disfavoredOverload
-    nonisolated init<S>(
-        _ title: S,
-        symbol: SFSymbol,
-        value: Value,
-        role: TabRole,
-        @ViewBuilder content: () -> Content
-    ) where S: StringProtocol {
-        self.init(title, systemImage: symbol.title, value: value, role: role, content: content)
+    ///     - value: The `selection` value which selects this tab.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: Value, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+        self.init(titleResource, systemImage: symbol.title, value: value, role: role, content: content)
     }
 
-    /// Creates a tab with a localized string resource title, symbol, value, and role.
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:value:role:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - title: The localized string resource for the tab title.
+    ///     - titleKey: The localized string key label for the tab's tab item.
     ///   - symbol: The `SFSymbol` describing the image.
-    ///   - value: The value for tab selection.
-    ///   - role: The role of the tab.
-    ///   - content: The content of the tab.
-    @available(iOS 26.0, *)
-    @_disfavoredOverload
-    nonisolated init(
-        _ title: LocalizedStringResource,
-        symbol: SFSymbol,
-        value: Value,
-        role: TabRole,
-        @ViewBuilder content: () -> Content
-    ) {
-        self.init(title, systemImage: symbol.title, value: value, role: role, content: content)
+    ///     - value: The `selection` value which selects this tab.
+    ///     - content: The view content of the tab.
+    nonisolated init<T>(_ titleKey: LocalizedStringKey, symbol: SFSymbol, value: T, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
+        self.init(titleKey, systemImage: symbol.title, value: value, content: content)
+    }
+
+    @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - titleResource: The localized string resource label for the tab's
+    ///       tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init<T>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: T, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
+        self.init(titleResource, systemImage: symbol.title, value: value, content: content)
+    }
+
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string key label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - titleKey: The localized string key label for the tab's tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    nonisolated init<T>(_ titleKey: LocalizedStringKey, symbol: SFSymbol, value: T, role: TabRole?, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
+        self.init(titleKey, systemImage: symbol.title, value: value, role: role, content: content)
+    }
+
+    @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+    /// Creates a tab that the tab view presents when the tab view's selection
+    /// matches the tab's value using a system image for the tab's tab item image,
+    /// with a localized string resource.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - titleResource: The localized string resource label for the tab's
+    ///       tab item.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///     - value: The `selection` value which selects this tab.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload nonisolated init<T>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: T, role: TabRole?, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
+        self.init(titleResource, systemImage: symbol.title, value: value, role: role, content: content)
     }
 }
 
-// MARK: - Tab without Value (where Value == Never)
-
-@available(iOS 18.0, macOS 26.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
-public extension Tab where Label == DefaultTabLabel, Value == Never, Content: View {
-    /// Creates a tab with a localized title and symbol, without a selection value.
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+public extension Tab where Value == Never, Content : View, Label : View {
+    /// Creates a new tab that you can use in a tab view using a symbol
+    /// for the tab item's image, and a string label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - titleKey: The localized string key for the tab title.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///   - content: The content of the tab.
-    nonisolated init(
-        _ titleKey: LocalizedStringKey,
-        symbol: SFSymbol,
-        @ViewBuilder content: () -> Content
-    ) {
+    ///     - title: The label for the tab's tab item.
+    ///     - image: The image for the tab's tab item.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload init<S>(_ title: S, symbol: SFSymbol, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel, S : StringProtocol {
+        self.init(title, systemImage: symbol.title, content: content)
+    }
+
+    /// Creates a new tab that you can use in a tab view using a symbol
+    /// for the tab item's image, and a string label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - title: The label for the tab's tab item.
+    ///     - image: The image for the tab's tab item.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload init<S>(_ title: S, symbol: SFSymbol, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel, S : StringProtocol {
+        self.init(title, systemImage: symbol.title, role: role, content: content)
+    }
+
+    /// Creates a new tab that you can use in a tab view using a symbol
+    /// for the tab item's image, and a localized string key label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - titleKey: The localized string key label for the tab's tab item.
+    ///     - image: The image for the tab's tab item.
+    ///     - content: The view content of the tab.
+    init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleKey, systemImage: symbol.title, content: content)
     }
 
-    /// Creates a tab with a title and symbol, without a selection value.
+    @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+    /// Creates a new tab that you can use in a tab view using a symbol
+    /// for the tab item's image, and a localized string key label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - title: The tab title.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///   - content: The content of the tab.
-    @_disfavoredOverload
-    nonisolated init<S>(
-        _ title: S,
-        symbol: SFSymbol,
-        @ViewBuilder content: () -> Content
-    ) where S: StringProtocol {
-        self.init(title, systemImage: symbol.title, content: content)
+    ///     - titleResource: The localized string resource label for the tab's
+    ///       tab item.
+    ///     - image: The image for the tab's tab item.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+        self.init(titleResource, systemImage: symbol.title, content: content)
     }
 
-    /// Creates a tab with a localized string resource title and symbol, without a selection value.
+    /// Creates a new tab that you can use in a tab view using a symbol
+    /// for the tab item's image, and a localized string key label.
     ///
-    /// This initializer is equivalent to `Tab(_:systemImage:content:)`.
-    ///
+    /// This initializer is equivalent to the `systemImage` variant.
     /// - Parameters:
-    ///   - title: The localized string resource for the tab title.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///   - content: The content of the tab.
-    @available(iOS 26.0, *)
-    @_disfavoredOverload
-    nonisolated init(
-        _ title: LocalizedStringResource,
-        symbol: SFSymbol,
-        @ViewBuilder content: () -> Content
-    ) {
-        self.init(title, systemImage: symbol.title, content: content)
+    ///     - titleKey: The localized string key label for the tab's tab item.
+    ///     - image: The image for the tab's tab item.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+        self.init(titleKey, systemImage: symbol.title, role: role, content: content)
+    }
+
+    @available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+    /// Creates a new tab that you can use in a tab view using a symbol
+    /// for the tab item's image, and a localized string key label.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///     - titleResource: The localized string resource label for the tab's
+    ///       tab item.
+    ///     - image: The image for the tab's tab item.
+    ///     - role: The role defining the semantic purpose of the tab.
+    ///     - content: The view content of the tab.
+    @_disfavoredOverload init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+        self.init(titleResource, systemImage: symbol.title, role: role, content: content)
     }
 }
 #endif
