@@ -39,7 +39,7 @@ public extension Button where Label == SwiftUI.Label<Text, Image> {
     ///     describes the purpose of the button's `action`.
     ///   - symbol: The `SFSymbol` describing the image.
     ///   - action: The action to perform when the user triggers the button.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, action: @escaping @MainActor () -> Void) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, action: @escaping @MainActor () -> Void) {
         self.init(titleResource, systemImage: symbol.title, action: action)
     }
 
@@ -96,7 +96,7 @@ public extension Button where Label == SwiftUI.Label<Text, Image> {
     ///   - role: An optional semantic role describing the button. A value of
     ///     `nil` means that the button doesn't have an assigned role.
     ///   - action: The action to perform when the user triggers the button.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, role: ButtonRole?, action: @escaping @MainActor () -> Void) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, role: ButtonRole?, action: @escaping @MainActor () -> Void) {
         self.init(titleResource, systemImage: symbol.title, role: role, action: action)
     }
 

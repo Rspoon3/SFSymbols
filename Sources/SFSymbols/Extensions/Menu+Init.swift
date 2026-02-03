@@ -33,7 +33,7 @@ public extension Menu where Label == SwiftUI.Label<Text, Image> {
     ///     describes the contents of the menu.
     ///   - symbol: The `SFSymbol` describing the image.
     ///   - content: A group of menu items.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content) {
         self.init(titleResource, systemImage: symbol.title, content: content)
     }
 
@@ -78,7 +78,7 @@ public extension Menu where Label == SwiftUI.Label<Text, Image> {
     ///   - primaryAction: The action to perform on primary
     ///     interaction with the menu.
     ///   - content: A group of menu items.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content, primaryAction: @escaping () -> Void) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content, primaryAction: @escaping () -> Void) {
         self.init(titleResource, systemImage: symbol.title, content: content)
     }
 }

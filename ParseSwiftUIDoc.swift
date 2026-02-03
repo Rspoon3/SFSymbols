@@ -398,11 +398,16 @@ func transformDocs(_ docs: [String], typeName: String) -> [String] {
 func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
     var sig = "    "
 
-    // Check if this is a StringProtocol generic variant that needs @_disfavoredOverload
+    // Check if this needs @_disfavoredOverload:
+    // - StringProtocol generic variants (to prefer LocalizedStringKey)
+    // - LocalizedStringResource variants (to prefer LocalizedStringKey over LocalizedStringResource for string literals)
     let hasStringProtocolConstraint = parsed.signature.contains("S : StringProtocol") ||
                                       parsed.signature.contains("S: StringProtocol")
+    let hasLocalizedStringResource = parsed.parameters.contains { param in
+        param.type.contains("LocalizedStringResource")
+    }
 
-    if hasStringProtocolConstraint {
+    if hasStringProtocolConstraint || hasLocalizedStringResource {
         sig += "@_disfavoredOverload "
     }
 

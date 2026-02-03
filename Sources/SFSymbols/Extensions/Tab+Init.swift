@@ -56,7 +56,7 @@ public extension Tab where Value == Never, Content : View, Label : View {
     ///       tab item.
     ///     - image: The image for the tab's tab item.
     ///     - content: The view content of the tab.
-    init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+    @_disfavoredOverload init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleResource, systemImage: symbol.title, content: content)
     }
 
@@ -84,7 +84,7 @@ public extension Tab where Value == Never, Content : View, Label : View {
     ///     - image: The image for the tab's tab item.
     ///     - role: The role defining the semantic purpose of the tab.
     ///     - content: The view content of the tab.
-    init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+    @_disfavoredOverload init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleResource, systemImage: symbol.title, role: role, content: content)
     }
 }
@@ -175,7 +175,7 @@ public extension Tab where Value : Hashable, Content : View, Label : View {
     ///   - symbol: The `SFSymbol` describing the image.
     ///     - value: The `selection` value which selects this tab.
     ///     - content: The view content of the tab.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: Value, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: Value, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleResource, systemImage: symbol.title, value: value, content: content)
     }
 
@@ -207,7 +207,7 @@ public extension Tab where Value : Hashable, Content : View, Label : View {
     ///     - value: The `selection` value which selects this tab.
     ///     - role: The role defining the semantic purpose of the tab.
     ///     - content: The view content of the tab.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: Value, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: Value, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel {
         self.init(titleResource, systemImage: symbol.title, value: value, role: role, content: content)
     }
 
@@ -237,7 +237,7 @@ public extension Tab where Value : Hashable, Content : View, Label : View {
     ///   - symbol: The `SFSymbol` describing the image.
     ///     - value: The `selection` value which selects this tab.
     ///     - content: The view content of the tab.
-    nonisolated init<T>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: T, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
+    @_disfavoredOverload nonisolated init<T>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: T, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
         self.init(titleResource, systemImage: symbol.title, value: value, content: content)
     }
 
@@ -269,7 +269,7 @@ public extension Tab where Value : Hashable, Content : View, Label : View {
     ///     - value: The `selection` value which selects this tab.
     ///     - role: The role defining the semantic purpose of the tab.
     ///     - content: The view content of the tab.
-    nonisolated init<T>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: T, role: TabRole?, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
+    @_disfavoredOverload nonisolated init<T>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, value: T, role: TabRole?, @ViewBuilder content: () -> Content) where Value == T?, Label == DefaultTabLabel, T : Hashable {
         self.init(titleResource, systemImage: symbol.title, value: value, role: role, content: content)
     }
 }

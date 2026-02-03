@@ -28,7 +28,7 @@ public extension Label where Title == Text, Icon == Image {
     /// - Parameters:
     ///    - titleResource: A title generated from a localized string.
     ///   - symbol: The `SFSymbol` describing the image.
-    nonisolated init(_ titleResource: LocalizedStringResource, systemImage symbol: SFSymbol) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, systemImage symbol: SFSymbol) {
         self.init(titleResource, systemImage: symbol.title)
     }
 

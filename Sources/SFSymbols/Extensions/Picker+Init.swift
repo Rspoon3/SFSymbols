@@ -7,6 +7,124 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+public extension Picker where Label == SwiftUI.Label<Text, Image> {
+    /// Creates a picker that accepts a custom current value label and
+    /// generates its label from a localized string key and system image.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - titleKey: A localized string key that describes the purpose of
+    ///      selecting an option.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///    - selection: A binding to a property that determines the
+    ///      currently-selected option.
+    ///    - content: A view that contains the set of options.
+    ///    - currentValueLabel: A view that represents the current value of the picker.
+    ///
+    /// This initializer creates a ``Text`` view on your behalf, and treats the
+    /// localized key similar to ``Text/init(_:tableName:bundle:comment:)``. See
+    /// ``Text`` for more information about localizing strings.
+    nonisolated init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) {
+        self.init(titleKey, systemImage: symbol.title, selection: selection, content: content)
+    }
+
+    /// Creates a picker that accepts a custom current value label and
+    /// generates its label from a localized string key and system image.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - titleResource: A localized string resource that describes the
+    ///      purpose of selecting an option.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///    - selection: A binding to a property that determines the
+    ///      currently-selected option.
+    ///    - content: A view that contains the set of options.
+    ///    - currentValueLabel: A view that represents the current value of the
+    ///      picker.
+    ///
+    /// This initializer creates a ``Text`` view on your behalf. See
+    /// ``Text`` for more information about localizing strings.
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) {
+        self.init(titleResource, systemImage: symbol.title, selection: selection, content: content)
+    }
+
+    /// Creates a picker that accepts a custom current value label and
+    /// generates its label from a localized string key.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - titleKey: A localized string key that describes the purpose of
+    ///      selecting an option.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///    - sources: A collection of values used as the source for displaying
+    ///      the Picker's selection.
+    ///    - selection: The key path of the values that determines the
+    ///      currently-selected options. When a user selects an option from the
+    ///      picker, the values at the key path of all items in the `sources`
+    ///      collection are updated with the selected option.
+    ///    - content: A view that contains the set of options.
+    ///    - currentValueLabel: A view that represents the current value of the picker.
+    nonisolated init<C>(_ titleKey: LocalizedStringKey, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue> {
+        self.init(titleKey, systemImage: symbol.title, sources: sources, selection: selection, content: content)
+    }
+
+    /// Creates a picker that accepts a custom current value label and
+    /// generates its label from a localized string resource.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - titleResource: A localized string resource that describes the
+    ///      purpose of selecting an option.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///    - sources: A collection of values used as the source for displaying
+    ///      the Picker's selection.
+    ///    - selection: The key path of the values that determines the
+    ///      currently-selected options. When a user selects an option from the
+    ///      picker, the values at the key path of all items in the `sources`
+    ///      collection are updated with the selected option.
+    ///    - content: A view that contains the set of options.
+    ///    - currentValueLabel: A view that represents the current value of the
+    ///      picker.
+    @_disfavoredOverload nonisolated init<C>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue> {
+        self.init(titleResource, systemImage: symbol.title, sources: sources, selection: selection, content: content)
+    }
+
+    /// Creates a picker that accepts a custom current value and generates its
+    /// label from a string and system image.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - title: A string that describes the purpose of selecting an option.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///    - selection: A binding to a property that determines the
+    ///      currently-selected option.
+    ///    - content: A view that contains the set of options.
+    ///    - currentValueLabel: A view that represents the current value of the picker.
+    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where S : StringProtocol {
+        self.init(title, systemImage: symbol.title, selection: selection, content: content)
+    }
+
+    /// Creates a picker bound to a collection of bindings that accepts a
+    /// custom current value label and generates its label from a string.
+    ///
+    /// This initializer is equivalent to the `systemImage` variant.
+    /// - Parameters:
+    ///    - title: A string that describes the purpose of selecting an option.
+    ///   - symbol: The `SFSymbol` describing the image.
+    ///    - sources: A collection of values used as the source for displaying
+    ///      the Picker's selection.
+    ///    - selection: The key path of the values that determines the
+    ///      currently-selected options. When a user selects an option from the
+    ///      picker, the values at the key path of all items in the `sources`
+    ///      collection are updated with the selected option.
+    ///    - content: A view that contains the set of options.
+    ///    - currentValueLabel: A view that represents the current value of the picker.
+    @_disfavoredOverload nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
+        self.init(title, systemImage: symbol.title, sources: sources, selection: selection, content: content)
+    }
+}
+
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 public extension Picker where Label == SwiftUI.Label<Text, Image> {
     /// Creates a picker that generates its label from a localized string key
@@ -43,7 +161,7 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///
     /// This initializer creates a ``Text`` view on your behalf. See
     /// ``Text`` for more information about localizing strings.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content) {
         self.init(titleResource, systemImage: symbol.title, selection: selection, content: content)
     }
 
@@ -157,7 +275,7 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///       picker, the values at the key path of all items in the `sources`
     ///       collection are updated with the selected option.
     ///     - content: A view that contains the set of options.
-    nonisolated init<C>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content) where C : RandomAccessCollection, C.Element == Binding<SelectionValue> {
+    @_disfavoredOverload nonisolated init<C>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content) where C : RandomAccessCollection, C.Element == Binding<SelectionValue> {
         self.init(titleResource, systemImage: symbol.title, sources: sources, selection: selection, content: content)
     }
 
@@ -229,124 +347,6 @@ public extension Picker where Label == SwiftUI.Label<Text, Image> {
     ///       collection are updated with the selected option.
     ///     - content: A view that contains the set of options.
     @_disfavoredOverload nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
-        self.init(title, systemImage: symbol.title, sources: sources, selection: selection, content: content)
-    }
-}
-
-@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
-public extension Picker where Label == SwiftUI.Label<Text, Image> {
-    /// Creates a picker that accepts a custom current value label and
-    /// generates its label from a localized string key and system image.
-    ///
-    /// This initializer is equivalent to the `systemImage` variant.
-    /// - Parameters:
-    ///    - titleKey: A localized string key that describes the purpose of
-    ///      selecting an option.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///    - selection: A binding to a property that determines the
-    ///      currently-selected option.
-    ///    - content: A view that contains the set of options.
-    ///    - currentValueLabel: A view that represents the current value of the picker.
-    ///
-    /// This initializer creates a ``Text`` view on your behalf, and treats the
-    /// localized key similar to ``Text/init(_:tableName:bundle:comment:)``. See
-    /// ``Text`` for more information about localizing strings.
-    nonisolated init(_ titleKey: LocalizedStringKey, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) {
-        self.init(titleKey, systemImage: symbol.title, selection: selection, content: content)
-    }
-
-    /// Creates a picker that accepts a custom current value label and
-    /// generates its label from a localized string key and system image.
-    ///
-    /// This initializer is equivalent to the `systemImage` variant.
-    /// - Parameters:
-    ///    - titleResource: A localized string resource that describes the
-    ///      purpose of selecting an option.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///    - selection: A binding to a property that determines the
-    ///      currently-selected option.
-    ///    - content: A view that contains the set of options.
-    ///    - currentValueLabel: A view that represents the current value of the
-    ///      picker.
-    ///
-    /// This initializer creates a ``Text`` view on your behalf. See
-    /// ``Text`` for more information about localizing strings.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) {
-        self.init(titleResource, systemImage: symbol.title, selection: selection, content: content)
-    }
-
-    /// Creates a picker that accepts a custom current value label and
-    /// generates its label from a localized string key.
-    ///
-    /// This initializer is equivalent to the `systemImage` variant.
-    /// - Parameters:
-    ///    - titleKey: A localized string key that describes the purpose of
-    ///      selecting an option.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///    - sources: A collection of values used as the source for displaying
-    ///      the Picker's selection.
-    ///    - selection: The key path of the values that determines the
-    ///      currently-selected options. When a user selects an option from the
-    ///      picker, the values at the key path of all items in the `sources`
-    ///      collection are updated with the selected option.
-    ///    - content: A view that contains the set of options.
-    ///    - currentValueLabel: A view that represents the current value of the picker.
-    nonisolated init<C>(_ titleKey: LocalizedStringKey, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue> {
-        self.init(titleKey, systemImage: symbol.title, sources: sources, selection: selection, content: content)
-    }
-
-    /// Creates a picker that accepts a custom current value label and
-    /// generates its label from a localized string resource.
-    ///
-    /// This initializer is equivalent to the `systemImage` variant.
-    /// - Parameters:
-    ///    - titleResource: A localized string resource that describes the
-    ///      purpose of selecting an option.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///    - sources: A collection of values used as the source for displaying
-    ///      the Picker's selection.
-    ///    - selection: The key path of the values that determines the
-    ///      currently-selected options. When a user selects an option from the
-    ///      picker, the values at the key path of all items in the `sources`
-    ///      collection are updated with the selected option.
-    ///    - content: A view that contains the set of options.
-    ///    - currentValueLabel: A view that represents the current value of the
-    ///      picker.
-    nonisolated init<C>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue> {
-        self.init(titleResource, systemImage: symbol.title, sources: sources, selection: selection, content: content)
-    }
-
-    /// Creates a picker that accepts a custom current value and generates its
-    /// label from a string and system image.
-    ///
-    /// This initializer is equivalent to the `systemImage` variant.
-    /// - Parameters:
-    ///    - title: A string that describes the purpose of selecting an option.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///    - selection: A binding to a property that determines the
-    ///      currently-selected option.
-    ///    - content: A view that contains the set of options.
-    ///    - currentValueLabel: A view that represents the current value of the picker.
-    @_disfavoredOverload nonisolated init<S>(_ title: S, symbol: SFSymbol, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where S : StringProtocol {
-        self.init(title, systemImage: symbol.title, selection: selection, content: content)
-    }
-
-    /// Creates a picker bound to a collection of bindings that accepts a
-    /// custom current value label and generates its label from a string.
-    ///
-    /// This initializer is equivalent to the `systemImage` variant.
-    /// - Parameters:
-    ///    - title: A string that describes the purpose of selecting an option.
-    ///   - symbol: The `SFSymbol` describing the image.
-    ///    - sources: A collection of values used as the source for displaying
-    ///      the Picker's selection.
-    ///    - selection: The key path of the values that determines the
-    ///      currently-selected options. When a user selects an option from the
-    ///      picker, the values at the key path of all items in the `sources`
-    ///      collection are updated with the selected option.
-    ///    - content: A view that contains the set of options.
-    ///    - currentValueLabel: A view that represents the current value of the picker.
-    @_disfavoredOverload nonisolated init<C, S>(_ title: S, symbol: SFSymbol, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue> {
         self.init(title, systemImage: symbol.title, sources: sources, selection: selection, content: content)
     }
 }

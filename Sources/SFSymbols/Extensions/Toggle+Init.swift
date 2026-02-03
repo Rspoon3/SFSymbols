@@ -41,7 +41,7 @@ public extension Toggle where Label == SwiftUI.Label<Text, Image> {
     ///   - symbol: The `SFSymbol` describing the image.
     ///   - isOn: A binding to a property that indicates whether the toggle is
     ///    on or off.
-    nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, isOn: Binding<Bool>) {
+    @_disfavoredOverload nonisolated init(_ titleResource: LocalizedStringResource, symbol: SFSymbol, isOn: Binding<Bool>) {
         self.init(titleResource, systemImage: symbol.title, isOn: isOn)
     }
 
@@ -130,7 +130,7 @@ public extension Toggle where Label == SwiftUI.Label<Text, Image> {
     ///     Toggle's state.
     ///   - isOn: The key path of the values that determines whether the toggle
     ///     is on, mixed or off.
-    nonisolated init<C>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where C : RandomAccessCollection {
+    @_disfavoredOverload nonisolated init<C>(_ titleResource: LocalizedStringResource, symbol: SFSymbol, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where C : RandomAccessCollection {
         self.init(titleResource, systemImage: symbol.title, sources: sources, isOn: isOn)
     }
 
