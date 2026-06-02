@@ -4,7 +4,7 @@
 //  Generated from UIKit.framework
 //
 
-#if canImport(UIKit)
+#if canImport(UIKit) && !os(watchOS)
 import UIKit
 
 @available(iOS 15.0, *)
