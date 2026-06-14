@@ -1,7 +1,7 @@
 # SFSymbols
 [![Build Status](https://travis-ci.org/Nirma/SFSymbol.svg?branch=master)](https://travis-ci.org/Nirma/SFSymbol)
 ![Swift 6.0](https://img.shields.io/badge/Swift-6.0-orange.svg)
-![Version 3.0](https://img.shields.io/badge/version-3.0-blue.svg)
+![Version 8.0](https://img.shields.io/badge/version-8.0-blue.svg)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-purple.svg)](https://github.com/apple/swift-package-manager)
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%20|iPadOS%20|%20tvOS%20|%20watchOS%20|%20macOS-FF69B4.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)

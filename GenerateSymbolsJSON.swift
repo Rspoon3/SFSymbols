@@ -252,6 +252,29 @@ guard let nameData = try? Data(contentsOf: coreGlyphsNameAvailabilityURL),
 }
 print("Loaded \(nameSymbols.count) symbols from CoreGlyphs name_availability.plist")
 
+// Merge in symbol names from the SF Symbols app (primary catalog).
+//
+// CoreGlyphs is tied to the installed OS, so when running against a beta SF Symbols
+// app that targets an unreleased OS (e.g. iOS 27), CoreGlyphs lacks those symbols.
+// The app is a superset, so we union any app-only symbols (and their release year)
+// on top of CoreGlyphs. CoreGlyphs stays authoritative for the symbols it knows.
+let appNameAvailabilityURL = inputURL.appendingPathComponent("name_availability.plist")
+var mergedNameSymbols = nameSymbols
+var appNameYearToRelease: [String: [String: String]] = [:]
+if let appNameData = try? Data(contentsOf: appNameAvailabilityURL),
+   let appNamePlist = try? PropertyListSerialization.propertyList(from: appNameData, format: nil) as? [String: Any],
+   let appNameSymbols = appNamePlist["symbols"] as? [String: String] {
+    var appOnlyCount = 0
+    for (name, year) in appNameSymbols where mergedNameSymbols[name] == nil {
+        mergedNameSymbols[name] = year
+        appOnlyCount += 1
+    }
+    appNameYearToRelease = appNamePlist["year_to_release"] as? [String: [String: String]] ?? [:]
+    print("Merged \(appOnlyCount) additional symbols from SF Symbols app not present in CoreGlyphs")
+} else {
+    print("Warning: Could not load name_availability.plist from SF Symbols app")
+}
+
 // Load layersets from SF Symbols app (only source for this data)
 let layersetAvailabilityURL = inputURL.appendingPathComponent("layerset_availability.plist")
 var layersetSymbols: [String: [String: String]] = [:]
@@ -340,6 +363,23 @@ if let symbolCategoriesData = try? Data(contentsOf: symbolCategoriesURL),
     print("Warning: Could not load symbol_categories.plist from CoreGlyphs")
 }
 
+// Fall back to the SF Symbols app's category mappings for symbols CoreGlyphs doesn't
+// know about (e.g. unreleased-OS symbols only present in a beta app).
+let appSymbolCategoriesURL = inputURL.appendingPathComponent("symbol_categories.plist")
+if let appSymbolCategoriesData = try? Data(contentsOf: appSymbolCategoriesURL),
+   let appSymbolCats = try? PropertyListDecoder().decode([String: [String]].self, from: appSymbolCategoriesData) {
+    var addedCount = 0
+    for (name, keys) in appSymbolCats where symbolToCategories[name] == nil {
+        symbolToCategories[name] = keys
+        addedCount += 1
+    }
+    if addedCount > 0 {
+        print("Added category mappings for \(addedCount) symbols from SF Symbols app")
+    }
+} else {
+    print("Warning: Could not load symbol_categories.plist from SF Symbols app")
+}
+
 // MARK: - Load Draw Category
 
 let drawCategorySymbols = loadDrawCategorySymbols()
@@ -371,6 +411,12 @@ if !drawCategorySymbols.isEmpty {
 
 var nameYearToRelease = namePlist["year_to_release"] as? [String: [String: String]] ?? [:]
 var layersetYearToRelease = layersetPlist["year_to_release"] as? [String: [String: String]] ?? [:]
+
+// Merge the SF Symbols app's release-year table so app-only years (e.g. an
+// unreleased OS) resolve to platform availability.
+for (year, release) in appNameYearToRelease where nameYearToRelease[year] == nil {
+    nameYearToRelease[year] = release
+}
 
 // ============================================================================
 // WORKAROUND: Apple's plist files are missing the 2025 release year entry.
@@ -442,7 +488,7 @@ for (year, platforms) in yearToRelease {
 // Use CoreGlyphs as the authoritative source for symbol names.
 // Layerset data comes from SF Symbols app where available.
 
-let allSymbolNames = Set(nameSymbols.keys)
+let allSymbolNames = Set(mergedNameSymbols.keys)
 var scannedSymbols: [String: ScannedSymbol] = [:]
 var skippedPhantomRtl = 0
 
@@ -459,7 +505,7 @@ for symbolName in allSymbolNames {
         }
     }
 
-    let year = nameSymbols[symbolName]
+    let year = mergedNameSymbols[symbolName]
     let layersetInfo = layersetSymbols[symbolName]
 
     // Build layersets array (all symbols support monochrome)

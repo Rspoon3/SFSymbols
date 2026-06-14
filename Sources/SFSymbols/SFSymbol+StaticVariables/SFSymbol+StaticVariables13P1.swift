@@ -127,7 +127,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let mappinCircle = SFSymbol(
         title: "mappin.circle",
-        categories: [.maps, .multicolor, .objectsAndTools, .variable, .draw],
+        categories: [.maps, .multicolor, .objectsAndTools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -146,13 +146,13 @@ public extension SFSymbol {
 
     /// paperclip.circle
     /// - Since: iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Layersets: monochrome, hierarchical
     static let paperclipCircle = SFSymbol(
         title: "paperclip.circle",
-        categories: [.objectsAndTools, .variable, .draw],
+        categories: [.objectsAndTools, .variable],
         searchTerms: ["attach", "attachments"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// paperclip.circle.fill
@@ -160,7 +160,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let paperclipCircleFill = SFSymbol(
         title: "paperclip.circle.fill",
-        categories: [.multicolor, .objectsAndTools, .draw],
+        categories: [.multicolor, .objectsAndTools],
         searchTerms: ["attach", "attachments"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -171,7 +171,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let pinCircle = SFSymbol(
         title: "pin.circle",
-        categories: [.multicolor, .objectsAndTools, .variable, .draw],
+        categories: [.multicolor, .objectsAndTools, .variable],
         searchTerms: ["pin"],
         releaseInfo: ReleaseInfo(iOS: 13.1, macOS: 10.15, tvOS: 13.0, watchOS: 6.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]

@@ -21,24 +21,24 @@ public extension SFSymbol {
 
     /// aqi.low
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Layersets: monochrome
     static let aqiLow = SFSymbol(
         title: "aqi.low",
         categories: [.variable, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome]
     )
 
     /// aqi.medium
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Layersets: monochrome
     static let aqiMedium = SFSymbol(
         title: "aqi.medium",
         categories: [.variable, .weather],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome]
     )
 
     /// brazilianrealsign.circle
@@ -46,7 +46,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let brazilianrealsignCircle = SFSymbol(
         title: "brazilianrealsign.circle",
-        categories: [.commerce, .indices, .variable, .draw],
+        categories: [.commerce, .indices, .variable],
         searchTerms: ["currencies", "currency"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -68,7 +68,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let brazilianrealsignSquare = SFSymbol(
         title: "brazilianrealsign.square",
-        categories: [.commerce, .indices, .draw],
+        categories: [.commerce, .indices],
         searchTerms: ["currencies", "currency"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -90,7 +90,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let cartCircle = SFSymbol(
         title: "cart.circle",
-        categories: [.commerce, .objectsAndTools, .variable, .draw],
+        categories: [.commerce, .objectsAndTools, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -188,7 +188,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let infinityCircle = SFSymbol(
         title: "infinity.circle",
-        categories: [.media, .variable, .draw],
+        categories: [.media, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -359,13 +359,13 @@ public extension SFSymbol {
 
     /// play.tv.fill
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
-    /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Layersets: monochrome, hierarchical
     static let playTvFill = SFSymbol(
         title: "play.tv.fill",
         categories: [.devices],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// rectangle.badge.person.crop
@@ -409,7 +409,7 @@ public extension SFSymbol {
     /// - Localizations: Arabic, Hindi
     static let repeat1Circle = SFSymbol(
         title: "repeat.1.circle",
-        categories: [.arrows, .media, .variable, .draw],
+        categories: [.arrows, .media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -434,7 +434,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let repeatCircle = SFSymbol(
         title: "repeat.circle",
-        categories: [.arrows, .media, .variable, .draw],
+        categories: [.arrows, .media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -445,7 +445,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let repeatCircleFill = SFSymbol(
         title: "repeat.circle.fill",
-        categories: [.arrows, .media, .multicolor, .draw],
+        categories: [.arrows, .media, .multicolor],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -469,7 +469,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let shuffleCircle = SFSymbol(
         title: "shuffle.circle",
-        categories: [.arrows, .media, .variable, .draw],
+        categories: [.arrows, .media, .variable],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -480,7 +480,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let shuffleCircleFill = SFSymbol(
         title: "shuffle.circle.fill",
-        categories: [.arrows, .media, .multicolor, .draw],
+        categories: [.arrows, .media, .multicolor],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]

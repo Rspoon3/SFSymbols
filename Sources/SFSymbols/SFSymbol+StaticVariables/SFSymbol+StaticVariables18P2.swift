@@ -172,7 +172,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let insetFilledRectangleAndPersonFilledCircle = SFSymbol(
         title: "inset.filled.rectangle.and.person.filled.circle",
-        categories: [.human, .variable, .draw],
+        categories: [.human, .variable],
         searchTerms: ["people", "screen sharing"],
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2),
         layersets: [.monochrome, .hierarchical]
@@ -227,7 +227,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let wandAndOutlineInverse = SFSymbol(
         title: "wand.and.outline.inverse",
-        categories: [.editing, .objectsAndTools, .draw],
+        categories: [.editing, .objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 18.2, macOS: 15.2, tvOS: 18.2, watchOS: 11.2, visionOS: 2.2),
         layersets: [.monochrome, .hierarchical]

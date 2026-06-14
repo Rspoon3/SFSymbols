@@ -1,5 +1,17 @@
 # Change Log
 
+## Version 8.0 (6-14-2026)
+### Additions
+- Added 265 new symbols for iOS 27.0 (SF Symbols 8) and equivalent versions on other platforms
+- Refreshed symbol metadata (layersets, localizations, search terms, restrictions) to match SF Symbols 8.0 (123)
+- Re-synced the Draw category against SF Symbols 8.0 (773 symbols, including 15 new iOS 27 draw symbols); removed ~1,259 stale Draw tags from the previous capture that the current app no longer classifies as Draw
+
+### Changed
+- Versioning now tracks the SF Symbols app release (this is SF Symbols 8.0), aligning the package version with the catalog it mirrors
+- Update pipeline now sources symbol names and availability from the SF Symbols app's `name_availability.plist` (unioned on top of the system CoreGlyphs bundle), so symbols for an unreleased OS present only in a beta SF Symbols app are captured. Previously the symbol list came solely from CoreGlyphs, which is tied to the installed OS and lagged behind beta apps.
+- Category mappings now fall back to the SF Symbols app for symbols the system CoreGlyphs bundle doesn't yet know about
+
+-----
 ## Version 3.2 (TBD)
 ### Additions
 - Added automated wrapper generation scripts (ParseSwiftUIDoc.swift and ParseUIKitDoc.swift)

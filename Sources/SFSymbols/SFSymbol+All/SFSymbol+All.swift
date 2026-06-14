@@ -101,6 +101,10 @@ public extension SFSymbol {
             symbols.append(contentsOf: SFSymbol.allSymbols26P1)
         }
 
+        if #available(iOS 27.0, macOS 27.0, tvOS 27.0, watchOS 27.0, visionOS 27.0, *) {
+            symbols.append(contentsOf: SFSymbol.allSymbols27)
+        }
+
         return symbols
     }
 }

@@ -52,7 +52,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let appleTerminalCircle = SFSymbol(
         title: "apple.terminal.circle",
-        categories: [.variable, .draw],
+        categories: [.variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 17.4, macOS: 14.4, tvOS: 17.4, watchOS: 10.4, visionOS: 1.1),
         layersets: [.monochrome, .hierarchical]

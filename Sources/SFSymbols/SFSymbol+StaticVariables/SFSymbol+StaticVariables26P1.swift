@@ -24,7 +24,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let airConditionerSlash = SFSymbol(
         title: "air.conditioner.slash",
-        categories: [.automotive, .whatsNew, .draw],
+        categories: [.automotive, .whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
         layersets: [.monochrome, .hierarchical]
@@ -32,13 +32,13 @@ public extension SFSymbol {
 
     /// arrowtriangle.backward.inset.filled.trailingthird.rectangle
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Layersets: monochrome
     static let arrowtriangleBackwardInsetFilledTrailingthirdRectangle = SFSymbol(
         title: "arrowtriangle.backward.inset.filled.trailingthird.rectangle",
-        categories: [.multicolor, .whatsNew, .draw],
+        categories: [.multicolor, .whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome]
     )
 
     /// arrowtriangle.down.2
@@ -65,13 +65,13 @@ public extension SFSymbol {
 
     /// arrowtriangle.forward.inset.filled.trailingthird.rectangle
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Layersets: monochrome, hierarchical
     static let arrowtriangleForwardInsetFilledTrailingthirdRectangle = SFSymbol(
         title: "arrowtriangle.forward.inset.filled.trailingthird.rectangle",
         categories: [.multicolor, .whatsNew, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical]
     )
 
     /// arrowtriangle.up.2
@@ -240,14 +240,14 @@ public extension SFSymbol {
 
     /// inset.filled.rectangle.and.person.filled.slash
     /// - Since: iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1
-    /// - Layersets: monochrome, hierarchical
+    /// - Layersets: monochrome
     /// - Localizations: Right-to-Left
     static let insetFilledRectangleAndPersonFilledSlash = SFSymbol(
         title: "inset.filled.rectangle.and.person.filled.slash",
         categories: [.human, .whatsNew],
-        searchTerms: ["people", "screen sharing"],
+        searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
-        layersets: [.monochrome, .hierarchical],
+        layersets: [.monochrome],
         localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1))]
     )
 
@@ -302,7 +302,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let starRectangle = SFSymbol(
         title: "star.rectangle",
-        categories: [.whatsNew, .draw],
+        categories: [.whatsNew],
         searchTerms: ["favorite"],
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
         layersets: [.monochrome, .hierarchical]
