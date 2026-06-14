@@ -24,7 +24,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let airConditionerSlash = SFSymbol(
         title: "air.conditioner.slash",
-        categories: [.automotive, .whatsNew],
+        categories: [.automotive, .whatsNew, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
         layersets: [.monochrome, .hierarchical]
@@ -302,7 +302,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let starRectangle = SFSymbol(
         title: "star.rectangle",
-        categories: [.whatsNew],
+        categories: [.whatsNew, .draw],
         searchTerms: ["favorite"],
         releaseInfo: ReleaseInfo(iOS: 26.1, macOS: 26.1, tvOS: 26.1, watchOS: 26.1, visionOS: 26.1),
         layersets: [.monochrome, .hierarchical]

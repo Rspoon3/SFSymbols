@@ -264,7 +264,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirTag.
     static let airtagRadiowavesForwardFill = SFSymbol(
         title: "airtag.radiowaves.forward.fill",
-        categories: [.devices, .variable],
+        categories: [.devices, .variable, .draw],
         searchTerms: ["findable", "location"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -310,7 +310,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let alignHorizontalLeftFill = SFSymbol(
         title: "align.horizontal.left.fill",
-        categories: [.editing],
+        categories: [.editing, .draw],
         searchTerms: ["rectangle", "shape"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -332,7 +332,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let alignHorizontalRightFill = SFSymbol(
         title: "align.horizontal.right.fill",
-        categories: [.editing],
+        categories: [.editing, .draw],
         searchTerms: ["rectangle", "shape"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -354,7 +354,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let alignVerticalBottomFill = SFSymbol(
         title: "align.vertical.bottom.fill",
-        categories: [.editing],
+        categories: [.editing, .draw],
         searchTerms: ["rectangle", "shape"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -398,7 +398,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let alignVerticalTopFill = SFSymbol(
         title: "align.vertical.top.fill",
-        categories: [.editing],
+        categories: [.editing, .draw],
         searchTerms: ["rectangle", "shape"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -431,7 +431,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let antennaRadiowavesLeftAndRightCircle = SFSymbol(
         title: "antenna.radiowaves.left.and.right.circle",
-        categories: [.connectivity, .multicolor, .objectsAndTools, .variable],
+        categories: [.connectivity, .multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["cellular", "lte"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -442,7 +442,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let antennaRadiowavesLeftAndRightCircleFill = SFSymbol(
         title: "antenna.radiowaves.left.and.right.circle.fill",
-        categories: [.connectivity, .multicolor, .objectsAndTools, .variable],
+        categories: [.connectivity, .multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["cellular", "lte"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -453,7 +453,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let antennaRadiowavesLeftAndRightSlash = SFSymbol(
         title: "antenna.radiowaves.left.and.right.slash",
-        categories: [.connectivity, .multicolor, .objectsAndTools],
+        categories: [.connectivity, .multicolor, .objectsAndTools, .draw],
         searchTerms: ["cellular", "lte", "remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -662,7 +662,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let arrowBackwardToLineCircle = SFSymbol(
         title: "arrow.backward.to.line.circle",
-        categories: [.arrows, .variable],
+        categories: [.arrows, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -684,7 +684,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let arrowDownToLineCircle = SFSymbol(
         title: "arrow.down.to.line.circle",
-        categories: [.arrows, .variable],
+        categories: [.arrows, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -728,7 +728,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let arrowForwardToLineCircle = SFSymbol(
         title: "arrow.forward.to.line.circle",
-        categories: [.arrows, .variable],
+        categories: [.arrows, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -750,7 +750,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let arrowLeftToLineCircle = SFSymbol(
         title: "arrow.left.to.line.circle",
-        categories: [.arrows, .variable],
+        categories: [.arrows, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -783,7 +783,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let arrowRightToLineCircle = SFSymbol(
         title: "arrow.right.to.line.circle",
-        categories: [.arrows, .variable],
+        categories: [.arrows, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -829,7 +829,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let arrowUpToLineCircle = SFSymbol(
         title: "arrow.up.to.line.circle",
-        categories: [.arrows, .variable],
+        categories: [.arrows, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -862,7 +862,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let arrowtriangleLeftAndLineVerticalAndArrowtriangleRightFill = SFSymbol(
         title: "arrowtriangle.left.and.line.vertical.and.arrowtriangle.right.fill",
-        categories: [.arrows],
+        categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome]
@@ -873,7 +873,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome
     static let arrowtriangleRightAndLineVerticalAndArrowtriangleLeftFill = SFSymbol(
         title: "arrowtriangle.right.and.line.vertical.and.arrowtriangle.left.fill",
-        categories: [.arrows],
+        categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome]
@@ -895,7 +895,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let backwardCircle = SFSymbol(
         title: "backward.circle",
-        categories: [.media, .variable],
+        categories: [.media, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -1125,7 +1125,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let bedDoubleCircle = SFSymbol(
         title: "bed.double.circle",
-        categories: [.health, .home, .multicolor, .objectsAndTools, .variable],
+        categories: [.health, .home, .multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["medical", "sleep"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1173,7 +1173,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let bellBadgeCircle = SFSymbol(
         title: "bell.badge.circle",
-        categories: [.multicolor, .objectsAndTools, .variable],
+        categories: [.multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1195,7 +1195,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let bellSquare = SFSymbol(
         title: "bell.square",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: ["notify"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1239,7 +1239,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let boltCarCircle = SFSymbol(
         title: "bolt.car.circle",
-        categories: [.automotive, .devices, .multicolor, .transportation, .variable],
+        categories: [.automotive, .devices, .multicolor, .transportation, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1283,7 +1283,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let boltSquare = SFSymbol(
         title: "bolt.square",
-        categories: [.cameraAndPhotos, .multicolor, .nature],
+        categories: [.cameraAndPhotos, .multicolor, .nature, .draw],
         searchTerms: ["camera", "energy", "power"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1305,7 +1305,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let bookClosedCircle = SFSymbol(
         title: "book.closed.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -1327,7 +1327,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let bookmarkSquare = SFSymbol(
         title: "bookmark.square",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1349,7 +1349,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let booksVerticalCircle = SFSymbol(
         title: "books.vertical.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -1393,7 +1393,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let briefcaseCircle = SFSymbol(
         title: "briefcase.circle",
-        categories: [.multicolor, .objectsAndTools, .variable],
+        categories: [.multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1437,7 +1437,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let bubbleLeftCircle = SFSymbol(
         title: "bubble.left.circle",
-        categories: [.communication, .variable],
+        categories: [.communication, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -1459,7 +1459,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let bubbleRightCircle = SFSymbol(
         title: "bubble.right.circle",
-        categories: [.communication, .variable],
+        categories: [.communication, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -1760,7 +1760,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let chartLineUptrendXyaxisCircle = SFSymbol(
         title: "chart.line.uptrend.xyaxis.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -1820,7 +1820,7 @@ public extension SFSymbol {
     /// - Localizations: Right-to-Left
     static let checkmarkBubble = SFSymbol(
         title: "checkmark.bubble",
-        categories: [.communication],
+        categories: [.communication, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -1833,7 +1833,7 @@ public extension SFSymbol {
     /// - Localizations: Right-to-Left
     static let checkmarkBubbleFill = SFSymbol(
         title: "checkmark.bubble.fill",
-        categories: [.communication],
+        categories: [.communication, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -1856,7 +1856,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let checkmarkDiamond = SFSymbol(
         title: "checkmark.diamond",
-        categories: [.multicolor, .privacyAndSecurity],
+        categories: [.multicolor, .privacyAndSecurity, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1867,7 +1867,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let checkmarkDiamondFill = SFSymbol(
         title: "checkmark.diamond.fill",
-        categories: [.multicolor, .privacyAndSecurity],
+        categories: [.multicolor, .privacyAndSecurity, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -1992,7 +1992,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let circleGrid3x3Circle = SFSymbol(
         title: "circle.grid.3x3.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2069,7 +2069,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let circleHexagongridCircle = SFSymbol(
         title: "circle.hexagongrid.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2163,7 +2163,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let circleSlash = SFSymbol(
         title: "circle.slash",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2174,7 +2174,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let circleSlashFill = SFSymbol(
         title: "circle.slash.fill",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2253,7 +2253,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let clockCircle = SFSymbol(
         title: "clock.circle",
-        categories: [.objectsAndTools, .time, .variable],
+        categories: [.objectsAndTools, .time, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2455,7 +2455,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let diamondCircle = SFSymbol(
         title: "diamond.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2565,7 +2565,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Digital Crown.
     static let digitalcrownArrowClockwiseFill = SFSymbol(
         title: "digitalcrown.arrow.clockwise.fill",
-        categories: [.accessibility, .devices],
+        categories: [.accessibility, .devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -2591,7 +2591,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Digital Crown.
     static let digitalcrownArrowCounterclockwiseFill = SFSymbol(
         title: "digitalcrown.arrow.counterclockwise.fill",
-        categories: [.accessibility, .devices],
+        categories: [.accessibility, .devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -2617,7 +2617,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Digital Crown.
     static let digitalcrownHorizontalArrowClockwiseFill = SFSymbol(
         title: "digitalcrown.horizontal.arrow.clockwise.fill",
-        categories: [.devices],
+        categories: [.devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -2643,7 +2643,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Digital Crown.
     static let digitalcrownHorizontalArrowCounterclockwiseFill = SFSymbol(
         title: "digitalcrown.horizontal.arrow.counterclockwise.fill",
-        categories: [.devices],
+        categories: [.devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -2669,7 +2669,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Digital Crown.
     static let digitalcrownHorizontalPressFill = SFSymbol(
         title: "digitalcrown.horizontal.press.fill",
-        categories: [.devices],
+        categories: [.devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -2695,7 +2695,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Digital Crown.
     static let digitalcrownPressFill = SFSymbol(
         title: "digitalcrown.press.fill",
-        categories: [.accessibility, .devices],
+        categories: [.accessibility, .devices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -2858,7 +2858,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let dropCircle = SFSymbol(
         title: "drop.circle",
-        categories: [.nature, .variable],
+        categories: [.nature, .variable, .draw],
         searchTerms: ["blood", "oil", "water"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -2981,7 +2981,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let exclamationmarkBubbleCircle = SFSymbol(
         title: "exclamationmark.bubble.circle",
-        categories: [.communication, .maps, .privacyAndSecurity, .variable],
+        categories: [.communication, .maps, .privacyAndSecurity, .variable, .draw],
         searchTerms: ["!", "warning"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3003,7 +3003,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let eyeSlashCircle = SFSymbol(
         title: "eye.slash.circle",
-        categories: [.accessibility, .human, .privacyAndSecurity, .variable],
+        categories: [.accessibility, .human, .privacyAndSecurity, .variable, .draw],
         searchTerms: ["hidden", "remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3025,7 +3025,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let eyeSquare = SFSymbol(
         title: "eye.square",
-        categories: [.accessibility, .health, .human, .privacyAndSecurity],
+        categories: [.accessibility, .health, .human, .privacyAndSecurity, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3161,7 +3161,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let filmCircle = SFSymbol(
         title: "film.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3227,7 +3227,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let flagSquare = SFSymbol(
         title: "flag.square",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3249,7 +3249,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let flameCircle = SFSymbol(
         title: "flame.circle",
-        categories: [.nature, .variable],
+        categories: [.nature, .variable, .draw],
         searchTerms: ["fire"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3304,7 +3304,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let forkKnifeCircle = SFSymbol(
         title: "fork.knife.circle",
-        categories: [.multicolor, .objectsAndTools, .variable],
+        categories: [.multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["drink", "food"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3326,7 +3326,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let forwardCircle = SFSymbol(
         title: "forward.circle",
-        categories: [.media, .variable],
+        categories: [.media, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3359,7 +3359,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let fuelpumpCircle = SFSymbol(
         title: "fuelpump.circle",
-        categories: [.automotive, .maps, .objectsAndTools, .transportation, .variable],
+        categories: [.automotive, .maps, .objectsAndTools, .transportation, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3425,7 +3425,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let gearCircle = SFSymbol(
         title: "gear.circle",
-        categories: [.multicolor, .variable],
+        categories: [.multicolor, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3447,7 +3447,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let gearshapeCircle = SFSymbol(
         title: "gearshape.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3576,7 +3576,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let graduationcapCircle = SFSymbol(
         title: "graduationcap.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: ["college", "education", "hat", "school", "student"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3609,7 +3609,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let hammerCircle = SFSymbol(
         title: "hammer.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3631,7 +3631,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let handRaisedCircle = SFSymbol(
         title: "hand.raised.circle",
-        categories: [.human, .multicolor, .privacyAndSecurity, .variable],
+        categories: [.human, .multicolor, .privacyAndSecurity, .variable, .draw],
         searchTerms: ["privacy"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3653,7 +3653,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let handRaisedSquare = SFSymbol(
         title: "hand.raised.square",
-        categories: [.human, .multicolor, .privacyAndSecurity],
+        categories: [.human, .multicolor, .privacyAndSecurity, .draw],
         searchTerms: ["privacy"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3697,7 +3697,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let handThumbsdownCircle = SFSymbol(
         title: "hand.thumbsdown.circle",
-        categories: [.human, .variable],
+        categories: [.human, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3719,7 +3719,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let handThumbsupCircle = SFSymbol(
         title: "hand.thumbsup.circle",
-        categories: [.human, .variable],
+        categories: [.human, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3752,7 +3752,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let heartRectangle = SFSymbol(
         title: "heart.rectangle",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3774,7 +3774,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let heartSquare = SFSymbol(
         title: "heart.square",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3941,7 +3941,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let hourglassCircle = SFSymbol(
         title: "hourglass.circle",
-        categories: [.multicolor, .objectsAndTools, .time, .variable],
+        categories: [.multicolor, .objectsAndTools, .time, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -3985,7 +3985,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let humidityFill = SFSymbol(
         title: "humidity.fill",
-        categories: [.nature, .variable, .weather],
+        categories: [.nature, .variable, .weather, .draw],
         searchTerms: ["drop", "weather"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -3997,7 +3997,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iCloud service.
     static let icloudSquare = SFSymbol(
         title: "icloud.square",
-        categories: [.connectivity, .multicolor],
+        categories: [.connectivity, .multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
@@ -4071,7 +4071,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPhone.
     static let iphoneCircle = SFSymbol(
         title: "iphone.circle",
-        categories: [.devices, .variable],
+        categories: [.devices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -4175,7 +4175,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPhone.
     static let iphoneRadiowavesLeftAndRightCircle = SFSymbol(
         title: "iphone.radiowaves.left.and.right.circle",
-        categories: [.devices, .variable],
+        categories: [.devices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -4212,7 +4212,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPhone.
     static let iphoneSlashCircle = SFSymbol(
         title: "iphone.slash.circle",
-        categories: [.devices, .variable],
+        categories: [.devices, .variable, .draw],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -4487,7 +4487,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let leafCircle = SFSymbol(
         title: "leaf.circle",
-        categories: [.multicolor, .nature, .variable],
+        categories: [.multicolor, .nature, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -4509,7 +4509,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let lightbulbCircle = SFSymbol(
         title: "lightbulb.circle",
-        categories: [.home, .objectsAndTools, .variable],
+        categories: [.home, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -4542,7 +4542,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let line2HorizontalDecreaseCircleFill = SFSymbol(
         title: "line.2.horizontal.decrease.circle.fill",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -4564,7 +4564,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let line3HorizontalCircle = SFSymbol(
         title: "line.3.horizontal.circle",
-        categories: [.gaming, .variable],
+        categories: [.gaming, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -4575,7 +4575,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let line3HorizontalCircleFill = SFSymbol(
         title: "line.3.horizontal.circle.fill",
-        categories: [.gaming, .multicolor],
+        categories: [.gaming, .multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -4597,7 +4597,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let line3HorizontalDecreaseCircle = SFSymbol(
         title: "line.3.horizontal.decrease.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: ["filter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -4608,7 +4608,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let line3HorizontalDecreaseCircleFill = SFSymbol(
         title: "line.3.horizontal.decrease.circle.fill",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: ["filter", "mail"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -4630,7 +4630,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let listBulletCircle = SFSymbol(
         title: "list.bullet.circle",
-        categories: [.textFormatting, .variable],
+        categories: [.textFormatting, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -4652,7 +4652,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let listBulletRectangleFill = SFSymbol(
         title: "list.bullet.rectangle.fill",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -4663,7 +4663,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let listBulletRectanglePortrait = SFSymbol(
         title: "list.bullet.rectangle.portrait",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -4674,7 +4674,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let listBulletRectanglePortraitFill = SFSymbol(
         title: "list.bullet.rectangle.portrait.fill",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -4707,7 +4707,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let locationNorthCircle = SFSymbol(
         title: "location.north.circle",
-        categories: [.arrows, .maps, .multicolor, .variable],
+        categories: [.arrows, .maps, .multicolor, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -4729,7 +4729,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let locationSquare = SFSymbol(
         title: "location.square",
-        categories: [.arrows, .maps, .multicolor],
+        categories: [.arrows, .maps, .multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -5000,7 +5000,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let mapCircle = SFSymbol(
         title: "map.circle",
-        categories: [.maps, .objectsAndTools, .variable],
+        categories: [.maps, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5022,7 +5022,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let mappinSlashCircle = SFSymbol(
         title: "mappin.slash.circle",
-        categories: [.maps, .multicolor, .objectsAndTools, .variable],
+        categories: [.maps, .multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -5044,7 +5044,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let mappinSquare = SFSymbol(
         title: "mappin.square",
-        categories: [.maps, .multicolor, .objectsAndTools],
+        categories: [.maps, .multicolor, .objectsAndTools, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -5284,7 +5284,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let newspaperCircle = SFSymbol(
         title: "newspaper.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5486,7 +5486,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let parkingsignCircle = SFSymbol(
         title: "parkingsign.circle",
-        categories: [.automotive, .variable],
+        categories: [.automotive, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5519,7 +5519,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let pawprintCircle = SFSymbol(
         title: "pawprint.circle",
-        categories: [.nature, .variable],
+        categories: [.nature, .variable, .draw],
         searchTerms: ["animals", "pet friendly"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5664,7 +5664,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let person2Wave2Fill = SFSymbol(
         title: "person.2.wave.2.fill",
-        categories: [.human, .variable],
+        categories: [.human, .variable, .draw],
         searchTerms: ["people"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5897,7 +5897,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let personWave2Fill = SFSymbol(
         title: "person.wave.2.fill",
-        categories: [.human, .variable],
+        categories: [.human, .variable, .draw],
         searchTerms: ["people"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5908,7 +5908,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let personalhotspotCircle = SFSymbol(
         title: "personalhotspot.circle",
-        categories: [.connectivity, .objectsAndTools, .variable],
+        categories: [.connectivity, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5967,7 +5967,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let photoCircle = SFSymbol(
         title: "photo.circle",
-        categories: [.cameraAndPhotos, .variable],
+        categories: [.cameraAndPhotos, .variable, .draw],
         searchTerms: ["environment", "image", "mountain", "photograph", "picture", "place", "sun"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -5989,7 +5989,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let pillsCircle = SFSymbol(
         title: "pills.circle",
-        categories: [.health, .objectsAndTools, .variable],
+        categories: [.health, .objectsAndTools, .variable, .draw],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -6011,7 +6011,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let pinSquare = SFSymbol(
         title: "pin.square",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -6140,7 +6140,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let playRectangleOnRectangleCircle = SFSymbol(
         title: "play.rectangle.on.rectangle.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -6173,7 +6173,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let playSquare = SFSymbol(
         title: "play.square",
-        categories: [.media],
+        categories: [.media, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -6289,7 +6289,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let powerCircle = SFSymbol(
         title: "power.circle",
-        categories: [.keyboard, .variable],
+        categories: [.keyboard, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -6300,7 +6300,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let powerCircleFill = SFSymbol(
         title: "power.circle.fill",
-        categories: [.keyboard, .multicolor],
+        categories: [.keyboard, .multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -6968,7 +6968,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectangleOnRectangleCircle = SFSymbol(
         title: "rectangle.on.rectangle.circle",
-        categories: [.gaming, .variable],
+        categories: [.gaming, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -6990,7 +6990,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectangleOnRectangleSlashCircle = SFSymbol(
         title: "rectangle.on.rectangle.slash.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7023,7 +7023,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectangleOnRectangleSquare = SFSymbol(
         title: "rectangle.on.rectangle.square",
-        categories: [.gaming],
+        categories: [.gaming, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7326,7 +7326,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectanglePortraitSlash = SFSymbol(
         title: "rectangle.portrait.slash",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7337,7 +7337,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectanglePortraitSlashFill = SFSymbol(
         title: "rectangle.portrait.slash.fill",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7370,7 +7370,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectanglePortraitSplit2x1Slash = SFSymbol(
         title: "rectangle.portrait.split.2x1.slash",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7381,7 +7381,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectanglePortraitSplit2x1SlashFill = SFSymbol(
         title: "rectangle.portrait.split.2x1.slash.fill",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7557,7 +7557,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectangleSplit2x1Slash = SFSymbol(
         title: "rectangle.split.2x1.slash",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7568,7 +7568,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let rectangleSplit2x1SlashFill = SFSymbol(
         title: "rectangle.split.2x1.slash.fill",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7721,7 +7721,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let scissorsCircle = SFSymbol(
         title: "scissors.circle",
-        categories: [.editing, .objectsAndTools, .variable],
+        categories: [.editing, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7787,7 +7787,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let sensorTagRadiowavesForwardFill = SFSymbol(
         title: "sensor.tag.radiowaves.forward.fill",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: ["findable", "location"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7835,7 +7835,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let shieldLefthalfFilledSlash = SFSymbol(
         title: "shield.lefthalf.filled.slash",
-        categories: [.objectsAndTools, .privacyAndSecurity],
+        categories: [.objectsAndTools, .privacyAndSecurity, .draw],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7857,7 +7857,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let shippingboxCircle = SFSymbol(
         title: "shippingbox.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7879,7 +7879,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let sleepCircle = SFSymbol(
         title: "sleep.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -7962,7 +7962,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let snowflakeCircle = SFSymbol(
         title: "snowflake.circle",
-        categories: [.automotive, .nature, .variable, .weather],
+        categories: [.automotive, .nature, .variable, .weather, .draw],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8050,7 +8050,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let speakerCircle = SFSymbol(
         title: "speaker.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: ["volume"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8137,7 +8137,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let squareAndArrowUpCircle = SFSymbol(
         title: "square.and.arrow.up.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: ["export", "share", "sharrow", "upload"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8328,7 +8328,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let squareGrid3x3Square = SFSymbol(
         title: "square.grid.3x3.square",
-        categories: nil,
+        categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8422,7 +8422,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let squareTextSquareFill = SFSymbol(
         title: "square.text.square.fill",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -8479,7 +8479,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let stethoscopeCircle = SFSymbol(
         title: "stethoscope.circle",
-        categories: [.health, .objectsAndTools, .variable],
+        categories: [.health, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8571,7 +8571,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let sunMaxCircle = SFSymbol(
         title: "sun.max.circle",
-        categories: [.keyboard, .nature, .variable, .weather],
+        categories: [.keyboard, .nature, .variable, .weather, .draw],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8604,7 +8604,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let tagSquare = SFSymbol(
         title: "tag.square",
-        categories: [.objectsAndTools],
+        categories: [.objectsAndTools, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8649,7 +8649,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Teletype feature.
     static let teletypeAnswerCircle = SFSymbol(
         title: "teletype.answer.circle",
-        categories: [.accessibility, .communication, .multicolor, .variable],
+        categories: [.accessibility, .communication, .multicolor, .variable, .draw],
         searchTerms: ["phone", "rtt"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
@@ -8707,7 +8707,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let theatermasksCircle = SFSymbol(
         title: "theatermasks.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -8828,7 +8828,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let trashSlashCircle = SFSymbol(
         title: "trash.slash.circle",
-        categories: [.multicolor, .objectsAndTools, .variable],
+        categories: [.multicolor, .objectsAndTools, .variable, .draw],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -8850,7 +8850,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let trashSlashSquare = SFSymbol(
         title: "trash.slash.square",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: ["remove"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -8872,7 +8872,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let trashSquare = SFSymbol(
         title: "trash.square",
-        categories: [.multicolor, .objectsAndTools],
+        categories: [.multicolor, .objectsAndTools, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -9043,7 +9043,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s FaceTime app.
     static let videoSquare = SFSymbol(
         title: "video.square",
-        categories: [.communication, .multicolor],
+        categories: [.communication, .multicolor, .draw],
         searchTerms: ["facetime"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
@@ -9068,7 +9068,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let wakeCircle = SFSymbol(
         title: "wake.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -9162,7 +9162,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let wifiCircle = SFSymbol(
         title: "wifi.circle",
-        categories: [.connectivity, .multicolor, .variable],
+        categories: [.connectivity, .multicolor, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -9184,7 +9184,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let wifiSquare = SFSymbol(
         title: "wifi.square",
-        categories: [.connectivity, .multicolor, .variable],
+        categories: [.connectivity, .multicolor, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -9206,7 +9206,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let xmarkApp = SFSymbol(
         title: "xmark.app",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -9217,7 +9217,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let xmarkAppFill = SFSymbol(
         title: "xmark.app.fill",
-        categories: [.multicolor],
+        categories: [.multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
