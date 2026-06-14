@@ -1909,12 +1909,14 @@ public extension SFSymbol {
     /// circle.bottomhalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25D2
     static let circleBottomhalfFilled = SFSymbol(
         title: "circle.bottomhalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25D2"]
     )
 
     /// circle.dashed.inset.filled
@@ -2133,23 +2135,27 @@ public extension SFSymbol {
     /// circle.lefthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25D0
     static let circleLefthalfFilled = SFSymbol(
         title: "circle.lefthalf.filled",
         categories: [.editing],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25D0"]
     )
 
     /// circle.righthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25D1
     static let circleRighthalfFilled = SFSymbol(
         title: "circle.righthalf.filled",
         categories: [.editing],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25D1"]
     )
 
     /// circle.slash
@@ -2188,12 +2194,14 @@ public extension SFSymbol {
     /// circle.tophalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25D3
     static let circleTophalfFilled = SFSymbol(
         title: "circle.tophalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25D3"]
     )
 
     /// clock.badge.checkmark
@@ -2432,12 +2440,14 @@ public extension SFSymbol {
     /// diamond.bottomhalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B19
     static let diamondBottomhalfFilled = SFSymbol(
         title: "diamond.bottomhalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B19"]
     )
 
     /// diamond.circle
@@ -2478,34 +2488,40 @@ public extension SFSymbol {
     /// diamond.lefthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B16
     static let diamondLefthalfFilled = SFSymbol(
         title: "diamond.lefthalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B16"]
     )
 
     /// diamond.righthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B17
     static let diamondRighthalfFilled = SFSymbol(
         title: "diamond.righthalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B17"]
     )
 
     /// diamond.tophalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B18
     static let diamondTophalfFilled = SFSymbol(
         title: "diamond.tophalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B18"]
     )
 
     /// dice
@@ -5534,12 +5550,14 @@ public extension SFSymbol {
     /// peacesign
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+262E
     static let peacesign = SFSymbol(
         title: "peacesign",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["262E"]
     )
 
     /// pentagon
@@ -7905,12 +7923,14 @@ public extension SFSymbol {
     /// smallcircle.filled.circle
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2299
     static let smallcircleFilledCircle = SFSymbol(
         title: "smallcircle.filled.circle",
         categories: [.accessibility, .variable, .draw],
         searchTerms: ["dot"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2299"]
     )
 
     /// smallcircle.filled.circle.fill
@@ -7927,12 +7947,14 @@ public extension SFSymbol {
     /// snowflake
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2744
     static let snowflake = SFSymbol(
         title: "snowflake",
         categories: [.automotive, .nature, .weather, .draw],
         searchTerms: ["weather"],
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2744"]
     )
 
     /// snowflake.circle
@@ -8168,12 +8190,14 @@ public extension SFSymbol {
     /// square.bottomhalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B13
     static let squareBottomhalfFilled = SFSymbol(
         title: "square.bottomhalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B13"]
     )
 
     /// square.dashed.inset.filled
@@ -8359,23 +8383,27 @@ public extension SFSymbol {
     /// square.lefthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25E7
     static let squareLefthalfFilled = SFSymbol(
         title: "square.lefthalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25E7"]
     )
 
     /// square.righthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25E8
     static let squareRighthalfFilled = SFSymbol(
         title: "square.righthalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25E8"]
     )
 
     /// square.text.square
@@ -8403,12 +8431,14 @@ public extension SFSymbol {
     /// square.tophalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B12
     static let squareTophalfFilled = SFSymbol(
         title: "square.tophalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B12"]
     )
 
     /// star.bubble
@@ -8886,23 +8916,27 @@ public extension SFSymbol {
     /// triangle.lefthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25ED
     static let triangleLefthalfFilled = SFSymbol(
         title: "triangle.lefthalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25ED"]
     )
 
     /// triangle.righthalf.filled
     /// - Since: iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25EE
     static let triangleRighthalfFilled = SFSymbol(
         title: "triangle.righthalf.filled",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 15.0, macOS: 12.0, tvOS: 15.0, watchOS: 8.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25EE"]
     )
 
     /// triangle.tophalf.filled

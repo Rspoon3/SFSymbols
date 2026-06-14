@@ -185,6 +185,45 @@ fileprivate struct SFSymbol: Codable {
     let categories: [SFCategoryInfo]
     let restriction: String?
     let deprecatedNewName: String?
+    let unicodes: [String]?
+
+    init(
+        name: String,
+        year: String?,
+        availability: PlatformAvailability?,
+        layersets: [String],
+        localizations: [LocalizationInfo],
+        categories: [SFCategoryInfo],
+        restriction: String?,
+        deprecatedNewName: String?,
+        unicodes: [String]?
+    ) {
+        self.name = name
+        self.year = year
+        self.availability = availability
+        self.layersets = layersets
+        self.localizations = localizations
+        self.categories = categories
+        self.restriction = restriction
+        self.deprecatedNewName = deprecatedNewName
+        self.unicodes = unicodes
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+        try container.encodeIfPresent(year, forKey: .year)
+        try container.encodeIfPresent(availability, forKey: .availability)
+        try container.encode(layersets, forKey: .layersets)
+        try container.encode(localizations, forKey: .localizations)
+        try container.encode(categories, forKey: .categories)
+        try container.encodeIfPresent(restriction, forKey: .restriction)
+        try container.encodeIfPresent(deprecatedNewName, forKey: .deprecatedNewName)
+        // Only include unicodes when non-empty (mirrors restriction/localizations).
+        if let unicodes, !unicodes.isEmpty {
+            try container.encode(unicodes, forKey: .unicodes)
+        }
+    }
 }
 
 fileprivate struct SymbolsOutput: Codable {
@@ -332,6 +371,28 @@ func generateSymbolsJSON(appPath: String, workingDir: URL) throws {
             symbolRestrictions[name] = text
         }
         print("Applied font restrictions from font_restrictions.tsv (\(symbolRestrictions.count) total, \(added) new)")
+    }
+
+    // MARK: - Load Unicodes
+    //
+    // Unicode code points are decrypted from the SF Symbols font's `symp` metadata
+    // table (see DecryptFontMetadata helper). Format: "name<TAB>HEX,HEX" per line,
+    // only for symbols that have at least one code point.
+    let fontUnicodesURL = workingDir.appendingPathComponent("font_unicodes.tsv")
+    var symbolUnicodes: [String: [String]] = [:]
+    if let tsv = try? String(contentsOf: fontUnicodesURL, encoding: .utf8) {
+        for line in tsv.split(separator: "\n") {
+            let parts = line.split(separator: "\t", maxSplits: 1).map(String.init)
+            guard parts.count == 2 else { continue }
+            let name = parts[0].trimmingCharacters(in: .whitespaces)
+            let codePoints = parts[1]
+                .split(separator: ",")
+                .map { $0.trimmingCharacters(in: .whitespaces) }
+                .filter { !$0.isEmpty }
+            guard !name.isEmpty, !codePoints.isEmpty else { continue }
+            symbolUnicodes[name] = codePoints
+        }
+        print("Applied font unicodes from font_unicodes.tsv (\(symbolUnicodes.count) symbols)")
     }
 
     // MARK: - Load Aliases (Deprecated Symbol Names)
@@ -622,6 +683,9 @@ func generateSymbolsJSON(appPath: String, workingDir: URL) throws {
             symbolsWithRestrictions += 1
         }
 
+        // Look up Unicode code points
+        let unicodes = symbolUnicodes[baseName]
+
         // Check if this symbol is deprecated (has an alias pointing to a new name)
         let deprecatedNewName: String?
         if let newName = symbolAliases[baseName] {
@@ -651,7 +715,8 @@ func generateSymbolsJSON(appPath: String, workingDir: URL) throws {
             localizations: localizations,
             categories: categories,
             restriction: restriction,
-            deprecatedNewName: deprecatedNewName
+            deprecatedNewName: deprecatedNewName,
+            unicodes: unicodes
         )
 
         symbols.append(symbol)

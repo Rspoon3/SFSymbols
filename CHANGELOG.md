@@ -3,6 +3,7 @@
 ## Version 8.0 (6-14-2026)
 ### Additions
 - Added 265 new symbols for iOS 27.0 (SF Symbols 8) and equivalent versions on other platforms
+- Added a `unicodes` property to `SFSymbol` with the symbol's Unicode code points (hex strings, e.g. `["278A", "2776"]` for `1.circle.fill`), plus a `unicodeScalars` convenience accessor. Sourced from the SF Symbols font's `symp` metadata table; 295 symbols carry code points.
 - Refreshed symbol metadata (layersets, localizations, search terms, restrictions) to match SF Symbols 8.0 (123)
 - Re-synced the Draw category against SF Symbols 8.0 (773 symbols, including 15 new iOS 27 draw symbols); removed ~1,259 stale Draw tags from the previous capture that the current app no longer classifies as Draw
 - Use-restrictions are now sourced authoritatively from the SF Symbols app's font (via the new `DecryptFontMetadata.swift` helper), so symbols for an unreleased OS get correct restrictions (e.g. 44 iOS 27 symbols such as `airpods.pro.gen3`). Previously restrictions came only from the system CoreGlyphs bundle, which lacks unreleased-OS symbols. Falls back to CoreGlyphs if decryption is unavailable.

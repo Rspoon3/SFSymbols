@@ -9785,12 +9785,14 @@ public extension SFSymbol {
     /// inset.filled.circle
     /// - Since: iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+25C9
     static let insetFilledCircle = SFSymbol(
         title: "inset.filled.circle",
         categories: [.variable, .draw],
         searchTerms: ["completed", "task"],
         releaseInfo: ReleaseInfo(iOS: 18.0, macOS: 15.0, tvOS: 18.0, watchOS: 11.0, visionOS: 2.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["25C9"]
     )
 
     /// inset.filled.circle.dashed

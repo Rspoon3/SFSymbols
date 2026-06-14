@@ -149,6 +149,7 @@ fileprivate struct JSONSymbol: Codable {
     let categories: [JSONCategoryInfo]
     let restriction: String?
     let deprecatedNewName: String?
+    let unicodes: [String]?
 }
 
 fileprivate struct SymbolsJSON: Codable {
@@ -167,6 +168,7 @@ fileprivate struct SFSymbol: Codable {
     var localizations: [LocalizationInfo]?
     var restriction: String?
     var deprecatedNewName: String?
+    var unicodes: [String]?
 
     init(
         title: String,
@@ -176,7 +178,8 @@ fileprivate struct SFSymbol: Codable {
         layersets: [String]? = nil,
         localizations: [LocalizationInfo]? = nil,
         restriction: String? = nil,
-        deprecatedNewName: String? = nil
+        deprecatedNewName: String? = nil,
+        unicodes: [String]? = nil
     ) {
         self.title = title
         self.categories = categories
@@ -186,6 +189,7 @@ fileprivate struct SFSymbol: Codable {
         self.localizations = localizations
         self.restriction = restriction
         self.deprecatedNewName = deprecatedNewName
+        self.unicodes = unicodes
     }
 
     /// Creates an SFSymbol from a JSONSymbol
@@ -198,6 +202,7 @@ fileprivate struct SFSymbol: Codable {
         self.localizations = jsonSymbol.localizations.isEmpty ? nil : jsonSymbol.localizations
         self.restriction = jsonSymbol.restriction
         self.deprecatedNewName = jsonSymbol.deprecatedNewName
+        self.unicodes = (jsonSymbol.unicodes?.isEmpty ?? true) ? nil : jsonSymbol.unicodes
         // Convert JSONCategoryInfo to SFCategory
         self.categories = jsonSymbol.categories.isEmpty ? nil : jsonSymbol.categories.map {
             SFCategory(icon: $0.icon, title: $0.title)
@@ -449,6 +454,7 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
     var localizationsOptionalString = "nil"
     var restrictionOptionalString = "nil"
     var deprecatedNewNameOptionalString = "nil"
+    var unicodesOptionalString = "nil"
 
     if var categoriesString = symbol.categories?
         .map({ ".\(convertTitleToCamelCased(string: $0.title, modifyKeywords: false))" })
@@ -489,6 +495,10 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
         deprecatedNewNameOptionalString = "\"\(deprecatedNewName)\""
     }
 
+    if let unicodes = symbol.unicodes, !unicodes.isEmpty {
+        unicodesOptionalString = "[" + unicodes.map { "\"\($0)\"" }.joined(separator: ", ") + "]"
+    }
+
     let releaseString = "iOS: \(symbol.releaseInfo.iOS), macOS: \(symbol.releaseInfo.macOS), tvOS: \(symbol.releaseInfo.tvOS), watchOS: \(symbol.releaseInfo.watchOS), visionOS: \(symbol.releaseInfo.visionOS)"
 
     // Build documentation comments
@@ -511,6 +521,12 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
         docComments += "\n    /// - Warning: \(restriction)"
     }
 
+    // Add Unicode code points comment
+    if let unicodes = symbol.unicodes, !unicodes.isEmpty {
+        let unicodeNames = unicodes.map { "U+\($0)" }.joined(separator: ", ")
+        docComments += "\n    /// - Unicode: \(unicodeNames)"
+    }
+
     // Add deprecation attribute if deprecated
     var deprecationAttribute = ""
     if let newName = symbol.deprecatedNewName {
@@ -528,6 +544,9 @@ private func convertSymbolToStaticVar(_ symbol: SFSymbol, plistDict: [String: St
     }
     if deprecatedNewNameOptionalString != "nil" {
         optionalParams += ",\n        deprecatedNewName: \(deprecatedNewNameOptionalString)"
+    }
+    if unicodesOptionalString != "nil" {
+        optionalParams += ",\n        unicodes: \(unicodesOptionalString)"
     }
 
     let staticVar = """
@@ -691,6 +710,16 @@ public func runUpdate(appPath: String, repoRoot: URL) throws {
             print("☑️  Cleaned up font_restrictions.tsv")
         } catch {
             print("⚠️  Could not delete font_restrictions.tsv: \(error)")
+        }
+    }
+
+    let fontUnicodesPath = workingDir.appendingPathComponent("font_unicodes.tsv")
+    if FileManager.default.fileExists(atPath: fontUnicodesPath.path) {
+        do {
+            try FileManager.default.removeItem(at: fontUnicodesPath)
+            print("☑️  Cleaned up font_unicodes.tsv")
+        } catch {
+            print("⚠️  Could not delete font_unicodes.tsv: \(error)")
         }
     }
 }

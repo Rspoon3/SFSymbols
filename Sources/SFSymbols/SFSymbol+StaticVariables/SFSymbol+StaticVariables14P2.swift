@@ -162,12 +162,14 @@ public extension SFSymbol {
     /// directcurrent
     /// - Since: iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2393
     static let directcurrent = SFSymbol(
         title: "directcurrent",
         categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2393"]
     )
 
     /// exclamationmark.applewatch

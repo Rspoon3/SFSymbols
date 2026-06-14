@@ -2115,12 +2115,14 @@ public extension SFSymbol {
     /// numero.sign
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2116
     static let numeroSign = SFSymbol(
         title: "numero.sign",
         categories: [.textFormatting],
         searchTerms: ["numero"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2116"]
     )
 
     /// paintbrush.slash
