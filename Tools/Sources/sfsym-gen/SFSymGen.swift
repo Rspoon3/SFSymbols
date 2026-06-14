@@ -8,7 +8,7 @@ struct SFSymGen: ParsableCommand {
         commandName: "sfsym-gen",
         abstract: "Regenerate the SFSymbols library sources from the SF Symbols app.",
         discussion: """
-        Maintainer tooling. Currently orchestrates the repo-root generation scripts; \
+        Maintainer tooling. Runs symbol generation in-process; \
         run it from the repository root (or pass --repo-root).
         """,
         version: "0.1.0",
@@ -22,16 +22,12 @@ struct RepoRoot: ParsableArguments {
     var path: String = FileManager.default.currentDirectoryPath
 
     var url: URL { URL(fileURLWithPath: path) }
-
-    func script(_ name: String) -> String {
-        url.appendingPathComponent(name).path
-    }
 }
 
 extension SFSymGen {
     struct Update: ParsableCommand {
         static let configuration = CommandConfiguration(
-            abstract: "Run the full symbol update pipeline (UpdateScript.swift)."
+            abstract: "Run the full symbol update pipeline in-process."
         )
 
         @OptionGroup var repo: RepoRoot
@@ -48,7 +44,7 @@ extension SFSymGen {
             } else {
                 throw ValidationError("No SF Symbols app found in \(SymbolsApp.candidates.joined(separator: " or ")). Pass --app.")
             }
-            try runSwiftScript(at: repo.script("UpdateScript.swift"), arguments: [appPath], workingDirectory: repo.url)
+            try runUpdate(appPath: appPath, repoRoot: repo.url)
         }
     }
 
@@ -68,8 +64,12 @@ extension SFSymGen {
         var rtf: String
 
         func run() throws {
-            let script = kind == .swiftui ? "ParseSwiftUIDoc.swift" : "ParseUIKitDoc.swift"
-            try runSwiftScript(at: repo.script(script), arguments: [rtf], workingDirectory: repo.url)
+            switch kind {
+            case .swiftui:
+                try generateSwiftUIWrappers(rtfPath: rtf, repoRoot: repo.url)
+            case .uikit:
+                try generateUIKitWrappers(rtfPath: rtf, repoRoot: repo.url)
+            }
         }
     }
 }

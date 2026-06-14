@@ -151,7 +151,7 @@ If you have any suggestions or ideas for improving the project, please feel free
 
 ## Updating The Symbols
 
-To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will automatically handle updating all relevant files in place.
+To update the SFSymbols files, follow these steps. The `sfsym-gen update` command will automatically handle updating all relevant files in place.
 
 > **Important:** Run the update script on the latest macOS version. The deprecation data comes from the system's CoreGlyphs bundle, which is updated with each OS release. Using an older macOS may result in missing or outdated deprecation warnings.
 
@@ -169,19 +169,19 @@ To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will
    - Select all symbols (Cmd+A)
    - Copy symbol names (Cmd+Shift+C)
 
-   When you run the update script, it will prompt you to press Enter to read from your clipboard.
+   When you run the update command, it will prompt you to press Enter to read from your clipboard.
 
-3. **Run the update script** with the path to your SF Symbols application:
+3. **Run the update command** with the path to your SF Symbols application:
 
     ```bash
-    swift UpdateScript.swift /Applications/SF\ Symbols\ beta.app
+    swift run --package-path Tools sfsym-gen update --app "/Applications/SF Symbols Beta.app"
     ```
 
 4. **Update the `CHANGELOG.md`** with any relevant notes about the new symbols or changes.
 
 > **Note:** The Draw category symbols are saved to `draw.txt` during the update and cleaned up automatically afterward. If you need to update the Draw category in subsequent runs, delete any existing `draw.txt` file first.
 
-> **Use-restrictions:** The update script automatically runs `DecryptFontMetadata.swift`, which reuses the SF Symbols app's own routine to decrypt the font's `symp` metadata table and extract authoritative use-restriction text (written to a temporary `font_restrictions.tsv`). This covers symbols for an unreleased OS that the system CoreGlyphs bundle doesn't yet know about. It calls a private framework symbol and is used only for local code generation — never shipped. If it ever fails (e.g. Apple renames the symbol), the script logs a warning and falls back to CoreGlyphs restrictions.
+> **Use-restrictions:** The update command automatically decrypts the SF Symbols app's font `symp` metadata table in-process, reusing the app's own routine to extract authoritative use-restriction text (written to a temporary `font_restrictions.tsv`). This covers symbols for an unreleased OS that the system CoreGlyphs bundle doesn't yet know about. It resolves a private framework symbol at runtime (via `dlopen` of the app's CoreGlyphsLib) and is used only for local code generation — never shipped. If it ever fails (e.g. Apple renames the symbol), the command logs a warning and falls back to CoreGlyphs restrictions.
 
 ## Generating SwiftUI Wrapper Extensions
 
@@ -189,9 +189,9 @@ The project includes an automated script to generate SwiftUI initializer wrapper
 
 ### How It Works
 
-The `ParseSwiftUIDoc.swift` script:
-1. Parses SwiftUI documentation exported from Xcode
-2. Extracts initializers with `systemImage` parameters
+The `sfsym-gen wrappers` subcommand:
+1. Parses SwiftUI (or UIKit) documentation exported from Xcode
+2. Extracts initializers with `systemImage` (or UIKit `image`) parameters
 3. Generates extension files with wrapped initializers that accept `SFSymbol`
 4. Preserves documentation, availability attributes, and generic constraints
 
@@ -202,9 +202,14 @@ The `ParseSwiftUIDoc.swift` script:
    - Export the interface to an RTF file
    - Save as `SwiftUIDocumenationFromXcode.rtf` in the project root
 
-2. **Run the generation script**:
+2. **Run the generation command** (from the repository root):
    ```bash
-   swift ParseSwiftUIDoc.swift SwiftUIDocumenationFromXcode.rtf
+   swift run --package-path Tools sfsym-gen wrappers swiftui --rtf SwiftUIDocumenationFromXcode.rtf
+   ```
+
+   To generate the UIKit wrappers instead, export the UIKit documentation and run:
+   ```bash
+   swift run --package-path Tools sfsym-gen wrappers uikit --rtf UIKitDocumentation.rtf
    ```
 
 3. **Verify the output**:
