@@ -303,6 +303,26 @@ if let restrictionsData = try? Data(contentsOf: restrictionsURL),
     print("Warning: Could not load symbol_restrictions.strings from CoreGlyphs.bundle")
 }
 
+// Override/augment with restrictions decrypted from the SF Symbols font's
+// `symp` metadata table (see DecryptFontMetadata helper). This is authoritative
+// and current with the app, so it covers symbols for an unreleased OS that the
+// system CoreGlyphs bundle doesn't yet know about. Format: "name<TAB>restriction"
+// per line.
+let fontRestrictionsURL = scriptDirectory.appendingPathComponent("font_restrictions.tsv")
+if let tsv = try? String(contentsOf: fontRestrictionsURL, encoding: .utf8) {
+    var added = 0
+    for line in tsv.split(separator: "\n") {
+        let parts = line.split(separator: "\t", maxSplits: 1).map(String.init)
+        guard parts.count == 2 else { continue }
+        let name = parts[0].trimmingCharacters(in: .whitespaces)
+        let text = parts[1].trimmingCharacters(in: .whitespaces)
+        guard !name.isEmpty, !text.isEmpty else { continue }
+        if symbolRestrictions[name] == nil { added += 1 }
+        symbolRestrictions[name] = text
+    }
+    print("Applied font restrictions from font_restrictions.tsv (\(symbolRestrictions.count) total, \(added) new)")
+}
+
 // MARK: - Load Aliases (Deprecated Symbol Names)
 //
 // Aliases are loaded from CoreGlyphs, which is the runtime source of truth.

@@ -3093,14 +3093,14 @@ public extension SFSymbol {
     /// ipad.landscape.and.ipod
     /// - Since: iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0
     /// - Layersets: monochrome, hierarchical
-    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPad and iPod. 
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPad and iPod.
     static let ipadLandscapeAndIpod = SFSymbol(
         title: "ipad.landscape.and.ipod",
         categories: [.devices, .whatsNew],
         searchTerms: ["applewatch", "ipad"],
         releaseInfo: ReleaseInfo(iOS: 26.0, macOS: 26.0, tvOS: 26.0, watchOS: 26.0, visionOS: 26.0),
         layersets: [.monochrome, .hierarchical],
-        restriction: "This symbol may not be modified and may only be used to refer to Apple’s iPad and iPod. "
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s iPad and iPod."
     )
 
     /// iphone.and.ipod

@@ -181,6 +181,8 @@ To update the SFSymbols files, follow these steps. The `UpdateScript.swift` will
 
 > **Note:** The Draw category symbols are saved to `draw.txt` during the update and cleaned up automatically afterward. If you need to update the Draw category in subsequent runs, delete any existing `draw.txt` file first.
 
+> **Use-restrictions:** The update script automatically runs `DecryptFontMetadata.swift`, which reuses the SF Symbols app's own routine to decrypt the font's `symp` metadata table and extract authoritative use-restriction text (written to a temporary `font_restrictions.tsv`). This covers symbols for an unreleased OS that the system CoreGlyphs bundle doesn't yet know about. It calls a private framework symbol and is used only for local code generation — never shipped. If it ever fails (e.g. Apple renames the symbol), the script logs a warning and falls back to CoreGlyphs restrictions.
+
 ## Generating SwiftUI Wrapper Extensions
 
 The project includes an automated script to generate SwiftUI initializer wrappers that accept `SFSymbol` instead of `String` for system image parameters.

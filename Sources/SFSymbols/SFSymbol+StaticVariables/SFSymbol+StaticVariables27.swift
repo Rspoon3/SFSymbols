@@ -11,155 +11,183 @@ public extension SFSymbol {
     /// airpods.pro.gen1
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1 = SFSymbol(
         title: "airpods.pro.gen1",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen1.chargingcase.wireless
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1ChargingcaseWireless = SFSymbol(
         title: "airpods.pro.gen1.chargingcase.wireless",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen1.chargingcase.wireless.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1ChargingcaseWirelessFill = SFSymbol(
         title: "airpods.pro.gen1.chargingcase.wireless.fill",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1ChargingcaseWirelessRadiowavesLeftAndRight = SFSymbol(
         title: "airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right",
         categories: [.devices, .variable, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1ChargingcaseWirelessRadiowavesLeftAndRightFill = SFSymbol(
         title: "airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right.fill",
         categories: [.devices, .variable, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen1.left
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1Left = SFSymbol(
         title: "airpods.pro.gen1.left",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen1.right
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen1Right = SFSymbol(
         title: "airpods.pro.gen1.right",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3 = SFSymbol(
         title: "airpods.pro.gen3",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3.chargingcase.wireless
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3ChargingcaseWireless = SFSymbol(
         title: "airpods.pro.gen3.chargingcase.wireless",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3.chargingcase.wireless.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3ChargingcaseWirelessFill = SFSymbol(
         title: "airpods.pro.gen3.chargingcase.wireless.fill",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3ChargingcaseWirelessRadiowavesLeftAndRight = SFSymbol(
         title: "airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right",
         categories: [.devices, .variable, .whatsNew, .draw],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3ChargingcaseWirelessRadiowavesLeftAndRightFill = SFSymbol(
         title: "airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right.fill",
         categories: [.devices, .variable, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3.left
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3Left = SFSymbol(
         title: "airpods.pro.gen3.left",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// airpods.pro.gen3.right
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3Right = SFSymbol(
         title: "airpods.pro.gen3.right",
         categories: [.devices, .whatsNew],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro."
     )
 
     /// alarm.badge.exclamationmark
@@ -275,23 +303,27 @@ public extension SFSymbol {
     /// apps.ipad.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPad.
     static let appsIpadBadgeExclamationmark = SFSymbol(
         title: "apps.ipad.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s iPad."
     )
 
     /// apps.iphone.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s iPhone.
     static let appsIphoneBadgeExclamationmark = SFSymbol(
         title: "apps.iphone.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s iPhone."
     )
 
     /// arrowtriangle.backward.inset.filled.leadingthird.rectangle
@@ -1076,96 +1108,112 @@ public extension SFSymbol {
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let hifispeakerAndHomepodBadgeCheckmark = SFSymbol(
         title: "hifispeaker.and.homepod.badge.checkmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// hifispeaker.and.homepod.badge.checkmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let hifispeakerAndHomepodBadgeCheckmarkFill = SFSymbol(
         title: "hifispeaker.and.homepod.badge.checkmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// hifispeaker.and.homepod.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let hifispeakerAndHomepodBadgeExclamationmark = SFSymbol(
         title: "hifispeaker.and.homepod.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// hifispeaker.and.homepod.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let hifispeakerAndHomepodBadgeExclamationmarkFill = SFSymbol(
         title: "hifispeaker.and.homepod.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// hifispeaker.and.homepod.mini.badge.checkmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let hifispeakerAndHomepodMiniBadgeCheckmark = SFSymbol(
         title: "hifispeaker.and.homepod.mini.badge.checkmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// hifispeaker.and.homepod.mini.badge.checkmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let hifispeakerAndHomepodMiniBadgeCheckmarkFill = SFSymbol(
         title: "hifispeaker.and.homepod.mini.badge.checkmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// hifispeaker.and.homepod.mini.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let hifispeakerAndHomepodMiniBadgeExclamationmark = SFSymbol(
         title: "hifispeaker.and.homepod.mini.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// hifispeaker.and.homepod.mini.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let hifispeakerAndHomepodMiniBadgeExclamationmarkFill = SFSymbol(
         title: "hifispeaker.and.homepod.mini.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// hifispeaker.badge.checkmark
@@ -1220,188 +1268,220 @@ public extension SFSymbol {
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let homepod2BadgeCheckmark = SFSymbol(
         title: "homepod.2.badge.checkmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// homepod.2.badge.checkmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let homepod2BadgeCheckmarkFill = SFSymbol(
         title: "homepod.2.badge.checkmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// homepod.2.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let homepod2BadgeExclamationmark = SFSymbol(
         title: "homepod.2.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// homepod.2.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let homepod2BadgeExclamationmarkFill = SFSymbol(
         title: "homepod.2.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// homepod.and.homepod.mini.badge.checkmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini.
     static let homepodAndHomepodMiniBadgeCheckmark = SFSymbol(
         title: "homepod.and.homepod.mini.badge.checkmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini."
     )
 
     /// homepod.and.homepod.mini.badge.checkmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini.
     static let homepodAndHomepodMiniBadgeCheckmarkFill = SFSymbol(
         title: "homepod.and.homepod.mini.badge.checkmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini."
     )
 
     /// homepod.and.homepod.mini.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini.
     static let homepodAndHomepodMiniBadgeExclamationmark = SFSymbol(
         title: "homepod.and.homepod.mini.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini."
     )
 
     /// homepod.and.homepod.mini.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini.
     static let homepodAndHomepodMiniBadgeExclamationmarkFill = SFSymbol(
         title: "homepod.and.homepod.mini.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod and HomePod mini."
     )
 
     /// homepod.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let homepodBadgeExclamationmark = SFSymbol(
         title: "homepod.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// homepod.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod.
     static let homepodBadgeExclamationmarkFill = SFSymbol(
         title: "homepod.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod."
     )
 
     /// homepod.mini.2.badge.checkmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let homepodMini2BadgeCheckmark = SFSymbol(
         title: "homepod.mini.2.badge.checkmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// homepod.mini.2.badge.checkmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Right-to-Left
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let homepodMini2BadgeCheckmarkFill = SFSymbol(
         title: "homepod.mini.2.badge.checkmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))]
+        localizations: [LocalizationInfo(code: .rtl, availability: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0))],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// homepod.mini.2.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let homepodMini2BadgeExclamationmark = SFSymbol(
         title: "homepod.mini.2.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// homepod.mini.2.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let homepodMini2BadgeExclamationmarkFill = SFSymbol(
         title: "homepod.mini.2.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// homepod.mini.badge.exclamationmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let homepodMiniBadgeExclamationmark = SFSymbol(
         title: "homepod.mini.badge.exclamationmark",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// homepod.mini.badge.exclamationmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s HomePod mini.
     static let homepodMiniBadgeExclamationmarkFill = SFSymbol(
         title: "homepod.mini.badge.exclamationmark.fill",
         categories: [.devices, .multicolor, .whatsNew],
         searchTerms: ["audio", "sound", "speaker"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s HomePod mini."
     )
 
     /// hryvniasign.building.classical
@@ -1811,23 +1891,27 @@ public extension SFSymbol {
     /// macpro.gen3.badge.checkmark
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Mac Pro.
     static let macproGen3BadgeCheckmark = SFSymbol(
         title: "macpro.gen3.badge.checkmark",
         categories: [.devices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s Mac Pro."
     )
 
     /// macpro.gen3.badge.checkmark.fill
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Mac Pro.
     static let macproGen3BadgeCheckmarkFill = SFSymbol(
         title: "macpro.gen3.badge.checkmark.fill",
         categories: [.devices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s Mac Pro."
     )
 
     /// malaysianringgitsign.building.classical
@@ -2607,23 +2691,27 @@ public extension SFSymbol {
     /// siri.gen1
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Siri.
     static let siriGen1 = SFSymbol(
         title: "siri.gen1",
         categories: [.accessibility, .whatsNew],
         searchTerms: ["siri"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s Siri."
     )
 
     /// siri.gen2
     /// - Since: iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0
     /// - Layersets: monochrome
+    /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s Siri.
     static let siriGen2 = SFSymbol(
         title: "siri.gen2",
         categories: [.whatsNew],
         searchTerms: ["siri"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        restriction: "This symbol may not be modified and may only be used to refer to Apple’s Siri."
     )
 
     /// square.dashed.micro

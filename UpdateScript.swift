@@ -9,6 +9,7 @@ fileprivate let metadataSubpath = "Contents/Resources/Metadata"
 fileprivate let scriptDirectory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 fileprivate let symbolsJSONPath = scriptDirectory.appendingPathComponent("symbols.json")
 fileprivate let drawFilePath = scriptDirectory.appendingPathComponent("draw.txt")
+fileprivate let fontRestrictionsPath = scriptDirectory.appendingPathComponent("font_restrictions.tsv")
 
 fileprivate let appPath: String = {
     guard let path = CommandLine.arguments.dropFirst().first else {
@@ -90,6 +91,79 @@ fileprivate func ensureDrawCategoryExists() {
     }
 }
 
+// MARK: - Decrypt Font Restrictions
+
+/// Builds and runs DecryptFontMetadata.swift to produce `font_restrictions.tsv`
+/// from the SF Symbols app's font. This is an authoritative, app-current source
+/// of symbol use-restrictions that covers symbols for an unreleased OS which the
+/// system CoreGlyphs bundle doesn't yet know about.
+///
+/// Soft-fails: any problem (missing helper/framework, the private decryptor
+/// symbol changing, etc.) just logs a warning and leaves restrictions to be
+/// sourced from CoreGlyphs.
+fileprivate func generateFontRestrictions() {
+    let helper = scriptDirectory.appendingPathComponent("DecryptFontMetadata.swift")
+    guard FileManager.default.fileExists(atPath: helper.path) else {
+        print("⚠️  DecryptFontMetadata.swift not found — using CoreGlyphs restrictions only.")
+        return
+    }
+
+    let frameworksDir = URL(fileURLWithPath: appPath)
+        .appendingPathComponent("Contents/Frameworks/SFSymbolsShared.framework/Versions/A/Frameworks")
+    let coreGlyphsLib = frameworksDir
+        .appendingPathComponent("CoreGlyphsLib.framework/Versions/A/CoreGlyphsLib")
+
+    guard FileManager.default.fileExists(atPath: coreGlyphsLib.path) else {
+        print("⚠️  CoreGlyphsLib not found in the app bundle — using CoreGlyphs restrictions only.")
+        return
+    }
+
+    let binURL = FileManager.default.temporaryDirectory
+        .appendingPathComponent("DecryptFontMetadata-\(ProcessInfo.processInfo.processIdentifier)")
+    defer { try? FileManager.default.removeItem(at: binURL) }
+
+    print("🔓 Decrypting font metadata for use-restrictions...")
+
+    // Compile, linking the private framework so the @_silgen_name symbol resolves.
+    let compile = Process()
+    compile.executableURL = URL(fileURLWithPath: "/usr/bin/swiftc")
+    compile.arguments = [
+        helper.path,
+        "-o", binURL.path,
+        coreGlyphsLib.path,
+        "-Xlinker", "-rpath", "-Xlinker", frameworksDir.path,
+    ]
+    compile.currentDirectoryURL = scriptDirectory
+    do {
+        try compile.run()
+        compile.waitUntilExit()
+        guard compile.terminationStatus == 0 else {
+            print("⚠️  Could not build DecryptFontMetadata (the private decryptor symbol may have changed). Falling back to CoreGlyphs restrictions.")
+            return
+        }
+    } catch {
+        print("⚠️  Could not run swiftc for DecryptFontMetadata: \(error). Falling back to CoreGlyphs restrictions.")
+        return
+    }
+
+    // Run it; writes font_restrictions.tsv into the script directory.
+    let run = Process()
+    run.executableURL = binURL
+    run.arguments = [appPath]
+    run.currentDirectoryURL = scriptDirectory
+    run.standardOutput = FileHandle.standardOutput
+    run.standardError = FileHandle.standardError
+    do {
+        try run.run()
+        run.waitUntilExit()
+        if run.terminationStatus != 0 {
+            print("⚠️  DecryptFontMetadata failed. Falling back to CoreGlyphs restrictions.")
+        }
+    } catch {
+        print("⚠️  Could not run DecryptFontMetadata: \(error). Falling back to CoreGlyphs restrictions.")
+    }
+}
+
 // MARK: - Generate symbols.json
 
 fileprivate func generateSymbolsJSON() {
@@ -143,6 +217,15 @@ fileprivate func cleanupGeneratedFiles() {
         print("☑️  Cleaned up draw.txt")
     } catch {
         print("⚠️  Could not delete draw.txt: \(error)")
+    }
+
+    if FileManager.default.fileExists(atPath: fontRestrictionsPath.path) {
+        do {
+            try FileManager.default.removeItem(at: fontRestrictionsPath)
+            print("☑️  Cleaned up font_restrictions.tsv")
+        } catch {
+            print("⚠️  Could not delete font_restrictions.tsv: \(error)")
+        }
     }
 }
 
@@ -643,7 +726,10 @@ fileprivate func main() {
     // Step 1: Ensure draw.txt exists (prompt user if needed)
     ensureDrawCategoryExists()
 
-    // Step 2: Generate symbols.json with enriched data
+    // Step 2: Decrypt authoritative use-restrictions from the app's font
+    generateFontRestrictions()
+
+    // Step 3: Generate symbols.json with enriched data
     generateSymbolsJSON()
 
     let plistDecoder = PropertyListDecoder()
