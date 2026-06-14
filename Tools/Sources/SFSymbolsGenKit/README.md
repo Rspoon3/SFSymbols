@@ -30,8 +30,7 @@ The `sfsym-gen` executable is a thin ArgumentParser wrapper over these.
 ## The `update` pipeline (`runUpdate`)
 
 ```
-draw.txt  ─┐
-            ├─► [1] Draw category   (UpdatePipeline.swift)  reads/prompts <repoRoot>/draw.txt
+            ┌─► [1] Draw category   (DrawExtraction.swift)  drive app's hasDrawInfo under lldb → draw.txt
 SF Symbols ─┤
    app      ├─► [2] Decrypt          (Decrypt.swift)        font `symp` table → font_restrictions.tsv
             │
@@ -39,6 +38,12 @@ CoreGlyphs ─┼─► [3] Generate         (GenerateSymbolsJSON)  merge → sy
    bundle   │
             └─► [4] Write sources     (UpdatePipeline.swift) symbols.json → Sources/SFSymbols/**
 ```
+
+Step 1 auto-extracts the Draw category by driving the app's own `hasDrawInfo` logic
+(clone + ad-hoc re-sign the app, then call its draw-check function for every glyph
+under lldb — see `DrawExtraction.swift`). It soft-fails
+to a manual clipboard prompt. Use `sfsym-gen draw` to run just this step, or
+`--draw-func 0x…` to override the auto-detected function address after an app update.
 
 Steps 1–3 communicate through small files in a temp working directory (`draw.txt`,
 `font_restrictions.tsv`, `symbols.json`) — the same boundaries the original scripts
@@ -58,7 +63,7 @@ used, which is why the output is byte-for-byte identical to the old pipeline.
 | System CoreGlyphs bundle (`/System/Library/CoreServices/CoreGlyphs.bundle`) | **primary** | names, availability, deprecation aliases, category mappings, restrictions |
 | SF Symbols app `Metadata/` | **union/supplement** | symbols for an unreleased OS not yet in CoreGlyphs, layersets, category labels, search terms |
 | SF Symbols font `symp` table (decrypted) | **authoritative restrictions** | use-restriction text for every symbol, incl. unreleased-OS symbols CoreGlyphs lacks |
-| Manual clipboard capture | **Draw category** | the Draw category membership (not present in any metadata file) |
+| App's own `hasDrawInfo` (driven under lldb) | **Draw category** | the Draw category membership (computed at render time; not present in any metadata file) |
 
 Because CoreGlyphs is tied to the installed OS, run the pipeline on the **latest
 macOS** so deprecation/restriction data is current. The app-metadata union is what
@@ -108,8 +113,9 @@ swift run --package-path Tools sfsym-gen wrappers swiftui --rtf SwiftUIDocumenat
 swift run --package-path Tools sfsym-gen wrappers uikit   --rtf UIKitDocumentationFromXcode.rtf
 ```
 
-See the repo `README.md` ("Updating The Symbols") for the end-to-end maintainer flow,
-including the manual Draw-category capture.
+See the repo `README.md` ("Updating The Symbols") for the end-to-end maintainer flow.
+The Draw category is now extracted automatically (see `DrawExtraction.swift` and the
+`update-sf-symbols` skill).
 
 ---
 

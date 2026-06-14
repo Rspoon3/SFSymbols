@@ -13,39 +13,47 @@ commands from the repository root.
 - Install the target **SF Symbols Beta app** at `/Applications/SF Symbols Beta.app`.
 - Run on the **latest macOS** — deprecation/restriction data comes from the system
   CoreGlyphs bundle, which is tied to the OS version.
+- **Xcode command-line tools** (`lldb`, `codesign`, `otool`) — required for automatic
+  Draw-category extraction (step 1). Verify with `xcode-select -p`.
 - Confirm the version you're targeting: `defaults read "/Applications/SF Symbols Beta.app/Contents/Info.plist" CFBundleShortVersionString` (and `CFBundleVersion`).
 
-## 1. Capture the Draw category (manual — required)
-Draw membership is **not** in any metadata file; it must be copied from the app.
-Two ways:
-- **Let the pipeline prompt:** in the app, select **Draw** → click a symbol → **⌘A** →
-  **⌘⇧C**, then run step 2 — it reads the clipboard when `draw.txt` is absent.
-- **Or pre-stage `draw.txt`:** write the copied names (one per line) to `draw.txt` in the
-  repo root before step 2.
-
-If you're refreshing an existing release without Draw changes, you can reconstruct the
-prior Draw list from the committed source:
+## 1. Draw category (automatic)
+Draw membership is in **no** metadata file — the app computes it at render time from
+glyph geometry. The pipeline extracts it automatically (step 2 runs it; or run it
+standalone):
 ```bash
-python3 - <<'PY'
-import re, glob
-draw=set()
-for f in glob.glob("Sources/SFSymbols/SFSymbol+StaticVariables/*.swift"):
-    for m in re.finditer(r'title:\s*"([^"]+)"\s*,\s*\n\s*categories:\s*(\[[^\]]*\]|nil)', open(f).read()):
-        if '.draw' in [x.strip() for x in m.group(2).strip('[]').split(',')]: draw.add(m.group(1))
-open("draw.txt","w").write("\n".join(sorted(draw)))
-print("draw.txt", len(draw))
-PY
+swift run --package-path Tools sfsym-gen draw --app "/Applications/SF Symbols Beta.app" --output draw.txt
 ```
-(But brand-new draw symbols in the new release still require the manual capture above.)
+How it works (`Tools/Sources/SFSymbolsGenKit/DrawExtraction.swift`): it clones the app,
+ad-hoc re-signs the copy with `get-task-allow`, then drives the app's own
+`UnifiedSymbolAnnotation.hasDrawInfo` under lldb — calling its draw-check function for
+every glyph. Takes ~2 min with a progress bar. The throwaway app copy **freezes while
+lldb drives it — that's expected**; it's killed when done. It **soft-fails** to a manual
+clipboard prompt (select **Draw** → ⌘A → ⌘⇧C) if anything goes wrong.
+
+**If auto-extraction can't locate the draw-check function** (it moves every app build),
+find it by hand and pass `--draw-func`:
+```bash
+SF="/Applications/SF Symbols Beta.app/Contents/Frameworks/SFSymbolsShared.framework/Versions/A/SFSymbolsShared"
+APP="/Applications/SF Symbols Beta.app/Contents/MacOS/SF Symbols Beta"
+nm "$SF" | grep -i hasDrawInfo | swift demangle          # confirm the getter still exists
+otool -arch arm64 -tV "$APP" | grep -n hasDrawInfoSbvg    # its SOLE caller (the `bl`)
+# → scroll up to the nearest function prologue after a `ret`/`brk`; pass that as:
+#   sfsym-gen update --draw-func 0x…
+```
+If the `hasDrawInfo` getter is renamed/removed entirely, the method needs revisiting
+(it's the anchor for both auto-detection and the disassembly).
 
 ## 2. Run the update
 ```bash
 swift run --package-path Tools sfsym-gen update --app "/Applications/SF Symbols Beta.app"
 ```
-This decrypts use-restrictions from the font, merges CoreGlyphs ∪ app metadata
-(so symbols for an unreleased OS are included), applies Draw + restrictions, writes the
-generated sources, and cleans up temp files. The decrypt step **soft-fails** to
-CoreGlyphs-only restrictions if the private symbol is unavailable.
+This auto-extracts the Draw category (step 1, unless `draw.txt` is already staged),
+decrypts use-restrictions from the font, merges CoreGlyphs ∪ app metadata (so symbols
+for an unreleased OS are included), applies Draw + restrictions, writes the generated
+sources, and cleans up temp files. The decrypt step **soft-fails** to CoreGlyphs-only
+restrictions if the private symbol is unavailable; Draw soft-fails to a manual prompt.
+Pass `--draw-func 0x…` here too if Draw auto-detection needs an override (see step 1).
 
 ## 3. Verify
 ```bash

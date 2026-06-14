@@ -585,7 +585,7 @@ private func versionString(_ version: Double) -> String {
 /// File-based intermediate boundaries are preserved via a temp working directory:
 /// the decrypt step writes `font_restrictions.tsv` there, the generate step writes
 /// `symbols.json` there and reads `draw.txt` + `font_restrictions.tsv` from there.
-public func runUpdate(appPath: String, repoRoot: URL) throws {
+public func runUpdate(appPath: String, repoRoot: URL, drawFunc: UInt64? = nil) throws {
     let metadataSubpath = "Contents/Resources/Metadata"
     let inputURL = URL(fileURLWithPath: appPath)
         .appendingPathComponent(metadataSubpath, isDirectory: true)
@@ -606,8 +606,22 @@ public func runUpdate(appPath: String, repoRoot: URL) throws {
     let repoDrawFilePath = repoRoot.appendingPathComponent("draw.txt")
     let symbolsJSONPath = workingDir.appendingPathComponent("symbols.json")
 
-    // Step 1: Ensure draw.txt exists (prompt user if needed)
-    ensureDrawCategoryExists(drawFilePath: repoDrawFilePath)
+    // Step 1: Draw category. Draw membership lives in no metadata file — it is
+    // computed by the app from glyph geometry. We auto-extract it by driving the
+    // app's own `hasDrawInfo` logic under lldb; if that fails, fall back to the
+    // manual clipboard capture.
+    if FileManager.default.fileExists(atPath: repoDrawFilePath.path) {
+        print("📋 Found existing draw.txt")
+    } else if extractDrawCategoryAutomatically(
+        appPath: appPath,
+        drawFilePath: repoDrawFilePath,
+        drawFuncOverride: drawFunc,
+        workingDir: workingDir
+    ) {
+        // draw.txt written automatically.
+    } else {
+        ensureDrawCategoryExists(drawFilePath: repoDrawFilePath)
+    }
 
     // Make the repo-root draw.txt available to the generate step in the working dir.
     if FileManager.default.fileExists(atPath: repoDrawFilePath.path) {
