@@ -97,28 +97,34 @@ Thats what this micro library aims to do. Additionally, this library includes re
 
 ## Data Sources
 
-The library generates symbol data from two sources:
+The library generates symbol data from the system CoreGlyphs bundle and the SF Symbols
+app (its metadata **and** its font):
 
-### System CoreGlyphs Bundle (Primary)
+### System CoreGlyphs Bundle (Primary — OS-tied)
 The system's CoreGlyphs bundle is the **primary** data source, providing:
 - Symbol names and availability
 - Deprecation aliases (renamed symbols)
 - Category mappings
-- Usage restrictions
 
 ```
 /System/Library/CoreServices/CoreGlyphs.bundle/Contents/Resources/
 ```
 
-**Why CoreGlyphs?** This bundle is always current with your OS version and contains the same data that `UIImage(systemName:)` uses at runtime. Using CoreGlyphs ensures:
-- Symbol names match what the OS actually supports
-- Deprecation warnings point to symbols that exist
-- Generated code stays in sync with runtime behavior
+**Why CoreGlyphs?** It's always current with your OS version and contains the same data
+`UIImage(systemName:)` uses at runtime, so names match what the OS supports and
+deprecation warnings point to symbols that exist. Because it's **tied to the installed
+OS**, run the update on the latest macOS for current deprecation/availability data — see
+[Updating The Symbols](#updating-the-symbols).
 
-### SF Symbols App Metadata (Supplementary)
-The SF Symbols app provides supplementary data not available in CoreGlyphs:
-- Layerset availability (hierarchical, multicolor rendering support)
-- Category definitions (human-readable labels)
+### SF Symbols App (Supplementary — OS-independent)
+The app ships its own metadata and font, read directly from the app bundle. Because this
+travels with the app, it stays correct **even on an older macOS**:
+- **App `Metadata/`** — symbols for an unreleased OS not yet in CoreGlyphs, layerset
+  availability (hierarchical/multicolor), category labels, search terms.
+- **App font (`symp` table, decrypted)** — authoritative **use-restrictions** and
+  **Unicode code points**, including for new-OS symbols CoreGlyphs doesn't yet know.
+- **Draw category** — computed by driving the app's own `hasDrawInfo` logic under lldb;
+  it isn't stored in any metadata file (see [Updating The Symbols](#updating-the-symbols)).
 
 ```
 /Applications/SF Symbols.app/Contents/Resources/Metadata/
@@ -153,7 +159,7 @@ If you have any suggestions or ideas for improving the project, please feel free
 
 To update the SFSymbols files, follow these steps. The `sfsym-gen update` command will automatically handle updating all relevant files in place.
 
-> **Important:** Run the update script on the latest macOS version. The deprecation data comes from the system's CoreGlyphs bundle, which is updated with each OS release. Using an older macOS may result in missing or outdated deprecation warnings.
+> **Important:** Run the update on the latest macOS. The system **CoreGlyphs bundle** is tied to your OS and supplies deprecation aliases, base availability, and category mappings, so an older macOS may yield missing or outdated deprecation data. This is now the *only* reason to be current — use-restrictions and Unicode code points come authoritatively from the app's font, and the Draw category is computed from the app itself, all OS-independent.
 
 1. **Navigate to the `SFSymbols` directory** in your terminal:
 
@@ -161,15 +167,14 @@ To update the SFSymbols files, follow these steps. The `sfsym-gen update` comman
     cd path/to/SFSymbols
     ```
 
-2. **Prepare the Draw category** (first time only):
+2. **Draw category (automatic):**
 
-   The "Draw" category is not included in Apple's `symbol_categories.plist`, so it must be captured manually:
-   - Open the SF Symbols app
-   - Select "Draw" from the sidebar
-   - Select all symbols (Cmd+A)
-   - Copy symbol names (Cmd+Shift+C)
-
-   When you run the update command, it will prompt you to press Enter to read from your clipboard.
+   The "Draw" category isn't in any metadata file — the app computes it at render time
+   from glyph geometry. The update extracts it automatically by driving the app's own
+   `hasDrawInfo` logic under lldb (it clones and ad-hoc re-signs the app, so **Xcode
+   command-line tools** must be installed). No manual step is required; it falls back to
+   a clipboard prompt only if extraction fails. See the `update-sf-symbols` skill for
+   details and the `--draw-func` override.
 
 3. **Run the update command** with the path to your SF Symbols application:
 
@@ -179,7 +184,7 @@ To update the SFSymbols files, follow these steps. The `sfsym-gen update` comman
 
 4. **Update the `CHANGELOG.md`** with any relevant notes about the new symbols or changes.
 
-> **Note:** The Draw category symbols are saved to `draw.txt` during the update and cleaned up automatically afterward. If you need to update the Draw category in subsequent runs, delete any existing `draw.txt` file first.
+> **Note:** The Draw category is written to a temporary `draw.txt` during the update and cleaned up automatically afterward. Pre-stage your own `draw.txt` in the repo root to skip auto-extraction.
 
 > **Use-restrictions:** The update command automatically decrypts the SF Symbols app's font `symp` metadata table in-process, reusing the app's own routine to extract authoritative use-restriction text (written to a temporary `font_restrictions.tsv`). This covers symbols for an unreleased OS that the system CoreGlyphs bundle doesn't yet know about. It resolves a private framework symbol at runtime (via `dlopen` of the app's CoreGlyphsLib) and is used only for local code generation — never shipped. If it ever fails (e.g. Apple renames the symbol), the command logs a warning and falls back to CoreGlyphs restrictions.
 

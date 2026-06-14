@@ -60,14 +60,16 @@ used, which is why the output is byte-for-byte identical to the old pipeline.
 
 | Source | Role | Provides |
 |---|---|---|
-| System CoreGlyphs bundle (`/System/Library/CoreServices/CoreGlyphs.bundle`) | **primary** | names, availability, deprecation aliases, category mappings, restrictions |
-| SF Symbols app `Metadata/` | **union/supplement** | symbols for an unreleased OS not yet in CoreGlyphs, layersets, category labels, search terms |
-| SF Symbols font `symp` table (decrypted) | **authoritative restrictions** | use-restriction text for every symbol, incl. unreleased-OS symbols CoreGlyphs lacks |
-| App's own `hasDrawInfo` (driven under lldb) | **Draw category** | the Draw category membership (computed at render time; not present in any metadata file) |
+| System CoreGlyphs bundle (`/System/Library/CoreServices/CoreGlyphs.bundle`) | **primary, OS-tied** | names, availability, deprecation aliases, category mappings |
+| SF Symbols app `Metadata/` | **union/supplement, OS-independent** | symbols for an unreleased OS not yet in CoreGlyphs, layersets, category labels, search terms |
+| SF Symbols font `symp` table (decrypted) | **authoritative, OS-independent** | use-restriction text + Unicode code points for every symbol, incl. unreleased-OS symbols CoreGlyphs lacks |
+| App's own `hasDrawInfo` (driven under lldb) | **Draw category, OS-independent** | the Draw category membership (computed at render time; not present in any metadata file) |
 
-Because CoreGlyphs is tied to the installed OS, run the pipeline on the **latest
-macOS** so deprecation/restriction data is current. The app-metadata union is what
-lets a beta app contribute symbols for an OS the host doesn't run yet.
+Only the **CoreGlyphs** row is tied to the installed OS, so run the pipeline on the
+**latest macOS** to keep its deprecation/availability/category data current. The other
+three sources travel with the app, so restrictions, unicodes, and Draw are correct on
+any macOS — and the app-metadata union is what lets a beta app contribute symbols for an
+OS the host doesn't run yet.
 
 ---
 
