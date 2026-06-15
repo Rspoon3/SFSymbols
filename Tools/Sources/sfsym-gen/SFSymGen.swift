@@ -12,7 +12,7 @@ struct SFSymGen: ParsableCommand {
         run it from the repository root (or pass --repo-root).
         """,
         version: "0.1.0",
-        subcommands: [Update.self, Wrappers.self]
+        subcommands: [Update.self, Wrappers.self, Draw.self]
     )
 }
 
@@ -35,6 +35,12 @@ extension SFSymGen {
         @Option(help: "Path to the SF Symbols app (defaults to the first installed one).")
         var app: String?
 
+        @Option(
+            name: .customLong("draw-func"),
+            help: "Override the auto-detected draw-check function address (e.g. 0x1000ec6bc) if Draw auto-extraction can't locate it in a new app build."
+        )
+        var drawFunc: String?
+
         func run() throws {
             let appPath: String
             if let app {
@@ -44,7 +50,58 @@ extension SFSymGen {
             } else {
                 throw ValidationError("No SF Symbols app found in \(SymbolsApp.candidates.joined(separator: " or ")). Pass --app.")
             }
-            try runUpdate(appPath: appPath, repoRoot: repo.url)
+
+            var drawFuncAddr: UInt64?
+            if let drawFunc {
+                let hex = drawFunc.hasPrefix("0x") ? String(drawFunc.dropFirst(2)) : drawFunc
+                guard let value = UInt64(hex, radix: 16) else {
+                    throw ValidationError("--draw-func must be a hex address, e.g. 0x1000ec6bc")
+                }
+                drawFuncAddr = value
+            }
+
+            try runUpdate(appPath: appPath, repoRoot: repo.url, drawFunc: drawFuncAddr)
+        }
+    }
+
+    struct Draw: ParsableCommand {
+        static let configuration = CommandConfiguration(
+            commandName: "draw",
+            abstract: "Extract only the Draw category by driving the app's own hasDrawInfo logic, writing the symbol names to a file."
+        )
+
+        @Option(help: "Path to the SF Symbols app (defaults to the first installed one).")
+        var app: String?
+
+        @Option(name: .customLong("draw-func"), help: "Override the auto-detected draw-check function address (e.g. 0x1000ec6bc).")
+        var drawFunc: String?
+
+        @Option(help: "Output path for the extracted draw symbol names.")
+        var output: String = "draw.txt"
+
+        func run() throws {
+            let appPath: String
+            if let app {
+                appPath = app
+            } else if let located = SymbolsApp.locate() {
+                appPath = located
+            } else {
+                throw ValidationError("No SF Symbols app found in \(SymbolsApp.candidates.joined(separator: " or ")). Pass --app.")
+            }
+
+            var drawFuncAddr: UInt64?
+            if let drawFunc {
+                let hex = drawFunc.hasPrefix("0x") ? String(drawFunc.dropFirst(2)) : drawFunc
+                guard let value = UInt64(hex, radix: 16) else {
+                    throw ValidationError("--draw-func must be a hex address, e.g. 0x1000ec6bc")
+                }
+                drawFuncAddr = value
+            }
+
+            let outputURL = URL(fileURLWithPath: output)
+            guard extractDrawCategory(appPath: appPath, outputPath: outputURL, drawFunc: drawFuncAddr) else {
+                throw ValidationError("Draw extraction failed. See the messages above.")
+            }
         }
     }
 

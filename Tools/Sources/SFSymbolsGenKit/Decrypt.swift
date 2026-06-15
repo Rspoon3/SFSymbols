@@ -37,6 +37,46 @@ fileprivate func fourCC(_ s: String) -> UInt32 {
     s.utf8.reduce(0) { ($0 << 8) | UInt32($1) }
 }
 
+/// Decrypts the app font's obfuscated `symp` CSV table and returns it as a string.
+/// Returns nil on any failure (missing framework/font, decryptor symbol changed, …).
+/// Shared by the use-restriction and Draw-category extractors.
+func decryptedSympCSV(appPath: String) -> String? {
+    let coreGlyphsLib = URL(fileURLWithPath: appPath)
+        .appendingPathComponent("Contents/Frameworks/SFSymbolsShared.framework/Versions/A/Frameworks/CoreGlyphsLib.framework/Versions/A/CoreGlyphsLib")
+    guard FileManager.default.fileExists(atPath: coreGlyphsLib.path),
+          dlopen(coreGlyphsLib.path, RTLD_NOW) != nil else { return nil }
+
+    let fontURL = URL(fileURLWithPath: appPath)
+        .appendingPathComponent("Contents/Resources/Fonts/SFSymbolsFallback.otf")
+    guard FileManager.default.fileExists(atPath: fontURL.path),
+          let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as? [CTFontDescriptor],
+          let descriptor = descriptors.first else { return nil }
+    let font = CTFontCreateWithFontDescriptor(descriptor, 12.0, nil)
+
+    guard let sympData = CryptonShim.decryptObfuscatedFontTable(fourCC("symp"), font),
+          let csv = String(data: sympData, encoding: .utf8) else { return nil }
+    return csv
+}
+
+/// Maps every symbol's primary PUA scalar (uppercase hex) to the symbol names that
+/// share it. Used by the Draw-category extractor to turn draw-flagged glyph scalars
+/// back into symbol names. Returns nil if the `symp` table can't be read.
+func loadSympPUAToNames(appPath: String) -> [String: [String]]? {
+    guard let csv = decryptedSympCSV(appPath: appPath) else { return nil }
+    let rows = parseCSV(csv)
+    guard let header = rows.first,
+          let nameIdx = header.firstIndex(of: "Name"),
+          let puaIdx = header.firstIndex(of: "PUAs") else { return nil }
+    var map: [String: [String]] = [:]
+    for row in rows.dropFirst() where row.count > max(nameIdx, puaIdx) {
+        let name = row[nameIdx].trimmingCharacters(in: .whitespacesAndNewlines)
+        let pua = row[puaIdx].trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        guard !name.isEmpty, !pua.isEmpty else { continue }
+        map[pua, default: []].append(name)
+    }
+    return map.isEmpty ? nil : map
+}
+
 // MARK: - Minimal RFC-4180 CSV parser
 
 fileprivate func parseCSV(_ text: String) -> [[String]] {
