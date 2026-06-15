@@ -11,8 +11,10 @@ commands from the repository root.
 
 ## 0. Prerequisites
 - Install the target **SF Symbols Beta app** at `/Applications/SF Symbols Beta.app`.
-- Run on the **latest macOS** — deprecation/restriction data comes from the system
-  CoreGlyphs bundle, which is tied to the OS version.
+- Run on the **latest macOS** — only the system CoreGlyphs bundle is OS-tied (it
+  supplies deprecation aliases, availability, and category mappings). Restrictions,
+  Unicode points, and the Draw category come from the app itself (OS-independent), so
+  this is purely about keeping CoreGlyphs' deprecation/availability data current.
 - **Xcode command-line tools** (`lldb`, `codesign`, `otool`) — required for automatic
   Draw-category extraction (step 1). Verify with `xcode-select -p`.
 - Confirm the version you're targeting: `defaults read "/Applications/SF Symbols Beta.app/Contents/Info.plist" CFBundleShortVersionString` (and `CFBundleVersion`).
