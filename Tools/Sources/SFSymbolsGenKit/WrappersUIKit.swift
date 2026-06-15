@@ -1,10 +1,8 @@
-#!/usr/bin/env swift
-
 import Foundation
 
 // MARK: - Data Structures
 
-struct ParsedInitializer {
+fileprivate struct ParsedInitializer {
     let typeName: String
     let extensionAvailability: [String]
     let initAvailability: [String]
@@ -14,7 +12,7 @@ struct ParsedInitializer {
     let parameters: [Parameter]
 }
 
-struct Parameter {
+fileprivate struct Parameter {
     let externalName: String?
     let internalName: String
     let type: String
@@ -22,7 +20,7 @@ struct Parameter {
     let defaultValue: String?
 }
 
-struct ExtensionGroup {
+fileprivate struct ExtensionGroup {
     let typeName: String
     let availability: [String]
     let initializers: [ParsedInitializer]
@@ -30,7 +28,7 @@ struct ExtensionGroup {
 
 // MARK: - Parsing State Machine
 
-enum ParsingState {
+fileprivate enum ParsingState {
     case scanning
     case collectingAvailability
     case collectingExtension
@@ -38,7 +36,7 @@ enum ParsingState {
     case collectingSignature
 }
 
-class ParsingBuffer {
+fileprivate class ParsingBuffer {
     var extensionAvailability: [String] = []
     var initAvailability: [String] = []
     var typeName: String = ""
@@ -65,10 +63,9 @@ class ParsingBuffer {
 
 // MARK: - Main Parsing Function
 
-func parse(plainTextFile: String) -> [ParsedInitializer] {
+fileprivate func parse(plainTextFile: String) throws -> [ParsedInitializer] {
     guard let content = try? String(contentsOfFile: plainTextFile, encoding: .utf8) else {
-        print("❌ Failed to read plain text file")
-        exit(1)
+        throw GenError.missing("❌ Failed to read plain text file")
     }
 
     let lines = content.components(separatedBy: .newlines)
@@ -163,7 +160,7 @@ func parse(plainTextFile: String) -> [ParsedInitializer] {
     return results
 }
 
-func hasUIImageParameter(_ signature: String) -> Bool {
+fileprivate func hasUIImageParameter(_ signature: String) -> Bool {
     // Simple check: look for "image:" followed by UIImage type
     let pattern = "image:\\s*UIImage"
     return signature.range(of: pattern, options: .regularExpression) != nil
@@ -171,7 +168,7 @@ func hasUIImageParameter(_ signature: String) -> Bool {
 
 // MARK: - Extraction Functions
 
-func extractTypeName(from line: String) -> String {
+fileprivate func extractTypeName(from line: String) -> String {
     let cleaned = line.replacingOccurrences(of: "extension ", with: "")
         .replacingOccurrences(of: " {", with: "")
         .trimmingCharacters(in: .whitespaces)
@@ -184,7 +181,7 @@ func extractTypeName(from line: String) -> String {
     return cleaned
 }
 
-func extractAttributes(from line: String) -> [String] {
+fileprivate func extractAttributes(from line: String) -> [String] {
     var attributes: [String] = []
     let words = line.components(separatedBy: .whitespaces).filter { !$0.isEmpty }
 
@@ -199,13 +196,13 @@ func extractAttributes(from line: String) -> [String] {
     return attributes
 }
 
-func isSignatureComplete(_ signature: String) -> Bool {
+fileprivate func isSignatureComplete(_ signature: String) -> Bool {
     let openCount = signature.filter { $0 == "(" }.count
     let closeCount = signature.filter { $0 == ")" }.count
     return openCount > 0 && openCount == closeCount
 }
 
-func parseInitializer(from buffer: ParsingBuffer) -> ParsedInitializer? {
+fileprivate func parseInitializer(from buffer: ParsingBuffer) -> ParsedInitializer? {
     guard let parameters = parseParameters(from: buffer.signature) else {
         return nil
     }
@@ -223,7 +220,7 @@ func parseInitializer(from buffer: ParsingBuffer) -> ParsedInitializer? {
 
 // MARK: - Parameter Parsing
 
-func parseParameters(from signature: String) -> [Parameter]? {
+fileprivate func parseParameters(from signature: String) -> [Parameter]? {
     guard let openParen = signature.firstIndex(of: "("),
           let closeParen = signature.lastIndex(of: ")") else {
         return nil
@@ -246,7 +243,7 @@ func parseParameters(from signature: String) -> [Parameter]? {
     return parameters
 }
 
-func splitParameters(_ paramString: String) -> [String] {
+fileprivate func splitParameters(_ paramString: String) -> [String] {
     var result: [String] = []
     var current = ""
     var parenDepth = 0
@@ -281,7 +278,7 @@ func splitParameters(_ paramString: String) -> [String] {
     return result
 }
 
-func parseParameter(_ paramStr: String) -> Parameter? {
+fileprivate func parseParameter(_ paramStr: String) -> Parameter? {
     var remaining = paramStr.trimmingCharacters(in: .whitespaces)
     var attributes: [String] = []
 
@@ -335,7 +332,7 @@ func parseParameter(_ paramStr: String) -> Parameter? {
 
 // MARK: - Code Generation
 
-func transformDocs(_ docs: [String], typeName: String) -> [String] {
+fileprivate func transformDocs(_ docs: [String], typeName: String) -> [String] {
     guard !docs.isEmpty else { return docs }
 
     var transformed = docs
@@ -364,7 +361,7 @@ func transformDocs(_ docs: [String], typeName: String) -> [String] {
     return transformed
 }
 
-func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
+fileprivate func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
     var sig = "    "
 
     // Add attributes (filter out public, it goes on extension)
@@ -411,7 +408,7 @@ func generateWrapperSignature(_ parsed: ParsedInitializer) -> String {
     return sig
 }
 
-func extractGenerics(from signature: String) -> String? {
+fileprivate func extractGenerics(from signature: String) -> String? {
     guard let initRange = signature.range(of: "init") else { return nil }
     let afterInit = String(signature[initRange.upperBound...])
 
@@ -428,13 +425,13 @@ func extractGenerics(from signature: String) -> String? {
     return nil
 }
 
-func isImageParameter(_ param: Parameter) -> Bool {
+fileprivate func isImageParameter(_ param: Parameter) -> Bool {
     let isImageType = param.type.contains("UIImage")
     let hasImageName = param.externalName == "image" || param.internalName == "image"
     return isImageType && hasImageName
 }
 
-func reconstructParameter(_ param: Parameter) -> String {
+fileprivate func reconstructParameter(_ param: Parameter) -> String {
     var result = ""
 
     if !param.attributes.isEmpty {
@@ -460,14 +457,14 @@ func reconstructParameter(_ param: Parameter) -> String {
     return result
 }
 
-func reconstructParameterForCall(_ param: Parameter) -> String {
+fileprivate func reconstructParameterForCall(_ param: Parameter) -> String {
     if let external = param.externalName {
         return "\(external): \(param.internalName)"
     }
     return param.internalName
 }
 
-func generateForwardingCall(_ parsed: ParsedInitializer) -> String {
+fileprivate func generateForwardingCall(_ parsed: ParsedInitializer) -> String {
     let params = parsed.parameters.map { param -> String in
         if isImageParameter(param) {
             if let external = param.externalName {
@@ -482,7 +479,7 @@ func generateForwardingCall(_ parsed: ParsedInitializer) -> String {
     return "        self.init(\(params))"
 }
 
-func generateInitWrapper(_ parsed: ParsedInitializer, extensionAvailability: [String]) -> String {
+fileprivate func generateInitWrapper(_ parsed: ParsedInitializer, extensionAvailability: [String]) -> String {
     var output = ""
 
     // Add init-specific availability
@@ -504,7 +501,7 @@ func generateInitWrapper(_ parsed: ParsedInitializer, extensionAvailability: [St
 
 // MARK: - File Generation
 
-func groupIntoExtensions(_ initializers: [ParsedInitializer]) -> [ExtensionGroup] {
+fileprivate func groupIntoExtensions(_ initializers: [ParsedInitializer]) -> [ExtensionGroup] {
     var groups: [String: ExtensionGroup] = [:]
 
     for initializer in initializers {
@@ -530,7 +527,7 @@ func groupIntoExtensions(_ initializers: [ParsedInitializer]) -> [ExtensionGroup
     return Array(groups.values)
 }
 
-func generateFileHeader(_ typeName: String) -> String {
+fileprivate func generateFileHeader(_ typeName: String) -> String {
     return """
     //
     //  \(typeName)+Init.swift
@@ -545,7 +542,7 @@ func generateFileHeader(_ typeName: String) -> String {
     """
 }
 
-func generateExtensionBlock(_ group: ExtensionGroup) -> String {
+fileprivate func generateExtensionBlock(_ group: ExtensionGroup) -> String {
     var block = ""
 
     if !group.availability.isEmpty {
@@ -566,7 +563,7 @@ func generateExtensionBlock(_ group: ExtensionGroup) -> String {
     return block
 }
 
-func generateFiles(initializers: [ParsedInitializer], outputDir: String) {
+fileprivate func generateFiles(initializers: [ParsedInitializer], outputDir: String) {
     let byType = Dictionary(grouping: initializers) { $0.typeName }
 
     for (typeName, inits) in byType.sorted(by: { $0.key < $1.key }) {
@@ -597,7 +594,7 @@ func generateFiles(initializers: [ParsedInitializer], outputDir: String) {
 
 // MARK: - RTF Conversion
 
-func convertToPlainText(_ rtfPath: String) -> String {
+fileprivate func convertToPlainText(_ rtfPath: String) throws -> String {
     let tmpDir = NSTemporaryDirectory()
     let txtPath = tmpDir + "uikit_doc_\(UUID().uuidString).txt"
 
@@ -610,50 +607,45 @@ func convertToPlainText(_ rtfPath: String) -> String {
         process.waitUntilExit()
 
         guard process.terminationStatus == 0 else {
-            print("❌ Failed to convert RTF to text")
-            exit(1)
+            throw GenError.missing("❌ Failed to convert RTF to text")
         }
 
         return txtPath
+    } catch let error as GenError {
+        throw error
     } catch {
-        print("❌ Error running textutil: \(error)")
-        exit(1)
+        throw GenError.missing("❌ Error running textutil: \(error)")
     }
 }
 
-// MARK: - Main Entry Point
+// MARK: - Entry Point
 
-func main() {
-    guard CommandLine.arguments.count > 1 else {
-        print("Usage: ParseUIKitDoc.swift <path-to-rtf-file>")
-        print("Example: swift ParseUIKitDoc.swift UIKitDocumentation.rtf")
-        exit(1)
-    }
-
-    let rtfPath = CommandLine.arguments[1]
-
+/// Generates UIKit initializer wrapper extension files from an exported
+/// documentation RTF, writing them under `<repoRoot>/Sources/SFSymbols/Extensions`.
+public func generateUIKitWrappers(rtfPath: String, repoRoot: URL) throws {
     guard FileManager.default.fileExists(atPath: rtfPath) else {
-        print("❌ File not found: \(rtfPath)")
-        exit(1)
+        throw GenError.missing("❌ File not found: \(rtfPath)")
     }
 
     print("📄 Converting RTF to plain text...")
-    let txtPath = convertToPlainText(rtfPath)
+    let txtPath = try convertToPlainText(rtfPath)
 
     print("🔍 Parsing initializers with image parameters...")
-    let initializers = parse(plainTextFile: txtPath)
+    let initializers = try parse(plainTextFile: txtPath)
     print("   Found \(initializers.count) initializers")
 
     let byType = Dictionary(grouping: initializers) { $0.typeName }
     print("   Grouped into \(byType.count) types")
 
     print("✍️  Generating extension files...")
-    let outputDir = "./Sources/SFSymbols/Extensions"
+    let outputDir = repoRoot
+        .appendingPathComponent("Sources", isDirectory: true)
+        .appendingPathComponent("SFSymbols", isDirectory: true)
+        .appendingPathComponent("Extensions", isDirectory: true)
+        .path
     generateFiles(initializers: initializers, outputDir: outputDir)
 
     try? FileManager.default.removeItem(atPath: txtPath)
 
     print("✅ Complete! Generated \(byType.count) extension files")
 }
-
-main()

@@ -1,39 +1,11 @@
-#!/usr/bin/env swift
-
 import Foundation
 import AppKit
 
-// MARK: - Entry Config
-
-fileprivate let metadataSubpath = "Contents/Resources/Metadata"
-fileprivate let scriptDirectory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
-fileprivate let symbolsJSONPath = scriptDirectory.appendingPathComponent("symbols.json")
-fileprivate let drawFilePath = scriptDirectory.appendingPathComponent("draw.txt")
-fileprivate let fontRestrictionsPath = scriptDirectory.appendingPathComponent("font_restrictions.tsv")
-
-fileprivate let appPath: String = {
-    guard let path = CommandLine.arguments.dropFirst().first else {
-        print("Usage: UpdateScript.swift \"/Applications/SF Symbols.app\"")
-        exit(1)
-    }
-    return path
-}()
-
-fileprivate let inputURL: URL = {
-    let url = URL(fileURLWithPath: appPath)
-        .appendingPathComponent(metadataSubpath, isDirectory: true)
-
-    guard FileManager.default.fileExists(atPath: url.path) else {
-        print("❌ Could not find Metadata folder at expected path: \(url.path)")
-        exit(1)
-    }
-
-    return url
-}()
-
 // MARK: - Draw Category Input
 
-fileprivate func ensureDrawCategoryExists() {
+/// Ensures `<repoRoot>/draw.txt` exists, prompting the user to paste the Draw
+/// category from the clipboard when it is absent.
+fileprivate func ensureDrawCategoryExists(drawFilePath: URL) {
     if FileManager.default.fileExists(atPath: drawFilePath.path) {
         print("📋 Found existing draw.txt")
         return
@@ -88,144 +60,6 @@ fileprivate func ensureDrawCategoryExists() {
         print("☑️  Saved \(lines.count) draw category symbols to draw.txt")
     } catch {
         print("⚠️  Could not save draw.txt: \(error)")
-    }
-}
-
-// MARK: - Decrypt Font Restrictions
-
-/// Builds and runs DecryptFontMetadata.swift to produce `font_restrictions.tsv`
-/// from the SF Symbols app's font. This is an authoritative, app-current source
-/// of symbol use-restrictions that covers symbols for an unreleased OS which the
-/// system CoreGlyphs bundle doesn't yet know about.
-///
-/// Soft-fails: any problem (missing helper/framework, the private decryptor
-/// symbol changing, etc.) just logs a warning and leaves restrictions to be
-/// sourced from CoreGlyphs.
-fileprivate func generateFontRestrictions() {
-    let helper = scriptDirectory.appendingPathComponent("DecryptFontMetadata.swift")
-    guard FileManager.default.fileExists(atPath: helper.path) else {
-        print("⚠️  DecryptFontMetadata.swift not found — using CoreGlyphs restrictions only.")
-        return
-    }
-
-    let frameworksDir = URL(fileURLWithPath: appPath)
-        .appendingPathComponent("Contents/Frameworks/SFSymbolsShared.framework/Versions/A/Frameworks")
-    let coreGlyphsLib = frameworksDir
-        .appendingPathComponent("CoreGlyphsLib.framework/Versions/A/CoreGlyphsLib")
-
-    guard FileManager.default.fileExists(atPath: coreGlyphsLib.path) else {
-        print("⚠️  CoreGlyphsLib not found in the app bundle — using CoreGlyphs restrictions only.")
-        return
-    }
-
-    let binURL = FileManager.default.temporaryDirectory
-        .appendingPathComponent("DecryptFontMetadata-\(ProcessInfo.processInfo.processIdentifier)")
-    defer { try? FileManager.default.removeItem(at: binURL) }
-
-    print("🔓 Decrypting font metadata for use-restrictions...")
-
-    // Compile, linking the private framework so the @_silgen_name symbol resolves.
-    let compile = Process()
-    compile.executableURL = URL(fileURLWithPath: "/usr/bin/swiftc")
-    compile.arguments = [
-        helper.path,
-        "-o", binURL.path,
-        coreGlyphsLib.path,
-        "-Xlinker", "-rpath", "-Xlinker", frameworksDir.path,
-    ]
-    compile.currentDirectoryURL = scriptDirectory
-    do {
-        try compile.run()
-        compile.waitUntilExit()
-        guard compile.terminationStatus == 0 else {
-            print("⚠️  Could not build DecryptFontMetadata (the private decryptor symbol may have changed). Falling back to CoreGlyphs restrictions.")
-            return
-        }
-    } catch {
-        print("⚠️  Could not run swiftc for DecryptFontMetadata: \(error). Falling back to CoreGlyphs restrictions.")
-        return
-    }
-
-    // Run it; writes font_restrictions.tsv into the script directory.
-    let run = Process()
-    run.executableURL = binURL
-    run.arguments = [appPath]
-    run.currentDirectoryURL = scriptDirectory
-    run.standardOutput = FileHandle.standardOutput
-    run.standardError = FileHandle.standardError
-    do {
-        try run.run()
-        run.waitUntilExit()
-        if run.terminationStatus != 0 {
-            print("⚠️  DecryptFontMetadata failed. Falling back to CoreGlyphs restrictions.")
-        }
-    } catch {
-        print("⚠️  Could not run DecryptFontMetadata: \(error). Falling back to CoreGlyphs restrictions.")
-    }
-}
-
-// MARK: - Generate symbols.json
-
-fileprivate func generateSymbolsJSON() {
-    let generatorScript = scriptDirectory.appendingPathComponent("GenerateSymbolsJSON.swift")
-
-    guard FileManager.default.fileExists(atPath: generatorScript.path) else {
-        print("❌ Could not find GenerateSymbolsJSON.swift at: \(generatorScript.path)")
-        exit(1)
-    }
-
-    print("📦 Running GenerateSymbolsJSON.swift...")
-
-    let process = Process()
-    process.executableURL = URL(fileURLWithPath: "/usr/bin/swift")
-    process.arguments = [generatorScript.path, appPath]
-    process.currentDirectoryURL = scriptDirectory
-
-    // Pass through stdin/stdout/stderr so user can interact with prompts
-    process.standardInput = FileHandle.standardInput
-    process.standardOutput = FileHandle.standardOutput
-    process.standardError = FileHandle.standardError
-
-    do {
-        try process.run()
-        process.waitUntilExit()
-
-        if process.terminationStatus != 0 {
-            print("❌ GenerateSymbolsJSON.swift failed with exit code \(process.terminationStatus)")
-            exit(1)
-        }
-
-        print("☑️  symbols.json generated successfully.")
-    } catch {
-        print("❌ Failed to run GenerateSymbolsJSON.swift: \(error)")
-        exit(1)
-    }
-}
-
-// MARK: - Cleanup
-
-fileprivate func cleanupGeneratedFiles() {
-    do {
-        try FileManager.default.removeItem(at: symbolsJSONPath)
-        print("☑️  Cleaned up symbols.json")
-    } catch {
-        print("⚠️  Could not delete symbols.json: \(error)")
-    }
-
-    do {
-        try FileManager.default.removeItem(at: drawFilePath)
-        print("☑️  Cleaned up draw.txt")
-    } catch {
-        print("⚠️  Could not delete draw.txt: \(error)")
-    }
-
-    if FileManager.default.fileExists(atPath: fontRestrictionsPath.path) {
-        do {
-            try FileManager.default.removeItem(at: fontRestrictionsPath)
-            print("☑️  Cleaned up font_restrictions.tsv")
-        } catch {
-            print("⚠️  Could not delete font_restrictions.tsv: \(error)")
-        }
     }
 }
 
@@ -374,7 +208,7 @@ fileprivate struct SFSymbol: Codable {
 
 // MARK: - Outputs
 
-private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String]) throws {
+private func createSFCategoryFile(for categories: [SFCategory], plistDict: [String: String], repoRoot: URL) throws {
     let staticVars = categories.map { category in
         let camelCased = convertTitleToCamelCased(string: category.title, modifyKeywords: false)
         return "    public static let \(camelCased) = SFCategory(icon: \"\(category.icon)\", title: \"\(category.title)\")"
@@ -407,7 +241,7 @@ private func createSFCategoryFile(for categories: [SFCategory], plistDict: [Stri
         }
 
         // MARK: - Static Data
-    
+
     \(staticVars)
 
         public static var allCategories: [SFCategory] {
@@ -418,16 +252,16 @@ private func createSFCategoryFile(for categories: [SFCategory], plistDict: [Stri
     }
     """
 
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = repoRoot
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("Models", isDirectory: true)
         .appendingPathComponent("SFCategory.swift")
-    
+
     try fileContent.write(to: url, atomically: true, encoding: .utf8)
 }
 
-private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
+private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String], repoRoot: URL) throws {
     let newestSymbol = symbols.first!
     let header = """
     \(createHeader(title: "SFSymbol+StaticVariables\(fileName)"))
@@ -443,16 +277,16 @@ private func createStaticVarFile(for symbols: [SFSymbol], fileName: String, plis
     staticVars.insert(contentsOf: header, at: i)
     staticVars.append("\n}")
 
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = repoRoot
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("SFSymbol+StaticVariables", isDirectory: true)
         .appendingPathComponent("SFSymbol+StaticVariables\(fileName).swift")
-    
+
     try staticVars.write(to: url, atomically: true, encoding: .utf8)
 }
 
-private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String]) throws {
+private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, plistDict: [String: String], repoRoot: URL) throws {
     let titles = symbols.map {
         convertTitleToCamelCased(
             string: $0.title,
@@ -483,8 +317,8 @@ private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, pli
     let i = titles.index(titles.startIndex, offsetBy: 0)
     array.insert(contentsOf: header, at: i)
     array.append("\n   }\n}")
-    
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+
+    let url = repoRoot
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("SFSymbol+All", isDirectory: true)
@@ -493,9 +327,9 @@ private func createAllSymbolsFile(for symbols: [SFSymbol], fileName: String, pli
     try array.write(to: url, atomically: true, encoding: .utf8)
 }
 
-private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol]) throws {
+private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol], repoRoot: URL) throws {
     let versions = Set(symbols.map(\.releaseInfo.iOS)).sorted()
-    
+
     var file = """
     \(createHeader(title: "SFSymbol+All"))
 
@@ -528,12 +362,12 @@ private func createUnifiedAllSymbolsFile(from symbols: [SFSymbol]) throws {
     }
     """
 
-    let url = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    let url = repoRoot
         .appendingPathComponent("Sources", isDirectory: true)
         .appendingPathComponent("SFSymbols", isDirectory: true)
         .appendingPathComponent("SFSymbol+All", isDirectory: true)
         .appendingPathComponent("SFSymbol+All.swift")
-    
+
     try file.write(to: url, atomically: true, encoding: .utf8)
 }
 
@@ -559,16 +393,16 @@ private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> S
         .replacingOccurrences(of: ".", with: " ")
         .replacingOccurrences(of: "-", with: " ")
         .replacingOccurrences(of: "_", with: " ")
-    
+
     let words = cleaned
         .components(separatedBy: .whitespacesAndNewlines)
         .filter { !$0.isEmpty }
-    
+
     guard !words.isEmpty else { return "" }
-    
+
     // Always lowercase the first word
     var result = words[0].lowercased()
-    
+
     for word in words.dropFirst() {
         if word.count == 2, word.last!.isLetter, word.dropLast().allSatisfy(\.isNumber) {
             // 2d → 2D
@@ -584,22 +418,22 @@ private func convertTitleToCamelCased(string: String, modifyKeywords: Bool) -> S
             result += word.prefix(1).uppercased() + word.dropFirst()
         }
     }
-    
+
     // Prefix with _ if starts with number
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     if let first = result.first, numbers.contains(String(first)) {
         result = "_\(result)"
     }
-    
+
     // Lowercase 'X' if it appears between two numbers (e.g., 3X1 → 3x1)
     result = result.replacingOccurrences(of: #"(?<=\d)X(?=\d)"#, with: "x", options: .regularExpression)
-    
+
     // Escape Swift keywords
     let keywords = ["return", "repeat", "case"]
     if modifyKeywords && keywords.contains(result) {
         result = "`\(result)`"
     }
-    
+
     return result
 }
 
@@ -720,17 +554,55 @@ private func versionString(_ version: Double) -> String {
     return version == floor(version) ? "\(Int(version)).0" : "\(version)"
 }
 
-// MARK: - Processing
+// MARK: - Pipeline
 
-fileprivate func main() {
+/// Runs the full in-process symbol update pipeline:
+///   1. Ensure `<repoRoot>/draw.txt` exists (prompt user if needed).
+///   2. Decrypt authoritative use-restrictions from the app's font.
+///   3. Generate `symbols.json` with enriched data.
+///   4. Read `symbols.json` + plists and write generated Swift sources into
+///      `<repoRoot>/Sources/SFSymbols/...`.
+///
+/// File-based intermediate boundaries are preserved via a temp working directory:
+/// the decrypt step writes `font_restrictions.tsv` there, the generate step writes
+/// `symbols.json` there and reads `draw.txt` + `font_restrictions.tsv` from there.
+public func runUpdate(appPath: String, repoRoot: URL) throws {
+    let metadataSubpath = "Contents/Resources/Metadata"
+    let inputURL = URL(fileURLWithPath: appPath)
+        .appendingPathComponent(metadataSubpath, isDirectory: true)
+
+    guard FileManager.default.fileExists(atPath: inputURL.path) else {
+        throw GenError.missing("❌ Could not find Metadata folder at expected path: \(inputURL.path)")
+    }
+
+    // Temp working directory holds the file-based intermediates (symbols.json,
+    // font_restrictions.tsv, and a copy of draw.txt) so the data flow matches the
+    // original multi-process scripts.
+    let workingDir = FileManager.default.temporaryDirectory
+        .appendingPathComponent("sfsym-gen-\(ProcessInfo.processInfo.processIdentifier)", isDirectory: true)
+    try? FileManager.default.removeItem(at: workingDir)
+    try FileManager.default.createDirectory(at: workingDir, withIntermediateDirectories: true)
+    defer { try? FileManager.default.removeItem(at: workingDir) }
+
+    let repoDrawFilePath = repoRoot.appendingPathComponent("draw.txt")
+    let symbolsJSONPath = workingDir.appendingPathComponent("symbols.json")
+
     // Step 1: Ensure draw.txt exists (prompt user if needed)
-    ensureDrawCategoryExists()
+    ensureDrawCategoryExists(drawFilePath: repoDrawFilePath)
+
+    // Make the repo-root draw.txt available to the generate step in the working dir.
+    if FileManager.default.fileExists(atPath: repoDrawFilePath.path) {
+        let workingDrawPath = workingDir.appendingPathComponent("draw.txt")
+        try? FileManager.default.copyItem(at: repoDrawFilePath, to: workingDrawPath)
+    }
 
     // Step 2: Decrypt authoritative use-restrictions from the app's font
-    generateFontRestrictions()
+    generateFontRestrictions(appPath: appPath, workingDir: workingDir)
 
     // Step 3: Generate symbols.json with enriched data
-    generateSymbolsJSON()
+    print("📦 Generating symbols.json...")
+    try generateSymbolsJSON(appPath: appPath, workingDir: workingDir)
+    print("☑️  symbols.json generated successfully.")
 
     let plistDecoder = PropertyListDecoder()
     let jsonDecoder = JSONDecoder()
@@ -759,7 +631,7 @@ fileprivate func main() {
         }
         print("☑️  Added search terms successfully.")
 
-        try createSFCategoryFile(for: categories, plistDict: plistDict)
+        try createSFCategoryFile(for: categories, plistDict: plistDict, repoRoot: repoRoot)
         print("☑️  Created SFCategory file successfully.")
 
         // Export by iOS version
@@ -770,11 +642,11 @@ fileprivate func main() {
             var fileName = version.description.replacingOccurrences(of: ".0", with: "")
             fileName = fileName.replacingOccurrences(of: ".", with: "P")
 
-            try createStaticVarFile(for: filtered, fileName: fileName, plistDict: plistDict)
-            try createAllSymbolsFile(for: filtered, fileName: fileName, plistDict: plistDict)
+            try createStaticVarFile(for: filtered, fileName: fileName, plistDict: plistDict, repoRoot: repoRoot)
+            try createAllSymbolsFile(for: filtered, fileName: fileName, plistDict: plistDict, repoRoot: repoRoot)
         }
 
-        try createUnifiedAllSymbolsFile(from: symbols)
+        try createUnifiedAllSymbolsFile(from: symbols, repoRoot: repoRoot)
         print("☑️  Created AllSFSymbols file successfully.")
 
         // Count statistics
@@ -795,8 +667,30 @@ fileprivate func main() {
         print("❌ Error: \(error)")
     }
 
-    // Cleanup: Delete generated files (symbols.json, draw.txt)
-    cleanupGeneratedFiles()
-}
+    // Cleanup: Delete generated files (symbols.json + font_restrictions.tsv live in
+    // the temp working dir which is removed by the deferred cleanup; draw.txt lives
+    // in the repo root and is removed here, matching the original script).
+    do {
+        try FileManager.default.removeItem(at: symbolsJSONPath)
+        print("☑️  Cleaned up symbols.json")
+    } catch {
+        print("⚠️  Could not delete symbols.json: \(error)")
+    }
 
-main()
+    do {
+        try FileManager.default.removeItem(at: repoDrawFilePath)
+        print("☑️  Cleaned up draw.txt")
+    } catch {
+        print("⚠️  Could not delete draw.txt: \(error)")
+    }
+
+    let fontRestrictionsPath = workingDir.appendingPathComponent("font_restrictions.tsv")
+    if FileManager.default.fileExists(atPath: fontRestrictionsPath.path) {
+        do {
+            try FileManager.default.removeItem(at: fontRestrictionsPath)
+            print("☑️  Cleaned up font_restrictions.tsv")
+        } catch {
+            print("⚠️  Could not delete font_restrictions.tsv: \(error)")
+        }
+    }
+}

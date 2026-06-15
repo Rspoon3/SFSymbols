@@ -19,8 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SFSymbols",
-            exclude: ["../../UpdateScript.swift"]
+            name: "SFSymbols"
         ),
         .testTarget(
             name: "SFSymbolsTests",
