@@ -26,6 +26,10 @@ public struct SFSymbol: Codable, Identifiable, Equatable, Hashable, Sendable {
     /// If this symbol is deprecated, the name of the replacement symbol
     public var deprecatedNewName: String?
 
+    /// The Unicode code points this symbol maps to, as uppercase hex strings
+    /// without a "U+" prefix (e.g. `["278A", "2776"]`). nil when the symbol has none.
+    public var unicodes: [String]?
+
     public var id: String {
         title
     }
@@ -33,6 +37,11 @@ public struct SFSymbol: Codable, Identifiable, Equatable, Hashable, Sendable {
     /// Whether this symbol has been deprecated and renamed
     public var isDeprecated: Bool {
         deprecatedNewName != nil
+    }
+
+    /// The symbol's Unicode scalars, derived from `unicodes`.
+    public var unicodeScalars: [Unicode.Scalar] {
+        (unicodes ?? []).compactMap { UInt32($0, radix: 16).flatMap(Unicode.Scalar.init) }
     }
 
     // MARK: - Public Init
@@ -45,7 +54,8 @@ public struct SFSymbol: Codable, Identifiable, Equatable, Hashable, Sendable {
         layersets: [Layerset] = [.monochrome],
         localizations: [LocalizationInfo]? = nil,
         restriction: String? = nil,
-        deprecatedNewName: String? = nil
+        deprecatedNewName: String? = nil,
+        unicodes: [String]? = nil
     ){
         self.title = title
         self.releaseInfo = releaseInfo
@@ -55,5 +65,6 @@ public struct SFSymbol: Codable, Identifiable, Equatable, Hashable, Sendable {
         self.localizations = localizations
         self.restriction = restriction
         self.deprecatedNewName = deprecatedNewName
+        self.unicodes = unicodes
     }
 }

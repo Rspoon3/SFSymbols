@@ -1233,34 +1233,40 @@ public extension SFSymbol {
     /// character.duployan
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+1BC5D
     static let characterDuployan = SFSymbol(
         title: "character.duployan",
         categories: [.accessibility, .textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["1BC5D"]
     )
 
     /// character.phonetic
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+00E6
     static let characterPhonetic = SFSymbol(
         title: "character.phonetic",
         categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["00E6"]
     )
 
     /// character.sutton
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+1D80D
     static let characterSutton = SFSymbol(
         title: "character.sutton",
         categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["1D80D"]
     )
 
     /// chart.line.downtrend.xyaxis
@@ -4281,12 +4287,14 @@ public extension SFSymbol {
     /// fleuron.fill
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2766
     static let fleuronFill = SFSymbol(
         title: "fleuron.fill",
         categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2766"]
     )
 
     /// florinsign
@@ -8213,12 +8221,14 @@ public extension SFSymbol {
     /// space
     /// - Since: iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2423
     static let space = SFSymbol(
         title: "space",
         categories: [.keyboard, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 16.0, macOS: 13.0, tvOS: 16.0, watchOS: 9.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2423"]
     )
 
     /// speaker.minus

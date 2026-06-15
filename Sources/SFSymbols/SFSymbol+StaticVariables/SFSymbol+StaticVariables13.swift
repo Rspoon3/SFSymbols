@@ -12,26 +12,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24EA, U+1F10B
     static let _0Circle = SFSymbol(
         title: "0.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24EA", "1F10B"]
     )
 
     /// 0.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24FF, U+1F10C
     static let _0CircleFill = SFSymbol(
         title: "0.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24FF", "1F10C"]
     )
 
     /// 0.square
@@ -584,26 +588,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2460, U+2780
     static let _1Circle = SFSymbol(
         title: "1.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2460", "2780"]
     )
 
     /// 1.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+278A, U+2776
     static let _1CircleFill = SFSymbol(
         title: "1.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["278A", "2776"]
     )
 
     /// 1.magnifyingglass
@@ -649,26 +657,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2469, U+2789
     static let _10Circle = SFSymbol(
         title: "10.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2469", "2789"]
     )
 
     /// 10.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2793, U+277F
     static let _10CircleFill = SFSymbol(
         title: "10.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2793", "277F"]
     )
 
     /// 10.square
@@ -701,26 +713,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+246A
     static let _11Circle = SFSymbol(
         title: "11.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["246A"]
     )
 
     /// 11.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24EB
     static let _11CircleFill = SFSymbol(
         title: "11.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24EB"]
     )
 
     /// 11.square
@@ -753,26 +769,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+246B
     static let _12Circle = SFSymbol(
         title: "12.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["246B"]
     )
 
     /// 12.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24EC
     static let _12CircleFill = SFSymbol(
         title: "12.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24EC"]
     )
 
     /// 12.square
@@ -805,26 +825,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+246C
     static let _13Circle = SFSymbol(
         title: "13.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["246C"]
     )
 
     /// 13.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24ED
     static let _13CircleFill = SFSymbol(
         title: "13.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24ED"]
     )
 
     /// 13.square
@@ -857,26 +881,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+246D
     static let _14Circle = SFSymbol(
         title: "14.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["246D"]
     )
 
     /// 14.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24EE
     static let _14CircleFill = SFSymbol(
         title: "14.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24EE"]
     )
 
     /// 14.square
@@ -909,26 +937,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+246E
     static let _15Circle = SFSymbol(
         title: "15.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["246E"]
     )
 
     /// 15.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24EF
     static let _15CircleFill = SFSymbol(
         title: "15.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24EF"]
     )
 
     /// 15.square
@@ -961,26 +993,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+246F
     static let _16Circle = SFSymbol(
         title: "16.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["246F"]
     )
 
     /// 16.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24F0
     static let _16CircleFill = SFSymbol(
         title: "16.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24F0"]
     )
 
     /// 16.square
@@ -1013,26 +1049,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2470
     static let _17Circle = SFSymbol(
         title: "17.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2470"]
     )
 
     /// 17.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24F1
     static let _17CircleFill = SFSymbol(
         title: "17.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24F1"]
     )
 
     /// 17.square
@@ -1065,26 +1105,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2471
     static let _18Circle = SFSymbol(
         title: "18.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2471"]
     )
 
     /// 18.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24F2
     static let _18CircleFill = SFSymbol(
         title: "18.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24F2"]
     )
 
     /// 18.square
@@ -1117,26 +1161,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2472
     static let _19Circle = SFSymbol(
         title: "19.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2472"]
     )
 
     /// 19.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24F3
     static let _19CircleFill = SFSymbol(
         title: "19.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24F3"]
     )
 
     /// 19.square
@@ -1169,26 +1217,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2461, U+2781
     static let _2Circle = SFSymbol(
         title: "2.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2461", "2781"]
     )
 
     /// 2.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+278B, U+2777
     static let _2CircleFill = SFSymbol(
         title: "2.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["278B", "2777"]
     )
 
     /// 2.square
@@ -1221,26 +1273,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2473
     static let _20Circle = SFSymbol(
         title: "20.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2473"]
     )
 
     /// 20.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+24F4
     static let _20CircleFill = SFSymbol(
         title: "20.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["24F4"]
     )
 
     /// 20.square
@@ -1273,13 +1329,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3251
     static let _21Circle = SFSymbol(
         title: "21.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3251"]
     )
 
     /// 21.circle.fill
@@ -1325,13 +1383,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3252
     static let _22Circle = SFSymbol(
         title: "22.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3252"]
     )
 
     /// 22.circle.fill
@@ -1377,13 +1437,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3253
     static let _23Circle = SFSymbol(
         title: "23.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3253"]
     )
 
     /// 23.circle.fill
@@ -1429,13 +1491,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3254
     static let _24Circle = SFSymbol(
         title: "24.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3254"]
     )
 
     /// 24.circle.fill
@@ -1481,13 +1545,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3255
     static let _25Circle = SFSymbol(
         title: "25.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3255"]
     )
 
     /// 25.circle.fill
@@ -1533,13 +1599,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3256
     static let _26Circle = SFSymbol(
         title: "26.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3256"]
     )
 
     /// 26.circle.fill
@@ -1585,13 +1653,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3257
     static let _27Circle = SFSymbol(
         title: "27.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3257"]
     )
 
     /// 27.circle.fill
@@ -1637,13 +1707,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3258
     static let _28Circle = SFSymbol(
         title: "28.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3258"]
     )
 
     /// 28.circle.fill
@@ -1689,13 +1761,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+3259
     static let _29Circle = SFSymbol(
         title: "29.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["3259"]
     )
 
     /// 29.circle.fill
@@ -1741,26 +1815,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2462, U+2782
     static let _3Circle = SFSymbol(
         title: "3.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2462", "2782"]
     )
 
     /// 3.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+278C, U+2778
     static let _3CircleFill = SFSymbol(
         title: "3.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["278C", "2778"]
     )
 
     /// 3.square
@@ -1793,13 +1871,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+325A
     static let _30Circle = SFSymbol(
         title: "30.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["325A"]
     )
 
     /// 30.circle.fill
@@ -1845,13 +1925,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+325B
     static let _31Circle = SFSymbol(
         title: "31.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["325B"]
     )
 
     /// 31.circle.fill
@@ -1897,13 +1979,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+325C
     static let _32Circle = SFSymbol(
         title: "32.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["325C"]
     )
 
     /// 32.circle.fill
@@ -1949,13 +2033,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+325D
     static let _33Circle = SFSymbol(
         title: "33.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["325D"]
     )
 
     /// 33.circle.fill
@@ -2001,13 +2087,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+325E
     static let _34Circle = SFSymbol(
         title: "34.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["325E"]
     )
 
     /// 34.circle.fill
@@ -2053,13 +2141,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+325F
     static let _35Circle = SFSymbol(
         title: "35.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["325F"]
     )
 
     /// 35.circle.fill
@@ -2105,13 +2195,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B1
     static let _36Circle = SFSymbol(
         title: "36.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B1"]
     )
 
     /// 36.circle.fill
@@ -2157,13 +2249,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B2
     static let _37Circle = SFSymbol(
         title: "37.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B2"]
     )
 
     /// 37.circle.fill
@@ -2209,13 +2303,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B3
     static let _38Circle = SFSymbol(
         title: "38.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B3"]
     )
 
     /// 38.circle.fill
@@ -2261,13 +2357,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B4
     static let _39Circle = SFSymbol(
         title: "39.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B4"]
     )
 
     /// 39.circle.fill
@@ -2357,26 +2455,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2463, U+2783
     static let _4Circle = SFSymbol(
         title: "4.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2463", "2783"]
     )
 
     /// 4.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+278D, U+2779
     static let _4CircleFill = SFSymbol(
         title: "4.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["278D", "2779"]
     )
 
     /// 4.square
@@ -2409,13 +2511,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B5
     static let _40Circle = SFSymbol(
         title: "40.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B5"]
     )
 
     /// 40.circle.fill
@@ -2461,13 +2565,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B6
     static let _41Circle = SFSymbol(
         title: "41.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B6"]
     )
 
     /// 41.circle.fill
@@ -2513,13 +2619,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B7
     static let _42Circle = SFSymbol(
         title: "42.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B7"]
     )
 
     /// 42.circle.fill
@@ -2565,13 +2673,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B8
     static let _43Circle = SFSymbol(
         title: "43.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B8"]
     )
 
     /// 43.circle.fill
@@ -2617,13 +2727,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32B9
     static let _44Circle = SFSymbol(
         title: "44.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32B9"]
     )
 
     /// 44.circle.fill
@@ -2669,13 +2781,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32BA
     static let _45Circle = SFSymbol(
         title: "45.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32BA"]
     )
 
     /// 45.circle.fill
@@ -2721,13 +2835,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32BB
     static let _46Circle = SFSymbol(
         title: "46.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32BB"]
     )
 
     /// 46.circle.fill
@@ -2773,13 +2889,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32BC
     static let _47Circle = SFSymbol(
         title: "47.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32BC"]
     )
 
     /// 47.circle.fill
@@ -2825,13 +2943,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32BD
     static let _48Circle = SFSymbol(
         title: "48.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32BD"]
     )
 
     /// 48.circle.fill
@@ -2877,13 +2997,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32BE
     static let _49Circle = SFSymbol(
         title: "49.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32BE"]
     )
 
     /// 49.circle.fill
@@ -2929,26 +3051,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2464, U+2784
     static let _5Circle = SFSymbol(
         title: "5.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2464", "2784"]
     )
 
     /// 5.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+278E, U+277A
     static let _5CircleFill = SFSymbol(
         title: "5.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["278E", "277A"]
     )
 
     /// 5.square
@@ -2981,13 +3107,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+32BF
     static let _50Circle = SFSymbol(
         title: "50.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["32BF"]
     )
 
     /// 50.circle.fill
@@ -3077,26 +3205,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2465, U+2785
     static let _6Circle = SFSymbol(
         title: "6.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2465", "2785"]
     )
 
     /// 6.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+278F, U+277B
     static let _6CircleFill = SFSymbol(
         title: "6.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["278F", "277B"]
     )
 
     /// 6.square
@@ -3129,26 +3261,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2466, U+2786
     static let _7Circle = SFSymbol(
         title: "7.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2466", "2786"]
     )
 
     /// 7.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2790, U+277C
     static let _7CircleFill = SFSymbol(
         title: "7.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2790", "277C"]
     )
 
     /// 7.square
@@ -3181,26 +3317,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2467, U+2787
     static let _8Circle = SFSymbol(
         title: "8.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2467", "2787"]
     )
 
     /// 8.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2791, U+277D
     static let _8CircleFill = SFSymbol(
         title: "8.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2791", "277D"]
     )
 
     /// 8.square
@@ -3277,26 +3417,30 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2468, U+2788
     static let _9Circle = SFSymbol(
         title: "9.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2468", "2788"]
     )
 
     /// 9.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic, Hindi
+    /// - Unicode: U+2792, U+277E
     static let _9CircleFill = SFSymbol(
         title: "9.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 16.1, macOS: 13.0, tvOS: 16.1, watchOS: 9.1, visionOS: 1.0)), LocalizationInfo(code: .hi, availability: ReleaseInfo(iOS: 17.2, macOS: 14.2, tvOS: 17.2, watchOS: 10.2, visionOS: 1.1))],
+        unicodes: ["2792", "277E"]
     )
 
     /// 9.square
@@ -3341,56 +3485,66 @@ public extension SFSymbol {
     /// a.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24B6
     static let aCircle = SFSymbol(
         title: "a.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24B6"]
     )
 
     /// a.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F150
     static let aCircleFill = SFSymbol(
         title: "a.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F150"]
     )
 
     /// a.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F130
     static let aSquare = SFSymbol(
         title: "a.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F130"]
     )
 
     /// a.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F170
     static let aSquareFill = SFSymbol(
         title: "a.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F170"]
     )
 
     /// airplane
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2708
     static let airplane = SFSymbol(
         title: "airplane",
         categories: [.multicolor, .transportation],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2708"]
     )
 
     /// airplayaudio
@@ -3444,12 +3598,14 @@ public extension SFSymbol {
     /// alt
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2387
     static let alt = SFSymbol(
         title: "alt",
         categories: [.keyboard, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2387"]
     )
 
     /// ant
@@ -3685,12 +3841,14 @@ public extension SFSymbol {
     /// arrow.clockwise
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+21BB
     static let arrowClockwise = SFSymbol(
         title: "arrow.clockwise",
         categories: [.arrows, .draw],
         searchTerms: ["refresh"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["21BB"]
     )
 
     /// arrow.clockwise.circle
@@ -3744,12 +3902,14 @@ public extension SFSymbol {
     /// arrow.counterclockwise
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+21BA
     static let arrowCounterclockwise = SFSymbol(
         title: "arrow.counterclockwise",
         categories: [.arrows, .draw],
         searchTerms: ["revert"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["21BA"]
     )
 
     /// arrow.counterclockwise.circle
@@ -3803,12 +3963,14 @@ public extension SFSymbol {
     /// arrow.down
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2193
     static let arrowDown = SFSymbol(
         title: "arrow.down",
         categories: [.arrows, .draw],
         searchTerms: ["download", "downloads"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2193"]
     )
 
     /// arrow.down.circle
@@ -3862,12 +4024,14 @@ public extension SFSymbol {
     /// arrow.down.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2199
     static let arrowDownLeft = SFSymbol(
         title: "arrow.down.left",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2199"]
     )
 
     /// arrow.down.left.circle
@@ -3943,12 +4107,14 @@ public extension SFSymbol {
     /// arrow.down.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2198
     static let arrowDownRight = SFSymbol(
         title: "arrow.down.right",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2198"]
     )
 
     /// arrow.down.right.and.arrow.up.left
@@ -4031,12 +4197,14 @@ public extension SFSymbol {
     /// arrow.down.to.line
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2913
     static let arrowDownToLine = SFSymbol(
         title: "arrow.down.to.line",
         categories: [.arrows, .keyboard, .draw],
         searchTerms: ["end"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2913"]
     )
 
     /// arrow.down.to.line.alt
@@ -4055,23 +4223,27 @@ public extension SFSymbol {
     /// arrow.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2190
     static let arrowLeft = SFSymbol(
         title: "arrow.left",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2190"]
     )
 
     /// arrow.left.and.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2194
     static let arrowLeftAndRight = SFSymbol(
         title: "arrow.left.and.right",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2194"]
     )
 
     /// arrow.left.and.right.circle
@@ -4202,12 +4374,14 @@ public extension SFSymbol {
     /// arrow.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2192
     static let arrowRight = SFSymbol(
         title: "arrow.right",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2192"]
     )
 
     /// arrow.right.arrow.left
@@ -4359,100 +4533,118 @@ public extension SFSymbol {
     /// arrow.turn.down.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2936
     static let arrowTurnDownLeft = SFSymbol(
         title: "arrow.turn.down.left",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2936"]
     )
 
     /// arrow.turn.down.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2937
     static let arrowTurnDownRight = SFSymbol(
         title: "arrow.turn.down.right",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2937"]
     )
 
     /// arrow.turn.left.down
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+F6D6
     static let arrowTurnLeftDown = SFSymbol(
         title: "arrow.turn.left.down",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["F6D6"]
     )
 
     /// arrow.turn.left.up
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+F6D5
     static let arrowTurnLeftUp = SFSymbol(
         title: "arrow.turn.left.up",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["F6D5"]
     )
 
     /// arrow.turn.right.down
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2935
     static let arrowTurnRightDown = SFSymbol(
         title: "arrow.turn.right.down",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2935"]
     )
 
     /// arrow.turn.right.up
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2934
     static let arrowTurnRightUp = SFSymbol(
         title: "arrow.turn.right.up",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2934"]
     )
 
     /// arrow.turn.up.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+F6D7
     static let arrowTurnUpLeft = SFSymbol(
         title: "arrow.turn.up.left",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["F6D7"]
     )
 
     /// arrow.turn.up.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+F6D8
     static let arrowTurnUpRight = SFSymbol(
         title: "arrow.turn.up.right",
         categories: [.arrows, .maps, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["F6D8"]
     )
 
     /// arrow.up
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2191
     static let arrowUp = SFSymbol(
         title: "arrow.up",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2191"]
     )
 
     /// arrow.up.and.down
@@ -4513,12 +4705,14 @@ public extension SFSymbol {
     /// arrow.up.arrow.down
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+21C5
     static let arrowUpArrowDown = SFSymbol(
         title: "arrow.up.arrow.down",
         categories: [.arrows, .draw],
         searchTerms: ["sort"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["21C5"]
     )
 
     /// arrow.up.arrow.down.circle
@@ -4638,12 +4832,14 @@ public extension SFSymbol {
     /// arrow.up.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2196
     static let arrowUpLeft = SFSymbol(
         title: "arrow.up.left",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2196"]
     )
 
     /// arrow.up.left.and.arrow.down.right
@@ -4704,12 +4900,14 @@ public extension SFSymbol {
     /// arrow.up.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2197
     static let arrowUpRight = SFSymbol(
         title: "arrow.up.right",
         categories: [.arrows, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2197"]
     )
 
     /// arrow.up.right.circle
@@ -4833,12 +5031,14 @@ public extension SFSymbol {
     /// arrow.up.to.line
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2912
     static let arrowUpToLine = SFSymbol(
         title: "arrow.up.to.line",
         categories: [.arrows, .keyboard, .draw],
         searchTerms: ["home"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2912"]
     )
 
     /// arrow.up.to.line.alt
@@ -5187,12 +5387,14 @@ public extension SFSymbol {
     /// arrowtriangle.down
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25BD
     static let arrowtriangleDown = SFSymbol(
         title: "arrowtriangle.down",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25BD"]
     )
 
     /// arrowtriangle.down.circle
@@ -5220,12 +5422,14 @@ public extension SFSymbol {
     /// arrowtriangle.down.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25BC
     static let arrowtriangleDownFill = SFSymbol(
         title: "arrowtriangle.down.fill",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25BC"]
     )
 
     /// arrowtriangle.down.square
@@ -5253,12 +5457,14 @@ public extension SFSymbol {
     /// arrowtriangle.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25C1
     static let arrowtriangleLeft = SFSymbol(
         title: "arrowtriangle.left",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25C1"]
     )
 
     /// arrowtriangle.left.circle
@@ -5286,12 +5492,14 @@ public extension SFSymbol {
     /// arrowtriangle.left.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25C0
     static let arrowtriangleLeftFill = SFSymbol(
         title: "arrowtriangle.left.fill",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25C0"]
     )
 
     /// arrowtriangle.left.square
@@ -5319,12 +5527,14 @@ public extension SFSymbol {
     /// arrowtriangle.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25B7
     static let arrowtriangleRight = SFSymbol(
         title: "arrowtriangle.right",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25B7"]
     )
 
     /// arrowtriangle.right.circle
@@ -5352,12 +5562,14 @@ public extension SFSymbol {
     /// arrowtriangle.right.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25B6
     static let arrowtriangleRightFill = SFSymbol(
         title: "arrowtriangle.right.fill",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25B6"]
     )
 
     /// arrowtriangle.right.square
@@ -5385,12 +5597,14 @@ public extension SFSymbol {
     /// arrowtriangle.up
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25B3
     static let arrowtriangleUp = SFSymbol(
         title: "arrowtriangle.up",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25B3"]
     )
 
     /// arrowtriangle.up.circle
@@ -5418,12 +5632,14 @@ public extension SFSymbol {
     /// arrowtriangle.up.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25B2
     static let arrowtriangleUpFill = SFSymbol(
         title: "arrowtriangle.up.fill",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25B2"]
     )
 
     /// arrowtriangle.up.square
@@ -5451,12 +5667,14 @@ public extension SFSymbol {
     /// asterisk.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+229B
     static let asteriskCircle = SFSymbol(
         title: "asterisk.circle",
         categories: [.variable],
         searchTerms: ["*"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["229B"]
     )
 
     /// asterisk.circle.fill
@@ -5550,45 +5768,53 @@ public extension SFSymbol {
     /// b.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24B7
     static let bCircle = SFSymbol(
         title: "b.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24B7"]
     )
 
     /// b.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F151
     static let bCircleFill = SFSymbol(
         title: "b.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F151"]
     )
 
     /// b.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F131
     static let bSquare = SFSymbol(
         title: "b.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F131"]
     )
 
     /// b.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F171
     static let bSquareFill = SFSymbol(
         title: "b.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F171"]
     )
 
     /// backward
@@ -6448,45 +6674,53 @@ public extension SFSymbol {
     /// c.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24B8
     static let cCircle = SFSymbol(
         title: "c.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24B8"]
     )
 
     /// c.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F152
     static let cCircleFill = SFSymbol(
         title: "c.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F152"]
     )
 
     /// c.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F132
     static let cSquare = SFSymbol(
         title: "c.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F132"]
     )
 
     /// c.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F172
     static let cSquareFill = SFSymbol(
         title: "c.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F172"]
     )
 
     /// calendar
@@ -6650,12 +6884,14 @@ public extension SFSymbol {
     /// capslock
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+21EA
     static let capslock = SFSymbol(
         title: "capslock",
         categories: [.keyboard],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["21EA"]
     )
 
     /// capslock.fill
@@ -6925,12 +7161,14 @@ public extension SFSymbol {
     /// checkmark
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2713
     static let checkmark = SFSymbol(
         title: "checkmark",
         categories: [.multicolor, .privacyAndSecurity, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2713"]
     )
 
     /// checkmark.circle
@@ -7024,12 +7262,14 @@ public extension SFSymbol {
     /// checkmark.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+2611
     static let checkmarkSquare = SFSymbol(
         title: "checkmark.square",
         categories: [.multicolor, .privacyAndSecurity],
         searchTerms: ["checkbox"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["2611"]
     )
 
     /// checkmark.square.fill
@@ -7356,12 +7596,14 @@ public extension SFSymbol {
     /// circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+20DD
     static let circle = SFSymbol(
         title: "circle",
         categories: [.shapes, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["20DD"]
     )
 
     /// circle.bottomthird.split
@@ -7380,12 +7622,14 @@ public extension SFSymbol {
     /// circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25CF
     static let circleFill = SFSymbol(
         title: "circle.fill",
         categories: [.shapes],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25CF"]
     )
 
     /// circle.grid.3x3
@@ -7465,12 +7709,14 @@ public extension SFSymbol {
     /// clear
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+2327
     static let clear = SFSymbol(
         title: "clear",
         categories: [.keyboard, .multicolor, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["2327"]
     )
 
     /// clear.fill
@@ -7905,23 +8151,27 @@ public extension SFSymbol {
     /// command
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2318
     static let command = SFSymbol(
         title: "command",
         categories: [.keyboard, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2318"]
     )
 
     /// control
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2303
     static let control = SFSymbol(
         title: "control",
         categories: [.keyboard],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2303"]
     )
 
     /// creditcard
@@ -8076,45 +8326,53 @@ public extension SFSymbol {
     /// d.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24B9
     static let dCircle = SFSymbol(
         title: "d.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24B9"]
     )
 
     /// d.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F153
     static let dCircleFill = SFSymbol(
         title: "d.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F153"]
     )
 
     /// d.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F133
     static let dSquare = SFSymbol(
         title: "d.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F133"]
     )
 
     /// d.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F173
     static let dSquareFill = SFSymbol(
         title: "d.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F173"]
     )
 
     /// decrease.indent
@@ -8142,12 +8400,14 @@ public extension SFSymbol {
     /// delete.left
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+232B
     static let deleteLeft = SFSymbol(
         title: "delete.left",
         categories: [.keyboard, .multicolor, .draw],
         searchTerms: ["delete"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["232B"]
     )
 
     /// delete.left.fill
@@ -8164,12 +8424,14 @@ public extension SFSymbol {
     /// delete.right
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+2326
     static let deleteRight = SFSymbol(
         title: "delete.right",
         categories: [.keyboard, .multicolor, .draw],
         searchTerms: ["delete"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["2326"]
     )
 
     /// delete.right.fill
@@ -8587,12 +8849,14 @@ public extension SFSymbol {
     /// dot.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+22A1
     static let dotSquare = SFSymbol(
         title: "dot.square",
         categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["22A1"]
     )
 
     /// dot.square.fill
@@ -8631,45 +8895,53 @@ public extension SFSymbol {
     /// e.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24BA
     static let eCircle = SFSymbol(
         title: "e.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24BA"]
     )
 
     /// e.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F154
     static let eCircleFill = SFSymbol(
         title: "e.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F154"]
     )
 
     /// e.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F134
     static let eSquare = SFSymbol(
         title: "e.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F134"]
     )
 
     /// e.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F174, U+F79E
     static let eSquareFill = SFSymbol(
         title: "e.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F174", "F79E"]
     )
 
     /// ear
@@ -8686,12 +8958,14 @@ public extension SFSymbol {
     /// eject
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+23CF
     static let eject = SFSymbol(
         title: "eject",
         categories: [.keyboard],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["23CF"]
     )
 
     /// eject.fill
@@ -8866,12 +9140,14 @@ public extension SFSymbol {
     /// equal.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+229C
     static let equalCircle = SFSymbol(
         title: "equal.circle",
         categories: [.math, .variable],
         searchTerms: ["="],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["229C"]
     )
 
     /// equal.circle.fill
@@ -8910,12 +9186,14 @@ public extension SFSymbol {
     /// escape
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+238B
     static let escape = SFSymbol(
         title: "escape",
         categories: [.keyboard, .draw],
         searchTerms: ["arrow"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["238B"]
     )
 
     /// eurosign.circle
@@ -9112,12 +9390,14 @@ public extension SFSymbol {
     /// exclamationmark.triangle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+26A0
     static let exclamationmarkTriangle = SFSymbol(
         title: "exclamationmark.triangle",
         categories: [.automotive, .multicolor, .privacyAndSecurity],
         searchTerms: ["warning"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["26A0"]
     )
 
     /// exclamationmark.triangle.fill
@@ -9222,23 +9502,27 @@ public extension SFSymbol {
     /// f.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24BB
     static let fCircle = SFSymbol(
         title: "f.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24BB"]
     )
 
     /// f.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F155
     static let fCircleFill = SFSymbol(
         title: "f.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F155"]
     )
 
     /// f.cursive
@@ -9277,23 +9561,27 @@ public extension SFSymbol {
     /// f.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F135
     static let fSquare = SFSymbol(
         title: "f.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F135"]
     )
 
     /// f.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F175
     static let fSquareFill = SFSymbol(
         title: "f.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F175"]
     )
 
     /// faceid
@@ -9732,45 +10020,53 @@ public extension SFSymbol {
     /// g.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24BC
     static let gCircle = SFSymbol(
         title: "g.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24BC"]
     )
 
     /// g.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F156
     static let gCircleFill = SFSymbol(
         title: "g.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F156"]
     )
 
     /// g.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F136
     static let gSquare = SFSymbol(
         title: "g.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F136"]
     )
 
     /// g.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F176
     static let gSquareFill = SFSymbol(
         title: "g.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F176"]
     )
 
     /// gamecontroller
@@ -10286,45 +10582,53 @@ public extension SFSymbol {
     /// h.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24BD
     static let hCircle = SFSymbol(
         title: "h.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24BD"]
     )
 
     /// h.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F157
     static let hCircleFill = SFSymbol(
         title: "h.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F157"]
     )
 
     /// h.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F137
     static let hSquare = SFSymbol(
         title: "h.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F137"]
     )
 
     /// h.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F177
     static let hSquareFill = SFSymbol(
         title: "h.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F177"]
     )
 
     /// hammer
@@ -10638,23 +10942,27 @@ public extension SFSymbol {
     /// hexagon
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B21
     static let hexagon = SFSymbol(
         title: "hexagon",
         categories: [.shapes],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B21"]
     )
 
     /// hexagon.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B22
     static let hexagonFill = SFSymbol(
         title: "hexagon.fill",
         categories: [.shapes],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B22"]
     )
 
     /// hifispeaker
@@ -10796,45 +11104,53 @@ public extension SFSymbol {
     /// i.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24BE
     static let iCircle = SFSymbol(
         title: "i.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24BE"]
     )
 
     /// i.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F158
     static let iCircleFill = SFSymbol(
         title: "i.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F158"]
     )
 
     /// i.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F138
     static let iSquare = SFSymbol(
         title: "i.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F138"]
     )
 
     /// i.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F178
     static let iSquareFill = SFSymbol(
         title: "i.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F178"]
     )
 
     /// icloud
@@ -11080,89 +11396,105 @@ public extension SFSymbol {
     /// j.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24BF
     static let jCircle = SFSymbol(
         title: "j.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24BF"]
     )
 
     /// j.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F159
     static let jCircleFill = SFSymbol(
         title: "j.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F159"]
     )
 
     /// j.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F139
     static let jSquare = SFSymbol(
         title: "j.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F139"]
     )
 
     /// j.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F179
     static let jSquareFill = SFSymbol(
         title: "j.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F179"]
     )
 
     /// k.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C0
     static let kCircle = SFSymbol(
         title: "k.circle",
         categories: [.indices, .variable],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C0"]
     )
 
     /// k.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F15A
     static let kCircleFill = SFSymbol(
         title: "k.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F15A"]
     )
 
     /// k.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F13A
     static let kSquare = SFSymbol(
         title: "k.square",
         categories: [.indices],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F13A"]
     )
 
     /// k.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F17A
     static let kSquareFill = SFSymbol(
         title: "k.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F17A"]
     )
 
     /// keyboard
@@ -11234,45 +11566,53 @@ public extension SFSymbol {
     /// l.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C1
     static let lCircle = SFSymbol(
         title: "l.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C1"]
     )
 
     /// l.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F15B
     static let lCircleFill = SFSymbol(
         title: "l.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F15B"]
     )
 
     /// l.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F13B
     static let lSquare = SFSymbol(
         title: "l.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F13B"]
     )
 
     /// l.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F17B
     static let lSquareFill = SFSymbol(
         title: "l.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F17B"]
     )
 
     /// largecircle.fill.circle
@@ -12001,45 +12341,53 @@ public extension SFSymbol {
     /// m.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C2
     static let mCircle = SFSymbol(
         title: "m.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C2"]
     )
 
     /// m.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F15C
     static let mCircleFill = SFSymbol(
         title: "m.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F15C"]
     )
 
     /// m.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F13C
     static let mSquare = SFSymbol(
         title: "m.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F13C"]
     )
 
     /// m.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F17C
     static let mSquareFill = SFSymbol(
         title: "m.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F17C"]
     )
 
     /// macwindow
@@ -12417,12 +12765,14 @@ public extension SFSymbol {
     /// minus.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+2296, U+229D
     static let minusCircle = SFSymbol(
         title: "minus.circle",
         categories: [.gaming, .math, .multicolor, .variable],
         searchTerms: ["-", "decrease", "delete", "minus", "remove", "subtract", "−"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["2296", "229D"]
     )
 
     /// minus.circle.fill
@@ -12540,12 +12890,14 @@ public extension SFSymbol {
     /// moon.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+263E
     static let moonFill = SFSymbol(
         title: "moon.fill",
         categories: [.multicolor, .nature, .weather],
         searchTerms: ["dnd", "do not disturb", "weather"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["263E"]
     )
 
     /// moon.stars
@@ -12606,12 +12958,14 @@ public extension SFSymbol {
     /// multiply.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2297
     static let multiplyCircle = SFSymbol(
         title: "multiply.circle",
         categories: [.math, .variable],
         searchTerms: ["*", "multiply", "times"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2297"]
     )
 
     /// multiply.circle.fill
@@ -12711,45 +13065,53 @@ public extension SFSymbol {
     /// n.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C3
     static let nCircle = SFSymbol(
         title: "n.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C3"]
     )
 
     /// n.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F15D
     static let nCircleFill = SFSymbol(
         title: "n.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F15D"]
     )
 
     /// n.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F13D
     static let nSquare = SFSymbol(
         title: "n.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F13D"]
     )
 
     /// n.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F17D
     static let nSquareFill = SFSymbol(
         title: "n.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F17D"]
     )
 
     /// nairasign.circle
@@ -12865,100 +13227,118 @@ public extension SFSymbol {
     /// o.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C4
     static let oCircle = SFSymbol(
         title: "o.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C4"]
     )
 
     /// o.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F15E
     static let oCircleFill = SFSymbol(
         title: "o.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F15E"]
     )
 
     /// o.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F13E
     static let oSquare = SFSymbol(
         title: "o.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F13E"]
     )
 
     /// o.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F17E
     static let oSquareFill = SFSymbol(
         title: "o.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F17E"]
     )
 
     /// option
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2325
     static let option = SFSymbol(
         title: "option",
         categories: [.keyboard, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2325"]
     )
 
     /// p.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C5
     static let pCircle = SFSymbol(
         title: "p.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C5"]
     )
 
     /// p.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F15F
     static let pCircleFill = SFSymbol(
         title: "p.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F15F"]
     )
 
     /// p.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F13F
     static let pSquare = SFSymbol(
         title: "p.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F13F"]
     )
 
     /// p.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F17F
     static let pSquareFill = SFSymbol(
         title: "p.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F17F"]
     )
 
     /// paintbrush
@@ -14144,12 +14524,14 @@ public extension SFSymbol {
     /// plus.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+2295
     static let plusCircle = SFSymbol(
         title: "plus.circle",
         categories: [.gaming, .math, .multicolor, .variable],
         searchTerms: ["+", "add", "create", "increase", "new", "plus"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["2295"]
     )
 
     /// plus.circle.fill
@@ -14311,12 +14693,14 @@ public extension SFSymbol {
     /// power
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+23FB
     static let power = SFSymbol(
         title: "power",
         categories: [.keyboard, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["23FB"]
     )
 
     /// printer
@@ -14344,12 +14728,14 @@ public extension SFSymbol {
     /// projective
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2305
     static let projective = SFSymbol(
         title: "projective",
         categories: [.keyboard],
         searchTerms: ["enter"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2305"]
     )
 
     /// purchased
@@ -14388,45 +14774,53 @@ public extension SFSymbol {
     /// q.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C6
     static let qCircle = SFSymbol(
         title: "q.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C6"]
     )
 
     /// q.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F160
     static let qCircleFill = SFSymbol(
         title: "q.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F160"]
     )
 
     /// q.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F140
     static let qSquare = SFSymbol(
         title: "q.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F140"]
     )
 
     /// q.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F180
     static let qSquareFill = SFSymbol(
         title: "q.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F180"]
     )
 
     /// qrcode
@@ -14507,13 +14901,15 @@ public extension SFSymbol {
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
     /// - Localizations: Arabic
+    /// - Unicode: U+FFFD
     static let questionmarkDiamondFill = SFSymbol(
         title: "questionmark.diamond.fill",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor],
-        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0))]
+        localizations: [LocalizationInfo(code: .ar, availability: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0))],
+        unicodes: ["FFFD"]
     )
 
     /// questionmark.square
@@ -14601,45 +14997,53 @@ public extension SFSymbol {
     /// r.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C7
     static let rCircle = SFSymbol(
         title: "r.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C7"]
     )
 
     /// r.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F161
     static let rCircleFill = SFSymbol(
         title: "r.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F161"]
     )
 
     /// r.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F141
     static let rSquare = SFSymbol(
         title: "r.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F141"]
     )
 
     /// r.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F181
     static let rSquareFill = SFSymbol(
         title: "r.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F181"]
     )
 
     /// radiowaves.left
@@ -15147,12 +15551,14 @@ public extension SFSymbol {
     /// return
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+23CE
     static let `return` = SFSymbol(
         title: "return",
         categories: [.arrows],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["23CE"]
     )
 
     /// rhombus
@@ -15323,45 +15729,53 @@ public extension SFSymbol {
     /// s.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C8
     static let sCircle = SFSymbol(
         title: "s.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C8"]
     )
 
     /// s.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F162
     static let sCircleFill = SFSymbol(
         title: "s.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F162"]
     )
 
     /// s.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F142
     static let sSquare = SFSymbol(
         title: "s.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F142"]
     )
 
     /// s.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F182
     static let sSquareFill = SFSymbol(
         title: "s.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F182"]
     )
 
     /// safari
@@ -15546,12 +15960,14 @@ public extension SFSymbol {
     /// shift
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+21E7
     static let shift = SFSymbol(
         title: "shift",
         categories: [.keyboard],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["21E7"]
     )
 
     /// shift.fill
@@ -15625,12 +16041,14 @@ public extension SFSymbol {
     /// slash.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2298
     static let slashCircle = SFSymbol(
         title: "slash.circle",
         categories: [.variable, .draw],
         searchTerms: ["/", "÷"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2298"]
     )
 
     /// slash.circle.fill
@@ -15680,12 +16098,14 @@ public extension SFSymbol {
     /// smallcircle.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+229A
     static let smallcircleCircle = SFSymbol(
         title: "smallcircle.circle",
         categories: [.variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["229A"]
     )
 
     /// smallcircle.circle.fill
@@ -15987,12 +16407,14 @@ public extension SFSymbol {
     /// square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+20DE
     static let square = SFSymbol(
         title: "square",
         categories: [.shapes, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["20DE"]
     )
 
     /// square.and.arrow.down
@@ -16121,12 +16543,14 @@ public extension SFSymbol {
     /// square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+25A0
     static let squareFill = SFSymbol(
         title: "square.fill",
         categories: [.shapes],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["25A0"]
     )
 
     /// square.fill.and.line.vertical.and.square
@@ -16283,12 +16707,14 @@ public extension SFSymbol {
     /// square.split.1x2
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+229F
     static let squareSplit1x2 = SFSymbol(
         title: "square.split.1x2",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["229F"]
     )
 
     /// square.split.1x2.fill
@@ -16327,12 +16753,14 @@ public extension SFSymbol {
     /// square.split.2x2
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+229E
     static let squareSplit2x2 = SFSymbol(
         title: "square.split.2x2",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["229E"]
     )
 
     /// square.split.2x2.fill
@@ -16461,12 +16889,14 @@ public extension SFSymbol {
     /// star
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2606
     static let star = SFSymbol(
         title: "star",
         categories: [.multicolor],
         searchTerms: ["favorite", "mail", "vip"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2606"]
     )
 
     /// star.circle
@@ -16494,12 +16924,14 @@ public extension SFSymbol {
     /// star.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2605
     static let starFill = SFSymbol(
         title: "star.fill",
         categories: [.multicolor],
         searchTerms: ["favorite", "mail", "vip"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2605"]
     )
 
     /// star.lefthalf.fill
@@ -16683,89 +17115,105 @@ public extension SFSymbol {
     /// suit.club
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2667
     static let suitClub = SFSymbol(
         title: "suit.club",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2667"]
     )
 
     /// suit.club.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2663
     static let suitClubFill = SFSymbol(
         title: "suit.club.fill",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2663"]
     )
 
     /// suit.diamond
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2662
     static let suitDiamond = SFSymbol(
         title: "suit.diamond",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2662"]
     )
 
     /// suit.diamond.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2666
     static let suitDiamondFill = SFSymbol(
         title: "suit.diamond.fill",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2666"]
     )
 
     /// suit.heart
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2661
     static let suitHeart = SFSymbol(
         title: "suit.heart",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2661"]
     )
 
     /// suit.heart.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2665
     static let suitHeartFill = SFSymbol(
         title: "suit.heart.fill",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2665"]
     )
 
     /// suit.spade
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2664
     static let suitSpade = SFSymbol(
         title: "suit.spade",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2664"]
     )
 
     /// suit.spade.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2660
     static let suitSpadeFill = SFSymbol(
         title: "suit.spade.fill",
         categories: [.multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2660"]
     )
 
     /// sum
@@ -16946,45 +17394,53 @@ public extension SFSymbol {
     /// t.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24C9
     static let tCircle = SFSymbol(
         title: "t.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24C9"]
     )
 
     /// t.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F163
     static let tCircleFill = SFSymbol(
         title: "t.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F163"]
     )
 
     /// t.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F143
     static let tSquare = SFSymbol(
         title: "t.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F143"]
     )
 
     /// t.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F183
     static let tSquareFill = SFSymbol(
         title: "t.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F183"]
     )
 
     /// table
@@ -17757,12 +18213,14 @@ public extension SFSymbol {
     /// triangle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+20E4
     static let triangle = SFSymbol(
         title: "triangle",
         categories: [.shapes],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["20E4"]
     )
 
     /// triangle.fill
@@ -17985,45 +18443,53 @@ public extension SFSymbol {
     /// u.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24CA
     static let uCircle = SFSymbol(
         title: "u.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24CA"]
     )
 
     /// u.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F164
     static let uCircleFill = SFSymbol(
         title: "u.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F164"]
     )
 
     /// u.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F144
     static let uSquare = SFSymbol(
         title: "u.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F144"]
     )
 
     /// u.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F184
     static let uSquareFill = SFSymbol(
         title: "u.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F184"]
     )
 
     /// uiwindow.split.2x1
@@ -18051,12 +18517,14 @@ public extension SFSymbol {
     /// umbrella.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2602
     static let umbrellaFill = SFSymbol(
         title: "umbrella.fill",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2602"]
     )
 
     /// underline
@@ -18073,45 +18541,53 @@ public extension SFSymbol {
     /// v.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24CB
     static let vCircle = SFSymbol(
         title: "v.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24CB"]
     )
 
     /// v.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F165
     static let vCircleFill = SFSymbol(
         title: "v.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F165"]
     )
 
     /// v.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F145
     static let vSquare = SFSymbol(
         title: "v.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F145"]
     )
 
     /// v.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F185
     static let vSquareFill = SFSymbol(
         title: "v.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F185"]
     )
 
     /// video
@@ -18276,45 +18752,53 @@ public extension SFSymbol {
     /// w.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24CC
     static let wCircle = SFSymbol(
         title: "w.circle",
         categories: [.indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24CC"]
     )
 
     /// w.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F166
     static let wCircleFill = SFSymbol(
         title: "w.circle.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F166"]
     )
 
     /// w.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F146
     static let wSquare = SFSymbol(
         title: "w.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F146"]
     )
 
     /// w.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F186
     static let wSquareFill = SFSymbol(
         title: "w.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F186"]
     )
 
     /// wand.and.rays
@@ -18570,45 +19054,53 @@ public extension SFSymbol {
     /// x.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24CD
     static let xCircle = SFSymbol(
         title: "x.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24CD"]
     )
 
     /// x.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F167
     static let xCircleFill = SFSymbol(
         title: "x.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F167"]
     )
 
     /// x.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F147
     static let xSquare = SFSymbol(
         title: "x.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F147"]
     )
 
     /// x.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F187
     static let xSquareFill = SFSymbol(
         title: "x.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F187"]
     )
 
     /// x.squareroot
@@ -18627,12 +19119,14 @@ public extension SFSymbol {
     /// xmark
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+2717
     static let xmark = SFSymbol(
         title: "xmark",
         categories: [.gaming, .multicolor, .draw],
         searchTerms: ["clear", "close", "stop", "x"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["2717"]
     )
 
     /// xmark.circle
@@ -18774,12 +19268,14 @@ public extension SFSymbol {
     /// xmark.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+2612
     static let xmarkSquare = SFSymbol(
         title: "xmark.square",
         categories: [.multicolor],
         searchTerms: ["clear", "close", "stop", "x"],
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["2612"]
     )
 
     /// xmark.square.fill
@@ -18796,45 +19292,53 @@ public extension SFSymbol {
     /// y.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24CE
     static let yCircle = SFSymbol(
         title: "y.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24CE"]
     )
 
     /// y.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F168
     static let yCircleFill = SFSymbol(
         title: "y.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F168"]
     )
 
     /// y.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F148
     static let ySquare = SFSymbol(
         title: "y.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F148"]
     )
 
     /// y.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F188
     static let ySquareFill = SFSymbol(
         title: "y.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F188"]
     )
 
     /// yensign.circle
@@ -18884,45 +19388,53 @@ public extension SFSymbol {
     /// z.circle
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+24CF
     static let zCircle = SFSymbol(
         title: "z.circle",
         categories: [.gaming, .indices, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["24CF"]
     )
 
     /// z.circle.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F169
     static let zCircleFill = SFSymbol(
         title: "z.circle.fill",
         categories: [.gaming, .indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F169"]
     )
 
     /// z.square
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+1F149
     static let zSquare = SFSymbol(
         title: "z.square",
         categories: [.indices, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["1F149"]
     )
 
     /// z.square.fill
     /// - Since: iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical, multicolor
+    /// - Unicode: U+1F189
     static let zSquareFill = SFSymbol(
         title: "z.square.fill",
         categories: [.indices, .multicolor],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 13.0, macOS: 10.15, tvOS: 13.0, watchOS: 6.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical, .multicolor]
+        layersets: [.monochrome, .hierarchical, .multicolor],
+        unicodes: ["1F189"]
     )
 
     /// zzz

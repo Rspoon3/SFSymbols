@@ -136,15 +136,35 @@ func generateFontRestrictions(appPath: String, workingDir: URL) {
         print("⚠️  Expected 'Name' and 'Use Restrictions' columns not found. Falling back to CoreGlyphs restrictions.")
         return
     }
+    // The Unicodes column is optional; if absent we simply don't emit unicodes.
+    let unicodesIdx = header.firstIndex(of: "Unicodes")
 
     var lines: [String] = []
+    var unicodeLines: [String] = []
     for row in rows.dropFirst() {
         guard row.count > max(nameIdx, restrIdx) else { continue }
         let name = row[nameIdx].trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !name.isEmpty else { continue }
         let restriction = row[restrIdx].trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !name.isEmpty, !restriction.isEmpty else { continue }
-        // Restriction text never contains tabs/newlines, so a TSV is unambiguous.
-        lines.append("\(name)\t\(restriction)")
+        if !restriction.isEmpty {
+            // Restriction text never contains tabs/newlines, so a TSV is unambiguous.
+            lines.append("\(name)\t\(restriction)")
+        }
+
+        // Extract the Unicodes column: comma-separated uppercase hex code points.
+        // The literal "XXXXX" (or empty) means the symbol has no Unicode mapping.
+        if let unicodesIdx, row.count > unicodesIdx {
+            let raw = row[unicodesIdx].trimmingCharacters(in: .whitespacesAndNewlines)
+            if !raw.isEmpty, raw.uppercased() != "XXXXX" {
+                let codePoints = raw
+                    .split(separator: ",")
+                    .map { $0.trimmingCharacters(in: .whitespaces).uppercased() }
+                    .filter { !$0.isEmpty }
+                if !codePoints.isEmpty {
+                    unicodeLines.append("\(name)\t\(codePoints.joined(separator: ","))")
+                }
+            }
+        }
     }
 
     let outputURL = workingDir.appendingPathComponent("font_restrictions.tsv")
@@ -153,5 +173,13 @@ func generateFontRestrictions(appPath: String, workingDir: URL) {
         print("☑️  Decrypted font restrictions: \(lines.count) symbols → font_restrictions.tsv")
     } catch {
         print("⚠️  Could not write font_restrictions.tsv: \(error). Falling back to CoreGlyphs restrictions.")
+    }
+
+    let unicodesURL = workingDir.appendingPathComponent("font_unicodes.tsv")
+    do {
+        try (unicodeLines.joined(separator: "\n") + "\n").write(to: unicodesURL, atomically: true, encoding: .utf8)
+        print("☑️  Decrypted font unicodes: \(unicodeLines.count) symbols → font_unicodes.tsv")
+    } catch {
+        print("⚠️  Could not write font_unicodes.tsv: \(error). Symbols will have no Unicode code points.")
     }
 }

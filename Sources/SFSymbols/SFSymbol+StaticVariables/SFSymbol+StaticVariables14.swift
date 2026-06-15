@@ -3549,12 +3549,14 @@ public extension SFSymbol {
     /// cross.fill
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, multicolor
+    /// - Unicode: U+271A
     static let crossFill = SFSymbol(
         title: "cross.fill",
         categories: [.health, .multicolor],
         searchTerms: ["medical"],
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .multicolor]
+        layersets: [.monochrome, .multicolor],
+        unicodes: ["271A"]
     )
 
     /// crown
@@ -3894,12 +3896,14 @@ public extension SFSymbol {
     /// die.face.1
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2680
     static let dieFace1 = SFSymbol(
         title: "die.face.1",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2680"]
     )
 
     /// die.face.1.fill
@@ -3916,12 +3920,14 @@ public extension SFSymbol {
     /// die.face.2
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2681
     static let dieFace2 = SFSymbol(
         title: "die.face.2",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2681"]
     )
 
     /// die.face.2.fill
@@ -3938,12 +3944,14 @@ public extension SFSymbol {
     /// die.face.3
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2682
     static let dieFace3 = SFSymbol(
         title: "die.face.3",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2682"]
     )
 
     /// die.face.3.fill
@@ -3960,12 +3968,14 @@ public extension SFSymbol {
     /// die.face.4
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2683
     static let dieFace4 = SFSymbol(
         title: "die.face.4",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2683"]
     )
 
     /// die.face.4.fill
@@ -3982,12 +3992,14 @@ public extension SFSymbol {
     /// die.face.5
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2684
     static let dieFace5 = SFSymbol(
         title: "die.face.5",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2684"]
     )
 
     /// die.face.5.fill
@@ -4004,12 +4016,14 @@ public extension SFSymbol {
     /// die.face.6
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+2685
     static let dieFace6 = SFSymbol(
         title: "die.face.6",
         categories: [.objectsAndTools],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["2685"]
     )
 
     /// die.face.6.fill
@@ -7695,12 +7709,14 @@ public extension SFSymbol {
     /// paragraphsign
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+00B6
     static let paragraphsign = SFSymbol(
         title: "paragraphsign",
         categories: [.textFormatting],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["00B6"]
     )
 
     /// pc
@@ -8119,12 +8135,14 @@ public extension SFSymbol {
     /// placeholdertext.fill
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+100BB7
     static let placeholdertextFill = SFSymbol(
         title: "placeholdertext.fill",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["100BB7"]
     )
 
     /// play.slash
@@ -8283,34 +8301,40 @@ public extension SFSymbol {
     /// poweroff
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+2B58
     static let poweroff = SFSymbol(
         title: "poweroff",
         categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["2B58"]
     )
 
     /// poweron
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+23FD
     static let poweron = SFSymbol(
         title: "poweron",
         categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["23FD"]
     )
 
     /// powersleep
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+23FE
     static let powersleep = SFSymbol(
         title: "powersleep",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["23FE"]
     )
 
     /// printer.dotmatrix
@@ -10381,12 +10405,14 @@ public extension SFSymbol {
     /// square.split.diagonal.2x2
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome
+    /// - Unicode: U+22A0
     static let squareSplitDiagonal2x2 = SFSymbol(
         title: "square.split.diagonal.2x2",
         categories: nil,
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome]
+        layersets: [.monochrome],
+        unicodes: ["22A0"]
     )
 
     /// square.split.diagonal.2x2.fill
@@ -10952,12 +10978,14 @@ public extension SFSymbol {
     /// togglepower
     /// - Since: iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0
     /// - Layersets: monochrome, hierarchical
+    /// - Unicode: U+23FC
     static let togglepower = SFSymbol(
         title: "togglepower",
         categories: [.draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.0, macOS: 11.0, tvOS: 14.0, watchOS: 7.0, visionOS: 1.0),
-        layersets: [.monochrome, .hierarchical]
+        layersets: [.monochrome, .hierarchical],
+        unicodes: ["23FC"]
     )
 
     /// touchid
