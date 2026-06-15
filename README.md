@@ -130,6 +130,73 @@ travels with the app, it stays correct **even on an older macOS**:
 /Applications/SF Symbols.app/Contents/Resources/Metadata/
 ```
 
+## Build Performance
+
+SFSymbols is a large, fully generated library: **77 source files / ~104,000 lines**, of
+which the `SFSymbol+StaticVariables*.swift` files account for **~94,000 lines (≈90%)** —
+one `static var` per symbol. That bulk is what drives compile time, so it's worth knowing
+what to expect.
+
+### Results
+
+Measured with `swift build -c debug`, 5 runs each, averaged. Machine: Apple M4 Pro
+(14 cores), macOS 26.5.1, Swift 6.3.2.
+
+| Scenario | What it measures | Avg | Individual runs (s) |
+|---|---|---:|---|
+| **Clean build** | `rm -rf .build` before each run — compiles everything from scratch | **9.61 s** | 9.97 / 9.51 / 9.35 / 9.86 / 9.36 |
+| **Incremental build** | Touch one source file, rebuild | **5.80 s** | 5.81 / 5.73 / 5.82 / 5.78 / 5.88 |
+| **Warm no-op build** | Nothing changed | **0.50 s** | 0.51 / 0.49 / 0.49 / 0.50 / 0.50 |
+
+### Takeaways
+
+- The cost is concentrated in the generated static-variable files; the five largest alone
+  total ~68,000 lines.
+- Because every symbol lives in the **same module**, even a one-file edit forces the module
+  to be re-emitted — hence incremental builds (~5.8 s) cost more than half of a clean
+  build. There is no per-symbol tree-shaking at the source level.
+- **This only hits when SFSymbols itself is (re)compiled.** In a consumer app the
+  compiled module is cached, so it's paid once on a clean build / fresh CI checkout and is
+  ~0 on subsequent warm and incremental app builds.
+
+### Reproducing this test
+
+From the repository root:
+
+```bash
+# 1. Clean build (compiles everything from scratch)
+rm -rf .build && time swift build -c debug
+
+# 2. Warm no-op build (run immediately after a successful build)
+time swift build -c debug
+
+# 3. Incremental build (single-file edit)
+touch Sources/SFSymbols/Models/SFCategory.swift
+time swift build -c debug
+```
+
+For an averaged run (5 iterations of each), use the helper below:
+
+```bash
+avg() { local s=0; for v in "$@"; do s=$((s+v)); done; echo "scale=3; $s/$#/1000" | bc; }
+
+clean=(); for i in $(seq 5); do rm -rf .build; s=$(date +%s%N); \
+  swift build -c debug >/dev/null 2>&1; clean+=($(( ($(date +%s%N)-s)/1000000 ))); done
+echo "Clean avg: $(avg ${clean[@]})s — runs: ${clean[*]}"
+
+swift build -c debug >/dev/null 2>&1   # warm
+noop=(); for i in $(seq 5); do s=$(date +%s%N); \
+  swift build -c debug >/dev/null 2>&1; noop+=($(( ($(date +%s%N)-s)/1000000 ))); done
+echo "No-op avg: $(avg ${noop[@]})s — runs: ${noop[*]}"
+
+inc=(); for i in $(seq 5); do touch Sources/SFSymbols/Models/SFCategory.swift; s=$(date +%s%N); \
+  swift build -c debug >/dev/null 2>&1; inc+=($(( ($(date +%s%N)-s)/1000000 ))); done
+echo "Incremental avg: $(avg ${inc[@]})s — runs: ${inc[*]}"
+```
+
+> Absolute numbers depend on your hardware and toolchain; the **relative** cost
+> (clean ≫ incremental ≫ no-op) is what's meaningful.
+
 ## Installation
 
 ### Swift Package Manager
