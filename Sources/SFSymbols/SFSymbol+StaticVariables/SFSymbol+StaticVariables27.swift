@@ -157,7 +157,7 @@ public extension SFSymbol {
     /// - Warning: This symbol may not be modified and may only be used to refer to Apple’s AirPods Pro.
     static let airpodsProGen3ChargingcaseWirelessRadiowavesLeftAndRightFill = SFSymbol(
         title: "airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right.fill",
-        categories: [.devices, .variable, .whatsNew],
+        categories: [.devices, .variable, .whatsNew, .draw],
         searchTerms: ["audio"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical],
@@ -577,7 +577,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let buildingClassicalColumnsCircle = SFSymbol(
         title: "building.classical.columns.circle",
-        categories: [.variable],
+        categories: [.variable, .draw],
         searchTerms: ["library"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical]
@@ -1974,7 +1974,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let microphoneDynamicOnStandCircle = SFSymbol(
         title: "microphone.dynamic.on.stand.circle",
-        categories: [.objectsAndTools, .variable],
+        categories: [.objectsAndTools, .variable, .draw],
         searchTerms: ["microphone"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical]
@@ -2073,7 +2073,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let numberSignCircle = SFSymbol(
         title: "number.sign.circle",
-        categories: [.math, .variable],
+        categories: [.math, .variable, .draw],
         searchTerms: ["#", "hash", "octothorpe", "pound"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical]
@@ -2095,7 +2095,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let numberSignSquare = SFSymbol(
         title: "number.sign.square",
-        categories: [.math],
+        categories: [.math, .draw],
         searchTerms: ["#", "hash", "octothorpe", "pound"],
         releaseInfo: ReleaseInfo(iOS: 27.0, macOS: 27.0, tvOS: 27.0, watchOS: 27.0, visionOS: 27.0),
         layersets: [.monochrome, .hierarchical]

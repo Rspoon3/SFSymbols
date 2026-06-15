@@ -46,7 +46,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let brazilianrealsignCircle = SFSymbol(
         title: "brazilianrealsign.circle",
-        categories: [.commerce, .indices, .variable],
+        categories: [.commerce, .indices, .variable, .draw],
         searchTerms: ["currencies", "currency"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -68,7 +68,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let brazilianrealsignSquare = SFSymbol(
         title: "brazilianrealsign.square",
-        categories: [.commerce, .indices],
+        categories: [.commerce, .indices, .draw],
         searchTerms: ["currencies", "currency"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -90,7 +90,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let cartCircle = SFSymbol(
         title: "cart.circle",
-        categories: [.commerce, .objectsAndTools, .variable],
+        categories: [.commerce, .objectsAndTools, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -190,7 +190,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let infinityCircle = SFSymbol(
         title: "infinity.circle",
-        categories: [.media, .variable],
+        categories: [.media, .variable, .draw],
         searchTerms: nil,
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -411,7 +411,7 @@ public extension SFSymbol {
     /// - Localizations: Arabic, Hindi
     static let repeat1Circle = SFSymbol(
         title: "repeat.1.circle",
-        categories: [.arrows, .media, .variable],
+        categories: [.arrows, .media, .variable, .draw],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical],
@@ -436,7 +436,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let repeatCircle = SFSymbol(
         title: "repeat.circle",
-        categories: [.arrows, .media, .variable],
+        categories: [.arrows, .media, .variable, .draw],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -447,7 +447,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let repeatCircleFill = SFSymbol(
         title: "repeat.circle.fill",
-        categories: [.arrows, .media, .multicolor],
+        categories: [.arrows, .media, .multicolor, .draw],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
@@ -471,7 +471,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical
     static let shuffleCircle = SFSymbol(
         title: "shuffle.circle",
-        categories: [.arrows, .media, .variable],
+        categories: [.arrows, .media, .variable, .draw],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical]
@@ -482,7 +482,7 @@ public extension SFSymbol {
     /// - Layersets: monochrome, hierarchical, multicolor
     static let shuffleCircleFill = SFSymbol(
         title: "shuffle.circle.fill",
-        categories: [.arrows, .media, .multicolor],
+        categories: [.arrows, .media, .multicolor, .draw],
         searchTerms: ["arrow", "arrow.trianglehead", "trianglehead"],
         releaseInfo: ReleaseInfo(iOS: 14.2, macOS: 11.0, tvOS: 14.2, watchOS: 7.1, visionOS: 1.0),
         layersets: [.monochrome, .hierarchical, .multicolor]
