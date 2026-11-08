@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "SFSymbols",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v13),
         .macOS(.v11),
@@ -20,7 +21,8 @@ let package = Package(
     targets: [
         .target(
             name: "SFSymbols",
-            exclude: ["../../UpdateScript.swift"]
+            exclude: ["../../UpdateScript.swift"],
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "SFSymbolsTests",
